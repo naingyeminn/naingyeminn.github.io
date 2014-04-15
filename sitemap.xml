@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://naingyeminn.github.io/index.html</loc>
-<lastmod>2014-04-15T09:54:26-00:00</lastmod>
+<lastmod>2014-04-15T10:31:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://naingyeminn.github.io/archives.html</loc>
-<lastmod>2014-04-15T09:54:26-00:00</lastmod>
+<lastmod>2014-04-15T10:31:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://naingyeminn.github.io/tags.html</loc>
-<lastmod>2014-04-15T09:54:26-00:00</lastmod>
+<lastmod>2014-04-15T10:31:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://naingyeminn.github.io/categories.html</loc>
-<lastmod>2014-04-15T09:54:26-00:00</lastmod>
+<lastmod>2014-04-15T10:31:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -46,6 +46,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://naingyeminn.github.io/posts/2013/07/12/myanmar-keyboard-for-ubuntu/</loc>
+<lastmod>2013-07-12T08:00:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://naingyeminn.github.io/category/review</loc>
 <lastmod>2014-04-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
@@ -53,8 +60,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/tag/python/</loc>
-<lastmod>2014-04-12T08:00:00-00:00</lastmod>
+<loc>http://naingyeminn.github.io/category/ubuntu</loc>
+<lastmod>2013-07-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -67,6 +74,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://naingyeminn.github.io/tag/myanmar/</loc>
+<lastmod>2013-07-12T08:00:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://naingyeminn.github.io/tag/python/</loc>
+<lastmod>2014-04-12T08:00:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://naingyeminn.github.io/tag/zawgyi/</loc>
+<lastmod>2013-07-12T08:00:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://naingyeminn.github.io/tag/review/</loc>
 <lastmod>2014-04-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
@@ -74,8 +102,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://naingyeminn.github.io/tag/ubuntu/</loc>
+<lastmod>2013-07-12T08:00:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://naingyeminn.github.io/tag/elementaryos/</loc>
 <lastmod>2014-04-11T08:00:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://naingyeminn.github.io/tag/unicode/</loc>
+<lastmod>2013-07-12T08:00:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://naingyeminn.github.io/tag/keyboard/</loc>
+<lastmod>2013-07-12T08:00:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://naingyeminn.github.io/tag/i-bus/</loc>
+<lastmod>2013-07-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
