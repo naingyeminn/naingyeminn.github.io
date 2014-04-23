@@ -5,7 +5,12 @@ Copyright (c) 2013 Tipue
 Tipue Search is released under the MIT License
 http://www.tipue.com/search
 */
-
+@font-face{
+  font-family:'MyanmarUnicode';
+  src:url('../font/mmrCensus.v4.sh.mif.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal
+}
 
 #tipue_search_content
 {
@@ -69,11 +74,13 @@ http://www.tipue.com/search
 {
      color: #3f72d8;
      text-decoration: none;
+     font-family: "MyanmarUnicode";
 }
 .tipue_search_content_title a:hover
 {
 	padding-bottom: 1px;
-	border-bottom: 1px solid #ccc;   
+	border-bottom: 1px solid #ccc;
+    font-family: "MyanmarUnicode";
 }
 .tipue_search_content_text
 {
@@ -83,12 +90,12 @@ http://www.tipue.com/search
    font-variant: normal;
    text-transform: none;
    padding: 13px 0;
-   font-family: Scala, Georgia,"DejaVu Serif","Times New Roman",Times,serif;
+   font-family: "MyanmarUnicode", Scala, Georgia,"DejaVu Serif","Times New Roman",Times,serif;
 }
 
 .tipue_search_content_text b {
     color:#EF1D1D;
-    font-family:Garamond;
+    font-family: "MyanmarUnicode", Garamond;
     font-size: 1.3em;
 }
 .tipue_search_content_loc
