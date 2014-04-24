@@ -4,140 +4,140 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>http://naingyeminn.github.io/index.html</loc>
-<lastmod>2014-04-23T15:36:16-00:00</lastmod>
+<loc>http://naingyeminn.com/index.html</loc>
+<lastmod>2014-04-24T16:40:53-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/archives.html</loc>
-<lastmod>2014-04-23T15:36:16-00:00</lastmod>
+<loc>http://naingyeminn.com/archives.html</loc>
+<lastmod>2014-04-24T16:40:53-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/tags.html</loc>
-<lastmod>2014-04-23T15:36:16-00:00</lastmod>
+<loc>http://naingyeminn.com/tags.html</loc>
+<lastmod>2014-04-24T16:40:53-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/categories.html</loc>
-<lastmod>2014-04-23T15:36:16-00:00</lastmod>
+<loc>http://naingyeminn.com/categories.html</loc>
+<lastmod>2014-04-24T16:40:53-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/posts/2014/04/12/pelican-and-me/</loc>
+<loc>http://naingyeminn.com/posts/2014/04/12/pelican-and-me/</loc>
 <lastmod>2014-04-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/posts/2014/04/11/elementary-os-review-1/</loc>
+<loc>http://naingyeminn.com/posts/2014/04/11/elementary-os-review-1/</loc>
 <lastmod>2014-04-11T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/posts/2013/07/12/myanmar-keyboard-for-ubuntu/</loc>
+<loc>http://naingyeminn.com/posts/2013/07/12/myanmar-keyboard-for-ubuntu/</loc>
 <lastmod>2013-07-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/category/review</loc>
+<loc>http://naingyeminn.com/category/review</loc>
 <lastmod>2014-04-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/category/ubuntu</loc>
+<loc>http://naingyeminn.com/category/ubuntu</loc>
 <lastmod>2013-07-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/tag/pelican/</loc>
+<loc>http://naingyeminn.com/tag/pelican/</loc>
 <lastmod>2014-04-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/tag/myanmar/</loc>
+<loc>http://naingyeminn.com/tag/myanmar/</loc>
 <lastmod>2013-07-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/tag/python/</loc>
+<loc>http://naingyeminn.com/tag/python/</loc>
 <lastmod>2014-04-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/tag/zawgyi/</loc>
+<loc>http://naingyeminn.com/tag/zawgyi/</loc>
 <lastmod>2013-07-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/tag/review/</loc>
+<loc>http://naingyeminn.com/tag/review/</loc>
 <lastmod>2014-04-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/tag/ubuntu/</loc>
+<loc>http://naingyeminn.com/tag/ubuntu/</loc>
 <lastmod>2013-07-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/tag/elementaryos/</loc>
+<loc>http://naingyeminn.com/tag/elementaryos/</loc>
 <lastmod>2014-04-11T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/tag/unicode/</loc>
+<loc>http://naingyeminn.com/tag/unicode/</loc>
 <lastmod>2013-07-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/tag/keyboard/</loc>
+<loc>http://naingyeminn.com/tag/keyboard/</loc>
 <lastmod>2013-07-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/tag/i-bus/</loc>
+<loc>http://naingyeminn.com/tag/i-bus/</loc>
 <lastmod>2013-07-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://naingyeminn.github.io/author/naing-ye-minn.html</loc>
+<loc>http://naingyeminn.com/author/naing-ye-minn.html</loc>
 <lastmod>2014-04-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
