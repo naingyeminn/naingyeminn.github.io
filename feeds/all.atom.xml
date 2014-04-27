@@ -13,9 +13,11 @@ sudo dpkg -i my-fs-cli_12.07.1_all.deb
 &lt;/blockquote&gt;
 &lt;p&gt;Fallback Font ကို Unicode အနေနဲ့ပြောင်းလိုက်ပြီဆိုရင် System တစ်ခုလုံး Unicode နဲ့ ဖြစ်သွားမှာပါ။ Browser မှာ Facebook ကိုဝင်လိုက်ရင် Zawgyi နဲ့ ရေးထားသမျှ စာတွေအကုန်လုံးဖတ်မရတော့ဘူးဖြစ်သွားပါလိမ့်မယ်။ Zawgyi အနေနဲ့ဖတ်လို့ရဖို့ ကိုထိန်လင်းရွေ &lt;a href="http://saturngod.net"&gt;(saturngod)&lt;/a&gt; လုပ်ပေးထားတဲ့ &lt;a href="http://dl.dropboxusercontent.com/u/283860/host/bookmarklet/index.html"&gt;bookmarklets&lt;/a&gt; ကိုသုံးပြီး ဖတ်လို့ရပါတယ်။ Firefox Version အဟောင်းတွေမှာတော့ Unicode to Zawgyi, Zawgyi to Unicode, MM Font Tagger စတာတွေသုံးလို့ရပေမယ့် အခုနောက်ပိုင်း version တွေမှာတော့ Zawgyi Force, Unicode Force ၂မျိုးပဲသုံးလို့ရပါလိမ့်မယ်။ သုံးပုံသုံးနည်းကတော့ ပေးထားတဲ့ link မှာပါပြီးသားပါ။&lt;/p&gt;
 &lt;p&gt;နောက်ထပ်တစ်ခုက &lt;a href="https://github.com/naingyeminn/clip-text-convert"&gt;clip-text-convert&lt;/a&gt; ဆိုတဲ့ package လေးပါ။ သူငယ်ချင်း သူရလှိုင် ရေးထားတဲ့ &lt;a href="http://code.google.com/p/python-myanmar/downloads/list"&gt;Python-Myanmar&lt;/a&gt; ဆိုတဲ့ python module ကိုသုံးပြီး text တွေကို zawgyi, unicode အလွယ်တကူပြောင်းနိုင်အောင် လုပ်ပေးထားတာပါ။ Unicode သုံးနေတော့ zawgyi နဲ့ ရေးထားတဲ့ စာသားတွေကို အလွယ်တကူပြောင်းနိုင်အောင်လို့ပါ။ ဥပမာအနေနဲ့ zawgyi နဲ့မြန်မာလိုရေးပြီး နာမည်ပေးထားတဲ့ file တစ်ခုကို Unicode ပြောင်းချင်တဲ့အခါ Rename လုပ်ပြီး ကိုယ်တိုင်ပြန်ရိုက်ရပါလိမ့်မယ်။ အဲဒီအတွက် Clip-Text-Convert ကိုသုံးပြီးဖြေရှင်းနိုင်ပါတယ်။ အဓိက လုပ်ဆောင်ပေးတာကတော့ စာသားတစ်ခုခုကို copy ဒါမှမဟုတ် cut လုပ်လိုက်လို့ ရောက်သွားတဲ့ Clipboard ထဲကစာသားကို Zawgyi, Unicode စသဖြင့်ပြောင်းပေးပါတယ်။ Paste ပြန်လုပ်လိုက်တဲ့အခါကျ Convert လုပ်ထားပြီးသားစာသားပြန်ထွက်လာမှာပါ။&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;bash
- wget https://python-myanmar.googlecode.com/files/python-myanmar_0.0.2-0_all.deb
- sudo dpkg -i python-myanmar_0.0.2-0_all.deb&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;wget https://python-myanmar.googlecode.com/files/python-myanmar_0.0.2-0_all.deb
+sudo dpkg -i python-myanmar_0.0.2-0_all.deb
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;ဆိုတဲ့ command ၂ကြောင်းကိုရိုက်ပြီး Python Myanmar ကိုသွင်းပါ။ &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;wget https://github.com/naingyeminn/clip-text-convert/archive/master.zip
 unzip master.zip
