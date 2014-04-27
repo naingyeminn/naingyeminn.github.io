@@ -5,28 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://naingyeminn.com/index.html</loc>
-<lastmod>2014-04-24T16:40:53-00:00</lastmod>
+<lastmod>2014-04-27T17:12:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://naingyeminn.com/archives.html</loc>
-<lastmod>2014-04-24T16:40:53-00:00</lastmod>
+<lastmod>2014-04-27T17:12:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://naingyeminn.com/tags.html</loc>
-<lastmod>2014-04-24T16:40:53-00:00</lastmod>
+<lastmod>2014-04-27T17:12:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://naingyeminn.com/categories.html</loc>
-<lastmod>2014-04-24T16:40:53-00:00</lastmod>
+<lastmod>2014-04-27T17:12:45-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://naingyeminn.com/posts/2014/04/25/myanmar-unicode-in-ubuntu/</loc>
+<lastmod>2014-04-25T15:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -61,7 +68,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://naingyeminn.com/category/ubuntu</loc>
-<lastmod>2013-07-12T08:00:00-00:00</lastmod>
+<lastmod>2014-04-25T15:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -75,7 +82,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://naingyeminn.com/tag/myanmar/</loc>
-<lastmod>2013-07-12T08:00:00-00:00</lastmod>
+<lastmod>2014-04-25T15:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -89,7 +96,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://naingyeminn.com/tag/zawgyi/</loc>
-<lastmod>2013-07-12T08:00:00-00:00</lastmod>
+<lastmod>2014-04-25T15:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -103,7 +110,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://naingyeminn.com/tag/ubuntu/</loc>
-<lastmod>2013-07-12T08:00:00-00:00</lastmod>
+<lastmod>2014-04-25T15:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -117,7 +124,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://naingyeminn.com/tag/unicode/</loc>
-<lastmod>2013-07-12T08:00:00-00:00</lastmod>
+<lastmod>2014-04-25T15:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -138,7 +145,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://naingyeminn.com/author/naing-ye-minn.html</loc>
-<lastmod>2014-04-12T08:00:00-00:00</lastmod>
+<lastmod>2014-04-25T15:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
