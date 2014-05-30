@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Naing Ye` Minn</title><link href="http://naingyeminn.com/" rel="alternate"></link><link href="http://naingyeminn.com/feeds/all.atom.xml" rel="self"></link><id>http://naingyeminn.com/</id><updated>2014-05-30T05:30:00+06:30</updated><entry><title>XenServer Installation Problems and Review</title><link href="http://naingyeminn.com/posts/2014/05/30/xenserver-installation-problems-and-review/" rel="alternate"></link><updated>2014-05-30T05:30:00+06:30</updated><author><name>Naing Ye` Minn</name></author><id>tag:naingyeminn.com,2014-05-30:posts/2014/05/30/xenserver-installation-problems-and-review/</id><summary type="html">&lt;p&gt;မနေ့က အလုပ်မှာ Desktop တစ်လုံးအပိုထွက်လာတာနဲ့ XenServer စမ်းကြည့်ဖြစ်တယ်။ စက်က အမြင့်ကြီးမဟုတ်ပေမယ့် processor က VT support လုပ်တာရယ် Memory 4GB လောက်ရှိတာရယ်ကြောင့် စမ်းဖို့အဆင်ပြေသွာတယ်။ &lt;a href="http://xenserver.org/overview-xenserver-open-source-virtualization/download.html"&gt;XenServer 6.2&lt;/a&gt; iso လဲဆွဲထားပြီးသားရှိပေမယ့် CD အလွတ်မရှိတာနဲ့ Flash Drive နဲ့ပဲ install လုပ်မယ်ေပါ့။ အဲ့ဒီအတွက် flash drive ကို FAT32 နဲ့ format ချ၊ &lt;a href="http://sourceforge.net/projects/unetbootin/"&gt;Unetbootin&lt;/a&gt; နဲ့ ပုံမှန်အတိုင်းပဲ XenServer ISO ကို extract လုပ်လိုက်တာ ဖြစ်ချင်တော့ boot တက်တဲ့အချိန်မှာ kernel ရှာမရပါဘူးဆိုပြီး error ပြလာတယ်။ google မှာရှာကြည့်လိုက်တော့ USB drive ရဲ့ /boot/isolinux/ directory ထဲက isolinux.cfg ကို syslinux.cfg ဆိုပြီး တော့ရယ်၊ /boot/ ထဲက isolinux ကို syslinux ဆိုပြီး ပြောင်းပေးရတယ်။ ေနာက် /syslinux.cfg ကိုဖျက်ပေးရတယ်။&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;mv /media/flashdrive/boot/isolinux/isolinux.cfg /media/flashdrive/boot/isolinux/syslinux.cfg
-mv /media/flashdrive/boot/isolinux /media/flashdrive/boot/syslinux
-rm /media/flashdrive/syslinux.cfg
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mv /media/flashdrive/boot/isolinux/isolinux.cfg /media/flashdrive/boot/isolinux/syslinux.cfg
+&lt;span class="nv"&gt;$ &lt;/span&gt;mv /media/flashdrive/boot/isolinux /media/flashdrive/boot/syslinux
+&lt;span class="nv"&gt;$ &lt;/span&gt;rm /media/flashdrive/syslinux.cfg
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;အဲဒါလေးလုပ်ပေးလိုက်တော့ boot တက်ပြီး &lt;a href="http://docs.vmd.citrix.com/XenServer/6.2.0/1.0/en_gb/installation.html" title="XenServer Installation"&gt;Install&lt;/a&gt; လုပ်လို့ရသွားတယ်။ အောက်ကပုံကတော့ VMware Player ပေါ်မှာ install လုပ်ပြထားတာပါ။&lt;/p&gt;
 &lt;p&gt;&lt;img alt="XenServer on VMware Player" src="https://dl.dropboxusercontent.com/u/26716001/Photos/xenserver_on_vmplayer.png" title="XenServer on VMware Player" /&gt;&lt;/p&gt;
 &lt;p&gt;နောက်တစ်ခုအနေနဲ့ XenServer ကို manage လုပ်ဖို့အတွက် XenCenter လိုပါတယ်။ XenCenter က &lt;a href="http://downloadns.citrix.com.edgesuite.net/akdlm/8160/XenServer-6.2.0-XenCenter.msi" title="XenServer-6.2.0-XenCenter.msi"&gt;Windows installer&lt;/a&gt; ပဲရှိပြီး Linux မှာတော့ အစားထိုးသုံးစရာအနေနဲ့ &lt;a href="http://sourceforge.net/projects/openxenmanager/"&gt;OpenXenManager&lt;/a&gt; ဆိုတာရှိပါတယ်။ Ubuntu user တွေအတွက်ကတော့ Software Center ကနေ install လုပ်နိုင်ပါတယ်။&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install openxenmanager
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install openxenmanager
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;OpenXenManager က install လုပ်ပြီးရင် application list ထဲမဝင်ပါဘူး။ Terminal ကနေ ဒါမှမဟုတ် Ubuntu ရဲ့ Command Box (Alt+F2) ကနေ "openxenmanager" ဆိုပြီး run ရပါတယ်။ အဲ့လိုမှမဟုတ်ရင်လဲ&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo wget https://dl.dropboxusercontent.com/u/26716001/Ubuntu/openxenmanager.desktop -P /usr/share/applications/
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo wget https://dl.dropboxusercontent.com/u/26716001/Ubuntu/openxenmanager.desktop -P /usr/share/applications/
 &lt;/pre&gt;&lt;/div&gt;
 
 
