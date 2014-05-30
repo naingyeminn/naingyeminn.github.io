@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>    XenServer Installation Problems and Review
+</title>
+        <meta name="author" content="Naing Ye` Minn">
+        <meta name="description" content="XenServer Installation မှာကြုံရသမျှ">
+        <meta name="keywords" content="xenserver,openxenmanager,ubuntu,linux,review,">
+        <meta name="viewport" content="width=device-width">
+            <link rel="stylesheet" href="../../../../../theme/css/normalize.css">
+        <link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" />
+        <link rel="stylesheet" href="../../../../../theme/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../../../../theme/css/main.css">
+        
+
+    <link rel="stylesheet" href="../../../../../theme/css/blog.css">
+    <link rel="stylesheet" href="../../../../../theme/css/github.css">
+<!-- https://developers.google.com/custom-search/docs/structured_data?hl=es&csw=1#microformats -->
+<!--
+<PageMap>
+		<DataObject type="document">
+			<Attribute name="title">XenServer Installation Problems and Review</Attribute>
+			<Attribute name="author">Naing Ye` Minn</Attribute>
+			<Attribute name="description">XenServer Installation မှာကြုံရသမျှ</Attribute>
+			<Attribute name="page_count">1</Attribute>
+			<Attribute name="rating">5</Attribute>
+			<Attribute name="last_update">2014-05-30T05:30:00</Attribute>
+		</DataObject>
+		<DataObject type="metatags">
+			<Attribute name="category" value="Review"/>
+				<Attribute name="category" value="xenserver"/>
+				<Attribute name="category" value="openxenmanager"/>
+				<Attribute name="category" value="ubuntu"/>
+				<Attribute name="category" value="linux"/>
+				<Attribute name="category" value="review"/>
+		</DataObject>
+
+</PageMap>
+
+-->        <link href="http://naingyeminn.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn Atom Feed" />
+        <script src="../../../../../theme/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="wrapper">
+<header id="sidebar" class="side-shadow">
+    <hgroup id="site-header">
+        <a id="site-title" href="../../../../.."><h1><img src="../../../../../theme/img/me_circle.png"> Naing Ye` Minn</h1></a>
+        <p id="site-desc"></p>
+    </hgroup>
+    <nav>
+        <ul id="nav-links">
+        </ul>
+        <ul id="social-links">
+            <li><h1><a href="https://github.com/naingyeminn" title="My Github"><i class="fi-social-github"></i></a><a href="https://www.facebook.com/nyeminn" title="My Facebook"><i class="fi-social-facebook"></i></a></h1></li>
+            <li><h3><a href="../../../../../feeds/all.atom.xml" title="Feeds"><i class="fi-rss"></i></a><a href="../../../../../archives.html" title="Archive"><i class="fi-archive"></i></a><a href="../../../../../search.html" title="Search"><i class="fi-magnifying-glass"></i></a></h3></li>
+        </ul>
+    </nav>
+<footer id="site-info">
+	<p>
+		Copyright &copy; 2014 - <a href="https://www.facebook.com/nyeminn">Naing Ye` Minn.</a>
+	</p>
+    <p>
+        Proudly powered by <a href="http://getpelican.com/">Pelican</a> and <a href="http://python.org/">Python</a>.
+    </p>
+</footer></header>
+    <div id="post-container">
+        <ol id="post-list">
+            <li>
+                <article class="post-entry">
+                    <header class="entry-header">
+                        <time class="post-time" datetime="2014-05-30T05:30:00" pubdate>
+                            Fri 30 May 2014
+                        </time>
+                        <a href="../../../../../posts/2014/05/30/xenserver-installation-problems-and-review/" rel="bookmark"><h1>XenServer Installation Problems and Review</h1></a>
+                    </header>
+
+                    <section class="post-content">
+                        <p>မနေ့က အလုပ်မှာ Desktop တစ်လုံးအပိုထွက်လာတာနဲ့ XenServer စမ်းကြည့်ဖြစ်တယ်။ စက်က အမြင့်ကြီးမဟုတ်ပေမယ့် processor က VT support လုပ်တာရယ် Memory 4GB လောက်ရှိတာရယ်ကြောင့် စမ်းဖို့အဆင်ပြေသွာတယ်။ <a href="http://xenserver.org/overview-xenserver-open-source-virtualization/download.html">XenServer 6.2</a> iso လဲဆွဲထားပြီးသားရှိပေမယ့် CD အလွတ်မရှိတာနဲ့ Flash Drive နဲ့ပဲ install လုပ်မယ်ေပါ့။ အဲ့ဒီအတွက် flash drive ကို FAT32 နဲ့ format ချ၊ <a href="http://sourceforge.net/projects/unetbootin/">Unetbootin</a> နဲ့ ပုံမှန်အတိုင်းပဲ XenServer ISO ကို extract လုပ်လိုက်တာ ဖြစ်ချင်တော့ boot တက်တဲ့အချိန်မှာ kernel ရှာမရပါဘူးဆိုပြီး error ပြလာတယ်။ google မှာရှာကြည့်လိုက်တော့ USB drive ရဲ့ /boot/isolinux/ directory ထဲက isolinux.cfg ကို syslinux.cfg ဆိုပြီး တော့ရယ်၊ /boot/ ထဲက isolinux ကို syslinux ဆိုပြီး ပြောင်းပေးရတယ်။ ေနာက် /syslinux.cfg ကိုဖျက်ပေးရတယ်။</p>
+<div class="highlight"><pre>mv /media/flashdrive/boot/isolinux/isolinux.cfg /media/flashdrive/boot/isolinux/syslinux.cfg
+mv /media/flashdrive/boot/isolinux /media/flashdrive/boot/syslinux
+rm /media/flashdrive/syslinux.cfg
+</pre></div>
+
+
+<p>အဲဒါလေးလုပ်ပေးလိုက်တော့ boot တက်ပြီး <a href="http://docs.vmd.citrix.com/XenServer/6.2.0/1.0/en_gb/installation.html" title="XenServer Installation">Install</a> လုပ်လို့ရသွားတယ်။ အောက်ကပုံကတော့ VMware Player ပေါ်မှာ install လုပ်ပြထားတာပါ။</p>
+<p><img alt="XenServer on VMware Player" src="https://dl.dropboxusercontent.com/u/26716001/Photos/xenserver_on_vmplayer.png" title="XenServer on VMware Player" /></p>
+<p>နောက်တစ်ခုအနေနဲ့ XenServer ကို manage လုပ်ဖို့အတွက် XenCenter လိုပါတယ်။ XenCenter က <a href="http://downloadns.citrix.com.edgesuite.net/akdlm/8160/XenServer-6.2.0-XenCenter.msi" title="XenServer-6.2.0-XenCenter.msi">Windows installer</a> ပဲရှိပြီး Linux မှာတော့ အစားထိုးသုံးစရာအနေနဲ့ <a href="http://sourceforge.net/projects/openxenmanager/">OpenXenManager</a> ဆိုတာရှိပါတယ်။ Ubuntu user တွေအတွက်ကတော့ Software Center ကနေ install လုပ်နိုင်ပါတယ်။</p>
+<div class="highlight"><pre>sudo apt-get install openxenmanager
+</pre></div>
+
+
+<p>OpenXenManager က install လုပ်ပြီးရင် application list ထဲမဝင်ပါဘူး။ Terminal ကနေ ဒါမှမဟုတ် Ubuntu ရဲ့ Command Box (Alt+F2) ကနေ "openxenmanager" ဆိုပြီး run ရပါတယ်။ အဲ့လိုမှမဟုတ်ရင်လဲ</p>
+<div class="highlight"><pre>sudo wget https://dl.dropboxusercontent.com/u/26716001/Ubuntu/openxenmanager.desktop -P /usr/share/applications/
+</pre></div>
+
+
+<p>ဆိုတဲ့ command နဲ့ Application Shortcut ကို Terminal ကနေလှမ်းယူနိုင်ပါတယ်။</p>
+<p>XenCenter ကိုမစမ်းဖူးသေးလို့ ဘယ်လို error တွေရှိနိုင်ဆိုတာမသိပေမယ့် OpenXenManager(OXM) မှာတော့ VM create လုပ်လိုက်တဲ့အချိန် တစ်ခါတစ်ခါကျ list ထဲပေါ်မလာတာဖြစ်တတ်တယ်။ အဲဒီအတွက် OXM မှာ XenServer ကို Disconnect လုပ်ပြီး Connect ပြန်လုပ်လိုက်ရင်တော့ ေပါ်လာပါတယ်။</p>
+<p><img alt="OpenXenManager" src="https://dl.dropboxusercontent.com/u/26716001/Photos/oxm.png" /></p>
+<p>နောက်တစ်ခုကြုံရတာက VM မှာ install လုပ်ဖို့ OS တွေကို iso ဖိုင်အနေနဲ့ ssh နဲ့ဝင်ပြီး XenServer ထဲကူးထည့်လိုက်မိတယ်။ XenServer install လုပ်ချိန်တုန်းက Default အတိုင်းပဲ Partition ပိုင်းခိုင်းလိုက်တော့ Host ရဲ့ root partition size က တော်တော်သေးနေတော့ ထည့်လိုက်တဲ့ iso တွေနဲ့ပြည့်သွားတော့ Reboot လုပ်လိုက်တဲ့အချိန်ကျ XenServer XAPI Service ကို Start လုပ်မရပါဘူးဆိုတဲ့ Error ပြလာတယ်။ Network လဲမရတော့ဘူး။ ရှာဖတ်ကြည့်တော့မှ Space မလောက်ရင်ဖြစ်တတ်တယ်ဆိုတာတွေ့တာနဲ့ Server ရဲ့ Shell ကနေပဲထည့်ထားတဲ့ iso တွေပြန်ဖျက်ပြီး Reboot ထပ်လုပ်လိုက်မှ ပြန်အဆင်ပြေသွားတယ်။</p>
+<p>VM create လုပ်ပြီး Windows Server 2008 ကို Install လုပ်ကြည့်တာတော့ အဆင်ပြေပြေချောချောမွေ့မွေ့ပါပဲ။ တစ်ခုရှိတာက Install လုပ်ပြီးပြီးချင်း XenServer ကနေ Performance ကိုကြည့်ရင် CPU Usage ပဲမြင်ရပြီး Memory Usage ကိုတော့ xs-tools <a href="http://knowledgelayer.softlayer.com/learning/how-install-xenserver-tools-linux">(XenServer Tools)</a> ကိုတင်ပေးပြီးမှ မြင်ရတယ်။ xs-tools က XenServer ရဲ့ LocalStorage ထဲမှာ iso အနေနဲ့ ပါပြီးသားပါ။ VM ရဲ့ Optical Drive ထဲ အဲဒီ iso mount လုပ်ပြီး VM ထဲက CD-ROM ကနေပဲ install လုပ်ပေးလိုက်ရုံပါပဲ။ Windows VM မှာ တင်ရင်တော့ DotNet Framework 4.0 လိုပါလိမ့်မယ်။ အဲဒါလဲ xs-tools iso ထဲမှာပဲရှိပါတယ်။</p>
+<p>XenServer က အလျှင်ကတော့ Free အပြင် Enterprise, Platinum ဆိုပြီး Commercial Version တွေခွဲထုတ်ခဲ့ပေမယ့် XenServer 6.2 ကိုတော့ <a href="http://blogs.citrix.com/2013/06/25/xenserver-6-2-is-now-fully-open-source/" title="XenServer 6.2 is now Fully Open-Source">Open Source</a> အနေနဲ့ပြောင်းလိုက်ပြီး Supporting Service ကိုပဲ Commercial အနေနဲ့ လုပ်လိုက်ပါပြီ။ </p>
+<p><img alt="Feature Matrix" src="https://dl.dropboxusercontent.com/u/26716001/Photos/xenserver62FeatureMatrix.png" /></p>
+<p>Virtualization ကိုလေ့လာချင်သူတွေအတွက် VMware ရဲ့ ESXi အပြင် တခြားရွေးချယ်စရာတစ်ခုအနေနဲ့  XenServer ကို သုံးလို့တော့ရပါတယ်။ ဒါပေမယ့် ပုံမှန် Desktop တစ်လုံးနဲ့စမ်းတာကတော့ Virtualization ဆိုတာ ဘယ်လိုရှိတယ် VM တွေ ဘယ်လိုလုပ်လို့ရတယ်ဆိုတာလောက်ပဲသိနိုင်မှာပါ။ လုပ်ငန်းခွင်မှာ အသုံးချနေရတာမဟုတ်ဘူးဆိုရင်တော့ ကိုယ်ပိုင် Lab တစ်ခု ကောင်းကောင်းတည်ဆောက်နိုင်မှသာ အသေးစိပ်လေ့လာနိုင်လိမ့်မယ်လို့သာ ယူဆမိပါတယ်။</p>
+<p><strong>Related References:</strong></p>
+<ul>
+<li>
+<p><a href="http://www.linuxbrigade.com/install-xenserver-via-usb-flash-drive/">Install XenServer via USB Flash Drive</a></p>
+</li>
+<li>
+<p><a href="https://www.citrix.com/content/dam/citrix/en_us/documents/products-solutions/citrix-xenserver-core-feature-matrix.pdf">Citrix XenServer Core Feature Matrix</a></p>
+</li>
+<li>
+<p><a href="http://www.xenserver.org/overview-xenserver-open-source-virtualization/open-source-virtualization-features.html">XenServer Open Source Virtualization Features</a></p>
+</li>
+<li>
+<p><a href="http://docs.vmd.citrix.com/XenServer/6.2.0/1.0/en_gb/">XenServer Documentation</a></p>
+</li>
+</ul>
+                    </section>
+                    <hr/>
+                    <div class="fb-like" data-href="../../../../../posts/2014/05/30/xenserver-installation-problems-and-review/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                    <aside class="post-meta">
+                        <p>Category: <a href="../../../../../category/review">Review</a></p>
+                        <p>Tags: <a href="../../../../../tag/xenserver/">xenserver</a>, <a href="../../../../../tag/openxenmanager/">openxenmanager</a>, <a href="../../../../../tag/ubuntu/">ubuntu</a>, <a href="../../../../../tag/linux/">linux</a>, <a href="../../../../../tag/review/">review</a>, </p>
+                    </aside>
+                    <hr/>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+                </article>
+            </li>
+        </ol>
+    </div>
+        </div>
+
+        <script src="../../../../../theme/js/main.js"></script>
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-49993355-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>    </body>
+</html>

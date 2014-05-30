@@ -5,28 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://naingyeminn.com/index.html</loc>
-<lastmod>2014-04-27T17:51:17-00:00</lastmod>
+<lastmod>2014-05-30T17:30:08-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://naingyeminn.com/archives.html</loc>
-<lastmod>2014-04-27T17:51:17-00:00</lastmod>
+<lastmod>2014-05-30T17:30:08-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://naingyeminn.com/tags.html</loc>
-<lastmod>2014-04-27T17:51:17-00:00</lastmod>
+<lastmod>2014-05-30T17:30:08-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://naingyeminn.com/categories.html</loc>
-<lastmod>2014-04-27T17:51:17-00:00</lastmod>
+<lastmod>2014-05-30T17:30:08-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://naingyeminn.com/posts/2014/05/30/xenserver-installation-problems-and-review/</loc>
+<lastmod>2014-05-30T05:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -61,7 +68,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://naingyeminn.com/category/review</loc>
-<lastmod>2014-04-12T08:00:00-00:00</lastmod>
+<lastmod>2014-05-30T05:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -69,6 +76,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://naingyeminn.com/category/ubuntu</loc>
 <lastmod>2014-04-25T15:30:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://naingyeminn.com/tag/linux/</loc>
+<lastmod>2014-05-30T05:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -103,14 +117,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://naingyeminn.com/tag/review/</loc>
-<lastmod>2014-04-12T08:00:00-00:00</lastmod>
+<lastmod>2014-05-30T05:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://naingyeminn.com/tag/ubuntu/</loc>
-<lastmod>2014-04-25T15:30:00-00:00</lastmod>
+<lastmod>2014-05-30T05:30:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://naingyeminn.com/tag/xenserver/</loc>
+<lastmod>2014-05-30T05:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -137,6 +158,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://naingyeminn.com/tag/openxenmanager/</loc>
+<lastmod>2014-05-30T05:30:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://naingyeminn.com/tag/i-bus/</loc>
 <lastmod>2013-07-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
@@ -145,7 +173,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://naingyeminn.com/author/naing-ye-minn.html</loc>
-<lastmod>2014-04-25T15:30:00-00:00</lastmod>
+<lastmod>2014-05-30T05:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
