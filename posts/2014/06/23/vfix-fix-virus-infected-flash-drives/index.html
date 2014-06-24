@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>    vFix - Fix Virus Infected Flash Drives
+</title>
+        <meta name="author" content="Naing Ye` Minn">
+        <meta name="description" content="Virus ေကြာင့်ပျောက်နေတဲ့ Flash Drive ထဲက Data တွေ ကို Linux ဖြင့်ပြန်ဖော်ခြင်း">
+        <meta name="keywords" content="ubuntu,linux,terminal,cli,tips&tricks,">
+        <meta name="viewport" content="width=device-width">
+            <link rel="stylesheet" href="../../../../../theme/css/normalize.css">
+        <link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" />
+        <link rel="stylesheet" href="../../../../../theme/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../../../../theme/css/main.css">
+        
+
+    <link rel="stylesheet" href="../../../../../theme/css/blog.css">
+    <link rel="stylesheet" href="../../../../../theme/css/github.css">
+<!-- https://developers.google.com/custom-search/docs/structured_data?hl=es&csw=1#microformats -->
+<!--
+<PageMap>
+		<DataObject type="document">
+			<Attribute name="title">vFix - Fix Virus Infected Flash Drives</Attribute>
+			<Attribute name="author">Naing Ye` Minn</Attribute>
+			<Attribute name="description">Virus ေကြာင့်ပျောက်နေတဲ့ Flash Drive ထဲက Data တွေ ကို Linux ဖြင့်ပြန်ဖော်ခြင်း</Attribute>
+			<Attribute name="page_count">1</Attribute>
+			<Attribute name="rating">5</Attribute>
+			<Attribute name="last_update">2014-06-23T05:30:00</Attribute>
+		</DataObject>
+		<DataObject type="metatags">
+			<Attribute name="category" value="Tips&Trcks"/>
+				<Attribute name="category" value="ubuntu"/>
+				<Attribute name="category" value="linux"/>
+				<Attribute name="category" value="terminal"/>
+				<Attribute name="category" value="cli"/>
+				<Attribute name="category" value="tips&tricks"/>
+		</DataObject>
+
+</PageMap>
+
+-->        <link href="http://naingyeminn.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn Atom Feed" />
+        <script src="../../../../../theme/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="wrapper">
+<header id="sidebar" class="side-shadow">
+    <hgroup id="site-header">
+        <a id="site-title" href="../../../../.."><h1><img src="../../../../../theme/img/me_circle.png"> Naing Ye` Minn</h1></a>
+        <p id="site-desc"></p>
+    </hgroup>
+    <nav>
+        <ul id="nav-links">
+        </ul>
+        <ul id="social-links">
+            <li><h1><a href="https://github.com/naingyeminn" title="My Github"><i class="fi-social-github"></i></a><a href="https://www.facebook.com/nyeminn" title="My Facebook"><i class="fi-social-facebook"></i></a></h1></li>
+            <li><h3><a href="../../../../../feeds/all.atom.xml" title="Feeds"><i class="fi-rss"></i></a><a href="../../../../../archives.html" title="Archive"><i class="fi-archive"></i></a><a href="../../../../../search.html" title="Search"><i class="fi-magnifying-glass"></i></a></h3></li>
+        </ul>
+    </nav>
+<footer id="site-info">
+	<p>
+		Copyright &copy; 2014 - <a href="https://www.facebook.com/nyeminn">Naing Ye` Minn.</a>
+	</p>
+    <p>
+        Proudly powered by <a href="http://getpelican.com/">Pelican</a> and <a href="http://python.org/">Python</a>.
+    </p>
+</footer></header>
+    <div id="post-container">
+        <ol id="post-list">
+            <li>
+                <article class="post-entry">
+                    <header class="entry-header">
+                        <time class="post-time" datetime="2014-06-23T05:30:00" pubdate>
+                            Mon 23 June 2014
+                        </time>
+                        <a href="../../../../../posts/2014/06/23/vfix-fix-virus-infected-flash-drives/" rel="bookmark"><h1>vFix - Fix Virus Infected Flash Drives</h1></a>
+                    </header>
+
+                    <section class="post-content">
+                        <p>ရုံးမှာ တစ်ခါတစ်ခါ Virus ဝင်ထားတဲ့ Flash Drive တွေ ယူယူလာ Data တွေမတွေ့တော့လို့ဆိုပြီး လာပြလေ့ရှိပါတယ်။ များသောအားဖြင့် Windows Virus တွေက Flash Drive ကနေပဲကူးကြတာများပါတယ်။ ကူးပြီဆိုရင်လဲ Drive ထဲရှိတဲ့ Folder တွေကို Hidden လုပ် Folder နဲ့ နာမည်တူ Link တွေထုတ်ပြီး virus file ကိုသွားချိတ်လေ့ရှိပါတယ်။ Windows မှာရှိတဲ့ Antivirus က Virus ကိုရှင်လိုက်နိုင်တယ်ဆိုရင်တောင် အဲဒီ Virus က Hidden လုပ်သွားတဲ့ Flash Drive ထဲက Folder တွေကိုတော့ ပြန်ဖေါ်ပေးလေ့မရှိပါဘူး။ </p>
+<p>အကယ်၍များ Linux မှာ အဲ့ Drive ကိုသွားသုံးမယ်ဆိုရင်တော့ Hidden ဖြစ်နေတဲ့ Folder တွေကိုမြင်ရပါလိမ့်မယ်။ Drive ထဲ Virus ရှိနေသေးတယ်ဆိုရင်တောင် အဲဒီ Windows က Virus တွေက Linux ပေါ်မှာအလုပ်မလုပ်ပါဘူး။ လိုတာက အဲဒီ Virus ဖိုင်( .exe, .bat) စတာတွေကို ကိုယ်တိုင် delete လုပ်ေပးဖို့ပါပဲ။ နောက်ပြီး Hidden တွေကို ပြန်ေဖာ်တာ virus ကလုပ်သွားတဲ့ Shortcut (.lnk) File တွေကိုပြန်ဖျက်တာတွေ လုပ်ပေးရပါတယ်။ ဒါပေမယ့် Windows File System အရ Hidden လုပ်ထားတဲ့ Folder တွေကို ပြန်ဖော်ပေးဖို့အတွက် Ubuntu မှာတော့ package တချို့ ထပ်တင်ရပါတယ်။ နောက်ပြီး Terminal ကနေ command နဲ့ Folder တွေတစ်ခုချင်း လိုက်ပြီး Hidden attribute လိုက်ဖြုတ်ပေးရပါတယ်။ Windows ပေါ်မှာ တော့ cmd ထဲဝင် "attrib -s -h folder_name" ဆိုပြီး ပြန်ေဖာ်ပေးလို့ ရပါတယ်။ </p>
+<p>ခက်တာက Folder အရမ်းများတာ၊ Sub-Folder တွေပါ Hidden ဖြစ်နေတာဆိုရင် ပြန်ေဖာ်ရတာ လက်ဝင်ပါတယ်။ Windows မှာ Batch တို့ VBScript တို့သုံးပြီး ဒီပြဿနာကို ရှင်းလို့ ရကောင်းရနိုင်ပါလိမ့်မယ်။ ဒါပေမယ့် Linux ပဲသုံးတဲ့သူတွေအတွက်တော့ အခုလို Virus ပြဿနာအတွက် အကူအညီလာတောင်းရင် အလွယ်တကူရှင်းပေးနိုင်အောင် ရည်ရွယ်ပြီး ဒီ Script လေးရေးဖြစ်သွားတာပါ။ ကိုယ်တိုင်လဲ အမြဲကြုံနေရတော့ command တွေအခါခါရိုက်ပြီး ရှင်းပေးနေရာတာ အချိန်ကုန်တာကြောင့်လဲ ပါပါတယ်။ </p>
+<p>Ubuntu မှာ vFix ကို သုံးဖို့ attr နဲ့ fatattr ဆိုတဲ့ package တွေလိုပါတယ်။ vFix install လုပ်တဲ့အချိန် တပါတည်း install လုပ်သွားပါလိမ့်မယ်။ အဲဒီအတွက် internet connection ရှိနေဖို့တော့လိုပါတယ်။ Install လုပ်ဖို့ အတွက် </p>
+<ul>
+<li><a href="https://github.com/naingyeminn/vFix/archive/master.zip">vFix</a> zip file ကို Download လုပ်ပါ။ </li>
+</ul>
+<div class="highlight"><pre><span class="nv">$ </span>wget https://github.com/naingyeminn/vFix/archive/master.zip -O vFix.zip
+</pre></div>
+
+
+<ul>
+<li>ရလာတဲ့ vFix.zip ကို extract လုပ်ပါ။</li>
+</ul>
+<div class="highlight"><pre><span class="nv">$ </span>unzip vFix.zip
+</pre></div>
+
+
+<ul>
+<li>Extract လုပ်ထားတဲ့ Directory ထဲ ကို Terminal ကနေဝင်ပါ။</li>
+</ul>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>vFix-master
+</pre></div>
+
+
+<ul>
+<li>နောက်ဆုံးအနေနဲ့ make command ကို root permission နဲ့ run ပေးရုံပါပဲ။</li>
+</ul>
+<div class="highlight"><pre><span class="nv">$ </span>sudo make
+</pre></div>
+
+
+<p>သုံးပုံ သုံးနည်းကတော့ Fix လုပ်ချင်တဲ့ Flash Drive ကို တပ်ပြီး mount လုပ်လိုက်ပါ။ ပြီးရင်တော့ vfix ဆိုတဲ့ command နဲ့သုံးပြီး fix လုပ်ရုံပါပဲ။</p>
+<div class="highlight"><pre><span class="nv">$ </span>vfix /media/your_mounted_drive/
+</pre></div>
+
+
+<p>Or</p>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd</span> /media/your_mounted_drive/
+<span class="nv">$ </span>vfix
+</pre></div>
+
+
+<p>your_mounted_drive ဆိုတဲ့နေရာမှာက ကိုယ့် drive ရဲ့ name ကိုထည့်ရမှာပါ။ ပြန်ပြောရရင် ဒီ script က drive ထဲမှာရှိသမျှ folder တွေကို Hidden Attribute ဖြုတ်ပေးသွားမယ့်အပြင် မလိုအပ်တဲ့ .lnk file တွေ, autorun.inf နဲ့ RECYCLER folder တို့ကို ဖျက်ပေးသွားမှာပါ။ ဒါကြောင့် မိတ်ဆွေ သူငယ်ချင်း တစ်ယောက်ယောက်က သူ့ Flash Drive ကို virus ဝင်ထားလို့ folder တွေ ပျောက်နေတယ် ဆိုရင် ကိုယ့်ရဲ့ Ubuntu Linux မှာ ဒီ script လေးသုံးပြီး အလွယ်တကူ ဖြေရှင်းပေးနိုင်ပါကြောင်း မျှဝေလိုက်ရပါတယ်။</p>
+<h3><a href="https://github.com/naingyeminn/vFix">vFix on GitHub</a></h3>
+                    </section>
+                    <hr/>
+                    <div class="fb-like" data-href="../../../../../posts/2014/06/23/vfix-fix-virus-infected-flash-drives/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                    <aside class="post-meta">
+                        <p>Category: <a href="../../../../../category/tipstrcks">Tips&Trcks</a></p>
+                        <p>Tags: <a href="../../../../../tag/ubuntu/">ubuntu</a>, <a href="../../../../../tag/linux/">linux</a>, <a href="../../../../../tag/terminal/">terminal</a>, <a href="../../../../../tag/cli/">cli</a>, <a href="../../../../../tag/tipstricks/">tips&tricks</a>, </p>
+                    </aside>
+                    <hr/>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+                </article>
+            </li>
+        </ol>
+    </div>
+        </div>
+
+        <script src="../../../../../theme/js/main.js"></script>
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-49993355-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>    </body>
+</html>
