@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://naingyeminn.com/index.html</loc>
-<lastmod>2014-06-24T15:17:16-00:00</lastmod>
+<lastmod>2014-06-25T09:14:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://naingyeminn.com/archives.html</loc>
-<lastmod>2014-06-24T15:17:16-00:00</lastmod>
+<lastmod>2014-06-25T09:14:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://naingyeminn.com/tags.html</loc>
-<lastmod>2014-06-24T15:17:16-00:00</lastmod>
+<lastmod>2014-06-25T09:14:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://naingyeminn.com/categories.html</loc>
-<lastmod>2014-06-24T15:17:16-00:00</lastmod>
+<lastmod>2014-06-25T09:14:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -109,6 +109,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://naingyeminn.com/tag/shell/</loc>
+<lastmod>2014-06-23T05:30:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://naingyeminn.com/tag/cli/</loc>
 <lastmod>2014-06-23T05:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
@@ -118,6 +125,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://naingyeminn.com/tag/myanmar/</loc>
 <lastmod>2014-04-25T15:30:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://naingyeminn.com/tag/script/</loc>
+<lastmod>2014-06-23T05:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -158,8 +172,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://naingyeminn.com/tag/xenserver/</loc>
-<lastmod>2014-05-30T05:30:00-00:00</lastmod>
+<loc>http://naingyeminn.com/tag/windows/</loc>
+<lastmod>2014-06-23T05:30:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://naingyeminn.com/tag/virus/</loc>
+<lastmod>2014-06-23T05:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -193,6 +214,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://naingyeminn.com/tag/xenserver/</loc>
+<lastmod>2014-05-30T05:30:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://naingyeminn.com/tag/i-bus/</loc>
 <lastmod>2013-07-12T08:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
@@ -202,6 +230,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://naingyeminn.com/tag/openxenmanager/</loc>
 <lastmod>2014-05-30T05:30:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://naingyeminn.com/tag/bash/</loc>
+<lastmod>2014-06-23T05:30:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
