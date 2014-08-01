@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Naing Ye` Minn</title><link>http://naingyeminn.com/</link><description></description><atom:link href="http://naingyeminn.com/feeds/naing-ye-minn.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 03 Jul 2014 05:30:00 +0630</lastBuildDate><item><title>Tips for Ubuntu-MM</title><link>http://naingyeminn.com/posts/2014/07/03/tips-for-ubuntu-mm/</link><description>&lt;h3&gt;&lt;code&gt;$&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Terminal မှ User ၏ Command Prompt ကိုဆိုလိုခြင်းဖြစ်သည်။ Online မှ Blog များ Tutorial များတွင် Command များကိုဖော်ပြရာ၌ ထည့်သွင်းဖော်ပြလေ့ရှိသည်။ သို့သော် ထို Command အား ကူးယူ အသုံးပြုရာတွင် ထည့်သွင်းအသုံးပြုစရာမလိုပါ။ &lt;code&gt;$ sudo apt-get update&lt;/code&gt; ဟုဖော်ပြထားပါက &lt;code&gt;sudo apt-get update&lt;/code&gt; ဆိုသော command  သာကူယူအသုံးပြုရန်လိုအပ်သည်။ &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$&lt;/code&gt; အား စာလုံးတစ်ချို့နှင့် ကပ်၍အသုံးပြုထားပါက shell variable အဖြစ် သတ်မှတ်ထားသည်ကို ပြန်လည်ခေါ်ယူ အသုံးပြုခြင်းဖြစ်သည်။ &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ var&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$var&lt;/span&gt;
+Hello
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;အဆိုပါဥပမာရှိ line တစ်ခုချင်း၏ ရှေ့တွင်တွေ့ရသော &lt;code&gt;$&lt;/code&gt; သည် Command Prompt ကိုဆိုလိုခြင်းဖြစ်ပြီး ဒုတိယ line တွင်ပြထားသော $var သည် shell variable ကိုဆိုလိုခြင်းဖြစ်သည်။&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;&lt;code&gt;#&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;$&lt;/code&gt; ကဲသို့ပင် Command များ၏ရှေ့တွင်　ေဖာ်ပြလေ့ရှိသည်။ &lt;code&gt;root user&lt;/code&gt; &lt;code&gt;super user&lt;/code&gt; အနေဖြင့် အသုံးပြုထားသော Terminal ၏ Command Prompt ကိုဆိုလိုခြင်းဖြစ်သည်။ သာမန် User Prompt &lt;code&gt;$&lt;/code&gt; မှ Root User Prompt &lt;code&gt;#&lt;/code&gt; သို့ ပြောင်းလိုပါက - &lt;code&gt;sudo -s&lt;/code&gt; command ဖြင့်ပြောင်းနိုင်သည်။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo -s
+&lt;span class="o"&gt;[&lt;/span&gt;sudo&lt;span class="o"&gt;]&lt;/span&gt; password &lt;span class="k"&gt;for &lt;/span&gt;user: 
+&lt;span class="c"&gt;# &lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr /&gt;
+&lt;h3&gt;&lt;code&gt;~/&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;သင်၏ &lt;code&gt;Home Directory&lt;/code&gt; ကိုဆိုလိုခြင်းဖြစ်သည်။ တနည်းအားဖြင့် &lt;code&gt;/home/yourname&lt;/code&gt; နှင့်တူညီသည်။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /home/yourname
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr /&gt;
+&lt;h3&gt;&lt;code&gt;./&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Terminal တွင် သင်ရောက်ရှိနေသော လက်ရှိ Directory ကို ဆိုလိုသည်။ Executable file များကို terminal မှတဆင့် run သောအခါတွင်အသုံးပြုလေ့ရှိသည်။ ဥပမာတွင်ပြထားသည်မှာ လက်ရှိ ရောက်ရှိနေသော Directory ထဲမှ script ဆိုသော Executable File ကို run လိုက်ခြင်းဖြစ်သည်။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;./script
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr /&gt;
+&lt;h3&gt;&lt;code&gt;.&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;File သို့မဟုတ် Folder တို့၏ အမည်ရှေ့တွင် &lt;code&gt;.&lt;/code&gt; ထည့်ပါက ထို File/Folder သည် File Manager ထဲတွင်သာမန်အားဖြင့် မြင်ရမည်မဟုတ်ပါ။ ထို File/Folder များအား File Manager တွင် မြင်နိုင်စေရန် &lt;code&gt;Control + H&lt;/code&gt; Key အား နှိပ်၍ ဖော်နိုင်သည်။ အများအားဖြင့် System Configuration file များ folder များတွင်အသုံးပြုလေ့ရှိသည်။ User ၏ Home Directory &lt;code&gt;~/&lt;/code&gt; ထဲတွင် &lt;code&gt;.local&lt;/code&gt;, &lt;code&gt;.config&lt;/code&gt; စသဖြင့်တွေ့နိုင်သည်။&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;&lt;code&gt;sudo&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;root&lt;/code&gt; တနည်းအားဖြင့် &lt;code&gt;super&lt;/code&gt; user အနေဖြင့် command များ executable file များအား run သောအခါတွင် သုံးသည်။ Windows တွင် Administrator အနေဖြင့် အသုံးပြုသည်နှင့် တူညီသည်။&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Command, Option and Parameter&lt;/h3&gt;
+&lt;p&gt;Terminal တွင်း အသုံးပြုသော command များသည် အများအားဖြင့် လက်ရှိရောက်ရှိနေသော Directory နှင့် အတွင်းရှိ File/Folder များတွင်သာ သက်ရောက်သည်။ အထူးထပ်မံဖြည့်စွက်လိုက်သော Options များ Parameter များပေါ်မူတည်၍သာ အပြောင်းအလဲများရှိသည်။ ဥပမာပြရလျှင် &lt;code&gt;ls&lt;/code&gt; command သည် လက်ရှိရောက်ရှိနေသော Directory ထဲမှ File/Folder စာရင်းကို ပြပေးသည်။ &lt;code&gt;ls /usr/share&lt;/code&gt; ဟူ၍ parameter အနေဖြင့် Directory Path &lt;code&gt;/usr/share&lt;/code&gt; ကိုထည့်ပါက ထို Directory ထဲမှ File/Folder များကိုပြပေးမည်ဖြစ်သည်။ &lt;/p&gt;
+&lt;p&gt;Blog များ Tutorial များတွင်ဖော်ပြထားသော Linux Command များအား ကူးယူအသုံးပြုရာတွင် Error များ တက်နိုင်ပါသည်။ အချို့ Command များမှာ မိမိ Install ပြုလုပ်မထားခြင်းကြောင့် ဖြစ်နိုင်သလို ကူယူရာတွင် text format လွဲချော်ခြင်းကြောင့်လဲဖြစ်နိုင်ပါသည်။&lt;/p&gt;
+&lt;p&gt;Command များသည် အများအားဖြင့် အောက်ပါ format အတိုင်းရှိတတ်ပါသည်။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;wget -O skype-ubuntu-current_i386.deb http://www.skype.com/go/getskype-linux-beta-ubuntu-32
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;အဆိုပါစာကြောင်းတွင် &lt;code&gt;wget&lt;/code&gt; သည် Internet ရှိ File များအား terminal မှတဆင့် Download ပြုလုပ်ရာတွင်သုံးသော command တစ်ခုဖြစ်သည်။ &lt;code&gt;-O&lt;/code&gt; သည် command ၏ Option ဖြစ်သည်။ Download ဆွဲလိုက်သော file အား နာမည်တစ်ခုဖြင့် ပြောင်းလဲစေလိုလျှင်သုံးပါသည်။ &lt;code&gt;-O&lt;/code&gt; နောက်တွင်ရှိသော &lt;code&gt;skype-ubuntu-current_i386.deb&lt;/code&gt; သည် ပြောင်းလဲလိုသော File နာမည်ဖြစ်ပြီး ၄င်း၏နောက်ရှိ &lt;code&gt;http://www.skype.com/go/getskype-linux-beta-ubuntu-32&lt;/code&gt; သည် Download ပြုလုပ်မည့် File ရှိရာလမ်းကြောင်း (Link) ဖြစ်သည်။ ထို အစိတ်အပိုင်းတစ်ခုစီ၏ ကြားတွင် Space ခြားထားသည်ကို သတိပြုရန်လိုအပ်သည်။&lt;/p&gt;
+&lt;p&gt;"wget &lt;code&gt;space&lt;/code&gt; -O &lt;code&gt;space&lt;/code&gt; skype-ubuntu-current_i386.deb &lt;code&gt;space&lt;/code&gt; http://www.skype.com/go/getskype-linux-beta-ubuntu-32"&lt;/p&gt;
+&lt;p&gt;Command များအသုံးပြုရာတွင် &lt;code&gt;-&lt;/code&gt;, &lt;code&gt;--&lt;/code&gt;, နှင့် Space တို့ကို အထူးကရုပြုရမည်ဖြစ်ပြီး လွဲချော်နေပါက ထို Command အလုပ်လုပ်မည်မဟုတ်ပါ။&lt;/p&gt;
+&lt;hr /&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Naing Ye` Minn</dc:creator><pubDate>Thu, 03 Jul 2014 05:30:00 +0630</pubDate><guid>tag:naingyeminn.com,2014-07-03:posts/2014/07/03/tips-for-ubuntu-mm/</guid><category>ubuntu</category><category>linux</category><category>terminal</category><category>cli</category><category>tips&amp;tricks</category></item><item><title>vFix - Fix Virus Infected Flash Drives</title><link>http://naingyeminn.com/posts/2014/06/23/vfix-fix-virus-infected-flash-drives/</link><description>&lt;p&gt;ရုံးမှာ တစ်ခါတစ်ခါ Virus ဝင်ထားတဲ့ Flash Drive တွေ ယူယူလာ Data တွေမတွေ့တော့လို့ဆိုပြီး လာပြလေ့ရှိပါတယ်။ များသောအားဖြင့် Windows Virus တွေက Flash Drive ကနေပဲကူးကြတာများပါတယ်။ ကူးပြီဆိုရင်လဲ Drive ထဲရှိတဲ့ Folder တွေကို Hidden လုပ် Folder နဲ့ နာမည်တူ Link တွေထုတ်ပြီး virus file ကိုသွားချိတ်လေ့ရှိပါတယ်။ Windows မှာရှိတဲ့ Antivirus က Virus ကိုရှင်လိုက်နိုင်တယ်ဆိုရင်တောင် အဲဒီ Virus က Hidden လုပ်သွားတဲ့ Flash Drive ထဲက Folder တွေကိုတော့ ပြန်ဖေါ်ပေးလေ့မရှိပါဘူး။ &lt;/p&gt;
+&lt;p&gt;အကယ်၍များ Linux မှာ အဲ့ Drive ကိုသွားသုံးမယ်ဆိုရင်တော့ Hidden ဖြစ်နေတဲ့ Folder တွေကိုမြင်ရပါလိမ့်မယ်။ Drive ထဲ Virus ရှိနေသေးတယ်ဆိုရင်တောင် အဲဒီ Windows က Virus တွေက Linux ပေါ်မှာအလုပ်မလုပ်ပါဘူး။ လိုတာက အဲဒီ Virus ဖိုင်( .exe, .bat) စတာတွေကို ကိုယ်တိုင် delete လုပ်ေပးဖို့ပါပဲ။ နောက်ပြီး Hidden တွေကို ပြန်ေဖာ်တာ virus ကလုပ်သွားတဲ့ Shortcut (.lnk) File တွေကိုပြန်ဖျက်တာတွေ လုပ်ပေးရပါတယ်။ ဒါပေမယ့် Windows File System အရ Hidden လုပ်ထားတဲ့ Folder တွေကို ပြန်ဖော်ပေးဖို့အတွက် Ubuntu မှာတော့ package တချို့ ထပ်တင်ရပါတယ်။ နောက်ပြီး Terminal ကနေ command နဲ့ Folder တွေတစ်ခုချင်း လိုက်ပြီး Hidden attribute လိုက်ဖြုတ်ပေးရပါတယ်။ Windows ပေါ်မှာ တော့ cmd ထဲဝင် "attrib -s -h folder_name" ဆိုပြီး ပြန်ေဖာ်ပေးလို့ ရပါတယ်။ &lt;/p&gt;
+&lt;p&gt;ခက်တာက Folder အရမ်းများတာ၊ Sub-Folder တွေပါ Hidden ဖြစ်နေတာဆိုရင် ပြန်ေဖာ်ရတာ လက်ဝင်ပါတယ်။ Windows မှာ Batch တို့ VBScript တို့သုံးပြီး ဒီပြဿနာကို ရှင်းလို့ ရကောင်းရနိုင်ပါလိမ့်မယ်။ ဒါပေမယ့် Linux ပဲသုံးတဲ့သူတွေအတွက်တော့ အခုလို Virus ပြဿနာအတွက် အကူအညီလာတောင်းရင် အလွယ်တကူ ရှင်းပေးနိုင်အောင် ရည်ရွယ်ပြီး ဒီ Script လေးရေးဖြစ်သွားတာပါ။ ကိုယ်တိုင်လဲ အမြဲကြုံနေရတော့ command တွေအခါခါရိုက်ပြီး ရှင်းပေးနေရာတာ အချိန်ကုန်တာကြောင့်လဲ ပါပါတယ်။ &lt;/p&gt;
+&lt;p&gt;Ubuntu မှာ vFix ကို သုံးဖို့ attr နဲ့ fatattr ဆိုတဲ့ package တွေလိုပါတယ်။ vFix install လုပ်တဲ့အချိန် တပါတည်း install လုပ်သွားပါလိမ့်မယ်။ အဲဒီအတွက် internet connection ရှိနေဖို့တော့လိုပါတယ်။ Install လုပ်ဖို့ အတွက် &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/naingyeminn/vFix/archive/master.zip"&gt;vFix&lt;/a&gt; zip file ကို Download လုပ်ပါ။ &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;wget https://github.com/naingyeminn/vFix/archive/master.zip -O vFix.zip
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;ရလာတဲ့ vFix.zip ကို extract လုပ်ပါ။&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;unzip vFix.zip
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Extract လုပ်ထားတဲ့ Directory ထဲ ကို Terminal ကနေဝင်ပါ။&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;vFix-master
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;နောက်ဆုံးအနေနဲ့ make command ကို root permission နဲ့ run ပေးရုံပါပဲ။&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo make
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;သုံးပုံ သုံးနည်းကတော့ Fix လုပ်ချင်တဲ့ Flash Drive ကို တပ်ပြီး mount လုပ်လိုက်ပါ။ ပြီးရင်တော့ vfix ဆိုတဲ့ command နဲ့သုံးပြီး fix လုပ်ရုံပါပဲ။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;vfix /media/your_mounted_drive/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Or&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /media/your_mounted_drive/
+&lt;span class="nv"&gt;$ &lt;/span&gt;vfix
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;your_mounted_drive ဆိုတဲ့နေရာမှာက ကိုယ့် drive ရဲ့ name ကိုထည့်ရမှာပါ။ ပြန်ပြောရရင် ဒီ script က drive ထဲမှာရှိသမျှ folder တွေကို Hidden Attribute ဖြုတ်ပေးသွားမယ့်အပြင် မလိုအပ်တဲ့ .lnk file တွေ, autorun.inf နဲ့ RECYCLER folder တို့ကို ဖျက်ပေးသွားမှာပါ။ ဒါကြောင့် မိတ်ဆွေ သူငယ်ချင်း တစ်ယောက်ယောက်က သူ့ Flash Drive ကို virus ဝင်ထားလို့ folder တွေ ပျောက်နေတယ် ဆိုရင် ကိုယ့်ရဲ့ Ubuntu Linux မှာ ဒီ script လေးသုံးပြီး အလွယ်တကူ ဖြေရှင်းပေးနိုင်ပါကြောင်း မျှဝေလိုက်ရပါတယ်။&lt;/p&gt;
+&lt;h3&gt;&lt;a href="https://github.com/naingyeminn/vFix"&gt;vFix on GitHub&lt;/a&gt;&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Naing Ye` Minn</dc:creator><pubDate>Mon, 23 Jun 2014 05:30:00 +0630</pubDate><guid>tag:naingyeminn.com,2014-06-23:posts/2014/06/23/vfix-fix-virus-infected-flash-drives/</guid><category>ubuntu</category><category>linux</category><category>windows</category><category>virus</category><category>bash</category><category>shell</category><category>script</category><category>terminal</category><category>cli</category><category>tips&amp;tricks</category></item><item><title>XenServer Installation Problems and Review</title><link>http://naingyeminn.com/posts/2014/05/30/xenserver-installation-problems-and-review/</link><description>&lt;p&gt;မနေ့က အလုပ်မှာ Desktop တစ်လုံးအပိုထွက်လာတာနဲ့ XenServer စမ်းကြည့်ဖြစ်တယ်။ စက်က အမြင့်ကြီးမဟုတ်ပေမယ့် processor က VT support လုပ်တာရယ် Memory 4GB လောက်ရှိတာရယ်ကြောင့် စမ်းဖို့အဆင်ပြေသွာတယ်။ &lt;a href="http://xenserver.org/overview-xenserver-open-source-virtualization/download.html"&gt;XenServer 6.2&lt;/a&gt; iso လဲဆွဲထားပြီးသားရှိပေမယ့် CD အလွတ်မရှိတာနဲ့ Flash Drive နဲ့ပဲ install လုပ်မယ်ေပါ့။ အဲ့ဒီအတွက် flash drive ကို FAT32 နဲ့ format ချ၊ &lt;a href="http://sourceforge.net/projects/unetbootin/"&gt;Unetbootin&lt;/a&gt; နဲ့ ပုံမှန်အတိုင်းပဲ XenServer ISO ကို extract လုပ်လိုက်တာ ဖြစ်ချင်တော့ boot တက်တဲ့အချိန်မှာ kernel ရှာမရပါဘူးဆိုပြီး error ပြလာတယ်။ google မှာရှာကြည့်လိုက်တော့ USB drive ရဲ့ /boot/isolinux/ directory ထဲက isolinux.cfg ကို syslinux.cfg ဆိုပြီး တော့ရယ်၊ /boot/ ထဲက isolinux ကို syslinux ဆိုပြီး ပြောင်းပေးရတယ်။ ေနာက် /syslinux.cfg ကိုဖျက်ပေးရတယ်။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mv /media/flashdrive/boot/isolinux/isolinux.cfg /media/flashdrive/boot/isolinux/syslinux.cfg
+&lt;span class="nv"&gt;$ &lt;/span&gt;mv /media/flashdrive/boot/isolinux /media/flashdrive/boot/syslinux
+&lt;span class="nv"&gt;$ &lt;/span&gt;rm /media/flashdrive/syslinux.cfg
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;အဲဒါလေးလုပ်ပေးလိုက်တော့ boot တက်ပြီး &lt;a href="http://docs.vmd.citrix.com/XenServer/6.2.0/1.0/en_gb/installation.html" title="XenServer Installation"&gt;Install&lt;/a&gt; လုပ်လို့ရသွားတယ်။ အောက်ကပုံကတော့ VMware Player ပေါ်မှာ install လုပ်ပြထားတာပါ။&lt;/p&gt;
+&lt;p&gt;&lt;img alt="XenServer on VMware Player" src="https://dl.dropboxusercontent.com/u/26716001/Photos/xenserver_on_vmplayer.png" title="XenServer on VMware Player" /&gt;&lt;/p&gt;
+&lt;p&gt;နောက်တစ်ခုအနေနဲ့ XenServer ကို manage လုပ်ဖို့အတွက် XenCenter လိုပါတယ်။ XenCenter က &lt;a href="http://downloadns.citrix.com.edgesuite.net/akdlm/8160/XenServer-6.2.0-XenCenter.msi" title="XenServer-6.2.0-XenCenter.msi"&gt;Windows installer&lt;/a&gt; ပဲရှိပြီး Linux မှာတော့ အစားထိုးသုံးစရာအနေနဲ့ &lt;a href="http://sourceforge.net/projects/openxenmanager/"&gt;OpenXenManager&lt;/a&gt; ဆိုတာရှိပါတယ်။ Ubuntu user တွေအတွက်ကတော့ Software Center ကနေ install လုပ်နိုင်ပါတယ်။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install openxenmanager
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;OpenXenManager က install လုပ်ပြီးရင် application list ထဲမဝင်ပါဘူး။ Terminal ကနေ ဒါမှမဟုတ် Ubuntu ရဲ့ Command Box (Alt+F2) ကနေ "openxenmanager" ဆိုပြီး run ရပါတယ်။ အဲ့လိုမှမဟုတ်ရင်လဲ&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo wget https://dl.dropboxusercontent.com/u/26716001/Ubuntu/openxenmanager.desktop -P /usr/share/applications/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ဆိုတဲ့ command နဲ့ Application Shortcut ကို Terminal ကနေလှမ်းယူနိုင်ပါတယ်။&lt;/p&gt;
+&lt;p&gt;XenCenter ကိုမစမ်းဖူးသေးလို့ ဘယ်လို error တွေရှိနိုင်ဆိုတာမသိပေမယ့် OpenXenManager(OXM) မှာတော့ VM create လုပ်လိုက်တဲ့အချိန် တစ်ခါတစ်ခါကျ list ထဲပေါ်မလာတာဖြစ်တတ်တယ်။ အဲဒီအတွက် OXM မှာ XenServer ကို Disconnect လုပ်ပြီး Connect ပြန်လုပ်လိုက်ရင်တော့ ေပါ်လာပါတယ်။&lt;/p&gt;
+&lt;p&gt;&lt;img alt="OpenXenManager" src="https://dl.dropboxusercontent.com/u/26716001/Photos/oxm.png" /&gt;&lt;/p&gt;
+&lt;p&gt;နောက်တစ်ခုကြုံရတာက VM မှာ install လုပ်ဖို့ OS တွေကို iso ဖိုင်အနေနဲ့ ssh နဲ့ဝင်ပြီး XenServer ထဲကူးထည့်လိုက်မိတယ်။ XenServer install လုပ်ချိန်တုန်းက Default အတိုင်းပဲ Partition ပိုင်းခိုင်းလိုက်တော့ Host ရဲ့ root partition size က တော်တော်သေးနေတော့ ထည့်လိုက်တဲ့ iso တွေနဲ့ပြည့်သွားတော့ Reboot လုပ်လိုက်တဲ့အချိန်ကျ XenServer XAPI Service ကို Start လုပ်မရပါဘူးဆိုတဲ့ Error ပြလာတယ်။ Network လဲမရတော့ဘူး။ ရှာဖတ်ကြည့်တော့မှ Space မလောက်ရင်ဖြစ်တတ်တယ်ဆိုတာတွေ့တာနဲ့ Server ရဲ့ Shell ကနေပဲထည့်ထားတဲ့ iso တွေပြန်ဖျက်ပြီး Reboot ထပ်လုပ်လိုက်မှ ပြန်အဆင်ပြေသွားတယ်။&lt;/p&gt;
+&lt;p&gt;VM create လုပ်ပြီး Windows Server 2008 ကို Install လုပ်ကြည့်တာတော့ အဆင်ပြေပြေချောချောမွေ့မွေ့ပါပဲ။ တစ်ခုရှိတာက Install လုပ်ပြီးပြီးချင်း XenServer ကနေ Performance ကိုကြည့်ရင် CPU Usage ပဲမြင်ရပြီး Memory Usage ကိုတော့ xs-tools &lt;a href="http://knowledgelayer.softlayer.com/learning/how-install-xenserver-tools-linux"&gt;(XenServer Tools)&lt;/a&gt; ကိုတင်ပေးပြီးမှ မြင်ရတယ်။ xs-tools က XenServer ရဲ့ LocalStorage ထဲမှာ iso အနေနဲ့ ပါပြီးသားပါ။ VM ရဲ့ Optical Drive ထဲ အဲဒီ iso mount လုပ်ပြီး VM ထဲက CD-ROM ကနေပဲ install လုပ်ပေးလိုက်ရုံပါပဲ။ Windows VM မှာ တင်ရင်တော့ DotNet Framework 4.0 လိုပါလိမ့်မယ်။ အဲဒါလဲ xs-tools iso ထဲမှာပဲရှိပါတယ်။&lt;/p&gt;
+&lt;p&gt;XenServer က အလျှင်ကတော့ Free အပြင် Enterprise, Platinum ဆိုပြီး Commercial Version တွေခွဲထုတ်ခဲ့ပေမယ့် XenServer 6.2 ကိုတော့ &lt;a href="http://blogs.citrix.com/2013/06/25/xenserver-6-2-is-now-fully-open-source/" title="XenServer 6.2 is now Fully Open-Source"&gt;Open Source&lt;/a&gt; အနေနဲ့ပြောင်းလိုက်ပြီး Supporting Service ကိုပဲ Commercial အနေနဲ့ လုပ်လိုက်ပါပြီ။ &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Feature Matrix" src="https://dl.dropboxusercontent.com/u/26716001/Photos/xenserver62FeatureMatrix.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Virtualization ကိုလေ့လာချင်သူတွေအတွက် VMware ရဲ့ ESXi အပြင် တခြားရွေးချယ်စရာတစ်ခုအနေနဲ့  XenServer ကို သုံးလို့တော့ရပါတယ်။ ဒါပေမယ့် ပုံမှန် Desktop တစ်လုံးနဲ့စမ်းတာကတော့ Virtualization ဆိုတာ ဘယ်လိုရှိတယ် VM တွေ ဘယ်လိုလုပ်လို့ရတယ်ဆိုတာလောက်ပဲသိနိုင်မှာပါ။ လုပ်ငန်းခွင်မှာ အသုံးချနေရတာမဟုတ်ဘူးဆိုရင်တော့ ကိုယ်ပိုင် Lab တစ်ခု ကောင်းကောင်းတည်ဆောက်နိုင်မှသာ အသေးစိပ်လေ့လာနိုင်လိမ့်မယ်လို့သာ ယူဆမိပါတယ်။&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Related References:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://www.linuxbrigade.com/install-xenserver-via-usb-flash-drive/"&gt;Install XenServer via USB Flash Drive&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.citrix.com/content/dam/citrix/en_us/documents/products-solutions/citrix-xenserver-core-feature-matrix.pdf"&gt;Citrix XenServer Core Feature Matrix&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://www.xenserver.org/overview-xenserver-open-source-virtualization/open-source-virtualization-features.html"&gt;XenServer Open Source Virtualization Features&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://docs.vmd.citrix.com/XenServer/6.2.0/1.0/en_gb/"&gt;XenServer Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Naing Ye` Minn</dc:creator><pubDate>Fri, 30 May 2014 05:30:00 +0630</pubDate><guid>tag:naingyeminn.com,2014-05-30:posts/2014/05/30/xenserver-installation-problems-and-review/</guid><category>xenserver</category><category>openxenmanager</category><category>ubuntu</category><category>linux</category><category>review</category></item><item><title>Ubuntu မှာ Unicode သုံးမယ်ဆိုရင်</title><link>http://naingyeminn.com/posts/2014/04/25/myanmar-unicode-in-ubuntu/</link><description>&lt;p&gt;Zawgyi နဲ့ Unicode အင်အားပြိုင်နေတာကြာပါပြီ Zawgyi က web မှာ တစ်နည်းအားဖြင့် internet ပေါ်မှာ အချိန်အတန်သင့် နေရာယူပြီးချိန်မှ Unicode ကပေါ်လာခဲ့လေတော့ သာမန် User အသိုင်းအဝန်းထဲကို Unicode ကမတိုးနိုင်ဖြစ်နေခဲ့တာလဲ အချိန်မနည်းတော့ပါဘူး။ အဓိကက Unicode ရဲ့ အကျိုးကျေးဇူးကိုမသိတဲ့အတွက် အလွယ်တကူသုံးနိုင်ပြီး တွင်ကျယ်နေပြီဖြစ်တဲ့ Zawgyi ကိုပဲဆက်သုံးဖြစ်နေကြတာပါ။ သိတဲ့သူဆိုတာကလဲ IT သမား အသိုင်းအဝန်းထဲကမှ Developer တွေလောက်သာရှိတော့ အခုချိန်ထိကို မတွင်ကျယ်ဖြစ်နေရတယ်။ အထူးသဖြင့် Facebook နဲ့ Gtalk တို့မှာက Zawgyi ပဲသုံးကြတာပါ။ လူအနည်းစုနဲ့ အများစု ယှဉ်လိုက်တော့ အပေါင်းအသင်းတွေထဲ ကိုယ်ပဲ Unicode သုံးပြီး သူရေးတာကိုယ်မဖတ်နိုင် ကိုယ်ရေးတာသူမဖတ်နိုင်နဲ့ နောက်ဆုံး မထူးဇာတ်ခင်းပြီး Zawgyi ပဲပြန်သုံးဖြစ်ကြတာများတယ်။ ကိုယ်တိုင်လဲ အဲဒီလို ခဏခဏဖြစ်တယ်။ နောက်ဆုံး ဆုံးဖြတ်ချက်ချလိုက်တယ်။ ပုံမှန်သုံးရင် Unicode သုံးပြီး Facebook နဲ့ gtalk မှာတော့ လိုအပ်မှ Zawgyi ကိုသုံးမယ်ပေါ့။ ဒါနဲ့ပဲ သုံးနေကျဖြစ်တဲ့ Ubuntu မှာ အဆင်အပြေဆုံးဖြစ်မယ့် နည်းလမ်းတွေရှာဖြစ်ခဲ့တယ်။ &lt;/p&gt;
+&lt;p&gt;Ubuntu မှာ Zawgyi နဲ့ Unicode Font နှစ်မျိုးလုံးထည့်လိုက်ရင် ဇော်ဂျီနဲ့ပဲ ပေါ်တော့တယ်။ ဘာကြောင့်ရယ် အတိအကျမပြောနိုင်ပေမယ့် Zawgyi Font မှာက Code Point ပိုများနေတဲ့အတွက် Zawgyi ကိုပဲ Default အဖြစ် သတ်မှတ်သွားတာလို့ပဲယူဆတယ်။ ဒါကြောင့် Unicode ကိုပဲ Default အနေနဲ့သုံးချင်တယ်ဆိုရင် Fallback Font ကိုပြောင်းပေးရတယ်။ အဲဒီအတွက် လွယ်အောင် my-fs-cli ဆိုတဲ့ command line tools လေးတစ်ခုရေးဖြစ်တယ်။ Ubuntu 12.04 LTS ပေါ်မှာ Build လုပ်ပြီး Launchpad မှာ တင်ပေးထားပေမယ့် Update မလုပ်ဖြစ်တော့ နောက်ထွက်တဲ့ Ubuntu version အသစ်တွေမှာ ppa သုံးပြီး package manager တွေကနေ install လုပ်လို့မရတော့ဘူး။
+သုံးချင်ရင် .deb file download ဆွဲပြီး Manually install လုပ်မှရတယ်။ ပေးထားတဲ့ Command အတိုင်း Terminal ထဲမှာ တစ်ကြောင်းချင်းရိုက်ထည့်လိုက်ရုံပါပဲ။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;wget https://dl.dropboxusercontent.com/u/26716001/Ubuntu/my-fs-cli_12.07.1_all.deb
+sudo dpkg -i my-fs-cli_12.07.1_all.deb
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;သုံးပုံကတော့ my-fs-cli ဆိုတဲ့ command ကို terminal မှာ run ပေးရုံပါ။ တစ်ကြိမ်ရိုက်ရင် Zawgyi နောက်တစ်ကြိမ်ရိုက်ရင် Unicode ဆိုပြီး တစ်လှည့်စီပြောင်းပေးပါတယ်။ &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ပထမဉီးဆုံးအကြိမ် run တာဆိုရင်တော့ system changes တွေ affect ဖြစ်ဖို့ Logout လုပ်ပြီး Login ပြန်ဝင်ပေးဖို့တော့ လိုပါမယ်။&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Fallback Font ကို Unicode အနေနဲ့ပြောင်းလိုက်ပြီဆိုရင် System တစ်ခုလုံး Unicode နဲ့ ဖြစ်သွားမှာပါ။ Browser မှာ Facebook ကိုဝင်လိုက်ရင် Zawgyi နဲ့ ရေးထားသမျှ စာတွေအကုန်လုံးဖတ်မရတော့ဘူးဖြစ်သွားပါလိမ့်မယ်။ Zawgyi အနေနဲ့ဖတ်လို့ရဖို့ ကိုထိန်လင်းရွေ &lt;a href="http://saturngod.net"&gt;(saturngod)&lt;/a&gt; လုပ်ပေးထားတဲ့ &lt;a href="http://dl.dropboxusercontent.com/u/283860/host/bookmarklet/index.html"&gt;bookmarklets&lt;/a&gt; ကိုသုံးပြီး ဖတ်လို့ရပါတယ်။ Firefox Version အဟောင်းတွေမှာတော့ Unicode to Zawgyi, Zawgyi to Unicode, MM Font Tagger စတာတွေသုံးလို့ရပေမယ့် အခုနောက်ပိုင်း version တွေမှာတော့ Zawgyi Force, Unicode Force ၂မျိုးပဲသုံးလို့ရပါလိမ့်မယ်။ သုံးပုံသုံးနည်းကတော့ ပေးထားတဲ့ link မှာပါပြီးသားပါ။&lt;/p&gt;
+&lt;p&gt;နောက်ထပ်တစ်ခုက &lt;a href="https://github.com/naingyeminn/clip-text-convert"&gt;clip-text-convert&lt;/a&gt; ဆိုတဲ့ package လေးပါ။ သူငယ်ချင်း သူရလှိုင် ရေးထားတဲ့ &lt;a href="http://code.google.com/p/python-myanmar/downloads/list"&gt;Python-Myanmar&lt;/a&gt; ဆိုတဲ့ python module ကိုသုံးပြီး text တွေကို zawgyi, unicode အလွယ်တကူပြောင်းနိုင်အောင် လုပ်ပေးထားတာပါ။ Unicode သုံးနေတော့ zawgyi နဲ့ ရေးထားတဲ့ စာသားတွေကို အလွယ်တကူပြောင်းနိုင်အောင်လို့ပါ။ ဥပမာအနေနဲ့ zawgyi နဲ့မြန်မာလိုရေးပြီး နာမည်ပေးထားတဲ့ file တစ်ခုကို Unicode ပြောင်းချင်တဲ့အခါ Rename လုပ်ပြီး ကိုယ်တိုင်ပြန်ရိုက်ရပါလိမ့်မယ်။ အဲဒီအတွက် Clip-Text-Convert ကိုသုံးပြီးဖြေရှင်းနိုင်ပါတယ်။ အဓိက လုပ်ဆောင်ပေးတာကတော့ စာသားတစ်ခုခုကို copy ဒါမှမဟုတ် cut လုပ်လိုက်လို့ ရောက်သွားတဲ့ Clipboard ထဲကစာသားကို Zawgyi, Unicode စသဖြင့်ပြောင်းပေးပါတယ်။ Paste ပြန်လုပ်လိုက်တဲ့အခါကျ Convert လုပ်ထားပြီးသားစာသားပြန်ထွက်လာမှာပါ။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;wget https://python-myanmar.googlecode.com/files/python-myanmar_0.0.2-0_all.deb
+sudo dpkg -i python-myanmar_0.0.2-0_all.deb
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ဆိုတဲ့ command ၂ကြောင်းကိုရိုက်ပြီး Python Myanmar ကိုသွင်းပါ။ &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;wget https://github.com/naingyeminn/clip-text-convert/archive/master.zip
+unzip master.zip
+&lt;span class="nb"&gt;cd &lt;/span&gt;clip-text-convert-master
+make install
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Clip-Text-Convert ကိုသွင်းလိုက်ရင် &lt;code&gt;conv2zg&lt;/code&gt;, &lt;code&gt;conv2uni&lt;/code&gt;, &lt;code&gt;noticonv&lt;/code&gt; နဲ့ &lt;code&gt;noticlip&lt;/code&gt; ဆိုတဲ့ command လေးတွေ သုံးလို့ရသွားပါလိမ့်မယ်။ &lt;code&gt;conv2zg&lt;/code&gt; က copy ကူးလိုက်တဲ့ Unicode Text တွေကို Zawgyi အနေနဲ့ Convert လုပ်ပြီး clipboard ထဲပြန်ထည့်ပေးပါတယ်။ Unicode နဲ့ရိုက်ထားတဲ့ စာသားကို select လုပ် copy ကူးပြီး &lt;code&gt;conv2zg&lt;/code&gt; ဆိုတဲ့ command ကို run လိုက်ပြီး Paste ပြန်လုပ်လိုက်တာနဲ့ Zawgyi နဲ့ရေးထားတဲ့ စာသားပြန်ထွက်လာမှာပါ။ command ကို terminal မှာသွား run စရာမလိုအောင် Video ထဲမှာပါတဲ့အတိုင်း shortcut key သတ်မှတ်ထားနိုင်ပါတယ်။ &lt;code&gt;conv2uni&lt;/code&gt; လဲ &lt;code&gt;conv2zg&lt;/code&gt; လိုပါပဲ။ သူကတော့ Unicode အနေနဲ့ပြောင်းပေးတာပါ။ &lt;code&gt;noticonv&lt;/code&gt; ကတော့ &lt;a href="http://www.pidgin.im"&gt;Pidgin&lt;/a&gt; User တွေအတွက်ပါ။ Ubuntu မှာ Gtalk ကို Pidgin နဲ့ပြောတဲ့အခါ ပြောနေတဲ့ conversation တွေထဲကမှ နောက်ဆုံးပြောလိုက်တဲ့ message ကို Unicode အနေနဲ့ပြောင်းပြီး notification မှာပြပေးတာပါ။ နောက်ဆုံးတစ်ခုဖြစ်တဲ့ &lt;code&gt;noticlip&lt;/code&gt; ကတော့ ကူးယူလိုက်တဲ့ စာသား (Text ) တွေကို Unicode ပြောင်းပြီး Notification မှာပြပေးပါတယ်။&lt;/p&gt;
+&lt;p&gt;Setting ချပုံနဲ့ အသုံးပြုပုံကိုတော့ ပေးထားတဲ့ YouTube Video မှာကြည့်လိုက်ပါ။&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ပြထားတဲ့အတိုင်း convert လုပ်လို့မရရင် xclip ဆိုတဲ့ package လေးသွင်းပေးဖို့လိုနေတာပါ။ &lt;/p&gt;
+&lt;p&gt;"&lt;code&gt;sudo apt-get install xclip&lt;/code&gt;" ဆိုတဲ့ command သုံးပြီး install လုပ်ပေးနိုင်ပါတယ်။&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/qHF2HvnsDu4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;မှတ်ချက် ။ ။ အခုနည်းလမ်းတွေက Ubuntu 12.04 LTS မှာစမ်းထားတဲ့ နည်းလမ်းတွေပါ။ လက်ရှိသုံးနေတဲ့ 12.04 ကို Based လုပ်ထားတဲ့ ElementaryOS Luna မှာလဲအဆင်ပြေပါတယ်။ အသစ်ထွက်နေပြီဖြစ်တဲ့ Ubuntu 14.04 LTS မှာတော့ မစမ်းကြည့်ရသေးပါဘူး။&lt;/p&gt;
+&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Naing Ye` Minn</dc:creator><pubDate>Fri, 25 Apr 2014 15:30:00 +0630</pubDate><guid>tag:naingyeminn.com,2014-04-25:posts/2014/04/25/myanmar-unicode-in-ubuntu/</guid><category>myanmar</category><category>unicode</category><category>zawgyi</category><category>ubuntu</category></item><item><title>Pelican နှင့် ကျွန်တော်</title><link>http://naingyeminn.com/posts/2014/04/12/pelican-and-me/</link><description>&lt;p&gt;အရင်းက blog လေးတစ်ခုလုပ်ပြီး ubuntu အကြောင်းလေးတွေတော်တော်များများ ရေးခဲ့ဖူးပေမယ့် အဲဒီ blog လေးပျက်သွားပြီးကတည်းက ဆက်မရေးဖြစ်တော့တာ တော်တော်ကြာပါပြီ။ ကြားထဲမှာတော့ အသစ်ရထားတဲ့ blog လေးမှာ တစ် post နှစ် post လောက်တော့တင်ဖြစ်တယ်။ အဲ့နောက်ပိုင်းဆက် မရေးဖြစ်တော့ပြန်ဘူး။ အကြောင်းက ရထားတဲ့ blog က wordpress နဲ့ ဆိုပေမယ့် ပြင်ချင်တိုင်းပြင်ဖို့ admin right မရှိတဲ့အတွက် စိတ်ကြိုက် theme ပြောင်းမရတာရယ် နောက်ပြီး unicode နဲ့ရေးတော့ font မရှိလဲ လူတိုင်းဖတ်နိုင်အောင် font embed လုပ်ဖို့ CSS ဝင်ပြင်လို့မရတာတွေရယ်ကတော့ အဓိကပေါ့။ နောက်တစ်ခုက ကိုယ်က ရေးချင်တာကို text editor မှာရေးပြီး online ပြန်တင်ဖို့ကျ format ပြန်ချိန်ရတာကလဲရှိသေးတယ်။ backup ရှိနေဖို့ကိုလဲ တကူးတကာ့ ပြန်သိမ်းနေရတာနဲ့ဆိုတော့ အလုပ်ကရှုပ်တယ်။ ဒီလိုပဲ အကြောင်းအမျိုးမျိုးပြပြီး မရေးဖြစ်တာကြာပါပြီ။ မနေ့ကမှ အကြံတစ်ခုပေါ်လာတာနဲ့ blog အသစ်တစ်ခုလုပ်ဖို့ ဆုံးဖြတ်လိုက်တယ်။ Internet ဟိုဒီရှာရင်း တွေ့လိုက်တဲ့ &lt;a href="https://ghost.org/" title="ghost.org"&gt;Ghost&lt;/a&gt; ဆိုတဲ့ blogging platform ကိုစမ်းရာကနေ &lt;a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" title="Markdown Cheatsheet"&gt;Markdown&lt;/a&gt; format နဲ့ ရေးတဲ့ idea ကို အရမ်းသဘောကျသွားတယ်။ ဒါနဲ့ပဲ markdown နဲ့ရေးလို့ရနိုင်တာလေးတွေရှာကြည့်မိတယ်။ &lt;a href="http://octopress.org/" title="octopress.org"&gt;Octopress&lt;/a&gt; ကိုသူငယ်ချင်းတစ်ယောက် သုံးထားတာတွေ့လို့ စမ်းဖို့ကြည့်တော့ Ruby နဲ့ရေးထားတဲ့ Static Page Generator ဆိုတာကိုတွေ့လိုက်ရတယ်။ ကိုယ်ရေးထားတဲ့ markdown file တွေကို ကိုယ်စိတ်ကြိုက်ပြင်ထားတဲ့ HTML/CSS/JavaScript file တွေနဲ့ Static Page (.html) file လေးတွေထုတ်ပေးတာပါ။ အဲဒါစမ်းဖို့အတွက်ကို Package တွေထပ်သွင်းရမှာဆိုတော့ Ruby အစား ကိုယ်နည်းနည်းပါးပါးသိတဲ့ Python နဲ့များရှိလေမလားဆိုပြီးရှာကြည့်ရင်း Pelican ကိုသွားတွေ့တယ်။ Ubuntu သုံးနေတာဖြစ်တဲ့အတွက် Python ကပါပြီးသားဆိုတော့ လိုအပ်တာလေးနည်းနည်းထပ်ဖြည့်လိုက်တာနဲ့ &lt;a href="http://blog.getpelican.com/" title="blog.getpelican.com"&gt;Pelican&lt;/a&gt; ကိုစမ်းလို့ရပြီလေ။ လိုချင်တဲ့ Theme ကို ပြင်ဆင်ပြီးပြီဆိုတာနဲ့ သတ်မှတ်ထားတဲ့ location ထဲမှာ Markdown file လေးတွေရေးထည့်ပြီး command လေးရိုက်လိုက်တာနဲ့ ကိုယ်ပြင်ထားတဲ့အတိုင်း .html ဖိုင်လေးတွေထွက်လာရော။ တော်တော်သဘောကျသွားတယ်။ နောက်ပြီ တစ်ခုသိထားတာက Dropbox မှာ HTML/CSS/JavaScript file တွေထည့်ပြီး dropbox public link နဲ့ပြန်ခေါ်ရင် ရတယ်ဆိုတာပါ။ အဲဒီတော့ အခုအတိုင်း Static Page လေးတွေ အလွယ်တကူရေးလို့ရတဲ့အပြင် Dropbox ကိုလဲ hosting တစ်ခုလိုသာသုံးလို့ရမယ်ဆိုရင် အဆင်ပြေလောက်မယ်ထင်တာနဲ့ Dropbox အသုံးချပုံတွေကိုရှာကြည့်ဖြစ်တယ်။ &lt;a href="http://kissr.com/" title="kissr.com"&gt;KISSr&lt;/a&gt; လို dropbox နဲ့ ချိတ်ဆက်ပြီး အသုံးပြုလို့ရတဲ့ service သုံးလေးငါးခုလောက်ရှာတွေ့တယ်။ kissr ကတော့ အရိုးရှင်းဆုံးနဲ့ သုံးရအလွယ်ဆုံးဖြစ်မယ်ထင်တာပဲ။ နောက်ပြီး subdomain ယူပြီးသုံးနိုင်တဲ့အပြင် domain name ကလဲ မှတ်ရလွယ်တော့ သုံးမယ်ဆို သုံးလို့အဆင်ပြေပါတယ်။ နောက်တစ်ခုကတော့ github ကိုသုံးပြီး host လုပ်တဲ့နည်းပါ။ Dropbox ကိုသုံးတာက ပိုပြီး လွယ်ကူရှင်းလင်းပေမယ့် github ကိုသုံးလေ့ရှိသူတွေအတွက်ကတော့ ကိုယ့် github မှာပဲ repo ဆောက်ပြီး host လုပ်တာက ပိုကောင်းပါတယ်။ ဘာကြောင့်လဲဆိုတော့ github က ကိုယ်ပိုင် domain နဲ့ ချိတ်ဆက်အသုံးပြုလို့ရအောင် DNS point လုပ်ဖို့ ip နဲ့ လုပ်ပုံလုပ်နည်းတွေကို အသေစိပ်ရေးပေးထားလို့ပါပဲ။ ဒါပေမယ့် Github ကတော့ host လုပ်ဖို့ repository ကို 1GB အထိပဲအမျာဆုံးသုံးနိုင်ပါတယ်။ ပုံမှန် static page လေးတွေ Host လုပ်ဖို့အတွက်လောက်ကတော့ 1GB ဆိုတဲ့ ပမာဏက မနည်းလှပါဘူး။ ဓာတ်ပုံ၊ video၊ audio တွေကို ကိုယ့် post မှာထည့်ချင်တယ်ဆိုရင်တော့ တခြား Dropbox လို youtube လို service တွေမှာ တင်ပြီး link ပြန်လုပ်သုံးမယ်ဆိုရင် Github ကပေးတဲ့ 1GB ဆိုတဲ့ပမာဏက လုံလောက်မှာပါ။ အခုတော့ github ကိုပဲ သုံးဖို့ ရွေးလိုက်ပါတယ်။ &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Naing Ye` Minn</dc:creator><pubDate>Sat, 12 Apr 2014 08:00:00 +0630</pubDate><guid>tag:naingyeminn.com,2014-04-12:posts/2014/04/12/pelican-and-me/</guid><category>pelican</category><category>python</category><category>review</category></item><item><title>Elementary OS - Review (1)</title><link>http://naingyeminn.com/posts/2014/04/11/elementary-os-review-1/</link><description>&lt;p&gt;လက်ရှိ Laptop မှာ Ubuntu 12.04 LTS ပဲသုံးနေခဲ့တာ တော်တော်ကြာနေပါပြီ။ ကြားထဲမှာ 12.10, 13.04 နဲ့ 13.10 version သုံးခုတောင်ထွက်ခဲ့သည့်တိုင်အောင်မပြောင်းသေးပဲ Stable ဖြစ်တဲ့ LTS ကိုပဲဆက်သုံးဖြစ်နေတာပါ။ အခု လာမယ့် April ဆိုရင် နောက်ထပ် LTS version အသစ်တစ်ခုဖြစ်တဲ့ 14.04 ထပ်ထွက်တော့မှာဖြစ်တဲ့အတွက် version အသစ်ကိုမပြောင်းခင် တခြား distro လေးတွေပြောင်းစမ်းဖို့စိတ်ကူးမိတာနဲ့ပဲ နောက်ဆုံး ဒီ Elementary OS လေး စမ်းကြည့်ဖို့ ရွေးလိုက်ပါတယ်။&lt;/p&gt;
+&lt;p&gt;Elementary OS က ubuntu-based distro တစ်ခုပါပဲ။ Ubuntu ကိုအခြေခံပြီး မွမ်းမံထားတဲ့ OS တစ်ခုပါ။ သူ့ကို eOS လို့ အတိုကောက်ခေါ်ကြလေ့ရှိပါတယ်။ အခုစမ်းကြည့်ရသလောက်တော့ တော်တော်လေးကို ရိုးရှင်းပြီး အသုံးပြုရလွယ်ကူတာတွေ့ရပါတယ်။ သုံးကြည့်ရသလောက်တော့ အပြည့်အဝပြည့်စုံကောင်းမွန်တဲ့ OS တစ်ခုလို့မဆိုနိုငေ်ပမယ့် အတိုင်းအတာတစ်ခုထိ စိတ်ကြေနပ်စရာကောင်းတဲ့ OS လေးတစ်ခုဖြစ်တယ်လို့တော့ဆိုချင်ပါတယ်။ ထူးခြားချက်လေးတွေ၊ အားသာချက်လေးတွေရှိသလို အားနည်းချက်လေးတွေလဲရှိပါတယ်။&lt;/p&gt;
+&lt;p&gt;User Interface အနေနဲ့ တော်တော်လေးကိုရိုးရှင်းပြီး သပ်ရပ်ပါတယ်။ Pantheon ဆိုတဲ့ Desktop Environment ကိုသုံးထားတာပါ။ Window, Menu, dialog box ပုံစံတွေ ကတော့ Gnome3 နဲ့ဆင်တူပါတယ်။ File Manager အနေနဲ့ကတော့ Ubuntu မှာလို Nautilus မဟုတ်တော့ပဲ Pantheon-Files ဖြစ်သွားပါတယ်။ Nautilus ကိုယှဉ်နိုင်လောက်အောင် feature မစုံသေးပေမယ့် အသုံးပြုရတာတော့ရိုးရှင်းလွယ်ကူပါတယ်။ ဒါပေမယ့် Nautilus မှာလို Folder Share ဖို့ Sharing Options မပါပါဘူး။ ဒါကြောင့် Network ကနေ File တွေ Share လုပ်ချင်တဲ့အခါ Samba သွင်းပြီး manually configure လုပ်ပေးရပါတယ်။ အဲလိုမှမဟုတ်ရင်တော့ Nautilus ထပ်တင်ပြီးသုံးလို့ရပါတယ်။ Installation ပြီးပြီးချင်းမှာ ပြဿနာရှိတာက Power Consumption ပါ။ Desktop တစ်လုံးမှာ တင်ပြီးသုံးမယ်ဆိုရင်ပြဿနာမရှိပေမယ့် Laptop အနေနဲ့ကတော့ အားနည်းချက်တစ်ခုလို့ဆိုရမှာပါ။ Ubuntu မှာ ၅နာရီဝန်းကျင်လောက် Battery နဲ့သုံးလို့ရပေမယ့် သူမှာတော့ ၂နာရီခွဲ သုံးနာရီလောက်ပဲသုံးလို့ရပါတယ်။ ဒါပေမယ့် application တချို့သုံးပြီး tweak လုပ်လိုက်မယ်ဆိုရင်တော့ ၎နာရီ ၎နာရီခွဲလောက်သုံးလို့ရသွားမှာပါ။&lt;/p&gt;
+&lt;p&gt;နောက်တစ်ချက်က Application ပိုင်းပါ။ သူ့မှာ Ubuntu လို Office Suite ပါမလာပါဘူး။ LibreOffice ပြန်တင်ပေးရပါတယ်။ Email Client အနေနဲ့ကတော့ Geary Mail ဆိုတဲ့ application လေးပါပါတယ်။ ဒါပေမယ့် သူ့မှာက IMAP နဲ့ SMTP ပဲ support လုပ်တာပါ။ POP3 သုံးလို့မရပါဘူး။ POP3 သုံးချင်ရင်တော့ Thunderbird၊ ဒါမှမဟုတ် Evolution တစ်ခုခုထပ်တင်ပြီးသုံးရပါလိမ့်မယ်။ Default Web Browser ကတော့ Midori ပါ။ သုံးရအဆင်ပြေတယ်ဆိုပေမယ့် Firefox တို့ Chrome တို့မှာလို Plug-ins စုံစုံလင်လင်မရှိတဲ့အတွက် သုံးနေကျ Browser တစ်ခုခု ထပ်တင်တာပိုကောင်းပါလိမ့်မယ်။&lt;/p&gt;
+&lt;p&gt;Ubuntu နဲ့ ကွာခြားတာက သူ့မှာ Ubuntu လို Application စုံစုံလင်လင်မပါတာပါပဲ။ Disk Utility, System Monitor, Remote Desktop Client, Transmission BitTorrent Client တို့လို ရှိသင့်တဲ့ Application တွေမပါပါဘူး။ ထပ်တင်ဖို့လိုပါတယ်။ အဲဒီအတွက် အသေးစိပ် ဆက်လကေ်ဖာ်ပြပေးပါဦးမယ်။&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Naing Ye` Minn</dc:creator><pubDate>Fri, 11 Apr 2014 08:00:00 +0630</pubDate><guid>tag:naingyeminn.com,2014-04-11:posts/2014/04/11/elementary-os-review-1/</guid><category>elementaryos</category><category>review</category></item><item><title>Myanmar Kyeboard for Ubuntu</title><link>http://naingyeminn.com/posts/2013/07/12/myanmar-keyboard-for-ubuntu/</link><description>&lt;p&gt;mm-kb.deb ဆိုတဲ့ ဖိုင်လေးကို ပြန်ပြင်ထားတာပါ။ Ubuntu မှာက အခုနောက်ပိုက် deb ဖိုင်တွေကို အရင်လို double click နှိပ်ပြီး install တမ်းလုပ်လို့အဆင်မပြေတော့ပါဘူး။  အဲ့လိုသွင်းလို့ရဖို့ gDebi ဆိုတာထပ်သွင်းရပါတယ်။ အဲဒါမသွင်းချင်ရင် terminal ကနေ dpkg command နဲ့ သွင်းရပါတယ်။ နောက်ပြီး mm-kb.deb ဖိုင်ကိုသွင်းပြီးရင် IBus ကို run ပေးရတာ input method သွားရွေးပြီးထည့်ပေးရတာ၊ Input Method ကို default xkb အစား IBus သုံးမယ်ဆိုတာတွေကို manually configure လုပ်ပေးရပါတယ်။ အခုဒီ installation script လေးမှာတော့ အဲဒါတွေကို auto လုပ်ပေးသွားမှာပါ။ နောက်ပြီး ယူနီကုတ်၊ ဇော်ဂျီ ကြိုက်ရာ ၂မျိုးစလုံး တစ်ခါတည်းတမ်းတင်နိုင်သလို တစ်ခုဆီလဲ ရွေးပြီးတင်လို့ရပါတယ်။ Bash script ကိုပဲ Zenity သုံးပြီး GUI လေးနဲ့ install လုပ်လို့ရအောင်လုပ်ပေးထားတာပါ။ အရင်ကဆို install လုပ်ပုံလုပ်နည်းတွေကို အရှည်ကြီး ရှင်းပြနေရတဲ့အပြင် သာမာန် user တွေအတွက် ရှုပ်ထွေးတယ်လို့ထင်ကောင်းထင်ပါလိမ့်မယ်။ အခုတော့ ကျွန်တော် တတ်နိုင်သမျှ အလွယ်ဆုံးဖြစ်အောင်တော့ လုပ်ပေးထားပါတယ်။&lt;/p&gt;
+&lt;p&gt;mm-kb Zip ဖိုင်ကို download ဆွဲ၊ extract လုပ်၊ အထဲက install ဆိုတဲ့ ဖိုင်လေးကို double click နှိပ်ပြီး ပေါ်လာတဲ့ box ထဲက Run ဆိုတဲ့ button လေးကို click နှိပ်ပေးရုံပါပဲ။ ပြီးရင်တော့ ရွေးစရာ Option box လေးပေါ်လာပါလိမ့်မယ်။ Install Unicode, Install Zawgyi, Install Both နဲ့ Uninstall ဆိုပြီးတွေ့ရပါလိမ့်မယ်။ ကြိုက်ရာရွေးပြီး Ok နှိပ်လိုက်တာနဲ့ status နေရာမှာ IBus icon လေးပေါ်လာပါလိမ့်မယ်။ ပေါ်လာတဲ့အထိတော့ခဏလောက်စောင့်ဖို့လိုပါလိမ့်မယ်။ System font changes ဖြစ်သွားမှာဖြစ်တဲ့အတွက် ခဏလောက်တော့လေးသွားနိုင်ပါတယ်။ desktop ပြန်သွက်သွားပြီဆိုရင်တော့ စသုံးလို့ရပါပြီ။
+“Alt+Shift” နဲ့ keyboard ပြောင်းနိုင်ပြီး အင်္ဂလိပ်နဲ့ မြန်မာကိုတော့ left shift တစ်ချက်ဖိရုံနဲ့ ပြောင်းနိုင်ပါတယ်။
+အားလုံးပဲ စမ်းပြီးသုံးကြည့်ကြပါ။
+ပြဿနာတစ်စုံတစ်ခုရှိခဲ့ရင်လဲ report လုပ်နိုင်ပါတယ်။&lt;/p&gt;
+&lt;p&gt;Source on GitHub : &lt;a href="https://github.com/seriousblaze/mm-kb"&gt;https://github.com/seriousblaze/mm-kb&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Download : &lt;a href="https://github.com/seriousblaze/mm-kb/archive/master.zip"&gt;https://github.com/seriousblaze/mm-kb/archive/master.zip&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Naing Ye` Minn</dc:creator><pubDate>Fri, 12 Jul 2013 08:00:00 +0630</pubDate><guid>tag:naingyeminn.com,2013-07-12:posts/2013/07/12/myanmar-keyboard-for-ubuntu/</guid><category>myanmar</category><category>unicode</category><category>zawgyi</category><category>keyboard</category><category>i-bus</category><category>ubuntu</category></item></channel></rss>
