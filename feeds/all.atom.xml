@@ -1,5 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Naing Ye` Minn</title><link href="http://naingyeminn.com/" rel="alternate"></link><link href="http://naingyeminn.com/feeds/all.atom.xml" rel="self"></link><id>http://naingyeminn.com/</id><updated>2014-07-03T05:30:00+06:30</updated><entry><title>Tips for Ubuntu-MM</title><link href="http://naingyeminn.com/posts/2014/07/03/tips-for-ubuntu-mm/" rel="alternate"></link><updated>2014-07-03T05:30:00+06:30</updated><author><name>Naing Ye` Minn</name></author><id>tag:naingyeminn.com,2014-07-03:posts/2014/07/03/tips-for-ubuntu-mm/</id><summary type="html">&lt;h3&gt;&lt;code&gt;$&lt;/code&gt;&lt;/h3&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Naing Ye` Minn</title><link href="http://naingyeminn.com/" rel="alternate"></link><link href="http://naingyeminn.com/feeds/all.atom.xml" rel="self"></link><id>http://naingyeminn.com/</id><updated>2014-08-03T05:00:00+06:30</updated><entry><title>Linux Terminal / Command Line Tricks</title><link href="http://naingyeminn.com/posts/2014/08/03/linux-command-line-usage/" rel="alternate"></link><updated>2014-08-03T05:00:00+06:30</updated><author><name>Naing Ye` Minn</name></author><id>tag:naingyeminn.com,2014-08-03:posts/2014/08/03/linux-command-line-usage/</id><summary type="html">&lt;p&gt;Linux User တွေအနေနဲ့ သိထားသင့်တဲ့ Terminal အသုံးပြုပုံလေးတွေပါ။ အပြည့်အစုံကြီး မဟုတ်ပေမယ့် အသုံးဝင်တဲ့ နည်းလမ်းလေးတချို့ကိုပဲ အသုံးများတဲ့ Ubuntu ပေါ်အခြေခံပြီး အဓိကထားမျှဝေလိုက်ပါတယ်။ &lt;/p&gt;
+&lt;h3&gt;Shortcuts&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;pre&gt;
+&lt;table cellpadding=5&gt;
+&lt;tr&gt;
+    &lt;td width="50%"&gt;Terminal အသစ်ဖွင့်&lt;/td&gt;
+    &lt;td width="50%"&gt;Control + Alter + T&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Tab အသစ်ဖွင့်&lt;/td&gt;
+    &lt;td&gt;Control + Shift + T&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Zoom In (စာလုံးကြီး)&lt;/td&gt;
+    &lt;td&gt;Control +  Shift + = (Control + +)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Zoom Out (စာလုံးသေး)&lt;/td&gt;
+    &lt;td&gt;Control + -&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Copy&lt;/td&gt;
+    &lt;td&gt;Control + Shift + C&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Paste&lt;/td&gt;
+    &lt;td&gt;Control + Shift + V&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Command အစသို့&lt;/td&gt;
+    &lt;td&gt;Control + A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Command ဖျက်&lt;/td&gt;
+    &lt;td&gt;Control + U&lt;/td&gt;
+&lt;/tr&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/table&gt;
+&lt;/pre&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Command Completion&lt;/h3&gt;
+&lt;p&gt;Ubuntu ရဲ့ Terminal မှာ ကိုယ်ရိုက်လိုက်တဲ့ command ရဲ့ စာလုံး အပြည့်အစုံကို &lt;code&gt;Tab&lt;/code&gt; key ၂ချက်နှိပ်ပြီး ဖြည့်နိုင်ပါတယ်။ ဥပမာအနေနဲ့ &lt;code&gt;apt&lt;/code&gt; လို့ရိုက်ပြီး &lt;code&gt;Tab&lt;/code&gt;key ၂ချက်နှိပ်လိုက်မယ်ဆိုရင် ပုံမှာပြထားတဲ့အတိုင်း apt နဲ့စတဲ့ command တွေပြပေးပါလိမ့်မယ်။ &lt;code&gt;i&lt;/code&gt; တစ်လုံးထပ်တိုးပြီး (&lt;code&gt;apti&lt;/code&gt;) &lt;code&gt;Tab&lt;/code&gt; ထပ်နှိပ်ပါက &lt;code&gt;aptitude&lt;/code&gt; ဆိုပြီး ဖြည့်ပေးသွားမှာပါ။ Command အစစာလုံး တစ်လုံး နှစ်လုံးရိုက်ပြီး &lt;code&gt;Tab&lt;/code&gt; နှိပ်တာနဲ့ အဲဒီ စာလုံးနဲ့စတဲ့ Command ကိုပြပေးသွားတာဖြစ်ပါတယ်။ &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;apt&lt;span class="o"&gt;[&lt;/span&gt;tab&lt;span class="o"&gt;][&lt;/span&gt;tab&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;apti&lt;span class="o"&gt;[&lt;/span&gt;tab&lt;span class="o"&gt;][&lt;/span&gt;tab&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="Completion" src="https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2016%3A04%3A26.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Directory လမ်းကြောင်းတွေမှာလဲသုံးနိုင်ပါတယ်။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;Do&lt;span class="o"&gt;[&lt;/span&gt;tab&lt;span class="o"&gt;][&lt;/span&gt;tab&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;Dow&lt;span class="o"&gt;[&lt;/span&gt;tab&lt;span class="o"&gt;][&lt;/span&gt;tab&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="Directory Completion" src="https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2016%3A45%3A01.png" /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;မှတ်ချက်။ ။ တချို့ Distro တွေမှာတော့ Completion အလုပ်လုပ်ဖို့ configure ပြန်လုပ်ပေးဖို့ လိုပါတယ်။&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h3&gt;History&lt;/h3&gt;
+&lt;p&gt;Terminal ထဲ ရိုက်ထားတဲ့ command တွေကိုတော့ keyboard က &lt;code&gt;Up Arrow&lt;/code&gt; key နှိပ်ပြီး ပြန်ခေါ်သုံးနိုင်ပါတယ်။ အကယ်၍များ ရိုက်ဖူးတဲ့ command တစ်ခုကို အပြည့်အစုံမမှတ်မိခဲ့ရင် &lt;code&gt;history&lt;/code&gt; command သုံးပြီး ပြန်ရှာနိုင်ပါတယ်။ ပုံမှာပါတဲ့အတိုင်း &lt;code&gt;history | grep&lt;/code&gt; နဲ့တွဲပြီး ကိုယ်ရှာချင်တဲ့ command မှာပါတဲ့ စာသာတချို့ ရိုက်ထည့်ပေးရမှာပါ။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;history&lt;/span&gt; | grep &lt;span class="o"&gt;[&lt;/span&gt;some_part_of_command&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="History" src="https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2017%3A05%3A40.png" /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;! - Bang&lt;/h3&gt;
+&lt;p&gt;နောက်ဆုံးရိုက်ခဲ့တဲ့ command ကိုပြန်ခေါ်ချင်တယ်ဆိုရင်တော့ &lt;strong&gt;!!&lt;/strong&gt; ကိုသုံးနိုင်ပါတယ်။ &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;gedit /tmp/test
+&lt;span class="nv"&gt;$ &lt;/span&gt;!!
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ဥပမာပြထားတဲ့အတိုင်း ပထမ ရိုက်လိုက်တဲ့ &lt;em&gt;"gedit /tmp/test"&lt;/em&gt; ဆိုတဲ့ command ကိုပြန် ခေါ်ချင်တယ်ဆိုရင် အပြည့်အစုံ ပြန်ရိုက်စရာမလိုပါဘူး။ &lt;strong&gt;!!&lt;/strong&gt; လို့ရိုက်လိုက်တာနဲ့ &lt;em&gt;"gedit /tmp/test"&lt;/em&gt; ဆိုတဲ့ command ပြန်ရိုက်ပြီးသားဖြစ်သွားမှာပါ။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;gedit /tmp/test
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/Download
+&lt;span class="nv"&gt;$ &lt;/span&gt;!ge
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="bang" src="https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2019%3A06%3A29.png" /&gt;&lt;/p&gt;
+&lt;p&gt;gedit command သုံးပြီးတဲ့နောက် Home အောက်က Download ဆိုတဲ့ folder ထဲကို ပြောင်းတဲ့ command ရိုက်လိုက်ပါတယ်။ &lt;strong&gt;!!&lt;/strong&gt; လို့ရိုက်ရင်တော့ &lt;em&gt;"cd ~/Download"&lt;/em&gt; ဆိုတဲ့ command ကို ပြန်ခေါ်တာဖြစ်သွားပါလိမ့်မယ်။ ပြထားတဲ့အတိုင်း &lt;strong&gt;!ge&lt;/strong&gt; လို့ရိုက်လိုက်ရင်တော့ History ထဲက &lt;strong&gt;ge&lt;/strong&gt; နဲ့စတဲ့ command တွေထဲကမှ နောက်ဆုံး command ကိုပြန်ခေါ်ပေးမှာပါ။ &lt;em&gt;"gedit /tmp/test"&lt;/em&gt; လို့ပြန်ရိုက်လိုက်တာနဲ့အတူတူပါပဲ။&lt;/p&gt;
+&lt;p&gt;အကယ်၍များ ရိုက်လိုက်တဲ့ command တစ်ခုက root permission လိုခဲ့မယ်ဆိုရင်လဲ အကုန်ပြန်ရိုက်စရာမလိုပါဘူး။ &lt;strong&gt;sudo !!&lt;/strong&gt; လို့ပဲရိုက်စရာလိုပါတယ်။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;apt-get update
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo !!
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="sudo" src="https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2017%3A35%3A56.png" /&gt;&lt;/p&gt;
+&lt;p&gt;ပုံမှာပြထားတဲ့အတိုင်း ပထမ &lt;em&gt;apt-get update&lt;/em&gt; လို့ရိုက်လိုက်ပါတယ်။ root permission လိုတယ်ဆိုပြီး error ပြလာတဲ့အတွက် &lt;strong&gt;sudo&lt;/strong&gt; command နဲ့ &lt;em&gt;"sudo apt-get update"&lt;/em&gt; ဆိုပြီးပြန်ရိုက်ရမှာပါ။ ဒါပေမယ့် အပြည့်အစုံပြန်မရိုက်ပဲ &lt;strong&gt;sudo !!&lt;/strong&gt; ကိုသုံးလိုက်တာပါ။ အပေါ်မှာပြောခဲ့တဲ့အတိုင်း &lt;strong&gt;!!&lt;/strong&gt; က နောက်ဆုံးရိုက်လိုက်တဲ့ command ကိုပြန်ခေါ်ပေးတာပါ။ ဒါကြောင့် &lt;strong&gt;sudo !!&lt;/strong&gt; လို့ရိုက်လိုက်တာက &lt;strong&gt;sudo apt-get update&lt;/strong&gt; လို့ရိုက်လိုက်တာနဲ့ အတူတူဖြစ်သွားပါတယ်။ &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!?&lt;/strong&gt; ကိုတော့ ရိုက်ဖူးတဲ့ command တွေထဲကမှ သတ်မှတ်ထားတဲ့ စာသားပါတဲ့ command ကိုပြန်ခေါ်တဲ့အခါသုံးနိုင်ပါတယ်။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;gedit /tmp/test
+&lt;span class="nv"&gt;$ &lt;/span&gt;gedit ~/Documents/test
+&lt;span class="nv"&gt;$ &lt;/span&gt;!?mp
+&lt;span class="nv"&gt;$ &lt;/span&gt;!?men
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;!&lt;/strong&gt; ကို တခြား သုံးလို့ရတာလေးတွေရှိပါသေးတယ်။ သိပ် အသုံးမဝင်ပေမယ့် သိထားရအောင်ပါ။ အောက်မှာပြထားတဲ့အတိုင်း အစဉ်လိုက် ရိုက်ပြီး စမ်းကြည့်ပါ။ &lt;em&gt;sudo apt-get upgrade&lt;/em&gt; ရိုက်လိုက်လို့ password ဒါမှမဟုတ် Yes/No မေးလာခဲ့ရင် ဆက်မသွားပဲ Control+C နှိပ်ပြီး cancel လုပ်နိုင်ပါတယ်။ ပြီးမှ &lt;strong&gt;!&lt;/strong&gt; နဲ့စတဲ့ command ကို ဆက်ရိုက်ပါ။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;!1
+&lt;span class="nv"&gt;$ &lt;/span&gt;!2
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get upgrade
+&lt;span class="nv"&gt;$ &lt;/span&gt;!:0
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get upgrade
+&lt;span class="nv"&gt;$ &lt;/span&gt;!:1
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get upgrade
+&lt;span class="nv"&gt;$ &lt;/span&gt;!:-1
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get upgrade
+&lt;span class="nv"&gt;$ &lt;/span&gt;!:-2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ရလာမယ့် result တွေကတော့&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;!1&lt;/strong&gt; =&amp;gt; History ထဲမှ ထမဦးဆုံး command ပါ။ &lt;strong&gt;history | more&lt;/strong&gt; ဆိုတဲ့ command နဲ့ စစ်ကြည့်နိုင်ပါတယ်။&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!2&lt;/strong&gt; =&amp;gt; History ထဲမှ ဒုတိယ command ပါ။&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!:0&lt;/strong&gt; =&amp;gt; နောက်ဆုံးရိုက်ထားသော command (&lt;em&gt;sudo apt-get upgrade&lt;/em&gt;) ရဲ့ ပထမဆုံး အပိုင်း &lt;strong&gt;sudo&lt;/strong&gt; ကိုတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!:1&lt;/strong&gt; =&amp;gt; &lt;em&gt;sudo apt-get upgrade&lt;/em&gt; ရဲ့ ဒုတိယအပိုင်း &lt;strong&gt;apt-get&lt;/strong&gt; ကိုတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!:-1&lt;/strong&gt; =&amp;gt; &lt;em&gt;sudo apt-get upgrade&lt;/em&gt; ရဲ့ရှေ့ ၂ပိုင်း &lt;strong&gt;sudo apt-get&lt;/strong&gt; ကိုတွေ့ရမှာပါ။&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;!:-2&lt;/strong&gt; =&amp;gt; &lt;strong&gt;!!&lt;/strong&gt; ရိုက်လိုက်သလိုပါပဲ &lt;strong&gt;sudo apt-get upgrade&lt;/strong&gt; အပြည့်အစုံ ပြန်မြင်ရပါလိမ့်မယ်။&lt;/p&gt;
+&lt;p&gt;Command ရှည်ရင်ရှည်သလို &lt;strong&gt;!:&lt;/strong&gt; နောက်က နံပါတ်ကို တိုးသွားနိုင်ပါတယ်။ &lt;strong&gt;!2:1&lt;/strong&gt; &lt;strong&gt;!2:-1&lt;/strong&gt; စသဖြင့်လဲ ပေါင်းစပ်ရေးသားနိုင်ပါသေးတယ်။&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;နောက်ဆုံးရိုက်ခဲ့တဲ့ command ရဲ့ Parameter တွေလိုချင်ရင်&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;!!*
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;နောက်ဆုံးရိုက်ခဲ့တဲ့ command ရဲ့ ပထမဆုံး Parameter ကိုလိုချင်ရင်&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;!!^
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;နောက်ဆုံးရိုက်ခဲ့တဲ့ command ရဲ့ နောက်ဆုံး Parameter ကိုလိုချင်ရင်&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;!!&lt;span class="err"&gt;$&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;နောက်ဆုံးရိုက်ခဲ့တဲ့ command ရဲ့ ဒုတိယမြောက် Parameter ကိုလိုချင်ရင်&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;!!2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;!!:p&lt;/strong&gt; ဆိုတာရှိပါသေးတယ်။ &lt;strong&gt;!!&lt;/strong&gt; နဲ့ကွာခြားတာက &lt;strong&gt;!!&lt;/strong&gt; က နောက်ဆုံး command ကို တန်း run ပေးတာဖြစ်ပြီး &lt;strong&gt;!!:p&lt;/strong&gt; က စာသား ရိုက်ထုတ်ပေးရုံသက်သက်ပဲဖြစ်ပါတယ်။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;!!:p
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;နောက်ဆုံးရိုက်ထားတဲ့ command ကိုမှ စာသားတချို့ အစားထိုးချင်တယ်ဆိုရင်တော့ &lt;strong&gt;!!:s&lt;/strong&gt; ကိုသုံးနိုင်ပါတယ်။ &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;!!:&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;ပြင်လိုသည့်စာသား&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;ပြင်မည့်စာသား&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ပြထားတဲ့ format အတိုင်း ရိုက်ပြီး ပြင်နိုင်ပါတယ်။&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update
+&lt;span class="nv"&gt;$ &lt;/span&gt;!!:s/date/grade
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ဥပမာထဲကအတိုင်းဆိုရင်တော့ ပထမရိုက်ထားတဲ့ &lt;strong&gt;sudo apt-get update&lt;/strong&gt; ဆိုတဲ့ စာသားကို &lt;strong&gt;sudo apt-get upgrade&lt;/strong&gt; ဆိုပြီးပြောင်းပေးသွားမှာပါ။ &lt;em&gt;update&lt;/em&gt; ရဲ့ &lt;strong&gt;date&lt;/strong&gt; ဆိုတဲ့ နေရာမှာ &lt;strong&gt;grade&lt;/strong&gt; ဆိုတဲ့ စာသားအစားထိုးပြီး &lt;strong&gt;upgrade&lt;/strong&gt; လို့ ပြင်လိုက်တာပါ။&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3&gt;Calculator&lt;/h3&gt;
+&lt;p&gt;Terminal မှာ ပေါင်း၊ နှုတ်၊ မြောက်၊ စား လုပ်ချင်တယ်ဆိုရင်တော့&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;[(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="mi"&gt;50&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;တခြားအသုံးဝင်မယ့် နည်းလမ်းလေးတွေလည်း ဆက်လက်ရေးသားပါဦးမယ်။&lt;/p&gt;</summary><category term="ubuntu"></category><category term="linux"></category><category term="terminal"></category><category term="cli"></category><category term="tips&amp;tricks"></category></entry><entry><title>Tips for Ubuntu-MM</title><link href="http://naingyeminn.com/posts/2014/07/03/tips-for-ubuntu-mm/" rel="alternate"></link><updated>2014-07-03T05:30:00+06:30</updated><author><name>Naing Ye` Minn</name></author><id>tag:naingyeminn.com,2014-07-03:posts/2014/07/03/tips-for-ubuntu-mm/</id><summary type="html">&lt;h3&gt;&lt;code&gt;$&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;Terminal မှ User ၏ Command Prompt ကိုဆိုလိုခြင်းဖြစ်သည်။ Online မှ Blog များ Tutorial များတွင် Command များကိုဖော်ပြရာ၌ ထည့်သွင်းဖော်ပြလေ့ရှိသည်။ သို့သော် ထို Command အား ကူးယူ အသုံးပြုရာတွင် ထည့်သွင်းအသုံးပြုစရာမလိုပါ။ &lt;code&gt;$ sudo apt-get update&lt;/code&gt; ဟုဖော်ပြထားပါက &lt;code&gt;sudo apt-get update&lt;/code&gt; ဆိုသော command  သာကူယူအသုံးပြုရန်လိုအပ်သည်။ &lt;/p&gt;
 &lt;p&gt;&lt;code&gt;$&lt;/code&gt; အား စာလုံးတစ်ချို့နှင့် ကပ်၍အသုံးပြုထားပါက shell variable အဖြစ် သတ်မှတ်ထားသည်ကို ပြန်လည်ခေါ်ယူ အသုံးပြုခြင်းဖြစ်သည်။ &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ var&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello&amp;quot;&lt;/span&gt;
