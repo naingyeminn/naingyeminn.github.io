@@ -148,10 +148,9 @@
 
 
 &lt;p&gt;နောက်ဆုံးရိုက်ထားတဲ့ command ကိုမှ စာသားတချို့ အစားထိုးချင်တယ်ဆိုရင်တော့ &lt;strong&gt;!!:s&lt;/strong&gt; ကိုသုံးနိုင်ပါတယ်။ &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;!!:&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;ပြင်လိုသည့်စာသား&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;ပြင်မည့်စာသား&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
+&lt;blockquote&gt;
+&lt;p&gt;!!:s/[ပြင်လိုသည့်စာသား]/[ပြင်မည့်စာသား]/&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;ပြထားတဲ့ format အတိုင်း ရိုက်ပြီး ပြင်နိုင်ပါတယ်။&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update
 &lt;span class="nv"&gt;$ &lt;/span&gt;!!:s/date/grade
