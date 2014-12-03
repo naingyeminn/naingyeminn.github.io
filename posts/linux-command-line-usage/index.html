@@ -1,0 +1,349 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - Linux Terminal / Command Line Tricks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://localhost:1313/posts/linux-command-line-usage/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/linux-command-line-usage/">Linux Terminal / Command Line Tricks</a></h1>
+	        <div class="post-time">August 3 2014</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://localhost:1313/tags/ubuntu">ubuntu</a>              
+	            
+	                <a href="http://localhost:1313/tags/linux">linux</a>              
+	            
+	                <a href="http://localhost:1313/tags/terminal">terminal</a>              
+	            
+	                <a href="http://localhost:1313/tags/cli">cli</a>              
+	            
+	                <a href="http://localhost:1313/tags/tipstricks">tips&amp;tricks</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        
+
+<p>Linux User တွေအနေနဲ့ သိထားသင့်တဲ့ Terminal အသုံးပြုပုံလေးတွေပါ။ အပြည့်အစုံကြီး မဟုတ်ပေမယ့် အသုံးဝင်တဲ့ နည်းလမ်းလေးတချို့ကိုပဲ အသုံးများတဲ့ Ubuntu ပေါ်အခြေခံပြီး အဓိကထားမျှဝေလိုက်ပါတယ်။</p>
+
+<h1 id="toc_0">Shortcuts</h1>
+
+<hr />
+
+<p><pre>
+<table cellpadding=5>
+<tr>
+    <td width="50%">Terminal အသစ်ဖွင့်</td>
+    <td width="50%">Control + Alter + T</td>
+</tr>
+<tr>
+    <td>Tab အသစ်ဖွင့်</td>
+    <td>Control + Shift + T</td>
+</tr>
+<tr>
+    <td>Zoom In (စာလုံးကြီး)</td>
+    <td>Control +  Shift + = (Control + +)</td>
+</tr>
+<tr>
+    <td>Zoom Out (စာလုံးသေး)</td>
+    <td>Control + -</td>
+</tr>
+<tr>
+    <td>Copy</td>
+    <td>Control + Shift + C</td>
+</tr>
+<tr>
+    <td>Paste</td>
+    <td>Control + Shift + V</td>
+</tr>
+<tr>
+    <td>Command အစသို့</td>
+    <td>Control + A</td>
+</tr>
+<tr>
+    <td>Command ဖျက်</td>
+    <td>Control + U</td>
+</tr></p>
+
+<p></table></p>
+
+<h2 id="toc_1"></pre></h2>
+
+<h3 id="toc_2">Command Completion</h3>
+
+<p>Ubuntu ရဲ့ Terminal မှာ ကိုယ်ရိုက်လိုက်တဲ့ command ရဲ့ စာလုံး အပြည့်အစုံကို <code>Tab</code> key ၂ချက်နှိပ်ပြီး ဖြည့်နိုင်ပါတယ်။ ဥပမာအနေနဲ့ <code>apt</code> လို့ရိုက်ပြီး <code>Tab</code>key ၂ချက်နှိပ်လိုက်မယ်ဆိုရင် ပုံမှာပြထားတဲ့အတိုင်း apt နဲ့စတဲ့ command တွေပြပေးပါလိမ့်မယ်။ <code>i</code> တစ်လုံးထပ်တိုးပြီး (<code>apti</code>) <code>Tab</code> ထပ်နှိပ်ပါက <code>aptitude</code> ဆိုပြီး ဖြည့်ပေးသွားမှာပါ။ Command အစစာလုံး တစ်လုံး နှစ်လုံးရိုက်ပြီး <code>Tab</code> နှိပ်တာနဲ့ အဲဒီ စာလုံးနဲ့စတဲ့ Command ကိုပြပေးသွားတာဖြစ်ပါတယ်။</p>
+
+<pre><code class="language-sh">$ apt[tab][tab]
+$ apti[tab][tab]
+</code></pre>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2016%3A04%3A26.png" alt="Completion" />
+</p>
+
+<p>Directory လမ်းကြောင်းတွေမှာလဲသုံးနိုင်ပါတယ်။</p>
+
+<pre><code class="language-sh">$ cd Do[tab][tab]
+$ cd Dow[tab][tab]
+</code></pre>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2016%3A45%3A01.png" alt="Directory Completion" />
+</p>
+
+<blockquote>
+<p>မှတ်ချက်။ ။ တချို့ Distro တွေမှာတော့ Completion အလုပ်လုပ်ဖို့ configure ပြန်လုပ်ပေးဖို့ လိုပါတယ်။</p>
+</blockquote>
+
+<hr />
+
+<h3 id="toc_3">History</h3>
+
+<p>Terminal ထဲ ရိုက်ထားတဲ့ command တွေကိုတော့ keyboard က <code>Up Arrow</code> key နှိပ်ပြီး ပြန်ခေါ်သုံးနိုင်ပါတယ်။ အကယ်၍များ ရိုက်ဖူးတဲ့ command တစ်ခုကို အပြည့်အစုံမမှတ်မိခဲ့ရင် <code>history</code> command သုံးပြီး ပြန်ရှာနိုင်ပါတယ်။ ပုံမှာပါတဲ့အတိုင်း <code>history | grep</code> နဲ့တွဲပြီး ကိုယ်ရှာချင်တဲ့ command မှာပါတဲ့ စာသာတချို့ ရိုက်ထည့်ပေးရမှာပါ။</p>
+
+<pre><code class="language-sh">$ history | grep [some_part_of_command]
+</code></pre>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2017%3A05%3A40.png" alt="History" />
+</p>
+
+<hr />
+
+<h3 id="toc_4">! - Bang</h3>
+
+<p>နောက်ဆုံးရိုက်ခဲ့တဲ့ command ကိုပြန်ခေါ်ချင်တယ်ဆိုရင်တော့ <strong>!!</strong> ကိုသုံးနိုင်ပါတယ်။</p>
+
+<pre><code class="language-sh">$ gedit /tmp/test
+$ !!
+</code></pre>
+
+<p>ဥပမာပြထားတဲ့အတိုင်း ပထမ ရိုက်လိုက်တဲ့ <em>&ldquo;gedit /tmp/test&rdquo;</em> ဆိုတဲ့ command ကိုပြန် ခေါ်ချင်တယ်ဆိုရင် အပြည့်အစုံ ပြန်ရိုက်စရာမလိုပါဘူး။ <strong>!!</strong> လို့ရိုက်လိုက်တာနဲ့ <em>&ldquo;gedit /tmp/test&rdquo;</em> ဆိုတဲ့ command ပြန်ရိုက်ပြီးသားဖြစ်သွားမှာပါ။</p>
+
+<pre><code class="language-sh">$ gedit /tmp/test
+$ cd ~/Download
+$ !ge
+</code></pre>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2019%3A06%3A29.png" alt="bang" />
+</p>
+
+<p>gedit command သုံးပြီးတဲ့နောက် Home အောက်က Download ဆိုတဲ့ folder ထဲကို ပြောင်းတဲ့ command ရိုက်လိုက်ပါတယ်။ <strong>!!</strong> လို့ရိုက်ရင်တော့ <em>&ldquo;cd ~/Download&rdquo;</em> ဆိုတဲ့ command ကို ပြန်ခေါ်တာဖြစ်သွားပါလိမ့်မယ်။ ပြထားတဲ့အတိုင်း <strong>!ge</strong> လို့ရိုက်လိုက်ရင်တော့ History ထဲက <strong>ge</strong> နဲ့စတဲ့ command တွေထဲကမှ နောက်ဆုံး command ကိုပြန်ခေါ်ပေးမှာပါ။ <em>&ldquo;gedit /tmp/test&rdquo;</em> လို့ပြန်ရိုက်လိုက်တာနဲ့အတူတူပါပဲ။</p>
+
+<p>အကယ်၍များ ရိုက်လိုက်တဲ့ command တစ်ခုက root permission လိုခဲ့မယ်ဆိုရင်လဲ အကုန်ပြန်ရိုက်စရာမလိုပါဘူး။ <strong>sudo !!</strong> လို့ပဲရိုက်စရာလိုပါတယ်။</p>
+
+<pre><code class="language-sh">$ apt-get update
+$ sudo !!
+</code></pre>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2017%3A35%3A56.png" alt="sudo" />
+</p>
+
+<p>ပုံမှာပြထားတဲ့အတိုင်း ပထမ <em>apt-get update</em> လို့ရိုက်လိုက်ပါတယ်။ root permission လိုတယ်ဆိုပြီး error ပြလာတဲ့အတွက် <strong>sudo</strong> command နဲ့ <em>&ldquo;sudo apt-get update&rdquo;</em> ဆိုပြီးပြန်ရိုက်ရမှာပါ။ ဒါပေမယ့် အပြည့်အစုံပြန်မရိုက်ပဲ <strong>sudo !!</strong> ကိုသုံးလိုက်တာပါ။ အပေါ်မှာပြောခဲ့တဲ့အတိုင်း <strong>!!</strong> က နောက်ဆုံးရိုက်လိုက်တဲ့ command ကိုပြန်ခေါ်ပေးတာပါ။ ဒါကြောင့် <strong>sudo !!</strong> လို့ရိုက်လိုက်တာက <strong>sudo apt-get update</strong> လို့ရိုက်လိုက်တာနဲ့ အတူတူဖြစ်သွားပါတယ်။</p>
+
+<p><strong>!?</strong> ကိုတော့ ရိုက်ဖူးတဲ့ command တွေထဲကမှ သတ်မှတ်ထားတဲ့ စာသားပါတဲ့ command ကိုပြန်ခေါ်တဲ့အခါသုံးနိုင်ပါတယ်။</p>
+
+<pre><code class="language-sh">$ gedit /tmp/test
+$ gedit ~/Documents/test
+$ !?mp
+$ !?men
+</code></pre>
+
+<p><strong>!</strong> ကို တခြား သုံးလို့ရတာလေးတွေရှိပါသေးတယ်။ သိပ် အသုံးမဝင်ပေမယ့် သိထားရအောင်ပါ။ အောက်မှာပြထားတဲ့အတိုင်း အစဉ်လိုက် ရိုက်ပြီး စမ်းကြည့်ပါ။ <em>sudo apt-get upgrade</em> ရိုက်လိုက်လို့ password ဒါမှမဟုတ် Yes/No မေးလာခဲ့ရင် ဆက်မသွားပဲ Control+C နှိပ်ပြီး cancel လုပ်နိုင်ပါတယ်။ ပြီးမှ <strong>!</strong> နဲ့စတဲ့ command ကို ဆက်ရိုက်ပါ။</p>
+
+<pre><code class="language-sh">$ !1
+$ !2
+$ sudo apt-get upgrade
+$ !:0
+$ sudo apt-get upgrade
+$ !:1
+$ sudo apt-get upgrade
+$ !:-1
+$ sudo apt-get upgrade
+$ !:-2
+</code></pre>
+
+<p>ရလာမယ့် result တွေကတော့</p>
+
+<blockquote>
+<p><strong>!1</strong> =&gt; History ထဲမှ ထမဦးဆုံး command ပါ။ <strong>history | more</strong> ဆိုတဲ့ command နဲ့ စစ်ကြည့်နိုင်ပါတယ်။</p>
+
+<p><strong>!2</strong> =&gt; History ထဲမှ ဒုတိယ command ပါ။</p>
+
+<p><strong>!:0</strong> =&gt; နောက်ဆုံးရိုက်ထားသော command (<em>sudo apt-get upgrade</em>) ရဲ့ ပထမဆုံး အပိုင်း <strong>sudo</strong> ကိုတွေ့ရပါလိမ့်မယ်။</p>
+
+<p><strong>!:1</strong> =&gt; <em>sudo apt-get upgrade</em> ရဲ့ ဒုတိယအပိုင်း <strong>apt-get</strong> ကိုတွေ့ရပါလိမ့်မယ်။</p>
+
+<p><strong>!:-1</strong> =&gt; <em>sudo apt-get upgrade</em> ရဲ့ရှေ့ ၂ပိုင်း <strong>sudo apt-get</strong> ကိုတွေ့ရမှာပါ။</p>
+
+<p><strong>!:-2</strong> =&gt; <strong>!!</strong> ရိုက်လိုက်သလိုပါပဲ <strong>sudo apt-get upgrade</strong> အပြည့်အစုံ ပြန်မြင်ရပါလိမ့်မယ်။</p>
+
+<p>Command ရှည်ရင်ရှည်သလို <strong>!:</strong> နောက်က နံပါတ်ကို တိုးသွားနိုင်ပါတယ်။ <strong>!2:1</strong> <strong>!2:-1</strong> စသဖြင့်လဲ ပေါင်းစပ်ရေးသားနိုင်ပါသေးတယ်။</p>
+</blockquote>
+
+<p>နောက်ဆုံးရိုက်ခဲ့တဲ့ command ရဲ့ Parameter တွေလိုချင်ရင်</p>
+
+<pre><code class="language-sh">$ !!*
+</code></pre>
+
+<p>နောက်ဆုံးရိုက်ခဲ့တဲ့ command ရဲ့ ပထမဆုံး Parameter ကိုလိုချင်ရင်</p>
+
+<pre><code class="language-sh">$ !!^
+</code></pre>
+
+<p>နောက်ဆုံးရိုက်ခဲ့တဲ့ command ရဲ့ နောက်ဆုံး Parameter ကိုလိုချင်ရင်</p>
+
+<pre><code class="language-sh">$ !!$
+</code></pre>
+
+<p>နောက်ဆုံးရိုက်ခဲ့တဲ့ command ရဲ့ ဒုတိယမြောက် Parameter ကိုလိုချင်ရင်</p>
+
+<pre><code class="language-sh">$ !!2
+</code></pre>
+
+<p><strong>!!:p</strong> ဆိုတာရှိပါသေးတယ်။ <strong>!!</strong> နဲ့ကွာခြားတာက <strong>!!</strong> က နောက်ဆုံး command ကို တန်း run ပေးတာဖြစ်ပြီး <strong>!!:p</strong> က စာသား ရိုက်ထုတ်ပေးရုံသက်သက်ပဲဖြစ်ပါတယ်။</p>
+
+<pre><code class="language-sh">$ !!:p
+</code></pre>
+
+<p>နောက်ဆုံးရိုက်ထားတဲ့ command ကိုမှ စာသားတချို့ အစားထိုးချင်တယ်ဆိုရင်တော့ <strong>!!:s</strong> ကိုသုံးနိုင်ပါတယ်။</p>
+
+<blockquote>
+<p>!!:s/[ပြင်လိုသည့်စာသား]/[ပြင်မည့်စာသား]/</p>
+</blockquote>
+
+<p>ပြထားတဲ့ format အတိုင်း ရိုက်ပြီး ပြင်နိုင်ပါတယ်။</p>
+
+<pre><code class="language-sh">$ sudo apt-get update
+$ !!:s/date/grade
+</code></pre>
+
+<p>ဥပမာထဲကအတိုင်းဆိုရင်တော့ ပထမရိုက်ထားတဲ့ <strong>sudo apt-get update</strong> ဆိုတဲ့ စာသားကို <strong>sudo apt-get upgrade</strong> ဆိုပြီးပြောင်းပေးသွားမှာပါ။ <em>update</em> ရဲ့ <strong>date</strong> ဆိုတဲ့ နေရာမှာ <strong>grade</strong> ဆိုတဲ့ စာသားအစားထိုးပြီး <strong>upgrade</strong> လို့ ပြင်လိုက်တာပါ။</p>
+
+<hr />
+
+<h3 id="toc_5">Calculator</h3>
+
+<p>Terminal မှာ ပေါင်း၊ နှုတ်၊ မြောက်၊ စား လုပ်ချင်တယ်ဆိုရင်တော့</p>
+
+<pre><code class="language-shell">$ echo $[(10+10+5)*2]
+$ 50
+</code></pre>
+
+<p>တခြားအသုံးဝင်မယ့် နည်းလမ်းလေးတွေလည်း ဆက်လက်ရေးသားပါဦးမယ်။</p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    	<p>
+	    		<div class="fb-like" data-href="http://naingyeminn.com" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+	    	</p>
+	    </div>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://localhost:1313/posts/tips-for-ubuntu-mm/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p>© Naing Ye` Minn 2014</p>
+		        </footer>
+		    </div>
+		  </div>    
+		</div>
+      </div>
+    </div>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

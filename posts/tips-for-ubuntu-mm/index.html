@@ -1,0 +1,218 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - Tips for Ubuntu-MM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://localhost:1313/posts/tips-for-ubuntu-mm/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/tips-for-ubuntu-mm/">Tips for Ubuntu-MM</a></h1>
+	        <div class="post-time">July 3 2014</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://localhost:1313/tags/ubuntu">ubuntu</a>              
+	            
+	                <a href="http://localhost:1313/tags/linux">linux</a>              
+	            
+	                <a href="http://localhost:1313/tags/terminal">terminal</a>              
+	            
+	                <a href="http://localhost:1313/tags/cli">cli</a>              
+	            
+	                <a href="http://localhost:1313/tags/tipstricks">tips&amp;tricks</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        
+
+<h3 id="toc_0"><strong>$</strong></h3>
+
+<p>Terminal မှ User ၏ Command Prompt ကိုဆိုလိုခြင်းဖြစ်သည်။ Online မှ Blog များ Tutorial များတွင် Command များကိုဖော်ပြရာ၌ ထည့်သွင်းဖော်ပြလေ့ရှိသည်။ သို့သော် ထို Command အား ကူးယူ အသုံးပြုရာတွင် ထည့်သွင်းအသုံးပြုစရာမလိုပါ။ <code>$ sudo apt-get update</code> ဟုဖော်ပြထားပါက <code>sudo apt-get update</code> ဆိုသော command  သာကူယူအသုံးပြုရန်လိုအပ်သည်။</p>
+
+<p><code>$</code> အား စာလုံးတစ်ချို့နှင့် ကပ်၍အသုံးပြုထားပါက shell variable အဖြစ် သတ်မှတ်ထားသည်ကို ပြန်လည်ခေါ်ယူ အသုံးပြုခြင်းဖြစ်သည်။</p>
+
+<pre><code class="language-sh">$ var=&quot;Hello&quot;
+$ echo $var
+Hello
+</code></pre>
+
+<p>အဆိုပါဥပမာရှိ line တစ်ခုချင်း၏ ရှေ့တွင်တွေ့ရသော <code>$</code> သည် Command Prompt ကိုဆိုလိုခြင်းဖြစ်ပြီး ဒုတိယ line တွင်ပြထားသော $var သည် shell variable ကိုဆိုလိုခြင်းဖြစ်သည်။</p>
+
+<hr />
+
+<h3 id="toc_1"><strong>#</strong></h3>
+
+<p><code>$</code> ကဲသို့ပင် Command များ၏ရှေ့တွင်　ေဖာ်ပြလေ့ရှိသည်။ <code>root user</code> <code>super user</code> အနေဖြင့် အသုံးပြုထားသော Terminal ၏ Command Prompt ကိုဆိုလိုခြင်းဖြစ်သည်။ သာမန် User Prompt <code>$</code> မှ Root User Prompt <code>#</code> သို့ ပြောင်းလိုပါက - <code>sudo -s</code> command ဖြင့်ပြောင်းနိုင်သည်။</p>
+
+<pre><code class="language-sh">$ sudo -s
+[sudo] password for user: 
+# 
+</code></pre>
+
+<hr />
+
+<h3 id="toc_2"><strong>~/</strong></h3>
+
+<p>သင်၏ <code>Home Directory</code> ကိုဆိုလိုခြင်းဖြစ်သည်။ တနည်းအားဖြင့် <code>/home/yourname</code> နှင့်တူညီသည်။</p>
+
+<pre><code class="language-sh">$ cd ~/
+$ cd /home/yourname
+</code></pre>
+
+<hr />
+
+<h3 id="toc_3"><strong>./</strong></h3>
+
+<p>Terminal တွင် သင်ရောက်ရှိနေသော လက်ရှိ Directory ကို ဆိုလိုသည်။ Executable file များကို terminal မှတဆင့် run သောအခါတွင်အသုံးပြုလေ့ရှိသည်။ ဥပမာတွင်ပြထားသည်မှာ လက်ရှိ ရောက်ရှိနေသော Directory ထဲမှ script ဆိုသော Executable File ကို run လိုက်ခြင်းဖြစ်သည်။</p>
+
+<pre><code class="language-sh">$ ./script
+</code></pre>
+
+<hr />
+
+<h3 id="toc_4"><strong>.</strong></h3>
+
+<p>File သို့မဟုတ် Folder တို့၏ အမည်ရှေ့တွင် <code>.</code> ထည့်ပါက ထို File/Folder သည် File Manager ထဲတွင်သာမန်အားဖြင့် မြင်ရမည်မဟုတ်ပါ။ ထို File/Folder များအား File Manager တွင် မြင်နိုင်စေရန် <code>Control + H</code> Key အား နှိပ်၍ ဖော်နိုင်သည်။ အများအားဖြင့် System Configuration file များ folder များတွင်အသုံးပြုလေ့ရှိသည်။ User ၏ Home Directory <code>~/</code> ထဲတွင် <code>.local</code>, <code>.config</code> စသဖြင့်တွေ့နိုင်သည်။</p>
+
+<hr />
+
+<h3 id="toc_5"><strong>sudo</strong></h3>
+
+<p><code>root</code> တနည်းအားဖြင့် <code>super</code> user အနေဖြင့် command များ executable file များအား run သောအခါတွင် သုံးသည်။ Windows တွင် Administrator အနေဖြင့် အသုံးပြုသည်နှင့် တူညီသည်။</p>
+
+<hr />
+
+<h3 id="toc_6">Command, Option and Parameter</h3>
+
+<p>Terminal တွင်း အသုံးပြုသော command များသည် အများအားဖြင့် လက်ရှိရောက်ရှိနေသော Directory နှင့် အတွင်းရှိ File/Folder များတွင်သာ သက်ရောက်သည်။ အထူးထပ်မံဖြည့်စွက်လိုက်သော Options များ Parameter များပေါ်မူတည်၍သာ အပြောင်းအလဲများရှိသည်။ ဥပမာပြရလျှင် <code>ls</code> command သည် လက်ရှိရောက်ရှိနေသော Directory ထဲမှ File/Folder စာရင်းကို ပြပေးသည်။ <code>ls /usr/share</code> ဟူ၍ parameter အနေဖြင့် Directory Path <code>/usr/share</code> ကိုထည့်ပါက ထို Directory ထဲမှ File/Folder များကိုပြပေးမည်ဖြစ်သည်။</p>
+
+<p>Blog များ Tutorial များတွင်ဖော်ပြထားသော Linux Command များအား ကူးယူအသုံးပြုရာတွင် Error များ တက်နိုင်ပါသည်။ အချို့ Command များမှာ မိမိ Install ပြုလုပ်မထားခြင်းကြောင့် ဖြစ်နိုင်သလို ကူယူရာတွင် text format လွဲချော်ခြင်းကြောင့်လဲဖြစ်နိုင်ပါသည်။</p>
+
+<p>Command များသည် အများအားဖြင့် အောက်ပါ format အတိုင်းရှိတတ်ပါသည်။</p>
+
+<pre><code class="language-sh">$ wget -O skype-ubuntu-current_i386.deb http://www.skype.com/go/getskype-linux-beta-ubuntu-32
+</code></pre>
+
+<p>အဆိုပါစာကြောင်းတွင် <code>wget</code> သည် Internet ရှိ File များအား terminal မှတဆင့် Download ပြုလုပ်ရာတွင်သုံးသော command တစ်ခုဖြစ်သည်။ <code>-O</code> သည် command ၏ Option ဖြစ်သည်။ Download ဆွဲလိုက်သော file အား နာမည်တစ်ခုဖြင့် ပြောင်းလဲစေလိုလျှင်သုံးပါသည်။ <code>-O</code> နောက်တွင်ရှိသော <code>skype-ubuntu-current_i386.deb</code> သည် ပြောင်းလဲလိုသော File နာမည်ဖြစ်ပြီး ၄င်း၏နောက်ရှိ <code>http://www.skype.com/go/getskype-linux-beta-ubuntu-32</code> သည် Download ပြုလုပ်မည့် File ရှိရာလမ်းကြောင်း (Link) ဖြစ်သည်။ ထို အစိတ်အပိုင်းတစ်ခုစီ၏ ကြားတွင် Space ခြားထားသည်ကို သတိပြုရန်လိုအပ်သည်။</p>
+
+<p>&ldquo;wget <code>space</code> -O <code>space</code> skype-ubuntu-current_i386.deb <code>space</code> <a href="http://www.skype.com/go/getskype-linux-beta-ubuntu-32&quot;">http://www.skype.com/go/getskype-linux-beta-ubuntu-32&quot;</a></p>
+
+<p>Command များအသုံးပြုရာတွင် <code>-</code>, <code>--</code>, နှင့် Space တို့ကို အထူးကရုပြုရမည်ဖြစ်ပြီး လွဲချော်နေပါက ထို Command အလုပ်လုပ်မည်မဟုတ်ပါ။</p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    	<p>
+	    		<div class="fb-like" data-href="http://naingyeminn.com" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+	    	</p>
+	    </div>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			<a class="prev" href="http://localhost:1313/posts/linux-command-line-usage/">Prev</a>
+			<a class="next" href="http://localhost:1313/posts/vfix-fix-virus-infected-flash-drives/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p>© Naing Ye` Minn 2014</p>
+		        </footer>
+		    </div>
+		  </div>    
+		</div>
+      </div>
+    </div>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

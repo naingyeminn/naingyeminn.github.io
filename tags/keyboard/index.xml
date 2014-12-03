@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Keyboard on Naing Ye` Minn </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://localhost:1313/tags/keyboard/index.xml/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Fri, 12 Jul 2013 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Myanmar Kyeboard for Ubuntu</title>
+      <link>http://localhost:1313/posts/myanmar-keyboard-for-ubuntu/</link>
+      <pubDate>Fri, 12 Jul 2013 00:00:00 UTC</pubDate>
+      
+      <guid>http://localhost:1313/posts/myanmar-keyboard-for-ubuntu/</guid>
+      <description>&lt;p&gt;mm-kb.deb ဆိုတဲ့ ဖိုင်လေးကို ပြန်ပြင်ထားတာပါ။ Ubuntu မှာက အခုနောက်ပိုက် deb ဖိုင်တွေကို အရင်လို double click နှိပ်ပြီး install တမ်းလုပ်လို့အဆင်မပြေတော့ပါဘူး။  အဲ့လိုသွင်းလို့ရဖို့ gDebi ဆိုတာထပ်သွင်းရပါတယ်။ အဲဒါမသွင်းချင်ရင် terminal ကနေ dpkg command နဲ့ သွင်းရပါတယ်။ နောက်ပြီး mm-kb.deb ဖိုင်ကိုသွင်းပြီးရင် IBus ကို run ပေးရတာ input method သွားရွေးပြီးထည့်ပေးရတာ၊ Input Method ကို default xkb အစား IBus သုံးမယ်ဆိုတာတွေကို manually configure လုပ်ပေးရပါတယ်။ အခုဒီ installation script လေးမှာတော့ အဲဒါတွေကို auto လုပ်ပေးသွားမှာပါ။ နောက်ပြီး ယူနီကုတ်၊ ဇော်ဂျီ ကြိုက်ရာ ၂မျိုးစလုံး တစ်ခါတည်းတမ်းတင်နိုင်သလို တစ်ခုဆီလဲ ရွေးပြီးတင်လို့ရပါတယ်။ Bash script ကိုပဲ Zenity သုံးပြီး GUI လေးနဲ့ install လုပ်လို့ရအောင်လုပ်ပေးထားတာပါ။ အရင်ကဆို install လုပ်ပုံလုပ်နည်းတွေကို အရှည်ကြီး ရှင်းပြနေရတဲ့အပြင် သာမာန် user တွေအတွက် ရှုပ်ထွေးတယ်လို့ထင်ကောင်းထင်ပါလိမ့်မယ်။ အခုတော့ ကျွန်တော် တတ်နိုင်သမျှ အလွယ်ဆုံးဖြစ်အောင်တော့ လုပ်ပေးထားပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;mm-kb Zip ဖိုင်ကို download ဆွဲ၊ extract လုပ်၊ အထဲက install ဆိုတဲ့ ဖိုင်လေးကို double click နှိပ်ပြီး ပေါ်လာတဲ့ box ထဲက Run ဆိုတဲ့ button လေးကို click နှိပ်ပေးရုံပါပဲ။ ပြီးရင်တော့ ရွေးစရာ Option box လေးပေါ်လာပါလိမ့်မယ်။ Install Unicode, Install Zawgyi, Install Both နဲ့ Uninstall ဆိုပြီးတွေ့ရပါလိမ့်မယ်။ ကြိုက်ရာရွေးပြီး Ok နှိပ်လိုက်တာနဲ့ status နေရာမှာ IBus icon လေးပေါ်လာပါလိမ့်မယ်။ ပေါ်လာတဲ့အထိတော့ခဏလောက်စောင့်ဖို့လိုပါလိမ့်မယ်။ System font changes ဖြစ်သွားမှာဖြစ်တဲ့အတွက် ခဏလောက်တော့လေးသွားနိုင်ပါတယ်။ desktop ပြန်သွက်သွားပြီဆိုရင်တော့ စသုံးလို့ရပါပြီ။
+“Alt+Shift” နဲ့ keyboard ပြောင်းနိုင်ပြီး အင်္ဂလိပ်နဲ့ မြန်မာကိုတော့ left shift တစ်ချက်ဖိရုံနဲ့ ပြောင်းနိုင်ပါတယ်။
+အားလုံးပဲ စမ်းပြီးသုံးကြည့်ကြပါ။
+ပြဿနာတစ်စုံတစ်ခုရှိခဲ့ရင်လဲ report လုပ်နိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;Source on GitHub : &lt;a href=&#34;https://github.com/seriousblaze/mm-kb&#34;&gt;https://github.com/seriousblaze/mm-kb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Download : &lt;a href=&#34;https://github.com/seriousblaze/mm-kb/archive/master.zip&#34;&gt;https://github.com/seriousblaze/mm-kb/archive/master.zip&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
