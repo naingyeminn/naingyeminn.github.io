@@ -3,7 +3,7 @@
   <channel>
       <title>Posts on Naing Ye` Minn </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://localhost:1313/posts/index.xml/</link>
+    <link>http://naingyeminn.com/posts/index.xml/</link>
     <language>en-us</language>
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Linux Terminal / Command Line Tricks</title>
-      <link>http://localhost:1313/posts/linux-command-line-usage/</link>
+      <link>http://naingyeminn.com/posts/linux-command-line-usage/</link>
       <pubDate>Sun, 03 Aug 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://localhost:1313/posts/linux-command-line-usage/</guid>
+      <guid>http://naingyeminn.com/posts/linux-command-line-usage/</guid>
       <description>
 
 &lt;p&gt;Linux User တွေအနေနဲ့ သိထားသင့်တဲ့ Terminal အသုံးပြုပုံလေးတွေပါ။ အပြည့်အစုံကြီး မဟုတ်ပေမယ့် အသုံးဝင်တဲ့ နည်းလမ်းလေးတချို့ကိုပဲ အသုံးများတဲ့ Ubuntu ပေါ်အခြေခံပြီး အဓိကထားမျှဝေလိုက်ပါတယ်။&lt;/p&gt;
@@ -226,10 +226,10 @@ $ 50
     
     <item>
       <title>Tips for Ubuntu-MM</title>
-      <link>http://localhost:1313/posts/tips-for-ubuntu-mm/</link>
+      <link>http://naingyeminn.com/posts/tips-for-ubuntu-mm/</link>
       <pubDate>Thu, 03 Jul 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://localhost:1313/posts/tips-for-ubuntu-mm/</guid>
+      <guid>http://naingyeminn.com/posts/tips-for-ubuntu-mm/</guid>
       <description>
 
 &lt;h3 id=&#34;toc_0&#34;&gt;&lt;strong&gt;$&lt;/strong&gt;&lt;/h3&gt;
@@ -310,10 +310,10 @@ $ cd /home/yourname
     
     <item>
       <title>vFix - Fix Virus Infected Flash Drives</title>
-      <link>http://localhost:1313/posts/vfix-fix-virus-infected-flash-drives/</link>
+      <link>http://naingyeminn.com/posts/vfix-fix-virus-infected-flash-drives/</link>
       <pubDate>Mon, 23 Jun 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://localhost:1313/posts/vfix-fix-virus-infected-flash-drives/</guid>
+      <guid>http://naingyeminn.com/posts/vfix-fix-virus-infected-flash-drives/</guid>
       <description>&lt;p&gt;ရုံးမှာ တစ်ခါတစ်ခါ Virus ဝင်ထားတဲ့ Flash Drive တွေ ယူယူလာ Data တွေမတွေ့တော့လို့ဆိုပြီး လာပြလေ့ရှိပါတယ်။ များသောအားဖြင့် Windows Virus တွေက Flash Drive ကနေပဲ ကူးကြတာများပါတယ်။ ကူးပြီဆိုရင်လဲ Drive ထဲရှိတဲ့ Folder တွေကို Hidden လုပ် Folder နဲ့ နာမည်တူ Link တွေထုတ်ပြီး virus file ကိုသွားချိတ်လေ့ရှိပါတယ်။ Windows မှာရှိတဲ့ Antivirus က Virus ကိုရှင်လိုက်နိုင်တယ်ဆိုရင်တောင် အဲဒီ Virus က Hidden လုပ်သွားတဲ့ Flash Drive ထဲက Folder တွေကိုတော့ ပြန်ဖေါ်ပေးလေ့မရှိပါဘူး။&lt;/p&gt;
 
 &lt;p&gt;အကယ်၍များ Linux မှာ အဲ့ Drive ကိုသွားသုံးမယ်ဆိုရင်တော့ Hidden ဖြစ်နေတဲ့ Folder တွေကိုမြင်ရပါလိမ့်မယ်။ Drive ထဲ Virus ရှိနေသေးတယ်ဆိုရင်တောင် အဲဒီ Windows က Virus တွေက Linux ပေါ်မှာအလုပ်မလုပ်ပါဘူး။ လိုတာက အဲဒီ Virus ဖိုင်( .exe, .bat) စတာတွေကို ကိုယ်တိုင် delete လုပ်ေပးဖို့ပါပဲ။ နောက်ပြီး Hidden တွေကို ပြန်ေဖာ်တာ virus ကလုပ်သွားတဲ့ Shortcut (.lnk) File တွေကိုပြန်ဖျက်တာတွေ လုပ်ပေးရပါတယ်။ ဒါပေမယ့် Windows File System အရ Hidden လုပ်ထားတဲ့ Folder တွေကို ပြန်ဖော်ပေးဖို့အတွက် Ubuntu မှာတော့ package တချို့ ထပ်တင်ရပါတယ်။ နောက်ပြီး Terminal ကနေ command နဲ့ Folder တွေတစ်ခုချင်း လိုက်ပြီး Hidden attribute လိုက်ဖြုတ်ပေးရပါတယ်။ Windows ပေါ်မှာ တော့ cmd ထဲဝင် &amp;ldquo;attrib -s -h folder_name&amp;rdquo; ဆိုပြီး ပြန်ေဖာ်ပေးလို့ ရပါတယ်။&lt;/p&gt;
@@ -369,10 +369,10 @@ $ vfix
     
     <item>
       <title>XenServer Installation Problems and Review</title>
-      <link>http://localhost:1313/posts/xenserver-installation-problems-and-review/</link>
+      <link>http://naingyeminn.com/posts/xenserver-installation-problems-and-review/</link>
       <pubDate>Fri, 30 May 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://localhost:1313/posts/xenserver-installation-problems-and-review/</guid>
+      <guid>http://naingyeminn.com/posts/xenserver-installation-problems-and-review/</guid>
       <description>&lt;p&gt;မနေ့က အလုပ်မှာ Desktop တစ်လုံးအပိုထွက်လာတာနဲ့ XenServer စမ်းကြည့်ဖြစ်တယ်။ စက်က အမြင့်ကြီးမဟုတ်ပေမယ့် processor က VT support လုပ်တာရယ် Memory 4GB လောက်ရှိတာရယ်ကြောင့် စမ်းဖို့အဆင်ပြေသွာတယ်။ &lt;a href=&#34;http://xenserver.org/overview-xenserver-open-source-virtualization/download.html&#34;&gt;XenServer 6.2&lt;/a&gt; iso လဲဆွဲထားပြီးသားရှိပေမယ့် CD အလွတ်မရှိတာနဲ့ Flash Drive နဲ့ပဲ install လုပ်မယ်ေပါ့။ အဲ့ဒီအတွက် flash drive ကို FAT32 နဲ့ format ချ၊ &lt;a href=&#34;http://sourceforge.net/projects/unetbootin/&#34;&gt;Unetbootin&lt;/a&gt; နဲ့ ပုံမှန်အတိုင်းပဲ XenServer ISO ကို extract လုပ်လိုက်တာ ဖြစ်ချင်တော့ boot တက်တဲ့အချိန်မှာ kernel ရှာမရပါဘူးဆိုပြီး error ပြလာတယ်။ google မှာရှာကြည့်လိုက်တော့ USB drive ရဲ့ /boot/isolinux/ directory ထဲက isolinux.cfg ကို syslinux.cfg ဆိုပြီး တော့ရယ်၊ /boot/ ထဲက isolinux ကို syslinux ဆိုပြီး ပြောင်းပေးရတယ်။ ေနာက် /syslinux.cfg ကိုဖျက်ပေးရတယ်။&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mv /media/flashdrive/boot/isolinux/isolinux.cfg /media/flashdrive/boot/isolinux/syslinux.cfg
@@ -429,10 +429,10 @@ $ rm /media/flashdrive/syslinux.cfg
     
     <item>
       <title>Ubuntu မှာ Unicode သုံးမယ်ဆိုရင်</title>
-      <link>http://localhost:1313/posts/myanmar-unicode-in-ubuntu/</link>
+      <link>http://naingyeminn.com/posts/myanmar-unicode-in-ubuntu/</link>
       <pubDate>Fri, 25 Apr 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://localhost:1313/posts/myanmar-unicode-in-ubuntu/</guid>
+      <guid>http://naingyeminn.com/posts/myanmar-unicode-in-ubuntu/</guid>
       <description>&lt;p&gt;Zawgyi နဲ့ Unicode အင်အားပြိုင်နေတာကြာပါပြီ Zawgyi က web မှာ တစ်နည်းအားဖြင့် internet ပေါ်မှာ အချိန်အတန်သင့် နေရာယူပြီးချိန်မှ Unicode ကပေါ်လာခဲ့လေတော့ သာမန် User အသိုင်းအဝန်းထဲကို Unicode ကမတိုးနိုင်ဖြစ်နေခဲ့တာလဲ အချိန်မနည်းတော့ပါဘူး။ အဓိကက Unicode ရဲ့ အကျိုးကျေးဇူးကိုမသိတဲ့အတွက် အလွယ်တကူသုံးနိုင်ပြီး တွင်ကျယ်နေပြီဖြစ်တဲ့ Zawgyi ကိုပဲဆက်သုံးဖြစ်နေကြတာပါ။ သိတဲ့သူဆိုတာကလဲ IT သမား အသိုင်းအဝန်းထဲကမှ Developer တွေလောက်သာရှိတော့ အခုချိန်ထိကို မတွင်ကျယ်ဖြစ်နေရတယ်။ အထူးသဖြင့် Facebook နဲ့ Gtalk တို့မှာက Zawgyi ပဲသုံးကြတာပါ။ လူအနည်းစုနဲ့ အများစု ယှဉ်လိုက်တော့ အပေါင်းအသင်းတွေထဲ ကိုယ်ပဲ Unicode သုံးပြီး သူရေးတာကိုယ်မဖတ်နိုင် ကိုယ်ရေးတာသူမဖတ်နိုင်နဲ့ နောက်ဆုံး မထူးဇာတ်ခင်းပြီး Zawgyi ပဲပြန်သုံးဖြစ်ကြတာများတယ်။ ကိုယ်တိုင်လဲ အဲဒီလို ခဏခဏဖြစ်တယ်။ နောက်ဆုံး ဆုံးဖြတ်ချက်ချလိုက်တယ်။ ပုံမှန်သုံးရင် Unicode သုံးပြီး Facebook နဲ့ gtalk မှာတော့ လိုအပ်မှ Zawgyi ကိုသုံးမယ်ပေါ့။ ဒါနဲ့ပဲ သုံးနေကျဖြစ်တဲ့ Ubuntu မှာ အဆင်အပြေဆုံးဖြစ်မယ့် နည်းလမ်းတွေရှာဖြစ်ခဲ့တယ်။&lt;/p&gt;
 
 &lt;p&gt;Ubuntu မှာ Zawgyi နဲ့ Unicode Font နှစ်မျိုးလုံးထည့်လိုက်ရင် ဇော်ဂျီနဲ့ပဲ ပေါ်တော့တယ်။ ဘာကြောင့်ရယ် အတိအကျမပြောနိုင်ပေမယ့် Zawgyi Font မှာက Code Point ပိုများနေတဲ့အတွက် Zawgyi ကိုပဲ Default အဖြစ် သတ်မှတ်သွားတာလို့ပဲယူဆတယ်။ ဒါကြောင့် Unicode ကိုပဲ Default အနေနဲ့သုံးချင်တယ်ဆိုရင် Fallback Font ကိုပြောင်းပေးရတယ်။ အဲဒီအတွက် လွယ်အောင် my-fs-cli ဆိုတဲ့ command line tools လေးတစ်ခုရေးဖြစ်တယ်။ Ubuntu 12.04 LTS ပေါ်မှာ Build လုပ်ပြီး Launchpad မှာ တင်ပေးထားပေမယ့် Update မလုပ်ဖြစ်တော့ နောက်ထွက်တဲ့ Ubuntu version အသစ်တွေမှာ ppa သုံးပြီး package manager တွေကနေ install လုပ်လို့မရတော့ဘူး။
@@ -484,20 +484,20 @@ make install
     
     <item>
       <title>Pelican နှင့် ကျွန်တော်</title>
-      <link>http://localhost:1313/posts/pelican-and-me/</link>
+      <link>http://naingyeminn.com/posts/pelican-and-me/</link>
       <pubDate>Sat, 12 Apr 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://localhost:1313/posts/pelican-and-me/</guid>
+      <guid>http://naingyeminn.com/posts/pelican-and-me/</guid>
       <description>&lt;p&gt;အရင်းက blog လေးတစ်ခုလုပ်ပြီး ubuntu အကြောင်းလေးတွေတော်တော်များများ ရေးခဲ့ဖူးပေမယ့် အဲဒီ blog လေးပျက်သွားပြီးကတည်းက ဆက်မရေးဖြစ်တော့တာ တော်တော်ကြာပါပြီ။ ကြားထဲမှာတော့ အသစ်ရထားတဲ့ blog လေးမှာ တစ် post နှစ် post လောက်တော့တင်ဖြစ်တယ်။ အဲ့နောက်ပိုင်းဆက် မရေးဖြစ်တော့ပြန်ဘူး။ အကြောင်းက ရထားတဲ့ blog က wordpress နဲ့ ဆိုပေမယ့် ပြင်ချင်တိုင်းပြင်ဖို့ admin right မရှိတဲ့အတွက် စိတ်ကြိုက် theme ပြောင်းမရတာရယ် နောက်ပြီး unicode နဲ့ရေးတော့ font မရှိလဲ လူတိုင်းဖတ်နိုင်အောင် font embed လုပ်ဖို့ CSS ဝင်ပြင်လို့မရတာတွေရယ်ကတော့ အဓိကပေါ့။ နောက်တစ်ခုက ကိုယ်က ရေးချင်တာကို text editor မှာရေးပြီး online ပြန်တင်ဖို့ကျ format ပြန်ချိန်ရတာကလဲရှိသေးတယ်။ backup ရှိနေဖို့ကိုလဲ တကူးတကာ့ ပြန်သိမ်းနေရတာနဲ့ဆိုတော့ အလုပ်ကရှုပ်တယ်။ ဒီလိုပဲ အကြောင်းအမျိုးမျိုးပြပြီး မရေးဖြစ်တာကြာပါပြီ။ မနေ့ကမှ အကြံတစ်ခုပေါ်လာတာနဲ့ blog အသစ်တစ်ခုလုပ်ဖို့ ဆုံးဖြတ်လိုက်တယ်။ Internet ဟိုဒီရှာရင်း တွေ့လိုက်တဲ့ &lt;a href=&#34;https://ghost.org/&#34; title=&#34;ghost.org&#34;&gt;Ghost&lt;/a&gt; ဆိုတဲ့ blogging platform ကိုစမ်းရာကနေ &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34; title=&#34;Markdown Cheatsheet&#34;&gt;Markdown&lt;/a&gt; format နဲ့ ရေးတဲ့ idea ကို အရမ်းသဘောကျသွားတယ်။ ဒါနဲ့ပဲ markdown နဲ့ရေးလို့ရနိုင်တာလေးတွေရှာကြည့်မိတယ်။ &lt;a href=&#34;http://octopress.org/&#34; title=&#34;octopress.org&#34;&gt;Octopress&lt;/a&gt; ကိုသူငယ်ချင်းတစ်ယောက် သုံးထားတာတွေ့လို့ စမ်းဖို့ကြည့်တော့ Ruby နဲ့ရေးထားတဲ့ Static Page Generator ဆိုတာကိုတွေ့လိုက်ရတယ်။ ကိုယ်ရေးထားတဲ့ markdown file တွေကို ကိုယ်စိတ်ကြိုက်ပြင်ထားတဲ့ HTML/CSS/JavaScript file တွေနဲ့ Static Page (.html) file လေးတွေထုတ်ပေးတာပါ။ အဲဒါစမ်းဖို့အတွက်ကို Package တွေထပ်သွင်းရမှာဆိုတော့ Ruby အစား ကိုယ်နည်းနည်းပါးပါးသိတဲ့ Python နဲ့များရှိလေမလားဆိုပြီးရှာကြည့်ရင်း Pelican ကိုသွားတွေ့တယ်။ Ubuntu သုံးနေတာဖြစ်တဲ့အတွက် Python ကပါပြီးသားဆိုတော့ လိုအပ်တာလေးနည်းနည်းထပ်ဖြည့်လိုက်တာနဲ့ &lt;a href=&#34;http://blog.getpelican.com/&#34; title=&#34;blog.getpelican.com&#34;&gt;Pelican&lt;/a&gt; ကိုစမ်းလို့ရပြီလေ။ လိုချင်တဲ့ Theme ကို ပြင်ဆင်ပြီးပြီဆိုတာနဲ့ သတ်မှတ်ထားတဲ့ location ထဲမှာ Markdown file လေးတွေရေးထည့်ပြီး command လေးရိုက်လိုက်တာနဲ့ ကိုယ်ပြင်ထားတဲ့အတိုင်း .html ဖိုင်လေးတွေထွက်လာရော။ တော်တော်သဘောကျသွားတယ်။ နောက်ပြီ တစ်ခုသိထားတာက Dropbox မှာ HTML/CSS/JavaScript file တွေထည့်ပြီး dropbox public link နဲ့ပြန်ခေါ်ရင် ရတယ်ဆိုတာပါ။ အဲဒီတော့ အခုအတိုင်း Static Page လေးတွေ အလွယ်တကူရေးလို့ရတဲ့အပြင် Dropbox ကိုလဲ hosting တစ်ခုလိုသာသုံးလို့ရမယ်ဆိုရင် အဆင်ပြေလောက်မယ်ထင်တာနဲ့ Dropbox အသုံးချပုံတွေကိုရှာကြည့်ဖြစ်တယ်။ &lt;a href=&#34;http://kissr.com/&#34; title=&#34;kissr.com&#34;&gt;KISSr&lt;/a&gt; လို dropbox နဲ့ ချိတ်ဆက်ပြီး အသုံးပြုလို့ရတဲ့ service သုံးလေးငါးခုလောက်ရှာတွေ့တယ်။ kissr ကတော့ အရိုးရှင်းဆုံးနဲ့ သုံးရအလွယ်ဆုံးဖြစ်မယ်ထင်တာပဲ။ နောက်ပြီး subdomain ယူပြီးသုံးနိုင်တဲ့အပြင် domain name ကလဲ မှတ်ရလွယ်တော့ သုံးမယ်ဆို သုံးလို့အဆင်ပြေပါတယ်။ နောက်တစ်ခုကတော့ github ကိုသုံးပြီး host လုပ်တဲ့နည်းပါ။ Dropbox ကိုသုံးတာက ပိုပြီး လွယ်ကူရှင်းလင်းပေမယ့် github ကိုသုံးလေ့ရှိသူတွေအတွက်ကတော့ ကိုယ့် github မှာပဲ repo ဆောက်ပြီး host လုပ်တာက ပိုကောင်းပါတယ်။ ဘာကြောင့်လဲဆိုတော့ github က ကိုယ်ပိုင် domain နဲ့ ချိတ်ဆက်အသုံးပြုလို့ရအောင် DNS point လုပ်ဖို့ ip နဲ့ လုပ်ပုံလုပ်နည်းတွေကို အသေစိပ်ရေးပေးထားလို့ပါပဲ။ ဒါပေမယ့် Github ကတော့ host လုပ်ဖို့ repository ကို 1GB အထိပဲအမျာဆုံးသုံးနိုင်ပါတယ်။ ပုံမှန် static page လေးတွေ Host လုပ်ဖို့အတွက်လောက်ကတော့ 1GB ဆိုတဲ့ ပမာဏက မနည်းလှပါဘူး။ ဓာတ်ပုံ၊ video၊ audio တွေကို ကိုယ့် post မှာထည့်ချင်တယ်ဆိုရင်တော့ တခြား Dropbox လို youtube လို service တွေမှာ တင်ပြီး link ပြန်လုပ်သုံးမယ်ဆိုရင် Github ကပေးတဲ့ 1GB ဆိုတဲ့ပမာဏက လုံလောက်မှာပါ။ အခုတော့ github ကိုပဲ သုံးဖို့ ရွေးလိုက်ပါတယ်။&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Elementary OS - Review (1)</title>
-      <link>http://localhost:1313/posts/elementary-os-review-1/</link>
+      <link>http://naingyeminn.com/posts/elementary-os-review-1/</link>
       <pubDate>Fri, 11 Apr 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://localhost:1313/posts/elementary-os-review-1/</guid>
+      <guid>http://naingyeminn.com/posts/elementary-os-review-1/</guid>
       <description>&lt;p&gt;လက်ရှိ Laptop မှာ Ubuntu 12.04 LTS ပဲသုံးနေခဲ့တာ တော်တော်ကြာနေပါပြီ။ ကြားထဲမှာ 12.10, 13.04 နဲ့ 13.10 version သုံးခုတောင်ထွက်ခဲ့သည့်တိုင်အောင်မပြောင်းသေးပဲ Stable ဖြစ်တဲ့ LTS ကိုပဲဆက်သုံးဖြစ်နေတာပါ။ အခု လာမယ့် April ဆိုရင် နောက်ထပ် LTS version အသစ်တစ်ခုဖြစ်တဲ့ 14.04 ထပ်ထွက်တော့မှာဖြစ်တဲ့အတွက် version အသစ်ကိုမပြောင်းခင် တခြား distro လေးတွေပြောင်းစမ်းဖို့စိတ်ကူးမိတာနဲ့ပဲ နောက်ဆုံး ဒီ Elementary OS လေး စမ်းကြည့်ဖို့ ရွေးလိုက်ပါတယ်။&lt;/p&gt;
 
 &lt;p&gt;Elementary OS က ubuntu-based distro တစ်ခုပါပဲ။ Ubuntu ကိုအခြေခံပြီး မွမ်းမံထားတဲ့ OS တစ်ခုပါ။ သူ့ကို eOS လို့ အတိုကောက်ခေါ်ကြလေ့ရှိပါတယ်။ အခုစမ်းကြည့်ရသလောက်တော့ တော်တော်လေးကို ရိုးရှင်းပြီး အသုံးပြုရလွယ်ကူတာတွေ့ရပါတယ်။ သုံးကြည့်ရသလောက်တော့ အပြည့်အဝပြည့်စုံကောင်းမွန်တဲ့ OS တစ်ခုလို့မဆိုနိုငေ်ပမယ့် အတိုင်းအတာတစ်ခုထိ စိတ်ကြေနပ်စရာကောင်းတဲ့ OS လေးတစ်ခုဖြစ်တယ်လို့တော့ဆိုချင်ပါတယ်။ ထူးခြားချက်လေးတွေ၊ အားသာချက်လေးတွေရှိသလို အားနည်းချက်လေးတွေလဲရှိပါတယ်။&lt;/p&gt;
@@ -512,10 +512,10 @@ make install
     
     <item>
       <title>Myanmar Kyeboard for Ubuntu</title>
-      <link>http://localhost:1313/posts/myanmar-keyboard-for-ubuntu/</link>
+      <link>http://naingyeminn.com/posts/myanmar-keyboard-for-ubuntu/</link>
       <pubDate>Fri, 12 Jul 2013 00:00:00 UTC</pubDate>
       
-      <guid>http://localhost:1313/posts/myanmar-keyboard-for-ubuntu/</guid>
+      <guid>http://naingyeminn.com/posts/myanmar-keyboard-for-ubuntu/</guid>
       <description>&lt;p&gt;mm-kb.deb ဆိုတဲ့ ဖိုင်လေးကို ပြန်ပြင်ထားတာပါ။ Ubuntu မှာက အခုနောက်ပိုက် deb ဖိုင်တွေကို အရင်လို double click နှိပ်ပြီး install တမ်းလုပ်လို့အဆင်မပြေတော့ပါဘူး။  အဲ့လိုသွင်းလို့ရဖို့ gDebi ဆိုတာထပ်သွင်းရပါတယ်။ အဲဒါမသွင်းချင်ရင် terminal ကနေ dpkg command နဲ့ သွင်းရပါတယ်။ နောက်ပြီး mm-kb.deb ဖိုင်ကိုသွင်းပြီးရင် IBus ကို run ပေးရတာ input method သွားရွေးပြီးထည့်ပေးရတာ၊ Input Method ကို default xkb အစား IBus သုံးမယ်ဆိုတာတွေကို manually configure လုပ်ပေးရပါတယ်။ အခုဒီ installation script လေးမှာတော့ အဲဒါတွေကို auto လုပ်ပေးသွားမှာပါ။ နောက်ပြီး ယူနီကုတ်၊ ဇော်ဂျီ ကြိုက်ရာ ၂မျိုးစလုံး တစ်ခါတည်းတမ်းတင်နိုင်သလို တစ်ခုဆီလဲ ရွေးပြီးတင်လို့ရပါတယ်။ Bash script ကိုပဲ Zenity သုံးပြီး GUI လေးနဲ့ install လုပ်လို့ရအောင်လုပ်ပေးထားတာပါ။ အရင်ကဆို install လုပ်ပုံလုပ်နည်းတွေကို အရှည်ကြီး ရှင်းပြနေရတဲ့အပြင် သာမာန် user တွေအတွက် ရှုပ်ထွေးတယ်လို့ထင်ကောင်းထင်ပါလိမ့်မယ်။ အခုတော့ ကျွန်တော် တတ်နိုင်သမျှ အလွယ်ဆုံးဖြစ်အောင်တော့ လုပ်ပေးထားပါတယ်။&lt;/p&gt;
 
 &lt;p&gt;mm-kb Zip ဖိုင်ကို download ဆွဲ၊ extract လုပ်၊ အထဲက install ဆိုတဲ့ ဖိုင်လေးကို double click နှိပ်ပြီး ပေါ်လာတဲ့ box ထဲက Run ဆိုတဲ့ button လေးကို click နှိပ်ပေးရုံပါပဲ။ ပြီးရင်တော့ ရွေးစရာ Option box လေးပေါ်လာပါလိမ့်မယ်။ Install Unicode, Install Zawgyi, Install Both နဲ့ Uninstall ဆိုပြီးတွေ့ရပါလိမ့်မယ်။ ကြိုက်ရာရွေးပြီး Ok နှိပ်လိုက်တာနဲ့ status နေရာမှာ IBus icon လေးပေါ်လာပါလိမ့်မယ်။ ပေါ်လာတဲ့အထိတော့ခဏလောက်စောင့်ဖို့လိုပါလိမ့်မယ်။ System font changes ဖြစ်သွားမှာဖြစ်တဲ့အတွက် ခဏလောက်တော့လေးသွားနိုင်ပါတယ်။ desktop ပြန်သွက်သွားပြီဆိုရင်တော့ စသုံးလို့ရပါပြီ။
