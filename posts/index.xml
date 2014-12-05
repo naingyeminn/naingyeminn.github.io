@@ -7,7 +7,26 @@
     <language>en-us</language>
     
     
-    <updated>Sun, 03 Aug 2014 00:00:00 UTC</updated>
+    <updated>Fri, 05 Dec 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Myanmar Unicode Keyboard for Mac OS X (Yosemite)</title>
+      <link>http://naingyeminn.com/posts/myanmar-unicode-keyboard-for-yosemite/</link>
+      <pubDate>Fri, 05 Dec 2014 00:00:00 UTC</pubDate>
+      
+      <guid>http://naingyeminn.com/posts/myanmar-unicode-keyboard-for-yosemite/</guid>
+      <description>&lt;p&gt;Mac OS X Yosemite စသုံးတော့ Unicode အတွက် keyboard ရှာဖြစ်တယ်။ ပါလာတဲ့ Default မြန်မာစာ လက်ကွက်က ပုံမှန်ရိုက်နေကျ မြန်မာ unicode keyboard layout အတိုင်မဟုတ်တော့ ရိုက်ရတာအဆင်မပြေဘူး။ ဒါနဲ့ KeyMagic ပဲသုံးမယ်လေဆိုပြီး install လုပ်လိုက်တယ်။ စာရိုက်ရတာတော့အဆင်ပြေပါတယ်။ ဒါပေမယ့် မြန်မာလိုရိုက်နေရာကနေ ခဏနားလိုက်လို့ Screen Lock ကျသွားရင် ပြန်ဝင်ဖို့ password ရိုက်မရတော့ဘူး။ Guest Account ထဲဝင်ပြီးပြန်ထွက်မှ password ပြန်ရိုက်လို့ရတယ်။ KeyMagic ရေးတဲ့ သန့်သက် ကိုမေးကြည့်တော့ အဲဒါက Yosemite ရဲ့ Bug ဆိုတော့ ဘာမှလုပ်ပေးလို့မရပါဘူးတဲ့။ အမြဲလိုလိုအဲ့လိုကြီးဝင်နေရတာ သိပ်မဟန်တာကြောင့် Keyboard Input Source ဘယ်လိုလုပ်ရမလဲဆိုပြီး ရှာကြည့်ဖြစ်တော့ လွယ်လွယ်ကူကူပါပဲ အဖြေတန်းတွေ့တယ်။ &lt;a href=&#34;http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;amp;id=ukelele&#34;&gt;Ukelele&lt;/a&gt; ဆိုတဲ့ software လေးပါ။ အဲဒါလေးနဲ့ ရှိနေတဲ့ Keyboard Layout တွေကို စိတ်ကြိုက် ပြင်လို့ရတယ်ဆိုတော့ Default Myanmar Keyboard ကို Myanmar3 Layout အတိုင်းဖြစ်အောင် ပြန်ပြီးပြင်လိုက်တယ်။ ရိုက်နေကျအတိုင်းဖြစ်သွားတော့ တော်တော်လေးအဆင်ပြေသွားတယ်။ KeyMagic မှာလို password ရိုက်မရတာမျိုးလဲမရှိတော့ဘူး။ အဲဒါကြောင့် Facebook က Myanmar Unicode Area မှာ တင်ပြီး share ပေးထားလိုက်တယ်။ ဒါပေမယ့် Facebook က ပြန်ရှာရခက်တာကြောင့် ဒီမှာထပ်ရေးပြီး Share ပေးပါ့မယ်။&lt;/p&gt;
+
+&lt;p&gt;Installation ကတော့ ခက်ခက်ခဲခဲကြီးမဟုတ်ပါဘူး။ ပေးထားတဲ့ zip ဖိုင်လေးကို download ဆွဲ double click နှိပ်ပြီး extract လုပ်။ ထွက်လာတဲ့ ဖိုင်ကို &lt;code&gt;/Library/Keyboard Layouts&lt;/code&gt; ဆိုတဲ့ folder ထဲသွားထည့်ပေးလိုက်ရုံပါပဲ။ ပြီးလျှင်တော့ ပုံမှန်အတိုင်း System Preferences &amp;gt; Keyboard &amp;gt; Input Sources ကနေ ရွေးပြီး သုံးနိုင်ပါပြီ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/osx/ScreenShots/Screenshot%202014-12-05%2013.47.45.png&#34; alt=&#34;Myanmar3 Layout&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Keyboard Kayout ကိုတော့ Dropbox မှာတင်ပေးထားပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;Download: &lt;a href=&#34;https://dl.dropboxusercontent.com/u/26716001/osx/Myanmar3%20-%20QWERTY.bundle.zip&#34;&gt;Myanmar3 QWERTY Keyboard&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Linux Terminal / Command Line Tricks</title>
