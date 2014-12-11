@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Keyboard on Naing Ye` Minn </title>
+      <title>Ibus on Naing Ye` Minn </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://naingyeminn.com/tags/keyboard/index.xml/</link>
+    <link>http://naingyeminn.com/tags/ibus/index.xml/</link>
     <language>en-us</language>
     
     
@@ -80,44 +80,6 @@ $ gsettings set org.freedesktop.ibus.panel show 0
 &lt;blockquote&gt;
 &lt;p&gt;အဆင်မပြေတာ ဒါမှမဟုတ် လိုအပ်တာများကိုအကြံပေးချင်၊ အကြောင်းကြားချင်ရင်တော့ Comment ကနေဖြစ်စေ &lt;a href=&#34;https://www.facebook.com/groups/ubuntu4mm/&#34;&gt;Facebook Group&lt;/a&gt; မှာဖြစ်စေ မေးမြန်းအကြံပေးနိုင်ပါတယ်။&lt;/p&gt;
 &lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Myanmar Unicode Keyboard for Mac OS X (Yosemite)</title>
-      <link>http://naingyeminn.com/posts/myanmar-unicode-keyboard-for-yosemite/</link>
-      <pubDate>Fri, 05 Dec 2014 00:00:00 UTC</pubDate>
-      
-      <guid>http://naingyeminn.com/posts/myanmar-unicode-keyboard-for-yosemite/</guid>
-      <description>&lt;p&gt;Mac OS X Yosemite စသုံးတော့ Unicode အတွက် keyboard ရှာဖြစ်တယ်။ ပါလာတဲ့ Default မြန်မာစာ လက်ကွက်က ပုံမှန်ရိုက်နေကျ မြန်မာ unicode keyboard layout အတိုင်မဟုတ်တော့ ရိုက်ရတာအဆင်မပြေဘူး။ ဒါနဲ့ KeyMagic ပဲသုံးမယ်လေဆိုပြီး install လုပ်လိုက်တယ်။ စာရိုက်ရတာတော့အဆင်ပြေပါတယ်။ ဒါပေမယ့် မြန်မာလိုရိုက်နေရာကနေ ခဏနားလိုက်လို့ Screen Lock ကျသွားရင် ပြန်ဝင်ဖို့ password ရိုက်မရတော့ဘူး။ Guest Account ထဲဝင်ပြီးပြန်ထွက်မှ password ပြန်ရိုက်လို့ရတယ်။ KeyMagic ရေးတဲ့ သန့်သက် ကိုမေးကြည့်တော့ အဲဒါက Yosemite ရဲ့ Bug ဆိုတော့ ဘာမှလုပ်ပေးလို့မရပါဘူးတဲ့။ အမြဲလိုလိုအဲ့လိုကြီးဝင်နေရတာ သိပ်မဟန်တာကြောင့် Keyboard Input Source ဘယ်လိုလုပ်ရမလဲဆိုပြီး ရှာကြည့်ဖြစ်တော့ လွယ်လွယ်ကူကူပါပဲ အဖြေတန်းတွေ့တယ်။ &lt;a href=&#34;http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;amp;id=ukelele&#34;&gt;Ukelele&lt;/a&gt; ဆိုတဲ့ software လေးပါ။ အဲဒါလေးနဲ့ ရှိနေတဲ့ Keyboard Layout တွေကို စိတ်ကြိုက် ပြင်လို့ရတယ်ဆိုတော့ Default Myanmar Keyboard ကို Myanmar3 Layout အတိုင်းဖြစ်အောင် ပြန်ပြီးပြင်လိုက်တယ်။ ရိုက်နေကျအတိုင်းဖြစ်သွားတော့ တော်တော်လေးအဆင်ပြေသွားတယ်။ KeyMagic မှာလို password ရိုက်မရတာမျိုးလဲမရှိတော့ဘူး။ အဲဒါကြောင့် Facebook က Myanmar Unicode Area မှာ တင်ပြီး share ပေးထားလိုက်တယ်။ ဒါပေမယ့် Facebook က ပြန်ရှာရခက်တာကြောင့် ဒီမှာထပ်ရေးပြီး Share ပေးပါ့မယ်။&lt;/p&gt;
-
-&lt;p&gt;Installation ကတော့ ခက်ခက်ခဲခဲကြီးမဟုတ်ပါဘူး။ ပေးထားတဲ့ zip ဖိုင်လေးကို download ဆွဲ double click နှိပ်ပြီး extract လုပ်။ ထွက်လာတဲ့ ဖိုင်ကို &lt;code&gt;/Library/Keyboard Layouts&lt;/code&gt; ဆိုတဲ့ folder ထဲသွားထည့်ပေးလိုက်ရုံပါပဲ။ ပြီးလျှင်တော့ ပုံမှန်အတိုင်း System Preferences &amp;gt; Keyboard &amp;gt; Input Sources ကနေ ရွေးပြီး သုံးနိုင်ပါပြီ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/osx/ScreenShots/Screenshot%202014-12-05%2013.47.45.png&#34; alt=&#34;Myanmar3 Layout&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Keyboard Kayout ကိုတော့ Dropbox မှာတင်ပေးထားပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;Download: &lt;a href=&#34;https://dl.dropboxusercontent.com/u/26716001/osx/Myanmar3%20-%20QWERTY.bundle.zip&#34;&gt;Myanmar3 QWERTY Keyboard&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Myanmar Kyeboard for Ubuntu</title>
-      <link>http://naingyeminn.com/posts/myanmar-keyboard-for-ubuntu/</link>
-      <pubDate>Fri, 12 Jul 2013 00:00:00 UTC</pubDate>
-      
-      <guid>http://naingyeminn.com/posts/myanmar-keyboard-for-ubuntu/</guid>
-      <description>&lt;p&gt;mm-kb.deb ဆိုတဲ့ ဖိုင်လေးကို ပြန်ပြင်ထားတာပါ။ Ubuntu မှာက အခုနောက်ပိုက် deb ဖိုင်တွေကို အရင်လို double click နှိပ်ပြီး install တမ်းလုပ်လို့အဆင်မပြေတော့ပါဘူး။  အဲ့လိုသွင်းလို့ရဖို့ gDebi ဆိုတာထပ်သွင်းရပါတယ်။ အဲဒါမသွင်းချင်ရင် terminal ကနေ dpkg command နဲ့ သွင်းရပါတယ်။ နောက်ပြီး mm-kb.deb ဖိုင်ကိုသွင်းပြီးရင် IBus ကို run ပေးရတာ input method သွားရွေးပြီးထည့်ပေးရတာ၊ Input Method ကို default xkb အစား IBus သုံးမယ်ဆိုတာတွေကို manually configure လုပ်ပေးရပါတယ်။ အခုဒီ installation script လေးမှာတော့ အဲဒါတွေကို auto လုပ်ပေးသွားမှာပါ။ နောက်ပြီး ယူနီကုတ်၊ ဇော်ဂျီ ကြိုက်ရာ ၂မျိုးစလုံး တစ်ခါတည်းတမ်းတင်နိုင်သလို တစ်ခုဆီလဲ ရွေးပြီးတင်လို့ရပါတယ်။ Bash script ကိုပဲ Zenity သုံးပြီး GUI လေးနဲ့ install လုပ်လို့ရအောင်လုပ်ပေးထားတာပါ။ အရင်ကဆို install လုပ်ပုံလုပ်နည်းတွေကို အရှည်ကြီး ရှင်းပြနေရတဲ့အပြင် သာမာန် user တွေအတွက် ရှုပ်ထွေးတယ်လို့ထင်ကောင်းထင်ပါလိမ့်မယ်။ အခုတော့ ကျွန်တော် တတ်နိုင်သမျှ အလွယ်ဆုံးဖြစ်အောင်တော့ လုပ်ပေးထားပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;mm-kb Zip ဖိုင်ကို download ဆွဲ၊ extract လုပ်၊ အထဲက install ဆိုတဲ့ ဖိုင်လေးကို double click နှိပ်ပြီး ပေါ်လာတဲ့ box ထဲက Run ဆိုတဲ့ button လေးကို click နှိပ်ပေးရုံပါပဲ။ ပြီးရင်တော့ ရွေးစရာ Option box လေးပေါ်လာပါလိမ့်မယ်။ Install Unicode, Install Zawgyi, Install Both နဲ့ Uninstall ဆိုပြီးတွေ့ရပါလိမ့်မယ်။ ကြိုက်ရာရွေးပြီး Ok နှိပ်လိုက်တာနဲ့ status နေရာမှာ IBus icon လေးပေါ်လာပါလိမ့်မယ်။ ပေါ်လာတဲ့အထိတော့ခဏလောက်စောင့်ဖို့လိုပါလိမ့်မယ်။ System font changes ဖြစ်သွားမှာဖြစ်တဲ့အတွက် ခဏလောက်တော့လေးသွားနိုင်ပါတယ်။ desktop ပြန်သွက်သွားပြီဆိုရင်တော့ စသုံးလို့ရပါပြီ။
-“Alt+Shift” နဲ့ keyboard ပြောင်းနိုင်ပြီး အင်္ဂလိပ်နဲ့ မြန်မာကိုတော့ left shift တစ်ချက်ဖိရုံနဲ့ ပြောင်းနိုင်ပါတယ်။
-အားလုံးပဲ စမ်းပြီးသုံးကြည့်ကြပါ။
-ပြဿနာတစ်စုံတစ်ခုရှိခဲ့ရင်လဲ report လုပ်နိုင်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;Source on GitHub : &lt;a href=&#34;https://github.com/seriousblaze/mm-kb&#34;&gt;https://github.com/seriousblaze/mm-kb&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Download : &lt;a href=&#34;https://github.com/seriousblaze/mm-kb/archive/master.zip&#34;&gt;https://github.com/seriousblaze/mm-kb/archive/master.zip&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -7,7 +7,81 @@
     <language>en-us</language>
     
     
-    <updated>Sun, 03 Aug 2014 00:00:00 UTC</updated>
+    <updated>Thu, 11 Dec 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Burmese Font and Keyboard Installation for Ubuntu 14.04 LTS</title>
+      <link>http://naingyeminn.com/posts/burmese-keyboard-for-ubuntu-1404/</link>
+      <pubDate>Thu, 11 Dec 2014 00:00:00 UTC</pubDate>
+      
+      <guid>http://naingyeminn.com/posts/burmese-keyboard-for-ubuntu-1404/</guid>
+      <description>&lt;p&gt;Ubuntu Myanmar LoCo Team ရဲ့ Facebook page မှာအမြဲတမ်းမေးလေ့ရှိတဲ့ မေးခွန်းပါ။ Ubuntu မှာ မြန်မာ font ဘယ်လိုသွင်းရမလဲ မြန်မာလို ရိုက်မရလို့ပြောပြပါဦးဆိုတဲ့ မေးခွန်းတွေအတွက် ဖြေရလွယ်အောင် ဒီ post လေးထပ်ရေးလိုက်ပါတယ်။ Ubuntu 14.04 LTS version ကိုအခြေခံပြီး ပြောပြသွားပါမယ်။&lt;/p&gt;
+
+&lt;p&gt;အလျှင်ဦးဆုံး install လုပ်ပုံတွေမပြောခင် font နဲ့ keyboard တနည်းအားဖြင့် input source တို့ရဲ့ သဘောတရားလေးကို ရှင်းပြပါရစေ။ Ubuntu, Windows, Android, iDevice ဘယ် System မှာမဆို မြန်မာလိုမြင်ရဖို့ မြန်မာ font လိုအပ်ပြီး မြန်မာလို ရေးသားနိုင်ဖို့ Keyboard လိုအပ်ပါတယ်။ လက်ရှိကျွန်တော်တို့ online မှာ၊ User တွေကြားမှာ အဓိကသုံးနေတဲ့ မြန်မာစာ Font ၂မျိုးရှိပါတယ်။ ဇော်ဂျီ နဲ့ ယူနီကုဒ်ပါ။ ဇော်ဂျီကတော့ Web ပေါ်မှာရော Social Network တွေမှာပါအသုံးများတာ အားလုံးပဲသိကြမှာပါ။ မြန်မာ font ဆိုတာနဲ့ ဇော်ဂျီကိုပဲ သတိရကြတာပါ။ တကယ်တမ်းတော့ ဇော်ဂျီက Unicode ဆိုတဲ့စနစ်ကို အခြေခံထားပေမယ့် အပြည့်အဝမလိုက်နာထားတဲ့ Font အမျိုးအစားတစ်ခုပါ။ ယူနီကုဒ်စနစ်ကို လိုက်နာပြီး Ubuntu မှာပါအဆင်ပြေတဲ့ Font တွေကတော့ Padauk, Myanmar3, Tharlon, Noto Sans Myanmar, Yunghkio, Mon3 Anonta 1 တို့ပဲဖြစ်ပါတယ်။ Ubuntu မှာကတော့ Unicode Font အနေနဲ့ Padauk font ပါဝင်ပြီးသားဖြစ်ပေမယ့် Zawgyi သုံးပြီးရေးထားတာတွေကို မြင်ရဖို့အတွက်တော့ Zawgyi font install လုပ်ပေးဖို့လိုအပ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;Keyboard (Input Source) ဆိုတာကတော့ မြန်မာလိုစာရိုက်နိုင်ဖို့အတွက်ပါ။ Zawgyi font သုံးပြီးစာရိုက်နိုင်ဖို့အတွက် Zawgyi Keyboard လိုအပ်သလို ယူနီကုဒ်သုံးပြီး စာရိုက်နိုင်ဖို့အတွက် Unicode Keyboard လိုအပ်ပါတယ်။ တချို့တွေမေးကြပါတယ်။ မြန်မာလိုမြင်ရပေမယ့် စာရိုက်လို့မရလို့ပါတဲ့။ အဲဒါကတော့ Zawgyi Font သွင်းထားပြီး keyboard မသွင်းထားတဲ့အတွက် စာရိုက်လို့မရတာပါ။ Zawgyi မှမဟုတ်ပါဘူး Unicode လည်း keyboard မသွင်းထားရင် မြန်မာလို စာရိုက်လို့မရပါဘူး။&lt;/p&gt;
+
+&lt;p&gt;Ubuntu Installation ပြုလုပ်တဲ့အချိန် Location ကို Rangoon ရွေးခဲ့ရင်တော့ ယူနီကုဒ် Padauk font ပါဝင်လာပြီး ပြက္ခဒိန်ကို မြန်မာလိုမြင်ရပါလိမ့်မယ်။ Keyboard အနေနဲ့ကတော့ xkb input method ကိုအခြေခံထားတဲ့ unicode keyboard တစ်ခုပါဝင်ပြီးသားပါ။ Text Entry ဆိုတဲ့ setting ထဲမှာ ထပ်ဖြည့်ပေးရပါတယ်။ ဇော်ဂျီသုံးချင်တယ်ဆိုလျှင်တော့ Zawgyi Font နဲ့ Keyboard ကိုထပ်သွင်းပေးရပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;xkb input method ကိုသုံးထားတဲ့ keyboard က သုံးရတာပေါ့ပေါ့ပါးပါးရှိပါတယ်။ ဒါပေမယ့် အင်္ဂလိပ်လိုနဲ့ မြန်မာလိုကို ပြောင်းဖို့အတွက် shortcut key နှစ်ခုကို တွဲနှိပ်ပေးရပါတယ်။ &lt;strong&gt;Control + Shift&lt;/strong&gt; ဒါမှမဟုတ် &lt;strong&gt;Alter + Shift&lt;/strong&gt; key တွေကို တွဲနှိပ်ပေးရတာမျိုးပါ။ ကျွန်တော့်အနေနဲ့ အဓိကသုံးဖြစ်တာကတော့ IBus input method ကိုသုံးထားတဲ့ keyboard ပါ။ သူ့မှာထူးခြားတာက အင်္ဂလိပ်၊ မြန်မာ ပြောင်းဖို့အတွက် &lt;strong&gt;Left Shift&lt;/strong&gt; key တစ်ခုတည်းကိုပဲတစ်ချက်နှိပ်ရုံနဲ့ အလွယ်တကူပြောင်းပေးနိုင်တာပါ။ keyboard layout နဲ့ ရိုက်ရတဲ့ပုံစံကတော့ xkb အတိုင်းပါပဲ။&lt;/p&gt;
+
+&lt;p&gt;နောက်တစ်ခုက Zawgyi Font နဲ့ပက်သက်ပြီး တက်တတ်တဲ့ပြဿနာလေးပါ။ Ubuntu ကို Install လုပ်ပြီးပြီးချင်း တမ်းသုံးလို့ရတာက Padauk Unicode Font နဲ့ပါ။ အဲဒါကို ကျွန်တော်တို့က Zawgyi သုံးနေကျမို့ Zawgyi Font ကို install လုပ်လိုက်မယ်ဆိုရင် System တစ်ခုလုံး မြန်မာလိုကို Zawgyi font နဲ့ ပြပေးသွားမှာပါ။ အဲဒီအခါ နဂိုက မှန်မှန်ကန်ကန်ပြနေတဲ့ ပြက္ခဒိန်မှာရှိတဲ့ မြန်မာစာသားတွေအားလုံး တလွဲဖြစ်သွားပါလိမ့်မယ်။ အကြောင်းကတော့ Unicode နဲ့ရေးထားတဲ့ စာသားတွေကို Zawgyi font သုံးပြီး ပြပေးသလို ဖြစ်သွားတာကြောင့်ပါ။ အကြောင်းအရင်ကတော့ System Fallback Font သတ်မှတ်တဲ့ နေရာမှာ System က Code Point တစ်နည်းအားဖြင့် Character Symbol များတဲ့ font ကိုပဲအဓိကထားပြီးရွေးလို့ပါ။ Fallback Font ဆိုတာကတော့ အရှင်းဆုံးပြောရရင် အက္ခရာတိုင်းအတွက် ဘယ်အက္ခရာကို ဘယ် font နဲ့ပြပေးမယ်ဆိုတာကို သတ်မှတ်ပေးတာပါ။ Unicode font တွေနဲ့ ယှဉ်ရင် Zawgyi က Code Point ပိုများပါတယ်။ ဥပမာ Unicode မှာ ရရစ် &lt;strong&gt;ြ&lt;/strong&gt; ကတစ်မျိုးတည်းရှိပြီး Zawgyi မှာတော့ ၈မျိုးလောက်ရှိပါတယ်။ ဒါကြောင့် မြန်မာအက္ခရာတွေအတွက် System Font သတ်မှတ်တဲ့နေရာမှာ Zawgyi က Unicode ထက် အသာစီးရပြီး သူ့ကိုပဲ Fallback Font အနေနဲ့သုံးသွားတာပါ။ အလျှင်ကတော့ အဲဒီပြဿနာကိုဖြေရှင်းဖို့ system fallback font ကို ပြောင်းလဲသတ်မှတ်ပေးနိုင်တဲ့ &lt;a href=&#34;https://launchpad.net/~naingyeminn/+archive/ubuntu/ppa/+packages&#34;&gt;my-fs-cli&lt;/a&gt; ဆိုပြီး command-line tool လေးလုပ်ပေးထားဖူးပါတယ်။ launchpad ရဲ့ ppa ကနေတစ်ဆင့် ဒါမှမဟုတ် .deb file ကို download လုပ်ပြီးဖြစ်ဖြစ် install လုပ်နိုင်ပါတယ်။ ဒါပေမယ့် User တွေအနေနဲ့ keyboard တစ်ခါ install လုပ် font ပြဿနာအတွက် အဲဒီ tool ကို တစ်ခါ install ထပ်လုပ်နဲ့ဆိုတော့ အဆင့်တွေများပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;အခု အဲဒီပြဿနာတွေကို အလွယ်တကူရှင်းနိုင်ဖို့အတွက် keyboard နဲ့တစ်ပါတည်း fallback font switcher ကိုပါထည့်ပေးထားလိုက်ပါတယ်။ installation ကိုလဲ အလွယ်ကူဆုံး၊ အရှင်းဆုံးဖြစ်အောင်လို့ အသေးစိပ်ဖေါ်ပြပေးပါ့မယ်။ အလျှင်ဦးဆုံး Terminal ကိုဖွင့်ပြီး အောက်မှာဖော်ပြထားတဲ့အတိုင်း command ကို တစ်ကြောင်းပြီး တစ်ကြောင်းရိုက်သွားလိုက်ပါ။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ wget https://github.com/naingyeminn/mm-kb/archive/master.zip -O mm-kb.zip
+$ unzip mm-kb.zip
+$ cd mm-kb-master/
+$ sudo make install
+$ ibus-daemon -rdx
+$ im-config -n ibus
+$ gsettings set org.freedesktop.ibus.panel show 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Command အားလုံးရိုက်ပြီးပြီဆိုရင်တော့ ပုံမှာပြထားတဲ့အတိုင်း တစ်ဆင့်ချင်းသွားပြီး Keyboard ကို activate လုပ်ပေးရပါမယ်။&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Text Entry Settings&amp;hellip;&lt;/strong&gt; ကိုရွေးပါ။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/mm-kb/Ubuntu%2064-bit-2014-10-01-22-11-27.png&#34; alt=&#34;Text Entry Setting&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&amp;rdquo;+&amp;rdquo;&lt;/strong&gt; button ကိုနှိပ်ပြီး search box ထဲမှာ &lt;strong&gt;Burmese&lt;/strong&gt; လို့ရိုက်ထည့်ပြီးရှာလိုက်ပါ။ Burmese, Burmese (mm-myanmar3), Burmese (mm-zawgyi) ဆိုပြီး Keyboard Layout သုံးခုတွေ့ရပါလိမ့်မယ်။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/mm-kb/Ubuntu%2064-bit-2014-10-01-22-12-22.png&#34; alt=&#34;input&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Unicode အတွက် &lt;strong&gt;Burmese (mm-myanmar3)&lt;/strong&gt; ဖြစ်ပြီး Zawgyi အတွက်ကတော့ &lt;strong&gt;Burmese (mm-zawgyi)&lt;/strong&gt; ဖြစ်ပါတယ်။ ကြိုက်ရာကိုရွေးထည့်ပြီး အသုံးပြုနိုင်ပါတယ်။ &lt;strong&gt;Burmese&lt;/strong&gt; ကတော့ မူရင်းပါဝင်ပြီးဖြစ်တဲ့ xkb unicode keyboard ပါ။&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;keyboard layout ကိုတော့ &lt;strong&gt;Super + Space&lt;/strong&gt; key ကိုနှိပ်ပြီး ပြောင်းနိုင်ပါတယ်။ keyboard နှစ်ခုထည့်ထားလျှင် နှစ်ခု၊ သုံးခုထည့်ထားလျှင် သုံးခု အလှည့်ကျ ပြောင်းပေးသွားမှာပါ။&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;မြန်မာလိုစာရိုက်နေရာကနေ အင်္ဂလိပ်လို ပြန်ရိုက်ချင်တယ်ဆိုရင် English keyboard ပြောင်းနေစရာမလိုပါဘူး။ ရိုက်နေတဲ့ Zawgyi ဒါမှမဟုတ် Myanmar3 keyboard ကနေပဲ &lt;strong&gt;Left Shift&lt;/strong&gt; key ကိုတစ်ခက်နှိပ်ပေးလိုက်တာနဲ့ အင်္ဂလိပ်လိုဖြစ်သွားမှာပါ။ နောက်တစ်ချက်ထပ်နှိပ်ရင်တော့ မြန်မာလိုပြန်ပြောင်းပေးပါလိမ့်မယ်။&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;အပေါ်မှာ ကျွန်တော်ပြောခဲ့တဲ့အတိုင်း mm-kb ကို install လုပ်လိုက်တာနဲ့ System font အနေနဲ့ Zawgyi ကို အလိုအလျောက်သုံးသွားပါလိမ့်မယ်။ Unicode သုံးချင်သူတွေအနေနဲ့ကတော့ Unity Dashboard ထဲမှာ &lt;strong&gt;myanmar&lt;/strong&gt; လို့ရိုက်ပြီးရှာကြည့်လိုက်ပါ။ &lt;strong&gt;Myanmar Font Switcher&lt;/strong&gt; တွေ့ပါလိမ့်မယ်။ Zenity သုံးပြီးရေးထားတဲ့ Script လေးပါ။ အဲဒီ script လေးသုံးပြီး ပေးထားတဲ့ Font တွေထဲကမှ ကြိုက်နှစ်သက်ရာ Font ကိုပြောင်းပေးနိုင်ပါတယ်။&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/mm-kb/myanmar-font-switcher.png&#34; alt=&#34;myanmar-font-switcher&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/mm-kb/Screenshot%20from%202014-10-02%2015%3A07%3A32.png&#34; alt=&#34;myanmar-font-switcher&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Zawgyi အသုံးပြုတဲ့သူတွေအနေနဲ့ Zawgyi font ကြောင့် မြန်မာလိုပြပေးနေတဲ့ Date/Time စာသားတွေ လွဲသွားတာကိုမလိုချင်ရင်တော့ အင်္ဂလိပ်လိုပြောင်းပေးနိုင်ပါတယ်။ &lt;strong&gt;System Preferences&amp;gt; Language Support&amp;gt; Regional Formats&lt;/strong&gt; မှာ &lt;strong&gt;Burmese&lt;/strong&gt; ကို &lt;strong&gt;English (United States)&lt;/strong&gt; ပြောင်းပေးလိုက်ပါ။ အဆင်ပြေသွားပါလိမ့်မယ်။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/mm-kb/Screenshot%20from%202014-12-11%2016%26%2510%26%2552.png&#34; alt=&#34;Language Support&#34; /&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;အဆင်မပြေတာ ဒါမှမဟုတ် လိုအပ်တာများကိုအကြံပေးချင်၊ အကြောင်းကြားချင်ရင်တော့ Comment ကနေဖြစ်စေ &lt;a href=&#34;https://www.facebook.com/groups/ubuntu4mm/&#34;&gt;Facebook Group&lt;/a&gt; မှာဖြစ်စေ မေးမြန်းအကြံပေးနိုင်ပါတယ်။&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Linux Terminal / Command Line Tricks</title>
