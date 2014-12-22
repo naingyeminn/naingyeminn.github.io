@@ -1,0 +1,147 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - FOREX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/forex-exchange-rate-checker/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/forex-exchange-rate-checker/">FOREX</a></h1>
+	        <div class="post-time">December 22 2014</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com/tags/shell">shell</a>              
+	            
+	                <a href="http://naingyeminn.com/tags/bash">bash</a>              
+	            
+	                <a href="http://naingyeminn.com/tags/regex">regex</a>              
+	            
+	                <a href="http://naingyeminn.com/tags/script">script</a>              
+	            
+	                <a href="http://naingyeminn.com/tags/ubuntu">ubuntu</a>              
+	            
+	                <a href="http://naingyeminn.com/tags/cli">cli</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        <p>မနေ့က သူငယ်ချင်းတစ်ယောက် Currency Exchange Rate တွေထုတ်ပေးတဲ့ Program လေးတစ်ခု ရေးပြီး Share ထားတာကိုတွေ့လိုက်တယ်။ သူကတော့ Developer တစ်ယောက်ဆိုတော့ Go Programming Language ကိုသုံးပြီး အကျအနရေးထားတာပါ။ သူ့ Coding လေးကြည့်ရင်း ငါလည်း Shell Script နဲ့ရေးရင် ရလောက်မယ်ဆိုပြီး အကြံရတာနဲ့ ညကရေးဖြစ်သွားပါတယ်။ ဘာမှ ထူးထူးခြားခြားကြီးတော့ မဟုတ်ပါဘူး။ KBZ နဲ့ CB Bank တို့ရဲ့ Website မှာ တင်ပေးထားတဲ့ Exchange Rate တွေကို Curl နဲ့ယူပြီး ပြန်ထုတ်ပြပေးတာပါ။ Web Page ရဲ့ Source ထဲကနေ GREP နဲ့ regular expression သုံးပြီး Information ကို ဆွဲထုတ်ထားတာဆိုတော့ Page Design ပြောင်းသွားရင်တော့ ဒီ Script က လွဲသွားနိုင်ပါတယ်။ Ubuntu မှာ တော့ Curl က ထပ်တင်ပေးဖို့လိုပါလိမ့်မယ်။ အဲဒီအတွက်အဆင်ပြေအောင် Makefile နဲ့ အလိုအလျောက် install လုပ်အောင်လုပ်ပေးထားပါတယ်။ Ubuntu User တွေအနေနဲ့ README မှာပါတဲ့အတိုင်း install လုပ်နိုင်ပါတယ်။ တခြား Linux Distros တွေအတွက်ကတော့ လိုအပ်ရင် Curl ထပ်တင်ပေးရပါလိမ့်မယ်။ ပြီးလျှင်တော့ <code>forex</code> ဆိုတဲ့ဖိုင်လေးကို /usr/local/bin ထဲသွားထည့်ပေးလိုက်ရုံပါပဲ။ OS X User တွေလဲ /usr/local/bin ထဲထည့်ပြီး အသုံးပြုနိုင်ပါတယ်။</p>
+
+<p>အသုံးပြုပုံကိုတော့ <code>forex -h</code> နဲ့ help ခေါ်ကြည့်နိုင်ပါတယ်။ <code>forex</code> လို့ရိုက်ရင် CB ရော KBZ ရော ပြပေးပါတယ်။ <code>forex -b cb</code> ဆိုရင် CB တစ်ခုတည်းရဲ့ Rate ကိုပြပေးပြီး <code>forex -b kbz</code> ဆိုရင်တော့ KBZ ရဲ့ Rate ကိုပြပေးပါလိမ့်မယ်။</p>
+
+<p>File ကိုတော့ Github မှာ Share ပေးထားပါတယ်။ ကြိုက်သလို ကူနိုင်၊ သုံးနိုင်၊ ပြင်နိုင်ပါတယ်။</p>
+
+<p>Source On Github : <a href="https://github.com/naingyeminn/forex">https://github.com/naingyeminn/forex</a></p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/forex-exchange-rate-checker/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/burmese-keyboard-for-ubuntu-1404/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p>© Naing Ye` Minn 2014</p>
+		        </footer>
+		    </div>
+		  </div>    
+		</div>
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

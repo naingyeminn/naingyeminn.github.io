@@ -7,7 +7,23 @@
     <language>en-us</language>
     
     
-    <updated>Mon, 23 Jun 2014 00:00:00 UTC</updated>
+    <updated>Mon, 22 Dec 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>FOREX</title>
+      <link>http://naingyeminn.com/posts/forex-exchange-rate-checker/</link>
+      <pubDate>Mon, 22 Dec 2014 00:00:00 UTC</pubDate>
+      
+      <guid>http://naingyeminn.com/posts/forex-exchange-rate-checker/</guid>
+      <description>&lt;p&gt;မနေ့က သူငယ်ချင်းတစ်ယောက် Currency Exchange Rate တွေထုတ်ပေးတဲ့ Program လေးတစ်ခု ရေးပြီး Share ထားတာကိုတွေ့လိုက်တယ်။ သူကတော့ Developer တစ်ယောက်ဆိုတော့ Go Programming Language ကိုသုံးပြီး အကျအနရေးထားတာပါ။ သူ့ Coding လေးကြည့်ရင်း ငါလည်း Shell Script နဲ့ရေးရင် ရလောက်မယ်ဆိုပြီး အကြံရတာနဲ့ ညကရေးဖြစ်သွားပါတယ်။ ဘာမှ ထူးထူးခြားခြားကြီးတော့ မဟုတ်ပါဘူး။ KBZ နဲ့ CB Bank တို့ရဲ့ Website မှာ တင်ပေးထားတဲ့ Exchange Rate တွေကို Curl နဲ့ယူပြီး ပြန်ထုတ်ပြပေးတာပါ။ Web Page ရဲ့ Source ထဲကနေ GREP နဲ့ regular expression သုံးပြီး Information ကို ဆွဲထုတ်ထားတာဆိုတော့ Page Design ပြောင်းသွားရင်တော့ ဒီ Script က လွဲသွားနိုင်ပါတယ်။ Ubuntu မှာ တော့ Curl က ထပ်တင်ပေးဖို့လိုပါလိမ့်မယ်။ အဲဒီအတွက်အဆင်ပြေအောင် Makefile နဲ့ အလိုအလျောက် install လုပ်အောင်လုပ်ပေးထားပါတယ်။ Ubuntu User တွေအနေနဲ့ README မှာပါတဲ့အတိုင်း install လုပ်နိုင်ပါတယ်။ တခြား Linux Distros တွေအတွက်ကတော့ လိုအပ်ရင် Curl ထပ်တင်ပေးရပါလိမ့်မယ်။ ပြီးလျှင်တော့ &lt;code&gt;forex&lt;/code&gt; ဆိုတဲ့ဖိုင်လေးကို /usr/local/bin ထဲသွားထည့်ပေးလိုက်ရုံပါပဲ။ OS X User တွေလဲ /usr/local/bin ထဲထည့်ပြီး အသုံးပြုနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;အသုံးပြုပုံကိုတော့ &lt;code&gt;forex -h&lt;/code&gt; နဲ့ help ခေါ်ကြည့်နိုင်ပါတယ်။ &lt;code&gt;forex&lt;/code&gt; လို့ရိုက်ရင် CB ရော KBZ ရော ပြပေးပါတယ်။ &lt;code&gt;forex -b cb&lt;/code&gt; ဆိုရင် CB တစ်ခုတည်းရဲ့ Rate ကိုပြပေးပြီး &lt;code&gt;forex -b kbz&lt;/code&gt; ဆိုရင်တော့ KBZ ရဲ့ Rate ကိုပြပေးပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;File ကိုတော့ Github မှာ Share ပေးထားပါတယ်။ ကြိုက်သလို ကူနိုင်၊ သုံးနိုင်၊ ပြင်နိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;Source On Github : &lt;a href=&#34;https://github.com/naingyeminn/forex&#34;&gt;https://github.com/naingyeminn/forex&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>vFix - Fix Virus Infected Flash Drives</title>
