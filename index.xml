@@ -26,8 +26,9 @@
 
 &lt;p&gt;Source On Github : &lt;a href=&#34;https://github.com/naingyeminn/forex&#34;&gt;https://github.com/naingyeminn/forex&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;###UPDATE
-Ubuntu တွင်သာမက တခြား Linux Distro များနှင့် OSX မှာပါ အဆင်ပြေပြေသုံးနိုင်စေရန် &lt;code&gt;Wget&lt;/code&gt; option ထပ်မံထည့်သွင်း၍ ပြင်ဆင်ထားပါသည်။ Curl သို့မဟုတ် Wget ပါရှိသော OS တိုင်းတွင် အသုံးပြုနိုင်ပါသည်။ /usr/local/bin ထဲသို့ file အား ကိုယ်တိုင် ကူးယူထည့်သွင်းရန် မလိုတော့ပါ။ &lt;code&gt;Makefile&lt;/code&gt; အသုံးပြု၍လည်း လွယ်ကူစွာ Install ပြုလုပ်နိုင်ပါပြီ။&lt;/p&gt;
+&lt;p&gt;###UPDATE&lt;/p&gt;
+
+&lt;p&gt;Ubuntu တွင်သာမက တခြား Linux Distro များနှင့် OSX မှာပါ အဆင်ပြေပြေသုံးနိုင်စေရန် &lt;code&gt;Wget&lt;/code&gt; option ထပ်မံထည့်သွင်း၍ ပြင်ဆင်ထားပါသည်။ Curl သို့မဟုတ် Wget ပါရှိသော OS တိုင်းတွင် အသုံးပြုနိုင်ပါသည်။ /usr/local/bin ထဲသို့ file အား ကိုယ်တိုင် ကူးယူထည့်သွင်းရန် မလိုတော့ပါ။ &lt;code&gt;Makefile&lt;/code&gt; အသုံးပြု၍လည်း လွယ်ကူစွာ Install ပြုလုပ်နိုင်ပါပြီ။&lt;/p&gt;
 </description>
     </item>
     
