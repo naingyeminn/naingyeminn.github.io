@@ -1,0 +1,147 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - Password Manager in Shell Script</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/password-manager-in-shell-script/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/password-manager-in-shell-script/">Password Manager in Shell Script</a></h1>
+	        <div class="post-time">February 21 2015</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com/tags/shell">shell</a>              
+	            
+	                <a href="http://naingyeminn.com/tags/bash">bash</a>              
+	            
+	                <a href="http://naingyeminn.com/tags/script">script</a>              
+	            
+	                <a href="http://naingyeminn.com/tags/terminal">terminal</a>              
+	            
+	                <a href="http://naingyeminn.com/tags/cli">cli</a>              
+	            
+	                <a href="http://naingyeminn.com/tags/tipstricks">tips&amp;tricks</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        <p>ယနေ့ခေတ် Internet အသုံးပြုမှုတွင်ကျယ်လာတာနဲ့အမျှ Google, Facebook, Twitter, Dropbox, Flickr, Instagram&hellip; စသဖြင့် Account ပေါင်း သောင်းခြောက်ထောင်ရဲ့ Password တွေကို အကုန်မှတ်မိဖို့ဆိုတာမလွယ်ပါဘူး။ User Name တူအောင်ပေးထားရင်တောင် Password ကိုတော့ အတူတူမပေးသင့်တာ အားလုံးပဲသိကြမှာပါ။ Password တစ်ခုကို သိတာနဲ့ တခြား account တွေကိုပါဝင်လို့ရသွားနိုင်ပါတယ်။ နောက်ပြီး Password က ရိုးရှင်းနေလို့လဲမဖြစ်ပါဘူး။ လွယ်လွယ်ကူကူရိုးရိုးရှင်းရှင်းပေးထားရင် ကိုယ်ရိုက်လိုက်တဲ့ password ကို တခြားလူကစောင့်ကြည့်တာနဲ့တင် သိသွားနိုင်လို့ပါ။ စိတ်ချရအောင် ရှည်လျားပြီး ရှုပ်ထွေးတဲ့ password တွေကို ခဏခဏပြောင်းပြန်တော့လဲ အဲဒီ password တွေကို မှတ်မိဖို့က ခက်ခဲပါလိမ့်မယ်။ အဲဒါကြောင့် တချို့က <a href="http://www.keepassx.org/">Keypass</a> လို password manager တစ်ခုခုသုံးကြပါတယ်။ Keepass က ကိုယ့်ရဲ့ password တွေကို Database တစ်ခုလုပ်ပြီး သိမ်းထားပေးတာပါ။ လိုအပ်ရင် အဲဒီ Database ကို Keypass နဲ့ဖွင့်ပြီး password ကို clipboard ထဲ အလွယ်တကူ copy ကူးထည့်ပေးပါတယ်။ နောက်ပြီး Password generate လုပ်ပေးတာတွေ password ကို သက်တမ်းသတ်မှတ်ပြီး အဲဒီသက်တမ်းကုန်တာနဲ့ ပြောင်းဖို့အသိပေးတာမျိုးတွေလည်း လုပ်ပေးနိုင်ပါသေးတယ်။ Windows User တွေအတွက်ကတော့ GUI Tool သုံးရတာနှစ်သက်ကြပေမယ့် တချို့ Linux, Mac OSX User တွေကတော့ CLI သုံးရတာကို ပိုပြီးနှစ်သက်ကြပါတယ်။ ကိုယ်တိုင်လဲ Password Manager သုံးချင်ပေမယ့် GUI သေသပ်မှုမရှိတဲ့ KeepassX ကို သိပ်မသုံးချင်ပါဘူး။ Terminal အသုံးများတဲ့သူတွေအတွက် Keepass application ကို သီးသန့်ထပ်ဖွင့်ပြီးသုံးတာထက် ဖွင့်ထားတဲ့ Terminal ကနေပဲ command ရိုက်ပြီး password ရှာတာကပို အဆင်ပြေပါလိမ့်မယ်။ Unix-liked OS တွေ အတွက် <a href="http://www.passwordstore.org">Pass</a> ဆိုတဲ့ CLI tool ရှိပါတယ်။ စိတ်ချရပေမယ့် အနည်းငယ်ရှုပ်ထွေးပါတယ်။ လိုချင်တာက password တွေကို account ID နဲ့တွဲပြီး လွယ်လွယ်ကူကူသိမ်းနိုင်ဖို့ရယ် လွယ်လွယ်ကူကူ access လုပ်နိုင်ဖို့ရယ်ပါ။ ဒါကြောင့် ကိုယ်သိတဲ့ Bash နဲ့ပဲ Script လေးလုပ်ကြည့်ဖြစ်သွားပါတယ်။</p>
+
+<p>နာမည်ကိုတော့ <a href="https://github.com/naingyeminn/nympass">NYMPASS</a> လို့ပဲ အလွယ်ပေးထားပါတယ်။ ကိုယ့်စိတ်ကြိုက် rename လုပ်ချင်လဲရပါတယ်။ လုံးဝ လုံခြုံစိတ်ချရတယ်လို့တော့ မပြောနိုင်ပေမယ့် ရိုးရှင်းပေါ့ပါးပါတယ်။ ကိုယ့်စိတ်ကူးနဲ့ကိုယ် လိုချင်တဲ့ ပုံစံလုပ်ထားတာပါ။ Password ကိုတော့ ၂ဆင့် encrypt လုပ်ထားပါတယ်။ OpenSSL ကိုသုံးပြီး AES-256 နဲ့ encrypt လုပ်ထားတာပါ။ Keepass လို Database file ကို ဘယ်စက်ကမဆိုဖွင့်လို့ရတာမျိုးတော့မဟုတ်ပါဘူး။ Encrypt လုပ်လိုက်တဲ့ စက်မှာပဲ Decrypt ပြန်လုပ်လို့ရအောင် Password ကို စက်ရဲ့ Network Interface မှာသတ်မှတ်ထားတဲ့ MAC Address (Hardware Address) နဲ့ အလျှင် Encrypt လုပ်ပါတယ်။ ပြီးမှ Passphase တစ်ခုနဲ့ Encrypt ထပ်လုပ်ပြီး ဖိုင်အနေနဲ့ ထုတ်လိုက်တာပါ။ MAC Address ကိုသိရင်တော့ Script မှာ ပြင်ပြီး Decrypt လုပ်လို့ရပါတယ်။ Macbook User တွေအနေနဲ့ Thunderbolt Ethernet Adapter ကို Key တစ်ခုအနေနဲ့သုံးလို့ရအောင် MAC Address နဲ့ Encrypt လုပ်ထားတာပါ။ Passphase ကိုသိရင်တောင် Adapter တပ်မထားရင် ဒါမှမဟုတ် MAC Address မသိရင် password ကို Decrypt လုပ်လို့မရနိုင်အောင်ပါ။ Password တစ်ခုစီအတွက်တော့ File တစ်ခုစီပဲခွဲထုတ်ထားပါတယ်။ ဒီလိုလုပ်ထားတဲ့အတွက် Password ဖိုင်တွေ ပွထသွားစေပေမယ့် Password ကို ထုတ်ယူတဲ့နေရာမှာ command တစ်ခုတည်းနဲ့လွယ်လွယ်ကူကူ Decrypt လုပ်နိုင်စေဖို့အတွက်ပါ။</p>
+
+<p>Install, Uninstall နဲ့ အသုံးပြုပုံတွေကိုတော့ README ဖိုင်ထဲမှာရေးပေးထားပါတယ်။ Install မလုပ်ခင် Script file ကို Edit လုပ်ဖို့တော့လိုပါတယ်။ Line 5 မှာရှိတဲ့ <code>passpath</code> ဆိုတဲ့ Password file တွေသိမ်းမယ့် Directory လမ်းကြောင်းရယ်၊ Line 10 က <code>passkey</code> ရယ်၊ Line 12 က <code>timeout</code> ရယ်ပါ။ <code>passkey</code> ကတော့ ကိုယ့်စက်ရဲ့ Network Interface Name ပါ။ <code>ifconfig</code> ဆိုတဲ့ command သုံးပြီး ရှာနိုင်ပါတယ်။ Linux မှာတော့ eth0, eth1 စတဲ့ နာမည်တွေနဲ့ ဖော်ပြလေ့ရှိပြီး Mac OSX မှာတော့ en0, en1 စသဖြင့် ဖော်ပြလေ့ရှိပါတယ်။ စိတ်ကြိုက် Interface Name တစ်ခုကိုသတ်မှတ်ပေးနိုင်ပါတယ်။ <code>timeout</code> ကတော့ <code>nympass get</code> နဲ့ရယူလိုက်တဲ့ password ကို clipboard ထဲမှာထားမယ့် အချိန်ပမာဏပါ။ Default ကတော့ ၅စက္ကန့်သတ်မှတ်ထားပါတယ်။ ၅စက္ကန့် ကြာတာနဲ့ clipboard ထဲရှိနေတဲ့ password ကို ရှင်းပေးပါလိမ့်မယ်။ အဲဒီမတိုင်ခင် ကိုယ် ဝင်မယ့် Site ရဲ့ Login password နေရာမှာ paste လုပ်ဖို့တော့လိုပါတယ်။</p>
+
+<p>Perfect ဖြစ်တဲ့ Script တစ်ခုမဟုတ်ပေမယ့် လွတ်လပ်စွာ လေ့လာနိုင် ပြင်ဆင်နိုင်ဖို့အတွက် <a href="https://github.com/naingyeminn/nympass">Github</a> မှာ Share ပေးထားပါတယ်။</p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/password-manager-in-shell-script/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/forex-exchange-rate-checker/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p>© Naing Ye` Minn 2014</p>
+		        </footer>
+		    </div>
+		  </div>    
+		</div>
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
