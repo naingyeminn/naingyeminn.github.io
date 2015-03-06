@@ -7,7 +7,73 @@
     <language>en-us</language>
     
     
-    <updated>Sat, 21 Feb 2015 00:00:00 UTC</updated>
+    <updated>Fri, 06 Mar 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>NTFSX - Script to enable NTFS Write on Mac OS X</title>
+      <link>http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-Mac-OSX/</link>
+      <pubDate>Fri, 06 Mar 2015 00:00:00 UTC</pubDate>
+      
+      <guid>http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-Mac-OSX/</guid>
+      <description>&lt;p&gt;Mac OS X User တွေအနေနဲ့ External HDD တွေသုံးတဲ့နေရာမှာ ကြုံရလေ့ရှိတဲ့ အခက်အခဲလေးတစ်ခုပါ။ အဓိကအကြောင်းအရင်းကတော့ Windows ရဲ့ NTFS file system ကို Mac OS X က အပြည့်အဝ အထောက်အပံ့မပေးထားလို့ပါပဲ။ အဲဒါကြောင့် NTFS format သုံးထားတဲ့ External HDD တွေ USB Flash Drive တွေဆိုရင် Read Only သက်သက်သာ အသုံးပြုနိုင်ပါလိမ့်မယ်။ Data တွေကူးထည့်လို့မရနိုင်ပါဘူး။ ဒါပေမယ့် လုံးဝ Write Access မရတာတော့မဟုတ်ပါဘူး။ Mac OS X မှာက Native NTFS support ရှိပါတယ်။ ပြဿနာရှိတာက Apple အနေနဲ့ Microsoft ရဲ့ NTFS ကို Mac OS X မှာ အပြည့်အဝ အသုံးပြုနိုင်အောင် လုပ်ပေးမယ်ဆိုရင် Microsoft ဆီကနေ နည်းပညာ အသုံးပြုခွင့် ဝယ်ယူရပါလိမ့်မယ်။ Microsoft အနေနဲ့လည်း ထိုနည်းလည်ကောင်းပါပဲ။ Apple ရဲ့ HFS ကို Windows မှာအသုံးပြုလို့ရစေနိုင်ဖို့ အသုံးပြုခွင့် လိုအပ်ပါတယ်။ ဒါအမြင်သာဆုံးဖြစ်အောင်သာ နှိုင်းယှဉ်ပြတာပါ။ ဒီလို Patent ပြဿနာက တကယ့်တကယ် ဒီထက် ပိုရှုပ်ထွေးပါတယ်။ အဲဒီလို ညှိနှိုင်းရခက်ခဲတဲ့ ပြဿနာတွေကြောင့် Microsoft ကလည်း HFS ကို Support မလုပ်သလို Apple ကလည်း NTFS ကို လစ်လျှူရှုထားတာပါ။&lt;/p&gt;
+
+&lt;p&gt;တကယ့်တကယ်တော့ Apple အနေနဲ့ Mac OS X မှာ NTFS ကို အသုံးပြုလို့ရနိုင်လောက်အောင် လုပ်ပေးထားပါတယ်။ တရားဝင်သာ Feature တစ်ခုအနေနဲ့ ထည့်သွင်းဖော်ပြမထားတာပါ။ နောက်ပြီး Official Native Support မဟုတ်တဲ့အတွက် Stable ဖြစ်တဲ့အထိ ဂရုတစိုက်လုပ်ပေးမထားပါဘူး။ Mac User တွေအနေနဲ့ NTFS ကို အတတ်နိုင်ဆုံးရှောင်သုံးတာကတော့ အကောင်းဆုံးပါ။ Drive တွေကို ExFAT နဲ့ format ပြန်ချပြီးသုံးတာမျိုးပါ။ NTFS ပဲသုံးချင်တယ်ဆိုရင်တော့ Free ရတဲ့ Third Party Driver &lt;a href=&#34;http://www.macbreaker.com/2014/06/how-to-enable-writing-to-ntfs-hard.html&#34;&gt;NTFS-3G&lt;/a&gt; ရှိပါတယ်။ ဒါလည်းအဆင်ပြေလွန်းလှတယ်ရယ်တော့မဟုတ်ပါဘူး။ Senior ကျတဲ့ Mac User တွေကတော့ Third Party Driver တင်သုံးမယ်ဆိုရင် Free ထက် Commercial Driver တွေဖြစ်တဲ့ &lt;a href=&#34;http://www.paragon-software.com/home/ntfs-mac/download.html&#34;&gt;Paragon&lt;/a&gt; တို့ &lt;a href=&#34;http://www.tuxera.com/&#34;&gt;Tuxera&lt;/a&gt; တို့ဝယ်သုံးတာကိုပဲ Recommend လုပ်ကြပါတယ်။ ပိုပြီး Stable ဖြစ်သလို Data အကူးအပြောင်းလည်း ပိုမြန်တယ်လို့ဆိုကြပါတယ်။ တချို့ကတော့ မဝယ်ပဲ Crack လုပ်ပြီး သုံးကြပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;Crack လည်းမသုံးချင်၊ ဝယ်သုံးဖို့ကလည်းခက်၊ Free ရတဲ့ NTFS-3G ကျတော့လည်း System ထဲ ရှုပ်ထွေးကုန်မှာစိုးတယ်ဆိုရင်တော့ ဘာ Driver မှ Install ထပ်မလုပ်ပဲ သုံးလို့ရမယ့် နည်းလမ်းရှိပါတယ်။ အထက်မှာပြောခဲ့တဲ့ &lt;a href=&#34;http://osxdaily.com/2013/10/02/enable-ntfs-write-support-mac-os-x/&#34;&gt;Native NTFS Support&lt;/a&gt; ကိုသုံးတဲ့နည်းလမ်းပါ။ Stable မဖြစ်ဘူးဆိုကြပေမယ့် လုံးဝသုံးမရတာမျိုးတော့မဟုတ်ပါဘူး။ ဒါပေမယ့် အရမ်းအရေးမကြီးတဲ့ Data၊ Backup ရှိတဲ့ Drive တွေကိုပဲ ဒီနည်းလမ်းနဲ့ သုံးတာပိုစိတ်ချရပါတယ်။ နောက်ပြီး ကိုယ်ပိုင် Drive ကို NTFS format နဲ့ ဒီနည်းအတိုင်း ရေရှည်သုံးတာမျိုးထက် တခြားသူရဲ့ NTFS Drive တွေကို တစ်ခါတစ်လေ အရေးတကြီး Data ကူထည့်ပေးဖို့လိုတာမျိုးတွေလောက်မှာပဲသုံးဖို့ အကြံပေးချင်ပါတယ်။ ကိုယ်ပိုင် Drive တွေကိုတော့ ExFAT Format နဲ့သုံးသင့်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;Native NTFS ကိုသုံးတဲ့နည်းကတော့ အသုံးပြုမယ့် NTFS Drive ရဲ့ &lt;strong&gt;Volume Name&lt;/strong&gt; ဒါမှမဟုတ် &lt;strong&gt;UUID&lt;/strong&gt; ကို &lt;code&gt;/etc/fstab&lt;/code&gt; ဆိုတဲ့ system config file ထဲ သတ်မှတ်ထားတဲ့ option တွေအတိုင်း ရေးထည့်ပေးရတာပါ။ ဒီနည်းလမ်းက သာမန် User တွေအတွက် အနည်းငယ် ခက်ခဲကောင်းခက်ခဲပါလိမ့်မယ်။ ဘာလို့လဲဆိုတော့ &lt;strong&gt;fstab&lt;/strong&gt; file ကို Edit လုပ်ဖို့ Root Permission လိုတာရယ်၊ နောက်ပြီး Terminal ကနေ Edit လုပ်ရတာတွေရယ်ကြောင့်ပါ။ ကိုယ်တိုင်လည်း Volume Name တို့ UUID တို့ ရှာရတာတွေ၊ &lt;code&gt;/etc/fstab&lt;/code&gt; ဖိုင်မှာ edit ဝင်လုပ်ရတာတွေကို သိပ်သဘောမကျတဲ့အတွက် နောက်ဆုံး Script လေးတစ်ခုပဲလုပ်လိုက်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;ပထမဦးဆုံးလုပ်တဲ့ Script မှာက NTFS Drive တွေကို &lt;strong&gt;fstab&lt;/strong&gt; ထဲ Add လုပ်တာ၊ Remove ပြန်လုပ်တာတွေနဲ့ ပြည့်စုံသလောက်ဖြစ်ပြီးသားပါ။ ဒါပေမယ့် တိုက်တိုက်ဆိုင်ဆိုင် SourceForge မှာ &lt;a href=&#34;http://sourceforge.net/projects/native-ntfs-osx/&#34;&gt;NativeNTFS-OSX&lt;/a&gt; ဆိုတဲ့ Script လေးကို သွားတွေ့ပါတယ်။ ကိုယ်ရေးထားတာထက် ပိုပြီး ပုံစံကျတဲ့အတွက် အဲဒီ Script ကို နမူနာယူပြီး ကိုယ်လိုချင်တဲ့ပုံစံဖြစ်အောင် အသစ် ထပ်လုပ်လိုက်ပါတယ်။ နာမည်ကိုတော့ မှတ်ရလွယ်၊ ရိုက်ရလွယ်မယ့် &lt;strong&gt;NTFSX&lt;/strong&gt; လို့ပဲ ပေးလိုက်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/naingyeminn/ntfsx&#34;&gt;NTFSX&lt;/a&gt; က Connect လုပ်ထားတဲ့ NTFS Drive အားလုံးကို တပြိုင်တည်း ဒါမှမဟုတ် တစ်ခုချင်း Write Access ရအောင်လုပ်ပေးနိုင်ပါတယ်။ နောက်ပြီး Add လုပ်ထားတဲ့ Drive တွေကိုလဲ တစ်ခုချင်း ဒါမှမဟုတ် အကုန်လုံး Remove လုပ်တာမျိုးလဲ လုပ်လို့ရပါတယ်။ NTFSX ကိုသုံးမယ်ဆိုရင်တော့ &lt;strong&gt;Terminal&lt;/strong&gt; ဖွင့်ပြီး ပေးထားတဲ့ Command အတိုင်း တစ်ကြောင်းချင်းစီရိုက်သွင်းသွားရုံပါပဲ။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ curl -LOk https://github.com/naingyeminn/ntfsx/archive/master.zip
+$ unzip master.zip
+$ cd ntfsx-master
+$ sudo make
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ပြီးပြီဆိုရင်တော့ &lt;strong&gt;Terminal&lt;/strong&gt; အသစ်တစ်ခုမှာ &lt;code&gt;ntfsx&lt;/code&gt; ဆိုတဲ့ command ကို စသုံးနိုင်ပါပြီ။ &lt;strong&gt;root&lt;/strong&gt; access ရဖို့အတွက် &lt;strong&gt;sudo&lt;/strong&gt; command နဲ့တွဲသုံးဖို့တော့လိုပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;ချိပ်ဆက်ထားတဲ့ NTFS Drive အားလုံး Write Access ရချင်တယ်ဆိုရင်တော့ &lt;code&gt;ntfsx&lt;/code&gt; command ကိုပဲသုံးဖို့လိုပါတယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo ntfsx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Drive အားလုံးထဲကမှ တချို့ကိုပဲ ရွေးပြီး Write Access ရယူချင်တယ်ဆိုရင်တော့ &lt;code&gt;ntfsx&lt;/code&gt; command ကို &lt;code&gt;-a&lt;/code&gt; သို့မဟုတ် &lt;code&gt;add&lt;/code&gt; option သုံးပြီး Drive number ရွေးနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo ntfsx -a
+(or)
+$ sudo ntfsx add
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ရွေးလိုက်တဲ့ Drive ကို အလိုအလျောက် mount လုပ်ပြီး &lt;strong&gt;Finder&lt;/strong&gt; မှာပြပေးပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;ထူးခြားတာက &lt;code&gt;fstab&lt;/code&gt; သုံးပြီး mount လုပ်လိုက်တဲ့ Drive တွေကို &lt;strong&gt;Finder&lt;/strong&gt; ရဲ့ Devices နေရာမှာ မတွေ့ရတော့တာပါ။ အမှန်က Hidden ဖြစ်နေတဲ့ &lt;code&gt;/Volumes/&lt;/code&gt; ဆိုတဲ့ Folder အောက်မှာရှိပါတယ်။ အဲဒီ Folder ကို Access လုပ်ဖို့ကတော့ -&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Finder&lt;/strong&gt; ရဲ့ &lt;strong&gt;Go &amp;gt; Go to Folder&lt;/strong&gt; Menu ဒါမှမဟုတ် &lt;code&gt;Command + Shift + G&lt;/code&gt; Shortcut ကိုသုံးပြီး Go to the Foler ဆိုတဲ့ Box ကို ဖွင့်ပါ။&lt;/li&gt;
+&lt;li&gt;Input box ထဲ &amp;ldquo; &lt;strong&gt;/Volumes/&lt;/strong&gt; &amp;ldquo; လို့ရိုက်ထည့်ပြီး &lt;strong&gt;Go&lt;/strong&gt; button ကိုနှိပ်လိုက်ပါ။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Drive တွေကိုတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/etc/fstab&lt;/code&gt; ဖိုင်ထဲ ထည့်သွင်းထားတဲ့ Drive တွေကို ပြန်ထုတ်ချင်တယ်ဆိုရင်တော့ Drive တစ်ခုချင်းရွေးရှင်းဖို့ &lt;code&gt;-r&lt;/code&gt; သို့မဟုတ် &lt;code&gt;remove&lt;/code&gt; option ကိုသုံးနိုင်ပြီး အကုန်ရှင်းချင်တာဆိုရင်တော့ &lt;code&gt;-R&lt;/code&gt; သို့မဟုတ် &lt;code&gt;removeall&lt;/code&gt; option ကိုသုံးနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo ntfsx -r
+(or)
+$ sudo ntfsx remove
+----
+$ sudo ntfsx -R
+(or)
+$ sudo ntfsx removeall
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Installation ပြုလုပ်ပုံနဲ့ အသုံးပြုပုံတွေကို Download ဆွဲလိုက်တဲ့ Zip ဖိုင်ရဲ့ README ထဲမှာလည်း ဖော်ပြပေးထားပါတယ်။ NTFSX က အထက်မှာပြောခဲ့တဲ့အတိုင်း လုံးဝပြီးပြည့်စုံတဲ့ Solution တစ်ခုတော့ မဟုတ်ဘူးဆိုတာကိုတော့ ထပ်မံ အသိပေးချင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Github : &lt;a href=&#34;https://github.com/naingyeminn/ntfsx&#34;&gt;NTFSX&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Password Manager in Shell Script</title>

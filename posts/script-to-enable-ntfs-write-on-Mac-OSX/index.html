@@ -1,0 +1,197 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - NTFSX - Script to enable NTFS Write on Mac OS X</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-Mac-OSX/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/script-to-enable-ntfs-write-on-Mac-OSX/">NTFSX - Script to enable NTFS Write on Mac OS X</a></h1>
+	        <div class="post-time">March 6 2015</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com/tags/shell">shell</a>              
+	            
+	                <a href="http://naingyeminn.com/tags/bash">bash</a>              
+	            
+	                <a href="http://naingyeminn.com/tags/script">script</a>              
+	            
+	                <a href="http://naingyeminn.com/tags/terminal">terminal</a>              
+	            
+	                <a href="http://naingyeminn.com/tags/cli">cli</a>              
+	            
+	                <a href="http://naingyeminn.com/tags/tipstricks">tips&amp;tricks</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        <p>Mac OS X User တွေအနေနဲ့ External HDD တွေသုံးတဲ့နေရာမှာ ကြုံရလေ့ရှိတဲ့ အခက်အခဲလေးတစ်ခုပါ။ အဓိကအကြောင်းအရင်းကတော့ Windows ရဲ့ NTFS file system ကို Mac OS X က အပြည့်အဝ အထောက်အပံ့မပေးထားလို့ပါပဲ။ အဲဒါကြောင့် NTFS format သုံးထားတဲ့ External HDD တွေ USB Flash Drive တွေဆိုရင် Read Only သက်သက်သာ အသုံးပြုနိုင်ပါလိမ့်မယ်။ Data တွေကူးထည့်လို့မရနိုင်ပါဘူး။ ဒါပေမယ့် လုံးဝ Write Access မရတာတော့မဟုတ်ပါဘူး။ Mac OS X မှာက Native NTFS support ရှိပါတယ်။ ပြဿနာရှိတာက Apple အနေနဲ့ Microsoft ရဲ့ NTFS ကို Mac OS X မှာ အပြည့်အဝ အသုံးပြုနိုင်အောင် လုပ်ပေးမယ်ဆိုရင် Microsoft ဆီကနေ နည်းပညာ အသုံးပြုခွင့် ဝယ်ယူရပါလိမ့်မယ်။ Microsoft အနေနဲ့လည်း ထိုနည်းလည်ကောင်းပါပဲ။ Apple ရဲ့ HFS ကို Windows မှာအသုံးပြုလို့ရစေနိုင်ဖို့ အသုံးပြုခွင့် လိုအပ်ပါတယ်။ ဒါအမြင်သာဆုံးဖြစ်အောင်သာ နှိုင်းယှဉ်ပြတာပါ။ ဒီလို Patent ပြဿနာက တကယ့်တကယ် ဒီထက် ပိုရှုပ်ထွေးပါတယ်။ အဲဒီလို ညှိနှိုင်းရခက်ခဲတဲ့ ပြဿနာတွေကြောင့် Microsoft ကလည်း HFS ကို Support မလုပ်သလို Apple ကလည်း NTFS ကို လစ်လျှူရှုထားတာပါ။</p>
+
+<p>တကယ့်တကယ်တော့ Apple အနေနဲ့ Mac OS X မှာ NTFS ကို အသုံးပြုလို့ရနိုင်လောက်အောင် လုပ်ပေးထားပါတယ်။ တရားဝင်သာ Feature တစ်ခုအနေနဲ့ ထည့်သွင်းဖော်ပြမထားတာပါ။ နောက်ပြီး Official Native Support မဟုတ်တဲ့အတွက် Stable ဖြစ်တဲ့အထိ ဂရုတစိုက်လုပ်ပေးမထားပါဘူး။ Mac User တွေအနေနဲ့ NTFS ကို အတတ်နိုင်ဆုံးရှောင်သုံးတာကတော့ အကောင်းဆုံးပါ။ Drive တွေကို ExFAT နဲ့ format ပြန်ချပြီးသုံးတာမျိုးပါ။ NTFS ပဲသုံးချင်တယ်ဆိုရင်တော့ Free ရတဲ့ Third Party Driver <a href="http://www.macbreaker.com/2014/06/how-to-enable-writing-to-ntfs-hard.html">NTFS-3G</a> ရှိပါတယ်။ ဒါလည်းအဆင်ပြေလွန်းလှတယ်ရယ်တော့မဟုတ်ပါဘူး။ Senior ကျတဲ့ Mac User တွေကတော့ Third Party Driver တင်သုံးမယ်ဆိုရင် Free ထက် Commercial Driver တွေဖြစ်တဲ့ <a href="http://www.paragon-software.com/home/ntfs-mac/download.html">Paragon</a> တို့ <a href="http://www.tuxera.com/">Tuxera</a> တို့ဝယ်သုံးတာကိုပဲ Recommend လုပ်ကြပါတယ်။ ပိုပြီး Stable ဖြစ်သလို Data အကူးအပြောင်းလည်း ပိုမြန်တယ်လို့ဆိုကြပါတယ်။ တချို့ကတော့ မဝယ်ပဲ Crack လုပ်ပြီး သုံးကြပါတယ်။</p>
+
+<p>Crack လည်းမသုံးချင်၊ ဝယ်သုံးဖို့ကလည်းခက်၊ Free ရတဲ့ NTFS-3G ကျတော့လည်း System ထဲ ရှုပ်ထွေးကုန်မှာစိုးတယ်ဆိုရင်တော့ ဘာ Driver မှ Install ထပ်မလုပ်ပဲ သုံးလို့ရမယ့် နည်းလမ်းရှိပါတယ်။ အထက်မှာပြောခဲ့တဲ့ <a href="http://osxdaily.com/2013/10/02/enable-ntfs-write-support-mac-os-x/">Native NTFS Support</a> ကိုသုံးတဲ့နည်းလမ်းပါ။ Stable မဖြစ်ဘူးဆိုကြပေမယ့် လုံးဝသုံးမရတာမျိုးတော့မဟုတ်ပါဘူး။ ဒါပေမယ့် အရမ်းအရေးမကြီးတဲ့ Data၊ Backup ရှိတဲ့ Drive တွေကိုပဲ ဒီနည်းလမ်းနဲ့ သုံးတာပိုစိတ်ချရပါတယ်။ နောက်ပြီး ကိုယ်ပိုင် Drive ကို NTFS format နဲ့ ဒီနည်းအတိုင်း ရေရှည်သုံးတာမျိုးထက် တခြားသူရဲ့ NTFS Drive တွေကို တစ်ခါတစ်လေ အရေးတကြီး Data ကူထည့်ပေးဖို့လိုတာမျိုးတွေလောက်မှာပဲသုံးဖို့ အကြံပေးချင်ပါတယ်။ ကိုယ်ပိုင် Drive တွေကိုတော့ ExFAT Format နဲ့သုံးသင့်ပါတယ်။</p>
+
+<p>Native NTFS ကိုသုံးတဲ့နည်းကတော့ အသုံးပြုမယ့် NTFS Drive ရဲ့ <strong>Volume Name</strong> ဒါမှမဟုတ် <strong>UUID</strong> ကို <code>/etc/fstab</code> ဆိုတဲ့ system config file ထဲ သတ်မှတ်ထားတဲ့ option တွေအတိုင်း ရေးထည့်ပေးရတာပါ။ ဒီနည်းလမ်းက သာမန် User တွေအတွက် အနည်းငယ် ခက်ခဲကောင်းခက်ခဲပါလိမ့်မယ်။ ဘာလို့လဲဆိုတော့ <strong>fstab</strong> file ကို Edit လုပ်ဖို့ Root Permission လိုတာရယ်၊ နောက်ပြီး Terminal ကနေ Edit လုပ်ရတာတွေရယ်ကြောင့်ပါ။ ကိုယ်တိုင်လည်း Volume Name တို့ UUID တို့ ရှာရတာတွေ၊ <code>/etc/fstab</code> ဖိုင်မှာ edit ဝင်လုပ်ရတာတွေကို သိပ်သဘောမကျတဲ့အတွက် နောက်ဆုံး Script လေးတစ်ခုပဲလုပ်လိုက်ပါတယ်။</p>
+
+<p>ပထမဦးဆုံးလုပ်တဲ့ Script မှာက NTFS Drive တွေကို <strong>fstab</strong> ထဲ Add လုပ်တာ၊ Remove ပြန်လုပ်တာတွေနဲ့ ပြည့်စုံသလောက်ဖြစ်ပြီးသားပါ။ ဒါပေမယ့် တိုက်တိုက်ဆိုင်ဆိုင် SourceForge မှာ <a href="http://sourceforge.net/projects/native-ntfs-osx/">NativeNTFS-OSX</a> ဆိုတဲ့ Script လေးကို သွားတွေ့ပါတယ်။ ကိုယ်ရေးထားတာထက် ပိုပြီး ပုံစံကျတဲ့အတွက် အဲဒီ Script ကို နမူနာယူပြီး ကိုယ်လိုချင်တဲ့ပုံစံဖြစ်အောင် အသစ် ထပ်လုပ်လိုက်ပါတယ်။ နာမည်ကိုတော့ မှတ်ရလွယ်၊ ရိုက်ရလွယ်မယ့် <strong>NTFSX</strong> လို့ပဲ ပေးလိုက်ပါတယ်။</p>
+
+<p><a href="https://github.com/naingyeminn/ntfsx">NTFSX</a> က Connect လုပ်ထားတဲ့ NTFS Drive အားလုံးကို တပြိုင်တည်း ဒါမှမဟုတ် တစ်ခုချင်း Write Access ရအောင်လုပ်ပေးနိုင်ပါတယ်။ နောက်ပြီး Add လုပ်ထားတဲ့ Drive တွေကိုလဲ တစ်ခုချင်း ဒါမှမဟုတ် အကုန်လုံး Remove လုပ်တာမျိုးလဲ လုပ်လို့ရပါတယ်။ NTFSX ကိုသုံးမယ်ဆိုရင်တော့ <strong>Terminal</strong> ဖွင့်ပြီး ပေးထားတဲ့ Command အတိုင်း တစ်ကြောင်းချင်းစီရိုက်သွင်းသွားရုံပါပဲ။</p>
+
+<pre><code class="language-sh">$ curl -LOk https://github.com/naingyeminn/ntfsx/archive/master.zip
+$ unzip master.zip
+$ cd ntfsx-master
+$ sudo make
+</code></pre>
+
+<p>ပြီးပြီဆိုရင်တော့ <strong>Terminal</strong> အသစ်တစ်ခုမှာ <code>ntfsx</code> ဆိုတဲ့ command ကို စသုံးနိုင်ပါပြီ။ <strong>root</strong> access ရဖို့အတွက် <strong>sudo</strong> command နဲ့တွဲသုံးဖို့တော့လိုပါတယ်။</p>
+
+<p>ချိပ်ဆက်ထားတဲ့ NTFS Drive အားလုံး Write Access ရချင်တယ်ဆိုရင်တော့ <code>ntfsx</code> command ကိုပဲသုံးဖို့လိုပါတယ်။</p>
+
+<pre><code class="language-sh">$ sudo ntfsx
+</code></pre>
+
+<p>Drive အားလုံးထဲကမှ တချို့ကိုပဲ ရွေးပြီး Write Access ရယူချင်တယ်ဆိုရင်တော့ <code>ntfsx</code> command ကို <code>-a</code> သို့မဟုတ် <code>add</code> option သုံးပြီး Drive number ရွေးနိုင်ပါတယ်။</p>
+
+<pre><code class="language-sh">$ sudo ntfsx -a
+(or)
+$ sudo ntfsx add
+</code></pre>
+
+<p>ရွေးလိုက်တဲ့ Drive ကို အလိုအလျောက် mount လုပ်ပြီး <strong>Finder</strong> မှာပြပေးပါလိမ့်မယ်။</p>
+
+<p>ထူးခြားတာက <code>fstab</code> သုံးပြီး mount လုပ်လိုက်တဲ့ Drive တွေကို <strong>Finder</strong> ရဲ့ Devices နေရာမှာ မတွေ့ရတော့တာပါ။ အမှန်က Hidden ဖြစ်နေတဲ့ <code>/Volumes/</code> ဆိုတဲ့ Folder အောက်မှာရှိပါတယ်။ အဲဒီ Folder ကို Access လုပ်ဖို့ကတော့ -</p>
+
+<ul>
+<li><strong>Finder</strong> ရဲ့ <strong>Go &gt; Go to Folder</strong> Menu ဒါမှမဟုတ် <code>Command + Shift + G</code> Shortcut ကိုသုံးပြီး Go to the Foler ဆိုတဲ့ Box ကို ဖွင့်ပါ။</li>
+<li>Input box ထဲ &ldquo; <strong>/Volumes/</strong> &ldquo; လို့ရိုက်ထည့်ပြီး <strong>Go</strong> button ကိုနှိပ်လိုက်ပါ။</li>
+</ul>
+
+<p>Drive တွေကိုတွေ့ရပါလိမ့်မယ်။</p>
+
+<p><code>/etc/fstab</code> ဖိုင်ထဲ ထည့်သွင်းထားတဲ့ Drive တွေကို ပြန်ထုတ်ချင်တယ်ဆိုရင်တော့ Drive တစ်ခုချင်းရွေးရှင်းဖို့ <code>-r</code> သို့မဟုတ် <code>remove</code> option ကိုသုံးနိုင်ပြီး အကုန်ရှင်းချင်တာဆိုရင်တော့ <code>-R</code> သို့မဟုတ် <code>removeall</code> option ကိုသုံးနိုင်ပါတယ်။</p>
+
+<pre><code class="language-sh">$ sudo ntfsx -r
+(or)
+$ sudo ntfsx remove
+----
+$ sudo ntfsx -R
+(or)
+$ sudo ntfsx removeall
+</code></pre>
+
+<p>Installation ပြုလုပ်ပုံနဲ့ အသုံးပြုပုံတွေကို Download ဆွဲလိုက်တဲ့ Zip ဖိုင်ရဲ့ README ထဲမှာလည်း ဖော်ပြပေးထားပါတယ်။ NTFSX က အထက်မှာပြောခဲ့တဲ့အတိုင်း လုံးဝပြီးပြည့်စုံတဲ့ Solution တစ်ခုတော့ မဟုတ်ဘူးဆိုတာကိုတော့ ထပ်မံ အသိပေးချင်ပါတယ်။</p>
+
+<p><strong>Github : <a href="https://github.com/naingyeminn/ntfsx">NTFSX</a></strong></p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/script-to-enable-ntfs-write-on-Mac-OSX/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/password-manager-in-shell-script/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p>© Naing Ye` Minn 2014</p>
+		        </footer>
+		    </div>
+		  </div>    
+		</div>
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
