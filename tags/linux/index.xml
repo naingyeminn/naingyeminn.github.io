@@ -7,7 +7,83 @@
     <language>en-us</language>
     
     
-    <updated>Sun, 03 Aug 2014 00:00:00 UTC</updated>
+    <updated>Tue, 04 Aug 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Linux Terminal / Command Line Tricks (2)</title>
+      <link>http://naingyeminn.com/posts/linux-command-line-usage-2/</link>
+      <pubDate>Tue, 04 Aug 2015 00:00:00 UTC</pubDate>
+      
+      <guid>http://naingyeminn.com/posts/linux-command-line-usage-2/</guid>
+      <description>
+
+&lt;p&gt;Linux/Unix ရဲ့ Bash Shell Terminal မှာ command တွေကို မြန်မြန်ဆန်ဆန် Edit လုပ်နိုင်စေမယ့် Shortcut လေးတွေပါ။ ရိုက်လိုက်တဲ့ command တစ်ကြောင်းမှာ အမှားပါနေလို့ပြန်ပြင်မယ်ဆိုရင် ကိုယ်တွေလုပ်နေကျ သမရိုးကျနည်းလမ်းအတိုင်း Arrow key တွေနဲ့ ရှေ့နောက်ရွှေ့ Delete, Backspace တို့နဲ့ပြန်ဖျက်၊ ပြန်ရေးနဲ့ အချိန်ကြာပါတယ်။ အခုထုတ်နှုတ်ပေးထားတဲ့ Shortcut လေးတွေသိထားမယ်ဆိုရင်တော့ command တွေကို မြန်မြန်ဆန်ဆန်ရိုက်နိုင် ပြင်နိုင်မှာဖြစ်တဲ့အတွက် အလုပ်ပိုတွင်ပါလိမ့်မယ်။ Linux/Unix Admin တွေအနေနဲ့ မဖြစ်မနေ သိထားသင့်တဲ့ Shortcut လေးတွေပဲဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Command Editing Shortcuts&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + a&lt;/strong&gt; : Command အစသို့&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + e&lt;/strong&gt; : Command အဆုံးသို့&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + k&lt;/strong&gt; : Cursor နေရာမှစ၍ Command အဆုံးထိဖျက်&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + u&lt;/strong&gt; : Cursor နေရာမှစ၍ Command အစထိဖျက်&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + w&lt;/strong&gt; : Cursor နေရာမှစ၍ စာလုံး(Word) အစထိဖျက်&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + y&lt;/strong&gt; : လက်တလောဖျက်ထားသော စာလုံး (သို့) Command အား ပြန်ရယူ&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + xx&lt;/strong&gt; : Cursor ရှိရာနေရာနှင့် Command အစကြား အပြန်အလှန်သွား&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Alter + b&lt;/strong&gt; : စာလုံးတစ်လုံးစာ နောက်ပြန်ရွှေ့&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Alter + f&lt;/strong&gt; : စာလုံးတစ်လုံးစာ အရှေ့သို့ရွှေ့&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Alter + d&lt;/strong&gt; : Cursor နေရာမှစ၍ စာလုံး(Word) အဆုံးထိဖျက်&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Alter + c&lt;/strong&gt; : စာလုံး၏ပထမအက္ခရာ(Character) အား (သို့) Cursor ရှိရာအက္ခရာအား Capital Letter သို့ပြောင်း&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Alter + u&lt;/strong&gt; : Cursor နေရာမှစ၍ စာလုံးအဆုံးထိ Uppercase သို့ပြောင်း&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Alter + l&lt;/strong&gt; : Cursor နေရာမှစ၍ စာလုံးအဆုံးထိ Lowercase သို့ပြောင်း&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Alter + t&lt;/strong&gt; : Cursor ရှိရာနေရာမှစာလုံး နှင့် ရှေ့စာလုံးနေရာလဲ&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + f&lt;/strong&gt; : အက္ခရာ(Character) တစ်လုံးစာ အရှေ့သို့ရွှေ့&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + b&lt;/strong&gt; : အက္ခရာတစ်လုံးစာ အနောက်သို့ရွှေ့&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + d&lt;/strong&gt; : Cursor ရှိရာနေရာမှ အက္ခရာကိုဖျက်&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + h&lt;/strong&gt; : Cursor ရှေ့မှ အက္ခရာကိုဖျက်&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + t&lt;/strong&gt; : Cursor ရှိရာနေရာမှအက္ခရာ နှင့် ရှေ့အက္ခရာနေရာလဲ&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Command Recall &amp;amp; Control Shortcuts&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + p&lt;/strong&gt; : Command များ နောက်ပြန်ရှာ&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + n&lt;/strong&gt; : Command များ ရှေ့တိုးရှာ&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Alter + .&lt;/strong&gt; : နောက်ဆုံးရိုက်ထားသော Command ၏နောက်ဆုံးစာလုံးအားပြန်ရယူ&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + l&lt;/strong&gt; : Terminal Screen ရှင်း&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + c&lt;/strong&gt; : Run နေသော Command အားအဆုံးသတ်&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Related Post :&lt;/strong&gt; &lt;a href=&#34;http://naingyeminn.com/posts/linux-command-line-usage/&#34;&gt;Linux Terminal / Command Line Tricks (1)&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Linux Terminal / Command Line Tricks</title>
