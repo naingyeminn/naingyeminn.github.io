@@ -3,7 +3,7 @@
   <channel>
       <title>Virus on Naing Ye` Minn </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://naingyeminn.com/tags/virus/index.xml/</link>
+    <link>http://localhost:1313/tags/virus/index.xml/</link>
     <language>en-us</language>
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>vFix - Fix Virus Infected Flash Drives</title>
-      <link>http://naingyeminn.com/posts/vfix-fix-virus-infected-flash-drives/</link>
+      <link>http://localhost:1313/posts/vfix-fix-virus-infected-flash-drives/</link>
       <pubDate>Mon, 23 Jun 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://naingyeminn.com/posts/vfix-fix-virus-infected-flash-drives/</guid>
+      <guid>http://localhost:1313/posts/vfix-fix-virus-infected-flash-drives/</guid>
       <description>&lt;p&gt;ရုံးမှာ တစ်ခါတစ်ခါ Virus ဝင်ထားတဲ့ Flash Drive တွေ ယူယူလာ Data တွေမတွေ့တော့လို့ဆိုပြီး လာပြလေ့ရှိပါတယ်။ များသောအားဖြင့် Windows Virus တွေက Flash Drive ကနေပဲ ကူးကြတာများပါတယ်။ ကူးပြီဆိုရင်လဲ Drive ထဲရှိတဲ့ Folder တွေကို Hidden လုပ် Folder နဲ့ နာမည်တူ Link တွေထုတ်ပြီး virus file ကိုသွားချိတ်လေ့ရှိပါတယ်။ Windows မှာရှိတဲ့ Antivirus က Virus ကိုရှင်လိုက်နိုင်တယ်ဆိုရင်တောင် အဲဒီ Virus က Hidden လုပ်သွားတဲ့ Flash Drive ထဲက Folder တွေကိုတော့ ပြန်ဖေါ်ပေးလေ့မရှိပါဘူး။&lt;/p&gt;
 
 &lt;p&gt;အကယ်၍များ Linux မှာ အဲ့ Drive ကိုသွားသုံးမယ်ဆိုရင်တော့ Hidden ဖြစ်နေတဲ့ Folder တွေကိုမြင်ရပါလိမ့်မယ်။ Drive ထဲ Virus ရှိနေသေးတယ်ဆိုရင်တောင် အဲဒီ Windows က Virus တွေက Linux ပေါ်မှာအလုပ်မလုပ်ပါဘူး။ လိုတာက အဲဒီ Virus ဖိုင်( .exe, .bat) စတာတွေကို ကိုယ်တိုင် delete လုပ်ေပးဖို့ပါပဲ။ နောက်ပြီး Hidden တွေကို ပြန်ေဖာ်တာ virus ကလုပ်သွားတဲ့ Shortcut (.lnk) File တွေကိုပြန်ဖျက်တာတွေ လုပ်ပေးရပါတယ်။ ဒါပေမယ့် Windows File System အရ Hidden လုပ်ထားတဲ့ Folder တွေကို ပြန်ဖော်ပေးဖို့အတွက် Ubuntu မှာတော့ package တချို့ ထပ်တင်ရပါတယ်။ နောက်ပြီး Terminal ကနေ command နဲ့ Folder တွေတစ်ခုချင်း လိုက်ပြီး Hidden attribute လိုက်ဖြုတ်ပေးရပါတယ်။ Windows ပေါ်မှာ တော့ cmd ထဲဝင် &amp;ldquo;attrib -s -h folder_name&amp;rdquo; ဆိုပြီး ပြန်ေဖာ်ပေးလို့ ရပါတယ်။&lt;/p&gt;

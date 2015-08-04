@@ -3,7 +3,7 @@
   <channel>
       <title>Script on Naing Ye` Minn </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://naingyeminn.com/tags/script/index.xml/</link>
+    <link>http://localhost:1313/tags/script/index.xml/</link>
     <language>en-us</language>
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>NTFSX - Script to enable NTFS Write on Mac OS X</title>
-      <link>http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-Mac-OSX/</link>
+      <link>http://localhost:1313/posts/script-to-enable-ntfs-write-on-Mac-OSX/</link>
       <pubDate>Fri, 06 Mar 2015 00:00:00 UTC</pubDate>
       
-      <guid>http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-Mac-OSX/</guid>
+      <guid>http://localhost:1313/posts/script-to-enable-ntfs-write-on-Mac-OSX/</guid>
       <description>&lt;p&gt;Mac OS X User တွေအနေနဲ့ External HDD တွေသုံးတဲ့နေရာမှာ ကြုံရလေ့ရှိတဲ့ အခက်အခဲလေးတစ်ခုပါ။ အဓိကအကြောင်းအရင်းကတော့ Windows ရဲ့ NTFS file system ကို Mac OS X က အပြည့်အဝ အထောက်အပံ့မပေးထားလို့ပါပဲ။ အဲဒါကြောင့် NTFS format သုံးထားတဲ့ External HDD တွေ USB Flash Drive တွေဆိုရင် Read Only သက်သက်သာ အသုံးပြုနိုင်ပါလိမ့်မယ်။ Data တွေကူးထည့်လို့မရနိုင်ပါဘူး။ ဒါပေမယ့် လုံးဝ Write Access မရတာတော့မဟုတ်ပါဘူး။ Mac OS X မှာက Native NTFS support ရှိပါတယ်။ ပြဿနာရှိတာက Apple အနေနဲ့ Microsoft ရဲ့ NTFS ကို Mac OS X မှာ အပြည့်အဝ အသုံးပြုနိုင်အောင် လုပ်ပေးမယ်ဆိုရင် Microsoft ဆီကနေ နည်းပညာ အသုံးပြုခွင့် ဝယ်ယူရပါလိမ့်မယ်။ Microsoft အနေနဲ့လည်း ထိုနည်းလည်ကောင်းပါပဲ။ Apple ရဲ့ HFS ကို Windows မှာအသုံးပြုလို့ရစေနိုင်ဖို့ အသုံးပြုခွင့် လိုအပ်ပါတယ်။ ဒါအမြင်သာဆုံးဖြစ်အောင်သာ နှိုင်းယှဉ်ပြတာပါ။ ဒီလို Patent ပြဿနာက တကယ့်တကယ် ဒီထက် ပိုရှုပ်ထွေးပါတယ်။ အဲဒီလို ညှိနှိုင်းရခက်ခဲတဲ့ ပြဿနာတွေကြောင့် Microsoft ကလည်း HFS ကို Support မလုပ်သလို Apple ကလည်း NTFS ကို လစ်လျှူရှုထားတာပါ။&lt;/p&gt;
 
 &lt;p&gt;တကယ့်တကယ်တော့ Apple အနေနဲ့ Mac OS X မှာ NTFS ကို အသုံးပြုလို့ရနိုင်လောက်အောင် လုပ်ပေးထားပါတယ်။ တရားဝင်သာ Feature တစ်ခုအနေနဲ့ ထည့်သွင်းဖော်ပြမထားတာပါ။ နောက်ပြီး Official Native Support မဟုတ်တဲ့အတွက် Stable ဖြစ်တဲ့အထိ ဂရုတစိုက်လုပ်ပေးမထားပါဘူး။ Mac User တွေအနေနဲ့ NTFS ကို အတတ်နိုင်ဆုံးရှောင်သုံးတာကတော့ အကောင်းဆုံးပါ။ Drive တွေကို ExFAT နဲ့ format ပြန်ချပြီးသုံးတာမျိုးပါ။ NTFS ပဲသုံးချင်တယ်ဆိုရင်တော့ Free ရတဲ့ Third Party Driver &lt;a href=&#34;http://www.macbreaker.com/2014/06/how-to-enable-writing-to-ntfs-hard.html&#34;&gt;NTFS-3G&lt;/a&gt; ရှိပါတယ်။ ဒါလည်းအဆင်ပြေလွန်းလှတယ်ရယ်တော့မဟုတ်ပါဘူး။ Senior ကျတဲ့ Mac User တွေကတော့ Third Party Driver တင်သုံးမယ်ဆိုရင် Free ထက် Commercial Driver တွေဖြစ်တဲ့ &lt;a href=&#34;http://www.paragon-software.com/home/ntfs-mac/download.html&#34;&gt;Paragon&lt;/a&gt; တို့ &lt;a href=&#34;http://www.tuxera.com/&#34;&gt;Tuxera&lt;/a&gt; တို့ဝယ်သုံးတာကိုပဲ Recommend လုပ်ကြပါတယ်။ ပိုပြီး Stable ဖြစ်သလို Data အကူးအပြောင်းလည်း ပိုမြန်တယ်လို့ဆိုကြပါတယ်။ တချို့ကတော့ မဝယ်ပဲ Crack လုပ်ပြီး သုံးကြပါတယ်။&lt;/p&gt;
@@ -77,10 +77,10 @@ $ sudo ntfsx removeall
     
     <item>
       <title>Password Manager in Shell Script</title>
-      <link>http://naingyeminn.com/posts/password-manager-in-shell-script/</link>
+      <link>http://localhost:1313/posts/password-manager-in-shell-script/</link>
       <pubDate>Sat, 21 Feb 2015 00:00:00 UTC</pubDate>
       
-      <guid>http://naingyeminn.com/posts/password-manager-in-shell-script/</guid>
+      <guid>http://localhost:1313/posts/password-manager-in-shell-script/</guid>
       <description>&lt;p&gt;ယနေ့ခေတ် Internet အသုံးပြုမှုတွင်ကျယ်လာတာနဲ့အမျှ Google, Facebook, Twitter, Dropbox, Flickr, Instagram&amp;hellip; စသဖြင့် Account ပေါင်း သောင်းခြောက်ထောင်ရဲ့ Password တွေကို အကုန်မှတ်မိဖို့ဆိုတာမလွယ်ပါဘူး။ User Name တူအောင်ပေးထားရင်တောင် Password ကိုတော့ အတူတူမပေးသင့်တာ အားလုံးပဲသိကြမှာပါ။ Password တစ်ခုကို သိတာနဲ့ တခြား account တွေကိုပါဝင်လို့ရသွားနိုင်ပါတယ်။ နောက်ပြီး Password က ရိုးရှင်းနေလို့လဲမဖြစ်ပါဘူး။ လွယ်လွယ်ကူကူရိုးရိုးရှင်းရှင်းပေးထားရင် ကိုယ်ရိုက်လိုက်တဲ့ password ကို တခြားလူကစောင့်ကြည့်တာနဲ့တင် သိသွားနိုင်လို့ပါ။ စိတ်ချရအောင် ရှည်လျားပြီး ရှုပ်ထွေးတဲ့ password တွေကို ခဏခဏပြောင်းပြန်တော့လဲ အဲဒီ password တွေကို မှတ်မိဖို့က ခက်ခဲပါလိမ့်မယ်။ အဲဒါကြောင့် တချို့က &lt;a href=&#34;http://www.keepassx.org/&#34;&gt;Keypass&lt;/a&gt; လို password manager တစ်ခုခုသုံးကြပါတယ်။ Keepass က ကိုယ့်ရဲ့ password တွေကို Database တစ်ခုလုပ်ပြီး သိမ်းထားပေးတာပါ။ လိုအပ်ရင် အဲဒီ Database ကို Keypass နဲ့ဖွင့်ပြီး password ကို clipboard ထဲ အလွယ်တကူ copy ကူးထည့်ပေးပါတယ်။ နောက်ပြီး Password generate လုပ်ပေးတာတွေ password ကို သက်တမ်းသတ်မှတ်ပြီး အဲဒီသက်တမ်းကုန်တာနဲ့ ပြောင်းဖို့အသိပေးတာမျိုးတွေလည်း လုပ်ပေးနိုင်ပါသေးတယ်။ Windows User တွေအတွက်ကတော့ GUI Tool သုံးရတာနှစ်သက်ကြပေမယ့် တချို့ Linux, Mac OSX User တွေကတော့ CLI သုံးရတာကို ပိုပြီးနှစ်သက်ကြပါတယ်။ ကိုယ်တိုင်လဲ Password Manager သုံးချင်ပေမယ့် GUI သေသပ်မှုမရှိတဲ့ KeepassX ကို သိပ်မသုံးချင်ပါဘူး။ Terminal အသုံးများတဲ့သူတွေအတွက် Keepass application ကို သီးသန့်ထပ်ဖွင့်ပြီးသုံးတာထက် ဖွင့်ထားတဲ့ Terminal ကနေပဲ command ရိုက်ပြီး password ရှာတာကပို အဆင်ပြေပါလိမ့်မယ်။ Unix-liked OS တွေ အတွက် &lt;a href=&#34;http://www.passwordstore.org&#34;&gt;Pass&lt;/a&gt; ဆိုတဲ့ CLI tool ရှိပါတယ်။ စိတ်ချရပေမယ့် အနည်းငယ်ရှုပ်ထွေးပါတယ်။ လိုချင်တာက password တွေကို account ID နဲ့တွဲပြီး လွယ်လွယ်ကူကူသိမ်းနိုင်ဖို့ရယ် လွယ်လွယ်ကူကူ access လုပ်နိုင်ဖို့ရယ်ပါ။ ဒါကြောင့် ကိုယ်သိတဲ့ Bash နဲ့ပဲ Script လေးလုပ်ကြည့်ဖြစ်သွားပါတယ်။&lt;/p&gt;
 
 &lt;p&gt;နာမည်ကိုတော့ &lt;a href=&#34;https://github.com/naingyeminn/nympass&#34;&gt;NYMPASS&lt;/a&gt; လို့ပဲ အလွယ်ပေးထားပါတယ်။ ကိုယ့်စိတ်ကြိုက် rename လုပ်ချင်လဲရပါတယ်။ လုံးဝ လုံခြုံစိတ်ချရတယ်လို့တော့ မပြောနိုင်ပေမယ့် ရိုးရှင်းပေါ့ပါးပါတယ်။ ကိုယ့်စိတ်ကူးနဲ့ကိုယ် လိုချင်တဲ့ ပုံစံလုပ်ထားတာပါ။ Password ကိုတော့ ၂ဆင့် encrypt လုပ်ထားပါတယ်။ OpenSSL ကိုသုံးပြီး AES-256 နဲ့ encrypt လုပ်ထားတာပါ။ Keepass လို Database file ကို ဘယ်စက်ကမဆိုဖွင့်လို့ရတာမျိုးတော့မဟုတ်ပါဘူး။ Encrypt လုပ်လိုက်တဲ့ စက်မှာပဲ Decrypt ပြန်လုပ်လို့ရအောင် Password ကို စက်ရဲ့ Network Interface မှာသတ်မှတ်ထားတဲ့ MAC Address (Hardware Address) နဲ့ အလျှင် Encrypt လုပ်ပါတယ်။ ပြီးမှ Passphase တစ်ခုနဲ့ Encrypt ထပ်လုပ်ပြီး ဖိုင်အနေနဲ့ ထုတ်လိုက်တာပါ။ MAC Address ကိုသိရင်တော့ Script မှာ ပြင်ပြီး Decrypt လုပ်လို့ရပါတယ်။ Macbook User တွေအနေနဲ့ Thunderbolt Ethernet Adapter ကို Key တစ်ခုအနေနဲ့သုံးလို့ရအောင် MAC Address နဲ့ Encrypt လုပ်ထားတာပါ။ Passphase ကိုသိရင်တောင် Adapter တပ်မထားရင် ဒါမှမဟုတ် MAC Address မသိရင် password ကို Decrypt လုပ်လို့မရနိုင်အောင်ပါ။ Password တစ်ခုစီအတွက်တော့ File တစ်ခုစီပဲခွဲထုတ်ထားပါတယ်။ ဒီလိုလုပ်ထားတဲ့အတွက် Password ဖိုင်တွေ ပွထသွားစေပေမယ့် Password ကို ထုတ်ယူတဲ့နေရာမှာ command တစ်ခုတည်းနဲ့လွယ်လွယ်ကူကူ Decrypt လုပ်နိုင်စေဖို့အတွက်ပါ။&lt;/p&gt;
@@ -93,10 +93,10 @@ $ sudo ntfsx removeall
     
     <item>
       <title>FOREX</title>
-      <link>http://naingyeminn.com/posts/forex-exchange-rate-checker/</link>
+      <link>http://localhost:1313/posts/forex-exchange-rate-checker/</link>
       <pubDate>Mon, 22 Dec 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://naingyeminn.com/posts/forex-exchange-rate-checker/</guid>
+      <guid>http://localhost:1313/posts/forex-exchange-rate-checker/</guid>
       <description>
 
 &lt;p&gt;မနေ့က သူငယ်ချင်းတစ်ယောက် Currency Exchange Rate တွေထုတ်ပေးတဲ့ Program လေးတစ်ခု ရေးပြီး Share ထားတာကိုတွေ့လိုက်တယ်။ သူကတော့ Developer တစ်ယောက်ဆိုတော့ Go Programming Language ကိုသုံးပြီး အကျအနရေးထားတာပါ။ သူ့ Coding လေးကြည့်ရင်း ငါလည်း Shell Script နဲ့ရေးရင် ရလောက်မယ်ဆိုပြီး အကြံရတာနဲ့ ညကရေးဖြစ်သွားပါတယ်။ ဘာမှ ထူးထူးခြားခြားကြီးတော့ မဟုတ်ပါဘူး။ KBZ နဲ့ CB Bank တို့ရဲ့ Website မှာ တင်ပေးထားတဲ့ Exchange Rate တွေကို Curl ဒါမှမဟုတ် Wget နဲ့ယူပြီး ပြန်ထုတ်ပြပေးတာပါ။ Web Page ရဲ့ Source ထဲကနေ GREP နဲ့ regular expression သုံးပြီး Information ကို ဆွဲထုတ်ထားတာဆိုတော့ Page Design ပြောင်းသွားရင်တော့ ဒီ Script က လွဲသွားနိုင်ပါတယ်။ Ubuntu မှာ တော့ Curl က ထပ်တင်ပေးဖို့လိုပါလိမ့်မယ်။ အဲဒီအတွက်အဆင်ပြေအောင် Makefile နဲ့ အလိုအလျောက် install လုပ်အောင်လုပ်ပေးထားပါတယ်။ Ubuntu User တွေအနေနဲ့ README မှာပါတဲ့အတိုင်း install လုပ်နိုင်ပါတယ်။ တခြား Linux Distros တွေအတွက်ကတော့ လိုအပ်ရင် Curl ထပ်တင်ပေးရပါလိမ့်မယ်။ ပြီးလျှင်တော့ &lt;code&gt;forex&lt;/code&gt; ဆိုတဲ့ဖိုင်လေးကို /usr/local/bin ထဲသွားထည့်ပေးလိုက်ရုံပါပဲ။ OS X User တွေလဲ /usr/local/bin ထဲထည့်ပြီး အသုံးပြုနိုင်ပါတယ်။&lt;/p&gt;
@@ -118,10 +118,10 @@ $ sudo ntfsx removeall
     
     <item>
       <title>vFix - Fix Virus Infected Flash Drives</title>
-      <link>http://naingyeminn.com/posts/vfix-fix-virus-infected-flash-drives/</link>
+      <link>http://localhost:1313/posts/vfix-fix-virus-infected-flash-drives/</link>
       <pubDate>Mon, 23 Jun 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://naingyeminn.com/posts/vfix-fix-virus-infected-flash-drives/</guid>
+      <guid>http://localhost:1313/posts/vfix-fix-virus-infected-flash-drives/</guid>
       <description>&lt;p&gt;ရုံးမှာ တစ်ခါတစ်ခါ Virus ဝင်ထားတဲ့ Flash Drive တွေ ယူယူလာ Data တွေမတွေ့တော့လို့ဆိုပြီး လာပြလေ့ရှိပါတယ်။ များသောအားဖြင့် Windows Virus တွေက Flash Drive ကနေပဲ ကူးကြတာများပါတယ်။ ကူးပြီဆိုရင်လဲ Drive ထဲရှိတဲ့ Folder တွေကို Hidden လုပ် Folder နဲ့ နာမည်တူ Link တွေထုတ်ပြီး virus file ကိုသွားချိတ်လေ့ရှိပါတယ်။ Windows မှာရှိတဲ့ Antivirus က Virus ကိုရှင်လိုက်နိုင်တယ်ဆိုရင်တောင် အဲဒီ Virus က Hidden လုပ်သွားတဲ့ Flash Drive ထဲက Folder တွေကိုတော့ ပြန်ဖေါ်ပေးလေ့မရှိပါဘူး။&lt;/p&gt;
 
 &lt;p&gt;အကယ်၍များ Linux မှာ အဲ့ Drive ကိုသွားသုံးမယ်ဆိုရင်တော့ Hidden ဖြစ်နေတဲ့ Folder တွေကိုမြင်ရပါလိမ့်မယ်။ Drive ထဲ Virus ရှိနေသေးတယ်ဆိုရင်တောင် အဲဒီ Windows က Virus တွေက Linux ပေါ်မှာအလုပ်မလုပ်ပါဘူး။ လိုတာက အဲဒီ Virus ဖိုင်( .exe, .bat) စတာတွေကို ကိုယ်တိုင် delete လုပ်ေပးဖို့ပါပဲ။ နောက်ပြီး Hidden တွေကို ပြန်ေဖာ်တာ virus ကလုပ်သွားတဲ့ Shortcut (.lnk) File တွေကိုပြန်ဖျက်တာတွေ လုပ်ပေးရပါတယ်။ ဒါပေမယ့် Windows File System အရ Hidden လုပ်ထားတဲ့ Folder တွေကို ပြန်ဖော်ပေးဖို့အတွက် Ubuntu မှာတော့ package တချို့ ထပ်တင်ရပါတယ်။ နောက်ပြီး Terminal ကနေ command နဲ့ Folder တွေတစ်ခုချင်း လိုက်ပြီး Hidden attribute လိုက်ဖြုတ်ပေးရပါတယ်။ Windows ပေါ်မှာ တော့ cmd ထဲဝင် &amp;ldquo;attrib -s -h folder_name&amp;rdquo; ဆိုပြီး ပြန်ေဖာ်ပေးလို့ ရပါတယ်။&lt;/p&gt;

@@ -3,7 +3,7 @@
   <channel>
       <title>Elementaryos on Naing Ye` Minn </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://naingyeminn.com/tags/elementaryos/index.xml/</link>
+    <link>http://localhost:1313/tags/elementaryos/index.xml/</link>
     <language>en-us</language>
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Elementary OS - Review (1)</title>
-      <link>http://naingyeminn.com/posts/elementary-os-review-1/</link>
+      <link>http://localhost:1313/posts/elementary-os-review-1/</link>
       <pubDate>Fri, 11 Apr 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://naingyeminn.com/posts/elementary-os-review-1/</guid>
+      <guid>http://localhost:1313/posts/elementary-os-review-1/</guid>
       <description>&lt;p&gt;လက်ရှိ Laptop မှာ Ubuntu 12.04 LTS ပဲသုံးနေခဲ့တာ တော်တော်ကြာနေပါပြီ။ ကြားထဲမှာ 12.10, 13.04 နဲ့ 13.10 version သုံးခုတောင်ထွက်ခဲ့သည့်တိုင်အောင်မပြောင်းသေးပဲ Stable ဖြစ်တဲ့ LTS ကိုပဲဆက်သုံးဖြစ်နေတာပါ။ အခု လာမယ့် April ဆိုရင် နောက်ထပ် LTS version အသစ်တစ်ခုဖြစ်တဲ့ 14.04 ထပ်ထွက်တော့မှာဖြစ်တဲ့အတွက် version အသစ်ကိုမပြောင်းခင် တခြား distro လေးတွေပြောင်းစမ်းဖို့စိတ်ကူးမိတာနဲ့ပဲ နောက်ဆုံး ဒီ Elementary OS လေး စမ်းကြည့်ဖို့ ရွေးလိုက်ပါတယ်။&lt;/p&gt;
 
 &lt;p&gt;Elementary OS က ubuntu-based distro တစ်ခုပါပဲ။ Ubuntu ကိုအခြေခံပြီး မွမ်းမံထားတဲ့ OS တစ်ခုပါ။ သူ့ကို eOS လို့ အတိုကောက်ခေါ်ကြလေ့ရှိပါတယ်။ အခုစမ်းကြည့်ရသလောက်တော့ တော်တော်လေးကို ရိုးရှင်းပြီး အသုံးပြုရလွယ်ကူတာတွေ့ရပါတယ်။ သုံးကြည့်ရသလောက်တော့ အပြည့်အဝပြည့်စုံကောင်းမွန်တဲ့ OS တစ်ခုလို့မဆိုနိုငေ်ပမယ့် အတိုင်းအတာတစ်ခုထိ စိတ်ကြေနပ်စရာကောင်းတဲ့ OS လေးတစ်ခုဖြစ်တယ်လို့တော့ဆိုချင်ပါတယ်။ ထူးခြားချက်လေးတွေ၊ အားသာချက်လေးတွေရှိသလို အားနည်းချက်လေးတွေလဲရှိပါတယ်။&lt;/p&gt;

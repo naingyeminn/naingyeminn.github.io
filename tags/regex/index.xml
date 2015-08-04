@@ -3,7 +3,7 @@
   <channel>
       <title>Regex on Naing Ye` Minn </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://naingyeminn.com/tags/regex/index.xml/</link>
+    <link>http://localhost:1313/tags/regex/index.xml/</link>
     <language>en-us</language>
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>FOREX</title>
-      <link>http://naingyeminn.com/posts/forex-exchange-rate-checker/</link>
+      <link>http://localhost:1313/posts/forex-exchange-rate-checker/</link>
       <pubDate>Mon, 22 Dec 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://naingyeminn.com/posts/forex-exchange-rate-checker/</guid>
+      <guid>http://localhost:1313/posts/forex-exchange-rate-checker/</guid>
       <description>
 
 &lt;p&gt;မနေ့က သူငယ်ချင်းတစ်ယောက် Currency Exchange Rate တွေထုတ်ပေးတဲ့ Program လေးတစ်ခု ရေးပြီး Share ထားတာကိုတွေ့လိုက်တယ်။ သူကတော့ Developer တစ်ယောက်ဆိုတော့ Go Programming Language ကိုသုံးပြီး အကျအနရေးထားတာပါ။ သူ့ Coding လေးကြည့်ရင်း ငါလည်း Shell Script နဲ့ရေးရင် ရလောက်မယ်ဆိုပြီး အကြံရတာနဲ့ ညကရေးဖြစ်သွားပါတယ်။ ဘာမှ ထူးထူးခြားခြားကြီးတော့ မဟုတ်ပါဘူး။ KBZ နဲ့ CB Bank တို့ရဲ့ Website မှာ တင်ပေးထားတဲ့ Exchange Rate တွေကို Curl ဒါမှမဟုတ် Wget နဲ့ယူပြီး ပြန်ထုတ်ပြပေးတာပါ။ Web Page ရဲ့ Source ထဲကနေ GREP နဲ့ regular expression သုံးပြီး Information ကို ဆွဲထုတ်ထားတာဆိုတော့ Page Design ပြောင်းသွားရင်တော့ ဒီ Script က လွဲသွားနိုင်ပါတယ်။ Ubuntu မှာ တော့ Curl က ထပ်တင်ပေးဖို့လိုပါလိမ့်မယ်။ အဲဒီအတွက်အဆင်ပြေအောင် Makefile နဲ့ အလိုအလျောက် install လုပ်အောင်လုပ်ပေးထားပါတယ်။ Ubuntu User တွေအနေနဲ့ README မှာပါတဲ့အတိုင်း install လုပ်နိုင်ပါတယ်။ တခြား Linux Distros တွေအတွက်ကတော့ လိုအပ်ရင် Curl ထပ်တင်ပေးရပါလိမ့်မယ်။ ပြီးလျှင်တော့ &lt;code&gt;forex&lt;/code&gt; ဆိုတဲ့ဖိုင်လေးကို /usr/local/bin ထဲသွားထည့်ပေးလိုက်ရုံပါပဲ။ OS X User တွေလဲ /usr/local/bin ထဲထည့်ပြီး အသုံးပြုနိုင်ပါတယ်။&lt;/p&gt;
