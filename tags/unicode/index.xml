@@ -3,7 +3,7 @@
   <channel>
       <title>Unicode on Naing Ye` Minn </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://localhost:1313/tags/unicode/index.xml/</link>
+    <link>http://naingyeminn.com/tags/unicode/index.xml/</link>
     <language>en-us</language>
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Burmese Font and Keyboard Installation for Ubuntu 14.04 LTS</title>
-      <link>http://localhost:1313/posts/burmese-keyboard-for-ubuntu-1404/</link>
+      <link>http://naingyeminn.com/posts/burmese-keyboard-for-ubuntu-1404/</link>
       <pubDate>Thu, 11 Dec 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://localhost:1313/posts/burmese-keyboard-for-ubuntu-1404/</guid>
+      <guid>http://naingyeminn.com/posts/burmese-keyboard-for-ubuntu-1404/</guid>
       <description>&lt;p&gt;Ubuntu Myanmar LoCo Team ရဲ့ Facebook page မှာအမြဲတမ်းမေးလေ့ရှိတဲ့ မေးခွန်းပါ။ Ubuntu မှာ မြန်မာ font ဘယ်လိုသွင်းရမလဲ မြန်မာလို ရိုက်မရလို့ပြောပြပါဦးဆိုတဲ့ မေးခွန်းတွေအတွက် ဖြေရလွယ်အောင် ဒီ post လေးထပ်ရေးလိုက်ပါတယ်။ Ubuntu 14.04 LTS version ကိုအခြေခံပြီး ပြောပြသွားပါမယ်။&lt;/p&gt;
 
 &lt;p&gt;အလျှင်ဦးဆုံး install လုပ်ပုံတွေမပြောခင် font နဲ့ keyboard တနည်းအားဖြင့် input source တို့ရဲ့ သဘောတရားလေးကို ရှင်းပြပါရစေ။ Ubuntu, Windows, Android, iDevice ဘယ် System မှာမဆို မြန်မာလိုမြင်ရဖို့ မြန်မာ font လိုအပ်ပြီး မြန်မာလို ရေးသားနိုင်ဖို့ Keyboard လိုအပ်ပါတယ်။ လက်ရှိကျွန်တော်တို့ online မှာ၊ User တွေကြားမှာ အဓိကသုံးနေတဲ့ မြန်မာစာ Font ၂မျိုးရှိပါတယ်။ ဇော်ဂျီ နဲ့ ယူနီကုဒ်ပါ။ ဇော်ဂျီကတော့ Web ပေါ်မှာရော Social Network တွေမှာပါအသုံးများတာ အားလုံးပဲသိကြမှာပါ။ မြန်မာ font ဆိုတာနဲ့ ဇော်ဂျီကိုပဲ သတိရကြတာပါ။ တကယ်တမ်းတော့ ဇော်ဂျီက Unicode ဆိုတဲ့စနစ်ကို အခြေခံထားပေမယ့် အပြည့်အဝမလိုက်နာထားတဲ့ Font အမျိုးအစားတစ်ခုပါ။ ယူနီကုဒ်စနစ်ကို လိုက်နာပြီး Ubuntu မှာပါအဆင်ပြေတဲ့ Font တွေကတော့ Padauk, Myanmar3, Tharlon, Noto Sans Myanmar, Yunghkio, Mon3 Anonta 1 တို့ပဲဖြစ်ပါတယ်။ Ubuntu မှာကတော့ Unicode Font အနေနဲ့ Padauk font ပါဝင်ပြီးသားဖြစ်ပေမယ့် Zawgyi သုံးပြီးရေးထားတာတွေကို မြင်ရဖို့အတွက်တော့ Zawgyi font install လုပ်ပေးဖို့လိုအပ်ပါတယ်။&lt;/p&gt;
@@ -85,10 +85,10 @@ $ gsettings set org.freedesktop.ibus.panel show 0
     
     <item>
       <title>Myanmar Unicode Keyboard for Mac OS X (Yosemite)</title>
-      <link>http://localhost:1313/posts/myanmar-unicode-keyboard-for-yosemite/</link>
+      <link>http://naingyeminn.com/posts/myanmar-unicode-keyboard-for-yosemite/</link>
       <pubDate>Fri, 05 Dec 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://localhost:1313/posts/myanmar-unicode-keyboard-for-yosemite/</guid>
+      <guid>http://naingyeminn.com/posts/myanmar-unicode-keyboard-for-yosemite/</guid>
       <description>&lt;p&gt;Mac OS X Yosemite စသုံးတော့ Unicode အတွက် keyboard ရှာဖြစ်တယ်။ ပါလာတဲ့ Default မြန်မာစာ လက်ကွက်က ပုံမှန်ရိုက်နေကျ မြန်မာ unicode keyboard layout အတိုင်မဟုတ်တော့ ရိုက်ရတာအဆင်မပြေဘူး။ ဒါနဲ့ KeyMagic ပဲသုံးမယ်လေဆိုပြီး install လုပ်လိုက်တယ်။ စာရိုက်ရတာတော့အဆင်ပြေပါတယ်။ ဒါပေမယ့် မြန်မာလိုရိုက်နေရာကနေ ခဏနားလိုက်လို့ Screen Lock ကျသွားရင် ပြန်ဝင်ဖို့ password ရိုက်မရတော့ဘူး။ Guest Account ထဲဝင်ပြီးပြန်ထွက်မှ password ပြန်ရိုက်လို့ရတယ်။ KeyMagic ရေးတဲ့ သန့်သက် ကိုမေးကြည့်တော့ အဲဒါက Yosemite ရဲ့ Bug ဆိုတော့ ဘာမှလုပ်ပေးလို့မရပါဘူးတဲ့။ အမြဲလိုလိုအဲ့လိုကြီးဝင်နေရတာ သိပ်မဟန်တာကြောင့် Keyboard Input Source ဘယ်လိုလုပ်ရမလဲဆိုပြီး ရှာကြည့်ဖြစ်တော့ လွယ်လွယ်ကူကူပါပဲ အဖြေတန်းတွေ့တယ်။ &lt;a href=&#34;http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;amp;id=ukelele&#34;&gt;Ukelele&lt;/a&gt; ဆိုတဲ့ software လေးပါ။ အဲဒါလေးနဲ့ ရှိနေတဲ့ Keyboard Layout တွေကို စိတ်ကြိုက် ပြင်လို့ရတယ်ဆိုတော့ Default Myanmar Keyboard ကို Myanmar3 Layout အတိုင်းဖြစ်အောင် ပြန်ပြီးပြင်လိုက်တယ်။ ရိုက်နေကျအတိုင်းဖြစ်သွားတော့ တော်တော်လေးအဆင်ပြေသွားတယ်။ KeyMagic မှာလို password ရိုက်မရတာမျိုးလဲမရှိတော့ဘူး။ အဲဒါကြောင့် Facebook က Myanmar Unicode Area မှာ တင်ပြီး share ပေးထားလိုက်တယ်။ ဒါပေမယ့် Facebook က ပြန်ရှာရခက်တာကြောင့် ဒီမှာထပ်ရေးပြီး Share ပေးပါ့မယ်။&lt;/p&gt;
 
 &lt;p&gt;Installation ကတော့ ခက်ခက်ခဲခဲကြီးမဟုတ်ပါဘူး။ ပေးထားတဲ့ zip ဖိုင်လေးကို download ဆွဲ double click နှိပ်ပြီး extract လုပ်။ ထွက်လာတဲ့ ဖိုင်ကို &lt;code&gt;/Library/Keyboard Layouts&lt;/code&gt; ဆိုတဲ့ folder ထဲသွားထည့်ပေးလိုက်ရုံပါပဲ။ ပြီးလျှင်တော့ ပုံမှန်အတိုင်း System Preferences &amp;gt; Keyboard &amp;gt; Input Sources ကနေ ရွေးပြီး သုံးနိုင်ပါပြီ။&lt;/p&gt;
@@ -104,10 +104,10 @@ $ gsettings set org.freedesktop.ibus.panel show 0
     
     <item>
       <title>Ubuntu မှာ Unicode သုံးမယ်ဆိုရင်</title>
-      <link>http://localhost:1313/posts/myanmar-unicode-in-ubuntu/</link>
+      <link>http://naingyeminn.com/posts/myanmar-unicode-in-ubuntu/</link>
       <pubDate>Fri, 25 Apr 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://localhost:1313/posts/myanmar-unicode-in-ubuntu/</guid>
+      <guid>http://naingyeminn.com/posts/myanmar-unicode-in-ubuntu/</guid>
       <description>&lt;p&gt;Zawgyi နဲ့ Unicode အင်အားပြိုင်နေတာကြာပါပြီ Zawgyi က web မှာ တစ်နည်းအားဖြင့် internet ပေါ်မှာ အချိန်အတန်သင့် နေရာယူပြီးချိန်မှ Unicode ကပေါ်လာခဲ့လေတော့ သာမန် User အသိုင်းအဝန်းထဲကို Unicode ကမတိုးနိုင်ဖြစ်နေခဲ့တာလဲ အချိန်မနည်းတော့ပါဘူး။ အဓိကက Unicode ရဲ့ အကျိုးကျေးဇူးကိုမသိတဲ့အတွက် အလွယ်တကူသုံးနိုင်ပြီး တွင်ကျယ်နေပြီဖြစ်တဲ့ Zawgyi ကိုပဲဆက်သုံးဖြစ်နေကြတာပါ။ သိတဲ့သူဆိုတာကလဲ IT သမား အသိုင်းအဝန်းထဲကမှ Developer တွေလောက်သာရှိတော့ အခုချိန်ထိကို မတွင်ကျယ်ဖြစ်နေရတယ်။ အထူးသဖြင့် Facebook နဲ့ Gtalk တို့မှာက Zawgyi ပဲသုံးကြတာပါ။ လူအနည်းစုနဲ့ အများစု ယှဉ်လိုက်တော့ အပေါင်းအသင်းတွေထဲ ကိုယ်ပဲ Unicode သုံးပြီး သူရေးတာကိုယ်မဖတ်နိုင် ကိုယ်ရေးတာသူမဖတ်နိုင်နဲ့ နောက်ဆုံး မထူးဇာတ်ခင်းပြီး Zawgyi ပဲပြန်သုံးဖြစ်ကြတာများတယ်။ ကိုယ်တိုင်လဲ အဲဒီလို ခဏခဏဖြစ်တယ်။ နောက်ဆုံး ဆုံးဖြတ်ချက်ချလိုက်တယ်။ ပုံမှန်သုံးရင် Unicode သုံးပြီး Facebook နဲ့ gtalk မှာတော့ လိုအပ်မှ Zawgyi ကိုသုံးမယ်ပေါ့။ ဒါနဲ့ပဲ သုံးနေကျဖြစ်တဲ့ Ubuntu မှာ အဆင်အပြေဆုံးဖြစ်မယ့် နည်းလမ်းတွေရှာဖြစ်ခဲ့တယ်။&lt;/p&gt;
 
 &lt;p&gt;Ubuntu မှာ Zawgyi နဲ့ Unicode Font နှစ်မျိုးလုံးထည့်လိုက်ရင် ဇော်ဂျီနဲ့ပဲ ပေါ်တော့တယ်။ ဘာကြောင့်ရယ် အတိအကျမပြောနိုင်ပေမယ့် Zawgyi Font မှာက Code Point ပိုများနေတဲ့အတွက် Zawgyi ကိုပဲ Default အဖြစ် သတ်မှတ်သွားတာလို့ပဲယူဆတယ်။ ဒါကြောင့် Unicode ကိုပဲ Default အနေနဲ့သုံးချင်တယ်ဆိုရင် Fallback Font ကိုပြောင်းပေးရတယ်။ အဲဒီအတွက် လွယ်အောင် my-fs-cli ဆိုတဲ့ command line tools လေးတစ်ခုရေးဖြစ်တယ်။ Ubuntu 12.04 LTS ပေါ်မှာ Build လုပ်ပြီး Launchpad မှာ တင်ပေးထားပေမယ့် Update မလုပ်ဖြစ်တော့ နောက်ထွက်တဲ့ Ubuntu version အသစ်တွေမှာ ppa သုံးပြီး package manager တွေကနေ install လုပ်လို့မရတော့ဘူး။
@@ -159,10 +159,10 @@ make install
     
     <item>
       <title>Myanmar Kyeboard for Ubuntu</title>
-      <link>http://localhost:1313/posts/myanmar-keyboard-for-ubuntu/</link>
+      <link>http://naingyeminn.com/posts/myanmar-keyboard-for-ubuntu/</link>
       <pubDate>Fri, 12 Jul 2013 00:00:00 UTC</pubDate>
       
-      <guid>http://localhost:1313/posts/myanmar-keyboard-for-ubuntu/</guid>
+      <guid>http://naingyeminn.com/posts/myanmar-keyboard-for-ubuntu/</guid>
       <description>&lt;p&gt;mm-kb.deb ဆိုတဲ့ ဖိုင်လေးကို ပြန်ပြင်ထားတာပါ။ Ubuntu မှာက အခုနောက်ပိုက် deb ဖိုင်တွေကို အရင်လို double click နှိပ်ပြီး install တမ်းလုပ်လို့အဆင်မပြေတော့ပါဘူး။  အဲ့လိုသွင်းလို့ရဖို့ gDebi ဆိုတာထပ်သွင်းရပါတယ်။ အဲဒါမသွင်းချင်ရင် terminal ကနေ dpkg command နဲ့ သွင်းရပါတယ်။ နောက်ပြီး mm-kb.deb ဖိုင်ကိုသွင်းပြီးရင် IBus ကို run ပေးရတာ input method သွားရွေးပြီးထည့်ပေးရတာ၊ Input Method ကို default xkb အစား IBus သုံးမယ်ဆိုတာတွေကို manually configure လုပ်ပေးရပါတယ်။ အခုဒီ installation script လေးမှာတော့ အဲဒါတွေကို auto လုပ်ပေးသွားမှာပါ။ နောက်ပြီး ယူနီကုတ်၊ ဇော်ဂျီ ကြိုက်ရာ ၂မျိုးစလုံး တစ်ခါတည်းတမ်းတင်နိုင်သလို တစ်ခုဆီလဲ ရွေးပြီးတင်လို့ရပါတယ်။ Bash script ကိုပဲ Zenity သုံးပြီး GUI လေးနဲ့ install လုပ်လို့ရအောင်လုပ်ပေးထားတာပါ။ အရင်ကဆို install လုပ်ပုံလုပ်နည်းတွေကို အရှည်ကြီး ရှင်းပြနေရတဲ့အပြင် သာမာန် user တွေအတွက် ရှုပ်ထွေးတယ်လို့ထင်ကောင်းထင်ပါလိမ့်မယ်။ အခုတော့ ကျွန်တော် တတ်နိုင်သမျှ အလွယ်ဆုံးဖြစ်အောင်တော့ လုပ်ပေးထားပါတယ်။&lt;/p&gt;
 
 &lt;p&gt;mm-kb Zip ဖိုင်ကို download ဆွဲ၊ extract လုပ်၊ အထဲက install ဆိုတဲ့ ဖိုင်လေးကို double click နှိပ်ပြီး ပေါ်လာတဲ့ box ထဲက Run ဆိုတဲ့ button လေးကို click နှိပ်ပေးရုံပါပဲ။ ပြီးရင်တော့ ရွေးစရာ Option box လေးပေါ်လာပါလိမ့်မယ်။ Install Unicode, Install Zawgyi, Install Both နဲ့ Uninstall ဆိုပြီးတွေ့ရပါလိမ့်မယ်။ ကြိုက်ရာရွေးပြီး Ok နှိပ်လိုက်တာနဲ့ status နေရာမှာ IBus icon လေးပေါ်လာပါလိမ့်မယ်။ ပေါ်လာတဲ့အထိတော့ခဏလောက်စောင့်ဖို့လိုပါလိမ့်မယ်။ System font changes ဖြစ်သွားမှာဖြစ်တဲ့အတွက် ခဏလောက်တော့လေးသွားနိုင်ပါတယ်။ desktop ပြန်သွက်သွားပြီဆိုရင်တော့ စသုံးလို့ရပါပြီ။

@@ -3,7 +3,7 @@
   <channel>
       <title>Ibus on Naing Ye` Minn </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://localhost:1313/tags/ibus/index.xml/</link>
+    <link>http://naingyeminn.com/tags/ibus/index.xml/</link>
     <language>en-us</language>
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Burmese Font and Keyboard Installation for Ubuntu 14.04 LTS</title>
-      <link>http://localhost:1313/posts/burmese-keyboard-for-ubuntu-1404/</link>
+      <link>http://naingyeminn.com/posts/burmese-keyboard-for-ubuntu-1404/</link>
       <pubDate>Thu, 11 Dec 2014 00:00:00 UTC</pubDate>
       
-      <guid>http://localhost:1313/posts/burmese-keyboard-for-ubuntu-1404/</guid>
+      <guid>http://naingyeminn.com/posts/burmese-keyboard-for-ubuntu-1404/</guid>
       <description>&lt;p&gt;Ubuntu Myanmar LoCo Team ရဲ့ Facebook page မှာအမြဲတမ်းမေးလေ့ရှိတဲ့ မေးခွန်းပါ။ Ubuntu မှာ မြန်မာ font ဘယ်လိုသွင်းရမလဲ မြန်မာလို ရိုက်မရလို့ပြောပြပါဦးဆိုတဲ့ မေးခွန်းတွေအတွက် ဖြေရလွယ်အောင် ဒီ post လေးထပ်ရေးလိုက်ပါတယ်။ Ubuntu 14.04 LTS version ကိုအခြေခံပြီး ပြောပြသွားပါမယ်။&lt;/p&gt;
 
 &lt;p&gt;အလျှင်ဦးဆုံး install လုပ်ပုံတွေမပြောခင် font နဲ့ keyboard တနည်းအားဖြင့် input source တို့ရဲ့ သဘောတရားလေးကို ရှင်းပြပါရစေ။ Ubuntu, Windows, Android, iDevice ဘယ် System မှာမဆို မြန်မာလိုမြင်ရဖို့ မြန်မာ font လိုအပ်ပြီး မြန်မာလို ရေးသားနိုင်ဖို့ Keyboard လိုအပ်ပါတယ်။ လက်ရှိကျွန်တော်တို့ online မှာ၊ User တွေကြားမှာ အဓိကသုံးနေတဲ့ မြန်မာစာ Font ၂မျိုးရှိပါတယ်။ ဇော်ဂျီ နဲ့ ယူနီကုဒ်ပါ။ ဇော်ဂျီကတော့ Web ပေါ်မှာရော Social Network တွေမှာပါအသုံးများတာ အားလုံးပဲသိကြမှာပါ။ မြန်မာ font ဆိုတာနဲ့ ဇော်ဂျီကိုပဲ သတိရကြတာပါ။ တကယ်တမ်းတော့ ဇော်ဂျီက Unicode ဆိုတဲ့စနစ်ကို အခြေခံထားပေမယ့် အပြည့်အဝမလိုက်နာထားတဲ့ Font အမျိုးအစားတစ်ခုပါ။ ယူနီကုဒ်စနစ်ကို လိုက်နာပြီး Ubuntu မှာပါအဆင်ပြေတဲ့ Font တွေကတော့ Padauk, Myanmar3, Tharlon, Noto Sans Myanmar, Yunghkio, Mon3 Anonta 1 တို့ပဲဖြစ်ပါတယ်။ Ubuntu မှာကတော့ Unicode Font အနေနဲ့ Padauk font ပါဝင်ပြီးသားဖြစ်ပေမယ့် Zawgyi သုံးပြီးရေးထားတာတွေကို မြင်ရဖို့အတွက်တော့ Zawgyi font install လုပ်ပေးဖို့လိုအပ်ပါတယ်။&lt;/p&gt;
