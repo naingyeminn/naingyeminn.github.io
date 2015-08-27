@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>I-Bus on Naing Ye` Minn </title>
-      <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://naingyeminn.com/tags/i-bus/index.xml/</link>
+      <title>I Bus on Naing Ye` Minn </title>
+    <link>http://naingyeminn.com/tags/i-bus/</link>
     <language>en-us</language>
-    
-    
-    <updated>Fri, 12 Jul 2013 00:00:00 UTC</updated>
+    <author>Alexander Ivanov</author>
+    <updated>2013-07-12 00:00:00 &#43;0000 UTC</updated>
     
     <item>
       <title>Myanmar Kyeboard for Ubuntu</title>
       <link>http://naingyeminn.com/posts/myanmar-keyboard-for-ubuntu/</link>
       <pubDate>Fri, 12 Jul 2013 00:00:00 UTC</pubDate>
-      
+      <author>Alexander Ivanov</author>
       <guid>http://naingyeminn.com/posts/myanmar-keyboard-for-ubuntu/</guid>
       <description>&lt;p&gt;mm-kb.deb ဆိုတဲ့ ဖိုင်လေးကို ပြန်ပြင်ထားတာပါ။ Ubuntu မှာက အခုနောက်ပိုက် deb ဖိုင်တွေကို အရင်လို double click နှိပ်ပြီး install တမ်းလုပ်လို့အဆင်မပြေတော့ပါဘူး။  အဲ့လိုသွင်းလို့ရဖို့ gDebi ဆိုတာထပ်သွင်းရပါတယ်။ အဲဒါမသွင်းချင်ရင် terminal ကနေ dpkg command နဲ့ သွင်းရပါတယ်။ နောက်ပြီး mm-kb.deb ဖိုင်ကိုသွင်းပြီးရင် IBus ကို run ပေးရတာ input method သွားရွေးပြီးထည့်ပေးရတာ၊ Input Method ကို default xkb အစား IBus သုံးမယ်ဆိုတာတွေကို manually configure လုပ်ပေးရပါတယ်။ အခုဒီ installation script လေးမှာတော့ အဲဒါတွေကို auto လုပ်ပေးသွားမှာပါ။ နောက်ပြီး ယူနီကုတ်၊ ဇော်ဂျီ ကြိုက်ရာ ၂မျိုးစလုံး တစ်ခါတည်းတမ်းတင်နိုင်သလို တစ်ခုဆီလဲ ရွေးပြီးတင်လို့ရပါတယ်။ Bash script ကိုပဲ Zenity သုံးပြီး GUI လေးနဲ့ install လုပ်လို့ရအောင်လုပ်ပေးထားတာပါ။ အရင်ကဆို install လုပ်ပုံလုပ်နည်းတွေကို အရှည်ကြီး ရှင်းပြနေရတဲ့အပြင် သာမာန် user တွေအတွက် ရှုပ်ထွေးတယ်လို့ထင်ကောင်းထင်ပါလိမ့်မယ်။ အခုတော့ ကျွန်တော် တတ်နိုင်သမျှ အလွယ်ဆုံးဖြစ်အောင်တော့ လုပ်ပေးထားပါတယ်။&lt;/p&gt;
 

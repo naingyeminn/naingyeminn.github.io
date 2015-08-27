@@ -1,0 +1,287 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - Find Command Usage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/find-command-usage/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/find-command-usage/">Find Command Usage</a></h1>
+	        <div class="post-time">August 27 2015</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com//tags/linux">linux</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/terminal">terminal</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/cli">cli</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/tipstricks">tips&amp;tricks</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        
+
+<p>အခုနောက်ပိုင်း Linux မှာက GUI သုံးပြီးအလွယ်တကူ Search လုပ်လို့ရနေတော့ <code>find</code> ဆိုတဲ့ command ကို သိပ်မသုံးဖြစ်ကြပါဘူး။ သို့ပေမယ့် ပိုမိုတိကျတဲ့ result ရရှိဖို့အတွက်ကျတော့ <code>find</code> ကအရမ်းအသုံးဝင်ပါတယ်။ Linux Admin တွေအနေနဲ့ သိထားသင့်တဲ့ command လေးဖြစ်တဲ့အတွက် အသုံးပြုပုံတချို့ကို ဖော်ပြပေးလိုက်ပါတယ်။</p>
+
+<h2 id="file-name-ဖ-င-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238">File Name ဖြင့်ရှာဖွေခြင်း</h2>
+
+<ul>
+<li><code>/etc</code> အောက်မှာရှိတဲ့ <code>.conf</code> နဲ့ဆုံးတဲ့ ဖိုင်တွေကိုပဲရှာချင်တယ်ဆိုလျှင်တော့</li>
+</ul>
+
+<pre><code class="language-sh">$ find /etc -name &quot;*.conf&quot;
+</code></pre>
+
+<blockquote>
+<p>command မှာပါတဲ့ <code>*</code> (Asterik) လေးကတော့ wildcard character ပါ။ .conf ရှေ့မှာ ဘာ character ရှိရှိလို့ ဆိုလိုခြင်းဖြစ်ပါတယ်။</p>
+</blockquote>
+
+<ul>
+<li>File name စာလုံး အကြီး၊ အသေး မရွေးစေချင်လျှင်တော့ <code>-iname</code> ဆိုတဲ့ option ကိုသုံးနိုင်ပါတယ်။ <code>-name</code> နဲ့ကွာခြားပုံကို အောက်မှာဖော်ပြထားတဲ့ နမူနာအတိုင်း စမ်းကြည့်နိုင်ပါတယ်။ <code>-name</code> option သုံးရင် <code>hello</code> ဆိုတဲ့တစ်ဖိုင်ပဲတွေ့ရမှာဖြစ်ပြီး <code>-iname</code> နဲ့ဆိုလျှင်တော့ ၃ ဖိုင်လုံးတွေ့ရပါလိမ့်မယ်။</li>
+</ul>
+
+<pre><code class="language-sh">$ mkdir testing
+$ cd testing
+$ touch hello HelloGuys HelloThere
+$ find . -name &quot;hel*&quot;
+./hello
+$ find . -iname &quot;hel*&quot;
+./hello
+./HelloGuys
+./HelloThere
+</code></pre>
+
+<h2 id="folder-န-င-file-ခ-ခ-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238">Folder နှင့် File ခွဲခြားရှာဖွေခြင်း</h2>
+
+<ul>
+<li>Folder သီးသန့်ရှာချင်တယ်ဆိုလျှင်တော့ <code>-type d</code> option ကိုအသုံးပြုရပြီး File ဆိုလျှင်တော့ <code>-type f</code> ကိုသုံးရပါတယ်။ နမူနာမှာတော့ testing folder အောက်မှာ HelloDir ဆိုတဲ့ folder ထပ်ဆောက်ပြီး ကွာခြားချက်ကို မြင်နိုင်အောင်ယှဉ်ပြပေးထားပါတယ်။</li>
+</ul>
+
+<pre><code class="language-sh">$ mkdir HelloDir
+$ find . -type d -iname &quot;hel*&quot;
+./HelloDir
+$ find . -type f -iname &quot;hel*&quot;
+./hello
+./HelloGuys
+./HelloThere
+</code></pre>
+
+<h2 id="အခ-န-ဖ-င-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238">အချိန်ဖြင့်ရှာဖွေခြင်း</h2>
+
+<ul>
+<li>လွန်ခဲ့တဲ့ ၅ရက်လောက်အတောအတွင်းမှာ edit (သို့) modify လုပ်ထားတဲ့ File တွေ Folder တွေကိုရှာချင်လျှင်တော့ <code>-mtime</code> ဆိုတဲ့ option ကိုသုံးနိုင်ပါတယ်။ Default Parameter ကတော့ Day နဲ့ သတ်မှတ်ပါတယ်။ လက်ရှိနေ့မှ ၅ရက်အတွင်း ရှာဖွေမှာဖြစ်တဲ့အတွက် <code>-5</code> လို့သတ်မှတ်ပေးရပါမယ်။ <code>5</code> လို့ပဲသတ်မှတ်လိုက်မယ်ဆိုလျှင်တော့ ၅ရက်အတွင်းမဟုတ်တော့ဘဲ ၅ရက်မြောက်နေ့မှာ modify လုပ်ထားတဲ့ ဖိုင်တွေကိုပဲထုတ်ပြပေးမှာဖြစ်ပါတယ်။</li>
+</ul>
+
+<pre><code class="language-sh">$ find /home -mtime -5
+$ find /home -mtime 5
+</code></pre>
+
+<ul>
+<li>access လုပ်ထားတဲ့ date နဲ့ရှာချင်တယ်ဆိုလျှင်တော့ <code>-atime</code> option ကိုသုံးနိုင်ပါတယ်။ ပြီးခဲ့တဲ့ ၁၅ရက်မြောက်နေ့မှာ access လုပ်ထားခဲ့တဲ့ File တွေ Folder တွေကို ရှာချင်ရင်တော့ <code>30</code> ဆိုတဲ့ parameter ပေးလိုက်ရင်ရပါတယ်။ အကယ်၍ ၁၅ရက်လောက် access မလုပ်ဖြစ်တဲ့ File တွေ Folder တွေကိုရှာချင်တာဆိုလျှင်တော့ <code>+15</code> ဆိုပြီး ရက်အရေအတွက် ထည့်ပေးရပါမယ်။</li>
+</ul>
+
+<pre><code class="language-sh">$ find /home -atime 15
+$ find /home -atime +15
+</code></pre>
+
+<ul>
+<li>ရက် ၅၀ကျော်နောက်ပိုင်းကနေ ရက် ၁၀၀မြောက်နေ့အတွင်း ကိုရှာချင်တယ်ဆိုလျှင်တော့ <code>-mtime</code> နှစ်ခုဆင့်သုံးနိုင်ပါတယ်။</li>
+</ul>
+
+<pre><code class="language-sh">$ find /home -mtime +50 -mtime -100
+</code></pre>
+
+<blockquote>
+<p>Time မှာ Default က day ဆိုပေမယ့် s (second), m (minute), h (hour), d (day), w (week) ဆိုတဲ့ unit တွေနဲ့လည်း ထည့်သုံးနိုင်ပါတယ်။</p>
+</blockquote>
+
+<h2 id="size-ဖ-င-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238">Size ဖြင့်ရှာဖွေခြင်း</h2>
+
+<ul>
+<li>File နှင့် Folder တို့ရဲ့ Size အကြီးအသေးပေါ်မူတည်ပြီး ရှာဖွေ မယ်ဆိုလျှင်တော့ <code>-size</code> option ရှိပါတယ်။ 5MB ပမာဏရှိတဲ့ File တွေ Folder တွေကိုရှာချင်တယ်ဆိုလျှင် -</li>
+</ul>
+
+<pre><code class="language-sh">$ find /home -size 5M
+</code></pre>
+
+<ul>
+<li>5MB ကနေ 20MB ပမာဏကြားရှိတဲ့ ဖိုင်တွေဆိုလျှင်တော့ -</li>
+</ul>
+
+<pre><code class="language-sh">$ find /home -size +5M -size -20M
+</code></pre>
+
+<blockquote>
+<p>ဒီနေရာမှာတော့ <code>+</code> ကို Greater Than အနေနဲ့သတ်မှတ်အသုံးပြုပြီး <code>-</code> ကိုတော့ Less Than အနေနဲ့အသုံးပြုပါတယ်။</p>
+</blockquote>
+
+<h2 id="user-သ-group-ဖ-င-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238">User (သို့) Group ဖြင့်ရှာဖွေခြင်း</h2>
+
+<ul>
+<li>User တစ်ယောက်ယောက်ပိုင်တဲ့ ဖိုင်တွေကိုရှာချင်တယ်ဆိုလျှင်တော့ <code>-user</code> ဆိုတဲ့ option ကိုသုံးနိုင်ပြီး Group ဆိုလျှင်တော့ <code>-group</code> ကိုသုံးနိုင်ပါတယ်။</li>
+</ul>
+
+<pre><code class="language-sh">$ find / -user user1
+$ find / -group group1
+</code></pre>
+
+<blockquote>
+<p>user1 နဲ့ group1 နေရာမှာ ကိုယ်ရှာဖွေလိုတဲ့ user နဲ့ group ရဲ့ နာမည်ကို အစားထိုးအသုံးပြုရပါမယ်။</p>
+</blockquote>
+
+<h2 id="permission-ဖ-င-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238">Permission ဖြင့်ရှာဖွေခြင်း</h2>
+
+<ul>
+<li>File Permission နဲ့ရှာဖွေတဲ့နေရာမှာ Octal Numbering ဖြင့် ရှာဖွေနိုင်ပါတယ်။ Option ကတော့ <code>-perm</code> ဖြစ်ပါတယ်။ File Permission အကြောင်းကိုတော့ ဒီနေရာမှာမပြောတော့ပါဘူး။</li>
+</ul>
+
+<pre><code class="language-sh">$ find /etc -perm 0755
+$ find /etc -perm 0777
+</code></pre>
+
+<h2 id="find-result-အ-process-ပ-လ-ပ-ခ-င:87b95223085ff87f2f73bea41cffa238">Find Result အား Process ပြုလုပ်ခြင်း</h2>
+
+<ul>
+<li><p>အထက်မှာဖော်ပြခဲ့တဲ့ <code>find</code> command တွေရဲ့ result မှာပါဝင်တဲ့ File တွေ Directory တွေကို အခြား command တွေနဲ့တွဲပြီး Process ပြုလုပ်နိုင်ပါသေးတယ်။ အဲဒီအတွက် <code>-exec</code> ဆိုတဲ့ option နဲ့ တွဲဖက်အသုံးပြုရပါတယ်။</p></li>
+
+<li><p><code>/etc</code> directory နဲ့ သူ့အောက်မှာရှိတဲ့ sub-directory တွေထဲက <code>.conf</code> ဖိုင်တွေကို Home Directory အောက်က Config ဆိုတဲ့ folder ထဲထည့်မယ်ဆိုလျှင်တော့ -</p></li>
+</ul>
+
+<pre><code class="language-sh">$ mkdir ~/Config
+$ find /etc -type f -iname &quot;*.conf&quot; -exec cp {} ~/Config \;
+</code></pre>
+
+<ul>
+<li><code>/home</code> directory နဲ့ သူ့အောက်မှာရှိတဲ့ sub-directory တွေထဲက <code>.tmp</code> extension နဲ့ဆုံးတဲ့ File တွေကိုရှင်းထုတ်ချင်တယ်ဆိုလျှင် -</li>
+</ul>
+
+<pre><code class="language-sh">$ find /home -type f -name &quot;*.tmp&quot; -exec rm -f {} \;
+</code></pre>
+
+<ul>
+<li><code>/home</code> directory အောက်မှာရှိတဲ့ directory တွေနဲ့ sub-directory တွေထဲက Permission <code>777</code> ပေးထားတဲ့ directory တွေကိုရှာပြီး <code>755</code> အနေနဲ့ပြောင်းမယ်ဆိုလျှင်တော့ -</li>
+</ul>
+
+<pre><code class="language-sh">$ find /home -type d -perm 777 -exec chmod 755 {} \;
+</code></pre>
+
+<p>စသဖြင့် အသီးသီး ကွန့်မြူးချဲ့ထွင်အသုံးပြုနိုင်ပါတယ်။</p>
+
+<p>တကယ်တမ်း <code>find</code> command က သုံးမယ်ဆို သုံးလို့ရတဲ့နည်းလမ်းတွေ အများကြီးရှိပါသေးတယ်။ အပြည့်အစုံကိုတော့ Terminal ကနေ <code>man find</code> နဲ့ manual page ခေါ်ပြီး လေ့လာနိုင်ပါတယ်။ အောက်က link မှာလည်း နမူနာ တချို့ကိုလေ့လာနိုင်ပါသေးတယ်။</p>
+
+<p>Reference : <a href="http://www.tecmint.com/35-practical-examples-of-linux-find-command/">35 Practical Examples Of Linux Find Command</a></p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/find-command-usage/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/linux-command-line-usage-2/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p>© Naing Ye` Minn 2014</p>
+		        </footer>
+		    </div>
+		  </div>    
+		</div>
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

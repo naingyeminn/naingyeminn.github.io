@@ -2,18 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Openxenmanager on Naing Ye` Minn </title>
-      <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://naingyeminn.com/tags/openxenmanager/index.xml/</link>
+    <link>http://naingyeminn.com/tags/openxenmanager/</link>
     <language>en-us</language>
-    
-    
-    <updated>Fri, 30 May 2014 00:00:00 UTC</updated>
+    <author>Alexander Ivanov</author>
+    <updated>2014-05-30 00:00:00 &#43;0000 UTC</updated>
     
     <item>
       <title>XenServer Installation Problems and Review</title>
       <link>http://naingyeminn.com/posts/xenserver-installation-problems-and-review/</link>
       <pubDate>Fri, 30 May 2014 00:00:00 UTC</pubDate>
-      
+      <author>Alexander Ivanov</author>
       <guid>http://naingyeminn.com/posts/xenserver-installation-problems-and-review/</guid>
       <description>&lt;p&gt;မနေ့က အလုပ်မှာ Desktop တစ်လုံးအပိုထွက်လာတာနဲ့ XenServer စမ်းကြည့်ဖြစ်တယ်။ စက်က အမြင့်ကြီးမဟုတ်ပေမယ့် processor က VT support လုပ်တာရယ် Memory 4GB လောက်ရှိတာရယ်ကြောင့် စမ်းဖို့အဆင်ပြေသွာတယ်။ &lt;a href=&#34;http://xenserver.org/overview-xenserver-open-source-virtualization/download.html&#34;&gt;XenServer 6.2&lt;/a&gt; iso လဲဆွဲထားပြီးသားရှိပေမယ့် CD အလွတ်မရှိတာနဲ့ Flash Drive နဲ့ပဲ install လုပ်မယ်ေပါ့။ အဲ့ဒီအတွက် flash drive ကို FAT32 နဲ့ format ချ၊ &lt;a href=&#34;http://sourceforge.net/projects/unetbootin/&#34;&gt;Unetbootin&lt;/a&gt; နဲ့ ပုံမှန်အတိုင်းပဲ XenServer ISO ကို extract လုပ်လိုက်တာ ဖြစ်ချင်တော့ boot တက်တဲ့အချိန်မှာ kernel ရှာမရပါဘူးဆိုပြီး error ပြလာတယ်။ google မှာရှာကြည့်လိုက်တော့ USB drive ရဲ့ /boot/isolinux/ directory ထဲက isolinux.cfg ကို syslinux.cfg ဆိုပြီး တော့ရယ်၊ /boot/ ထဲက isolinux ကို syslinux ဆိုပြီး ပြောင်းပေးရတယ်။ ေနာက် /syslinux.cfg ကိုဖျက်ပေးရတယ်။&lt;/p&gt;
 
