@@ -5,7 +5,106 @@
     <link>http://naingyeminn.com/tags/terminal/</link>
     <language>en-us</language>
     <author>Alexander Ivanov</author>
-    <updated>2015-08-27 00:00:00 &#43;0000 UTC</updated>
+    <updated>2015-09-02 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>Reading Man Page</title>
+      <link>http://naingyeminn.com/posts/reading-man-page/</link>
+      <pubDate>Wed, 02 Sep 2015 00:00:00 UTC</pubDate>
+      <author>Alexander Ivanov</author>
+      <guid>http://naingyeminn.com/posts/reading-man-page/</guid>
+      <description>
+
+&lt;p&gt;Unix/Linux Admin တစ်ယောက်အနေနဲ့ ရပ်တည်ဖို့ဆိုလျှင် Terminal နဲ့ Command တွေကိုကောင်းကောင်းသုံးတတ်ဖို့လိုတယ်ဆိုတာ အားလုံးသိကြမှာပါ။ သို့ပေမယ့် အရှိန်အဟုန်နဲ့ တိုးတက်နေတဲ့ နည်းပညာခေတ်ကြီးမှာ အသစ်ထွက်သမျှ Program တွေ၊ အဲဒီ Program တွေရဲ့ Command တွေကို အကုန်သိ၊ အကုန်မှတ်မိနေဖို့ဆိုတာ ခက်ခဲလွန်းပါတယ်။ အလွတ်ကျက်ပြီး မှတ်ထားတယ်ဆိုလျှင်တောင်မှ နောင်ထွက်လာတဲ့ Version အသစ်မှာ Option တွေ Usage တွေ ပြောင်းသွားနိုင်ပါတယ်။ အဲဒီအခါမျိုးကျ ပြန်လည်မှတ်သားဖို့လိုပါလိမ့်မယ်။ အလွယ်ဆုံးနဲ့ အမြန်ဆုံး လေ့လာနိုင်မယ့်နည်းလမ်းကတော့ &lt;strong&gt;Man Page&lt;/strong&gt; လို့ခေါ်တဲ့ Manual Page ပါပဲ။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Man Page&lt;/strong&gt; တနည်းအားဖြင့် &lt;code&gt;man&lt;/code&gt; ဆိုတဲ့ command ကို Unix/Linux Distro တိုင်းလိုလိုမှာ Install လုပ်လိုက်တာနဲ့ တခါတည်း ပါဝင်လာပြီးသားပါ။ &lt;code&gt;man&lt;/code&gt; ရဲ့ အဓိကလုပ်ဆောင်ချက်ကတော့ Developer တွေ သူတို့ Program တွေနဲ့ တပါတည်း ရေးသားပြစုထည့်သွင်းပေးလိုက်တဲ့ Documentation ဖိုင်တွေကို ထုတ်ယူဖော်ပြပေးတာပါပဲ။ ဒီလို Program တွေ Command တွေအတွက် Documentation တွေပြုလုပ်တဲ့နေရာမှာ စံအနေနဲ့ အကြောင်းအရာအလိုက် Section Number ခွဲခြားသတ်မှတ်ပေးထားတာရှိပါတယ်။ အဲဒါတွေကတော့ -&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;1&lt;/strong&gt; – Executable Programs or Commands&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2&lt;/strong&gt; – System calls (Kernel မှ ထောက်ပံ့ပေးထားသော Function များ)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;3&lt;/strong&gt; – Library calls (Library မှ ထောက်ပံ့ပေးထားသော Function များ)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;4&lt;/strong&gt; – Drivers and Special files (အထူးသဖြင့် &lt;code&gt;/dev&lt;/code&gt; Directory အောက်တွင်ရှိသော Device များ)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;5&lt;/strong&gt; – File Formats and Conventions (Configuration Files)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;6&lt;/strong&gt; – Games&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;7&lt;/strong&gt; – Miscellaneous&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;8&lt;/strong&gt; – System Administration Commands&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;တို့ပဲဖြစ်ပါတယ်။ ဒီ Section Number တွေရဲ့ Defination အလိုက် Man Page တွေကို ခွဲခြားရေးသားထားတာဖြစ်တဲ့အတွက် မိမိသိလိုတဲ့ အပိုင်းကို အလွယ်တကူ ထုတ်နှုတ် ဖတ်ရှုနိုင်မှာဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;h2 id=&#34;using-man-command:af6d49792ce625b11a4bb07186b4d049&#34;&gt;Using Man Command&lt;/h2&gt;
+
+&lt;p&gt;Command တစ်ခုခုရဲ့ Manual ကို ဖတ်မယ်ဆိုလျှင် မိမိသိလိုတဲ့ command ရဲ့ရှေ့မှာ &lt;code&gt;man&lt;/code&gt; ဆိုတဲ့ command ထည့်ပြီးရိုက်လိုက်ရုံပါပဲ။ ဥပမာအနေနဲ့ &lt;code&gt;passwd&lt;/code&gt; ဆိုတဲ့ command ရဲ့ manual ကိုဖတ်ချင်တယ်ဆိုလျှင် -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ man passwd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ဆိုတဲ့ Command လေးရိုက်လိုက်ရုံပါပဲ။ ပုံမှာပြထားတဲ့အတိုင်း &lt;code&gt;passwd&lt;/code&gt; ရဲ့ Man Page ကိုမြင်ရပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-passwd.png&#34; alt=&#34;man-passwd&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Man Page ရဲ့ ပထမဆုံးစာကြောင်းမှာတွေ့ရတဲ့ &lt;strong&gt;PASSWD(1)&lt;/strong&gt; ဆိုတာကတော့ &lt;code&gt;passwd&lt;/code&gt; command ရဲ့ Man Page တွေထဲကမှ &lt;strong&gt;Section 1&lt;/strong&gt; ဖြစ်တဲ့ Command အကြောင်းကို အဓိကထားရေးသားထားသော Page ဆိုတာကို ဖေါ်ပြထားခြင်းဖြစ်ပါတယ်။ တွေ့ရမယ့် အကြောင်းအရာတွေကတော့ Command ရဲ့ နာမည်အပြည့်အစုံ၊ ရေးသားရတဲ့ပုံစံ၊ ဘာတွေလုပ်ပေးနိုင်တယ်၊ နောက်ပြီး ချဲ့ထွင်အသုံးပြုနိုင်ဖို့ ဘယ်လို Option တွေပါတယ် ဆိုတာတွေကို အသေးစိပ်ရှင်းပြထားတာတွေပဲဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;ရှင်းလင်းချက် အနည်းအများပေါ်မူတည်ပြီး Terminal Screen ထဲမှာ အပြည့်အစုံမြင်ရချင်မှမြင်ရပါလိမ့်မယ်။ အဲဒီအတွက် Up Arrow, Down Arrow Key တွေအသုံးပြုပြီး Page ကို စာကြောင်းတစ်ကြောင်းချင်း အပေါ်၊အောက် Scroll လုပ်လို့ရပါတယ်။ နောက်ပြီး &lt;strong&gt;Vim Text Editor&lt;/strong&gt; မှာလို &lt;strong&gt;J&lt;/strong&gt; နဲ့ &lt;strong&gt;K&lt;/strong&gt; ကိုအသုံးပြုပြီးတော့လည်း Scroll လုပ်နိုင်ပါသေးတယ်။ တစ်ကြောင်းချင်း Scroll လုပ်ရတာ ကြာတယ်ထင်လျှင် &lt;strong&gt;F&lt;/strong&gt; (forward), &lt;strong&gt;B&lt;/strong&gt; (backward) Key တွေအသုံးပြုပြီး Screen အပြည့်စာ ဒါမှမဟုတ် &lt;strong&gt;U&lt;/strong&gt; (up), &lt;strong&gt;D&lt;/strong&gt; (down) စတဲ့ Key တွေနဲ့ Screen တစ်ဝက်စာ Scroll လုပ်မယ်ဆို လုပ်နိုင်ပါသေးတယ်။ Page အစနဲ့အဆုံးကိုတော့ &lt;strong&gt;G&lt;/strong&gt; နဲ့ &lt;strong&gt;Shift + G&lt;/strong&gt; ကိုသုံးပြီး သွားနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;Man Page ထဲက စာသားတစ်ခုခုကို ရှာချင်တယ်ဆိုလျှင်တော့ &lt;code&gt;/&lt;/code&gt; ကိုနှိပ်၊ နောက်က ကိုယ်ရှာချင်တဲ့ keyword ကိုရိုက်ထည့်၊ ပြီးလျှင် Enter နှိပ်လိုက်ရုံပါပဲ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-search1.png&#34; alt=&#34;man search 1&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;ပုံမှာပြထားတဲ့အတိုင်း &lt;code&gt;/expire&lt;/code&gt; လို့ရိုက်ထည့်လိုက်မယ်ဆိုလျှင် ရောက်ရှိနေတဲ့ Man Page ရဲ့နေရာကနေစပြီး &lt;code&gt;expire&lt;/code&gt; ဆိုတဲ့စာလုံးကိုရှာပေးပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-search2.png&#34; alt=&#34;man search 2&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;ပထမဆုံးရှာတွေ့မှာကတော့ &lt;code&gt;-k&lt;/code&gt; option ရဲ့ ရှင်းလင်းချက်ထဲမှာပါတဲ့ &lt;strong&gt;expired&lt;/strong&gt; ဆိုတဲ့ စာလုံးနှစ်လုံးပါ။ လိုချင်တာ &lt;code&gt;--expire&lt;/code&gt; ဆိုတဲ့ option နဲ့ပတ်သက်တာဖြစ်တဲ့အတွက် &lt;strong&gt;N&lt;/strong&gt; Key ကိုတစ်ချက်ချင်းနှိပ်ပြီး ဆက်လက်ရှာဖွေသွားလို့ရပါတယ်။ နောက်ဆုံး &lt;code&gt;--expire&lt;/code&gt; ဆိုတာကိုရှာတွေ့ပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-search3.png&#34; alt=&#34;man search 3&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;အကယ်၍ &lt;strong&gt;N&lt;/strong&gt; နှိပ်တာလွန်ပြီး ကိုယ်ရှာနေတဲ့စာလုံးကိုကျော်သွားခဲ့တယ်ဆိုလျှင်လည်း &lt;strong&gt;Shift + N&lt;/strong&gt; နဲ့ နောက်ကြောင်းပြန်ပြီးရှာလို့ရပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;ဒါကတော့ Man Page မှာ အသုံးများတဲ့ နည်းလမ်းလေးတချို့ပါ။ တခြား အသုံးပြုလို့ရတဲ့နည်းလမ်းတွေရှိပါသေးတယ်။ အဲဒါတွေကိုတော့ Man Page ဖွင့်ထားတဲ့အချိန် &lt;strong&gt;H&lt;/strong&gt; Key ကိုနှိပ်ပြီး &lt;code&gt;man&lt;/code&gt; ရဲ့ Help ကနေလေ့လာနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-help.png&#34; alt=&#34;man help&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Man Page ကနေ ပြန်ထွက်ချင်တယ်ဆိုလျှင်တော့ &lt;strong&gt;Q&lt;/strong&gt; Key နှိပ်ပြီး ထွက်ရပါတယ်။&lt;/p&gt;
+
+&lt;h2 id=&#34;searching-man-pages:af6d49792ce625b11a4bb07186b4d049&#34;&gt;Searching Man Pages&lt;/h2&gt;
+
+&lt;p&gt;အထက်မှာပြောခဲ့တဲ့အတိုင်း Man Page တွေကို အကြောင်းအရာအလိုက် Section တွေခွဲထားတာဖြစ်တဲ့အတွက် Command တစ်ခုကို Section တစ်ခုထက်ပိုပြီးရှိနေနိုင်ပါတယ်။ Section ဘယ်နှစ်ခုရှိလည်းသိချင်လျှင်တော့ &lt;code&gt;-aw&lt;/code&gt; option သုံးပြီး ရှာနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-section1.png&#34; alt=&#34;man section 1&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;ပုံထဲကအတိုင်း &lt;code&gt;man -aw passwd&lt;/code&gt; လို့ရိုက်လိုက်မယ်ဆိုလျှင်တော့ &lt;code&gt;passwd&lt;/code&gt; နဲ့ဆိုင်တဲ့ Man Page ၃ခုကိုတွေ့ရပါလိမ့်မယ်။ အဲဒီထဲမှာမှ &lt;code&gt;passwd&lt;/code&gt; ဆိုတဲ့ command နဲ့အတိအကျတူညီတဲ့ &lt;strong&gt;passwd.1.gz&lt;/strong&gt; နဲ့ &lt;strong&gt;passwd.5.gz&lt;/strong&gt; ၂ခုကိုတွေ့ရပါလိမ့်မယ်။ အဲဒီနှစ်ဖိုင်ရဲ့ &lt;strong&gt;1&lt;/strong&gt; နဲ့ &lt;strong&gt;5&lt;/strong&gt; ဆိုတာကတော့ &lt;strong&gt;Section&lt;/strong&gt; ကိုဆိုလိုတာပါ။ &lt;strong&gt;Section 1&lt;/strong&gt; ကတော့ Command အကြောင်းဖြစ်ပြီး &lt;strong&gt;Section 5&lt;/strong&gt; ကတော့ အဲဒီ &lt;code&gt;passwd&lt;/code&gt; command နဲ့ချိတ်ဆက်နေတဲ့ configuration file တွေအကြောင်းရှင်းပြပေးထားတာလို့ အကြမ်းဖျဉ်း ခွဲခြားနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Section 5&lt;/strong&gt; Man Page ကိုခေါ်ယူချင်တယ်ဆိုလျှင်တော့ &lt;code&gt;man 5 passwd&lt;/code&gt; ဆိုပြီး ခေါ်ယူနိုင်ပါတယ်။ တခြား Section တွေအတွက်ဆိုလျှင်လည်း &lt;strong&gt;5&lt;/strong&gt; နေရာမှာ ကိုယ်အလိုရှိတဲ့ Section Number ကို ထည့်သွင်းပေးလိုက်ရုံပါပဲ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-section3.png&#34; alt=&#34;man section 3&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;အခု &lt;code&gt;man 5 passwd&lt;/code&gt; ဆိုပြီး ခေါ်လိုက်တာဖြစ်တဲ့အတွက် &lt;strong&gt;PASSWD(5)&lt;/strong&gt; ဆိုပြီး &lt;code&gt;man passwd&lt;/code&gt; နဲ့မတူညီတဲ့ Page ကိုတွေ့ရပါလိမ့်မယ်။ &lt;strong&gt;Section 5&lt;/strong&gt; ဆိုတဲ့အတွက် &lt;code&gt;passwd&lt;/code&gt; command နဲ့သက်ဆိုင်တဲ့ &lt;code&gt;/etc/passwd&lt;/code&gt; &lt;code&gt;/etc/shadow&lt;/code&gt; စတဲ့ဖိုင်တွေအကြောင်းကို ရှင်းပြထားတာဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;man -a passwd&lt;/code&gt; ဆိုလျှင်တော့ &lt;code&gt;-aw&lt;/code&gt; option နဲ့မှာတွေ့ရတဲ့ page ၃ခုရဲ့ ပထမဆုံး page ကနေစဖော်ပြပေးမှာဖြစ်ပြီး &lt;code&gt;Q&lt;/code&gt; Key နှိပ်ပြီး ထွက်လိုက်ပြီဆိုတာနဲ့ ပုံမှာပြထားတဲ့အတိုင်း &lt;strong&gt;View&lt;/strong&gt; | &lt;strong&gt;Skip&lt;/strong&gt; | &lt;strong&gt;Quit&lt;/strong&gt; ဆိုပြီး ရွေးစရာတွေတွေ့ရပါလိမ့်မယ်။ &lt;strong&gt;next: sslpasswd(1ssl)&lt;/strong&gt; ဆိုပြီးပြောထားတဲ့အတွက် &lt;code&gt;Enter&lt;/code&gt; Key (return) နှိပ်လိုက်တာနဲ့ &lt;strong&gt;sslpasswd&lt;/strong&gt; ဆိုတဲ့ Man Page ကိုမြင်ရမှာဖြစ်ပြီး နောက် လာမယ့် &lt;strong&gt;PASSWD(5)&lt;/strong&gt; ကိုကျော်သွားချင်တယ်ဆိုလျှင်တော့ &lt;strong&gt;Ctrl+D&lt;/strong&gt; Key နဲ့ ကျော်နိုင်ပါတယ်။ ထွက်မယ်ဆိုလျှင်တော့ &lt;strong&gt;Ctrl+C&lt;/strong&gt; နဲ့ ထွက်နိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-section4.png&#34; alt=&#34;man section 4&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Man Page ရှာဖွေတဲ့နေရာမှာ သုံးနိုင်တဲ့ Option တွေရှိပါသေးတယ်။ အဲဒါတွေကတော့ &lt;code&gt;-f&lt;/code&gt; နဲ့ &lt;code&gt;-k&lt;/code&gt; ပါပဲ။ ဒီ Option နှစ်ခုရဲ့ကွာခြားချက်ကိုတော့ အောက်မှာပြထားတဲ့ပုံမှာကြည့်ကြည့်ပါ။ &lt;strong&gt;passwd&lt;/strong&gt; ကို &lt;strong&gt;Search&lt;/strong&gt; လုပ်မယ့် Keyword အနေနဲ့ သုံးထားပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-search4.png&#34; alt=&#34;man search 3&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;ကွာခြားချက်ကတော့ &lt;code&gt;-f&lt;/code&gt; က ရှိသမျှ Man Page တွေရဲ့ &lt;strong&gt;Name&lt;/strong&gt; နေရာမှာ သတ်မှတ်ထားတဲ့ Keyword ပါတဲ့ Page တွေကို ရှာဖွေထုတ်ပြပေးတာဖြစ်ပြီး &lt;code&gt;-k&lt;/code&gt; ကတော့ &lt;strong&gt;Name&lt;/strong&gt; နဲ့ &lt;strong&gt;Description&lt;/strong&gt; နေရာမှာ Keywoard ပါတဲ့ Page တွေကိုထုတ်ပြပေးတာပဲဖြစ်တယ်။&lt;/p&gt;
+
+&lt;p&gt;အခုပြောသွားခဲ့တဲ့ Search လုပ်ပုံနည်းလမ်းတွေထဲမှာ &lt;code&gt;man passwd&lt;/code&gt; နဲ့ &lt;code&gt;man -aw passwd&lt;/code&gt; တို့က &lt;code&gt;passwd&lt;/code&gt; command ရဲ့ Man Page ကိုရှာတာဖြစ်ပြီး &lt;code&gt;man -f passwd&lt;/code&gt; နဲ့ &lt;code&gt;man -k passwd&lt;/code&gt; ကတော့ ရှိသမျှ Man Page တွေထဲမှာ &lt;strong&gt;passwd&lt;/strong&gt; ဆိုတဲ့ Keyword ပါတဲ့ Man Page တွေကိုရှာဖွေပေးတာပဲဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;ဒီလောက်ဆို ဆက်လက်လေ့လာဖို့ လုံလောက်မယ်ထင်ပါတယ်။ အသေးစိပ် သိချင်သေတယ်ဆိုလျှင်တော့ &lt;code&gt;man man&lt;/code&gt; ဆိုတဲ့ command သုံးပြီး လေ့လာကြည့်လိုက်ပါ။ နောက်ဆုံးအနေနဲ့ ပြောချင်တာတစ်ခုကတော့ Man Page ကို စဖတ်ကြည့်တဲ့အချိန်မှာ ရှုပ်ထွေးလွန်းပြီး နာလည်ရခက်တယ်လို့ ထင်ကောင်းထင်မိပါလိမ့်မယ်။ အဓိက အကြောင်းအရင်းကတော့ Man Page ရဲ့ တင်ပြပုံကို မရင်းနှီးသေးလို့ပါပဲ။ Unix/Linux ကိုအခုမှစလေ့လာတဲ့သူတွေအတွက်တော့ Man Page ကိုတန်းဖတ်တာမျိုးထက် &lt;strong&gt;Useful Commands&lt;/strong&gt; ဆိုတာမျိုးတွေ Google မှာရှာပြီး အလျှင်စမ်းကြည့်ပါ။ Command တစ်ခုတည်းကို Option အမျိုးမျိုးသုံးပြထားတာမျိုးတွေ့လျှင် အဲဒီ Command ရဲ့ Man Page နဲ့တိုက်ပြီးဖတ်ကြည့်ပါ။ ဘယ်လို Option မျိုးကို ဘယ်လိုရှင်းပြထားတယ်၊ ဘယ်လို နေရာမျိုးမှာသုံးတယ်ဆိုတာတွေ တဖြည်းဖြည်း နားလည်လာပါလိမ့်မယ်။ Man Page ရဲ့အထာကို ကောင်းကောင်းသိသွားပြီဆိုလျှင်တော့ တော်ရုံတန်ရုံ Command တွေကို အလွတ်မှတ်နေစရာမလိုတော့ဘဲ လိုအပ်တဲ့အချိန် လွယ်လင့်တကူ ပြန်ရှာနိုင်၊ သုံးနိုင်သွားမှာဖြစ်တဲ့အတွက် လေ့လာကြပါလို့ တိုက်တွန်းလိုက်ရပါတယ်။&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Find Command Usage</title>

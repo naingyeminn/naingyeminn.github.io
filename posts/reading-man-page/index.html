@@ -1,0 +1,226 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - Reading Man Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/reading-man-page/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/reading-man-page/">Reading Man Page</a></h1>
+	        <div class="post-time">September 2 2015</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com//tags/linux">linux</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/terminal">terminal</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/cli">cli</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/tipstricks">tips&amp;tricks</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        
+
+<p>Unix/Linux Admin တစ်ယောက်အနေနဲ့ ရပ်တည်ဖို့ဆိုလျှင် Terminal နဲ့ Command တွေကိုကောင်းကောင်းသုံးတတ်ဖို့လိုတယ်ဆိုတာ အားလုံးသိကြမှာပါ။ သို့ပေမယ့် အရှိန်အဟုန်နဲ့ တိုးတက်နေတဲ့ နည်းပညာခေတ်ကြီးမှာ အသစ်ထွက်သမျှ Program တွေ၊ အဲဒီ Program တွေရဲ့ Command တွေကို အကုန်သိ၊ အကုန်မှတ်မိနေဖို့ဆိုတာ ခက်ခဲလွန်းပါတယ်။ အလွတ်ကျက်ပြီး မှတ်ထားတယ်ဆိုလျှင်တောင်မှ နောင်ထွက်လာတဲ့ Version အသစ်မှာ Option တွေ Usage တွေ ပြောင်းသွားနိုင်ပါတယ်။ အဲဒီအခါမျိုးကျ ပြန်လည်မှတ်သားဖို့လိုပါလိမ့်မယ်။ အလွယ်ဆုံးနဲ့ အမြန်ဆုံး လေ့လာနိုင်မယ့်နည်းလမ်းကတော့ <strong>Man Page</strong> လို့ခေါ်တဲ့ Manual Page ပါပဲ။</p>
+
+<p><strong>Man Page</strong> တနည်းအားဖြင့် <code>man</code> ဆိုတဲ့ command ကို Unix/Linux Distro တိုင်းလိုလိုမှာ Install လုပ်လိုက်တာနဲ့ တခါတည်း ပါဝင်လာပြီးသားပါ။ <code>man</code> ရဲ့ အဓိကလုပ်ဆောင်ချက်ကတော့ Developer တွေ သူတို့ Program တွေနဲ့ တပါတည်း ရေးသားပြစုထည့်သွင်းပေးလိုက်တဲ့ Documentation ဖိုင်တွေကို ထုတ်ယူဖော်ပြပေးတာပါပဲ။ ဒီလို Program တွေ Command တွေအတွက် Documentation တွေပြုလုပ်တဲ့နေရာမှာ စံအနေနဲ့ အကြောင်းအရာအလိုက် Section Number ခွဲခြားသတ်မှတ်ပေးထားတာရှိပါတယ်။ အဲဒါတွေကတော့ -</p>
+
+<ul>
+<li><strong>1</strong> – Executable Programs or Commands</li>
+<li><strong>2</strong> – System calls (Kernel မှ ထောက်ပံ့ပေးထားသော Function များ)</li>
+<li><strong>3</strong> – Library calls (Library မှ ထောက်ပံ့ပေးထားသော Function များ)</li>
+<li><strong>4</strong> – Drivers and Special files (အထူးသဖြင့် <code>/dev</code> Directory အောက်တွင်ရှိသော Device များ)</li>
+<li><strong>5</strong> – File Formats and Conventions (Configuration Files)</li>
+<li><strong>6</strong> – Games</li>
+<li><strong>7</strong> – Miscellaneous</li>
+<li><strong>8</strong> – System Administration Commands</li>
+</ul>
+
+<p>တို့ပဲဖြစ်ပါတယ်။ ဒီ Section Number တွေရဲ့ Defination အလိုက် Man Page တွေကို ခွဲခြားရေးသားထားတာဖြစ်တဲ့အတွက် မိမိသိလိုတဲ့ အပိုင်းကို အလွယ်တကူ ထုတ်နှုတ် ဖတ်ရှုနိုင်မှာဖြစ်ပါတယ်။</p>
+
+<h2 id="using-man-command:af6d49792ce625b11a4bb07186b4d049">Using Man Command</h2>
+
+<p>Command တစ်ခုခုရဲ့ Manual ကို ဖတ်မယ်ဆိုလျှင် မိမိသိလိုတဲ့ command ရဲ့ရှေ့မှာ <code>man</code> ဆိုတဲ့ command ထည့်ပြီးရိုက်လိုက်ရုံပါပဲ။ ဥပမာအနေနဲ့ <code>passwd</code> ဆိုတဲ့ command ရဲ့ manual ကိုဖတ်ချင်တယ်ဆိုလျှင် -</p>
+
+<pre><code class="language-sh">$ man passwd
+</code></pre>
+
+<p>ဆိုတဲ့ Command လေးရိုက်လိုက်ရုံပါပဲ။ ပုံမှာပြထားတဲ့အတိုင်း <code>passwd</code> ရဲ့ Man Page ကိုမြင်ရပါလိမ့်မယ်။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-passwd.png" alt="man-passwd" />
+</p>
+
+<p>Man Page ရဲ့ ပထမဆုံးစာကြောင်းမှာတွေ့ရတဲ့ <strong>PASSWD(1)</strong> ဆိုတာကတော့ <code>passwd</code> command ရဲ့ Man Page တွေထဲကမှ <strong>Section 1</strong> ဖြစ်တဲ့ Command အကြောင်းကို အဓိကထားရေးသားထားသော Page ဆိုတာကို ဖေါ်ပြထားခြင်းဖြစ်ပါတယ်။ တွေ့ရမယ့် အကြောင်းအရာတွေကတော့ Command ရဲ့ နာမည်အပြည့်အစုံ၊ ရေးသားရတဲ့ပုံစံ၊ ဘာတွေလုပ်ပေးနိုင်တယ်၊ နောက်ပြီး ချဲ့ထွင်အသုံးပြုနိုင်ဖို့ ဘယ်လို Option တွေပါတယ် ဆိုတာတွေကို အသေးစိပ်ရှင်းပြထားတာတွေပဲဖြစ်ပါတယ်။</p>
+
+<p>ရှင်းလင်းချက် အနည်းအများပေါ်မူတည်ပြီး Terminal Screen ထဲမှာ အပြည့်အစုံမြင်ရချင်မှမြင်ရပါလိမ့်မယ်။ အဲဒီအတွက် Up Arrow, Down Arrow Key တွေအသုံးပြုပြီး Page ကို စာကြောင်းတစ်ကြောင်းချင်း အပေါ်၊အောက် Scroll လုပ်လို့ရပါတယ်။ နောက်ပြီး <strong>Vim Text Editor</strong> မှာလို <strong>J</strong> နဲ့ <strong>K</strong> ကိုအသုံးပြုပြီးတော့လည်း Scroll လုပ်နိုင်ပါသေးတယ်။ တစ်ကြောင်းချင်း Scroll လုပ်ရတာ ကြာတယ်ထင်လျှင် <strong>F</strong> (forward), <strong>B</strong> (backward) Key တွေအသုံးပြုပြီး Screen အပြည့်စာ ဒါမှမဟုတ် <strong>U</strong> (up), <strong>D</strong> (down) စတဲ့ Key တွေနဲ့ Screen တစ်ဝက်စာ Scroll လုပ်မယ်ဆို လုပ်နိုင်ပါသေးတယ်။ Page အစနဲ့အဆုံးကိုတော့ <strong>G</strong> နဲ့ <strong>Shift + G</strong> ကိုသုံးပြီး သွားနိုင်ပါတယ်။</p>
+
+<p>Man Page ထဲက စာသားတစ်ခုခုကို ရှာချင်တယ်ဆိုလျှင်တော့ <code>/</code> ကိုနှိပ်၊ နောက်က ကိုယ်ရှာချင်တဲ့ keyword ကိုရိုက်ထည့်၊ ပြီးလျှင် Enter နှိပ်လိုက်ရုံပါပဲ။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-search1.png" alt="man search 1" />
+</p>
+
+<p>ပုံမှာပြထားတဲ့အတိုင်း <code>/expire</code> လို့ရိုက်ထည့်လိုက်မယ်ဆိုလျှင် ရောက်ရှိနေတဲ့ Man Page ရဲ့နေရာကနေစပြီး <code>expire</code> ဆိုတဲ့စာလုံးကိုရှာပေးပါလိမ့်မယ်။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-search2.png" alt="man search 2" />
+</p>
+
+<p>ပထမဆုံးရှာတွေ့မှာကတော့ <code>-k</code> option ရဲ့ ရှင်းလင်းချက်ထဲမှာပါတဲ့ <strong>expired</strong> ဆိုတဲ့ စာလုံးနှစ်လုံးပါ။ လိုချင်တာ <code>--expire</code> ဆိုတဲ့ option နဲ့ပတ်သက်တာဖြစ်တဲ့အတွက် <strong>N</strong> Key ကိုတစ်ချက်ချင်းနှိပ်ပြီး ဆက်လက်ရှာဖွေသွားလို့ရပါတယ်။ နောက်ဆုံး <code>--expire</code> ဆိုတာကိုရှာတွေ့ပါလိမ့်မယ်။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-search3.png" alt="man search 3" />
+</p>
+
+<p>အကယ်၍ <strong>N</strong> နှိပ်တာလွန်ပြီး ကိုယ်ရှာနေတဲ့စာလုံးကိုကျော်သွားခဲ့တယ်ဆိုလျှင်လည်း <strong>Shift + N</strong> နဲ့ နောက်ကြောင်းပြန်ပြီးရှာလို့ရပါတယ်။</p>
+
+<p>ဒါကတော့ Man Page မှာ အသုံးများတဲ့ နည်းလမ်းလေးတချို့ပါ။ တခြား အသုံးပြုလို့ရတဲ့နည်းလမ်းတွေရှိပါသေးတယ်။ အဲဒါတွေကိုတော့ Man Page ဖွင့်ထားတဲ့အချိန် <strong>H</strong> Key ကိုနှိပ်ပြီး <code>man</code> ရဲ့ Help ကနေလေ့လာနိုင်ပါတယ်။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-help.png" alt="man help" />
+</p>
+
+<p>Man Page ကနေ ပြန်ထွက်ချင်တယ်ဆိုလျှင်တော့ <strong>Q</strong> Key နှိပ်ပြီး ထွက်ရပါတယ်။</p>
+
+<h2 id="searching-man-pages:af6d49792ce625b11a4bb07186b4d049">Searching Man Pages</h2>
+
+<p>အထက်မှာပြောခဲ့တဲ့အတိုင်း Man Page တွေကို အကြောင်းအရာအလိုက် Section တွေခွဲထားတာဖြစ်တဲ့အတွက် Command တစ်ခုကို Section တစ်ခုထက်ပိုပြီးရှိနေနိုင်ပါတယ်။ Section ဘယ်နှစ်ခုရှိလည်းသိချင်လျှင်တော့ <code>-aw</code> option သုံးပြီး ရှာနိုင်ပါတယ်။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-section1.png" alt="man section 1" />
+</p>
+
+<p>ပုံထဲကအတိုင်း <code>man -aw passwd</code> လို့ရိုက်လိုက်မယ်ဆိုလျှင်တော့ <code>passwd</code> နဲ့ဆိုင်တဲ့ Man Page ၃ခုကိုတွေ့ရပါလိမ့်မယ်။ အဲဒီထဲမှာမှ <code>passwd</code> ဆိုတဲ့ command နဲ့အတိအကျတူညီတဲ့ <strong>passwd.1.gz</strong> နဲ့ <strong>passwd.5.gz</strong> ၂ခုကိုတွေ့ရပါလိမ့်မယ်။ အဲဒီနှစ်ဖိုင်ရဲ့ <strong>1</strong> နဲ့ <strong>5</strong> ဆိုတာကတော့ <strong>Section</strong> ကိုဆိုလိုတာပါ။ <strong>Section 1</strong> ကတော့ Command အကြောင်းဖြစ်ပြီး <strong>Section 5</strong> ကတော့ အဲဒီ <code>passwd</code> command နဲ့ချိတ်ဆက်နေတဲ့ configuration file တွေအကြောင်းရှင်းပြပေးထားတာလို့ အကြမ်းဖျဉ်း ခွဲခြားနိုင်ပါတယ်။</p>
+
+<p><strong>Section 5</strong> Man Page ကိုခေါ်ယူချင်တယ်ဆိုလျှင်တော့ <code>man 5 passwd</code> ဆိုပြီး ခေါ်ယူနိုင်ပါတယ်။ တခြား Section တွေအတွက်ဆိုလျှင်လည်း <strong>5</strong> နေရာမှာ ကိုယ်အလိုရှိတဲ့ Section Number ကို ထည့်သွင်းပေးလိုက်ရုံပါပဲ။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-section3.png" alt="man section 3" />
+</p>
+
+<p>အခု <code>man 5 passwd</code> ဆိုပြီး ခေါ်လိုက်တာဖြစ်တဲ့အတွက် <strong>PASSWD(5)</strong> ဆိုပြီး <code>man passwd</code> နဲ့မတူညီတဲ့ Page ကိုတွေ့ရပါလိမ့်မယ်။ <strong>Section 5</strong> ဆိုတဲ့အတွက် <code>passwd</code> command နဲ့သက်ဆိုင်တဲ့ <code>/etc/passwd</code> <code>/etc/shadow</code> စတဲ့ဖိုင်တွေအကြောင်းကို ရှင်းပြထားတာဖြစ်ပါတယ်။</p>
+
+<p><code>man -a passwd</code> ဆိုလျှင်တော့ <code>-aw</code> option နဲ့မှာတွေ့ရတဲ့ page ၃ခုရဲ့ ပထမဆုံး page ကနေစဖော်ပြပေးမှာဖြစ်ပြီး <code>Q</code> Key နှိပ်ပြီး ထွက်လိုက်ပြီဆိုတာနဲ့ ပုံမှာပြထားတဲ့အတိုင်း <strong>View</strong> | <strong>Skip</strong> | <strong>Quit</strong> ဆိုပြီး ရွေးစရာတွေတွေ့ရပါလိမ့်မယ်။ <strong>next: sslpasswd(1ssl)</strong> ဆိုပြီးပြောထားတဲ့အတွက် <code>Enter</code> Key (return) နှိပ်လိုက်တာနဲ့ <strong>sslpasswd</strong> ဆိုတဲ့ Man Page ကိုမြင်ရမှာဖြစ်ပြီး နောက် လာမယ့် <strong>PASSWD(5)</strong> ကိုကျော်သွားချင်တယ်ဆိုလျှင်တော့ <strong>Ctrl+D</strong> Key နဲ့ ကျော်နိုင်ပါတယ်။ ထွက်မယ်ဆိုလျှင်တော့ <strong>Ctrl+C</strong> နဲ့ ထွက်နိုင်ပါတယ်။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-section4.png" alt="man section 4" />
+</p>
+
+<p>Man Page ရှာဖွေတဲ့နေရာမှာ သုံးနိုင်တဲ့ Option တွေရှိပါသေးတယ်။ အဲဒါတွေကတော့ <code>-f</code> နဲ့ <code>-k</code> ပါပဲ။ ဒီ Option နှစ်ခုရဲ့ကွာခြားချက်ကိုတော့ အောက်မှာပြထားတဲ့ပုံမှာကြည့်ကြည့်ပါ။ <strong>passwd</strong> ကို <strong>Search</strong> လုပ်မယ့် Keyword အနေနဲ့ သုံးထားပါတယ်။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-search4.png" alt="man search 3" />
+</p>
+
+<p>ကွာခြားချက်ကတော့ <code>-f</code> က ရှိသမျှ Man Page တွေရဲ့ <strong>Name</strong> နေရာမှာ သတ်မှတ်ထားတဲ့ Keyword ပါတဲ့ Page တွေကို ရှာဖွေထုတ်ပြပေးတာဖြစ်ပြီး <code>-k</code> ကတော့ <strong>Name</strong> နဲ့ <strong>Description</strong> နေရာမှာ Keywoard ပါတဲ့ Page တွေကိုထုတ်ပြပေးတာပဲဖြစ်တယ်။</p>
+
+<p>အခုပြောသွားခဲ့တဲ့ Search လုပ်ပုံနည်းလမ်းတွေထဲမှာ <code>man passwd</code> နဲ့ <code>man -aw passwd</code> တို့က <code>passwd</code> command ရဲ့ Man Page ကိုရှာတာဖြစ်ပြီး <code>man -f passwd</code> နဲ့ <code>man -k passwd</code> ကတော့ ရှိသမျှ Man Page တွေထဲမှာ <strong>passwd</strong> ဆိုတဲ့ Keyword ပါတဲ့ Man Page တွေကိုရှာဖွေပေးတာပဲဖြစ်ပါတယ်။</p>
+
+<p>ဒီလောက်ဆို ဆက်လက်လေ့လာဖို့ လုံလောက်မယ်ထင်ပါတယ်။ အသေးစိပ် သိချင်သေတယ်ဆိုလျှင်တော့ <code>man man</code> ဆိုတဲ့ command သုံးပြီး လေ့လာကြည့်လိုက်ပါ။ နောက်ဆုံးအနေနဲ့ ပြောချင်တာတစ်ခုကတော့ Man Page ကို စဖတ်ကြည့်တဲ့အချိန်မှာ ရှုပ်ထွေးလွန်းပြီး နာလည်ရခက်တယ်လို့ ထင်ကောင်းထင်မိပါလိမ့်မယ်။ အဓိက အကြောင်းအရင်းကတော့ Man Page ရဲ့ တင်ပြပုံကို မရင်းနှီးသေးလို့ပါပဲ။ Unix/Linux ကိုအခုမှစလေ့လာတဲ့သူတွေအတွက်တော့ Man Page ကိုတန်းဖတ်တာမျိုးထက် <strong>Useful Commands</strong> ဆိုတာမျိုးတွေ Google မှာရှာပြီး အလျှင်စမ်းကြည့်ပါ။ Command တစ်ခုတည်းကို Option အမျိုးမျိုးသုံးပြထားတာမျိုးတွေ့လျှင် အဲဒီ Command ရဲ့ Man Page နဲ့တိုက်ပြီးဖတ်ကြည့်ပါ။ ဘယ်လို Option မျိုးကို ဘယ်လိုရှင်းပြထားတယ်၊ ဘယ်လို နေရာမျိုးမှာသုံးတယ်ဆိုတာတွေ တဖြည်းဖြည်း နားလည်လာပါလိမ့်မယ်။ Man Page ရဲ့အထာကို ကောင်းကောင်းသိသွားပြီဆိုလျှင်တော့ တော်ရုံတန်ရုံ Command တွေကို အလွတ်မှတ်နေစရာမလိုတော့ဘဲ လိုအပ်တဲ့အချိန် လွယ်လင့်တကူ ပြန်ရှာနိုင်၊ သုံးနိုင်သွားမှာဖြစ်တဲ့အတွက် လေ့လာကြပါလို့ တိုက်တွန်းလိုက်ရပါတယ်။</p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/reading-man-page/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/find-command-usage/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p>© Naing Ye` Minn 2014</p>
+		        </footer>
+		    </div>
+		  </div>    
+		</div>
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
