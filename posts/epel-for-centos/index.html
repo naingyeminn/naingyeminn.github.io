@@ -1,0 +1,210 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - EPEL for CentOS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/epel-for-centos/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/epel-for-centos/">EPEL for CentOS</a></h1>
+	        <div class="post-time">October 13 2015</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com//tags/linux">linux</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/server">server</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/administration">administration</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/tipstricks">tips&amp;tricks</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/epel">EPEL</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/centos">CentOS</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/rhel">RHEL</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        
+
+<p>EPEL ဆိုတာ Extra Packages for Enterprise Linux ရဲ့ အတိုကောက်ပါ။ Extra Packages ဆိုတဲ့အတိုင်း CentOS ရဲ့ Main Repository ထဲမပါဝင်ပေမယ့် အသုံးဝင်တဲ့ Package တွေကို စုစည်းပေးထားတဲ့ Repository တစ်ခုပါ။ Fedora Project ရဲ့ပံ့ပိုးမှုနဲ့ ဖြစ်ပေါ်လာတဲ့ Project တစ်ခုဖြစ်ပြီး Fedora Linux အတွက်တင်မဟုတ်ဘဲ Fedora-based ဖြစ်တဲ့ Red Hat Enterprise Linux နဲ့ တခြား မျိုးနွယ်တူ CentOS, Scientific Linux စတာတွေအတွက်ပါ Support ပေးထားတဲ့ Repo ပဲဖြစ်ပါတယ်။ အသေးစိပ်ကိုတော့ <a href="https://fedoraproject.org/wiki/EPEL/FAQ">EPEL/FAQ</a> မှာလေ့လာနိုင်ပါတယ်။</p>
+
+<p>EPEL ထဲက package တွေကို Install ပြုလုပ်ချင်တယ်ဆိုလျှင်တော့ EPEL Repo ကို YUM Package Manager ရဲ့ Repo List ထဲမှာ ထပ်ထည့်ပြီး Enable ပြုလုပ်ပေးရပါမယ်။ အဲဒီအတွက် EPEL Package ကို Install လုပ်ရပါမယ်။ EPEL Package ကိုတော့ Distro Version ပေါ်မူတည်ပြီး Download ယူဖို့လိုပါတယ်။ Download အတွက် <code>wget</code> command ကိုအသုံးပြုမှာဖြစ်တဲ့အတွက် ကြိုတင် Install လုပ်ထားဖို့လိုပါလိမ့်မယ်။</p>
+
+<pre><code class="language-sh">$ sudo yum install wget -y
+</code></pre>
+
+<h2 id="installation:357e74f7a1fdd46a0367d8387ebd31a9">Installation</h2>
+
+<ul>
+<li><strong>RHEL/CentOS 5.x</strong> အတွက်</li>
+</ul>
+
+<pre><code class="language-sh">$ wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-5.noarch.rpm
+$ sudo rpm -ivh epel-release-latest-5.noarch.rpm
+</code></pre>
+
+<ul>
+<li><strong>RHEL/CentOS 6.x</strong> အတွက်</li>
+</ul>
+
+<pre><code class="language-sh">$ wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
+$ sudo rpm -ivh epel-release-latest-6.noarch.rpm
+</code></pre>
+
+<ul>
+<li><strong>RHEL/CentOS 7.x</strong> အတွက်</li>
+</ul>
+
+<pre><code class="language-sh">$ wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+$ sudo rpm -ivh epel-release-latest-7.noarch.rpm
+</code></pre>
+
+<ul>
+<li><strong>EPEL Repo</strong> ရ၊ မရ ပြန်လည်စစ်ဆေးရန်အတွက်</li>
+</ul>
+
+<pre><code class="language-sh">$ yum repolist
+</code></pre>
+
+<hr />
+
+<h2 id="screenshots:357e74f7a1fdd46a0367d8387ebd31a9">Screenshots</h2>
+
+<ul>
+<li>CentOS 7 တွင် EPEL package အား <code>wget</code> ဖြင့် Download ပြုလုပ်ခြင်း</li>
+</ul>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/epel-wget.png" alt="epel-wget" />
+</p>
+
+<ul>
+<li>Package အား Install ပြုလုပ်ခြင်း</li>
+</ul>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/epel-install.png" alt="epel-install" />
+</p>
+
+<ul>
+<li>EPEL Repo အား စစ်ဆေးခြင်း</li>
+</ul>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/epel-check.png" alt="" />
+</p>
+
+<p>အပေါ်ပုံအတိုင်း EPEL ကို Repo List ထဲတွေ့ရပြီဆိုလျှင်တော့ EPEL Repo မှ Package များအား Install ပြုလုပ်နိုင်ပြီဖြစ်ပါတယ်။</p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/epel-for-centos/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/reading-man-page/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p>© Naing Ye` Minn 2014</p>
+		        </footer>
+		    </div>
+		  </div>    
+		</div>
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
