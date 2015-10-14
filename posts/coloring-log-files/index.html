@@ -1,0 +1,183 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - Coloring Log Files</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/coloring-log-files/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/coloring-log-files/">Coloring Log Files</a></h1>
+	        <div class="post-time">October 14 2015</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com//tags/linux">linux</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/server">server</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/administration">administration</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/tipstricks">tips&amp;tricks</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/ccze">ccze</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/log">log</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        <p>Linux Administrator တွေအနေနဲ့ Log Analyzer တွေမျိုးစုံရှိနေပေမယ့် တစ်ခါတစ်ရံ လိုအပ်လို့ Log File တွေကိုမွှေနှောက်ရမယ်ဆိုလျှင် အာရုံနောက်ကြမယ်ထင်ပါတယ်။ Log File တွေရဲ့ထုံးစံအတိုင်း Text တွေကို ပြွပ်သိပ်နေအောင်ရိုက်ထုတ်ထားတာဖြစ်တဲ့အတွက် ဖတ်ရတဲ့သူအတွက် ဘယ်အပိုင်းက ဘာဆိုတာကို မနည်း အာရုံစိုက်ခွဲခြားနေရပါလိမ့်မယ်။ အဲဒီပြဿနာကိုတော့ <strong>CCZE</strong> ကကူညီဖြေရှင်းပေးနိုင်ပါတယ်။ <strong>CCZE</strong> ဆိုတာကတော့ command-line tool လေးတစ်ခုပဲဖြစ်ပါတယ်။ Linux Admin တွေအနေနဲ့ server ကို ssh နဲ့ access လုပ်နေတဲ့အချိန် Log File တွေကိုဖတ်ရှုဖို့လိုလာခဲ့မယ်ဆိုလျှင်တော့ ဒီ Tool လေးက အရမ်းအသုံးတည့်ပါတယ်။ Log ကိုသက်ဆိုင်ရာ အပိုင်းအခြားအလိုက် အရောင်ခွဲခြားပြီး ပြသပေးတာဖြစ်တဲ့အတွက် ဖတ်ရှုသူအနေနဲ့ မြန်ဆန်လွယ်ကူစွာ နားလည်သဘောပေါက်နိုင်မှာပါ။</p>
+
+<p>Debian/Ubuntu မှာတော့ -</p>
+
+<pre><code class="language-sh">$ sudo apt-get install -y ccze
+</code></pre>
+
+<p>ဆိုပြီး Install တန်းလုပ်လို့ရပါတယ်။</p>
+
+<p>RHEL/CentOS/Fedora စတဲ့ Distro တွေမှာတော့ <a href="http://naingyeminn.com/posts/epel-for-centos/">EPEL</a> ကနေ Install ပြုလုပ်နိုင်ပါတယ်။</p>
+
+<pre><code class="language-sh">$ sudo yum install -y ccze
+</code></pre>
+
+<p>Install ပြုလုပ်ပြီးပြီဆိုလျှင်တော့ စသုံးလို့ရပါပြီ။ Command-line Tool ဆိုတဲ့အတိုင်း command တစ်ခုခုကနေထွက်လာတဲ့ output ကို <strong>pipe</strong> <code>|</code> သုံးပြီး <code>ccze</code> ဆီကို ပို့ပေးလိုက်ရုံပါပဲ။ နမူနာအနေနဲ့ CentOS 7 ပေါ်မှာ အသုံးပြုပြပါမယ်။ အောက်ပါ Command နှစ်ကြောင်းကို Terminal မှာရိုက်ကြည့်လိုက်ပါ။</p>
+
+<pre><code class="language-sh">$ sudo tail -3 /var/log/messages
+$ sudo tail -3 /var/log/messages | ccze -A
+</code></pre>
+
+<p>ပုံမှာမြင်တွေ့ရတဲ့အတိုင်း Color ပါတာနဲ့ မပါတာကို ယှဉ်ပြီးတွေ့ရပါလိမ့်မယ်။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/ccze-A.png" alt="ccze-A" />
+</p>
+
+<p>နောက်ပြီး Log Output ကို HTML ဖိုင်အနေနဲ့လည်း ထုတ်ယူလို့ရပါသေးတယ်။</p>
+
+<pre><code class="language-sh">$ sudo tail -30 /var/log/messages | ccze -h &gt; ~/Documents/msg.html
+</code></pre>
+
+<p>Output ကိုတော့ User ရဲ့ Documents folder အောက်ထဲမှာ msg.html ဆိုပြီး HTML file အနေနဲ့တွေ့ရပါလိမ့်မယ်။ Double click နှိပ်ပြီး ဖွင့်ကြည့်လိုက်မယ်ဆိုလျှင်တော့ ပုံမှပြထားတဲ့အတိုင်း Browser မှာမြင်တွေ့ရပါလိမ့်မယ်။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/ccze-h.png" alt="ccze-h" />
+</p>
+
+<p>ပုံထဲမှာတော့ Default Color Scheme အတိုင်းဖြစ်နေတာရယ်၊ VM ပေါ်မှာဖြစ်တဲ့အတွက် Graphic Resolution နည်းနေတာရယ်တို့ကြောင့် ကြည့်ရတာတော့သိပ်အဆင်မပြေပါဘူး။ Default Color ကိုပြင်ချင်တယ်ဆိုလျှင်တော့ Config File <code>/etc/cczerc</code> ထဲမှာ ဝင်ပြင်လို့ရပါတယ်။ HTML output ရဲ့ Background Color ကိုပြောင်းမယ်ဆိုလျှင်တော့ <code>/etc/cczerc</code> ရဲ့ အောက်ဆုံး line number <strong>93</strong> မှာရှိတဲ့ <code>cssbody #404040</code> ကိုပြင်ရုံပါပဲ။ အခြား Color တွေကိုလည်း စိတ်ကြိုက်ပြင်ဆင်နိုင်ပါတယ်။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/ccze-h-safari.png" alt="ccze-h" />
+</p>
+
+<p>အပေါ်ပုံကတော့ <code>cssbody #000000</code> ပြောင်းပြီး output ထုတ်ထားတဲ့ HTML ဖိုင်ကို Safari Browser ပေါ်မှာမြင်တွေ့ရတာပဲဖြစ်ပါတယ်။</p>
+
+<p><strong>CCZE</strong> မှာ နောက်ထပ် Option တွေအများကြီးရှိပါသေးတယ်။ အသေးစိပ်ကိုတော့ <a href="http://naingyeminn.com/posts/reading-man-page/">man page</a> သုံးပြီးလေ့လာနိုင်ပါတယ်။</p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/coloring-log-files/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/epel-for-centos/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p>© Naing Ye` Minn 2014</p>
+		        </footer>
+		    </div>
+		  </div>    
+		</div>
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
