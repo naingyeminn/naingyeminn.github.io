@@ -1,0 +1,236 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - NX-OS Titanium Emulator on VMware Fusion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/nx-os-titanium-on-vmware-fusion/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/nx-os-titanium-on-vmware-fusion/">NX-OS Titanium Emulator on VMware Fusion</a></h1>
+	        <div class="post-time">October 17 2015</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com//tags/cisco">cisco</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/nx-os">nx-os</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/titanium">titanium</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/vmware-fusion">vmware-fusion</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/osx">osx</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/tipstricks">tips&amp;tricks</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        <p>ဒီ Post လေးကတော့ Mac သုံးတဲ့ Network Admin/Engineer တွေအတွက်ပါ။ Cisco ရဲ့ Nexus Switch တွေကိုလေ့လာဖို့ <a href="http://depositfiles.com/files/wxeo6gwo9">NX-OS Titanium Emulator</a> ကို OS X ပေါ်မှာ Setup လုပ်တဲ့နည်းလမ်းလေးပဲဖြစ်ပါတယ်။ VMware ရဲ့ VMX format နဲ့ Export ထုတ်ပေးထားတဲ့ ဒီ Emulator လေးကို များသောအားဖြင့် Windows ပေါ်မှာပဲ VMPlayer, VMware Workstation တို့နဲ့သုံးလေ့၊ စမ်းလေ့ရှိကြပါတယ်။ Internet မှာရှိတဲ့ Blog တွေမှာလည်း ရှာတွေ့ရသလောက်က Windows ပေါ် ဘယ်လို Setup လုပ်ရတယ်ဆိုတာကိုပဲ ရေးထားကြတာပါ။ Mac OS X မှာရှိတဲ့ VMware Fusion နဲ့ ဘယ်လိုသုံးရတယ်ဆိုတာကိုတော့ လုံးဝကိုရှာမရပါဘူး။ VMware Product ချင်းအတူတူဖြစ်တဲ့အတွက် ပြသနာမရှိလောက်ဘူးလို့ ထင်ရပေမယ့် တကယ်တမ်း Setup လုပ်တဲ့အခါကျ အခက်အခဲလေးတွေရှိပါတယ်။ အဲဒီအတွက်ကြောင့် အားလုံးအဆင်ပြေပြေ Setup လုပ်နိုင်စေဖို့ ဒီ post လေးရေးလိုက်ခြင်းဖြစ်ပါတယ်။ Setup လုပ်တဲ့ နည်းလမ်းကတော့ -</p>
+
+<ul>
+<li>ပထမဆုံးအနေနဲ့ NX-OS Titanium Emulator ကို Download ရယူလိုက်ပါ။</li>
+<li>ရလာတဲ့ RAR ဖိုင်ကို Extract လုပ်လိုက်ပါ။ ပုံမှာမြင်တွေ့ရတဲ့အတိုင်း ဖိုင် ၅ဖိုင်ထွက်လာပါလိမ့်မယ်။
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-1.png" alt="NX-OS-1" /></li>
+<li>N7K-2.vmx ဖိုင်လေးကို Double-Click နှိပ်လိုက်ပါ။</li>
+<li>VM ကို Upgrade လုပ်မလား မေးခဲ့လျှင် Upgrade ကိုနှိပ်ပါ။
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-2.png" alt="NX-OS-2" /></li>
+<li>Compatibility Warning တက်လာခဲ့လျှင် OK ကိုပဲနှိပ်လိုက်ပါ။
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-3.png" alt="NX-OS-3" /></li>
+<li>I Copied It ကိုနှိပ်ပါ။
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-4.png" alt="NX-OS-4" /></li>
+<li>ပုံထဲကအတိုင်း WARNING ပေါ်ပြီး ရပ်နေပါလိမ့်မယ်။
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-5.png" alt="NX-OS-5" /></li>
+
+<li><p>VM ကို Shutdown ပြန်လုပ်လိုက်ပါ။
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-6.png" alt="NX-OS-6" />
+
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-7.png" alt="NX-OS-7" />
+</p></li>
+
+<li><p>အခု VM ကို အနည်းငယ် Edit လုပ်ရပါမယ်။ ဘာကြောင့်လဲဆိုတော့ မူရင်း vmx ဖိုင်မှာ Serial Port အတွက် ရေးထားတဲ့ config က VMware Fusion မှာ အလုပ်မလုပ်လို့ပါ။</p></li>
+
+<li><p>အဲဒီအတွက် VM ရဲ့ Setting ကိုဖွင့်လိုက်ပါ။
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-8.png" alt="NX-OS-8" />
+</p></li>
+
+<li><p>Serial Port ကိုနှိပ်လိုက်ပါ။
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-9.png" alt="NX-OS-9" />
+</p></li>
+
+<li><p>Remove Serial Port ကိုနှိပ်ပြီး Remove လုပ်လိုက်ပါ။
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-10.png" alt="NX-OS-10" />
+
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-11.png" alt="NX-OS-11" />
+</p></li>
+
+<li><p>Add Device ကိုနှိပ်ပါ။
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-12.png" alt="NX-OS-12" />
+</p></li>
+
+<li><p>Serial Port ကိုရွေးလိုက်ပါ။
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-13.png" alt="NX-OS-13" />
+</p></li>
+
+<li><p>Save As မှာ <strong>Serial_Port</strong> လို့နာမည်ပေးပြီး Save လိုက်ပါ။
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-14.png" alt="NX-OS-14" />
+
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-15.png" alt="NX-OS-15" />
+</p></li>
+
+<li><p>အခု အသစ်ပြုလုပ်ထားတဲ့ Serial_Port ရဲ့ config ကို အနည်းငယ်ပြင်ပါမယ်။ ပုံထဲကအတိုင်း N7K-2.vmx ဆိုတဲ့ ဖိုင်လေးကို Right-Click နှိပ်ပြီး Open With မှာ TextEdit.app ကိုရွေးလိုက်ပါ။</p></li>
+</ul>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-16.png" alt="NX-OS-16" />
+</p>
+
+<ul>
+<li>အောက်မှာပေးထားတဲ့ config နှစ်ကြောင်းကို Copy ကူးလိုက်ပါ။</li>
+</ul>
+
+<pre><code>serial0.fileType = &quot;network&quot;
+serial0.fileName = &quot;telnet://localhost:9001&quot;
+</code></pre>
+
+<ul>
+<li>vmx config ဖိုင်ထဲက Serial0 နဲ့ဆိုင်တဲ့ နှစ်ကြောင်းကို Select လုပ်ပြီး ကူထားတဲ့ Config နှစ်ကြောင်းနဲ့ Replace လုပ်ပါ။ ပြီးလျှင် Save လိုက်ပါ။ ပြန်ပြင်မရိုက်ပါနဲ့။ ကိုယ်တိုင်ပြန်ပြင်ရိုက်လိုက်လျှင် Double Quote <code>&quot;</code> ရဲ့ပုံစံ ပြောင်းသွားမှာဖြစ်တဲ့အတွက် VM Run တဲ့အချိန်မှာ Serial Port ကို Connect လုပ်မရတဲ့ပြဿနာ ကြုံရတာကြောင့်ပါ။</li>
+</ul>
+
+<pre><code>serial0.fileType = &quot;file&quot;
+serial0.fileName = &quot;/[path_to_titanium_directory]/Serial_Port&quot;
+</code></pre>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-17.png" alt="NX-OS-17" />
+
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-18.png" alt="NX-OS-18" />
+</p>
+
+<ul>
+<li>ပြင်ပြီးပြီဆိုလျှင်တော့ Save လုပ်ပြီး VM ကို ပြန် Run လိုက်ပါ။ အပေါ်မှာတွေ့မြင်ခဲ့ရတဲ့အတိုင်း Warning Message ပြပြီးရပ်နေပါလိမ့်မယ်။ ပြဿနာမရှိပါဘူး ဒီတိုင်းထားလိုက်ပါ။</li>
+<li>Terminal တစ်ခုဖွင့်ပြီး telnet နဲ့ login ဝင်ပါမယ်။</li>
+</ul>
+
+<pre><code class="language-sh">$ telnet localhost 9001
+</code></pre>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-19.png" alt="NX-OS-19" />
+</p>
+
+<ul>
+<li>Boot Loading ပြီးသွားပြီဆိုလျှင်တော့ Login Prompt ကိုတွေ့ရပါမယ်။ ပေးထားတဲ့အတိုင်း Username နဲ့ Password ရိုက်ထည့်ပေးလိုက်ပြီဆိုလျှင်တော့ Privileged Mode ကို Access ရပြီဖြစ်ပါတယ်။
+<img src="https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-20.png" alt="NX-OS-20" /></li>
+</ul>
+
+<p>အခုလောက်ဆိုလျှင်တော့ မိမိစမ်းသပ်လိုရာ Lab ကို တည်ဆောက်လို့ရနိုင်ပြီထင်ပါတယ်။</p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/nx-os-titanium-on-vmware-fusion/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/coloring-log-files/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p>© Naing Ye` Minn 2014</p>
+		        </footer>
+		    </div>
+		  </div>    
+		</div>
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

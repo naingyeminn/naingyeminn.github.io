@@ -5,7 +5,112 @@
     <link>http://naingyeminn.com/tags/tipstricks/</link>
     <language>en-us</language>
     <author>Alexander Ivanov</author>
-    <updated>2015-10-14 00:00:00 &#43;0000 UTC</updated>
+    <updated>2015-10-17 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>NX-OS Titanium Emulator on VMware Fusion</title>
+      <link>http://naingyeminn.com/posts/nx-os-titanium-on-vmware-fusion/</link>
+      <pubDate>Sat, 17 Oct 2015 00:00:00 UTC</pubDate>
+      <author>Alexander Ivanov</author>
+      <guid>http://naingyeminn.com/posts/nx-os-titanium-on-vmware-fusion/</guid>
+      <description>&lt;p&gt;ဒီ Post လေးကတော့ Mac သုံးတဲ့ Network Admin/Engineer တွေအတွက်ပါ။ Cisco ရဲ့ Nexus Switch တွေကိုလေ့လာဖို့ &lt;a href=&#34;http://depositfiles.com/files/wxeo6gwo9&#34;&gt;NX-OS Titanium Emulator&lt;/a&gt; ကို OS X ပေါ်မှာ Setup လုပ်တဲ့နည်းလမ်းလေးပဲဖြစ်ပါတယ်။ VMware ရဲ့ VMX format နဲ့ Export ထုတ်ပေးထားတဲ့ ဒီ Emulator လေးကို များသောအားဖြင့် Windows ပေါ်မှာပဲ VMPlayer, VMware Workstation တို့နဲ့သုံးလေ့၊ စမ်းလေ့ရှိကြပါတယ်။ Internet မှာရှိတဲ့ Blog တွေမှာလည်း ရှာတွေ့ရသလောက်က Windows ပေါ် ဘယ်လို Setup လုပ်ရတယ်ဆိုတာကိုပဲ ရေးထားကြတာပါ။ Mac OS X မှာရှိတဲ့ VMware Fusion နဲ့ ဘယ်လိုသုံးရတယ်ဆိုတာကိုတော့ လုံးဝကိုရှာမရပါဘူး။ VMware Product ချင်းအတူတူဖြစ်တဲ့အတွက် ပြသနာမရှိလောက်ဘူးလို့ ထင်ရပေမယ့် တကယ်တမ်း Setup လုပ်တဲ့အခါကျ အခက်အခဲလေးတွေရှိပါတယ်။ အဲဒီအတွက်ကြောင့် အားလုံးအဆင်ပြေပြေ Setup လုပ်နိုင်စေဖို့ ဒီ post လေးရေးလိုက်ခြင်းဖြစ်ပါတယ်။ Setup လုပ်တဲ့ နည်းလမ်းကတော့ -&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ပထမဆုံးအနေနဲ့ NX-OS Titanium Emulator ကို Download ရယူလိုက်ပါ။&lt;/li&gt;
+&lt;li&gt;ရလာတဲ့ RAR ဖိုင်ကို Extract လုပ်လိုက်ပါ။ ပုံမှာမြင်တွေ့ရတဲ့အတိုင်း ဖိုင် ၅ဖိုင်ထွက်လာပါလိမ့်မယ်။
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-1.png&#34; alt=&#34;NX-OS-1&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;N7K-2.vmx ဖိုင်လေးကို Double-Click နှိပ်လိုက်ပါ။&lt;/li&gt;
+&lt;li&gt;VM ကို Upgrade လုပ်မလား မေးခဲ့လျှင် Upgrade ကိုနှိပ်ပါ။
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-2.png&#34; alt=&#34;NX-OS-2&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Compatibility Warning တက်လာခဲ့လျှင် OK ကိုပဲနှိပ်လိုက်ပါ။
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-3.png&#34; alt=&#34;NX-OS-3&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;I Copied It ကိုနှိပ်ပါ။
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-4.png&#34; alt=&#34;NX-OS-4&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;ပုံထဲကအတိုင်း WARNING ပေါ်ပြီး ရပ်နေပါလိမ့်မယ်။
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-5.png&#34; alt=&#34;NX-OS-5&#34; /&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;VM ကို Shutdown ပြန်လုပ်လိုက်ပါ။
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-6.png&#34; alt=&#34;NX-OS-6&#34; /&gt;
+
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-7.png&#34; alt=&#34;NX-OS-7&#34; /&gt;
+&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;အခု VM ကို အနည်းငယ် Edit လုပ်ရပါမယ်။ ဘာကြောင့်လဲဆိုတော့ မူရင်း vmx ဖိုင်မှာ Serial Port အတွက် ရေးထားတဲ့ config က VMware Fusion မှာ အလုပ်မလုပ်လို့ပါ။&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;အဲဒီအတွက် VM ရဲ့ Setting ကိုဖွင့်လိုက်ပါ။
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-8.png&#34; alt=&#34;NX-OS-8&#34; /&gt;
+&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Serial Port ကိုနှိပ်လိုက်ပါ။
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-9.png&#34; alt=&#34;NX-OS-9&#34; /&gt;
+&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Remove Serial Port ကိုနှိပ်ပြီး Remove လုပ်လိုက်ပါ။
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-10.png&#34; alt=&#34;NX-OS-10&#34; /&gt;
+
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-11.png&#34; alt=&#34;NX-OS-11&#34; /&gt;
+&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add Device ကိုနှိပ်ပါ။
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-12.png&#34; alt=&#34;NX-OS-12&#34; /&gt;
+&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Serial Port ကိုရွေးလိုက်ပါ။
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-13.png&#34; alt=&#34;NX-OS-13&#34; /&gt;
+&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Save As မှာ &lt;strong&gt;Serial_Port&lt;/strong&gt; လို့နာမည်ပေးပြီး Save လိုက်ပါ။
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-14.png&#34; alt=&#34;NX-OS-14&#34; /&gt;
+
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-15.png&#34; alt=&#34;NX-OS-15&#34; /&gt;
+&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;အခု အသစ်ပြုလုပ်ထားတဲ့ Serial_Port ရဲ့ config ကို အနည်းငယ်ပြင်ပါမယ်။ ပုံထဲကအတိုင်း N7K-2.vmx ဆိုတဲ့ ဖိုင်လေးကို Right-Click နှိပ်ပြီး Open With မှာ TextEdit.app ကိုရွေးလိုက်ပါ။&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-16.png&#34; alt=&#34;NX-OS-16&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;အောက်မှာပေးထားတဲ့ config နှစ်ကြောင်းကို Copy ကူးလိုက်ပါ။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;serial0.fileType = &amp;quot;network&amp;quot;
+serial0.fileName = &amp;quot;telnet://localhost:9001&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;vmx config ဖိုင်ထဲက Serial0 နဲ့ဆိုင်တဲ့ နှစ်ကြောင်းကို Select လုပ်ပြီး ကူထားတဲ့ Config နှစ်ကြောင်းနဲ့ Replace လုပ်ပါ။ ပြီးလျှင် Save လိုက်ပါ။ ပြန်ပြင်မရိုက်ပါနဲ့။ ကိုယ်တိုင်ပြန်ပြင်ရိုက်လိုက်လျှင် Double Quote &lt;code&gt;&amp;quot;&lt;/code&gt; ရဲ့ပုံစံ ပြောင်းသွားမှာဖြစ်တဲ့အတွက် VM Run တဲ့အချိန်မှာ Serial Port ကို Connect လုပ်မရတဲ့ပြဿနာ ကြုံရတာကြောင့်ပါ။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;serial0.fileType = &amp;quot;file&amp;quot;
+serial0.fileName = &amp;quot;/[path_to_titanium_directory]/Serial_Port&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-17.png&#34; alt=&#34;NX-OS-17&#34; /&gt;
+
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-18.png&#34; alt=&#34;NX-OS-18&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ပြင်ပြီးပြီဆိုလျှင်တော့ Save လုပ်ပြီး VM ကို ပြန် Run လိုက်ပါ။ အပေါ်မှာတွေ့မြင်ခဲ့ရတဲ့အတိုင်း Warning Message ပြပြီးရပ်နေပါလိမ့်မယ်။ ပြဿနာမရှိပါဘူး ဒီတိုင်းထားလိုက်ပါ။&lt;/li&gt;
+&lt;li&gt;Terminal တစ်ခုဖွင့်ပြီး telnet နဲ့ login ဝင်ပါမယ်။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ telnet localhost 9001
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-19.png&#34; alt=&#34;NX-OS-19&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Boot Loading ပြီးသွားပြီဆိုလျှင်တော့ Login Prompt ကိုတွေ့ရပါမယ်။ ပေးထားတဲ့အတိုင်း Username နဲ့ Password ရိုက်ထည့်ပေးလိုက်ပြီဆိုလျှင်တော့ Privileged Mode ကို Access ရပြီဖြစ်ပါတယ်။
+&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-20.png&#34; alt=&#34;NX-OS-20&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;အခုလောက်ဆိုလျှင်တော့ မိမိစမ်းသပ်လိုရာ Lab ကို တည်ဆောက်လို့ရနိုင်ပြီထင်ပါတယ်။&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Coloring Log Files</title>
