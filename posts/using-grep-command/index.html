@@ -1,0 +1,464 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - Using GREP Command</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/using-grep-command/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/using-grep-command/">Using GREP Command</a></h1>
+	        <div class="post-time">November 1 2015</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com//tags/linux">linux</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/terminal">terminal</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/cli">cli</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/tipstricks">tips&amp;tricks</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        
+
+<p>Unix/Linux ကိုလေ့လာနေသူတွေအနေနဲ့ မသိမဖြစ်တဲ့ Command လေးတစ်ခုပါ။ Text File, Config File, Log File နှင့် Command တစ်ခုကနေထွက်လာတဲ့ Output စတာတွေထဲကမှ လိုအပ်တဲ့ information ကို ရှာဖွေထုတ်ယူတဲ့အခါမျိုးမှာ သုံးလေ့ရှိပါတယ်။ ဘယ်လောက်ထိ အသုံးဝင်၊ အသုံးတည့်တယ်ဆိုတာကတော့ အသုံးချမှုပေါ်မူတည်ပါလိမ့်မယ်။ လေ့လာရလွယ်ကူစေဖို့အတွက် lab environment တစ်ခုပြုလုပ်ကြပါမယ်။ ဒီ Post မှာတော့ Mac OS X အသုံးပြုပြီး ပြပေးထားတာပါ။ ဒါပေမယ့် Linux မှာလည်း အတူတူပါပဲ။</p>
+
+<p>အလျှင်ဦးဆုံး Text Editor တစ်ခုခုသုံးပြီး အောက်မှာ ဖော်ပြထားတဲ့ စာသားတွေပါဝင်တဲ့ Text File တစ်ခုကို Desktop ပေါ်မှာတည်ဆောက်လိုက်ပါ။ File Name ကိုတော့ <code>grep_demo.txt</code> လို့ပေးပြီး Save လုပ်လိုက်ပါ။</p>
+
+<pre><code>a quick brown fox jumps over the lazy dog.
+A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+A Quick Brown Fox Jumps Over The Lazy Dog.
+
+
+There are two blank lines before this.
+This is the End.
+</code></pre>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-1.png" alt="GREP-1" />
+</p>
+
+<p>ဖိုင်တည်ဆောက်ပြီးပြီဆိုလျှင်တော့ Terminal ကိုဖွင့်လိုက်ပါ။ <code>grep_demo.txt</code> ဖိုင်ရှိတဲ့ Desktop Directory ထဲကို ဝင်ပြီး <code>grep_demo1.txt</code> ဆိုတဲ့ဖိုင်တစ်ဖိုင် copy ပွားလိုက်ပါ။ demo နာမည်နဲ့ directory တစ်ခုတည်ဆောက်ပြီး <code>grep_demo.txt</code> ကို ထပ်ပြီး copy ကူထည့်ထားလိုက်ပါ။</p>
+
+<pre><code class="language-sh">$ cd ~/Desktop
+$ cp grep_demo.txt grep_demo1.txt
+$ mkdir demo
+$ cp grep_demo.txt demo
+</code></pre>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-2.png" alt="GREP-2" />
+</p>
+
+<p>File နှင့် Folder Structure ကတော့ အောက်ပါအတိုင်းဖြစ်ပါတယ်။</p>
+
+<pre><code class="language-sh">Desktop
+├── demo
+│   └── grep_demo.txt
+├── grep_demo.txt
+└── grep_demo1.txt
+</code></pre>
+
+<p>အသင့်ဖြစ်ပြီဆိုလျှင်တော့ စတင်လေ့လာကြည့်ကြပါမယ်။</p>
+
+<hr />
+
+<h3 id="ဖ-င-ထ-မ-စ-သ-အ-ရ-ဖ-ခ-င:af7149e4a827f06f74ee5e42b1df9f0f">ဖိုင်ထဲမှစာသားအားရှာဖွေခြင်း</h3>
+
+<p>ပေးထားတဲ့အတိုင်း ဖွင့်ထားတဲ့ Terminal မှာရိုက်ကြည့်လိုက်ပါ။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ grep fox grep_demo.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code>a quick brown fox jumps over the lazy dog.
+</code></pre>
+
+<p>grep_demo.txt ဆိုတဲ့ ဖိုင်ထဲမှာရှိတဲ့ စာသားတွေထဲကမှ စာလုံးအသေးနဲ့ရေးထားတဲ့စာကြောင်း တစ်ကြောင်းထဲကိုရွေးထုတ်ပြီးပြပေးတာတွေ့ရပါလိမ့်မယ်။ အကြောင်းကတော့ <code>fox</code> ဆိုတဲ့စာလုံးပါနေတာကြောင့်ပါပဲ။ ဒီနေရာမှာ မေးစရာရှိတာက <code>fox</code> ဆိုတဲ့ စာလုံးပါတာခြင်းအတူတူ တခြား fox ပါတဲ့စာကြောင်းနှစ်ကြောင်းကိုကျ ဘာလို့မပြတာလည်းဆိုတာပါ။ အဖြေကရှင်းပါတယ်။ Case Sensitive ဖြစ်လို့ပါ။ ကျန်စာကြောင်း နှစ်ကြောင်းမှာက စာလုံးအသေး <code>fox</code> မဟုတ်ပဲ <code>FOX</code> နဲ့ <code>Fox</code> ဖြစ်နေတာကြောင့်ပါ။</p>
+
+<p>Case Sensitive မဖြစ်ပဲ <code>fox</code> ဆိုတဲ့စာလုံးပါတဲ့စာကြောင်းတိုင်းကိုလိုချင်တယ်ဆိုလျှင်တော့ <code>-i</code> (insensitive) option ကိုသုံးနိုင်ပါတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ grep -i fox grep_demo.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code>A Quick Brown Fox Jumps Over The Lazy Dog.
+a quick brown fox jumps over the lazy dog.
+A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+</code></pre>
+
+<p><code>-i</code> ထည့်လိုက်မယ်ဆိုလျှင်တော့ <code>grep_demo.txt</code> ထဲမှာက <code>fox</code> စာလုံးပါတဲ့ စာကြောင်း သုံးကြောင်းလုံးထုတ်ပြပေးတာကို မြင်ရပါလိမ့်မယ်။</p>
+
+<p>အခုနောက်ထပ် <code>the</code> ဆိုတဲ့ စာသားကိုရှာကြည့်ပါမယ်။</p>
+
+<pre><code class="language-sh">$ grep -i the grep_demo.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code>A Quick Brown Fox Jumps Over The Lazy Dog.
+a quick brown fox jumps over the lazy dog.
+A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+There are two blank lines before this.
+This is the End.
+</code></pre>
+
+<p><code>-i</code> သုံးပြီးရှာတာဖြစ်တဲ့အတွက် စားလုံး အကြီး၊ အသေးမရွေးပဲ <code>the</code> ပါတဲစာကြောင်းတိုင်းကိုထုတ်ပြပေးပါလိမ့်မယ်။ ဒါပေမယ့် မြင်တွေ့ရတဲ့အတိုင်း <code>the</code> အတိအကျမဟုတ်ဘဲ <code>There</code> ပါ ပါနေပါတယ်။ ဒါကြောင့် <code>the</code> အတိအကျပါတဲ့ စာကြောင်းတိုင်းလိုချင်တယ်ဆိုလျှင်တော့ <code>-w</code> (word) ကိုသုံးနိုင်ပါတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ grep -i -w the grep_demo.txt
+        (OR)
+$ grep -iw the grep_demo.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code>A Quick Brown Fox Jumps Over The Lazy Dog.
+a quick brown fox jumps over the lazy dog.
+A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+This is the End.
+</code></pre>
+
+<p><code>the</code> အတိအကျပါတဲ့ စာကြောင်းတွေကိုသာထုတ်ပြပေးပြီး <code>There</code> စာကြောင်းပါလာတော့မှာမဟုတ်ပါဘူး။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-3.png" alt="GREP-3" />
+</p>
+
+<p>နောက်တစ်မျိုးအနေနဲ့ သတ်မှတ်စာသားမပါတဲ့ စာကြောင်းတွေကိုဘဲ ရွေးထုတ်ကြည့်ပါမယ်။ အဲဒီအတွက် သုံးရမယ့် option ကတော့ <code>-v</code> (invert) ပါ။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ grep -i -w -v fox grep_demo.txt
+        (OR)
+$ grep -iwv fox grep_demo.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code>
+
+There are two blank lines before this.
+This is the End.
+</code></pre>
+
+<p>Output အနေနဲ့ <code>fox</code> မပါတဲ့ စာကြောင်းနှစ်ကြောင်းနဲ့ blank line နှစ်ကြောင်းကိုတွေ့ရပါလိမ့်မယ်။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-4.png" alt="GREP-4" />
+</p>
+
+<p>သတ်မှတ်စာသားပါဝင်တဲ့ စာကြောင်းအပြင် ကပ်လျှက်ရှိနေတဲ့ စာကြောင်းတချို့ကိုပါပါဝင်ထုတ်ပြပေးစေချင်တယ်ဆိုလျှင်တော့ <code>-A</code> (after) <code>-B</code> (before) တို့သုံးနိုင်ပါတယ်။ <code>-A</code> နဲ့ <code>-B</code> နောက်မှာ parameter အနေနဲ့ စာကြောင်းအရေအတွက်ကိုထည့်ပေးရပါလိမ့်မယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ grep -A 2 FOX grep_demo.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code>A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+
+
+
+</code></pre>
+
+<p><code>-A 2</code> ဖြစ်တဲ့အတွက် <code>FOX</code> ပါတဲ့စာကြောင်းအပြင် အောက်ဘက်ကပ်လျှက် blank line နှစ်ကြောင်းကိုပါထုတ်ပြပေးပါလိမ့်မယ်။ <code>-B 2</code> ဆိုလျှင်တော့ Before ဆိုတဲ့အတိုင်း အပေါ်ဘက်ကပ်လျှက် နှစ်ကြောင်းကိုပါထုတ်ပြပေးမှာပါ။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ grep -B 2 FOX grep_demo.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code>A Quick Brown Fox Jumps Over The Lazy Dog.
+a quick brown fox jumps over the lazy dog.
+A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+</code></pre>
+
+<p>Before ရော After ပါပြပေးစေချင်တယ်ဆိုလျှင်တော့ <code>-C</code> option ကိုသုံးနိုင်ပါတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ grep -C 2 FOX grep_demo.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code>A Quick Brown Fox Jumps Over The Lazy Dog.
+a quick brown fox jumps over the lazy dog.
+A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+
+
+
+
+</code></pre>
+
+<p><code>FOX</code> ပါဝင်တဲ့ စာကြောင်းအပြင် အပေါ် အောက် ကပ်လျှက်စာကြောင်းနှစ်ကြောင်းစီကိုပါမြင်တွေ့ရမှာပါ။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-5.png" alt="GREP-5" />
+</p>
+
+<p>ဖိုင်ထဲမှာရှိတဲ့ သတ်မှတ်စာသားပါဝင်မှုအရေအတွက်ကိုသိချင်လျှင်တော့ <code>-c</code> (count) ကိုသုံးနိုင်ပါတယ်။ Small Letter C ဆိုတာကိုတော့ ဂရုပြုမိမယ်ထင်ပါတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ grep -i -c fox grep_demo.txt
+        (OR)
+$ grep -ic fox grep_demo.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code>3
+</code></pre>
+
+<p><code>fox</code> ကို <code>-i</code> case insensitive နဲ့ရှာဖွေပြီး <code>-c</code> နဲ့ count လုပ်တာဖြစ်တဲ့အတွက် <code>3</code> ဆိုတဲ့ output ကိုမြင်တွေ့ရတာပါ။ <code>-i</code> မပါခဲ့ဘူးဆိုလျှင်တော့ <code>1</code> ဆိုပြီး count တစ်ခုတည်းရပါလိမ့်မယ်။</p>
+
+<p>သတ်မှတ်စာသားတည်ရှိနေတဲ့ Line နံပါတ်ကိုပါ ဖော်ပြပေးစေချင်လျှင်တော့ <code>-n</code> (number) ကိုသုံးနိုင်ပါတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ grep -i -n the grep_demo.txt
+        (OR)
+$ grep -in the grep_demo.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code>1:A Quick Brown Fox Jumps Over The Lazy Dog.
+2:a quick brown fox jumps over the lazy dog.
+3:A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+6:There are two blank lines before this.
+7:This is the End.
+</code></pre>
+
+<p>ရှေ့ဆုံးမှာမြင်တွေ့ရတဲ့ 1,2,3,6,7 ဆိုတာတွေက Line Number ကိုဆိုလိုခြင်းဖြစ်ပါတယ်။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-6.png" alt="GREP-6" />
+</p>
+
+<p>အခုဖော်ပြခဲ့သမျှအားလုံးကတော့ ဖိုင် တစ်ခုထဲက content တွေကို ရှာဖွေတဲ့ နည်းလမ်းတွေပါ။ အကယ်၍ Folder တစ်ခုအောက်မှာရှိသမျှ ဖိုင်အားလုံးထဲက content ကိုရှာချင်တာဆိုလျှင်လည်း <code>*</code> wildcard သုံးနိုင်ပါသေးတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ grep -iw the grep_demo*
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code>grep_demo.txt:A Quick Brown Fox Jumps Over The Lazy Dog.
+grep_demo.txt:a quick brown fox jumps over the lazy dog.
+grep_demo.txt:A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+grep_demo.txt:This is the End.
+grep_demo1.txt:A Quick Brown Fox Jumps Over The Lazy Dog.
+grep_demo1.txt:a quick brown fox jumps over the lazy dog.
+grep_demo1.txt:A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+grep_demo1.txt:This is the End.
+</code></pre>
+
+<p>Desktop ပေါ်က <code>grep_demo.txt</code> နှင့် <code>grep_demo1.txt</code> နှစ်ဖိုင်လုံးမှာပါဝင်သမျှကို မြင်တွေ့ရပါလိမ့်မယ်။ File Name နဲ့ Content ကိုတော့ <code>:</code> နဲ့ခွဲခြားပြီးပြသပေးပါတယ်။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-7.png" alt="GREP-7" />
+</p>
+
+<p><code>File Name:Content</code> တွဲလျှက်မြင်တွေ့ရတာ ရှုပ်ထွေးမယ်ထင်လျှင်တော့ File Name သီးသန့်ကို <code>-l</code> Option နဲ့ ထုတ်ယူနိုင်ပါတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ grep -l the grep_demo*
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code>grep_demo.txt
+grep_demo1.txt
+</code></pre>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-8.png" alt="GREP-8" />
+</p>
+
+<p>နောက်တစ်ခုက ရှာဖွေလိုတဲ့စာသားမှာ Space ပါဝင်နေမယ်ဆိုလျှင်တော့ <code>&quot;&quot;</code> Double Quote နဲ့ ဖော်ပြနိုင်ပါတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ grep -iw &quot;the lazy&quot; grep_demo*
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code>grep_demo.txt:A Quick Brown Fox Jumps Over The Lazy Dog.
+grep_demo.txt:a quick brown fox jumps over the lazy dog.
+grep_demo.txt:A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+grep_demo1.txt:A Quick Brown Fox Jumps Over The Lazy Dog.
+grep_demo1.txt:a quick brown fox jumps over the lazy dog.
+grep_demo1.txt:A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+</code></pre>
+
+<p><code>the lazy</code> ဆိုတဲ့စာသားပါဝင်သမျှကိုမြင်တွေ့ရမှာပါ။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-9.png" alt="GREP-9" />
+</p>
+
+<p>Desktop မှာရှိတဲ့ File နှစ်ခုတင်မဟုတ်ဘဲ <code>demo</code> ဆိုတဲ့ Folder အောက်က File ကိုပါရှာဖွေမယ်ဆိုလျှင်တော့ <code>-r</code> (recursive) ကိုသုံးနိုင်ပါတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ grep -r &quot;the lazy&quot; *
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code>demo/grep_demo.txt:a quick brown fox jumps over the lazy dog.
+grep_demo.txt:a quick brown fox jumps over the lazy dog.
+grep_demo1.txt:a quick brown fox jumps over the lazy dog.
+</code></pre>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-10.png" alt="GREP-10" />
+</p>
+
+<h3 id="command-output-အ-ရ-ဖ-ခ-င:af7149e4a827f06f74ee5e42b1df9f0f">Command Output အားရှာဖွေခြင်း</h3>
+
+<p>Command တစ်ခုက ထွက်လာတဲ့ output ထဲကမှ သတ်မှတ်စာသားပါဝင်တဲ့ စာကြောင်းတွေကိုပဲ ရွေးထုတ်ချင်လျှင်တော့ <code>|</code> (pipe) ကို သုံးရပါတယ်။</p>
+
+<p><code>command | grep -[options] text_to_search</code></p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ netstat -a | grep -i listen
+</code></pre>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-11.png" alt="GREP-11" />
+</p>
+
+<p>အပေါ် နမူနာကတော့ <code>netstat</code> command ကထွက်လာတဲ့ output ထဲကမှ <code>listen</code> ဆိုတဲ့စာသားပါဝင်တဲ့ စာကြောင်းတွေကိုထုတ်ပြပေးတာပဲဖြစ်ပါတယ်။ နောက်ထပ်နမူနာတစ်ခုအနေနဲ့ -</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ history | grep -c fox
+</code></pre>
+
+<p>ဆိုတဲ့ command ကို ရိုက်ကြည့်ပါ။ Terminal မှာ အသုံးပြုထားတဲ့ command တွေထဲ fox ဆိုတဲ့ စာလုံးပါဝင်တဲ့ command အရေအတွက်ကိုမြင်ရပါလိမ့်မယ်။</p>
+
+<hr />
+
+<p><code>GREP</code> မှာ အခြား အသုံးပြုနိုင်တဲ့ Option တွေအများကြီးရှိပါသေးတယ်။ ဒီ post မှာတော့ အသုံးများတဲ့ option လေးတွေကိုပဲဖော်ပြပေးထားတာပါ။ <a href="http://naingyeminn.com/posts/reading-man-page/">Man Page</a> သုံးပြီး ထပ်မံ လေ့လာကြည့်စေချင်ပါတယ်။ နောက်ပြီး RegEx (Regular Expression) သုံးပြီး ရှာဖွေတဲ့နည်းလမ်းတွေလည်းရှိပါသေးတယ်။ အဲဒီအပိုင်းကိုတော့ နောက်ထပ် Post တစ်ခုအနေနဲ့ ထပ်မံဖော်ပြပေးပါဦးမယ်။</p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/using-grep-command/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/nx-os-titanium-on-vmware-fusion/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p>© Naing Ye` Minn 2014</p>
+		        </footer>
+		    </div>
+		  </div>    
+		</div>
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

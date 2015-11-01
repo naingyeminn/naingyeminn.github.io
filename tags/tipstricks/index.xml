@@ -5,7 +5,344 @@
     <link>http://naingyeminn.com/tags/tipstricks/</link>
     <language>en-us</language>
     <author>Alexander Ivanov</author>
-    <updated>2015-10-17 00:00:00 &#43;0000 UTC</updated>
+    <updated>2015-11-01 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>Using GREP Command</title>
+      <link>http://naingyeminn.com/posts/using-grep-command/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 UTC</pubDate>
+      <author>Alexander Ivanov</author>
+      <guid>http://naingyeminn.com/posts/using-grep-command/</guid>
+      <description>
+
+&lt;p&gt;Unix/Linux ကိုလေ့လာနေသူတွေအနေနဲ့ မသိမဖြစ်တဲ့ Command လေးတစ်ခုပါ။ Text File, Config File, Log File နှင့် Command တစ်ခုကနေထွက်လာတဲ့ Output စတာတွေထဲကမှ လိုအပ်တဲ့ information ကို ရှာဖွေထုတ်ယူတဲ့အခါမျိုးမှာ သုံးလေ့ရှိပါတယ်။ ဘယ်လောက်ထိ အသုံးဝင်၊ အသုံးတည့်တယ်ဆိုတာကတော့ အသုံးချမှုပေါ်မူတည်ပါလိမ့်မယ်။ လေ့လာရလွယ်ကူစေဖို့အတွက် lab environment တစ်ခုပြုလုပ်ကြပါမယ်။ ဒီ Post မှာတော့ Mac OS X အသုံးပြုပြီး ပြပေးထားတာပါ။ ဒါပေမယ့် Linux မှာလည်း အတူတူပါပဲ။&lt;/p&gt;
+
+&lt;p&gt;အလျှင်ဦးဆုံး Text Editor တစ်ခုခုသုံးပြီး အောက်မှာ ဖော်ပြထားတဲ့ စာသားတွေပါဝင်တဲ့ Text File တစ်ခုကို Desktop ပေါ်မှာတည်ဆောက်လိုက်ပါ။ File Name ကိုတော့ &lt;code&gt;grep_demo.txt&lt;/code&gt; လို့ပေးပြီး Save လုပ်လိုက်ပါ။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;a quick brown fox jumps over the lazy dog.
+A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+A Quick Brown Fox Jumps Over The Lazy Dog.
+
+
+There are two blank lines before this.
+This is the End.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-1.png&#34; alt=&#34;GREP-1&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;ဖိုင်တည်ဆောက်ပြီးပြီဆိုလျှင်တော့ Terminal ကိုဖွင့်လိုက်ပါ။ &lt;code&gt;grep_demo.txt&lt;/code&gt; ဖိုင်ရှိတဲ့ Desktop Directory ထဲကို ဝင်ပြီး &lt;code&gt;grep_demo1.txt&lt;/code&gt; ဆိုတဲ့ဖိုင်တစ်ဖိုင် copy ပွားလိုက်ပါ။ demo နာမည်နဲ့ directory တစ်ခုတည်ဆောက်ပြီး &lt;code&gt;grep_demo.txt&lt;/code&gt; ကို ထပ်ပြီး copy ကူထည့်ထားလိုက်ပါ။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cd ~/Desktop
+$ cp grep_demo.txt grep_demo1.txt
+$ mkdir demo
+$ cp grep_demo.txt demo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-2.png&#34; alt=&#34;GREP-2&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;File နှင့် Folder Structure ကတော့ အောက်ပါအတိုင်းဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;Desktop
+├── demo
+│   └── grep_demo.txt
+├── grep_demo.txt
+└── grep_demo1.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;အသင့်ဖြစ်ပြီဆိုလျှင်တော့ စတင်လေ့လာကြည့်ကြပါမယ်။&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;ဖ-င-ထ-မ-စ-သ-အ-ရ-ဖ-ခ-င:af7149e4a827f06f74ee5e42b1df9f0f&#34;&gt;ဖိုင်ထဲမှစာသားအားရှာဖွေခြင်း&lt;/h3&gt;
+
+&lt;p&gt;ပေးထားတဲ့အတိုင်း ဖွင့်ထားတဲ့ Terminal မှာရိုက်ကြည့်လိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ grep fox grep_demo.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;a quick brown fox jumps over the lazy dog.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;grep_demo.txt ဆိုတဲ့ ဖိုင်ထဲမှာရှိတဲ့ စာသားတွေထဲကမှ စာလုံးအသေးနဲ့ရေးထားတဲ့စာကြောင်း တစ်ကြောင်းထဲကိုရွေးထုတ်ပြီးပြပေးတာတွေ့ရပါလိမ့်မယ်။ အကြောင်းကတော့ &lt;code&gt;fox&lt;/code&gt; ဆိုတဲ့စာလုံးပါနေတာကြောင့်ပါပဲ။ ဒီနေရာမှာ မေးစရာရှိတာက &lt;code&gt;fox&lt;/code&gt; ဆိုတဲ့ စာလုံးပါတာခြင်းအတူတူ တခြား fox ပါတဲ့စာကြောင်းနှစ်ကြောင်းကိုကျ ဘာလို့မပြတာလည်းဆိုတာပါ။ အဖြေကရှင်းပါတယ်။ Case Sensitive ဖြစ်လို့ပါ။ ကျန်စာကြောင်း နှစ်ကြောင်းမှာက စာလုံးအသေး &lt;code&gt;fox&lt;/code&gt; မဟုတ်ပဲ &lt;code&gt;FOX&lt;/code&gt; နဲ့ &lt;code&gt;Fox&lt;/code&gt; ဖြစ်နေတာကြောင့်ပါ။&lt;/p&gt;
+
+&lt;p&gt;Case Sensitive မဖြစ်ပဲ &lt;code&gt;fox&lt;/code&gt; ဆိုတဲ့စာလုံးပါတဲ့စာကြောင်းတိုင်းကိုလိုချင်တယ်ဆိုလျှင်တော့ &lt;code&gt;-i&lt;/code&gt; (insensitive) option ကိုသုံးနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ grep -i fox grep_demo.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;A Quick Brown Fox Jumps Over The Lazy Dog.
+a quick brown fox jumps over the lazy dog.
+A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;-i&lt;/code&gt; ထည့်လိုက်မယ်ဆိုလျှင်တော့ &lt;code&gt;grep_demo.txt&lt;/code&gt; ထဲမှာက &lt;code&gt;fox&lt;/code&gt; စာလုံးပါတဲ့ စာကြောင်း သုံးကြောင်းလုံးထုတ်ပြပေးတာကို မြင်ရပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;အခုနောက်ထပ် &lt;code&gt;the&lt;/code&gt; ဆိုတဲ့ စာသားကိုရှာကြည့်ပါမယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ grep -i the grep_demo.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;A Quick Brown Fox Jumps Over The Lazy Dog.
+a quick brown fox jumps over the lazy dog.
+A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+There are two blank lines before this.
+This is the End.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;-i&lt;/code&gt; သုံးပြီးရှာတာဖြစ်တဲ့အတွက် စားလုံး အကြီး၊ အသေးမရွေးပဲ &lt;code&gt;the&lt;/code&gt; ပါတဲစာကြောင်းတိုင်းကိုထုတ်ပြပေးပါလိမ့်မယ်။ ဒါပေမယ့် မြင်တွေ့ရတဲ့အတိုင်း &lt;code&gt;the&lt;/code&gt; အတိအကျမဟုတ်ဘဲ &lt;code&gt;There&lt;/code&gt; ပါ ပါနေပါတယ်။ ဒါကြောင့် &lt;code&gt;the&lt;/code&gt; အတိအကျပါတဲ့ စာကြောင်းတိုင်းလိုချင်တယ်ဆိုလျှင်တော့ &lt;code&gt;-w&lt;/code&gt; (word) ကိုသုံးနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ grep -i -w the grep_demo.txt
+        (OR)
+$ grep -iw the grep_demo.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;A Quick Brown Fox Jumps Over The Lazy Dog.
+a quick brown fox jumps over the lazy dog.
+A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+This is the End.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;the&lt;/code&gt; အတိအကျပါတဲ့ စာကြောင်းတွေကိုသာထုတ်ပြပေးပြီး &lt;code&gt;There&lt;/code&gt; စာကြောင်းပါလာတော့မှာမဟုတ်ပါဘူး။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-3.png&#34; alt=&#34;GREP-3&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;နောက်တစ်မျိုးအနေနဲ့ သတ်မှတ်စာသားမပါတဲ့ စာကြောင်းတွေကိုဘဲ ရွေးထုတ်ကြည့်ပါမယ်။ အဲဒီအတွက် သုံးရမယ့် option ကတော့ &lt;code&gt;-v&lt;/code&gt; (invert) ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ grep -i -w -v fox grep_demo.txt
+        (OR)
+$ grep -iwv fox grep_demo.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+
+There are two blank lines before this.
+This is the End.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Output အနေနဲ့ &lt;code&gt;fox&lt;/code&gt; မပါတဲ့ စာကြောင်းနှစ်ကြောင်းနဲ့ blank line နှစ်ကြောင်းကိုတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-4.png&#34; alt=&#34;GREP-4&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;သတ်မှတ်စာသားပါဝင်တဲ့ စာကြောင်းအပြင် ကပ်လျှက်ရှိနေတဲ့ စာကြောင်းတချို့ကိုပါပါဝင်ထုတ်ပြပေးစေချင်တယ်ဆိုလျှင်တော့ &lt;code&gt;-A&lt;/code&gt; (after) &lt;code&gt;-B&lt;/code&gt; (before) တို့သုံးနိုင်ပါတယ်။ &lt;code&gt;-A&lt;/code&gt; နဲ့ &lt;code&gt;-B&lt;/code&gt; နောက်မှာ parameter အနေနဲ့ စာကြောင်းအရေအတွက်ကိုထည့်ပေးရပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ grep -A 2 FOX grep_demo.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;-A 2&lt;/code&gt; ဖြစ်တဲ့အတွက် &lt;code&gt;FOX&lt;/code&gt; ပါတဲ့စာကြောင်းအပြင် အောက်ဘက်ကပ်လျှက် blank line နှစ်ကြောင်းကိုပါထုတ်ပြပေးပါလိမ့်မယ်။ &lt;code&gt;-B 2&lt;/code&gt; ဆိုလျှင်တော့ Before ဆိုတဲ့အတိုင်း အပေါ်ဘက်ကပ်လျှက် နှစ်ကြောင်းကိုပါထုတ်ပြပေးမှာပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ grep -B 2 FOX grep_demo.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;A Quick Brown Fox Jumps Over The Lazy Dog.
+a quick brown fox jumps over the lazy dog.
+A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Before ရော After ပါပြပေးစေချင်တယ်ဆိုလျှင်တော့ &lt;code&gt;-C&lt;/code&gt; option ကိုသုံးနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ grep -C 2 FOX grep_demo.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;A Quick Brown Fox Jumps Over The Lazy Dog.
+a quick brown fox jumps over the lazy dog.
+A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;FOX&lt;/code&gt; ပါဝင်တဲ့ စာကြောင်းအပြင် အပေါ် အောက် ကပ်လျှက်စာကြောင်းနှစ်ကြောင်းစီကိုပါမြင်တွေ့ရမှာပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-5.png&#34; alt=&#34;GREP-5&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;ဖိုင်ထဲမှာရှိတဲ့ သတ်မှတ်စာသားပါဝင်မှုအရေအတွက်ကိုသိချင်လျှင်တော့ &lt;code&gt;-c&lt;/code&gt; (count) ကိုသုံးနိုင်ပါတယ်။ Small Letter C ဆိုတာကိုတော့ ဂရုပြုမိမယ်ထင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ grep -i -c fox grep_demo.txt
+        (OR)
+$ grep -ic fox grep_demo.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;fox&lt;/code&gt; ကို &lt;code&gt;-i&lt;/code&gt; case insensitive နဲ့ရှာဖွေပြီး &lt;code&gt;-c&lt;/code&gt; နဲ့ count လုပ်တာဖြစ်တဲ့အတွက် &lt;code&gt;3&lt;/code&gt; ဆိုတဲ့ output ကိုမြင်တွေ့ရတာပါ။ &lt;code&gt;-i&lt;/code&gt; မပါခဲ့ဘူးဆိုလျှင်တော့ &lt;code&gt;1&lt;/code&gt; ဆိုပြီး count တစ်ခုတည်းရပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;သတ်မှတ်စာသားတည်ရှိနေတဲ့ Line နံပါတ်ကိုပါ ဖော်ပြပေးစေချင်လျှင်တော့ &lt;code&gt;-n&lt;/code&gt; (number) ကိုသုံးနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ grep -i -n the grep_demo.txt
+        (OR)
+$ grep -in the grep_demo.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1:A Quick Brown Fox Jumps Over The Lazy Dog.
+2:a quick brown fox jumps over the lazy dog.
+3:A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+6:There are two blank lines before this.
+7:This is the End.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ရှေ့ဆုံးမှာမြင်တွေ့ရတဲ့ 1,2,3,6,7 ဆိုတာတွေက Line Number ကိုဆိုလိုခြင်းဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-6.png&#34; alt=&#34;GREP-6&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;အခုဖော်ပြခဲ့သမျှအားလုံးကတော့ ဖိုင် တစ်ခုထဲက content တွေကို ရှာဖွေတဲ့ နည်းလမ်းတွေပါ။ အကယ်၍ Folder တစ်ခုအောက်မှာရှိသမျှ ဖိုင်အားလုံးထဲက content ကိုရှာချင်တာဆိုလျှင်လည်း &lt;code&gt;*&lt;/code&gt; wildcard သုံးနိုင်ပါသေးတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ grep -iw the grep_demo*
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;grep_demo.txt:A Quick Brown Fox Jumps Over The Lazy Dog.
+grep_demo.txt:a quick brown fox jumps over the lazy dog.
+grep_demo.txt:A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+grep_demo.txt:This is the End.
+grep_demo1.txt:A Quick Brown Fox Jumps Over The Lazy Dog.
+grep_demo1.txt:a quick brown fox jumps over the lazy dog.
+grep_demo1.txt:A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+grep_demo1.txt:This is the End.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Desktop ပေါ်က &lt;code&gt;grep_demo.txt&lt;/code&gt; နှင့် &lt;code&gt;grep_demo1.txt&lt;/code&gt; နှစ်ဖိုင်လုံးမှာပါဝင်သမျှကို မြင်တွေ့ရပါလိမ့်မယ်။ File Name နဲ့ Content ကိုတော့ &lt;code&gt;:&lt;/code&gt; နဲ့ခွဲခြားပြီးပြသပေးပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-7.png&#34; alt=&#34;GREP-7&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;File Name:Content&lt;/code&gt; တွဲလျှက်မြင်တွေ့ရတာ ရှုပ်ထွေးမယ်ထင်လျှင်တော့ File Name သီးသန့်ကို &lt;code&gt;-l&lt;/code&gt; Option နဲ့ ထုတ်ယူနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ grep -l the grep_demo*
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;grep_demo.txt
+grep_demo1.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-8.png&#34; alt=&#34;GREP-8&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;နောက်တစ်ခုက ရှာဖွေလိုတဲ့စာသားမှာ Space ပါဝင်နေမယ်ဆိုလျှင်တော့ &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt; Double Quote နဲ့ ဖော်ပြနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ grep -iw &amp;quot;the lazy&amp;quot; grep_demo*
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;grep_demo.txt:A Quick Brown Fox Jumps Over The Lazy Dog.
+grep_demo.txt:a quick brown fox jumps over the lazy dog.
+grep_demo.txt:A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+grep_demo1.txt:A Quick Brown Fox Jumps Over The Lazy Dog.
+grep_demo1.txt:a quick brown fox jumps over the lazy dog.
+grep_demo1.txt:A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;the lazy&lt;/code&gt; ဆိုတဲ့စာသားပါဝင်သမျှကိုမြင်တွေ့ရမှာပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-9.png&#34; alt=&#34;GREP-9&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Desktop မှာရှိတဲ့ File နှစ်ခုတင်မဟုတ်ဘဲ &lt;code&gt;demo&lt;/code&gt; ဆိုတဲ့ Folder အောက်က File ကိုပါရှာဖွေမယ်ဆိုလျှင်တော့ &lt;code&gt;-r&lt;/code&gt; (recursive) ကိုသုံးနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ grep -r &amp;quot;the lazy&amp;quot; *
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;demo/grep_demo.txt:a quick brown fox jumps over the lazy dog.
+grep_demo.txt:a quick brown fox jumps over the lazy dog.
+grep_demo1.txt:a quick brown fox jumps over the lazy dog.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-10.png&#34; alt=&#34;GREP-10&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;command-output-အ-ရ-ဖ-ခ-င:af7149e4a827f06f74ee5e42b1df9f0f&#34;&gt;Command Output အားရှာဖွေခြင်း&lt;/h3&gt;
+
+&lt;p&gt;Command တစ်ခုက ထွက်လာတဲ့ output ထဲကမှ သတ်မှတ်စာသားပါဝင်တဲ့ စာကြောင်းတွေကိုပဲ ရွေးထုတ်ချင်လျှင်တော့ &lt;code&gt;|&lt;/code&gt; (pipe) ကို သုံးရပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;command | grep -[options] text_to_search&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ netstat -a | grep -i listen
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-11.png&#34; alt=&#34;GREP-11&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;အပေါ် နမူနာကတော့ &lt;code&gt;netstat&lt;/code&gt; command ကထွက်လာတဲ့ output ထဲကမှ &lt;code&gt;listen&lt;/code&gt; ဆိုတဲ့စာသားပါဝင်တဲ့ စာကြောင်းတွေကိုထုတ်ပြပေးတာပဲဖြစ်ပါတယ်။ နောက်ထပ်နမူနာတစ်ခုအနေနဲ့ -&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ history | grep -c fox
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ဆိုတဲ့ command ကို ရိုက်ကြည့်ပါ။ Terminal မှာ အသုံးပြုထားတဲ့ command တွေထဲ fox ဆိုတဲ့ စာလုံးပါဝင်တဲ့ command အရေအတွက်ကိုမြင်ရပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code&gt;GREP&lt;/code&gt; မှာ အခြား အသုံးပြုနိုင်တဲ့ Option တွေအများကြီးရှိပါသေးတယ်။ ဒီ post မှာတော့ အသုံးများတဲ့ option လေးတွေကိုပဲဖော်ပြပေးထားတာပါ။ &lt;a href=&#34;http://naingyeminn.com/posts/reading-man-page/&#34;&gt;Man Page&lt;/a&gt; သုံးပြီး ထပ်မံ လေ့လာကြည့်စေချင်ပါတယ်။ နောက်ပြီး RegEx (Regular Expression) သုံးပြီး ရှာဖွေတဲ့နည်းလမ်းတွေလည်းရှိပါသေးတယ်။ အဲဒီအပိုင်းကိုတော့ နောက်ထပ် Post တစ်ခုအနေနဲ့ ထပ်မံဖော်ပြပေးပါဦးမယ်။&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>NX-OS Titanium Emulator on VMware Fusion</title>
