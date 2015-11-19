@@ -1,0 +1,179 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - Local Tunnel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/localtunnel/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/localtunnel/">Local Tunnel</a></h1>
+	        <div class="post-time">November 19 2015</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com//tags/review">review</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/foss">foss</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/server">server</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/networking">networking</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        
+
+<p>Web Application Development မှာ လေ့လာမိသလောက် Developer တွေအနေနဲ့ အများအားဖြင့် ကိုယ့်ရဲ့ Site/App ကို နမူနာပြချင်တယ်ဆိုလျှင် Meeting တစ်ခုလုပ် ဖို့ appointment ယူ၊ Client နဲ့တွေ့တဲ့အခါကျမှ ကိုယ့် Laptop မှာ Setup လုပ်ထားတဲ့ Web Server နဲ့ Run ပြကြတာများပါတယ်။ တချို့ကျတော့ Hosting/VPS Server ဝယ်ထားပြီး ကိုယ့်ရဲ့ Code ကို အဲဒီ Server ထဲ Upload လုပ်ပြီးတော့ Online တန်းပြတတ်ကြပါတယ်။ ဒီနည်းလမ်း ၂နည်းမှာ ပထမနည်းလမ်းအရ ပြင်ဆင်မှုတစ်ချို့အတွက် Client ရဲ့သဘောတူညီချက်ရဖို့အရေး Meeting လုပ်ဖို့ ချိန်းဆိုရ သွားရလာရနဲ့ အချိန်ပေးရပါတယ်။ ဒုတိယနည်းကျပြန်တော့ လည်း လုပ်ငန်းတွင်ပေမယ့် Server ကိုရင်းနှီးထားရပါတယ်။ ဒီအခက်အခဲတွေကို ဖြေရှင်းနိုင်ဖို့ကတော့ <a href="http://localtunnel.me/">localtunnel</a> ကိုအသုံးပြုတဲ့နည်းလမ်းပါပဲ။</p>
+
+<p><code>localtunnel</code> ဆိုတာ NodeJS အသုံးပြုပြီးရေးသားထားတဲ့ Tunneling Service ပါ။ ပုံမှန်အတိုင်း Web Server တစ်ခုကို Access လုပ်ဖို့ဆိုလျှင် Public IP ရှိမှ Internet ကိုဖြတ်ပြီး Access လုပ်လို့ရပါတယ်။ အခု ဒီ <code>localtunnel</code> ကတော့ Public IP မရှိဘဲ ကိုယ့် Laptop/Desktop မှာ setup လုပ်ထားတဲ့ Web Server ရဲ့ Site/App ကို Internet ကနေတဆင့် လှမ်းခေါ်ကြည့်ရှုနိုင်အောင်ဆောင်ရွက်ပေးတဲ့ Service လေးပါ။ <code>localtunnel</code> ကိုသုံးဖို့ <a href="https://nodejs.org/en/download/">NodeJS</a> ကို install လုပ်ထားရပါမယ်။ ပြီးလျှင်တော့ <code>npm</code> (Node Package Manager) သုံးပြီး <code>localtunnel</code> ရဲ့ Client Program ကို install ပြုလုပ်လိုက်ရုံပါပဲ။</p>
+
+<hr />
+
+<h3 id="installation:28a91de535badbc38ef67fb9dc2cdb7a">Installation</h3>
+
+<pre><code class="language-sh">$ npm install -g localtunnel
+</code></pre>
+
+<h3 id="usage:28a91de535badbc38ef67fb9dc2cdb7a">Usage</h3>
+
+<p>အသုံးပြုပုံကတော့ ကိုယ့် Web Site/App ရဲ့ port number သုံးပြီး Service ကို Run ပေးရမှာပါ။ ဥပမာ ကိုယ့် Laptop/Desktop မှာ Develop လုပ်နေတဲ့ Site/App ကို <code>http://localhost</code> လို့ခေါ်လိုက်တာနဲ့ တန်းမြင်ရတယ်ဆိုလျှင် -</p>
+
+<pre><code class="language-sh">$ lt --port 80
+</code></pre>
+
+<p>ဆိုတဲ့ HTTP ရဲ့ Default Port (80) နဲ့ command ကို Run ပေးရမှာပါ။ အကယ်၍ <code>http://localhost:8080</code> နဲ့ သုံးထားတယ်ဆိုလျှင်တော့ -</p>
+
+<pre><code class="language-sh">$ lt --port 8080
+</code></pre>
+
+<p>Port Number : 8080 သုံးပြီး run ပေးရုံပါပဲ။</p>
+
+<p>Service စတင်လိုက်ပြီဆိုတာနဲ့ client program က <code>localtunnel.me</code> ကိုလှမ်း Access လုပ်ပြီး ကိုယ့် Site/App အတွက် <code>https://zyxwvut.localtunnel.me</code> ဆိုတာမျိုး Web URL တစ်ခုထုတ်ပေးပါလိမ့်မယ်။ အဲဒီ URL ကိုသုံးပြီး ကိုယ့်ရဲ့ Site/App ကို Internet ကနေတဆင့် Access လုပ်နိုင်မှာဖြစ်ပါတယ်။</p>
+
+<h3 id="how-it-works:28a91de535badbc38ef67fb9dc2cdb7a">How It Works</h3>
+
+<p>အလုပ်လုပ်ပုံကတော့ ပုံမှာပြထားတဲ့အတိုင်း Developer ကသူ့ Site/App ကို Run ထားပြီးပြီဆိုတာနဲ့ <code>localtunnel</code> Client Program ကို run ပါတယ်။ Client Program က သူ့ရဲ့ Server ဖြစ်တဲ့ <code>localtunnel.me</code> ကိုလှမ်း Access လုပ်ပြီး URL ကို Generate လုပ်ပေးပါတယ်။ ရလာတဲ့ URL ကို တဘက်မှာရှိတဲ့ Client(Customer) က သူ့ရဲ့ Web Browser ကနေ ခေါ်လိုက်ပြီဆိုတာနဲ့ <code>localtunnel.me</code> Server ဆီကိုရောက်ပါတယ်။ <code>localtunnel.me</code> ကိုရောက်လာတဲ့ Client Browser ရဲ့ HTTP Request ကို Developer ရဲ့ Laptop/Desktop မှာရှိတဲ့ <code>localtunnel</code> Client Program က Respond ပြန်ပေးတာပါ။ အဲဒီ Request တွေ Respond တွေကို ကြားမှာရှိတဲ့ <code>localtunnel.me</code> Server က Relay အနေနဲ့ အပြန်အလှန်ပို့ပေးတဲ့သဘောပါပဲ။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/localtunnel/localtunnel.png" alt="" />
+</p>
+
+<hr />
+
+<p>ဒီ Service ကိုသုံးပြီး ရှေ့မှာပြောခဲ့သလို Developer တွေအနေနဲ့ ကိုယ့် Web Site/App ကို ကိုယ့်စက်မှာပဲ Host လုပ်ပြီး အဝေးတနေရာက Client ဆီ နမူနာအနေနဲ့ ပေးပို့ပြသချင်တဲ့အခါမျိုးမှာသုံးနိုင်တဲ့အပြင် SysAdmin တွေအနေနဲ့လည်း ရုံးချိန်ပြင်ပ ဒါမှမဟုတ် အဝေးတနေရာရောက်နေချိန် ကိုယ့် Local Server မှာ အရေးတကြီး ပြင်ဆင်စရာရှိလို့ Web-based Control Pannel ကိုဝင်ချင်တဲ့အခါ Junior တစ်ယောက်ယောက်ကို Client Program လေး Run ခိုင်းလိုက်ရုံနဲ့ ရောက်ရာနေရာကနေလှမ်း Access လုပ်လို့ရနိုင်မှာဖြစ်ပါတယ်။</p>
+
+<p><strong>tunnel</strong> တိုင်းကို <strong>https</strong> နဲ့သွားတာဖြစ်တဲ့အတွက် <strong>Secure</strong> ဖြစ်တယ်ဆိုပေမယ့် တကယ့်ကို အရေးတကြီး လိုအပ်တဲ့အချိန်မှသုံးတာပိုစိတ်ချရပါတယ်။ နောက်ပြီး ဒီ Service က Free ဖြစ်တဲ့အတွက် အာမခံချက်မရှိပါဘူး။ Feature စုံစုံလင်လင်နဲ့ Performance ပိုကောင်းပြီး အာမခံချက်ရှိတဲ့ Service လိုချင်တယ်ဆိုလျှင်တော့ <a href="https://ngrok.com">Ngrok</a> ရှိပါတယ်။ Commercial ဖြစ်ပြီး Plan အလိုက် Local Tunnel ပြုလုပ်တာထက်ပိုတဲ့ အခြား Feature တွေအသုံးပြုနိုင်မှာဖြစ်တဲ့အပြင် Free Service လည်းပေးထားပါသေးတယ်။ <code>Ngrok</code> ရဲ့ အားသာချက်ကတော့ NodeJS မလိုပဲ Client Program ဖိုင်လေးတစ်ခုတည်းနဲ့တင် Run လို့ရတာပါ။ အသုံးပြုပုံကလည်း <code>localtunnel</code> နဲ့သိပ်မကွာပါဘူး။ Functionality ပိုင်း ထပ်ဖြည့်ထားတာဖြစ်တဲ့အတွက် Option တွေပိုပါသွားတာလောက်ပါပဲ။</p>
+
+<p><code>localtunnel</code> ရဲ့ <a href="https://github.com/localtunnel/localtunnel">Client Source Code</a> ရော <a href="https://github.com/localtunnel/server">Server Source Code</a> ကိုပါ <strong>MIT License</strong> နဲ့ပဲ မျှဝေပေးထားတာပါ။ ကိုယ်ပိုင် Server တည်ဆောက်ချင်သူတွေအနေနဲ့ လွတ်လပ်စွာ ရယူတည်ဆောက်နိုင်ပါတယ်။ အခြား Programming Language တွေနဲ့ ရေးသားထားတဲ့ အလားတူ Source Code တွေလည်း <strong>Github</strong> မှာရှိပါသေးတယ်။ လူသိနည်းပေမယ့် အသုံးတည့်တဲ့ နည်ပညာလေးတစ်ခုဖြစ်တဲ့အတွက် မျှဝေလိုက်ရပါတယ်။</p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/localtunnel/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/using-grep-command/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p>© Naing Ye` Minn 2014</p>
+		        </footer>
+		    </div>
+		  </div>    
+		</div>
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

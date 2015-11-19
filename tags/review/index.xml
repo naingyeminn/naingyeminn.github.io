@@ -5,7 +5,59 @@
     <link>http://naingyeminn.com/tags/review/</link>
     <language>en-us</language>
     <author>Alexander Ivanov</author>
-    <updated>2014-05-30 00:00:00 &#43;0000 UTC</updated>
+    <updated>2015-11-19 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>Local Tunnel</title>
+      <link>http://naingyeminn.com/posts/localtunnel/</link>
+      <pubDate>Thu, 19 Nov 2015 00:00:00 UTC</pubDate>
+      <author>Alexander Ivanov</author>
+      <guid>http://naingyeminn.com/posts/localtunnel/</guid>
+      <description>
+
+&lt;p&gt;Web Application Development မှာ လေ့လာမိသလောက် Developer တွေအနေနဲ့ အများအားဖြင့် ကိုယ့်ရဲ့ Site/App ကို နမူနာပြချင်တယ်ဆိုလျှင် Meeting တစ်ခုလုပ် ဖို့ appointment ယူ၊ Client နဲ့တွေ့တဲ့အခါကျမှ ကိုယ့် Laptop မှာ Setup လုပ်ထားတဲ့ Web Server နဲ့ Run ပြကြတာများပါတယ်။ တချို့ကျတော့ Hosting/VPS Server ဝယ်ထားပြီး ကိုယ့်ရဲ့ Code ကို အဲဒီ Server ထဲ Upload လုပ်ပြီးတော့ Online တန်းပြတတ်ကြပါတယ်။ ဒီနည်းလမ်း ၂နည်းမှာ ပထမနည်းလမ်းအရ ပြင်ဆင်မှုတစ်ချို့အတွက် Client ရဲ့သဘောတူညီချက်ရဖို့အရေး Meeting လုပ်ဖို့ ချိန်းဆိုရ သွားရလာရနဲ့ အချိန်ပေးရပါတယ်။ ဒုတိယနည်းကျပြန်တော့ လည်း လုပ်ငန်းတွင်ပေမယ့် Server ကိုရင်းနှီးထားရပါတယ်။ ဒီအခက်အခဲတွေကို ဖြေရှင်းနိုင်ဖို့ကတော့ &lt;a href=&#34;http://localtunnel.me/&#34;&gt;localtunnel&lt;/a&gt; ကိုအသုံးပြုတဲ့နည်းလမ်းပါပဲ။&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;localtunnel&lt;/code&gt; ဆိုတာ NodeJS အသုံးပြုပြီးရေးသားထားတဲ့ Tunneling Service ပါ။ ပုံမှန်အတိုင်း Web Server တစ်ခုကို Access လုပ်ဖို့ဆိုလျှင် Public IP ရှိမှ Internet ကိုဖြတ်ပြီး Access လုပ်လို့ရပါတယ်။ အခု ဒီ &lt;code&gt;localtunnel&lt;/code&gt; ကတော့ Public IP မရှိဘဲ ကိုယ့် Laptop/Desktop မှာ setup လုပ်ထားတဲ့ Web Server ရဲ့ Site/App ကို Internet ကနေတဆင့် လှမ်းခေါ်ကြည့်ရှုနိုင်အောင်ဆောင်ရွက်ပေးတဲ့ Service လေးပါ။ &lt;code&gt;localtunnel&lt;/code&gt; ကိုသုံးဖို့ &lt;a href=&#34;https://nodejs.org/en/download/&#34;&gt;NodeJS&lt;/a&gt; ကို install လုပ်ထားရပါမယ်။ ပြီးလျှင်တော့ &lt;code&gt;npm&lt;/code&gt; (Node Package Manager) သုံးပြီး &lt;code&gt;localtunnel&lt;/code&gt; ရဲ့ Client Program ကို install ပြုလုပ်လိုက်ရုံပါပဲ။&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;installation:28a91de535badbc38ef67fb9dc2cdb7a&#34;&gt;Installation&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ npm install -g localtunnel
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;usage:28a91de535badbc38ef67fb9dc2cdb7a&#34;&gt;Usage&lt;/h3&gt;
+
+&lt;p&gt;အသုံးပြုပုံကတော့ ကိုယ့် Web Site/App ရဲ့ port number သုံးပြီး Service ကို Run ပေးရမှာပါ။ ဥပမာ ကိုယ့် Laptop/Desktop မှာ Develop လုပ်နေတဲ့ Site/App ကို &lt;code&gt;http://localhost&lt;/code&gt; လို့ခေါ်လိုက်တာနဲ့ တန်းမြင်ရတယ်ဆိုလျှင် -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ lt --port 80
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ဆိုတဲ့ HTTP ရဲ့ Default Port (80) နဲ့ command ကို Run ပေးရမှာပါ။ အကယ်၍ &lt;code&gt;http://localhost:8080&lt;/code&gt; နဲ့ သုံးထားတယ်ဆိုလျှင်တော့ -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ lt --port 8080
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Port Number : 8080 သုံးပြီး run ပေးရုံပါပဲ။&lt;/p&gt;
+
+&lt;p&gt;Service စတင်လိုက်ပြီဆိုတာနဲ့ client program က &lt;code&gt;localtunnel.me&lt;/code&gt; ကိုလှမ်း Access လုပ်ပြီး ကိုယ့် Site/App အတွက် &lt;code&gt;https://zyxwvut.localtunnel.me&lt;/code&gt; ဆိုတာမျိုး Web URL တစ်ခုထုတ်ပေးပါလိမ့်မယ်။ အဲဒီ URL ကိုသုံးပြီး ကိုယ့်ရဲ့ Site/App ကို Internet ကနေတဆင့် Access လုပ်နိုင်မှာဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;h3 id=&#34;how-it-works:28a91de535badbc38ef67fb9dc2cdb7a&#34;&gt;How It Works&lt;/h3&gt;
+
+&lt;p&gt;အလုပ်လုပ်ပုံကတော့ ပုံမှာပြထားတဲ့အတိုင်း Developer ကသူ့ Site/App ကို Run ထားပြီးပြီဆိုတာနဲ့ &lt;code&gt;localtunnel&lt;/code&gt; Client Program ကို run ပါတယ်။ Client Program က သူ့ရဲ့ Server ဖြစ်တဲ့ &lt;code&gt;localtunnel.me&lt;/code&gt; ကိုလှမ်း Access လုပ်ပြီး URL ကို Generate လုပ်ပေးပါတယ်။ ရလာတဲ့ URL ကို တဘက်မှာရှိတဲ့ Client(Customer) က သူ့ရဲ့ Web Browser ကနေ ခေါ်လိုက်ပြီဆိုတာနဲ့ &lt;code&gt;localtunnel.me&lt;/code&gt; Server ဆီကိုရောက်ပါတယ်။ &lt;code&gt;localtunnel.me&lt;/code&gt; ကိုရောက်လာတဲ့ Client Browser ရဲ့ HTTP Request ကို Developer ရဲ့ Laptop/Desktop မှာရှိတဲ့ &lt;code&gt;localtunnel&lt;/code&gt; Client Program က Respond ပြန်ပေးတာပါ။ အဲဒီ Request တွေ Respond တွေကို ကြားမှာရှိတဲ့ &lt;code&gt;localtunnel.me&lt;/code&gt; Server က Relay အနေနဲ့ အပြန်အလှန်ပို့ပေးတဲ့သဘောပါပဲ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/localtunnel/localtunnel.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;ဒီ Service ကိုသုံးပြီး ရှေ့မှာပြောခဲ့သလို Developer တွေအနေနဲ့ ကိုယ့် Web Site/App ကို ကိုယ့်စက်မှာပဲ Host လုပ်ပြီး အဝေးတနေရာက Client ဆီ နမူနာအနေနဲ့ ပေးပို့ပြသချင်တဲ့အခါမျိုးမှာသုံးနိုင်တဲ့အပြင် SysAdmin တွေအနေနဲ့လည်း ရုံးချိန်ပြင်ပ ဒါမှမဟုတ် အဝေးတနေရာရောက်နေချိန် ကိုယ့် Local Server မှာ အရေးတကြီး ပြင်ဆင်စရာရှိလို့ Web-based Control Pannel ကိုဝင်ချင်တဲ့အခါ Junior တစ်ယောက်ယောက်ကို Client Program လေး Run ခိုင်းလိုက်ရုံနဲ့ ရောက်ရာနေရာကနေလှမ်း Access လုပ်လို့ရနိုင်မှာဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;tunnel&lt;/strong&gt; တိုင်းကို &lt;strong&gt;https&lt;/strong&gt; နဲ့သွားတာဖြစ်တဲ့အတွက် &lt;strong&gt;Secure&lt;/strong&gt; ဖြစ်တယ်ဆိုပေမယ့် တကယ့်ကို အရေးတကြီး လိုအပ်တဲ့အချိန်မှသုံးတာပိုစိတ်ချရပါတယ်။ နောက်ပြီး ဒီ Service က Free ဖြစ်တဲ့အတွက် အာမခံချက်မရှိပါဘူး။ Feature စုံစုံလင်လင်နဲ့ Performance ပိုကောင်းပြီး အာမခံချက်ရှိတဲ့ Service လိုချင်တယ်ဆိုလျှင်တော့ &lt;a href=&#34;https://ngrok.com&#34;&gt;Ngrok&lt;/a&gt; ရှိပါတယ်။ Commercial ဖြစ်ပြီး Plan အလိုက် Local Tunnel ပြုလုပ်တာထက်ပိုတဲ့ အခြား Feature တွေအသုံးပြုနိုင်မှာဖြစ်တဲ့အပြင် Free Service လည်းပေးထားပါသေးတယ်။ &lt;code&gt;Ngrok&lt;/code&gt; ရဲ့ အားသာချက်ကတော့ NodeJS မလိုပဲ Client Program ဖိုင်လေးတစ်ခုတည်းနဲ့တင် Run လို့ရတာပါ။ အသုံးပြုပုံကလည်း &lt;code&gt;localtunnel&lt;/code&gt; နဲ့သိပ်မကွာပါဘူး။ Functionality ပိုင်း ထပ်ဖြည့်ထားတာဖြစ်တဲ့အတွက် Option တွေပိုပါသွားတာလောက်ပါပဲ။&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;localtunnel&lt;/code&gt; ရဲ့ &lt;a href=&#34;https://github.com/localtunnel/localtunnel&#34;&gt;Client Source Code&lt;/a&gt; ရော &lt;a href=&#34;https://github.com/localtunnel/server&#34;&gt;Server Source Code&lt;/a&gt; ကိုပါ &lt;strong&gt;MIT License&lt;/strong&gt; နဲ့ပဲ မျှဝေပေးထားတာပါ။ ကိုယ်ပိုင် Server တည်ဆောက်ချင်သူတွေအနေနဲ့ လွတ်လပ်စွာ ရယူတည်ဆောက်နိုင်ပါတယ်။ အခြား Programming Language တွေနဲ့ ရေးသားထားတဲ့ အလားတူ Source Code တွေလည်း &lt;strong&gt;Github&lt;/strong&gt; မှာရှိပါသေးတယ်။ လူသိနည်းပေမယ့် အသုံးတည့်တဲ့ နည်ပညာလေးတစ်ခုဖြစ်တဲ့အတွက် မျှဝေလိုက်ရပါတယ်။&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>XenServer Installation Problems and Review</title>
