@@ -3,7 +3,7 @@
 // Distributed under GPLv2+ (see COPYING) WITHOUT ANY WARRANTY.
 "use strict";
 
-var datafile = 'https://dl.dropboxusercontent.com/u/26716001/street-photos/nym-gallery/data.json';
+var datafile = 'data.json';
 var padding = 22;
 var duration = 500;
 var thrdelay = 1500;
