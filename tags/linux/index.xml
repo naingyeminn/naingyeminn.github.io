@@ -5,7 +5,314 @@
     <link>http://naingyeminn.com/tags/linux/</link>
     <language>en-us</language>
     <author>Alexander Ivanov</author>
-    <updated>2015-11-01 00:00:00 &#43;0000 UTC</updated>
+    <updated>2016-04-20 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>Using AWK Command</title>
+      <link>http://naingyeminn.com/posts/using-awk-command/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 UTC</pubDate>
+      <author>Alexander Ivanov</author>
+      <guid>http://naingyeminn.com/posts/using-awk-command/</guid>
+      <description>&lt;p&gt;Text File ထဲက Content တွေကိုရှာဖွေတဲ့နေရာမှာ &lt;code&gt;grep&lt;/code&gt; အပြင် နောက်ထပ်သုံးလေ့သုံးထရှိတာကတော့ &lt;code&gt;awk&lt;/code&gt; ဖြစ်ပါတယ်။ Content ရှာတာခြင်တူပေမဲ့ Output ကို Delimiter (သတ်မှတ်ပိုင်းခြားသင်္ကေတ) သုံးပြီးလိုအပ်တဲ့အပိုင်းလောက်ပဲ ခွဲထုတ်ပြသပေးနိုင်တာ သူ့ရဲ့အားသာချက်တစ်ခုပါ။ Default Delimiter ကတော့ Space ဖြစ်ပါတယ်။ Space ခြားထားတဲ့နေရာတွေကနေပိုင်းခြားပြသပေးမှာဖြစ်ပါတယ်။ လက်တွေ့လေ့လာစမ်းသပ်နိုင်ဖို့ လိုအပ်တဲ့ နမူနာ ဖိုင်လေးတစ်ခုအလျှင်ဦးဆုံး ဖန်တီးပါမယ်။&lt;/p&gt;
+
+&lt;p&gt;အောက်မှာပေးထားတဲ့စာသားတွေကို နှစ်သက်ရာ Text Editor တစ်ခုခုထဲကူထည့်ပြီး &lt;code&gt;awktest.txt&lt;/code&gt; ဆိုတဲ့နာမည်နဲ့ Desktop ပေါ်မှာ Save လုပ်လိုက်ပါ။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1 MaungMaung Yangon 2000Ks
+2 KyawKyaw Bago 2500Ks
+3 AyeAye Bago 2500Ks
+4 AungAung Pyay 2000Ks
+5 MaungHla Yangon 3000Ks
+6 KoKo Yangon 3000Ks
+
+7 AyeMaung Bagan 3500Ks
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;awk&lt;/code&gt; command မှာတော့ အပိုင်းသုံးပိုင်းရှိပါတယ်။ Pattern, Procedure နှင့် File တို့ပဲဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;awk &#39;/pattern/ {procedure}&#39; file
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Pattern&lt;/strong&gt; နေရာကတော့ ရှာဖွေမယ့်ဖိုင်ထဲမှာပါဝင်တဲ့ ရှာဖွေလိုတဲ့ စကားလုံး၊ စာသား၊ နံပါတ်၊ သင်္ကေတ စတာတွေကိုသတ်မှတ်ပေးရတာပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Procedure&lt;/strong&gt; ကတော့ Delimiter ရဲ့ ပိုင်းခြားမှုပေါ်မူတည်ပြီး ဘယ်အပိုင်းကို အလျှင်ပြမယ်၊ ဘယ်အပိုင်းကိုတော့ နောက်မှပြမယ် စတာတွေကိုသတ်မှတ်ပေးတာဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;နောက်ဆုံးပိတ် &lt;strong&gt;file&lt;/strong&gt; ကတော့ ရှာဖွေလိုတဲ့ ဖိုင်နာမည်ပဲဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;ပထမဦးဆုံးအနေနဲ့ &lt;code&gt;awktest.txt&lt;/code&gt; ဖိုင်ထဲရှိသမျှစာသားတွေကို &lt;code&gt;awk&lt;/code&gt; သုံးပြီးထုတ်ယူကြည့်ပါမယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk &#39;{print;}&#39; ~/Desktop/awktest.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;1 MaungMaung Yangon 2000Ks
+2 KyawKyaw Bago 2500Ks
+3 AyeAye Bago 2500Ks
+4 AungAung Pyay 2000Ks
+5 MaungHla Yangon 3000Ks
+6 KoKo Minbu 3000Ks
+
+7 AyeMaung Bagan 3500Ks
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;နောက်ထပ်တစ်နည်းအနေနဲ့ &lt;code&gt;print $0&lt;/code&gt; ကိုလည်းသုံးနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk &#39;{print $0}&#39; ~/Desktop/awktest.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;1 MaungMaung Yangon 2000Ks
+2 KyawKyaw Bago 2500Ks
+3 AyeAye Bago 2500Ks
+4 AungAung Pyay 2000Ks
+5 MaungHla Yangon 3000Ks
+6 KoKo Minbu 3000Ks
+
+7 AyeMaung Bagan 3500Ks
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;သတ်မှတ် Colum တစ်ခုတည်းမှာရှိတဲ့ စာကြောင်းအားလုံးရဲ့ တစ်စိပ်တစ်ဒေသကိုသာပြသလိုတယ်ဆိုလျှင်တော့ &lt;code&gt;$&lt;/code&gt; ကိုသုံးပြီး Colum နံပါတ်ကိုသတ်မှတ်ပေးရပါတယ်။ ဒီနေရာမှာ ပိုပြီး နားလည်ရလွယ်ကူစေဖို့ နမူနာဖိုင်ကို awk က ဘယ်လို ဖတ်ယူသလဲဆိုတာကို အလျှင်ရှင်းပြပါ့မယ်။ Default Delimiter က Space ဖြစ်တဲ့အတွက် Space ခြားထားတဲ့နေရာတွေကနေ Colum တွေခွဲသွားမှာဖြစ်ပါတယ်။ Colum ကိုတော့ &lt;code&gt;$1&lt;/code&gt; ကနေစပြီး သတ်မှတ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/awk/awk1.png&#34; alt=&#34;Awk1&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;ဒါကြောင့် ဒုတိယ Colum မှာရှိတဲ့ လူနာမည်တွေကိုပဲခွဲထုတ်ယူချင်တယ်ဆိုလျှင်တော့ -&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk &#39;{print $2}&#39; ~/Desktop/awktest.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;MaungMaung
+KyawKyaw
+AyeAye
+AungAung
+MaungHla
+KoKo
+
+AyeMaung
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Colum 2 နဲ့ 4 ကိုပဲ ထုတ်ယူမယ်ဆိုလျှင်တော့ -&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk &#39;{print $2,$4}&#39; ~/Desktop/awktest.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;MaungMaung 2000Ks
+KyawKyaw 2500Ks
+AyeAye 2500Ks
+AungAung 2000Ks
+MaungHla 3000Ks
+KoKo 3000Ks
+
+AyeMaung 3500Ks
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;အထက်မှာပြခဲ့တဲ့ နမူနာတွေကတော့ Procedure သုံးပြီး ထုတ်ယူတဲ့နည်းတွေပါ။ အခု Pattern ပါသုံးပြီး ထုတ်ကြည့်ပါမယ်။ &lt;code&gt;awktest.txt&lt;/code&gt; ထဲက &lt;code&gt;Maung&lt;/code&gt; ဆိုတဲ့စာသားပါတဲ့ စာကြောင်းတွေကိုပဲရွေးထုတ်ပါမယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk &#39;/Maung/ {print $0}&#39; ~/Desktop/awktest.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;1 MaungMaung Yangon 2000Ks
+5 MaungHla Yangon 3000Ks
+7 AyeMaung Bagan 3500Ks
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Pattern အနေနဲ့ &lt;code&gt;Maung&lt;/code&gt; ဆိုတဲ့စာသားကိုရှာပြီး Procedure အနေနဲ့ &lt;code&gt;$0&lt;/code&gt; ကို သုံးလိုက်တဲ့အတွက် &lt;code&gt;awktest.txt&lt;/code&gt; ထဲရှိသမျှ &lt;code&gt;Maung&lt;/code&gt; ပါတဲ့စာကြောင်းတွေကိုထုတ်ပြသွားတာဖြစ်ပါတယ်။ အကယ်၍များ &lt;code&gt;$2,$4&lt;/code&gt; နှစ်ခုတည်းကိုသာလိုချင်တယ်ဆိုလျှင်တော့ -&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk &#39;/Maung/ {print $2,$4}&#39; ~/Desktop/awktest.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;MaungMaung 2000Ks
+MaungHla 3000Ks
+AyeMaung 3500Ks
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Procedure အနေနဲ့ &lt;code&gt;$2,$4&lt;/code&gt; ဆိုပြီး ထုတ်ယူတဲ့အတွက် နာမည်ပြီးမှ ငွေပမာဏကို ပြပေးတာပါ။ &lt;code&gt;$4,$2&lt;/code&gt; လို့သာသတ်မှတ်မယ်ဆိုလျှင်တော့ ငွေပမာဏကိုအလျှင်ပြပေးပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk &#39;/Maung/ {print $4,$2}&#39; ~/Desktop/awktest.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;2000Ks MaungMaung
+3000Ks MaungHla
+3500Ks AyeMaung
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Awk ရဲ့ နောက်ထပ်ထူးခြားတဲ့အချက်တစ်ခုကတော့ Number တွေကို နှိုင်းယှဉ်ကြည့်နိုင်တာပါပဲ။ &lt;code&gt;$4&lt;/code&gt; မှာရှိတဲ့ ငွေပမာဏတွေထဲကမှ &lt;code&gt;2500Ks&lt;/code&gt; ထက်ပိုတဲ့သူတွေရဲ့ စာရင်းကိုကြည့်ကြည့်ပါမယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk &#39;$4 &amp;gt; &amp;quot;2500Ks&amp;quot;&#39; ~/Desktop/awktest.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;5 MaungHla Yangon 3000Ks
+6 KoKo Yangon 3000Ks
+7 AyeMaung Bagan 3500Ks
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ဒီနေရာမှာတော့ သတိထားရမှာက &lt;code&gt;Greater Than - (&amp;gt;)&lt;/code&gt; နဲ့ &lt;code&gt;Double Quote - (&amp;quot; &amp;quot;)&lt;/code&gt; ပါပဲ။ &lt;code&gt;2500Ks&lt;/code&gt; ထက်များတဲ့ပမာဏကို လိုချင်တာဖြစ်တဲ့အတွက် &lt;code&gt;&amp;gt;&lt;/code&gt; sign ကိုသုံးတာဖြစ်ပြီး &lt;code&gt;&amp;quot; &amp;quot;&lt;/code&gt; ကတော့ &lt;code&gt;2500Ks&lt;/code&gt; တွေမပါအောင်ထည့်ပေးရတာပါ။ &lt;code&gt;&amp;quot; &amp;quot;&lt;/code&gt; မထည့်ဘူးဆိုလျှင်တော့ &lt;code&gt;2500Ks&lt;/code&gt; တွေပါ ပါပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk &#39;$4 &amp;gt; 2500Ks&#39; ~/Desktop/awktest.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;2 KyawKyaw Bago 2500Ks
+3 AyeAye Bago 2500Ks
+5 MaungHla Yangon 3000Ks
+6 KoKo Yangon 3000Ks
+7 AyeMaung Bagan 3500Ks
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;သတ်မှတ်ပမာဏနဲ့ တူညီတဲ့ စာရင်းကိုသာရွေးထုတ်မယ်ဆိုလျှင်တော့ &lt;code&gt;~&lt;/code&gt; ကိုသုံးရပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk &#39;$4 ~ 2500Ks&#39; ~/Desktop/awktest.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;2 KyawKyaw Bago 2500Ks
+3 AyeAye Bago 2500Ks
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Procedure နဲ့တွဲဖက်ပြီးလည်း အသုံးပြုနိုင်ပါသေးတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk &#39;$4 &amp;lt; &amp;quot;3000Ks&amp;quot; {print $2,$4}&#39; ~/Desktop/awktest.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;MaungMaung 2000Ks
+KyawKyaw 2500Ks
+AyeAye 2500Ks
+AungAung 2000Ks
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;စာကြောင်းတစ်ကြောင်းစီရဲ့ အက္ခရာအရေအတွက်ပေါ်မူတည်ပြီး ပိုင်းခြားထုတ်ယူမယ်ဆိုလျှင်တော့ &lt;code&gt;length&lt;/code&gt; ကိုသုံးနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk &#39;length&amp;gt;22&#39; ~/Desktop/awktest.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;1 MaungMaung Yangon 2000Ks
+5 MaungHla Yangon 3000Ks
+7 AyeMaung Bagan 3500Ks
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;အက္ခရာအရေအတွက် ၂၂ထက်ပိုတဲ့စာကြောင်းတွေကိုထုတ်ပြပေးသွားတာပဲဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;Pattern နဲ့ ထုတ်ယူတဲ့နေရာမှာ Regular Expression (RegEx) တွေသုံးနိုင်ပါသေးတယ်။ ဒီနေရာမှာတော့ အသုံးများတဲ့ &lt;code&gt;^&lt;/code&gt; နဲ့ &lt;code&gt;$&lt;/code&gt; တို့ကိုပဲအဓိကထားပြောပြပေးပါမယ်။ &lt;code&gt;^&lt;/code&gt; က စာကြောင်းရဲ့အစကိုဆိုလိုတာဖြစ်ပြီး &lt;code&gt;$&lt;/code&gt; ကတော့ စာကြောင်းအဆုံးကိုဆိုလိုတာဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk &#39;/^2/&#39; ~/Desktop/awktest.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;2 KyawKyaw Bago 2500Ks
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;/^2/&lt;/code&gt; ဆိုတဲ့အတိုင်း 2 နဲ့စတဲ့ စာကြောင်းကိုရွေးထုတ်ပြသပေးသွားတာဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk &#39;/500Ks$/&#39; ~/Desktop/awktest.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;2 KyawKyaw Bago 2500Ks
+3 AyeAye Bago 2500Ks
+7 AyeMaung Bagan 3500Ks
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;/500Ks$/&lt;/code&gt; ကတော့ 500Ks နဲ့ဆုံးတဲ့စာကြောင်းတွေကို မြင်တွေ့ရမှာပါ။ &lt;code&gt;^&lt;/code&gt; က စာကြောင်းရဲ့အစကိုသတ်မှတ်တာဖြစ်တဲ့အတွက် ရှာဖွေလိုတဲ့စာသားရဲ့ အရှေ့မှာရေးရပြီး &lt;code&gt;$&lt;/code&gt; ကတော့ အဆုံးဖြစ်တဲ့အတွက် နောက်မှာထားပြီးရေးရပါတယ်။ ဘာစာသားမှမထည့်ပဲ &lt;code&gt;/^$/&lt;/code&gt; လို့တွဲရေးလိုက်မယ်ဆိုလျှင်တော့ Blank Line တွေကိုပဲထုတ်ပြပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk &#39;/^$/&#39; ~/Desktop/awktest.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Output အနေနဲ့ကတော့ &lt;code&gt;awktest.txt&lt;/code&gt; ရဲ့ 6 နဲ့ 7 ကြားမှာပါနေတဲ့ Blank Line တစ်ခုစာကိုပဲပြပေးမှာဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;နောက်ထပ်အသုံးဝင်တဲ့ RegEx Pattern တစ်ခုကတော့ ထပ်နေတဲ့စာလုံးတွေကိုဖယ်ပြီးပြပေးတာပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk &#39;!x[$3]++ {print $3}&#39; ~/Desktop/awktest.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;Yangon
+Bago
+Pyay
+
+Bagan
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;$3&lt;/code&gt; နေရာမှာရှိတဲ့ မြို့နာမည်တွေကို တူရာစုပြီး တစ်ခုစီထုတ်ပြပေးလိုက်တာပဲဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;အထက်မှာပြသခဲ့တဲ့ နမူနာတွေအကုန်လုံးမှာသုံးခဲ့တဲ့ &lt;code&gt;awktest.txt&lt;/code&gt; ဖိုင်က Default Delimiter ဖြစ်တဲ့ Space ကိုပဲသုံးထားတာကြောင့် Delimiter ကို သီးသန့်သတ်မှတ်ပေးစရာမလိုတာပါ။ အကယ်၍ &lt;code&gt;/etc/passwd&lt;/code&gt; ဖိုင်လို &lt;code&gt;:&lt;/code&gt; နဲ့ပိုင်းခြားထားတဲ့ဖိုင်မျိုးဆိုလျှင်တော့ Delimiter သတ်မှတ်ပေးရပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ awk -F: &#39;{print $1,$6}&#39; /etc/passwd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;root /root
+bin /bin
+daemon /sbin
+adm /var/adm
+lp /var/spool/lpd
+sync /sbin
+shutdown /sbin
+halt /sbin
+mail /var/spool/mail
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;အခုရှင်ပြထားသလောက်က Awk ရဲ့ အသုံးများ တဲ့နည်းလမ်းလေးတွေပဲဖြစ်ပါတယ်။ တကယ်တမ်း Awk ကိုလေ့လာမယ်ဆိုလျှင် Programming Language တစ်ခုလေ့လာရသလောက်ကို အချိန်ပေးပြီးလေ့လာရပါလိမ့်မယ်။ သို့ပေမယ့် SysAdmin တစ်ယောက်အနေနဲ့ သာမာန် Log Analysis လုပ်ဖို့အတွက်လောက်ဆိုလျှင်တော့ အခုလေ့လာရသလောက်ကိုပဲ အနည်းငယ်ကွန့်မြူးလိုက်ရုံနဲ့ အလုပ်ဖြစ်နိုင်ပါတယ်။ ဒါကြောင့် ဒီလောက်နဲ့ပဲရပ်ထားလိုက်ပါမယ်။ လိုအပ်ချက်များ၊ ထပ်မံဖြည့်စွက်စေလိုသည့်အချက်များရှိခဲ့လျှင်လည်း အကြံပြုပေးစေချင်ပါတယ်။&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Using GREP Command</title>
