@@ -1,0 +1,524 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - Using SED Command</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/using-sed-command/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/using-sed-command/">Using SED Command</a></h1>
+	        <div class="post-time">May 8 2016</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com//tags/linux">linux</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/terminal">terminal</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/cli">cli</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/tipstricks">tips&amp;tricks</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        <p><code>sed</code> ဆိုတာ Stream Editor အတိုကောက်ပါ။ command တစ်ခုခုရဲ့ output text stream ကိုဖြစ်စေ၊ file ထဲက text တွေကိုဖြစ်စေ ရှာဖွေခြင်း၊ ပြင်ဆင်ခြင်းများပြုလုပ်နိုင်ပါတယ်။ <a href="http://naingyeminn.com/posts/using-grep-command/">grep</a>, <a href="http://naingyeminn.com/posts/using-awk-command/">awk</a> တို့နဲ့အမြဲတွဲသုံးလေ့ရှိပါတယ်။ <code>sed</code> ကိုလေ့လာဖို့ ထုံးစံအတိုင်း လိုအပ်တဲ့ဖိုင်လေးတစ်ခုပြုလုပ်ပါမယ်။</p>
+
+<pre><code class="language-sh">#Yangon Regions
+#
+Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+Kawthmu Kungyangon
+CocoIsland
+Yangon
+</code></pre>
+
+<p>ပေးထားတဲ့ Text ကို Text Editor တစ်ခုခုထဲ ကူးထည့်ပြီး <code>ygn.txt</code> နာမည်နဲ့ Desktop ပေါ်မှာ Save လုပ်လိုက်ပါ။</p>
+
+<p><code>sed</code> command ရဲ့ အခြေခံအသုံးပြုပုံကတော့ အောက်ပါအတိုင်းဖြစ်ပါတယ်။</p>
+
+<pre><code class="language-sh">sed [option] 'commands' file_to_edit
+</code></pre>
+
+<p>အခု <code>ygn.txt</code> ဖိုင်ရဲ့ content အားလုံးကို ထုတ်ကြည့်ပါမယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed '' ~/Desktop/ygn.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">#Yangon Regions
+#
+Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+Kawthmu Kungyangon
+CocoIsland
+Yangon
+</code></pre>
+
+<p>ဘာ option ဘာ command မှထည့်မထားတဲ့အတွက် အရှိအတိုင်းပဲ ထုတ်ပြပေးသွားတာပါ။ ဒီတစ်ခါတော့ <strong>Print</strong> command <code>p</code> ကို သုံးကြည့်ပါမယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed 'p' ~/Desktop/ygn.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">#Yangon Regions
+#Yangon Regions
+#
+#
+Htaukkyant Mhawbi Hlegu
+Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Taikgyi Okkan
+Apyauk
+Apyauk
+Htantabin Shwepyaytha
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+HlaingTharyar DagonMyothit
+
+
+Thanlyin Kyauktan Thonegwa
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+KhaYan Twante
+Kawthmu Kungyangon
+Kawthmu Kungyangon
+CocoIsland
+CocoIsland
+Yangon
+Yangon
+</code></pre>
+
+<p>ရှိရှိသမျှစာကြောင်းတိုင်းကို ၂ကြိမ်ဆီရိုက်ထုတ်ပြတာကိုတွေ့ရမှာဖြစ်ပါတယ်။ ဘာကြောင့်လဲဆိုတော့ <code>sed</code> command က အလိုအလျှောက် ရိုက်ထုတ်ပေးတာကို <code>p</code> command နဲ့ ထပ်ပြီး print ထုတ်ခိုင်းလိုက်တဲ့အတွက်ကြောင့်ပါ။ စာကြောင်းတစ်ကြောင်းကို ၂ကြိမ်၂ကြိမ်ဆီရိုက်ထုတ်သွားတာကို ကြည့်ခြင်းအားဖြင့် ပေးလိုက်တဲ့ command ကို <code>sed</code> က တစ်ကြောင်းခြင်း process လုပ်တယ်ဆိုတာ သဘောပေါက်မယ်ထင်ပါတယ်။ Command အတိအကျပေးပြီး ထုတ်ခိုင်းတဲ့ result ကိုသာလိုချင်တယ်ဆိုလျှင်တော့ <code>-n</code> option ကိုသုံးရပါလိမ့်မယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed -n 'p' ~/Desktop/ygn.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">#Yangon Regions
+#
+Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+Kawthmu Kungyangon
+CocoIsland
+Yangon
+</code></pre>
+
+<p>ဒီတစ်ခါတော့ ဖိုင်ထဲက လိုချင်တဲ့စာကြောင်းကိုပဲ ရွေးထုတ်ကြည့်ပါမယ်။</p>
+
+<p>ပထမဦးဆုံးစာကြောင်း -</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed -n '1p' ~/Desktop/ygn.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">#Yangon Regions
+</code></pre>
+
+<p>ခုနစ်ကြောင်းမြောက်စာကြောင်း -</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed -n '7p' ~/Desktop/ygn.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">HlaingTharyar DagonMyothit
+</code></pre>
+
+<p>နောက်ဆုံးစာကြောင်း -</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed -n '$p' ~/Desktop/ygn.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">Yangon
+</code></pre>
+
+<p>၃ကြောင်းမြောက်ကနေ ၇ကြောင်းမြောက်ထိကိုလိုချင်လျှင်တော့ comma (<code>,</code>) ခံပြီးရေးပေးရုံပါပဲ။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed -n '3,7p' ~/Desktop/ygn.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+</code></pre>
+
+<p>၃ကြောင်းမြောက်နဲ့ ၇ကြောင်းမြောက်အတွင်းမှာရှိတဲ့ စာကြောင်း ၅ကြောင်းကိုဖယ်ပြီးကျန်တဲ့စာကြောင်းအားလုံးကို လိုချင်လျှင်တော့ <code>!p</code> ကိုသုံးရပါတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed -n '3,7!p' ~/Desktop/ygn.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">#Yangon Regions
+#
+
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+Kawthmu Kungyangon
+CocoIsland
+Yangon
+</code></pre>
+
+<p>အခု နောက်ထပ်တစ်နည်းအနေနဲ့ RegEx (Regular Expression) ကိုသုံးပြီး ရှာဖွေကြည့်ပါမယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed -n '/yangon/p' ~/Desktop/ygn.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">Kawthmu Kungyangon
+</code></pre>
+
+<p><code>#Yangon Regions</code>, <code>Kawthmu Kungyangon</code> နဲ့ <code>Yangon</code> ဆိုပြီး သုံးကြောင်းရှိပေမယ့် စာလုံး အကြီး၊ အသေး ကွဲပြားတာကြောင့် <code>Y</code> အကြီးနဲ့ရေးထားတဲ့စာကြောင်းတွေမပါလာပဲ ကွက်တိမတူပေမယ့် <code>yangon</code> ဆိုတဲ့စာလုံးတွဲပါတဲ့ <code>Kungyangon</code> ကိုထုတ်ပြပေးတာပါ။ <code>Y</code> အကြီး၊ အသေး ၂မျိုးလုံးပါစေချင်တယ်ဆိုလျှင်တော့ <code>[]</code> ထဲထည့်ရေးပေးလိုက်ပါ။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed -n '/[Yy]angon/p' ~/Desktop/ygn.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">#Yangon Regions
+Kawthmu Kungyangon
+Yangon
+</code></pre>
+
+<p><code>Hta</code> နဲ့စတဲ့စာကြောင်းတွေကိုလိုချင်တယ်ဆိုလျှင်တော့ RegEx ရဲ့ <code>^</code> ကို သုံးနိုင်ပါတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed -n '/^Hta/p' ~/Desktop/ygn.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">Htaukkyant Mhawbi Hlegu
+Htantabin Shwepyaytha
+</code></pre>
+
+<p>စာကြောင်းအစကို <code>^</code> နဲ့သတ်မှတ်သလို အဆုံးကိုလည်း <code>$</code> နဲ့သတ်မှတ်ပါတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed -n '/Twante$/p' ~/Desktop/ygn.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">KhaYan Twante
+</code></pre>
+
+<p>အစ <code>^</code> နဲ့ အဆုံး <code>$</code> ကိုဘာစာလုံးနဲ့မှမတွဲပဲ နှစ်ခုတည်း <code>^$</code> အနေနဲ့ တွဲလိုက်လျှင်တော့ Blank Line ကိုဆိုလိုတာပါ။ နမူနာဖိုင်ရဲ့ ၈ကြောင်းမြောက်မှာ ဘာစာသားမှမရေးထားပဲ တစ်ကြောင်းကျော်ထားတာရှိပါတယ်။ အဲဒီလို Blank Line တွေကို မပါစေချင်ဘူးဆိုလျှင်တော့ <code>d</code> command ကိုသုံးပြီးဖယ်ထုတ်ပြသနိုင်ပါတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed '/^$/d' ~/Desktop/ygn.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">#Yangon Regions
+#
+Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+Kawthmu Kungyangon
+CocoIsland
+Yangon
+</code></pre>
+
+<p><code>-n</code> option မသုံးထားတာကို သတိထားမိမယ်ထင်ပါတယ်။ <code>p</code> (print) command မဟုတ်တဲ့အတွက်ကြောင့်ပါ။</p>
+
+<p>Blank Line တွေမပါတဲ့ သီးသန့် ဖိုင်တစ်ခုပြလုပ်ချင်တယ်ဆိုလျှင်တော့ <code>&gt;</code> နဲ့ <code>sed</code> ရဲ့ output ကို ဖိုင်နာမည်တစ်ခုနဲ့ redirect လုပ်ပြီး သိမ်းနိုင်ပါတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed '/^$/d' ~/Desktop/ygn.txt &gt; ~/Desktop/ygn2.txt
+cat ~/Desktop/ygn2.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">#Yangon Regions
+#
+Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+Kawthmu Kungyangon
+CocoIsland
+Yangon
+</code></pre>
+
+<p>ဒီနည်းအတိုင်း <code>d</code> command နဲ့ မလိုအပ်တဲ့ စာကြောင်းတွေကိုဖယ်ရှားနိုင်ပါသေးတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed '/^#/d' ~/Desktop/ygn.txt &gt; ~/Desktop/ygn2.txt
+cat ~/Desktop/ygn2.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+Kawthmu Kungyangon
+CocoIsland
+Yangon
+</code></pre>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed '/[Yy]angon/d' ~/Desktop/ygn.txt &gt; ~/Desktop/ygn2.txt
+cat ~/Desktop/ygn2.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">#
+Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+CocoIsland
+</code></pre>
+
+<p><code>sed</code> ကို ရှာဖွေတာ နဲ့ ရှင်းထုတ်တာအပြင် နောက်ထပ် အဓိကအနေနဲ့ အသုံးများတဲ့နည်းလမ်းကတော့ အစားထိုးပြင်ဆင်တာပါပဲ။ Text Editor တွေမှာပါတဲ့ Find and Replace ဆိုတာမျိုးကို <code>sed</code> က ဆောင်ရွက်ပေးနိုင်ပါတယ်။ တစ်နည်းအားဖြင့်ပြောရရင် Substitution ပါပဲ။ အဲဒီအတွက် <code>s</code> command ကိုသုံးပါမယ်။ အသုံးပြုပုံကတော့ အောက်ပါအတိုင်းဖြစ်ပါတယ်။</p>
+
+<pre><code class="language-sh">$ sed 's/[old_word]/[new_word]/' file_to_edit
+</code></pre>
+
+<p><code>Yangon</code> ကို <code>Rangoon</code> နဲ့အစားထိုးကြည့်ပါမယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed 's/Yangon/Rangoon/' ~/Desktop/ygn.txt
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">#Rangoon Regions
+#
+Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+Kawthmu Kungyangon
+CocoIsland
+Rangoon
+</code></pre>
+
+<p><code>'s/Yangon/Rangoon/'</code> ဆိုတဲ့နေရာမှာ <code>s</code> က (substitute) command ဖြစ်ပြီး <code>/</code> သုံးခုကတော့ delimiter အနေနဲ့ စာသားကို ပိုင်းခြားသတ်မှတ်ပေးတာဖြစ်ပါတယ်။ <code>/</code> အစား တခြား character တွေကိုလည်းသုံးနိုင်ပါတယ်။ ဥပမာ <code>/</code> တွေအများကြီးပါတဲ့ url လို စာသားမျိုးကို ပြင်ဆင်တဲ့နေရာမှာ <code>/</code> နဲ့ ခွဲခြားသတ်မှတ်မယ်ဆိုလျှင် ရှုပ်ထွေးသွားနိုင်တဲ့အတွက် <code>/</code> အစား <code>_</code> နဲ့ပြောင်းလဲအသုံးပြုနိုင်ပါတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ echo &quot;http://naingyeminn.net/post/2/&quot; | sed 's_net/post_com/page_'
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">http://naingyeminn.com/page/2/
+</code></pre>
+
+<p>delimiter ကိုတော့ သုံးနေရာမှန်မှန်ကန်ကန်ထားရှိဖို့တော့လိုပါတယ်။ <code>/</code> မဟုတ်ပဲ အခြား character ပြောင်းသုံးတဲ့နေရာမှာ နောက်ဆုံး အပိတ် delimiter ကိုမေ့ကျန်လေ့ရှိတတ်ပါတယ်။ ကျန်နေခဲ့လျှင်တော့ Error Message ပြပါလိမ့်မယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ echo &quot;http://naingyeminn.net/post/2/&quot; | sed 's_net/post_com/page'
+</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre><code class="language-sh">sed: 1: &quot;s_net/post_com/page&quot;: unterminated substitute in regular expression
+</code></pre>
+
+<p>ပြန်လည်ပြင်ဆင်တာ အစားထိုးတာတွေလုပ်ပြီးတဲ့အခါမှာ အဲဒီ ပြင်ဆင် အစားထိုးတာတွေကို အထက်မှာပြောခဲ့တဲ့နည်းအတိုင်း <code>&gt;</code> နဲ့ ဖိုင်နာမည်တစ်ခုပေးပြီး သိမ်းနိုင်ပါတယ်။ အဲလိုမှမဟုတ်ပဲ မူရင်းဖိုင်မှာပဲ overwrite လုပ်ချင်တယ်ဆိုလျှင်တော့ <code>-i</code> option ကိုသုံးနိုင်ပါတယ်။</p>
+
+<p><strong>Command</strong></p>
+
+<pre><code class="language-sh">$ sed -i.bak 's/Yangon/Rangoon/' ygn.txt
+</code></pre>
+
+<p>Output အနေနဲ့ screen မှာမတွေ့ရပေမယ့် <code>ygn.txt</code> ထဲမှာတော့ <code>Rangoon</code> တွေ ဖြစ်သွားပါလိမ့်မယ်။ <code>-i</code> နောက်မှာ <code>.bak</code> လို့တွဲထည့်ထားတာကတော့ မူရင်း <code>Yangon</code> နဲ့ဖိုင်ကို <code>ygn.txt</code> ကို backup အနေနဲ့  <code>ygn.txt.bak</code> ဆိုပြီးပြောင်းပြီး သိမ်းစေဖို့ပါ။</p>
+
+<p><code>sed</code> version ပေါ်မူတည်ပြီး <code>-i</code> အသုံးပြုပုံကကွာခြားပါတယ်။ အချို့ Operating System တွေမှာတော့ <code>-i</code> နောက်မှာ backup အတွက် <code>.bak</code> value မျိုး ထည့်ပေးစရာမလိုပဲ original ဖိုင်ကို တမ်းပြောင်းနိုင်ပါတယ်။ နောက်ပိုင်း version တွေမှာတော့ မှားပြီး ပြောင်းမိတာမျိုးမဖြစ်ရအောင် မဖြစ်မနေ backup သိမ်းရပါတယ်။</p>
+
+<p>အခု ရှင်းလင်းပြသထားတဲ့ အသုံးပြုပုံတွေက <code>sed</code> ကိုနားလည်နိုင်ရုံ အခြေခံလောက်ပဲဖြစ်ပါတယ်။ RegEx နဲ့တွဲဖက်ပြီး Text/Data Processing တွေ၊ Automation တွေ မျိုးစုံပြုလုပ်အသုံးပြုနိုင်ပါတယ်။ SysAdmin တွေအတွက်သာမက Developer တွေအတွက်ပါ အလွန်အသုံးဝင်တဲ့ tool တစ်ခုဖြစ်တဲ့အတွက် ဒီထက်ပိုပြီးလေ့လာဖို့တိုက်တွန်းချင်ပါတယ်။</p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/using-sed-command/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/using-awk-command/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p class="contact">Copyright © 2014 <a href="mailto:me@naingyeminn.com">Naing Ye` Minn</a></p>
+		        </footer>
+		    </div>
+		  </div>    
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

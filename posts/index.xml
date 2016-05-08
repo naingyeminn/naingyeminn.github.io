@@ -5,7 +5,405 @@
     <link>http://naingyeminn.com/posts/</link>
     <language>en-us</language>
     <author>Alexander Ivanov</author>
-    <updated>2016-04-20 00:00:00 &#43;0000 UTC</updated>
+    <updated>2016-05-08 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>Using SED Command</title>
+      <link>http://naingyeminn.com/posts/using-sed-command/</link>
+      <pubDate>Sun, 08 May 2016 00:00:00 UTC</pubDate>
+      <author>Alexander Ivanov</author>
+      <guid>http://naingyeminn.com/posts/using-sed-command/</guid>
+      <description>&lt;p&gt;&lt;code&gt;sed&lt;/code&gt; ဆိုတာ Stream Editor အတိုကောက်ပါ။ command တစ်ခုခုရဲ့ output text stream ကိုဖြစ်စေ၊ file ထဲက text တွေကိုဖြစ်စေ ရှာဖွေခြင်း၊ ပြင်ဆင်ခြင်းများပြုလုပ်နိုင်ပါတယ်။ &lt;a href=&#34;http://naingyeminn.com/posts/using-grep-command/&#34;&gt;grep&lt;/a&gt;, &lt;a href=&#34;http://naingyeminn.com/posts/using-awk-command/&#34;&gt;awk&lt;/a&gt; တို့နဲ့အမြဲတွဲသုံးလေ့ရှိပါတယ်။ &lt;code&gt;sed&lt;/code&gt; ကိုလေ့လာဖို့ ထုံးစံအတိုင်း လိုအပ်တဲ့ဖိုင်လေးတစ်ခုပြုလုပ်ပါမယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;#Yangon Regions
+#
+Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+Kawthmu Kungyangon
+CocoIsland
+Yangon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ပေးထားတဲ့ Text ကို Text Editor တစ်ခုခုထဲ ကူးထည့်ပြီး &lt;code&gt;ygn.txt&lt;/code&gt; နာမည်နဲ့ Desktop ပေါ်မှာ Save လုပ်လိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sed&lt;/code&gt; command ရဲ့ အခြေခံအသုံးပြုပုံကတော့ အောက်ပါအတိုင်းဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;sed [option] &#39;commands&#39; file_to_edit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;အခု &lt;code&gt;ygn.txt&lt;/code&gt; ဖိုင်ရဲ့ content အားလုံးကို ထုတ်ကြည့်ပါမယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed &#39;&#39; ~/Desktop/ygn.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;#Yangon Regions
+#
+Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+Kawthmu Kungyangon
+CocoIsland
+Yangon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ဘာ option ဘာ command မှထည့်မထားတဲ့အတွက် အရှိအတိုင်းပဲ ထုတ်ပြပေးသွားတာပါ။ ဒီတစ်ခါတော့ &lt;strong&gt;Print&lt;/strong&gt; command &lt;code&gt;p&lt;/code&gt; ကို သုံးကြည့်ပါမယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed &#39;p&#39; ~/Desktop/ygn.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;#Yangon Regions
+#Yangon Regions
+#
+#
+Htaukkyant Mhawbi Hlegu
+Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Taikgyi Okkan
+Apyauk
+Apyauk
+Htantabin Shwepyaytha
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+HlaingTharyar DagonMyothit
+
+
+Thanlyin Kyauktan Thonegwa
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+KhaYan Twante
+Kawthmu Kungyangon
+Kawthmu Kungyangon
+CocoIsland
+CocoIsland
+Yangon
+Yangon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ရှိရှိသမျှစာကြောင်းတိုင်းကို ၂ကြိမ်ဆီရိုက်ထုတ်ပြတာကိုတွေ့ရမှာဖြစ်ပါတယ်။ ဘာကြောင့်လဲဆိုတော့ &lt;code&gt;sed&lt;/code&gt; command က အလိုအလျှောက် ရိုက်ထုတ်ပေးတာကို &lt;code&gt;p&lt;/code&gt; command နဲ့ ထပ်ပြီး print ထုတ်ခိုင်းလိုက်တဲ့အတွက်ကြောင့်ပါ။ စာကြောင်းတစ်ကြောင်းကို ၂ကြိမ်၂ကြိမ်ဆီရိုက်ထုတ်သွားတာကို ကြည့်ခြင်းအားဖြင့် ပေးလိုက်တဲ့ command ကို &lt;code&gt;sed&lt;/code&gt; က တစ်ကြောင်းခြင်း process လုပ်တယ်ဆိုတာ သဘောပေါက်မယ်ထင်ပါတယ်။ Command အတိအကျပေးပြီး ထုတ်ခိုင်းတဲ့ result ကိုသာလိုချင်တယ်ဆိုလျှင်တော့ &lt;code&gt;-n&lt;/code&gt; option ကိုသုံးရပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed -n &#39;p&#39; ~/Desktop/ygn.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;#Yangon Regions
+#
+Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+Kawthmu Kungyangon
+CocoIsland
+Yangon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ဒီတစ်ခါတော့ ဖိုင်ထဲက လိုချင်တဲ့စာကြောင်းကိုပဲ ရွေးထုတ်ကြည့်ပါမယ်။&lt;/p&gt;
+
+&lt;p&gt;ပထမဦးဆုံးစာကြောင်း -&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed -n &#39;1p&#39; ~/Desktop/ygn.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;#Yangon Regions
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ခုနစ်ကြောင်းမြောက်စာကြောင်း -&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed -n &#39;7p&#39; ~/Desktop/ygn.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;HlaingTharyar DagonMyothit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;နောက်ဆုံးစာကြောင်း -&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed -n &#39;$p&#39; ~/Desktop/ygn.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;Yangon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;၃ကြောင်းမြောက်ကနေ ၇ကြောင်းမြောက်ထိကိုလိုချင်လျှင်တော့ comma (&lt;code&gt;,&lt;/code&gt;) ခံပြီးရေးပေးရုံပါပဲ။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed -n &#39;3,7p&#39; ~/Desktop/ygn.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;၃ကြောင်းမြောက်နဲ့ ၇ကြောင်းမြောက်အတွင်းမှာရှိတဲ့ စာကြောင်း ၅ကြောင်းကိုဖယ်ပြီးကျန်တဲ့စာကြောင်းအားလုံးကို လိုချင်လျှင်တော့ &lt;code&gt;!p&lt;/code&gt; ကိုသုံးရပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed -n &#39;3,7!p&#39; ~/Desktop/ygn.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;#Yangon Regions
+#
+
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+Kawthmu Kungyangon
+CocoIsland
+Yangon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;အခု နောက်ထပ်တစ်နည်းအနေနဲ့ RegEx (Regular Expression) ကိုသုံးပြီး ရှာဖွေကြည့်ပါမယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed -n &#39;/yangon/p&#39; ~/Desktop/ygn.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;Kawthmu Kungyangon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;#Yangon Regions&lt;/code&gt;, &lt;code&gt;Kawthmu Kungyangon&lt;/code&gt; နဲ့ &lt;code&gt;Yangon&lt;/code&gt; ဆိုပြီး သုံးကြောင်းရှိပေမယ့် စာလုံး အကြီး၊ အသေး ကွဲပြားတာကြောင့် &lt;code&gt;Y&lt;/code&gt; အကြီးနဲ့ရေးထားတဲ့စာကြောင်းတွေမပါလာပဲ ကွက်တိမတူပေမယ့် &lt;code&gt;yangon&lt;/code&gt; ဆိုတဲ့စာလုံးတွဲပါတဲ့ &lt;code&gt;Kungyangon&lt;/code&gt; ကိုထုတ်ပြပေးတာပါ။ &lt;code&gt;Y&lt;/code&gt; အကြီး၊ အသေး ၂မျိုးလုံးပါစေချင်တယ်ဆိုလျှင်တော့ &lt;code&gt;[]&lt;/code&gt; ထဲထည့်ရေးပေးလိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed -n &#39;/[Yy]angon/p&#39; ~/Desktop/ygn.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;#Yangon Regions
+Kawthmu Kungyangon
+Yangon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;Hta&lt;/code&gt; နဲ့စတဲ့စာကြောင်းတွေကိုလိုချင်တယ်ဆိုလျှင်တော့ RegEx ရဲ့ &lt;code&gt;^&lt;/code&gt; ကို သုံးနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed -n &#39;/^Hta/p&#39; ~/Desktop/ygn.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;Htaukkyant Mhawbi Hlegu
+Htantabin Shwepyaytha
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;စာကြောင်းအစကို &lt;code&gt;^&lt;/code&gt; နဲ့သတ်မှတ်သလို အဆုံးကိုလည်း &lt;code&gt;$&lt;/code&gt; နဲ့သတ်မှတ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed -n &#39;/Twante$/p&#39; ~/Desktop/ygn.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;KhaYan Twante
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;အစ &lt;code&gt;^&lt;/code&gt; နဲ့ အဆုံး &lt;code&gt;$&lt;/code&gt; ကိုဘာစာလုံးနဲ့မှမတွဲပဲ နှစ်ခုတည်း &lt;code&gt;^$&lt;/code&gt; အနေနဲ့ တွဲလိုက်လျှင်တော့ Blank Line ကိုဆိုလိုတာပါ။ နမူနာဖိုင်ရဲ့ ၈ကြောင်းမြောက်မှာ ဘာစာသားမှမရေးထားပဲ တစ်ကြောင်းကျော်ထားတာရှိပါတယ်။ အဲဒီလို Blank Line တွေကို မပါစေချင်ဘူးဆိုလျှင်တော့ &lt;code&gt;d&lt;/code&gt; command ကိုသုံးပြီးဖယ်ထုတ်ပြသနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed &#39;/^$/d&#39; ~/Desktop/ygn.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;#Yangon Regions
+#
+Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+Kawthmu Kungyangon
+CocoIsland
+Yangon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;-n&lt;/code&gt; option မသုံးထားတာကို သတိထားမိမယ်ထင်ပါတယ်။ &lt;code&gt;p&lt;/code&gt; (print) command မဟုတ်တဲ့အတွက်ကြောင့်ပါ။&lt;/p&gt;
+
+&lt;p&gt;Blank Line တွေမပါတဲ့ သီးသန့် ဖိုင်တစ်ခုပြလုပ်ချင်တယ်ဆိုလျှင်တော့ &lt;code&gt;&amp;gt;&lt;/code&gt; နဲ့ &lt;code&gt;sed&lt;/code&gt; ရဲ့ output ကို ဖိုင်နာမည်တစ်ခုနဲ့ redirect လုပ်ပြီး သိမ်းနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed &#39;/^$/d&#39; ~/Desktop/ygn.txt &amp;gt; ~/Desktop/ygn2.txt
+cat ~/Desktop/ygn2.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;#Yangon Regions
+#
+Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+Kawthmu Kungyangon
+CocoIsland
+Yangon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ဒီနည်းအတိုင်း &lt;code&gt;d&lt;/code&gt; command နဲ့ မလိုအပ်တဲ့ စာကြောင်းတွေကိုဖယ်ရှားနိုင်ပါသေးတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed &#39;/^#/d&#39; ~/Desktop/ygn.txt &amp;gt; ~/Desktop/ygn2.txt
+cat ~/Desktop/ygn2.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+Kawthmu Kungyangon
+CocoIsland
+Yangon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed &#39;/[Yy]angon/d&#39; ~/Desktop/ygn.txt &amp;gt; ~/Desktop/ygn2.txt
+cat ~/Desktop/ygn2.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;#
+Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+CocoIsland
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;sed&lt;/code&gt; ကို ရှာဖွေတာ နဲ့ ရှင်းထုတ်တာအပြင် နောက်ထပ် အဓိကအနေနဲ့ အသုံးများတဲ့နည်းလမ်းကတော့ အစားထိုးပြင်ဆင်တာပါပဲ။ Text Editor တွေမှာပါတဲ့ Find and Replace ဆိုတာမျိုးကို &lt;code&gt;sed&lt;/code&gt; က ဆောင်ရွက်ပေးနိုင်ပါတယ်။ တစ်နည်းအားဖြင့်ပြောရရင် Substitution ပါပဲ။ အဲဒီအတွက် &lt;code&gt;s&lt;/code&gt; command ကိုသုံးပါမယ်။ အသုံးပြုပုံကတော့ အောက်ပါအတိုင်းဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed &#39;s/[old_word]/[new_word]/&#39; file_to_edit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;Yangon&lt;/code&gt; ကို &lt;code&gt;Rangoon&lt;/code&gt; နဲ့အစားထိုးကြည့်ပါမယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed &#39;s/Yangon/Rangoon/&#39; ~/Desktop/ygn.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;#Rangoon Regions
+#
+Htaukkyant Mhawbi Hlegu
+Taikgyi Okkan
+Apyauk
+Htantabin Shwepyaytha
+HlaingTharyar DagonMyothit
+
+Thanlyin Kyauktan Thonegwa
+KhaYan Twante
+Kawthmu Kungyangon
+CocoIsland
+Rangoon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;&#39;s/Yangon/Rangoon/&#39;&lt;/code&gt; ဆိုတဲ့နေရာမှာ &lt;code&gt;s&lt;/code&gt; က (substitute) command ဖြစ်ပြီး &lt;code&gt;/&lt;/code&gt; သုံးခုကတော့ delimiter အနေနဲ့ စာသားကို ပိုင်းခြားသတ်မှတ်ပေးတာဖြစ်ပါတယ်။ &lt;code&gt;/&lt;/code&gt; အစား တခြား character တွေကိုလည်းသုံးနိုင်ပါတယ်။ ဥပမာ &lt;code&gt;/&lt;/code&gt; တွေအများကြီးပါတဲ့ url လို စာသားမျိုးကို ပြင်ဆင်တဲ့နေရာမှာ &lt;code&gt;/&lt;/code&gt; နဲ့ ခွဲခြားသတ်မှတ်မယ်ဆိုလျှင် ရှုပ်ထွေးသွားနိုင်တဲ့အတွက် &lt;code&gt;/&lt;/code&gt; အစား &lt;code&gt;_&lt;/code&gt; နဲ့ပြောင်းလဲအသုံးပြုနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ echo &amp;quot;http://naingyeminn.net/post/2/&amp;quot; | sed &#39;s_net/post_com/page_&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;http://naingyeminn.com/page/2/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;delimiter ကိုတော့ သုံးနေရာမှန်မှန်ကန်ကန်ထားရှိဖို့တော့လိုပါတယ်။ &lt;code&gt;/&lt;/code&gt; မဟုတ်ပဲ အခြား character ပြောင်းသုံးတဲ့နေရာမှာ နောက်ဆုံး အပိတ် delimiter ကိုမေ့ကျန်လေ့ရှိတတ်ပါတယ်။ ကျန်နေခဲ့လျှင်တော့ Error Message ပြပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ echo &amp;quot;http://naingyeminn.net/post/2/&amp;quot; | sed &#39;s_net/post_com/page&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;sed: 1: &amp;quot;s_net/post_com/page&amp;quot;: unterminated substitute in regular expression
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ပြန်လည်ပြင်ဆင်တာ အစားထိုးတာတွေလုပ်ပြီးတဲ့အခါမှာ အဲဒီ ပြင်ဆင် အစားထိုးတာတွေကို အထက်မှာပြောခဲ့တဲ့နည်းအတိုင်း &lt;code&gt;&amp;gt;&lt;/code&gt; နဲ့ ဖိုင်နာမည်တစ်ခုပေးပြီး သိမ်းနိုင်ပါတယ်။ အဲလိုမှမဟုတ်ပဲ မူရင်းဖိုင်မှာပဲ overwrite လုပ်ချင်တယ်ဆိုလျှင်တော့ &lt;code&gt;-i&lt;/code&gt; option ကိုသုံးနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sed -i.bak &#39;s/Yangon/Rangoon/&#39; ygn.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Output အနေနဲ့ screen မှာမတွေ့ရပေမယ့် &lt;code&gt;ygn.txt&lt;/code&gt; ထဲမှာတော့ &lt;code&gt;Rangoon&lt;/code&gt; တွေ ဖြစ်သွားပါလိမ့်မယ်။ &lt;code&gt;-i&lt;/code&gt; နောက်မှာ &lt;code&gt;.bak&lt;/code&gt; လို့တွဲထည့်ထားတာကတော့ မူရင်း &lt;code&gt;Yangon&lt;/code&gt; နဲ့ဖိုင်ကို &lt;code&gt;ygn.txt&lt;/code&gt; ကို backup အနေနဲ့  &lt;code&gt;ygn.txt.bak&lt;/code&gt; ဆိုပြီးပြောင်းပြီး သိမ်းစေဖို့ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sed&lt;/code&gt; version ပေါ်မူတည်ပြီး &lt;code&gt;-i&lt;/code&gt; အသုံးပြုပုံကကွာခြားပါတယ်။ အချို့ Operating System တွေမှာတော့ &lt;code&gt;-i&lt;/code&gt; နောက်မှာ backup အတွက် &lt;code&gt;.bak&lt;/code&gt; value မျိုး ထည့်ပေးစရာမလိုပဲ original ဖိုင်ကို တမ်းပြောင်းနိုင်ပါတယ်။ နောက်ပိုင်း version တွေမှာတော့ မှားပြီး ပြောင်းမိတာမျိုးမဖြစ်ရအောင် မဖြစ်မနေ backup သိမ်းရပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;အခု ရှင်းလင်းပြသထားတဲ့ အသုံးပြုပုံတွေက &lt;code&gt;sed&lt;/code&gt; ကိုနားလည်နိုင်ရုံ အခြေခံလောက်ပဲဖြစ်ပါတယ်။ RegEx နဲ့တွဲဖက်ပြီး Text/Data Processing တွေ၊ Automation တွေ မျိုးစုံပြုလုပ်အသုံးပြုနိုင်ပါတယ်။ SysAdmin တွေအတွက်သာမက Developer တွေအတွက်ပါ အလွန်အသုံးဝင်တဲ့ tool တစ်ခုဖြစ်တဲ့အတွက် ဒီထက်ပိုပြီးလေ့လာဖို့တိုက်တွန်းချင်ပါတယ်။&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Using AWK Command</title>

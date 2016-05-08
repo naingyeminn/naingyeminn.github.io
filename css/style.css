@@ -24,25 +24,25 @@ body {
 figure.full img {
   width: 100%;
   max-width: 100%;
-  height: auto;  
+  height: auto;
 }
 
 figure.medium
 {
     width:400px;
     margin-top:30px;
-    margin-bottom:30px;            
+    margin-bottom:30px;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
 }
 
 figure.large
 {
     width:500px;
     margin-top:30px;
-    margin-bottom:30px;            
+    margin-bottom:30px;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
 }
 
 figure.large img {
@@ -277,6 +277,17 @@ p {
 a:hover {
   text-decoration: none;
   border-bottom: 3px solid #fa5305;
+}
+
+.contact a {
+  text-decoration: none;
+  border: none;
+}
+
+.contact a:hover {
+  color: #fa5305;
+  border: none;
+  text-decoration: none;
 }
 
 blockquote {
