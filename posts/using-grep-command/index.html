@@ -11,6 +11,7 @@
     <link href="/css/milk-responsive.min.css" rel="stylesheet">     
     <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
     <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://use.fontawesome.com/52ab3615c7.js"></script>
     <link rel="shortcut icon" href="/images/me-icon.ico"> 
     <link rel="apple-touch-icon" href="">
     <link rel="canonical" href="http://naingyeminn.com/posts/using-grep-command/">
@@ -28,7 +29,24 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-    
+    <div id="contact" class="overlay">
+  <div class="popup">
+    <a class="close" href="#/">&times;</a>
+    <div class="content">
+    	<ul>
+    		<li><a href="mailto:me@naingyeminn.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+
+    		<li><a href="https://github.com/naingyeminn"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    		<li><a href="https://plus.google.com/107143022418508884720"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.facebook.com/nyeminn"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.linkedin.com/in/naingyeminn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+    	</ul> 
+    </div>
+  </div>
+</div>
+
+
 <div class="navbar navbar-fixed-top">        
   <div id="navbar-inner">
           <div id="logo">
@@ -80,8 +98,7 @@ There are two blank lines before this.
 This is the End.
 </code></pre>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-1.png" alt="GREP-1" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-1.png" alt="GREP-1" /></p>
 
 <p>ဖိုင်တည်ဆောက်ပြီးပြီဆိုလျှင်တော့ Terminal ကိုဖွင့်လိုက်ပါ။ <code>grep_demo.txt</code> ဖိုင်ရှိတဲ့ Desktop Directory ထဲကို ဝင်ပြီး <code>grep_demo1.txt</code> ဆိုတဲ့ဖိုင်တစ်ဖိုင် copy ပွားလိုက်ပါ။ demo နာမည်နဲ့ directory တစ်ခုတည်ဆောက်ပြီး <code>grep_demo.txt</code> ကို ထပ်ပြီး copy ကူထည့်ထားလိုက်ပါ။</p>
 
@@ -91,8 +108,7 @@ $ mkdir demo
 $ cp grep_demo.txt demo
 </code></pre>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-2.png" alt="GREP-2" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-2.png" alt="GREP-2" /></p>
 
 <p>File နှင့် Folder Structure ကတော့ အောက်ပါအတိုင်းဖြစ်ပါတယ်။</p>
 
@@ -172,8 +188,7 @@ This is the End.
 
 <p><code>the</code> အတိအကျပါတဲ့ စာကြောင်းတွေကိုသာထုတ်ပြပေးပြီး <code>There</code> စာကြောင်းပါလာတော့မှာမဟုတ်ပါဘူး။</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-3.png" alt="GREP-3" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-3.png" alt="GREP-3" /></p>
 
 <p>နောက်တစ်မျိုးအနေနဲ့ သတ်မှတ်စာသားမပါတဲ့ စာကြောင်းတွေကိုဘဲ ရွေးထုတ်ကြည့်ပါမယ်။ အဲဒီအတွက် သုံးရမယ့် option ကတော့ <code>-v</code> (invert) ပါ။</p>
 
@@ -194,8 +209,7 @@ This is the End.
 
 <p>Output အနေနဲ့ <code>fox</code> မပါတဲ့ စာကြောင်းနှစ်ကြောင်းနဲ့ blank line နှစ်ကြောင်းကိုတွေ့ရပါလိမ့်မယ်။</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-4.png" alt="GREP-4" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-4.png" alt="GREP-4" /></p>
 
 <p>သတ်မှတ်စာသားပါဝင်တဲ့ စာကြောင်းအပြင် ကပ်လျှက်ရှိနေတဲ့ စာကြောင်းတချို့ကိုပါပါဝင်ထုတ်ပြပေးစေချင်တယ်ဆိုလျှင်တော့ <code>-A</code> (after) <code>-B</code> (before) တို့သုံးနိုင်ပါတယ်။ <code>-A</code> နဲ့ <code>-B</code> နောက်မှာ parameter အနေနဲ့ စာကြောင်းအရေအတွက်ကိုထည့်ပေးရပါလိမ့်မယ်။</p>
 
@@ -246,8 +260,7 @@ A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
 
 <p><code>FOX</code> ပါဝင်တဲ့ စာကြောင်းအပြင် အပေါ် အောက် ကပ်လျှက်စာကြောင်းနှစ်ကြောင်းစီကိုပါမြင်တွေ့ရမှာပါ။</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-5.png" alt="GREP-5" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-5.png" alt="GREP-5" /></p>
 
 <p>ဖိုင်ထဲမှာရှိတဲ့ သတ်မှတ်စာသားပါဝင်မှုအရေအတွက်ကိုသိချင်လျှင်တော့ <code>-c</code> (count) ကိုသုံးနိုင်ပါတယ်။ Small Letter C ဆိုတာကိုတော့ ဂရုပြုမိမယ်ထင်ပါတယ်။</p>
 
@@ -285,8 +298,7 @@ $ grep -in the grep_demo.txt
 
 <p>ရှေ့ဆုံးမှာမြင်တွေ့ရတဲ့ 1,2,3,6,7 ဆိုတာတွေက Line Number ကိုဆိုလိုခြင်းဖြစ်ပါတယ်။</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-6.png" alt="GREP-6" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-6.png" alt="GREP-6" /></p>
 
 <p>အခုဖော်ပြခဲ့သမျှအားလုံးကတော့ ဖိုင် တစ်ခုထဲက content တွေကို ရှာဖွေတဲ့ နည်းလမ်းတွေပါ။ အကယ်၍ Folder တစ်ခုအောက်မှာရှိသမျှ ဖိုင်အားလုံးထဲက content ကိုရှာချင်တာဆိုလျှင်လည်း <code>*</code> wildcard သုံးနိုင်ပါသေးတယ်။</p>
 
@@ -309,8 +321,7 @@ grep_demo1.txt:This is the End.
 
 <p>Desktop ပေါ်က <code>grep_demo.txt</code> နှင့် <code>grep_demo1.txt</code> နှစ်ဖိုင်လုံးမှာပါဝင်သမျှကို မြင်တွေ့ရပါလိမ့်မယ်။ File Name နဲ့ Content ကိုတော့ <code>:</code> နဲ့ခွဲခြားပြီးပြသပေးပါတယ်။</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-7.png" alt="GREP-7" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-7.png" alt="GREP-7" /></p>
 
 <p><code>File Name:Content</code> တွဲလျှက်မြင်တွေ့ရတာ ရှုပ်ထွေးမယ်ထင်လျှင်တော့ File Name သီးသန့်ကို <code>-l</code> Option နဲ့ ထုတ်ယူနိုင်ပါတယ်။</p>
 
@@ -325,8 +336,7 @@ grep_demo1.txt:This is the End.
 grep_demo1.txt
 </code></pre>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-8.png" alt="GREP-8" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-8.png" alt="GREP-8" /></p>
 
 <p>နောက်တစ်ခုက ရှာဖွေလိုတဲ့စာသားမှာ Space ပါဝင်နေမယ်ဆိုလျှင်တော့ <code>&quot;&quot;</code> Double Quote နဲ့ ဖော်ပြနိုင်ပါတယ်။</p>
 
@@ -347,8 +357,7 @@ grep_demo1.txt:A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
 
 <p><code>the lazy</code> ဆိုတဲ့စာသားပါဝင်သမျှကိုမြင်တွေ့ရမှာပါ။</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-9.png" alt="GREP-9" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-9.png" alt="GREP-9" /></p>
 
 <p>Desktop မှာရှိတဲ့ File နှစ်ခုတင်မဟုတ်ဘဲ <code>demo</code> ဆိုတဲ့ Folder အောက်က File ကိုပါရှာဖွေမယ်ဆိုလျှင်တော့ <code>-r</code> (recursive) ကိုသုံးနိုင်ပါတယ်။</p>
 
@@ -364,8 +373,7 @@ grep_demo.txt:a quick brown fox jumps over the lazy dog.
 grep_demo1.txt:a quick brown fox jumps over the lazy dog.
 </code></pre>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-10.png" alt="GREP-10" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-10.png" alt="GREP-10" /></p>
 
 <h3 id="command-output-အ-ရ-ဖ-ခ-င:af7149e4a827f06f74ee5e42b1df9f0f">Command Output အားရှာဖွေခြင်း</h3>
 
@@ -378,8 +386,7 @@ grep_demo1.txt:a quick brown fox jumps over the lazy dog.
 <pre><code class="language-sh">$ netstat -a | grep -i listen
 </code></pre>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-11.png" alt="GREP-11" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-11.png" alt="GREP-11" /></p>
 
 <p>အပေါ် နမူနာကတော့ <code>netstat</code> command ကထွက်လာတဲ့ output ထဲကမှ <code>listen</code> ဆိုတဲ့စာသားပါဝင်တဲ့ စာကြောင်းတွေကိုထုတ်ပြပေးတာပဲဖြစ်ပါတယ်။ နောက်ထပ်နမူနာတစ်ခုအနေနဲ့ -</p>
 
@@ -441,7 +448,7 @@ grep_demo1.txt:a quick brown fox jumps over the lazy dog.
 	
 		        <footer>
 		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
-		        	<p class="contact">Copyright © 2014 <a href="mailto:me@naingyeminn.com">Naing Ye` Minn</a></p>
+		        	<p class="contact">Copyright © 2014 <a class="button" href="#contact">Naing Ye` Minn</a></p>
 		        </footer>
 		    </div>
 		  </div>    

@@ -11,6 +11,7 @@
     <link href="/css/milk-responsive.min.css" rel="stylesheet">     
     <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
     <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://use.fontawesome.com/52ab3615c7.js"></script>
     <link rel="shortcut icon" href="/images/me-icon.ico"> 
     <link rel="apple-touch-icon" href="">
     <link rel="canonical" href="http://naingyeminn.com/posts/reading-man-page/">
@@ -28,7 +29,24 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-    
+    <div id="contact" class="overlay">
+  <div class="popup">
+    <a class="close" href="#/">&times;</a>
+    <div class="content">
+    	<ul>
+    		<li><a href="mailto:me@naingyeminn.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+
+    		<li><a href="https://github.com/naingyeminn"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    		<li><a href="https://plus.google.com/107143022418508884720"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.facebook.com/nyeminn"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.linkedin.com/in/naingyeminn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+    	</ul> 
+    </div>
+  </div>
+</div>
+
+
 <div class="navbar navbar-fixed-top">        
   <div id="navbar-inner">
           <div id="logo">
@@ -93,8 +111,7 @@
 
 <p>ဆိုတဲ့ Command လေးရိုက်လိုက်ရုံပါပဲ။ ပုံမှာပြထားတဲ့အတိုင်း <code>passwd</code> ရဲ့ Man Page ကိုမြင်ရပါလိမ့်မယ်။</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-passwd.png" alt="man-passwd" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-passwd.png" alt="man-passwd" /></p>
 
 <p>Man Page ရဲ့ ပထမဆုံးစာကြောင်းမှာတွေ့ရတဲ့ <strong>PASSWD(1)</strong> ဆိုတာကတော့ <code>passwd</code> command ရဲ့ Man Page တွေထဲကမှ <strong>Section 1</strong> ဖြစ်တဲ့ Command အကြောင်းကို အဓိကထားရေးသားထားသော Page ဆိုတာကို ဖေါ်ပြထားခြင်းဖြစ်ပါတယ်။ တွေ့ရမယ့် အကြောင်းအရာတွေကတော့ Command ရဲ့ နာမည်အပြည့်အစုံ၊ ရေးသားရတဲ့ပုံစံ၊ ဘာတွေလုပ်ပေးနိုင်တယ်၊ နောက်ပြီး ချဲ့ထွင်အသုံးပြုနိုင်ဖို့ ဘယ်လို Option တွေပါတယ် ဆိုတာတွေကို အသေးစိပ်ရှင်းပြထားတာတွေပဲဖြစ်ပါတယ်။</p>
 
@@ -102,25 +119,21 @@
 
 <p>Man Page ထဲက စာသားတစ်ခုခုကို ရှာချင်တယ်ဆိုလျှင်တော့ <code>/</code> ကိုနှိပ်၊ နောက်က ကိုယ်ရှာချင်တဲ့ keyword ကိုရိုက်ထည့်၊ ပြီးလျှင် Enter နှိပ်လိုက်ရုံပါပဲ။</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-search1.png" alt="man search 1" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-search1.png" alt="man search 1" /></p>
 
 <p>ပုံမှာပြထားတဲ့အတိုင်း <code>/expire</code> လို့ရိုက်ထည့်လိုက်မယ်ဆိုလျှင် ရောက်ရှိနေတဲ့ Man Page ရဲ့နေရာကနေစပြီး <code>expire</code> ဆိုတဲ့စာလုံးကိုရှာပေးပါလိမ့်မယ်။</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-search2.png" alt="man search 2" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-search2.png" alt="man search 2" /></p>
 
 <p>ပထမဆုံးရှာတွေ့မှာကတော့ <code>-k</code> option ရဲ့ ရှင်းလင်းချက်ထဲမှာပါတဲ့ <strong>expired</strong> ဆိုတဲ့ စာလုံးနှစ်လုံးပါ။ လိုချင်တာ <code>--expire</code> ဆိုတဲ့ option နဲ့ပတ်သက်တာဖြစ်တဲ့အတွက် <strong>N</strong> Key ကိုတစ်ချက်ချင်းနှိပ်ပြီး ဆက်လက်ရှာဖွေသွားလို့ရပါတယ်။ နောက်ဆုံး <code>--expire</code> ဆိုတာကိုရှာတွေ့ပါလိမ့်မယ်။</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-search3.png" alt="man search 3" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-search3.png" alt="man search 3" /></p>
 
 <p>အကယ်၍ <strong>N</strong> နှိပ်တာလွန်ပြီး ကိုယ်ရှာနေတဲ့စာလုံးကိုကျော်သွားခဲ့တယ်ဆိုလျှင်လည်း <strong>Shift + N</strong> နဲ့ နောက်ကြောင်းပြန်ပြီးရှာလို့ရပါတယ်။</p>
 
 <p>ဒါကတော့ Man Page မှာ အသုံးများတဲ့ နည်းလမ်းလေးတချို့ပါ။ တခြား အသုံးပြုလို့ရတဲ့နည်းလမ်းတွေရှိပါသေးတယ်။ အဲဒါတွေကိုတော့ Man Page ဖွင့်ထားတဲ့အချိန် <strong>H</strong> Key ကိုနှိပ်ပြီး <code>man</code> ရဲ့ Help ကနေလေ့လာနိုင်ပါတယ်။</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-help.png" alt="man help" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-help.png" alt="man help" /></p>
 
 <p>Man Page ကနေ ပြန်ထွက်ချင်တယ်ဆိုလျှင်တော့ <strong>Q</strong> Key နှိပ်ပြီး ထွက်ရပါတယ်။</p>
 
@@ -128,27 +141,23 @@
 
 <p>အထက်မှာပြောခဲ့တဲ့အတိုင်း Man Page တွေကို အကြောင်းအရာအလိုက် Section တွေခွဲထားတာဖြစ်တဲ့အတွက် Command တစ်ခုကို Section တစ်ခုထက်ပိုပြီးရှိနေနိုင်ပါတယ်။ Section ဘယ်နှစ်ခုရှိလည်းသိချင်လျှင်တော့ <code>-aw</code> option သုံးပြီး ရှာနိုင်ပါတယ်။</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-section1.png" alt="man section 1" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-section1.png" alt="man section 1" /></p>
 
 <p>ပုံထဲကအတိုင်း <code>man -aw passwd</code> လို့ရိုက်လိုက်မယ်ဆိုလျှင်တော့ <code>passwd</code> နဲ့ဆိုင်တဲ့ Man Page ၃ခုကိုတွေ့ရပါလိမ့်မယ်။ အဲဒီထဲမှာမှ <code>passwd</code> ဆိုတဲ့ command နဲ့အတိအကျတူညီတဲ့ <strong>passwd.1.gz</strong> နဲ့ <strong>passwd.5.gz</strong> ၂ခုကိုတွေ့ရပါလိမ့်မယ်။ အဲဒီနှစ်ဖိုင်ရဲ့ <strong>1</strong> နဲ့ <strong>5</strong> ဆိုတာကတော့ <strong>Section</strong> ကိုဆိုလိုတာပါ။ <strong>Section 1</strong> ကတော့ Command အကြောင်းဖြစ်ပြီး <strong>Section 5</strong> ကတော့ အဲဒီ <code>passwd</code> command နဲ့ချိတ်ဆက်နေတဲ့ configuration file တွေအကြောင်းရှင်းပြပေးထားတာလို့ အကြမ်းဖျဉ်း ခွဲခြားနိုင်ပါတယ်။</p>
 
 <p><strong>Section 5</strong> Man Page ကိုခေါ်ယူချင်တယ်ဆိုလျှင်တော့ <code>man 5 passwd</code> ဆိုပြီး ခေါ်ယူနိုင်ပါတယ်။ တခြား Section တွေအတွက်ဆိုလျှင်လည်း <strong>5</strong> နေရာမှာ ကိုယ်အလိုရှိတဲ့ Section Number ကို ထည့်သွင်းပေးလိုက်ရုံပါပဲ။</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-section3.png" alt="man section 3" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-section3.png" alt="man section 3" /></p>
 
 <p>အခု <code>man 5 passwd</code> ဆိုပြီး ခေါ်လိုက်တာဖြစ်တဲ့အတွက် <strong>PASSWD(5)</strong> ဆိုပြီး <code>man passwd</code> နဲ့မတူညီတဲ့ Page ကိုတွေ့ရပါလိမ့်မယ်။ <strong>Section 5</strong> ဆိုတဲ့အတွက် <code>passwd</code> command နဲ့သက်ဆိုင်တဲ့ <code>/etc/passwd</code> <code>/etc/shadow</code> စတဲ့ဖိုင်တွေအကြောင်းကို ရှင်းပြထားတာဖြစ်ပါတယ်။</p>
 
 <p><code>man -a passwd</code> ဆိုလျှင်တော့ <code>-aw</code> option နဲ့မှာတွေ့ရတဲ့ page ၃ခုရဲ့ ပထမဆုံး page ကနေစဖော်ပြပေးမှာဖြစ်ပြီး <code>Q</code> Key နှိပ်ပြီး ထွက်လိုက်ပြီဆိုတာနဲ့ ပုံမှာပြထားတဲ့အတိုင်း <strong>View</strong> | <strong>Skip</strong> | <strong>Quit</strong> ဆိုပြီး ရွေးစရာတွေတွေ့ရပါလိမ့်မယ်။ <strong>next: sslpasswd(1ssl)</strong> ဆိုပြီးပြောထားတဲ့အတွက် <code>Enter</code> Key (return) နှိပ်လိုက်တာနဲ့ <strong>sslpasswd</strong> ဆိုတဲ့ Man Page ကိုမြင်ရမှာဖြစ်ပြီး နောက် လာမယ့် <strong>PASSWD(5)</strong> ကိုကျော်သွားချင်တယ်ဆိုလျှင်တော့ <strong>Ctrl+D</strong> Key နဲ့ ကျော်နိုင်ပါတယ်။ ထွက်မယ်ဆိုလျှင်တော့ <strong>Ctrl+C</strong> နဲ့ ထွက်နိုင်ပါတယ်။</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-section4.png" alt="man section 4" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-section4.png" alt="man section 4" /></p>
 
 <p>Man Page ရှာဖွေတဲ့နေရာမှာ သုံးနိုင်တဲ့ Option တွေရှိပါသေးတယ်။ အဲဒါတွေကတော့ <code>-f</code> နဲ့ <code>-k</code> ပါပဲ။ ဒီ Option နှစ်ခုရဲ့ကွာခြားချက်ကိုတော့ အောက်မှာပြထားတဲ့ပုံမှာကြည့်ကြည့်ပါ။ <strong>passwd</strong> ကို <strong>Search</strong> လုပ်မယ့် Keyword အနေနဲ့ သုံးထားပါတယ်။</p>
 
-<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-search4.png" alt="man search 3" />
-</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/man-search4.png" alt="man search 3" /></p>
 
 <p>ကွာခြားချက်ကတော့ <code>-f</code> က ရှိသမျှ Man Page တွေရဲ့ <strong>Name</strong> နေရာမှာ သတ်မှတ်ထားတဲ့ Keyword ပါတဲ့ Page တွေကို ရှာဖွေထုတ်ပြပေးတာဖြစ်ပြီး <code>-k</code> ကတော့ <strong>Name</strong> နဲ့ <strong>Description</strong> နေရာမှာ Keywoard ပါတဲ့ Page တွေကိုထုတ်ပြပေးတာပဲဖြစ်တယ်။</p>
 
@@ -203,7 +212,7 @@
 	
 		        <footer>
 		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
-		        	<p class="contact">Copyright © 2014 <a href="mailto:me@naingyeminn.com">Naing Ye` Minn</a></p>
+		        	<p class="contact">Copyright © 2014 <a class="button" href="#contact">Naing Ye` Minn</a></p>
 		        </footer>
 		    </div>
 		  </div>    

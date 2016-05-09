@@ -35,8 +35,7 @@ $ sudo tail -3 /var/log/messages | ccze -A
 
 &lt;p&gt;ပုံမှာမြင်တွေ့ရတဲ့အတိုင်း Color ပါတာနဲ့ မပါတာကို ယှဉ်ပြီးတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/ccze-A.png&#34; alt=&#34;ccze-A&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/ccze-A.png&#34; alt=&#34;ccze-A&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;နောက်ပြီး Log Output ကို HTML ဖိုင်အနေနဲ့လည်း ထုတ်ယူလို့ရပါသေးတယ်။&lt;/p&gt;
 
@@ -45,13 +44,11 @@ $ sudo tail -3 /var/log/messages | ccze -A
 
 &lt;p&gt;Output ကိုတော့ User ရဲ့ Documents folder အောက်ထဲမှာ msg.html ဆိုပြီး HTML file အနေနဲ့တွေ့ရပါလိမ့်မယ်။ Double click နှိပ်ပြီး ဖွင့်ကြည့်လိုက်မယ်ဆိုလျှင်တော့ ပုံမှပြထားတဲ့အတိုင်း Browser မှာမြင်တွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/ccze-h.png&#34; alt=&#34;ccze-h&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/ccze-h.png&#34; alt=&#34;ccze-h&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ပုံထဲမှာတော့ Default Color Scheme အတိုင်းဖြစ်နေတာရယ်၊ VM ပေါ်မှာဖြစ်တဲ့အတွက် Graphic Resolution နည်းနေတာရယ်တို့ကြောင့် ကြည့်ရတာတော့သိပ်အဆင်မပြေပါဘူး။ Default Color ကိုပြင်ချင်တယ်ဆိုလျှင်တော့ Config File &lt;code&gt;/etc/cczerc&lt;/code&gt; ထဲမှာ ဝင်ပြင်လို့ရပါတယ်။ HTML output ရဲ့ Background Color ကိုပြောင်းမယ်ဆိုလျှင်တော့ &lt;code&gt;/etc/cczerc&lt;/code&gt; ရဲ့ အောက်ဆုံး line number &lt;strong&gt;93&lt;/strong&gt; မှာရှိတဲ့ &lt;code&gt;cssbody #404040&lt;/code&gt; ကိုပြင်ရုံပါပဲ။ အခြား Color တွေကိုလည်း စိတ်ကြိုက်ပြင်ဆင်နိုင်ပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/ccze-h-safari.png&#34; alt=&#34;ccze-h&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/ccze-h-safari.png&#34; alt=&#34;ccze-h&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;အပေါ်ပုံကတော့ &lt;code&gt;cssbody #000000&lt;/code&gt; ပြောင်းပြီး output ထုတ်ထားတဲ့ HTML ဖိုင်ကို Safari Browser ပေါ်မှာမြင်တွေ့ရတာပဲဖြစ်ပါတယ်။&lt;/p&gt;
 
@@ -115,22 +112,19 @@ $ sudo rpm -ivh epel-release-latest-7.noarch.rpm
 &lt;li&gt;CentOS 7 တွင် EPEL package အား &lt;code&gt;wget&lt;/code&gt; ဖြင့် Download ပြုလုပ်ခြင်း&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/epel-wget.png&#34; alt=&#34;epel-wget&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/epel-wget.png&#34; alt=&#34;epel-wget&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Package အား Install ပြုလုပ်ခြင်း&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/epel-install.png&#34; alt=&#34;epel-install&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/epel-install.png&#34; alt=&#34;epel-install&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;EPEL Repo အား စစ်ဆေးခြင်း&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/epel-check.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/epel-check.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;အပေါ်ပုံအတိုင်း EPEL ကို Repo List ထဲတွေ့ရပြီဆိုလျှင်တော့ EPEL Repo မှ Package များအား Install ပြုလုပ်နိုင်ပြီဖြစ်ပါတယ်။&lt;/p&gt;
 </description>

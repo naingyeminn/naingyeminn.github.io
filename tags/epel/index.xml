@@ -63,22 +63,19 @@ $ sudo rpm -ivh epel-release-latest-7.noarch.rpm
 &lt;li&gt;CentOS 7 တွင် EPEL package အား &lt;code&gt;wget&lt;/code&gt; ဖြင့် Download ပြုလုပ်ခြင်း&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/epel-wget.png&#34; alt=&#34;epel-wget&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/epel-wget.png&#34; alt=&#34;epel-wget&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Package အား Install ပြုလုပ်ခြင်း&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/epel-install.png&#34; alt=&#34;epel-install&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/epel-install.png&#34; alt=&#34;epel-install&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;EPEL Repo အား စစ်ဆေးခြင်း&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/epel-check.png&#34; alt=&#34;&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/epel-check.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;အပေါ်ပုံအတိုင်း EPEL ကို Repo List ထဲတွေ့ရပြီဆိုလျှင်တော့ EPEL Repo မှ Package များအား Install ပြုလုပ်နိုင်ပြီဖြစ်ပါတယ်။&lt;/p&gt;
 </description>
