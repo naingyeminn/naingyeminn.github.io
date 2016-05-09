@@ -1944,7 +1944,7 @@ Hello
 
 &lt;h3 id=&#34;toc_1:28ee59b74199f8d86023969bba04a785&#34;&gt;&lt;strong&gt;#&lt;/strong&gt;&lt;/h3&gt;
 
-&lt;p&gt;&lt;code&gt;$&lt;/code&gt; ကဲသို့ပင် Command များ၏ရှေ့တွင်　ေဖာ်ပြလေ့ရှိသည်။ &lt;code&gt;root user&lt;/code&gt; &lt;code&gt;super user&lt;/code&gt; အနေဖြင့် အသုံးပြုထားသော Terminal ၏ Command Prompt ကိုဆိုလိုခြင်းဖြစ်သည်။ သာမန် User Prompt &lt;code&gt;$&lt;/code&gt; မှ Root User Prompt &lt;code&gt;#&lt;/code&gt; သို့ ပြောင်းလိုပါက - &lt;code&gt;sudo -s&lt;/code&gt; command ဖြင့်ပြောင်းနိုင်သည်။&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$&lt;/code&gt; ကဲသို့ပင် Command များ၏ရှေ့တွင်　ဖော်ပြလေ့ရှိသည်။ &lt;code&gt;root user&lt;/code&gt; &lt;code&gt;super user&lt;/code&gt; အနေဖြင့် အသုံးပြုထားသော Terminal ၏ Command Prompt ကိုဆိုလိုခြင်းဖြစ်သည်။ သာမန် User Prompt &lt;code&gt;$&lt;/code&gt; မှ Root User Prompt &lt;code&gt;#&lt;/code&gt; သို့ ပြောင်းလိုပါက - &lt;code&gt;sudo -s&lt;/code&gt; command ဖြင့်ပြောင်းနိုင်သည်။&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo -s
 [sudo] password for user: 

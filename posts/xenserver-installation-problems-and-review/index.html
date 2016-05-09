@@ -67,7 +67,7 @@
 	    </div>
 	    <hr>
 	    <div class="post content">
-	        <p>မနေ့က အလုပ်မှာ Desktop တစ်လုံးအပိုထွက်လာတာနဲ့ XenServer စမ်းကြည့်ဖြစ်တယ်။ စက်က အမြင့်ကြီးမဟုတ်ပေမယ့် processor က VT support လုပ်တာရယ် Memory 4GB လောက်ရှိတာရယ်ကြောင့် စမ်းဖို့အဆင်ပြေသွာတယ်။ <a href="http://xenserver.org/overview-xenserver-open-source-virtualization/download.html">XenServer 6.2</a> iso လဲဆွဲထားပြီးသားရှိပေမယ့် CD အလွတ်မရှိတာနဲ့ Flash Drive နဲ့ပဲ install လုပ်မယ်ေပါ့။ အဲ့ဒီအတွက် flash drive ကို FAT32 နဲ့ format ချ၊ <a href="http://sourceforge.net/projects/unetbootin/">Unetbootin</a> နဲ့ ပုံမှန်အတိုင်းပဲ XenServer ISO ကို extract လုပ်လိုက်တာ ဖြစ်ချင်တော့ boot တက်တဲ့အချိန်မှာ kernel ရှာမရပါဘူးဆိုပြီး error ပြလာတယ်။ google မှာရှာကြည့်လိုက်တော့ USB drive ရဲ့ /boot/isolinux/ directory ထဲက isolinux.cfg ကို syslinux.cfg ဆိုပြီး တော့ရယ်၊ /boot/ ထဲက isolinux ကို syslinux ဆိုပြီး ပြောင်းပေးရတယ်။ ေနာက် /syslinux.cfg ကိုဖျက်ပေးရတယ်။</p>
+	        <p>မနေ့က အလုပ်မှာ Desktop တစ်လုံးအပိုထွက်လာတာနဲ့ XenServer စမ်းကြည့်ဖြစ်တယ်။ စက်က အမြင့်ကြီးမဟုတ်ပေမယ့် processor က VT support လုပ်တာရယ် Memory 4GB လောက်ရှိတာရယ်ကြောင့် စမ်းဖို့အဆင်ပြေသွာတယ်။ <a href="http://xenserver.org/overview-xenserver-open-source-virtualization/download.html">XenServer 6.2</a> iso လဲဆွဲထားပြီးသားရှိပေမယ့် CD အလွတ်မရှိတာနဲ့ Flash Drive နဲ့ပဲ install လုပ်မယ်ပေါ့။ အဲ့ဒီအတွက် flash drive ကို FAT32 နဲ့ format ချ၊ <a href="http://sourceforge.net/projects/unetbootin/">Unetbootin</a> နဲ့ ပုံမှန်အတိုင်းပဲ XenServer ISO ကို extract လုပ်လိုက်တာ ဖြစ်ချင်တော့ boot တက်တဲ့အချိန်မှာ kernel ရှာမရပါဘူးဆိုပြီး error ပြလာတယ်။ google မှာရှာကြည့်လိုက်တော့ USB drive ရဲ့ /boot/isolinux/ directory ထဲက isolinux.cfg ကို syslinux.cfg ဆိုပြီး တော့ရယ်၊ /boot/ ထဲက isolinux ကို syslinux ဆိုပြီး ပြောင်းပေးရတယ်။ နောက် /syslinux.cfg ကိုဖျက်ပေးရတယ်။</p>
 
 <pre><code class="language-sh">$ mv /media/flashdrive/boot/isolinux/isolinux.cfg /media/flashdrive/boot/isolinux/syslinux.cfg
 $ mv /media/flashdrive/boot/isolinux /media/flashdrive/boot/syslinux
@@ -91,7 +91,7 @@ $ rm /media/flashdrive/syslinux.cfg
 
 <p>ဆိုတဲ့ command နဲ့ Application Shortcut ကို Terminal ကနေလှမ်းယူနိုင်ပါတယ်။</p>
 
-<p>XenCenter ကိုမစမ်းဖူးသေးလို့ ဘယ်လို error တွေရှိနိုင်ဆိုတာမသိပေမယ့် OpenXenManager(OXM) မှာတော့ VM create လုပ်လိုက်တဲ့အချိန် တစ်ခါတစ်ခါကျ list ထဲပေါ်မလာတာဖြစ်တတ်တယ်။ အဲဒီအတွက် OXM မှာ XenServer ကို Disconnect လုပ်ပြီး Connect ပြန်လုပ်လိုက်ရင်တော့ ေပါ်လာပါတယ်။</p>
+<p>XenCenter ကိုမစမ်းဖူးသေးလို့ ဘယ်လို error တွေရှိနိုင်ဆိုတာမသိပေမယ့် OpenXenManager(OXM) မှာတော့ VM create လုပ်လိုက်တဲ့အချိန် တစ်ခါတစ်ခါကျ list ထဲပေါ်မလာတာဖြစ်တတ်တယ်။ အဲဒီအတွက် OXM မှာ XenServer ကို Disconnect လုပ်ပြီး Connect ပြန်လုပ်လိုက်ရင်တော့ ပေါ်လာပါတယ်။</p>
 
 <p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/oxm.png" alt="OpenXenManager" />
 </p>

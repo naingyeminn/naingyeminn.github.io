@@ -1757,7 +1757,7 @@ Hello
 
 &lt;h3 id=&#34;toc_1:28ee59b74199f8d86023969bba04a785&#34;&gt;&lt;strong&gt;#&lt;/strong&gt;&lt;/h3&gt;
 
-&lt;p&gt;&lt;code&gt;$&lt;/code&gt; ကဲသို့ပင် Command များ၏ရှေ့တွင်　ေဖာ်ပြလေ့ရှိသည်။ &lt;code&gt;root user&lt;/code&gt; &lt;code&gt;super user&lt;/code&gt; အနေဖြင့် အသုံးပြုထားသော Terminal ၏ Command Prompt ကိုဆိုလိုခြင်းဖြစ်သည်။ သာမန် User Prompt &lt;code&gt;$&lt;/code&gt; မှ Root User Prompt &lt;code&gt;#&lt;/code&gt; သို့ ပြောင်းလိုပါက - &lt;code&gt;sudo -s&lt;/code&gt; command ဖြင့်ပြောင်းနိုင်သည်။&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$&lt;/code&gt; ကဲသို့ပင် Command များ၏ရှေ့တွင်　ဖော်ပြလေ့ရှိသည်။ &lt;code&gt;root user&lt;/code&gt; &lt;code&gt;super user&lt;/code&gt; အနေဖြင့် အသုံးပြုထားသော Terminal ၏ Command Prompt ကိုဆိုလိုခြင်းဖြစ်သည်။ သာမန် User Prompt &lt;code&gt;$&lt;/code&gt; မှ Root User Prompt &lt;code&gt;#&lt;/code&gt; သို့ ပြောင်းလိုပါက - &lt;code&gt;sudo -s&lt;/code&gt; command ဖြင့်ပြောင်းနိုင်သည်။&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo -s
 [sudo] password for user: 
@@ -1881,7 +1881,7 @@ $ vfix
       <pubDate>Fri, 30 May 2014 00:00:00 UTC</pubDate>
       <author>Alexander Ivanov</author>
       <guid>http://naingyeminn.com/posts/xenserver-installation-problems-and-review/</guid>
-      <description>&lt;p&gt;မနေ့က အလုပ်မှာ Desktop တစ်လုံးအပိုထွက်လာတာနဲ့ XenServer စမ်းကြည့်ဖြစ်တယ်။ စက်က အမြင့်ကြီးမဟုတ်ပေမယ့် processor က VT support လုပ်တာရယ် Memory 4GB လောက်ရှိတာရယ်ကြောင့် စမ်းဖို့အဆင်ပြေသွာတယ်။ &lt;a href=&#34;http://xenserver.org/overview-xenserver-open-source-virtualization/download.html&#34;&gt;XenServer 6.2&lt;/a&gt; iso လဲဆွဲထားပြီးသားရှိပေမယ့် CD အလွတ်မရှိတာနဲ့ Flash Drive နဲ့ပဲ install လုပ်မယ်ေပါ့။ အဲ့ဒီအတွက် flash drive ကို FAT32 နဲ့ format ချ၊ &lt;a href=&#34;http://sourceforge.net/projects/unetbootin/&#34;&gt;Unetbootin&lt;/a&gt; နဲ့ ပုံမှန်အတိုင်းပဲ XenServer ISO ကို extract လုပ်လိုက်တာ ဖြစ်ချင်တော့ boot တက်တဲ့အချိန်မှာ kernel ရှာမရပါဘူးဆိုပြီး error ပြလာတယ်။ google မှာရှာကြည့်လိုက်တော့ USB drive ရဲ့ /boot/isolinux/ directory ထဲက isolinux.cfg ကို syslinux.cfg ဆိုပြီး တော့ရယ်၊ /boot/ ထဲက isolinux ကို syslinux ဆိုပြီး ပြောင်းပေးရတယ်။ ေနာက် /syslinux.cfg ကိုဖျက်ပေးရတယ်။&lt;/p&gt;
+      <description>&lt;p&gt;မနေ့က အလုပ်မှာ Desktop တစ်လုံးအပိုထွက်လာတာနဲ့ XenServer စမ်းကြည့်ဖြစ်တယ်။ စက်က အမြင့်ကြီးမဟုတ်ပေမယ့် processor က VT support လုပ်တာရယ် Memory 4GB လောက်ရှိတာရယ်ကြောင့် စမ်းဖို့အဆင်ပြေသွာတယ်။ &lt;a href=&#34;http://xenserver.org/overview-xenserver-open-source-virtualization/download.html&#34;&gt;XenServer 6.2&lt;/a&gt; iso လဲဆွဲထားပြီးသားရှိပေမယ့် CD အလွတ်မရှိတာနဲ့ Flash Drive နဲ့ပဲ install လုပ်မယ်ပေါ့။ အဲ့ဒီအတွက် flash drive ကို FAT32 နဲ့ format ချ၊ &lt;a href=&#34;http://sourceforge.net/projects/unetbootin/&#34;&gt;Unetbootin&lt;/a&gt; နဲ့ ပုံမှန်အတိုင်းပဲ XenServer ISO ကို extract လုပ်လိုက်တာ ဖြစ်ချင်တော့ boot တက်တဲ့အချိန်မှာ kernel ရှာမရပါဘူးဆိုပြီး error ပြလာတယ်။ google မှာရှာကြည့်လိုက်တော့ USB drive ရဲ့ /boot/isolinux/ directory ထဲက isolinux.cfg ကို syslinux.cfg ဆိုပြီး တော့ရယ်၊ /boot/ ထဲက isolinux ကို syslinux ဆိုပြီး ပြောင်းပေးရတယ်။ နောက် /syslinux.cfg ကိုဖျက်ပေးရတယ်။&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mv /media/flashdrive/boot/isolinux/isolinux.cfg /media/flashdrive/boot/isolinux/syslinux.cfg
 $ mv /media/flashdrive/boot/isolinux /media/flashdrive/boot/syslinux
@@ -1905,7 +1905,7 @@ $ rm /media/flashdrive/syslinux.cfg
 
 &lt;p&gt;ဆိုတဲ့ command နဲ့ Application Shortcut ကို Terminal ကနေလှမ်းယူနိုင်ပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;XenCenter ကိုမစမ်းဖူးသေးလို့ ဘယ်လို error တွေရှိနိုင်ဆိုတာမသိပေမယ့် OpenXenManager(OXM) မှာတော့ VM create လုပ်လိုက်တဲ့အချိန် တစ်ခါတစ်ခါကျ list ထဲပေါ်မလာတာဖြစ်တတ်တယ်။ အဲဒီအတွက် OXM မှာ XenServer ကို Disconnect လုပ်ပြီး Connect ပြန်လုပ်လိုက်ရင်တော့ ေပါ်လာပါတယ်။&lt;/p&gt;
+&lt;p&gt;XenCenter ကိုမစမ်းဖူးသေးလို့ ဘယ်လို error တွေရှိနိုင်ဆိုတာမသိပေမယ့် OpenXenManager(OXM) မှာတော့ VM create လုပ်လိုက်တဲ့အချိန် တစ်ခါတစ်ခါကျ list ထဲပေါ်မလာတာဖြစ်တတ်တယ်။ အဲဒီအတွက် OXM မှာ XenServer ကို Disconnect လုပ်ပြီး Connect ပြန်လုပ်လိုက်ရင်တော့ ပေါ်လာပါတယ်။&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/oxm.png&#34; alt=&#34;OpenXenManager&#34; /&gt;
 &lt;/p&gt;
