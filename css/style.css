@@ -245,6 +245,10 @@ p {
   display: block;
 }
 
+.tags {
+  padding-right: 27px;
+}
+
 .tags a {
   color: #505050;
   margin-right: 12px;
