@@ -420,6 +420,7 @@ code, pre {
 
 .popup ul {
   margin: 0;
+  padding-left: 20px;
   line-height: 3;
 }
 
