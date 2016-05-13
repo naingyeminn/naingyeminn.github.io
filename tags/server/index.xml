@@ -4,14 +4,14 @@
       <title>Server on Naing Ye` Minn </title>
     <link>http://naingyeminn.com/tags/server/</link>
     <language>en-us</language>
-    <author>Alexander Ivanov</author>
+    <author>Naing Ye` Minn</author>
     <updated>2015-11-19 00:00:00 &#43;0000 UTC</updated>
     
     <item>
       <title>Local Tunnel</title>
       <link>http://naingyeminn.com/posts/localtunnel/</link>
       <pubDate>Thu, 19 Nov 2015 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/localtunnel/</guid>
       <description>
 
@@ -62,7 +62,7 @@
       <title>Coloring Log Files</title>
       <link>http://naingyeminn.com/posts/coloring-log-files/</link>
       <pubDate>Wed, 14 Oct 2015 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/coloring-log-files/</guid>
       <description>&lt;p&gt;Linux Administrator တွေအနေနဲ့ Log Analyzer တွေမျိုးစုံရှိနေပေမယ့် တစ်ခါတစ်ရံ လိုအပ်လို့ Log File တွေကိုမွှေနှောက်ရမယ်ဆိုလျှင် အာရုံနောက်ကြမယ်ထင်ပါတယ်။ Log File တွေရဲ့ထုံးစံအတိုင်း Text တွေကို ပြွပ်သိပ်နေအောင်ရိုက်ထုတ်ထားတာဖြစ်တဲ့အတွက် ဖတ်ရတဲ့သူအတွက် ဘယ်အပိုင်းက ဘာဆိုတာကို မနည်း အာရုံစိုက်ခွဲခြားနေရပါလိမ့်မယ်။ အဲဒီပြဿနာကိုတော့ &lt;strong&gt;CCZE&lt;/strong&gt; ကကူညီဖြေရှင်းပေးနိုင်ပါတယ်။ &lt;strong&gt;CCZE&lt;/strong&gt; ဆိုတာကတော့ command-line tool လေးတစ်ခုပဲဖြစ်ပါတယ်။ Linux Admin တွေအနေနဲ့ server ကို ssh နဲ့ access လုပ်နေတဲ့အချိန် Log File တွေကိုဖတ်ရှုဖို့လိုလာခဲ့မယ်ဆိုလျှင်တော့ ဒီ Tool လေးက အရမ်းအသုံးတည့်ပါတယ်။ Log ကိုသက်ဆိုင်ရာ အပိုင်းအခြားအလိုက် အရောင်ခွဲခြားပြီး ပြသပေးတာဖြစ်တဲ့အတွက် ဖတ်ရှုသူအနေနဲ့ မြန်ဆန်လွယ်ကူစွာ နားလည်သဘောပေါက်နိုင်မှာပါ။&lt;/p&gt;
 
@@ -111,7 +111,7 @@ $ sudo tail -3 /var/log/messages | ccze -A
       <title>EPEL for CentOS</title>
       <link>http://naingyeminn.com/posts/epel-for-centos/</link>
       <pubDate>Tue, 13 Oct 2015 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/epel-for-centos/</guid>
       <description>
 

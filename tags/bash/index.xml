@@ -4,14 +4,14 @@
       <title>Bash on Naing Ye` Minn </title>
     <link>http://naingyeminn.com/tags/bash/</link>
     <language>en-us</language>
-    <author>Alexander Ivanov</author>
+    <author>Naing Ye` Minn</author>
     <updated>2015-03-06 00:00:00 &#43;0000 UTC</updated>
     
     <item>
       <title>NTFSX - Script to enable NTFS Write on Mac OS X</title>
       <link>http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-Mac-OSX/</link>
       <pubDate>Fri, 06 Mar 2015 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-Mac-OSX/</guid>
       <description>&lt;p&gt;Mac OS X User တွေအနေနဲ့ External HDD တွေသုံးတဲ့နေရာမှာ ကြုံရလေ့ရှိတဲ့ အခက်အခဲလေးတစ်ခုပါ။ အဓိကအကြောင်းအရင်းကတော့ Windows ရဲ့ NTFS file system ကို Mac OS X က အပြည့်အဝ အထောက်အပံ့မပေးထားလို့ပါပဲ။ အဲဒါကြောင့် NTFS format သုံးထားတဲ့ External HDD တွေ USB Flash Drive တွေဆိုရင် Read Only သက်သက်သာ အသုံးပြုနိုင်ပါလိမ့်မယ်။ Data တွေကူးထည့်လို့မရနိုင်ပါဘူး။ ဒါပေမယ့် လုံးဝ Write Access မရတာတော့မဟုတ်ပါဘူး။ Mac OS X မှာက Native NTFS support ရှိပါတယ်။ ပြဿနာရှိတာက Apple အနေနဲ့ Microsoft ရဲ့ NTFS ကို Mac OS X မှာ အပြည့်အဝ အသုံးပြုနိုင်အောင် လုပ်ပေးမယ်ဆိုရင် Microsoft ဆီကနေ နည်းပညာ အသုံးပြုခွင့် ဝယ်ယူရပါလိမ့်မယ်။ Microsoft အနေနဲ့လည်း ထိုနည်းလည်ကောင်းပါပဲ။ Apple ရဲ့ HFS ကို Windows မှာအသုံးပြုလို့ရစေနိုင်ဖို့ အသုံးပြုခွင့် လိုအပ်ပါတယ်။ ဒါအမြင်သာဆုံးဖြစ်အောင်သာ နှိုင်းယှဉ်ပြတာပါ။ ဒီလို Patent ပြဿနာက တကယ့်တကယ် ဒီထက် ပိုရှုပ်ထွေးပါတယ်။ အဲဒီလို ညှိနှိုင်းရခက်ခဲတဲ့ ပြဿနာတွေကြောင့် Microsoft ကလည်း HFS ကို Support မလုပ်သလို Apple ကလည်း NTFS ကို လစ်လျှူရှုထားတာပါ။&lt;/p&gt;
 
@@ -77,7 +77,7 @@ $ sudo ntfsx removeall
       <title>Password Manager in Shell Script</title>
       <link>http://naingyeminn.com/posts/password-manager-in-shell-script/</link>
       <pubDate>Sat, 21 Feb 2015 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/password-manager-in-shell-script/</guid>
       <description>&lt;p&gt;ယနေ့ခေတ် Internet အသုံးပြုမှုတွင်ကျယ်လာတာနဲ့အမျှ Google, Facebook, Twitter, Dropbox, Flickr, Instagram&amp;hellip; စသဖြင့် Account ပေါင်း သောင်းခြောက်ထောင်ရဲ့ Password တွေကို အကုန်မှတ်မိဖို့ဆိုတာမလွယ်ပါဘူး။ User Name တူအောင်ပေးထားရင်တောင် Password ကိုတော့ အတူတူမပေးသင့်တာ အားလုံးပဲသိကြမှာပါ။ Password တစ်ခုကို သိတာနဲ့ တခြား account တွေကိုပါဝင်လို့ရသွားနိုင်ပါတယ်။ နောက်ပြီး Password က ရိုးရှင်းနေလို့လဲမဖြစ်ပါဘူး။ လွယ်လွယ်ကူကူရိုးရိုးရှင်းရှင်းပေးထားရင် ကိုယ်ရိုက်လိုက်တဲ့ password ကို တခြားလူကစောင့်ကြည့်တာနဲ့တင် သိသွားနိုင်လို့ပါ။ စိတ်ချရအောင် ရှည်လျားပြီး ရှုပ်ထွေးတဲ့ password တွေကို ခဏခဏပြောင်းပြန်တော့လဲ အဲဒီ password တွေကို မှတ်မိဖို့က ခက်ခဲပါလိမ့်မယ်။ အဲဒါကြောင့် တချို့က &lt;a href=&#34;http://www.keepassx.org/&#34;&gt;Keypass&lt;/a&gt; လို password manager တစ်ခုခုသုံးကြပါတယ်။ Keepass က ကိုယ့်ရဲ့ password တွေကို Database တစ်ခုလုပ်ပြီး သိမ်းထားပေးတာပါ။ လိုအပ်ရင် အဲဒီ Database ကို Keypass နဲ့ဖွင့်ပြီး password ကို clipboard ထဲ အလွယ်တကူ copy ကူးထည့်ပေးပါတယ်။ နောက်ပြီး Password generate လုပ်ပေးတာတွေ password ကို သက်တမ်းသတ်မှတ်ပြီး အဲဒီသက်တမ်းကုန်တာနဲ့ ပြောင်းဖို့အသိပေးတာမျိုးတွေလည်း လုပ်ပေးနိုင်ပါသေးတယ်။ Windows User တွေအတွက်ကတော့ GUI Tool သုံးရတာနှစ်သက်ကြပေမယ့် တချို့ Linux, Mac OSX User တွေကတော့ CLI သုံးရတာကို ပိုပြီးနှစ်သက်ကြပါတယ်။ ကိုယ်တိုင်လဲ Password Manager သုံးချင်ပေမယ့် GUI သေသပ်မှုမရှိတဲ့ KeepassX ကို သိပ်မသုံးချင်ပါဘူး။ Terminal အသုံးများတဲ့သူတွေအတွက် Keepass application ကို သီးသန့်ထပ်ဖွင့်ပြီးသုံးတာထက် ဖွင့်ထားတဲ့ Terminal ကနေပဲ command ရိုက်ပြီး password ရှာတာကပို အဆင်ပြေပါလိမ့်မယ်။ Unix-liked OS တွေ အတွက် &lt;a href=&#34;http://www.passwordstore.org&#34;&gt;Pass&lt;/a&gt; ဆိုတဲ့ CLI tool ရှိပါတယ်။ စိတ်ချရပေမယ့် အနည်းငယ်ရှုပ်ထွေးပါတယ်။ လိုချင်တာက password တွေကို account ID နဲ့တွဲပြီး လွယ်လွယ်ကူကူသိမ်းနိုင်ဖို့ရယ် လွယ်လွယ်ကူကူ access လုပ်နိုင်ဖို့ရယ်ပါ။ ဒါကြောင့် ကိုယ်သိတဲ့ Bash နဲ့ပဲ Script လေးလုပ်ကြည့်ဖြစ်သွားပါတယ်။&lt;/p&gt;
 
@@ -93,7 +93,7 @@ $ sudo ntfsx removeall
       <title>FOREX</title>
       <link>http://naingyeminn.com/posts/forex-exchange-rate-checker/</link>
       <pubDate>Mon, 22 Dec 2014 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/forex-exchange-rate-checker/</guid>
       <description>
 
@@ -117,7 +117,7 @@ $ sudo ntfsx removeall
       <title>vFix - Fix Virus Infected Flash Drives</title>
       <link>http://naingyeminn.com/posts/vfix-fix-virus-infected-flash-drives/</link>
       <pubDate>Mon, 23 Jun 2014 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/vfix-fix-virus-infected-flash-drives/</guid>
       <description>&lt;p&gt;ရုံးမှာ တစ်ခါတစ်ခါ Virus ဝင်ထားတဲ့ Flash Drive တွေ ယူယူလာ Data တွေမတွေ့တော့လို့ဆိုပြီး လာပြလေ့ရှိပါတယ်။ များသောအားဖြင့် Windows Virus တွေက Flash Drive ကနေပဲ ကူးကြတာများပါတယ်။ ကူးပြီဆိုရင်လဲ Drive ထဲရှိတဲ့ Folder တွေကို Hidden လုပ် Folder နဲ့ နာမည်တူ Link တွေထုတ်ပြီး virus file ကိုသွားချိတ်လေ့ရှိပါတယ်။ Windows မှာရှိတဲ့ Antivirus က Virus ကိုရှင်လိုက်နိုင်တယ်ဆိုရင်တောင် အဲဒီ Virus က Hidden လုပ်သွားတဲ့ Flash Drive ထဲက Folder တွေကိုတော့ ပြန်ဖေါ်ပေးလေ့မရှိပါဘူး။&lt;/p&gt;
 

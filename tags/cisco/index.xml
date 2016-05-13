@@ -4,14 +4,14 @@
       <title>Cisco on Naing Ye` Minn </title>
     <link>http://naingyeminn.com/tags/cisco/</link>
     <language>en-us</language>
-    <author>Alexander Ivanov</author>
+    <author>Naing Ye` Minn</author>
     <updated>2015-10-17 00:00:00 &#43;0000 UTC</updated>
     
     <item>
       <title>NX-OS Titanium Emulator on VMware Fusion</title>
       <link>http://naingyeminn.com/posts/nx-os-titanium-on-vmware-fusion/</link>
       <pubDate>Sat, 17 Oct 2015 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/nx-os-titanium-on-vmware-fusion/</guid>
       <description>&lt;p&gt;ဒီ Post လေးကတော့ Mac သုံးတဲ့ Network Admin/Engineer တွေအတွက်ပါ။ Cisco ရဲ့ Nexus Switch တွေကိုလေ့လာဖို့ &lt;a href=&#34;http://depositfiles.com/files/wxeo6gwo9&#34;&gt;NX-OS Titanium Emulator&lt;/a&gt; ကို OS X ပေါ်မှာ Setup လုပ်တဲ့နည်းလမ်းလေးပဲဖြစ်ပါတယ်။ VMware ရဲ့ VMX format နဲ့ Export ထုတ်ပေးထားတဲ့ ဒီ Emulator လေးကို များသောအားဖြင့် Windows ပေါ်မှာပဲ VMPlayer, VMware Workstation တို့နဲ့သုံးလေ့၊ စမ်းလေ့ရှိကြပါတယ်။ Internet မှာရှိတဲ့ Blog တွေမှာလည်း ရှာတွေ့ရသလောက်က Windows ပေါ် ဘယ်လို Setup လုပ်ရတယ်ဆိုတာကိုပဲ ရေးထားကြတာပါ။ Mac OS X မှာရှိတဲ့ VMware Fusion နဲ့ ဘယ်လိုသုံးရတယ်ဆိုတာကိုတော့ လုံးဝကိုရှာမရပါဘူး။ VMware Product ချင်းအတူတူဖြစ်တဲ့အတွက် ပြသနာမရှိလောက်ဘူးလို့ ထင်ရပေမယ့် တကယ်တမ်း Setup လုပ်တဲ့အခါကျ အခက်အခဲလေးတွေရှိပါတယ်။ အဲဒီအတွက်ကြောင့် အားလုံးအဆင်ပြေပြေ Setup လုပ်နိုင်စေဖို့ ဒီ post လေးရေးလိုက်ခြင်းဖြစ်ပါတယ်။ Setup လုပ်တဲ့ နည်းလမ်းကတော့ -&lt;/p&gt;
 

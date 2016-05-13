@@ -4,14 +4,14 @@
       <title>Linux on Naing Ye` Minn </title>
     <link>http://naingyeminn.com/tags/linux/</link>
     <language>en-us</language>
-    <author>Alexander Ivanov</author>
+    <author>Naing Ye` Minn</author>
     <updated>2016-05-08 00:00:00 &#43;0000 UTC</updated>
     
     <item>
       <title>Using SED Command</title>
       <link>http://naingyeminn.com/posts/using-sed-command/</link>
       <pubDate>Sun, 08 May 2016 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/using-sed-command/</guid>
       <description>&lt;p&gt;&lt;code&gt;sed&lt;/code&gt; ဆိုတာ Stream Editor အတိုကောက်ပါ။ command တစ်ခုခုရဲ့ output text stream ကိုဖြစ်စေ၊ file ထဲက text တွေကိုဖြစ်စေ ရှာဖွေခြင်း၊ ပြင်ဆင်ခြင်းများပြုလုပ်နိုင်ပါတယ်။ &lt;a href=&#34;http://naingyeminn.com/posts/using-grep-command/&#34;&gt;grep&lt;/a&gt;, &lt;a href=&#34;http://naingyeminn.com/posts/using-awk-command/&#34;&gt;awk&lt;/a&gt; တို့နဲ့အမြဲတွဲသုံးလေ့ရှိပါတယ်။ &lt;code&gt;sed&lt;/code&gt; ကိုလေ့လာဖို့ ထုံးစံအတိုင်း လိုအပ်တဲ့ဖိုင်လေးတစ်ခုပြုလုပ်ပါမယ်။&lt;/p&gt;
 
@@ -409,7 +409,7 @@ Rangoon
       <title>Using AWK Command</title>
       <link>http://naingyeminn.com/posts/using-awk-command/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/using-awk-command/</guid>
       <description>&lt;p&gt;Text File ထဲက Content တွေကိုရှာဖွေတဲ့နေရာမှာ &lt;code&gt;grep&lt;/code&gt; အပြင် နောက်ထပ်သုံးလေ့သုံးထရှိတာကတော့ &lt;code&gt;awk&lt;/code&gt; ဖြစ်ပါတယ်။ Content ရှာတာခြင်တူပေမဲ့ Output ကို Delimiter (သတ်မှတ်ပိုင်းခြားသင်္ကေတ) သုံးပြီးလိုအပ်တဲ့အပိုင်းလောက်ပဲ ခွဲထုတ်ပြသပေးနိုင်တာ သူ့ရဲ့အားသာချက်တစ်ခုပါ။ Default Delimiter ကတော့ Space ဖြစ်ပါတယ်။ Space ခြားထားတဲ့နေရာတွေကနေပိုင်းခြားပြသပေးမှာဖြစ်ပါတယ်။ လက်တွေ့လေ့လာစမ်းသပ်နိုင်ဖို့ လိုအပ်တဲ့ နမူနာ ဖိုင်လေးတစ်ခုအလျှင်ဦးဆုံး ဖန်တီးပါမယ်။&lt;/p&gt;
 
@@ -715,7 +715,7 @@ mail /var/spool/mail
       <title>Using GREP Command</title>
       <link>http://naingyeminn.com/posts/using-grep-command/</link>
       <pubDate>Sun, 01 Nov 2015 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/using-grep-command/</guid>
       <description>
 
@@ -1041,7 +1041,7 @@ grep_demo1.txt:a quick brown fox jumps over the lazy dog.
       <title>Coloring Log Files</title>
       <link>http://naingyeminn.com/posts/coloring-log-files/</link>
       <pubDate>Wed, 14 Oct 2015 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/coloring-log-files/</guid>
       <description>&lt;p&gt;Linux Administrator တွေအနေနဲ့ Log Analyzer တွေမျိုးစုံရှိနေပေမယ့် တစ်ခါတစ်ရံ လိုအပ်လို့ Log File တွေကိုမွှေနှောက်ရမယ်ဆိုလျှင် အာရုံနောက်ကြမယ်ထင်ပါတယ်။ Log File တွေရဲ့ထုံးစံအတိုင်း Text တွေကို ပြွပ်သိပ်နေအောင်ရိုက်ထုတ်ထားတာဖြစ်တဲ့အတွက် ဖတ်ရတဲ့သူအတွက် ဘယ်အပိုင်းက ဘာဆိုတာကို မနည်း အာရုံစိုက်ခွဲခြားနေရပါလိမ့်မယ်။ အဲဒီပြဿနာကိုတော့ &lt;strong&gt;CCZE&lt;/strong&gt; ကကူညီဖြေရှင်းပေးနိုင်ပါတယ်။ &lt;strong&gt;CCZE&lt;/strong&gt; ဆိုတာကတော့ command-line tool လေးတစ်ခုပဲဖြစ်ပါတယ်။ Linux Admin တွေအနေနဲ့ server ကို ssh နဲ့ access လုပ်နေတဲ့အချိန် Log File တွေကိုဖတ်ရှုဖို့လိုလာခဲ့မယ်ဆိုလျှင်တော့ ဒီ Tool လေးက အရမ်းအသုံးတည့်ပါတယ်။ Log ကိုသက်ဆိုင်ရာ အပိုင်းအခြားအလိုက် အရောင်ခွဲခြားပြီး ပြသပေးတာဖြစ်တဲ့အတွက် ဖတ်ရှုသူအနေနဲ့ မြန်ဆန်လွယ်ကူစွာ နားလည်သဘောပေါက်နိုင်မှာပါ။&lt;/p&gt;
 
@@ -1090,7 +1090,7 @@ $ sudo tail -3 /var/log/messages | ccze -A
       <title>EPEL for CentOS</title>
       <link>http://naingyeminn.com/posts/epel-for-centos/</link>
       <pubDate>Tue, 13 Oct 2015 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/epel-for-centos/</guid>
       <description>
 
@@ -1164,7 +1164,7 @@ $ sudo rpm -ivh epel-release-latest-7.noarch.rpm
       <title>Reading Man Page</title>
       <link>http://naingyeminn.com/posts/reading-man-page/</link>
       <pubDate>Wed, 02 Sep 2015 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/reading-man-page/</guid>
       <description>
 
@@ -1254,7 +1254,7 @@ $ sudo rpm -ivh epel-release-latest-7.noarch.rpm
       <title>Find Command Usage</title>
       <link>http://naingyeminn.com/posts/find-command-usage/</link>
       <pubDate>Thu, 27 Aug 2015 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/find-command-usage/</guid>
       <description>
 
@@ -1414,7 +1414,7 @@ $ find /etc -type f -iname &amp;quot;*.conf&amp;quot; -exec cp {} ~/Config \;
       <title>Linux Terminal / Command Line Tricks (2)</title>
       <link>http://naingyeminn.com/posts/linux-command-line-usage-2/</link>
       <pubDate>Tue, 04 Aug 2015 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/linux-command-line-usage-2/</guid>
       <description>
 
@@ -1490,7 +1490,7 @@ $ find /etc -type f -iname &amp;quot;*.conf&amp;quot; -exec cp {} ~/Config \;
       <title>Linux Terminal / Command Line Tricks</title>
       <link>http://naingyeminn.com/posts/linux-command-line-usage/</link>
       <pubDate>Sun, 03 Aug 2014 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/linux-command-line-usage/</guid>
       <description>
 
@@ -1704,7 +1704,7 @@ $ 50
       <title>Tips for Ubuntu-MM</title>
       <link>http://naingyeminn.com/posts/tips-for-ubuntu-mm/</link>
       <pubDate>Thu, 03 Jul 2014 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/tips-for-ubuntu-mm/</guid>
       <description>
 
@@ -1788,7 +1788,7 @@ $ cd /home/yourname
       <title>vFix - Fix Virus Infected Flash Drives</title>
       <link>http://naingyeminn.com/posts/vfix-fix-virus-infected-flash-drives/</link>
       <pubDate>Mon, 23 Jun 2014 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/vfix-fix-virus-infected-flash-drives/</guid>
       <description>&lt;p&gt;ရုံးမှာ တစ်ခါတစ်ခါ Virus ဝင်ထားတဲ့ Flash Drive တွေ ယူယူလာ Data တွေမတွေ့တော့လို့ဆိုပြီး လာပြလေ့ရှိပါတယ်။ များသောအားဖြင့် Windows Virus တွေက Flash Drive ကနေပဲ ကူးကြတာများပါတယ်။ ကူးပြီဆိုရင်လဲ Drive ထဲရှိတဲ့ Folder တွေကို Hidden လုပ် Folder နဲ့ နာမည်တူ Link တွေထုတ်ပြီး virus file ကိုသွားချိတ်လေ့ရှိပါတယ်။ Windows မှာရှိတဲ့ Antivirus က Virus ကိုရှင်လိုက်နိုင်တယ်ဆိုရင်တောင် အဲဒီ Virus က Hidden လုပ်သွားတဲ့ Flash Drive ထဲက Folder တွေကိုတော့ ပြန်ဖေါ်ပေးလေ့မရှိပါဘူး။&lt;/p&gt;
 
@@ -1838,7 +1838,7 @@ $ vfix
       <title>XenServer Installation Problems and Review</title>
       <link>http://naingyeminn.com/posts/xenserver-installation-problems-and-review/</link>
       <pubDate>Fri, 30 May 2014 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/xenserver-installation-problems-and-review/</guid>
       <description>&lt;p&gt;မနေ့က အလုပ်မှာ Desktop တစ်လုံးအပိုထွက်လာတာနဲ့ XenServer စမ်းကြည့်ဖြစ်တယ်။ စက်က အမြင့်ကြီးမဟုတ်ပေမယ့် processor က VT support လုပ်တာရယ် Memory 4GB လောက်ရှိတာရယ်ကြောင့် စမ်းဖို့အဆင်ပြေသွာတယ်။ &lt;a href=&#34;http://xenserver.org/overview-xenserver-open-source-virtualization/download.html&#34;&gt;XenServer 6.2&lt;/a&gt; iso လဲဆွဲထားပြီးသားရှိပေမယ့် CD အလွတ်မရှိတာနဲ့ Flash Drive နဲ့ပဲ install လုပ်မယ်ပေါ့။ အဲ့ဒီအတွက် flash drive ကို FAT32 နဲ့ format ချ၊ &lt;a href=&#34;http://sourceforge.net/projects/unetbootin/&#34;&gt;Unetbootin&lt;/a&gt; နဲ့ ပုံမှန်အတိုင်းပဲ XenServer ISO ကို extract လုပ်လိုက်တာ ဖြစ်ချင်တော့ boot တက်တဲ့အချိန်မှာ kernel ရှာမရပါဘူးဆိုပြီး error ပြလာတယ်။ google မှာရှာကြည့်လိုက်တော့ USB drive ရဲ့ /boot/isolinux/ directory ထဲက isolinux.cfg ကို syslinux.cfg ဆိုပြီး တော့ရယ်၊ /boot/ ထဲက isolinux ကို syslinux ဆိုပြီး ပြောင်းပေးရတယ်။ နောက် /syslinux.cfg ကိုဖျက်ပေးရတယ်။&lt;/p&gt;
 

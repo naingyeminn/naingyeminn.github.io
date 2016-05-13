@@ -4,14 +4,14 @@
       <title>Myanmar on Naing Ye` Minn </title>
     <link>http://naingyeminn.com/tags/myanmar/</link>
     <language>en-us</language>
-    <author>Alexander Ivanov</author>
+    <author>Naing Ye` Minn</author>
     <updated>2014-12-11 00:00:00 &#43;0000 UTC</updated>
     
     <item>
       <title>Burmese Font and Keyboard Installation for Ubuntu 14.04 LTS</title>
       <link>http://naingyeminn.com/posts/burmese-keyboard-for-ubuntu-1404/</link>
       <pubDate>Thu, 11 Dec 2014 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/burmese-keyboard-for-ubuntu-1404/</guid>
       <description>&lt;p&gt;Ubuntu Myanmar LoCo Team ရဲ့ Facebook page မှာအမြဲတမ်းမေးလေ့ရှိတဲ့ မေးခွန်းပါ။ Ubuntu မှာ မြန်မာ font ဘယ်လိုသွင်းရမလဲ မြန်မာလို ရိုက်မရလို့ပြောပြပါဦးဆိုတဲ့ မေးခွန်းတွေအတွက် ဖြေရလွယ်အောင် ဒီ post လေးထပ်ရေးလိုက်ပါတယ်။ Ubuntu 14.04 LTS version ကိုအခြေခံပြီး ပြောပြသွားပါမယ်။&lt;/p&gt;
 
@@ -80,7 +80,7 @@ $ gsettings set org.freedesktop.ibus.panel show 0
       <title>Ubuntu မှာ Unicode သုံးမယ်ဆိုရင်</title>
       <link>http://naingyeminn.com/posts/myanmar-unicode-in-ubuntu/</link>
       <pubDate>Fri, 25 Apr 2014 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/myanmar-unicode-in-ubuntu/</guid>
       <description>&lt;p&gt;Zawgyi နဲ့ Unicode အင်အားပြိုင်နေတာကြာပါပြီ Zawgyi က web မှာ တစ်နည်းအားဖြင့် internet ပေါ်မှာ အချိန်အတန်သင့် နေရာယူပြီးချိန်မှ Unicode ကပေါ်လာခဲ့လေတော့ သာမန် User အသိုင်းအဝန်းထဲကို Unicode ကမတိုးနိုင်ဖြစ်နေခဲ့တာလဲ အချိန်မနည်းတော့ပါဘူး။ အဓိကက Unicode ရဲ့ အကျိုးကျေးဇူးကိုမသိတဲ့အတွက် အလွယ်တကူသုံးနိုင်ပြီး တွင်ကျယ်နေပြီဖြစ်တဲ့ Zawgyi ကိုပဲဆက်သုံးဖြစ်နေကြတာပါ။ သိတဲ့သူဆိုတာကလဲ IT သမား အသိုင်းအဝန်းထဲကမှ Developer တွေလောက်သာရှိတော့ အခုချိန်ထိကို မတွင်ကျယ်ဖြစ်နေရတယ်။ အထူးသဖြင့် Facebook နဲ့ Gtalk တို့မှာက Zawgyi ပဲသုံးကြတာပါ။ လူအနည်းစုနဲ့ အများစု ယှဉ်လိုက်တော့ အပေါင်းအသင်းတွေထဲ ကိုယ်ပဲ Unicode သုံးပြီး သူရေးတာကိုယ်မဖတ်နိုင် ကိုယ်ရေးတာသူမဖတ်နိုင်နဲ့ နောက်ဆုံး မထူးဇာတ်ခင်းပြီး Zawgyi ပဲပြန်သုံးဖြစ်ကြတာများတယ်။ ကိုယ်တိုင်လဲ အဲဒီလို ခဏခဏဖြစ်တယ်။ နောက်ဆုံး ဆုံးဖြတ်ချက်ချလိုက်တယ်။ ပုံမှန်သုံးရင် Unicode သုံးပြီး Facebook နဲ့ gtalk မှာတော့ လိုအပ်မှ Zawgyi ကိုသုံးမယ်ပေါ့။ ဒါနဲ့ပဲ သုံးနေကျဖြစ်တဲ့ Ubuntu မှာ အဆင်အပြေဆုံးဖြစ်မယ့် နည်းလမ်းတွေရှာဖြစ်ခဲ့တယ်။&lt;/p&gt;
 
@@ -135,7 +135,7 @@ make install
       <title>Myanmar Kyeboard for Ubuntu</title>
       <link>http://naingyeminn.com/posts/myanmar-keyboard-for-ubuntu/</link>
       <pubDate>Fri, 12 Jul 2013 00:00:00 UTC</pubDate>
-      <author>Alexander Ivanov</author>
+      <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/myanmar-keyboard-for-ubuntu/</guid>
       <description>&lt;p&gt;mm-kb.deb ဆိုတဲ့ ဖိုင်လေးကို ပြန်ပြင်ထားတာပါ။ Ubuntu မှာက အခုနောက်ပိုက် deb ဖိုင်တွေကို အရင်လို double click နှိပ်ပြီး install တမ်းလုပ်လို့အဆင်မပြေတော့ပါဘူး။  အဲ့လိုသွင်းလို့ရဖို့ gDebi ဆိုတာထပ်သွင်းရပါတယ်။ အဲဒါမသွင်းချင်ရင် terminal ကနေ dpkg command နဲ့ သွင်းရပါတယ်။ နောက်ပြီး mm-kb.deb ဖိုင်ကိုသွင်းပြီးရင် IBus ကို run ပေးရတာ input method သွားရွေးပြီးထည့်ပေးရတာ၊ Input Method ကို default xkb အစား IBus သုံးမယ်ဆိုတာတွေကို manually configure လုပ်ပေးရပါတယ်။ အခုဒီ installation script လေးမှာတော့ အဲဒါတွေကို auto လုပ်ပေးသွားမှာပါ။ နောက်ပြီး ယူနီကုတ်၊ ဇော်ဂျီ ကြိုက်ရာ ၂မျိုးစလုံး တစ်ခါတည်းတမ်းတင်နိုင်သလို တစ်ခုဆီလဲ ရွေးပြီးတင်လို့ရပါတယ်။ Bash script ကိုပဲ Zenity သုံးပြီး GUI လေးနဲ့ install လုပ်လို့ရအောင်လုပ်ပေးထားတာပါ။ အရင်ကဆို install လုပ်ပုံလုပ်နည်းတွေကို အရှည်ကြီး ရှင်းပြနေရတဲ့အပြင် သာမာန် user တွေအတွက် ရှုပ်ထွေးတယ်လို့ထင်ကောင်းထင်ပါလိမ့်မယ်။ အခုတော့ ကျွန်တော် တတ်နိုင်သမျှ အလွယ်ဆုံးဖြစ်အောင်တော့ လုပ်ပေးထားပါတယ်။&lt;/p&gt;
 
