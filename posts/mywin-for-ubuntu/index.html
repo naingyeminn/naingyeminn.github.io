@@ -1,0 +1,193 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - MyWin for Ubuntu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://use.fontawesome.com/52ab3615c7.js"></script>
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/mywin-for-ubuntu/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="contact" class="overlay">
+  <div class="popup">
+    <a class="close" href="#/">&times;</a>
+    <div class="content">
+    	<ul>
+    		<li><a href="mailto:me@naingyeminn.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+
+    		<li><a href="https://github.com/naingyeminn" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    		<li><a href="https://plus.google.com/107143022418508884720" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.facebook.com/nyeminn" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.linkedin.com/in/naingyeminn" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+    	</ul> 
+    </div>
+  </div>
+</div>
+
+
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/mywin-for-ubuntu/">MyWin for Ubuntu</a></h1>
+	        <div class="post-time">July 31 2016</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com//tags/unicode">unicode</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/keyboard">keyboard</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/input">input</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/mywin">mywin</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/keyman">keyman</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/ubuntu">ubuntu</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        <p>Ubuntu User တွေအနေနဲ့ MyWin ကို သုံးချင်တယ်ဆိုရင် သာမန် User တစ်ယောက်အတွက် Install လုပ်ရတာ အနည်းငယ်ခက်ခဲနိုင်တဲ့အတွက် <a href="http://naingyeminn.com/posts/burmese-keyboard-for-ubuntu-1404/">mm-kb</a> လိုပဲ လွယ်ကူအောင် Makefile လေးနဲ့ packge ထုတ်ပေးထားပါတယ်။</p>
+
+<p>ဘာမှထွေထွေထူးထူးလုပ်နေစရာမလိုပါဘူး။ Terminal ဖွင့်ပြီး ဖေါ်ပြထားတဲ့ Command တွေကို တစ်ကြောင်းချင်းစီရိုက်သွားရုံပါပဲ။</p>
+
+<blockquote>
+<p>Internet ချိပ်ဆက်ထားဖို့တော့လိုအပ်ပါတယ်။</p>
+</blockquote>
+
+<pre><code class="language-sh">$ wget https://github.com/naingyeminn/mywin-ubuntu/archive/master.zip -O mywin-ubuntu.zip
+$ unzip mywin-ubuntu.zip
+$ cd mywin-ubuntu-master
+$ sudo make install
+$ ibus-daemon -rdx
+$ im-config -n ibus
+$ gsettings set org.freedesktop.ibus.panel show 0
+</code></pre>
+
+<p>ပြီးလျှင်တော့ ပုံမှာပြထားတဲ့အတိုင်း <strong>Text Entry Settings&hellip;</strong> ထဲဝင်လိုက်ပါ။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/ubuntu01.png" alt="Text Entry" /></p>
+
+<p><strong>&rdquo;+&rdquo;</strong> button ကိုနှိပ်ပြီး Input Source list ထဲ <strong>&ldquo;my-win&rdquo;</strong> ကိုရှာပြီး <strong>Add</strong> လုပ်လိုက်ပါ။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/ubuntu02.png" alt="Input1" /></p>
+
+<p><strong>Input sources to use</strong> ဆိုတဲ့ list ထဲမှာထပ်တိုးသွားပါလိမ့်မယ်။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/ubuntu03.png" alt="Input2" /></p>
+
+<p>MyWin သုံးပြီး စာရိုက်ဖို့ Panel မှာ ရှိတဲ့ Keyboard Layout Switcher နေရာမှာ သွားရွေးနိုင်သလို Shortcut Key ဖြစ်တဲ့ <strong>Super + Space</strong> နဲ့လည်း ပြောင်းလဲရွေးချယ် အသုံးပြုနိုင်ပါတယ်။</p>
+
+<p><strong>Related Links:</strong></p>
+
+<p><a href="http://thanlwinsoft.github.io/www.thanlwinsoft.org/ThanLwinSoft/MyanmarUnicode/InputMethods/KeymanKMFL.html">MyWin Keyboard Layout and Usage</a></p>
+
+<p><a href="http://naingyeminn.com/posts/mywin-for-osx/">MyWin for OSX</a></p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/mywin-for-ubuntu/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/mywin-for-osx/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p class="contact">Copyright © 2014 <a class="button" href="#contact">Naing Ye` Minn</a></p>
+		        </footer>
+		    </div>
+		  </div>    
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
