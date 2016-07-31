@@ -5,7 +5,85 @@
     <link>http://naingyeminn.com/posts/</link>
     <language>en-us</language>
     <author>Naing Ye` Minn</author>
-    <updated>2016-05-08 00:00:00 &#43;0000 UTC</updated>
+    <updated>2016-07-30 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>MyWin for OSX</title>
+      <link>http://naingyeminn.com/posts/mywin-for-osx/</link>
+      <pubDate>Sat, 30 Jul 2016 00:00:00 UTC</pubDate>
+      <author>Naing Ye` Minn</author>
+      <guid>http://naingyeminn.com/posts/mywin-for-osx/</guid>
+      <description>&lt;p&gt;လက်ရှိ ဇော်ဂျီအသုံးပြုနေသူတွေအနေနဲ့ Unicode ပြောင်းသုံးသင့်ကြောင်းတိုက်တွန်းတဲ့အခါတိုင်း ပြန်ထောက်လေ့ရှိတဲ့အချက်တွေထဲမှာ Unicode က ဇော်ဂျီလက်ကွက်နဲ့မတူတဲ့အတွက် အသစ်ဖြစ်နေတာရယ် နောက်ပြီး အဓိကပြစ်ချက်ကြီးလိုဖြစ်နေတဲ့ သဝေထိုးကိုနောက်မှရိုက်ရတာရယ်ကို အမြဲတွေ့ရပါတယ်။ ဒါကလည်း စရိုက်တဲ့အချိန်မှာသာအနည်းငယ်အခက်တွေ့နိုင်ပေမယ့် ရက်ပိုင်းအတွင်း အကျင့်ဖြစ်သွားနိုင်ပါတယ်။ သို့ပေမယ့် ဒီပြဿနာကို အစောကြီးကတည်းက ဖြေရှင်းပေးခဲ့ပြီးသာပါ။ မြန်မာနိုင်ငံသားတစ်ယောက်မဟုတ်သော်လည်း ကွန်ပျူတာသုံးမြန်မာစာစနစ်ကို အင်တိုက်အားတိုက်ကြိုးပမ်းဆောင်ရွက်ပေးခဲ့သော ကြွေလွင့်ပြီးဖြစ်တဲ့ &lt;a href=&#34;https://github.com/thanlwinsoft&#34;&gt;Keith&lt;/a&gt; ကိုအထူးပဲ လေးစား၊ ကျေးဇူးတင်မိပါတယ်။ အခု ဖော်ပြပေးမယ့် &lt;strong&gt;MyWin&lt;/strong&gt; ဆိုတာ သူ့လုပ်ဆောင်ချက်တွေထဲကတစ်ခုပါပဲ။ သူမရှိတဲ့နောက်ပိုင်း &lt;a href=&#34;http://thanlwinsoft.github.io/www.thanlwinsoft.org/index.html&#34;&gt;ThanLwinSoft&lt;/a&gt; ဆိုတဲ့ အဖွဲ့အစည်းဟာရပ်တန့်သွားခဲ့ပေမယ့် သူဆောင်ရွက်ခဲ့သမျှတွေက အခုချိန်ထိ အထောက်အကူပြုနေဆဲပါပဲ။&lt;/p&gt;
+
+&lt;p&gt;MyWin ကိုသုံးဖို့ Keyman ဆိုတဲ့ Freeware လိုအပ်ပါတယ်။ အလျှင်တုန်းကတော့ Keyman ကို Windows မှာပဲအသုံးပြုနိုင်တာပါ။ Mac OSX အတွက်တော့ အခု Beta Version ထုတ်ပေးထားပြီဖြစ်တဲ့အတွက် သုံးလိုကသုံးနိုင်ပြီဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;အလျှင်ဦးဆုံး &lt;a href=&#34;http://keyman.com/macosx/&#34;&gt;Keyman for Mac OS X Beta&lt;/a&gt; ကို &lt;a href=&#34;http://keyman.com/macosx/download.php&#34;&gt;Download&lt;/a&gt; လုပ်လိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;Download ကိုတော့ Email ဖြည့်စွက်ပေးမှသာ ပြုလုပ်နိုင်ပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx01.png&#34; alt=&#34;Download&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Keyman.dmg&lt;/strong&gt; နာမည်နှင့် ဖိုင်တစ်ဖိုင်ရရှိမှာဖြစ်ပါတယ်။ &lt;strong&gt;Double Click&lt;/strong&gt; နှိပ်ပြီးဖွင့်လိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx02.png&#34; alt=&#34;Install&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ပုံထဲမှာ မြှားပြထားတဲ့အတိုင်း ဘယ်ဘက်ခြမ်းမှာရှိတဲ့ &lt;strong&gt;Keyman.app&lt;/strong&gt; ကို Drag ဆွဲပြီး ညာဘက်မှာရှိတဲ့ &lt;strong&gt;Input Methods&lt;/strong&gt; folder ထဲထည့်လိုက်ပါ။ ပြီးလျှင်တော့ &lt;strong&gt;Keyman.dmg&lt;/strong&gt; ကိုပြန်ပိတ်လိုက်လို့ရပါပြီ။&lt;/p&gt;
+
+&lt;p&gt;နောက်တစ်ဆင့်မသွားခင် &lt;strong&gt;MyWin Keyboard&lt;/strong&gt; ဖိုင်လေး &lt;a href=&#34;https://github.com/thanlwinsoft/thanlwinsoft.github.com/blob/master/www.thanlwinsoft.org/ThanLwinSoft/Downloads/Keyboards/myWin2.2.kmp&#34;&gt;Download&lt;/a&gt; လုပ်ထားရပါမယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;MyWin2.2.kmp&lt;/strong&gt; ဆိုတဲ့ဖိုင်လေးရပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;System Preferences&lt;/strong&gt; ထဲမှ &lt;strong&gt;Keyboard&lt;/strong&gt; ကိုဖွင့်ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx03.png&#34; alt=&#34;System Preferences&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Input Sources&lt;/strong&gt; Tab ကိုရွေးပြီး အပေါင်းလက္ခဏာ သင်္ကေတလေးကိုနှိပ်ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx04.png&#34; alt=&#34;Input Sources&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Search Box ထဲ &lt;em&gt;key&lt;/em&gt; လို့ရိုက်ထည့်လိုက်တာနဲ့ &lt;strong&gt;Keyman&lt;/strong&gt; ကိုတွေ့ရပါလမ့်မယ်။ ရွေးပြီး &lt;strong&gt;Add&lt;/strong&gt; လုပ်လိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx05.png&#34; alt=&#34;Keyman&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Top Panel တွင် &lt;strong&gt;US&lt;/strong&gt; အလံ logo လေးပေါ်လာပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx06.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Click နှိပ်ပြီး ပေါ်လာတဲ့ Menu ထဲက &lt;strong&gt;Keyman&lt;/strong&gt; ကိုရွေးလိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx07.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;US&lt;/strong&gt; logo နေရာမှာ &lt;strong&gt;Keyman&lt;/strong&gt; ရဲ့ logo အနေနဲ့ပြောင်းသွားပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx08.png&#34; alt=&#34;Input3&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Keyman&lt;/strong&gt; logo ကိုနောက်တစ်ကြိမ်ထပ်နှိပ်ပြီး ပေါ်လာတဲ့ Menu ထဲက &lt;strong&gt;Configuration&amp;hellip;&lt;/strong&gt; ကိုရွေးလိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx09.png&#34; alt=&#34;Input4&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ပေါ်လာတဲ့ &lt;strong&gt;Keyman Configuration&lt;/strong&gt; ရဲ့ &lt;strong&gt;Keyboard Layouts&lt;/strong&gt; Tab ကိုသွားပါ။ &lt;strong&gt;Installed Keyboard&lt;/strong&gt; ဆိုတဲ့အောက်မှာ ဘာမှရှိဦးမှာမဟုတ်ပါဘူး။ အဲဒီအကွက်ထဲ နောက်ဆုံး Download ဆွဲခဲ့တဲ့ &lt;strong&gt;MyWin2.2.kmp&lt;/strong&gt; ဖိုင်ကို Drag ဆွဲပြီးထည့်လိုက်ပါ။ ပုံမှာပြထားတဲ့အတိုင်း my-Win2.2.4 Unicode 5.1 ဆိုပြီးဝင်သွားပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx10.png&#34; alt=&#34;MyWin&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;အပေါ်ပုံထဲမှာတွေ့ရတဲ့ &lt;strong&gt;Question Mark (?)&lt;/strong&gt; Button လေးကိုနှိပ်လိုက်လျှင်တော့ Keyboard Layout နဲ့ အသုံးပြုပုံ တွေကိုတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx11.png&#34; alt=&#34;Layout&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;နောက်ဆုံးအနေနဲ့လုပ်ပေးဖို့လိုတာကတော့ Keyboard ကို အလွယ်တကူ ပြောင်းလို့ရအောင် Shortcut Key ထည့်ပေးရတာပါ။ &lt;strong&gt;System Preferences&lt;/strong&gt; ရဲ့ &lt;strong&gt;Keyboard&lt;/strong&gt; ထဲမှာပါပဲ။ ပုံမှာပြထားတဲ့အတိုင်း &lt;strong&gt;Shortcuts&lt;/strong&gt; Tab ကိုသွားပြီး &lt;strong&gt;Input Sources&lt;/strong&gt; မှာ ကိုယ်နှစ်သက်ရာ Shortcut Key ကိုသတ်မှတ်ပေးလိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx12.png&#34; alt=&#34;Shortcut&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Unicode ကို ဇော်ဂျီလက်ကွက်နှင့် အနီးစပ်ဆုံးရိုက်နိုင်သလို သဝေထိုးနောက်မှရိုက်ရတဲ့ပြဿနာလည်းရှင်းသွားပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;စမ်းကြည့်ရသလောက် Error ထူးထူးခြားခြားမတွေ့ရသေးပါဘူး။ အားလုံးပဲအဆင်ပြေကြပါစေ။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Downloads:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://keyman.com/macosx/download.php&#34;&gt;Keyman for Mac OS X Beta&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/thanlwinsoft/thanlwinsoft.github.com/blob/master/www.thanlwinsoft.org/ThanLwinSoft/Downloads/Keyboards/myWin2.2.kmp&#34;&gt;MyWin2.2.kmp&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Using SED Command</title>
