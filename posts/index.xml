@@ -5,7 +5,61 @@
     <link>http://naingyeminn.com/posts/</link>
     <language>en-us</language>
     <author>Naing Ye` Minn</author>
-    <updated>2016-07-31 00:00:00 &#43;0000 UTC</updated>
+    <updated>2016-08-06 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>Myanmar Unicode Keyboards for Ubuntu</title>
+      <link>http://naingyeminn.com/posts/myanmar-unicode-keyboards-for-ubuntu/</link>
+      <pubDate>Sat, 06 Aug 2016 00:00:00 UTC</pubDate>
+      <author>Naing Ye` Minn</author>
+      <guid>http://naingyeminn.com/posts/myanmar-unicode-keyboards-for-ubuntu/</guid>
+      <description>&lt;p&gt;အလျှင်တုန်းကတော့ Unicode နဲ့ Zawgyi အတွက် &lt;a href=&#34;http://naingyeminn.com/posts/burmese-keyboard-for-ubuntu-1404/&#34;&gt;mm-kb&lt;/a&gt; ဆိုတာလုပ်ပေးထားဖူးပါတယ်။ ရိုးရိုး တမ်းတမ်း logical order အတိုင်းရိုက်ရတဲ့ Keyboard ပါ။ &lt;a href=&#34;http://naingyeminn.com/posts/mywin-for-ubuntu/&#34;&gt;MyWin&lt;/a&gt; အကြောင်းရေးပေးပြီးနောက် တချို့က Myanmar 3 Standard Layout အတိုင်းရိုက်လို့ရတာမရှိဘူးလားမေးလာကြတဲ့အတွက် ရှိသမျှ အကုန်စုစည်းပြီး Installer လေးလုပ်ပေးဖို့စိတ်ကူးမိသွားတာပါ။ ဒါပေမယ့် ThanLwinSoft ကလုပ်ပေးထားတဲ့ထဲမှာ မြန်မာ၊ ပအိုဝ်းနဲ့ စကောကရင် ပဲရှိသေးပြီး ရှမ်းအတွက်မပါသေးဘူး။ ဒါကြောင့် ရှမ်းအတွက်ပါထပ်ဖြည့်ပြီး Installer Package လေးထပ်လုပ်ပေးလိုက်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;Installation ကတော့အောက်ပါအတိုင်းဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Internet ချိပ်ဆက်ထားဖို့တော့လိုအပ်ပါတယ်။&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ wget https://github.com/naingyeminn/mm-kb-kmfl/archive/master.zip -O mm-kb-kmfl.zip
+$ unzip mm-kb-kmfl.zip
+$ cd mm-kb-kmfl-master
+$ make install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ပြီးလျှင်တော့ ပုံမှာပြထားတဲ့အတိုင်း &lt;strong&gt;Text Entry Settings&amp;hellip;&lt;/strong&gt; ထဲဝင်လိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/mm-kb-kmfl1.png&#34; alt=&#34;Text Entry&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&amp;rdquo;+&amp;rdquo;&lt;/strong&gt; button ကိုနှိပ်ပြီး Input Source list ထဲ &lt;strong&gt;&amp;ldquo;other&amp;rdquo;&lt;/strong&gt; လို့ရိုက်ပြီးရှာလိုက်ပါ။ ပေါ်လာတဲ့ Input Source တွေထဲကမှ ကြိုက်နှစ်သက်ရာကို တစ်ခုချင်းရွေးပြီး &lt;strong&gt;Add&lt;/strong&gt; လုပ်လိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/mm-kb-kmfl2.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Input sources to use&lt;/strong&gt; ဆိုတဲ့ list ထဲမှာတိုးသွားပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/mm-kb-kmfl3.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;အခုဆိုရင်ကြိုက်နှစ်သက်ရာ Keyboard ကို ရွေးချယ်ပြီးအသုံးပြုနိုင်ပါပြီ။ Panel မှာ ရှိတဲ့ Keyboard Layout Switcher နေရာမှာ သွားရွေးနိုင်သလို Shortcut Key ဖြစ်တဲ့ &lt;strong&gt;Super + Space&lt;/strong&gt; နဲ့လည်း ပြောင်းလဲရွေးချယ် အသုံးပြုနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/mm-kb-kmfl4.png&#34; alt=&#34;Input3&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;လိုအပ်ချက်များရှိပါက &lt;a href=&#34;http://naingyeminn.com/posts/myanmar-unicode-keyboards-for-ubuntu/#contact&#34;&gt;ဆက်သွယ်&lt;/a&gt; အကြံပြုနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Related Links:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://naingyeminn.com/posts/mywin-for-osx/&#34;&gt;MyWin for OSX&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://naingyeminn.com/posts/mywin-for-ubuntu/&#34;&gt;MyWin for OSX&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/shan-unicode-layout.jpg&#34;&gt;Ours Unicode - Shan Layout&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/suntungithub/Keymagic_Layouts&#34;&gt;keymagic_layouts&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://help.keyman.com/developer/language/guide/&#34;&gt;Keyman Language Guide&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>MyWin for Ubuntu</title>
@@ -13,13 +67,9 @@
       <pubDate>Sun, 31 Jul 2016 00:00:00 UTC</pubDate>
       <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/mywin-for-ubuntu/</guid>
-      <description>&lt;p&gt;Ubuntu User တွေအနေနဲ့ MyWin ကို သုံးချင်တယ်ဆိုရင် သာမန် User တစ်ယောက်အတွက် Install လုပ်ရတာ အနည်းငယ်ခက်ခဲနိုင်တဲ့အတွက် &lt;a href=&#34;http://naingyeminn.com/posts/burmese-keyboard-for-ubuntu-1404/&#34;&gt;mm-kb&lt;/a&gt; လိုပဲ လွယ်ကူအောင် Makefile လေးနဲ့ packge ထုတ်ပေးထားပါတယ်။&lt;/p&gt;
+      <description>&lt;p&gt;Ubuntu User တွေအနေနဲ့ MyWin ကို သုံးချင်တယ်ဆိုရင် သာမန် User တစ်ယောက်အတွက် Install လုပ်ရတာ အနည်းငယ်ခက်ခဲနိုင်တဲ့အတွက် &lt;a href=&#34;http://naingyeminn.com/posts/burmese-keyboard-for-ubuntu-1404/&#34;&gt;mm-kb&lt;/a&gt; လိုပဲ အလွယ်ကူအောင် Makefile လေးနဲ့ packge ထုတ်ပေးထားပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;ဘာမှထွေထွေထူးထူးလုပ်နေစရာမလိုပါဘူး။ Terminal ဖွင့်ပြီး ဖေါ်ပြထားတဲ့ Command တွေကို တစ်ကြောင်းချင်းစီရိုက်သွားရုံပါပဲ။&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Internet ချိပ်ဆက်ထားဖို့တော့လိုအပ်ပါတယ်။&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;ဘာမှထွေထွေထူးထူးလုပ်နေစရာမလိုပါဘူး။ Terminal ဖွင့်ပြီး ဖေါ်ပြထားတဲ့ Command တွေကို တစ်ကြောင်းချင်းစီရိုက်သွားရံုပါပဲ။&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ wget https://github.com/naingyeminn/mywin-ubuntu/archive/master.zip -O mywin-ubuntu.zip
 $ unzip mywin-ubuntu.zip

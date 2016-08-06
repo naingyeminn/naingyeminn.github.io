@@ -13,13 +13,9 @@
       <pubDate>Sun, 31 Jul 2016 00:00:00 UTC</pubDate>
       <author>Naing Ye` Minn</author>
       <guid>http://naingyeminn.com/posts/mywin-for-ubuntu/</guid>
-      <description>&lt;p&gt;Ubuntu User တွေအနေနဲ့ MyWin ကို သုံးချင်တယ်ဆိုရင် သာမန် User တစ်ယောက်အတွက် Install လုပ်ရတာ အနည်းငယ်ခက်ခဲနိုင်တဲ့အတွက် &lt;a href=&#34;http://naingyeminn.com/posts/burmese-keyboard-for-ubuntu-1404/&#34;&gt;mm-kb&lt;/a&gt; လိုပဲ လွယ်ကူအောင် Makefile လေးနဲ့ packge ထုတ်ပေးထားပါတယ်။&lt;/p&gt;
+      <description>&lt;p&gt;Ubuntu User တွေအနေနဲ့ MyWin ကို သုံးချင်တယ်ဆိုရင် သာမန် User တစ်ယောက်အတွက် Install လုပ်ရတာ အနည်းငယ်ခက်ခဲနိုင်တဲ့အတွက် &lt;a href=&#34;http://naingyeminn.com/posts/burmese-keyboard-for-ubuntu-1404/&#34;&gt;mm-kb&lt;/a&gt; လိုပဲ အလွယ်ကူအောင် Makefile လေးနဲ့ packge ထုတ်ပေးထားပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;ဘာမှထွေထွေထူးထူးလုပ်နေစရာမလိုပါဘူး။ Terminal ဖွင့်ပြီး ဖေါ်ပြထားတဲ့ Command တွေကို တစ်ကြောင်းချင်းစီရိုက်သွားရုံပါပဲ။&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Internet ချိပ်ဆက်ထားဖို့တော့လိုအပ်ပါတယ်။&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;ဘာမှထွေထွေထူးထူးလုပ်နေစရာမလိုပါဘူး။ Terminal ဖွင့်ပြီး ဖေါ်ပြထားတဲ့ Command တွေကို တစ်ကြောင်းချင်းစီရိုက်သွားရံုပါပဲ။&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ wget https://github.com/naingyeminn/mywin-ubuntu/archive/master.zip -O mywin-ubuntu.zip
 $ unzip mywin-ubuntu.zip
