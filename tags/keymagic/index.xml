@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Keymagic on Naing Ye` Minn </title>
+    <link>http://naingyeminn.com/tags/keymagic/</link>
+    <language>en-us</language>
+    <author>Naing Ye` Minn</author>
+    <updated>2016-08-06 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>KeyMagic Lock Screen Issue in OS X</title>
+      <link>http://naingyeminn.com/posts/keymagic-osx-temp-fix/</link>
+      <pubDate>Sat, 06 Aug 2016 00:00:00 UTC</pubDate>
+      <author>Naing Ye` Minn</author>
+      <guid>http://naingyeminn.com/posts/keymagic-osx-temp-fix/</guid>
+      <description>&lt;p&gt;Mac OS X စသုံးစဉ်က Unicode Keyboard အနေနဲ့အသုံးများတဲ့ KeyMagic ကိုပဲသုံးဖို့ကြိုးစားခဲ့ပါတယ်။ သို့ပေမယ့်ပြဿနာရှိတာက KeyMagic ကိုသုံးပြီးစာရိုက်နေရာကနေ ခဏနားလိုက်လို့ Screen Lock ဖြစ်သွားတာနဲ့ Password ပြန်ရိုက်ပြီး ပြန်ဝင်လို့မရတာပါ။ OS X အတွက် တစ်ခုတည်းသော Smart Keyboard ဖြစ်ပေမယ့် အဲဒီ ပြဿနာလေးတစ်ခုနဲ့တင် ဆက်မသုံးဖြစ်တော့တာပါ။ ကိုယ်တိုင်ပဲ &lt;a href=&#34;http://naingyeminn.com/posts/myanmar-unicode-keyboard-for-yosemite/&#34;&gt;Myanmar3 Layout&lt;/a&gt; အတိုင်း ရိုးရိုး Keyboard တစ်ခု Ukelele နဲ့လုပ်ပြီး သုံးဖြစ်ခဲ့တယ်။ အခုနောက်ပိုင်း အခြား တိုင်းရင်းသား ယူနီကုဒ် Keyboard Layout လေးတွေ လုပ်ပေးရင်းနဲ့မှ Keyboard တွေနဲ့ပတ်သက်ပြီးနည်းနည်းလေ့လာဖြစ်လာတယ်။ Smart Keyboard ဖြစ်တဲ့ Keyman ကလည်း OS X အတွက်ထွက်လာတော့ ရှိပြီးသား Keyboard Layout လေးတွေပြန်စုစည်းပြီး မရှိသေးတဲ့ ရှမ်း Keyboard Layout လေးပါထက်လုပ်ဖြစ်တယ်။ အခြား တိုင်းရင်းသားဘာသာစကားတွေအတွက်လည်း ထပ်လုပ်ဖို့ စိတ်ကူးရှိပေမယ့် Keyman ကလောလောဆယ်သာ Free ပေးထားပြီး နောက်ပိုင်း Commercial ပြောင်းသွားနိုင်တာမို့ သိပ်တော့အားမရဘူး။ ဒါပေမယ့် မနေ့ကတော့ OS X ရဲ့ KeyMagic မှာတက်နေတဲ့ ပြဿနာအတွက် tweak လုပ်လို့ရမယ့်နည်းလေးရှာတွေ့သွားတယ်။ နည်းလမ်းတကျ ဖြေရှင်းတာမဟုတ်ပေမယ့် အလုပ်ဖြစ်တဲ့အတွက် Share လိုက်ပါတယ်။ ဘာပဲဖြစ်ဖြစ် KeyMagic ကတော့ Open Source ဖြစ်တာရော၊ Keyboard Layout လည်းစုံစုံလင်လင်ရှိနှင့်ပြီးသားဆိုတော့ OS X User တွေအတွက် ပိုအဆင်ပြေလိမ့်မယ်ထင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;အခု ဖြေရှင်းတဲ့နည်းလမ်းကတော့ KeyMagic ကို Burmese Input Sources category ထဲပြောင်းပေးတာပါ။ နားလည်သလောက်ပြောရရင် OS X အနေနဲ့ သူ Support လုပ်ထားတဲ့ Language တွေအတွက် Input လက်ခံရယူမယ့်ပုံစံပေါ်မူတည်ပြီး Layout ကို English အနေနဲ့ အလိုအလျောက်ပြောင်းအောင်လုပ်ပေးထားပါတယ်။ OS X က Burmese Input Sources category ကို အဲဒီ Function ထောက်ပံ့ပေးထားတာဖြစ်တဲ့အတွက် Burmese category အောက်မှာရှိတဲ့ Keyboard တိုင်းဟာ Password ရိုက်ခိုင်းတဲ့နေရာမျိုး တိုင်းလိုလိုမှာ English ကိုအလိုအလျောက် ပြောင်းသွားမှာဖြစ်ပါတယ်။ KeyMagic ကိုအဲ့လိုဖြစ်အောင်လုပ်ဖို့လိုတာပါ။ သူ့ကိုသုံးပြီးမြန်မာလိုစာရိုက်နေရာကနေ Screen Lock ကျသွားတာကြောင့်ပဲဖြစ်ြဖစ်၊ Sleep ဖြစ်သွားတာကြောင့်ပဲဖြစ်ဖြစ် Login ပြန်ဝင်ဖို့လုပ်တဲ့အခါ Password ရိုက်မရတာ English ပြန်ပြောင်းမပေးတာကြောင့်ပါပဲ။&lt;/p&gt;
+
+&lt;p&gt;KeyMagic က Default အနေနဲ့ English category အောက်မှာရှိနေတာပါ။ Burmese အောက်ကိုပြောင်းဖို့အတွက်ကတော့ &lt;code&gt;KeyMagic.app&lt;/code&gt; ရဲ့ Content ထဲက &lt;code&gt;Info.plist&lt;/code&gt; ဆိုတဲ့ဖိုင်မှာဝင်ပြင်ပေးရတာပါ။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;key&amp;gt;TISIntendedLanguage&amp;lt;/key&amp;gt;
+&amp;lt;string&amp;gt;my_BU&amp;lt;/string&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ဆိုတဲ့ Key နဲ့ String Value ကိုထပ်ဖြည့်ပေးရမှာဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;ဒီကိစ္စကို KeyMagic Developer ဖြစ်တဲ့ သန့်သက်နဲ့ ပြောကြည့်ပေမယ့် သူ့အနေနဲ့ KeyMagic ကို Burmese အောက်ထားတာမသင့်တော်တဲ့အတွက် အခြားနည်းလမ်းရှာကြည့်ဦးမယ်လို့တော့ဆိုပါတယ်။ ဘာကြောင့်လည်းဆိုတော့ KeyMagic ကို အခြားနိုင်ငံတွေမှာလည်းသုံးနေတာဖြစ်တဲ့အတွက် Burmese အောက်မထားတာပါ။&lt;/p&gt;
+
+&lt;p&gt;မြန်မာနိုင်ငံကလူတွေအတွက်တော့ Burmese အောက်ရောက်တာပြဿနာမရှိတာကြောင့် ယာယီအနေနဲ့ ပြောင်းရလွယ်အောင် Script လေးလုပ်ပေးလိုက်ပါတယ်။ အဓိကက KeyMagic အသုံးပြုသူတွေ Proper Fix မထွက်ခင် အဆင်ပြေပြေသုံးနိုင်ဖို့အတွက်ရည်ရွယ်ပြီး ရေးပေးထားတာပါ။&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;အင်တာနက် ချိပ်ဆက်ထားဖို့တော့လိုအပ်ပါတယ်။&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Fix မလုပ်ခင် ပထမဦးဆုံး KeyMagic ကို Input List ထဲမှ ခဏထုတ်ထားလိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;KeyMagic ကိုရွေးပြီး &lt;strong&gt;-&lt;/strong&gt; button လေးကိုနှိပ်လိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix01.png&#34; alt=&#34;kmfix01&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Trash ထဲထည့်မလားမေးရင် Keep File ကိုရွေးလိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix02.png&#34; alt=&#34;kmfix02&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ပြီးရင်တော့ &lt;strong&gt;Keyboard Preferences&lt;/strong&gt; ကို ပြန်ပိတ်ထားလိုက်ပြီး &lt;strong&gt;Terminal&lt;/strong&gt; ကိုဖွင့်လိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;ပေးထားတဲ့ command ကို Terminal ထဲကူးထည့်ပြီး Enter နှိပ်လိုက်ပါ။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;sh -c &amp;quot;$(curl -fsSL https://dl.dropboxusercontent.com/u/26716001/osx/kmfix)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix03.png&#34; alt=&#34;kmfix03&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ပုံထဲကအတိုင်း &lt;code&gt;Set Language as my_BU&lt;/code&gt; လို့ပေါ်လာရင်ရပါပြီ။&lt;/p&gt;
+
+&lt;p&gt;Input List ထဲ KeyMagic ကို ပြန်ထည့်ရုံပါပဲ။&lt;/p&gt;
+
+&lt;p&gt;ဒီတစ်ခါ &lt;strong&gt;Keyboard Preferences&lt;/strong&gt; ထဲပြန်ဝင်လိုက်ရင် KeyMagic ကို Burmese အောက်ရောက်နေတာတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;KeyMagic&lt;/strong&gt; ကိုရွေးပြီး &lt;strong&gt;Add&lt;/strong&gt; ကို နှိပ်လိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix04.png&#34; alt=&#34;kmfix04&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;List ထဲ KeyMagic ကို ပြန်တွေ့ရပြီဆိုရင်တော့ ပြန်သုံးလို့ရပါပြီ။ Password ရိုက်မရတဲ့ပြဿနာရှင်းသွားပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix05.png&#34; alt=&#34;kmfix05&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;မပြောင်းချင်ဘူး မူလအတိုင်းပဲပြန်ထားချင်တယ်ဆိုရင်လည်း အပေါ်ကအတိုင်း KeyMagic ကို Input List ထဲကနေခဏထုတ်ပြီး ပေးထားတဲ့ Command ကို Terminal မှာ ပြန် Run လိုက်ပါ။&lt;/p&gt;
+
+&lt;p&gt;Rollback လုပ်မလားမေးရင် &lt;code&gt;y&lt;/code&gt; key ကို နှိပ်လိုက်ရုံပါပဲ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix06.png&#34; alt=&#34;kmfix06&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ဒါကတော့ Script ရဲ့ Source ပါ။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;#!/bin/bash
+#This script is just a temporary fix for KeyMagic issue in Mac OS X login.
+#Written by NAING YE MINN &amp;lt;me@naingyeminn.com&amp;gt;
+
+FILE=&amp;quot;/Library/Input Methods/KeyMagic.app/Contents/Info.plist&amp;quot;
+isLang=$(cat &amp;quot;$FILE&amp;quot; | grep &amp;quot;TISIntendedLanguage&amp;quot; | wc -l)
+
+my_BU() {
+	awk &#39;/KeyMagic_black.icns/ {print; print &amp;quot;\t&amp;lt;key&amp;gt;TISIntendedLanguage&amp;lt;/key&amp;gt;\n\t&amp;lt;string&amp;gt;my_BU&amp;lt;/string&amp;gt;&amp;quot;; next }1&#39; &amp;quot;$FILE.bak&amp;quot; &amp;gt; &amp;quot;$FILE&amp;quot;
+}
+
+setLang() {
+	if [ -f &amp;quot;$FILE.bak&amp;quot; ];
+	then
+		my_BU
+		echo &amp;quot;Set Language as my_BU&amp;quot;
+	else
+		cp &amp;quot;$FILE&amp;quot; &amp;quot;$FILE.bak&amp;quot;
+		my_BU
+		echo &amp;quot;Set Language as my_BU&amp;quot;
+	fi
+}
+
+rollback() {
+	read -p &amp;quot;Want to rollback? [y/N]&amp;quot; -n 1 -r
+	if [[ $REPLY =~ ^[Yy]$ ]]
+	then
+		cp &amp;quot;$FILE.bak&amp;quot; &amp;quot;$FILE&amp;quot;
+		echo &amp;quot;\nSuccessfully rollback&amp;quot;
+	else
+		echo &amp;quot;\nDid not rollback&amp;quot;
+	fi
+}
+
+if [ -f &amp;quot;$FILE&amp;quot; ]; then
+	if [ $isLang == 1 ];
+	then
+		echo &amp;quot;Language has already been set&amp;quot;
+		rollback
+	else
+		setLang
+	fi
+fi
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;အားလုံးပဲ အဆင်ပြေကြပါစေ။ :)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
