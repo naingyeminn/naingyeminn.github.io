@@ -79,21 +79,32 @@
 #Written by NAING YE MINN &amp;lt;me@naingyeminn.com&amp;gt;
 
 FILE=&amp;quot;/Library/Input Methods/KeyMagic.app/Contents/Info.plist&amp;quot;
-isLang=$(cat &amp;quot;$FILE&amp;quot; | grep &amp;quot;TISIntendedLanguage&amp;quot; | wc -l)
+isLang=$(cat &amp;quot;$FILE&amp;quot; | grep &amp;quot;my_BU&amp;quot; | wc -l)
+vcheck=$(cat &amp;quot;$FILE&amp;quot; | grep &amp;quot;1.5.1&amp;quot; | wc -l)
 
-my_BU() {
+km151() {
+	sudo sed -i.bak &#39;s/mul/my_BU/&#39; &amp;quot;$FILE&amp;quot;
+}
+
+km150() {
 	awk &#39;/KeyMagic_black.icns/ {print; print &amp;quot;\t&amp;lt;key&amp;gt;TISIntendedLanguage&amp;lt;/key&amp;gt;\n\t&amp;lt;string&amp;gt;my_BU&amp;lt;/string&amp;gt;&amp;quot;; next }1&#39; &amp;quot;$FILE.bak&amp;quot; &amp;gt; &amp;quot;$FILE&amp;quot;
 }
 
 setLang() {
-	if [ -f &amp;quot;$FILE.bak&amp;quot; ];
+	if [ $vcheck == 1 ]
 	then
-		my_BU
+		km151
 		echo &amp;quot;Set Language as my_BU&amp;quot;
 	else
-		cp &amp;quot;$FILE&amp;quot; &amp;quot;$FILE.bak&amp;quot;
-		my_BU
-		echo &amp;quot;Set Language as my_BU&amp;quot;
+		if [ -f &amp;quot;$FILE.bak&amp;quot; ]
+		then
+			km150
+			echo &amp;quot;Set Language as my_BU&amp;quot;
+		else
+			cp &amp;quot;$FILE&amp;quot; &amp;quot;$FILE.bak&amp;quot;
+			km150
+			echo &amp;quot;Set Language as my_BU&amp;quot;
+		fi
 	fi
 }
 
@@ -101,15 +112,22 @@ rollback() {
 	read -p &amp;quot;Want to rollback? [y/N]&amp;quot; -n 1 -r
 	if [[ $REPLY =~ ^[Yy]$ ]]
 	then
-		cp &amp;quot;$FILE.bak&amp;quot; &amp;quot;$FILE&amp;quot;
-		echo &amp;quot;\nSuccessfully rollback&amp;quot;
+		if [ $vcheck == 1 ]
+		then
+			sudo cp &amp;quot;$FILE.bak&amp;quot; &amp;quot;$FILE&amp;quot;
+		else
+			cp &amp;quot;$FILE.bak&amp;quot; &amp;quot;$FILE&amp;quot;
+		fi
+		echo &amp;quot;&amp;quot;
+		echo &amp;quot;Successfully rollback&amp;quot;
 	else
-		echo &amp;quot;\nDid not rollback&amp;quot;
+		echo &amp;quot;&amp;quot;
+		echo &amp;quot;Did not rollback&amp;quot;
 	fi
 }
 
 if [ -f &amp;quot;$FILE&amp;quot; ]; then
-	if [ $isLang == 1 ];
+	if [ $isLang == 1 ]
 	then
 		echo &amp;quot;Language has already been set&amp;quot;
 		rollback
@@ -117,10 +135,15 @@ if [ -f &amp;quot;$FILE&amp;quot; ]; then
 		setLang
 	fi
 fi
-
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;အားလုံးပဲ အဆင်ပြေကြပါစေ။ :)&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Update: September 1 2016&lt;/p&gt;
+
+&lt;p&gt;အသစ်ထွက်လာတဲ့ KeyMagic 1.5.1 အတွက်ပါ ထပ်မံဖြည့်စွက်ပေးထားပါတယ်။ :)&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     

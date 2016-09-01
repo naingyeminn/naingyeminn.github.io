@@ -151,21 +151,32 @@
 #Written by NAING YE MINN &lt;me@naingyeminn.com&gt;
 
 FILE=&quot;/Library/Input Methods/KeyMagic.app/Contents/Info.plist&quot;
-isLang=$(cat &quot;$FILE&quot; | grep &quot;TISIntendedLanguage&quot; | wc -l)
+isLang=$(cat &quot;$FILE&quot; | grep &quot;my_BU&quot; | wc -l)
+vcheck=$(cat &quot;$FILE&quot; | grep &quot;1.5.1&quot; | wc -l)
 
-my_BU() {
+km151() {
+	sudo sed -i.bak 's/mul/my_BU/' &quot;$FILE&quot;
+}
+
+km150() {
 	awk '/KeyMagic_black.icns/ {print; print &quot;\t&lt;key&gt;TISIntendedLanguage&lt;/key&gt;\n\t&lt;string&gt;my_BU&lt;/string&gt;&quot;; next }1' &quot;$FILE.bak&quot; &gt; &quot;$FILE&quot;
 }
 
 setLang() {
-	if [ -f &quot;$FILE.bak&quot; ];
+	if [ $vcheck == 1 ]
 	then
-		my_BU
+		km151
 		echo &quot;Set Language as my_BU&quot;
 	else
-		cp &quot;$FILE&quot; &quot;$FILE.bak&quot;
-		my_BU
-		echo &quot;Set Language as my_BU&quot;
+		if [ -f &quot;$FILE.bak&quot; ]
+		then
+			km150
+			echo &quot;Set Language as my_BU&quot;
+		else
+			cp &quot;$FILE&quot; &quot;$FILE.bak&quot;
+			km150
+			echo &quot;Set Language as my_BU&quot;
+		fi
 	fi
 }
 
@@ -173,15 +184,22 @@ rollback() {
 	read -p &quot;Want to rollback? [y/N]&quot; -n 1 -r
 	if [[ $REPLY =~ ^[Yy]$ ]]
 	then
-		cp &quot;$FILE.bak&quot; &quot;$FILE&quot;
-		echo &quot;\nSuccessfully rollback&quot;
+		if [ $vcheck == 1 ]
+		then
+			sudo cp &quot;$FILE.bak&quot; &quot;$FILE&quot;
+		else
+			cp &quot;$FILE.bak&quot; &quot;$FILE&quot;
+		fi
+		echo &quot;&quot;
+		echo &quot;Successfully rollback&quot;
 	else
-		echo &quot;\nDid not rollback&quot;
+		echo &quot;&quot;
+		echo &quot;Did not rollback&quot;
 	fi
 }
 
 if [ -f &quot;$FILE&quot; ]; then
-	if [ $isLang == 1 ];
+	if [ $isLang == 1 ]
 	then
 		echo &quot;Language has already been set&quot;
 		rollback
@@ -189,10 +207,15 @@ if [ -f &quot;$FILE&quot; ]; then
 		setLang
 	fi
 fi
-
 </code></pre>
 
 <p>အားလုံးပဲ အဆင်ပြေကြပါစေ။ :)</p>
+
+<blockquote>
+<p>Update: September 1 2016</p>
+
+<p>အသစ်ထွက်လာတဲ့ KeyMagic 1.5.1 အတွက်ပါ ထပ်မံဖြည့်စွက်ပေးထားပါတယ်။ :)</p>
+</blockquote>
 
 	    </div>
 	    
