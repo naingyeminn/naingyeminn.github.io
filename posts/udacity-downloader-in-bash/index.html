@@ -1,0 +1,178 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - Udacity Downloader in Bash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://use.fontawesome.com/52ab3615c7.js"></script>
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/udacity-downloader-in-bash/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="contact" class="overlay">
+  <div class="popup">
+    <a class="close" href="#/">&times;</a>
+    <div class="content">
+    	<ul>
+    		<li><a href="mailto:me@naingyeminn.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+
+    		<li><a href="https://github.com/naingyeminn" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    		<li><a href="https://plus.google.com/107143022418508884720" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.facebook.com/nyeminn" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.linkedin.com/in/naingyeminn" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+    	</ul> 
+    </div>
+  </div>
+</div>
+
+
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/udacity-downloader-in-bash/">Udacity Downloader in Bash</a></h1>
+	        <div class="post-time">October 5 2016</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com//tags/bash">bash</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/shell">shell</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/script">script</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/terminal">terminal</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/cli">cli</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/tipstricks">tips&amp;tricks</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        <p>ဘာရယ်တော့မဟုတ်ပါဘူး Udacity က Course တချို့ကို လေ့လာရင်း စိတ်ကူးပေါက်လို့ရေးထားတာပါ။ အမှန်တော့ Python နဲ့ရေးထားတဲ့ <a href="https://pypi.python.org/pypi/udacity-dl">udacity-dl</a> ရှိပြီးသားပါ။ သို့ပေမယ့် သုံးနေတဲ့စက်မှာ အဆင်မပြေဖြစ်နေတာနဲ့ Bash နဲ့ ပြန်ရေးကြည့်ဖြစ်သွားတာပါ။ အပြည့်အဝအသုံးချနိုင်တယ်ရယ်တော့မဟုတ်ပါဘူး။ Bash Scripting ကို စိတ်ဝင်စားသူတွေ၊ လေ့လာနေသူတွေအတွက် အထောက်အကူပြုလိုပြုငြား မျှဝေခြင်းသက်သက်သာဖြစ်ပါတယ်။</p>
+
+<p>Download ရယူနိုင်တဲ့ Course တွေကိုတော့ <a href="https://www.udacity.com/wiki/downloads">https://www.udacity.com/wiki/downloads</a> မှာကြည့်နိုင်ပါတယ်။ Course တိုင်းတော့ မဟုတ်ပါဘူး။ Course Material တွေကို zip ဖိုင်အနေနဲ့ ပြုလုပ်ပြီး တင်ပေးထားတဲ့ Course တွေအတွက်ပဲသုံးနိုင်တာပါ။ အသုံးများတဲ့အတွက် Server က Bot လို့သတ်မှတ်ပြီး Download ပိတ်ထားတာမျိုးလည်းကြုံနိုင်ပါတယ်။</p>
+
+<p>Installer package အနေနဲ့ <a href="https://github.com/naingyeminn/udacitydl">Github</a> မှာ တင်ပေးထားပြီး အသုံးပြုပုံကိုတော့ <a href="https://github.com/naingyeminn/udacitydl/blob/master/README.md">README</a> မှာရေးပေးထားပါတယ်။</p>
+
+<pre><code class="language-sh">#!/bin/bash
+
+dlist=(`curl -s -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0' &quot;https://www.udacity.com/wiki/$1/downloads&quot; | sed -n 's/.*href=&quot;\([^&quot;]*\).*/\1/p' | grep zip`)
+
+for i in ${dlist[@]};
+do
+    if [ -f &quot;${i##*$1/}&quot; ]; then
+        echo &quot;${i##*$1/} : Resuming Download...&quot;
+        curl -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0' -L -o &quot;${i##*$1/}&quot; -C - &quot;$i&quot;
+    else
+        echo &quot;Downloading ${i##*$1/}&quot;
+        curl -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0' -o &quot;${i##*$1/}&quot; &quot;$i&quot;
+    fi
+done
+</code></pre>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/udacity-downloader-in-bash/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/keymagic-osx-temp-fix/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p class="contact">Copyright © 2014 <a class="button" href="#contact">Naing Ye` Minn</a></p>
+		        </footer>
+		    </div>
+		  </div>    
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

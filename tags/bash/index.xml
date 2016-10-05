@@ -5,7 +5,37 @@
     <link>http://naingyeminn.com/tags/bash/</link>
     <language>en-us</language>
     <author>Naing Ye` Minn</author>
-    <updated>2015-03-06 00:00:00 &#43;0000 UTC</updated>
+    <updated>2016-10-05 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>Udacity Downloader in Bash</title>
+      <link>http://naingyeminn.com/posts/udacity-downloader-in-bash/</link>
+      <pubDate>Wed, 05 Oct 2016 00:00:00 UTC</pubDate>
+      <author>Naing Ye` Minn</author>
+      <guid>http://naingyeminn.com/posts/udacity-downloader-in-bash/</guid>
+      <description>&lt;p&gt;ဘာရယ်တော့မဟုတ်ပါဘူး Udacity က Course တချို့ကို လေ့လာရင်း စိတ်ကူးပေါက်လို့ရေးထားတာပါ။ အမှန်တော့ Python နဲ့ရေးထားတဲ့ &lt;a href=&#34;https://pypi.python.org/pypi/udacity-dl&#34;&gt;udacity-dl&lt;/a&gt; ရှိပြီးသားပါ။ သို့ပေမယ့် သုံးနေတဲ့စက်မှာ အဆင်မပြေဖြစ်နေတာနဲ့ Bash နဲ့ ပြန်ရေးကြည့်ဖြစ်သွားတာပါ။ အပြည့်အဝအသုံးချနိုင်တယ်ရယ်တော့မဟုတ်ပါဘူး။ Bash Scripting ကို စိတ်ဝင်စားသူတွေ၊ လေ့လာနေသူတွေအတွက် အထောက်အကူပြုလိုပြုငြား မျှဝေခြင်းသက်သက်သာဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;Download ရယူနိုင်တဲ့ Course တွေကိုတော့ &lt;a href=&#34;https://www.udacity.com/wiki/downloads&#34;&gt;https://www.udacity.com/wiki/downloads&lt;/a&gt; မှာကြည့်နိုင်ပါတယ်။ Course တိုင်းတော့ မဟုတ်ပါဘူး။ Course Material တွေကို zip ဖိုင်အနေနဲ့ ပြုလုပ်ပြီး တင်ပေးထားတဲ့ Course တွေအတွက်ပဲသုံးနိုင်တာပါ။ အသုံးများတဲ့အတွက် Server က Bot လို့သတ်မှတ်ပြီး Download ပိတ်ထားတာမျိုးလည်းကြုံနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;Installer package အနေနဲ့ &lt;a href=&#34;https://github.com/naingyeminn/udacitydl&#34;&gt;Github&lt;/a&gt; မှာ တင်ပေးထားပြီး အသုံးပြုပုံကိုတော့ &lt;a href=&#34;https://github.com/naingyeminn/udacitydl/blob/master/README.md&#34;&gt;README&lt;/a&gt; မှာရေးပေးထားပါတယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;#!/bin/bash
+
+dlist=(`curl -s -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0&#39; &amp;quot;https://www.udacity.com/wiki/$1/downloads&amp;quot; | sed -n &#39;s/.*href=&amp;quot;\([^&amp;quot;]*\).*/\1/p&#39; | grep zip`)
+
+for i in ${dlist[@]};
+do
+    if [ -f &amp;quot;${i##*$1/}&amp;quot; ]; then
+        echo &amp;quot;${i##*$1/} : Resuming Download...&amp;quot;
+        curl -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0&#39; -L -o &amp;quot;${i##*$1/}&amp;quot; -C - &amp;quot;$i&amp;quot;
+    else
+        echo &amp;quot;Downloading ${i##*$1/}&amp;quot;
+        curl -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0&#39; -o &amp;quot;${i##*$1/}&amp;quot; &amp;quot;$i&amp;quot;
+    fi
+done
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>NTFSX - Script to enable NTFS Write on Mac OS X</title>
