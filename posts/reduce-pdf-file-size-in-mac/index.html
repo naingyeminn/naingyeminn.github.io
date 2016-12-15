@@ -2,7 +2,7 @@
 	<!doctype html>
 <html lang="en">
   <head>    
-    <title>Naing Ye Minn - Udacity Downloader in Bash</title>
+    <title>Naing Ye Minn - Reduce PDF File Size in Mac</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 
@@ -14,7 +14,7 @@
     <script src="https://use.fontawesome.com/52ab3615c7.js"></script>
     <link rel="shortcut icon" href="/images/me-icon.ico"> 
     <link rel="apple-touch-icon" href="">
-    <link rel="canonical" href="http://naingyeminn.com/posts/udacity-downloader-in-bash/">
+    <link rel="canonical" href="http://naingyeminn.com/posts/reduce-pdf-file-size-in-mac/">
 
     
     <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
@@ -65,21 +65,15 @@
 	    
 	  <div class="post">
 	    <header class="post-header">
-	        <h1><a href="/posts/udacity-downloader-in-bash/">Udacity Downloader in Bash</a></h1>
-	        <div class="post-time">October 5 2016</div>
+	        <h1><a href="/posts/reduce-pdf-file-size-in-mac/">Reduce PDF File Size in Mac</a></h1>
+	        <div class="post-time">December 15 2016</div>
 	    </header>
 	    <div class="post-after">
 	        <div class="tags">
 	            
-	                <a href="http://naingyeminn.com//tags/bash">bash</a>              
+	                <a href="http://naingyeminn.com//tags/apple">apple</a>              
 	            
-	                <a href="http://naingyeminn.com//tags/shell">shell</a>              
-	            
-	                <a href="http://naingyeminn.com//tags/script">script</a>              
-	            
-	                <a href="http://naingyeminn.com//tags/terminal">terminal</a>              
-	            
-	                <a href="http://naingyeminn.com//tags/cli">cli</a>              
+	                <a href="http://naingyeminn.com//tags/macos">macos</a>              
 	            
 	                <a href="http://naingyeminn.com//tags/tipstricks">tips&amp;tricks</a>              
 	            
@@ -87,32 +81,32 @@
 	    </div>
 	    <hr>
 	    <div class="post content">
-	        <p>ဘာရယ်တော့မဟုတ်ပါဘူး Udacity က Course တချို့ကို လေ့လာရင်း စိတ်ကူးပေါက်လို့ရေးထားတာပါ။ အမှန်တော့ Python နဲ့ရေးထားတဲ့ <a href="https://pypi.python.org/pypi/udacity-dl">udacity-dl</a> ရှိပြီးသားပါ။ သို့ပေမယ့် သုံးနေတဲ့စက်မှာ အဆင်မပြေဖြစ်နေတာနဲ့ Bash နဲ့ ပြန်ရေးကြည့်ဖြစ်သွားတာပါ။ အပြည့်အဝအသုံးချနိုင်တယ်ရယ်တော့မဟုတ်ပါဘူး။ Bash Scripting ကို စိတ်ဝင်စားသူတွေ၊ လေ့လာနေသူတွေအတွက် အထောက်အကူပြုလိုပြုငြား မျှဝေခြင်းသက်သက်သာဖြစ်ပါတယ်။</p>
+	        <p>PDF တွေကို Size လျှော့ချင်တဲ့အခါ Preview ကို အသုံးပြုလို့ရတာ Mac User များသိကြလိမ့်မယ့်ထင်ပါတယ်။ လျှော့ချင်တဲ့ PDF ကို Preview နဲ့ဖွင့်၊ File &gt; Export&hellip; ကိုသွားပြီး Format ကို PDF၊ Quartz Filter ကို Reduce File Size ရွေးပြီး Save လုပ်လိုက်ရုံပါပဲ။</p>
 
-<p>Download ရယူနိုင်တဲ့ Course တွေကိုတော့ <a href="https://www.udacity.com/wiki/downloads">https://www.udacity.com/wiki/downloads</a> မှာကြည့်နိုင်ပါတယ်။ Course တိုင်းတော့ မဟုတ်ပါဘူး။ Course Material တွေကို zip ဖိုင်အနေနဲ့ ပြုလုပ်ပြီး တင်ပေးထားတဲ့ Course တွေအတွက်ပဲသုံးနိုင်တာပါ။ အသုံးများတဲ့အတွက် Server က Bot လို့သတ်မှတ်ပြီး Download ပိတ်ထားတာမျိုးလည်းကြုံနိုင်ပါတယ်။</p>
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/pdf_resize/pdf_resize01.jpg" alt="PDF_Resize01" /></p>
 
-<p>Installer package အနေနဲ့ <a href="https://github.com/naingyeminn/udacitydl">Github</a> မှာ တင်ပေးထားပြီး အသုံးပြုပုံကိုတော့ <a href="https://github.com/naingyeminn/udacitydl/blob/master/README.md">README</a> မှာရေးပေးထားပါတယ်။</p>
+<p>ဆိုးတာက Reduce File Size ကိုသုံးလိုက်ရင် PDF ထဲမှာပါတဲ့ ပုံတွေရဲ့ Quality ဟာ တော်တော်လေးကို ကျဆင်းသွားပြီး ဝါးကုန်တာပါပဲ။ ဒါကြောင့် နည်းလမ်းလေးတွေလိုက်ရှာဖတ်ကြည့်တော့ Post တစ်ခုသွားတွေ့ပါတယ်။ စမ်းကြည့်တော့လည်း တော်တော်လေးအဆင်ပြေတာတွေ့ရပါတယ်။ နည်းလမ်းက ရိုးရိုးလေးပါ။ Reduce File Size ဆိုတဲ့ Filter က XML configuration file သက်သက်ပါ။ အဲဒီ File ကို ကူးယူပြီး အထဲက Value လေးတွေ နည်းနည်းအပြောင်းအလဲလုပ်ရုံပါပဲ။ ပြီးတော့ <strong>/Library</strong> ထဲမှာ <strong>Filters</strong> ဆိုတဲ့ Folder ဆောက်ပြီးထည့်ပေးလိုက်တာနဲ့ အဆင်ပြေပြေသုံးနိုင်ပါတယ်။</p>
 
-<pre><code class="language-sh">#!/bin/bash
+<p>အဲဒီနည်းလမ်းကိုပဲ လွယ်ကူအောင် <a href="https://dl.dropboxusercontent.com/u/26716001/osx/pdf_reduce_v1.dmg">PDF Reduce</a> ဆိုတဲ့ Package လေးထုတ်ပေးထားပါတယ်။</p>
 
-dlist=(`curl -s -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0' &quot;https://www.udacity.com/wiki/$1/downloads&quot; | sed -n 's/.*href=&quot;\([^&quot;]*\).*/\1/p' | grep zip`)
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/pdf_resize/pdf_resize02.jpg" alt="PDF_Resize02" /></p>
 
-for i in ${dlist[@]};
-do
-    if [ -f &quot;${i##*$1/}&quot; ]; then
-        echo &quot;${i##*$1/} : Resuming Download...&quot;
-        curl -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0' -L -o &quot;${i##*$1/}&quot; -C - &quot;$i&quot;
-    else
-        echo &quot;Downloading ${i##*$1/}&quot;
-        curl -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0' -o &quot;${i##*$1/}&quot; &quot;$i&quot;
-    fi
-done
-</code></pre>
+<p>ပုံထဲမှာတွေ့ရတဲ့အတိုင်း <strong>Filters</strong> ဆိုတဲ့ Folder လေးကို <strong>Library</strong> ထဲ ဆွဲထည့်လိုက်ရုံပါပဲ။ Authentication အတွက် Password တော့တောင်းပါလိမ့်မယ်။</p>
+
+<p>ပြီးရင်တော့ <strong>Preview</strong> ရဲ့ <strong>Quartz Filter</strong> ထဲမှာ <strong>Reduce File Size (Good), Reduce File Size (Better), Reduce File Size (Best)</strong> ဆိုပြီးတိုးလာတာတွေ့ရပါလိမ့်မယ်။</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/26716001/Photos/pdf_resize/pdf_resize03.jpg" alt="PDF_Resize03" /></p>
+
+<p>Good, Better, Best က PDF ထဲပါဝင်တဲ့ ပုံတွေရဲ့ Quality ပေါ်မူတည်ပြီးခွဲထားတာဖြစ်တဲ့အတွက် Best ကိုရွေးရင် ပုံရည်အသွေး အနည်းငယ်သာလျော့သွားမှာဖြစ်ပြီး Good ကတော့ File Size အသေးဆုံးကိုရရှိမှာဖြစ်ပါတယ်။</p>
+
+<p>စိတ်ကြိုက်ပြင်ဆင်ကြည့်ချင်တယ်ဆိုရင်တော့ <a href="http://www.macworld.com/article/1168311/software/shrink-preview-files-without-ruining-image-quality.html">မူရင်း Post</a> မှာ လေ့လာနိုင်ပါတယ်။</p>
+
+<p><strong>Download: <a href="https://dl.dropboxusercontent.com/u/26716001/osx/pdf_reduce_v1.dmg">PDF Reduce</a></strong></p>
 
 	    </div>
 	    
 	    <div class="fblike">
-	    		<div class="fb-like" data-href="/posts/udacity-downloader-in-bash/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    		<div class="fb-like" data-href="/posts/reduce-pdf-file-size-in-mac/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 	    </div><br>
 	<div class="about">
 	<p> 
@@ -120,8 +114,8 @@ done
     </p>
 </div>
 		<nav id="pagination">
-			<a class="prev" href="http://naingyeminn.com/posts/reduce-pdf-file-size-in-mac/">Prev</a>
-			<a class="next" href="http://naingyeminn.com/posts/keymagic-osx-temp-fix/">Next</a>
+			
+			<a class="next" href="http://naingyeminn.com/posts/udacity-downloader-in-bash/">Next</a>
 		</nav>
 	<p>
 		<div class="row">
