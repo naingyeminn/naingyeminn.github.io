@@ -5,7 +5,49 @@
     <link>http://naingyeminn.com/tags/tipstricks/</link>
     <language>en-us</language>
     <author>Naing Ye` Minn</author>
-    <updated>2016-12-15 00:00:00 &#43;0000 UTC</updated>
+    <updated>2017-01-31 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>Split Dual Pages of PDF</title>
+      <link>http://naingyeminn.com/posts/split-dual-pages-of-pdf/</link>
+      <pubDate>Tue, 31 Jan 2017 00:00:00 UTC</pubDate>
+      <author>Naing Ye` Minn</author>
+      <guid>http://naingyeminn.com/posts/split-dual-pages-of-pdf/</guid>
+      <description>&lt;p&gt;စာအုပ်ကို Scan လုပ်ထားတဲ့ e-book (PDF) ဖိုင်တွေမှာ ကြုံလေ့ရှိတဲ့ပြဿနာလေးတစ်ခုရှိပါတယ်။ အချို့ရှာဝယ်လို့မရတော့တဲ့ စာအုပ်တွေကို စေတနာရှင်တွေက Scan ဖတ်ပြီး PDF အနေနဲ့ Internet မှာ ပြန်တင်ပေးထားတာတွေကို Download ဆွဲဖတ်ဖူးကြမှာပါ။ ခက်တာကစာအုပ်တွေကို ပုံမပျက်ဘဲ Scan ဖတ်လို့ရဖို့က စာမျက်နှာနှစ်ခုကို တစ်ခုတည်းအနေနဲ့တွဲလျက် ဖတ်ရတာပါ။ အဲ့ဒီတော့ ထွက်လာတဲ့ PDF ကို Tablet တွေနဲ့ဖတ်တဲ့အခါမှာ Screen ကြီးရင်ပြဿနာမရှိပေမဲ့ Screen သေးတဲ့အခါကျ စာနှစ်မျက်နှာကို Screen တစ်ခုတည်းမှာကြည့်ရတာဖြစ်တဲ့အတွက် စာသားတွေက သေးသွားပါတယ်။ ချဲ့ကြည့်ပြန်တော့လည်း တွဲလျက်စာမျက်နှာကို မြင်ရဖို့ ပြန်ချိန်ရတာ၊ နောက်တစ်မျက်နှာထပ်ဖတ်ဖို့ကို Screen နဲ့ အံကိုက်ဖြစ်အောင် ပြန်ချိန်ရတာ၊ စတာတွေက စာဖတ်တဲ့အရှိန်ကိုပျက်စေပါတယ်။ နှစ်မျက်နှာတွဲ မဟုတ်ဘဲ တစ်မျက်နှာစီသာ Scan ဖတ် ပြီး ပြုလုပ်ထားတဲ့ PDF တွေဆိုရင်တော့ Screen အပြည့် တစ်မျက်နှာစာပဲမြင်ရတာဖြစ်တဲ့အတွက် ဖတ်ရတာပိုအဆင်ပြေပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;အခုဒီ script လေးကတော့ နှစ်မျက်နှာတွဲလျက် Scan ဖတ်ပြီးထုတ်ထားတဲ့ PDF တွေကို တစ်မျက်နှာစီဖြစ်အောင် ပြန်ခွဲထုတ်ပေးမှာဖြစ်ပါတယ်။ &lt;a href=&#34;http://www.imagemagick.org/script/index.php&#34;&gt;ImageMagick&lt;/a&gt; နဲ့ &lt;a href=&#34;https://www.ghostscript.com&#34;&gt;GhostScript&lt;/a&gt; တို့ကိုသုံးပြီးရေးထားတာဖြစ်တဲ့အတွက် အဲဒီ Package နှစ်ခု Install လုပ်ထားဖို့လိုပါလိမ့်မယ်။ Ubuntu မှာတော့ -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo apt-get install imagemagick ghostscript
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ဆိုပြီး Install ကြိုလုပ်ထားဖို့လိုပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;MacOS သုံးသူတွေအတွက်တော့ &lt;a href=&#34;http://brew.sh&#34;&gt;Brew&lt;/a&gt; ကိုသုံးပြီး Install လုပ်ရပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ brew install imagemagick ghostscript
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Script ကို သုံနိုင်ဖို့အတွက်ကတော့ အောက်မှာပေးထားတဲ့ command လေးကို Terminal ထဲ ကူးထည့်ပြီး run လိုက်ရုံပါပဲ။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo sh -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/naingyeminn/splitpgs/master/install.sh)&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;သုံးပုံသုံးနည်းကတော့ ရှင်းပါတယ်။ Terminal အသစ်တစ်ခုဖွင့်၊ ကိုယ်ပြောင်းချင်တဲ့ PDF ဖိုင်ကို script ရဲ့နောက်မှာ ရေးထည့်ပေးပြီး run လိုက်ရုံပါပဲ။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ splitpgs your_file.pdf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Quality ချိန်ညှိနိုင်ဖို့အတွက်လည်း option တွေထည့်ပေးထားပါသေးတယ်။ အသေးစိပ်ကိုတော့ Usage မှာကြည့်နိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/split_pdf/split_pdf01.png&#34; alt=&#34;split_pdf01&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ပြီးပြည့်စုံတဲ့ Script တစ်ခုမဟုတ်ပေမဲ့ အတိုင်းအတာတစ်ခုထိတော့ အသုံးဝင်နိုင်လိမ့်မယ်ထင်တဲ့အတွက် မျှဝေခြင်းဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/TO0cLZ7AJss&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;strong&gt;Source Code: &lt;a href=&#34;https://github.com/naingyeminn/splitpgs&#34;&gt;splitpgs&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Reduce PDF File Size in Mac</title>
