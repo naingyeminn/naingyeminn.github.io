@@ -506,7 +506,7 @@ Rangoon
 
 &lt;p&gt;သတ်မှတ် Colum တစ်ခုတည်းမှာရှိတဲ့ စာကြောင်းအားလုံးရဲ့ တစ်စိပ်တစ်ဒေသကိုသာပြသလိုတယ်ဆိုလျှင်တော့ &lt;code&gt;$&lt;/code&gt; ကိုသုံးပြီး Colum နံပါတ်ကိုသတ်မှတ်ပေးရပါတယ်။ ဒီနေရာမှာ ပိုပြီး နားလည်ရလွယ်ကူစေဖို့ နမူနာဖိုင်ကို awk က ဘယ်လို ဖတ်ယူသလဲဆိုတာကို အလျှင်ရှင်းပြပါ့မယ်။ Default Delimiter က Space ဖြစ်တဲ့အတွက် Space ခြားထားတဲ့နေရာတွေကနေ Colum တွေခွဲသွားမှာဖြစ်ပါတယ်။ Colum ကိုတော့ &lt;code&gt;$1&lt;/code&gt; ကနေစပြီး သတ်မှတ်ပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/awk/awk1.png&#34; alt=&#34;Awk1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/awk/awk1.png&#34; alt=&#34;Awk1&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ဒါကြောင့် ဒုတိယ Colum မှာရှိတဲ့ လူနာမည်တွေကိုပဲခွဲထုတ်ယူချင်တယ်ဆိုလျှင်တော့ -&lt;/p&gt;
 
@@ -762,7 +762,7 @@ There are two blank lines before this.
 This is the End.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-1.png&#34; alt=&#34;GREP-1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/grep/GREP-1.png&#34; alt=&#34;GREP-1&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ဖိုင်တည်ဆောက်ပြီးပြီဆိုလျှင်တော့ Terminal ကိုဖွင့်လိုက်ပါ။ &lt;code&gt;grep_demo.txt&lt;/code&gt; ဖိုင်ရှိတဲ့ Desktop Directory ထဲကို ဝင်ပြီး &lt;code&gt;grep_demo1.txt&lt;/code&gt; ဆိုတဲ့ဖိုင်တစ်ဖိုင် copy ပွားလိုက်ပါ။ demo နာမည်နဲ့ directory တစ်ခုတည်ဆောက်ပြီး &lt;code&gt;grep_demo.txt&lt;/code&gt; ကို ထပ်ပြီး copy ကူထည့်ထားလိုက်ပါ။&lt;/p&gt;
 
@@ -772,7 +772,7 @@ $ mkdir demo
 $ cp grep_demo.txt demo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-2.png&#34; alt=&#34;GREP-2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/grep/GREP-2.png&#34; alt=&#34;GREP-2&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;File နှင့် Folder Structure ကတော့ အောက်ပါအတိုင်းဖြစ်ပါတယ်။&lt;/p&gt;
 
@@ -852,7 +852,7 @@ This is the End.
 
 &lt;p&gt;&lt;code&gt;the&lt;/code&gt; အတိအကျပါတဲ့ စာကြောင်းတွေကိုသာထုတ်ပြပေးပြီး &lt;code&gt;There&lt;/code&gt; စာကြောင်းပါလာတော့မှာမဟုတ်ပါဘူး။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-3.png&#34; alt=&#34;GREP-3&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/grep/GREP-3.png&#34; alt=&#34;GREP-3&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;နောက်တစ်မျိုးအနေနဲ့ သတ်မှတ်စာသားမပါတဲ့ စာကြောင်းတွေကိုဘဲ ရွေးထုတ်ကြည့်ပါမယ်။ အဲဒီအတွက် သုံးရမယ့် option ကတော့ &lt;code&gt;-v&lt;/code&gt; (invert) ပါ။&lt;/p&gt;
 
@@ -873,7 +873,7 @@ This is the End.
 
 &lt;p&gt;Output အနေနဲ့ &lt;code&gt;fox&lt;/code&gt; မပါတဲ့ စာကြောင်းနှစ်ကြောင်းနဲ့ blank line နှစ်ကြောင်းကိုတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-4.png&#34; alt=&#34;GREP-4&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/grep/GREP-4.png&#34; alt=&#34;GREP-4&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;သတ်မှတ်စာသားပါဝင်တဲ့ စာကြောင်းအပြင် ကပ်လျှက်ရှိနေတဲ့ စာကြောင်းတချို့ကိုပါပါဝင်ထုတ်ပြပေးစေချင်တယ်ဆိုလျှင်တော့ &lt;code&gt;-A&lt;/code&gt; (after) &lt;code&gt;-B&lt;/code&gt; (before) တို့သုံးနိုင်ပါတယ်။ &lt;code&gt;-A&lt;/code&gt; နဲ့ &lt;code&gt;-B&lt;/code&gt; နောက်မှာ parameter အနေနဲ့ စာကြောင်းအရေအတွက်ကိုထည့်ပေးရပါလိမ့်မယ်။&lt;/p&gt;
 
@@ -924,7 +924,7 @@ A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
 
 &lt;p&gt;&lt;code&gt;FOX&lt;/code&gt; ပါဝင်တဲ့ စာကြောင်းအပြင် အပေါ် အောက် ကပ်လျှက်စာကြောင်းနှစ်ကြောင်းစီကိုပါမြင်တွေ့ရမှာပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-5.png&#34; alt=&#34;GREP-5&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/grep/GREP-5.png&#34; alt=&#34;GREP-5&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ဖိုင်ထဲမှာရှိတဲ့ သတ်မှတ်စာသားပါဝင်မှုအရေအတွက်ကိုသိချင်လျှင်တော့ &lt;code&gt;-c&lt;/code&gt; (count) ကိုသုံးနိုင်ပါတယ်။ Small Letter C ဆိုတာကိုတော့ ဂရုပြုမိမယ်ထင်ပါတယ်။&lt;/p&gt;
 
@@ -962,7 +962,7 @@ $ grep -in the grep_demo.txt
 
 &lt;p&gt;ရှေ့ဆုံးမှာမြင်တွေ့ရတဲ့ 1,2,3,6,7 ဆိုတာတွေက Line Number ကိုဆိုလိုခြင်းဖြစ်ပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-6.png&#34; alt=&#34;GREP-6&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/grep/GREP-6.png&#34; alt=&#34;GREP-6&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;အခုဖော်ပြခဲ့သမျှအားလုံးကတော့ ဖိုင် တစ်ခုထဲက content တွေကို ရှာဖွေတဲ့ နည်းလမ်းတွေပါ။ အကယ်၍ Folder တစ်ခုအောက်မှာရှိသမျှ ဖိုင်အားလုံးထဲက content ကိုရှာချင်တာဆိုလျှင်လည်း &lt;code&gt;*&lt;/code&gt; wildcard သုံးနိုင်ပါသေးတယ်။&lt;/p&gt;
 
@@ -985,7 +985,7 @@ grep_demo1.txt:This is the End.
 
 &lt;p&gt;Desktop ပေါ်က &lt;code&gt;grep_demo.txt&lt;/code&gt; နှင့် &lt;code&gt;grep_demo1.txt&lt;/code&gt; နှစ်ဖိုင်လုံးမှာပါဝင်သမျှကို မြင်တွေ့ရပါလိမ့်မယ်။ File Name နဲ့ Content ကိုတော့ &lt;code&gt;:&lt;/code&gt; နဲ့ခွဲခြားပြီးပြသပေးပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-7.png&#34; alt=&#34;GREP-7&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/grep/GREP-7.png&#34; alt=&#34;GREP-7&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;File Name:Content&lt;/code&gt; တွဲလျှက်မြင်တွေ့ရတာ ရှုပ်ထွေးမယ်ထင်လျှင်တော့ File Name သီးသန့်ကို &lt;code&gt;-l&lt;/code&gt; Option နဲ့ ထုတ်ယူနိုင်ပါတယ်။&lt;/p&gt;
 
@@ -1000,7 +1000,7 @@ grep_demo1.txt:This is the End.
 grep_demo1.txt
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-8.png&#34; alt=&#34;GREP-8&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/grep/GREP-8.png&#34; alt=&#34;GREP-8&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;နောက်တစ်ခုက ရှာဖွေလိုတဲ့စာသားမှာ Space ပါဝင်နေမယ်ဆိုလျှင်တော့ &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt; Double Quote နဲ့ ဖော်ပြနိုင်ပါတယ်။&lt;/p&gt;
 
@@ -1021,7 +1021,7 @@ grep_demo1.txt:A QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
 
 &lt;p&gt;&lt;code&gt;the lazy&lt;/code&gt; ဆိုတဲ့စာသားပါဝင်သမျှကိုမြင်တွေ့ရမှာပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-9.png&#34; alt=&#34;GREP-9&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/grep/GREP-9.png&#34; alt=&#34;GREP-9&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Desktop မှာရှိတဲ့ File နှစ်ခုတင်မဟုတ်ဘဲ &lt;code&gt;demo&lt;/code&gt; ဆိုတဲ့ Folder အောက်က File ကိုပါရှာဖွေမယ်ဆိုလျှင်တော့ &lt;code&gt;-r&lt;/code&gt; (recursive) ကိုသုံးနိုင်ပါတယ်။&lt;/p&gt;
 
@@ -1037,7 +1037,7 @@ grep_demo.txt:a quick brown fox jumps over the lazy dog.
 grep_demo1.txt:a quick brown fox jumps over the lazy dog.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-10.png&#34; alt=&#34;GREP-10&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/grep/GREP-10.png&#34; alt=&#34;GREP-10&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;command-output-အ-ရ-ဖ-ခ-င:af7149e4a827f06f74ee5e42b1df9f0f&#34;&gt;Command Output အားရှာဖွေခြင်း&lt;/h3&gt;
 
@@ -1050,7 +1050,7 @@ grep_demo1.txt:a quick brown fox jumps over the lazy dog.
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ netstat -a | grep -i listen
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/grep/GREP-11.png&#34; alt=&#34;GREP-11&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/grep/GREP-11.png&#34; alt=&#34;GREP-11&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;အပေါ် နမူနာကတော့ &lt;code&gt;netstat&lt;/code&gt; command ကထွက်လာတဲ့ output ထဲကမှ &lt;code&gt;listen&lt;/code&gt; ဆိုတဲ့စာသားပါဝင်တဲ့ စာကြောင်းတွေကိုထုတ်ပြပေးတာပဲဖြစ်ပါတယ်။ နောက်ထပ်နမူနာတစ်ခုအနေနဲ့ -&lt;/p&gt;
 
@@ -1101,7 +1101,7 @@ grep_demo1.txt:a quick brown fox jumps over the lazy dog.
 
 &lt;p&gt;ဆိုတဲ့ Command လေးရိုက်လိုက်ရုံပါပဲ။ ပုံမှာပြထားတဲ့အတိုင်း &lt;code&gt;passwd&lt;/code&gt; ရဲ့ Man Page ကိုမြင်ရပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-passwd.png&#34; alt=&#34;man-passwd&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/man-passwd.png&#34; alt=&#34;man-passwd&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Man Page ရဲ့ ပထမဆုံးစာကြောင်းမှာတွေ့ရတဲ့ &lt;strong&gt;PASSWD(1)&lt;/strong&gt; ဆိုတာကတော့ &lt;code&gt;passwd&lt;/code&gt; command ရဲ့ Man Page တွေထဲကမှ &lt;strong&gt;Section 1&lt;/strong&gt; ဖြစ်တဲ့ Command အကြောင်းကို အဓိကထားရေးသားထားသော Page ဆိုတာကို ဖေါ်ပြထားခြင်းဖြစ်ပါတယ်။ တွေ့ရမယ့် အကြောင်းအရာတွေကတော့ Command ရဲ့ နာမည်အပြည့်အစုံ၊ ရေးသားရတဲ့ပုံစံ၊ ဘာတွေလုပ်ပေးနိုင်တယ်၊ နောက်ပြီး ချဲ့ထွင်အသုံးပြုနိုင်ဖို့ ဘယ်လို Option တွေပါတယ် ဆိုတာတွေကို အသေးစိပ်ရှင်းပြထားတာတွေပဲဖြစ်ပါတယ်။&lt;/p&gt;
 
@@ -1109,21 +1109,21 @@ grep_demo1.txt:a quick brown fox jumps over the lazy dog.
 
 &lt;p&gt;Man Page ထဲက စာသားတစ်ခုခုကို ရှာချင်တယ်ဆိုလျှင်တော့ &lt;code&gt;/&lt;/code&gt; ကိုနှိပ်၊ နောက်က ကိုယ်ရှာချင်တဲ့ keyword ကိုရိုက်ထည့်၊ ပြီးလျှင် Enter နှိပ်လိုက်ရုံပါပဲ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-search1.png&#34; alt=&#34;man search 1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/man-search1.png&#34; alt=&#34;man search 1&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ပုံမှာပြထားတဲ့အတိုင်း &lt;code&gt;/expire&lt;/code&gt; လို့ရိုက်ထည့်လိုက်မယ်ဆိုလျှင် ရောက်ရှိနေတဲ့ Man Page ရဲ့နေရာကနေစပြီး &lt;code&gt;expire&lt;/code&gt; ဆိုတဲ့စာလုံးကိုရှာပေးပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-search2.png&#34; alt=&#34;man search 2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/man-search2.png&#34; alt=&#34;man search 2&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ပထမဆုံးရှာတွေ့မှာကတော့ &lt;code&gt;-k&lt;/code&gt; option ရဲ့ ရှင်းလင်းချက်ထဲမှာပါတဲ့ &lt;strong&gt;expired&lt;/strong&gt; ဆိုတဲ့ စာလုံးနှစ်လုံးပါ။ လိုချင်တာ &lt;code&gt;--expire&lt;/code&gt; ဆိုတဲ့ option နဲ့ပတ်သက်တာဖြစ်တဲ့အတွက် &lt;strong&gt;N&lt;/strong&gt; Key ကိုတစ်ချက်ချင်းနှိပ်ပြီး ဆက်လက်ရှာဖွေသွားလို့ရပါတယ်။ နောက်ဆုံး &lt;code&gt;--expire&lt;/code&gt; ဆိုတာကိုရှာတွေ့ပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-search3.png&#34; alt=&#34;man search 3&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/man-search3.png&#34; alt=&#34;man search 3&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;အကယ်၍ &lt;strong&gt;N&lt;/strong&gt; နှိပ်တာလွန်ပြီး ကိုယ်ရှာနေတဲ့စာလုံးကိုကျော်သွားခဲ့တယ်ဆိုလျှင်လည်း &lt;strong&gt;Shift + N&lt;/strong&gt; နဲ့ နောက်ကြောင်းပြန်ပြီးရှာလို့ရပါတယ်။&lt;/p&gt;
 
 &lt;p&gt;ဒါကတော့ Man Page မှာ အသုံးများတဲ့ နည်းလမ်းလေးတချို့ပါ။ တခြား အသုံးပြုလို့ရတဲ့နည်းလမ်းတွေရှိပါသေးတယ်။ အဲဒါတွေကိုတော့ Man Page ဖွင့်ထားတဲ့အချိန် &lt;strong&gt;H&lt;/strong&gt; Key ကိုနှိပ်ပြီး &lt;code&gt;man&lt;/code&gt; ရဲ့ Help ကနေလေ့လာနိုင်ပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-help.png&#34; alt=&#34;man help&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/man-help.png&#34; alt=&#34;man help&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Man Page ကနေ ပြန်ထွက်ချင်တယ်ဆိုလျှင်တော့ &lt;strong&gt;Q&lt;/strong&gt; Key နှိပ်ပြီး ထွက်ရပါတယ်။&lt;/p&gt;
 
@@ -1131,23 +1131,23 @@ grep_demo1.txt:a quick brown fox jumps over the lazy dog.
 
 &lt;p&gt;အထက်မှာပြောခဲ့တဲ့အတိုင်း Man Page တွေကို အကြောင်းအရာအလိုက် Section တွေခွဲထားတာဖြစ်တဲ့အတွက် Command တစ်ခုကို Section တစ်ခုထက်ပိုပြီးရှိနေနိုင်ပါတယ်။ Section ဘယ်နှစ်ခုရှိလည်းသိချင်လျှင်တော့ &lt;code&gt;-aw&lt;/code&gt; option သုံးပြီး ရှာနိုင်ပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-section1.png&#34; alt=&#34;man section 1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/man-section1.png&#34; alt=&#34;man section 1&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ပုံထဲကအတိုင်း &lt;code&gt;man -aw passwd&lt;/code&gt; လို့ရိုက်လိုက်မယ်ဆိုလျှင်တော့ &lt;code&gt;passwd&lt;/code&gt; နဲ့ဆိုင်တဲ့ Man Page ၃ခုကိုတွေ့ရပါလိမ့်မယ်။ အဲဒီထဲမှာမှ &lt;code&gt;passwd&lt;/code&gt; ဆိုတဲ့ command နဲ့အတိအကျတူညီတဲ့ &lt;strong&gt;passwd.1.gz&lt;/strong&gt; နဲ့ &lt;strong&gt;passwd.5.gz&lt;/strong&gt; ၂ခုကိုတွေ့ရပါလိမ့်မယ်။ အဲဒီနှစ်ဖိုင်ရဲ့ &lt;strong&gt;1&lt;/strong&gt; နဲ့ &lt;strong&gt;5&lt;/strong&gt; ဆိုတာကတော့ &lt;strong&gt;Section&lt;/strong&gt; ကိုဆိုလိုတာပါ။ &lt;strong&gt;Section 1&lt;/strong&gt; ကတော့ Command အကြောင်းဖြစ်ပြီး &lt;strong&gt;Section 5&lt;/strong&gt; ကတော့ အဲဒီ &lt;code&gt;passwd&lt;/code&gt; command နဲ့ချိတ်ဆက်နေတဲ့ configuration file တွေအကြောင်းရှင်းပြပေးထားတာလို့ အကြမ်းဖျဉ်း ခွဲခြားနိုင်ပါတယ်။&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Section 5&lt;/strong&gt; Man Page ကိုခေါ်ယူချင်တယ်ဆိုလျှင်တော့ &lt;code&gt;man 5 passwd&lt;/code&gt; ဆိုပြီး ခေါ်ယူနိုင်ပါတယ်။ တခြား Section တွေအတွက်ဆိုလျှင်လည်း &lt;strong&gt;5&lt;/strong&gt; နေရာမှာ ကိုယ်အလိုရှိတဲ့ Section Number ကို ထည့်သွင်းပေးလိုက်ရုံပါပဲ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-section3.png&#34; alt=&#34;man section 3&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/man-section3.png&#34; alt=&#34;man section 3&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;အခု &lt;code&gt;man 5 passwd&lt;/code&gt; ဆိုပြီး ခေါ်လိုက်တာဖြစ်တဲ့အတွက် &lt;strong&gt;PASSWD(5)&lt;/strong&gt; ဆိုပြီး &lt;code&gt;man passwd&lt;/code&gt; နဲ့မတူညီတဲ့ Page ကိုတွေ့ရပါလိမ့်မယ်။ &lt;strong&gt;Section 5&lt;/strong&gt; ဆိုတဲ့အတွက် &lt;code&gt;passwd&lt;/code&gt; command နဲ့သက်ဆိုင်တဲ့ &lt;code&gt;/etc/passwd&lt;/code&gt; &lt;code&gt;/etc/shadow&lt;/code&gt; စတဲ့ဖိုင်တွေအကြောင်းကို ရှင်းပြထားတာဖြစ်ပါတယ်။&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;man -a passwd&lt;/code&gt; ဆိုလျှင်တော့ &lt;code&gt;-aw&lt;/code&gt; option နဲ့မှာတွေ့ရတဲ့ page ၃ခုရဲ့ ပထမဆုံး page ကနေစဖော်ပြပေးမှာဖြစ်ပြီး &lt;code&gt;Q&lt;/code&gt; Key နှိပ်ပြီး ထွက်လိုက်ပြီဆိုတာနဲ့ ပုံမှာပြထားတဲ့အတိုင်း &lt;strong&gt;View&lt;/strong&gt; | &lt;strong&gt;Skip&lt;/strong&gt; | &lt;strong&gt;Quit&lt;/strong&gt; ဆိုပြီး ရွေးစရာတွေတွေ့ရပါလိမ့်မယ်။ &lt;strong&gt;next: sslpasswd(1ssl)&lt;/strong&gt; ဆိုပြီးပြောထားတဲ့အတွက် &lt;code&gt;Enter&lt;/code&gt; Key (return) နှိပ်လိုက်တာနဲ့ &lt;strong&gt;sslpasswd&lt;/strong&gt; ဆိုတဲ့ Man Page ကိုမြင်ရမှာဖြစ်ပြီး နောက် လာမယ့် &lt;strong&gt;PASSWD(5)&lt;/strong&gt; ကိုကျော်သွားချင်တယ်ဆိုလျှင်တော့ &lt;strong&gt;Ctrl+D&lt;/strong&gt; Key နဲ့ ကျော်နိုင်ပါတယ်။ ထွက်မယ်ဆိုလျှင်တော့ &lt;strong&gt;Ctrl+C&lt;/strong&gt; နဲ့ ထွက်နိုင်ပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-section4.png&#34; alt=&#34;man section 4&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/man-section4.png&#34; alt=&#34;man section 4&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Man Page ရှာဖွေတဲ့နေရာမှာ သုံးနိုင်တဲ့ Option တွေရှိပါသေးတယ်။ အဲဒါတွေကတော့ &lt;code&gt;-f&lt;/code&gt; နဲ့ &lt;code&gt;-k&lt;/code&gt; ပါပဲ။ ဒီ Option နှစ်ခုရဲ့ကွာခြားချက်ကိုတော့ အောက်မှာပြထားတဲ့ပုံမှာကြည့်ကြည့်ပါ။ &lt;strong&gt;passwd&lt;/strong&gt; ကို &lt;strong&gt;Search&lt;/strong&gt; လုပ်မယ့် Keyword အနေနဲ့ သုံးထားပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/man-search4.png&#34; alt=&#34;man search 3&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/man-search4.png&#34; alt=&#34;man search 3&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ကွာခြားချက်ကတော့ &lt;code&gt;-f&lt;/code&gt; က ရှိသမျှ Man Page တွေရဲ့ &lt;strong&gt;Name&lt;/strong&gt; နေရာမှာ သတ်မှတ်ထားတဲ့ Keyword ပါတဲ့ Page တွေကို ရှာဖွေထုတ်ပြပေးတာဖြစ်ပြီး &lt;code&gt;-k&lt;/code&gt; ကတော့ &lt;strong&gt;Name&lt;/strong&gt; နဲ့ &lt;strong&gt;Description&lt;/strong&gt; နေရာမှာ Keywoard ပါတဲ့ Page တွေကိုထုတ်ပြပေးတာပဲဖြစ်တယ်။&lt;/p&gt;
 
@@ -1536,7 +1536,7 @@ $ sudo ntfsx removeall
 $ apti[tab][tab]
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2016%3A04%3A26.png&#34; alt=&#34;Completion&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2016%3A04%3A26.png&#34; alt=&#34;Completion&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Directory လမ်းကြောင်းတွေမှာလဲသုံးနိုင်ပါတယ်။&lt;/p&gt;
 
@@ -1544,7 +1544,7 @@ $ apti[tab][tab]
 $ cd Dow[tab][tab]
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2016%3A45%3A01.png&#34; alt=&#34;Directory Completion&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2016%3A45%3A01.png&#34; alt=&#34;Directory Completion&#34; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;မှတ်ချက်။ ။ တချို့ Distro တွေမှာတော့ Completion အလုပ်လုပ်ဖို့ configure ပြန်လုပ်ပေးဖို့ လိုပါတယ်။&lt;/p&gt;
@@ -1559,7 +1559,7 @@ $ cd Dow[tab][tab]
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ history | grep [some_part_of_command]
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2017%3A05%3A40.png&#34; alt=&#34;History&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2017%3A05%3A40.png&#34; alt=&#34;History&#34; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -1578,7 +1578,7 @@ $ cd ~/Download
 $ !ge
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2019%3A06%3A29.png&#34; alt=&#34;bang&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2019%3A06%3A29.png&#34; alt=&#34;bang&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;gedit command သုံးပြီးတဲ့နောက် Home အောက်က Download ဆိုတဲ့ folder ထဲကို ပြောင်းတဲ့ command ရိုက်လိုက်ပါတယ်။ &lt;strong&gt;!!&lt;/strong&gt; လို့ရိုက်ရင်တော့ &lt;em&gt;&amp;ldquo;cd ~/Download&amp;rdquo;&lt;/em&gt; ဆိုတဲ့ command ကို ပြန်ခေါ်တာဖြစ်သွားပါလိမ့်မယ်။ ပြထားတဲ့အတိုင်း &lt;strong&gt;!ge&lt;/strong&gt; လို့ရိုက်လိုက်ရင်တော့ History ထဲက &lt;strong&gt;ge&lt;/strong&gt; နဲ့စတဲ့ command တွေထဲကမှ နောက်ဆုံး command ကိုပြန်ခေါ်ပေးမှာပါ။ &lt;em&gt;&amp;ldquo;gedit /tmp/test&amp;rdquo;&lt;/em&gt; လို့ပြန်ရိုက်လိုက်တာနဲ့အတူတူပါပဲ။&lt;/p&gt;
 
@@ -1588,7 +1588,7 @@ $ !ge
 $ sudo !!
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2017%3A35%3A56.png&#34; alt=&#34;sudo&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/ScreenShots/Screenshot%20from%202014-08-01%2017%3A35%3A56.png&#34; alt=&#34;sudo&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ပုံမှာပြထားတဲ့အတိုင်း ပထမ &lt;em&gt;apt-get update&lt;/em&gt; လို့ရိုက်လိုက်ပါတယ်။ root permission လိုတယ်ဆိုပြီး error ပြလာတဲ့အတွက် &lt;strong&gt;sudo&lt;/strong&gt; command နဲ့ &lt;em&gt;&amp;ldquo;sudo apt-get update&amp;rdquo;&lt;/em&gt; ဆိုပြီးပြန်ရိုက်ရမှာပါ။ ဒါပေမယ့် အပြည့်အစုံပြန်မရိုက်ပဲ &lt;strong&gt;sudo !!&lt;/strong&gt; ကိုသုံးလိုက်တာပါ။ အပေါ်မှာပြောခဲ့တဲ့အတိုင်း &lt;strong&gt;!!&lt;/strong&gt; က နောက်ဆုံးရိုက်လိုက်တဲ့ command ကိုပြန်ခေါ်ပေးတာပါ။ ဒါကြောင့် &lt;strong&gt;sudo !!&lt;/strong&gt; လို့ရိုက်လိုက်တာက &lt;strong&gt;sudo apt-get update&lt;/strong&gt; လို့ရိုက်လိုက်တာနဲ့ အတူတူဖြစ်သွားပါတယ်။&lt;/p&gt;
 

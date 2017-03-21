@@ -357,13 +357,13 @@ $ gsettings set org.freedesktop.ibus.panel show 0
 &lt;li&gt;&lt;strong&gt;Text Entry Settings&amp;hellip;&lt;/strong&gt; ကိုရွေးပါ။&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/mm-kb/Ubuntu%2064-bit-2014-10-01-22-11-27.png&#34; alt=&#34;Text Entry Setting&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/ScreenShots/mm-kb/Ubuntu%2064-bit-2014-10-01-22-11-27.png&#34; alt=&#34;Text Entry Setting&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&amp;rdquo;+&amp;rdquo;&lt;/strong&gt; button ကိုနှိပ်ပြီး search box ထဲမှာ &lt;strong&gt;Burmese&lt;/strong&gt; လို့ရိုက်ထည့်ပြီးရှာလိုက်ပါ။ Burmese, Burmese (mm-myanmar3), Burmese (mm-zawgyi) ဆိုပြီး Keyboard Layout သုံးခုတွေ့ရပါလိမ့်မယ်။&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/mm-kb/Ubuntu%2064-bit-2014-10-01-22-12-22.png&#34; alt=&#34;input&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/ScreenShots/mm-kb/Ubuntu%2064-bit-2014-10-01-22-12-22.png&#34; alt=&#34;input&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Unicode အတွက် &lt;strong&gt;Burmese (mm-myanmar3)&lt;/strong&gt; ဖြစ်ပြီး Zawgyi အတွက်ကတော့ &lt;strong&gt;Burmese (mm-zawgyi)&lt;/strong&gt; ဖြစ်ပါတယ်။ ကြိုက်ရာကိုရွေးထည့်ပြီး အသုံးပြုနိုင်ပါတယ်။ &lt;strong&gt;Burmese&lt;/strong&gt; ကတော့ မူရင်းပါဝင်ပြီးဖြစ်တဲ့ xkb unicode keyboard ပါ။&lt;/p&gt;&lt;/li&gt;
@@ -375,15 +375,15 @@ $ gsettings set org.freedesktop.ibus.panel show 0
 &lt;li&gt;&lt;p&gt;အပေါ်မှာ ကျွန်တော်ပြောခဲ့တဲ့အတိုင်း mm-kb ကို install လုပ်လိုက်တာနဲ့ System font အနေနဲ့ Zawgyi ကို အလိုအလျောက်သုံးသွားပါလိမ့်မယ်။ Unicode သုံးချင်သူတွေအနေနဲ့ကတော့ Unity Dashboard ထဲမှာ &lt;strong&gt;myanmar&lt;/strong&gt; လို့ရိုက်ပြီးရှာကြည့်လိုက်ပါ။ &lt;strong&gt;Myanmar Font Switcher&lt;/strong&gt; တွေ့ပါလိမ့်မယ်။ Zenity သုံးပြီးရေးထားတဲ့ Script လေးပါ။ အဲဒီ script လေးသုံးပြီး ပေးထားတဲ့ Font တွေထဲကမှ ကြိုက်နှစ်သက်ရာ Font ကိုပြောင်းပေးနိုင်ပါတယ်။&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/mm-kb/myanmar-font-switcher.png&#34; alt=&#34;myanmar-font-switcher&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/ScreenShots/mm-kb/myanmar-font-switcher.png&#34; alt=&#34;myanmar-font-switcher&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/mm-kb/Screenshot%20from%202014-10-02%2015%3A07%3A32.png&#34; alt=&#34;myanmar-font-switcher&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/ScreenShots/mm-kb/Screenshot%20from%202014-10-02%2015%3A07%3A32.png&#34; alt=&#34;myanmar-font-switcher&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Zawgyi အသုံးပြုတဲ့သူတွေအနေနဲ့ Zawgyi font ကြောင့် မြန်မာလိုပြပေးနေတဲ့ Date/Time စာသားတွေ လွဲသွားတာကိုမလိုချင်ရင်တော့ အင်္ဂလိပ်လိုပြောင်းပေးနိုင်ပါတယ်။ &lt;strong&gt;System Preferences&amp;gt; Language Support&amp;gt; Regional Formats&lt;/strong&gt; မှာ &lt;strong&gt;Burmese&lt;/strong&gt; ကို &lt;strong&gt;English (United States)&lt;/strong&gt; ပြောင်းပေးလိုက်ပါ။ အဆင်ပြေသွားပါလိမ့်မယ်။&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/ScreenShots/mm-kb/Screenshot%20from%202014-12-11%2016%26%2510%26%2552.png&#34; alt=&#34;Language Support&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/ScreenShots/mm-kb/Screenshot%20from%202014-12-11%2016%26%2510%26%2552.png&#34; alt=&#34;Language Support&#34; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;အဆင်မပြေတာ ဒါမှမဟုတ် လိုအပ်တာများကိုအကြံပေးချင်၊ အကြောင်းကြားချင်ရင်တော့ Comment ကနေဖြစ်စေ &lt;a href=&#34;https://www.facebook.com/groups/ubuntu4mm/&#34;&gt;Facebook Group&lt;/a&gt; မှာဖြစ်စေ မေးမြန်းအကြံပေးနိုင်ပါတယ်။&lt;/p&gt;
@@ -401,11 +401,11 @@ $ gsettings set org.freedesktop.ibus.panel show 0
 
 &lt;p&gt;Installation ကတော့ ခက်ခက်ခဲခဲကြီးမဟုတ်ပါဘူး။ ပေးထားတဲ့ zip ဖိုင်လေးကို download ဆွဲ double click နှိပ်ပြီး extract လုပ်။ ထွက်လာတဲ့ ဖိုင်ကို &lt;code&gt;/Library/Keyboard Layouts&lt;/code&gt; ဆိုတဲ့ folder ထဲသွားထည့်ပေးလိုက်ရုံပါပဲ။ ပြီးလျှင်တော့ ပုံမှန်အတိုင်း System Preferences &amp;gt; Keyboard &amp;gt; Input Sources ကနေ ရွေးပြီး သုံးနိုင်ပါပြီ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/osx/ScreenShots/Screenshot%202014-12-05%2013.47.45.png&#34; alt=&#34;Myanmar3 Layout&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/osx/ScreenShots/Screenshot%202014-12-05%2013.47.45.png&#34; alt=&#34;Myanmar3 Layout&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Keyboard Kayout ကိုတော့ Dropbox မှာတင်ပေးထားပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;Download: &lt;a href=&#34;https://dl.dropboxusercontent.com/u/26716001/osx/Myanmar3%20-%20QWERTY.bundle.zip&#34;&gt;Myanmar3 QWERTY Keyboard&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Download: &lt;a href=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/osx/Myanmar3%20-%20QWERTY.bundle.zip&#34;&gt;Myanmar3 QWERTY Keyboard&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -420,7 +420,7 @@ $ gsettings set org.freedesktop.ibus.panel show 0
 &lt;p&gt;Ubuntu မှာ Zawgyi နဲ့ Unicode Font နှစ်မျိုးလုံးထည့်လိုက်ရင် ဇော်ဂျီနဲ့ပဲ ပေါ်တော့တယ်။ ဘာကြောင့်ရယ် အတိအကျမပြောနိုင်ပေမယ့် Zawgyi Font မှာက Code Point ပိုများနေတဲ့အတွက် Zawgyi ကိုပဲ Default အဖြစ် သတ်မှတ်သွားတာလို့ပဲယူဆတယ်။ ဒါကြောင့် Unicode ကိုပဲ Default အနေနဲ့သုံးချင်တယ်ဆိုရင် Fallback Font ကိုပြောင်းပေးရတယ်။ အဲဒီအတွက် လွယ်အောင် my-fs-cli ဆိုတဲ့ command line tools လေးတစ်ခုရေးဖြစ်တယ်။ Ubuntu 12.04 LTS ပေါ်မှာ Build လုပ်ပြီး Launchpad မှာ တင်ပေးထားပေမယ့် Update မလုပ်ဖြစ်တော့ နောက်ထွက်တဲ့ Ubuntu version အသစ်တွေမှာ ppa သုံးပြီး package manager တွေကနေ install လုပ်လို့မရတော့ဘူး။
 သုံးချင်ရင် .deb file download ဆွဲပြီး Manually install လုပ်မှရတယ်။ ပေးထားတဲ့ Command အတိုင်း Terminal ထဲမှာ တစ်ကြောင်းချင်းရိုက်ထည့်လိုက်ရုံပါပဲ။&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;wget https://dl.dropboxusercontent.com/u/26716001/Ubuntu/my-fs-cli_12.07.1_all.deb
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;wget https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/my-fs-cli_12.07.1_all.deb
 sudo dpkg -i my-fs-cli_12.07.1_all.deb
 &lt;/code&gt;&lt;/pre&gt;
 

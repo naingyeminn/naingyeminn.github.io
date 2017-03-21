@@ -46,7 +46,7 @@
 
 &lt;p&gt;အလုပ်လုပ်ပုံကတော့ ပုံမှာပြထားတဲ့အတိုင်း Developer ကသူ့ Site/App ကို Run ထားပြီးပြီဆိုတာနဲ့ &lt;code&gt;localtunnel&lt;/code&gt; Client Program ကို run ပါတယ်။ Client Program က သူ့ရဲ့ Server ဖြစ်တဲ့ &lt;code&gt;localtunnel.me&lt;/code&gt; ကိုလှမ်း Access လုပ်ပြီး URL ကို Generate လုပ်ပေးပါတယ်။ ရလာတဲ့ URL ကို တဘက်မှာရှိတဲ့ Client(Customer) က သူ့ရဲ့ Web Browser ကနေ ခေါ်လိုက်ပြီဆိုတာနဲ့ &lt;code&gt;localtunnel.me&lt;/code&gt; Server ဆီကိုရောက်ပါတယ်။ &lt;code&gt;localtunnel.me&lt;/code&gt; ကိုရောက်လာတဲ့ Client Browser ရဲ့ HTTP Request ကို Developer ရဲ့ Laptop/Desktop မှာရှိတဲ့ &lt;code&gt;localtunnel&lt;/code&gt; Client Program က Respond ပြန်ပေးတာပါ။ အဲဒီ Request တွေ Respond တွေကို ကြားမှာရှိတဲ့ &lt;code&gt;localtunnel.me&lt;/code&gt; Server က Relay အနေနဲ့ အပြန်အလှန်ပို့ပေးတဲ့သဘောပါပဲ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/localtunnel/localtunnel.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/localtunnel/localtunnel.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 

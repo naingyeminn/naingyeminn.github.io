@@ -236,47 +236,47 @@ fi
 &lt;ul&gt;
 &lt;li&gt;ပထမဆုံးအနေနဲ့ NX-OS Titanium Emulator ကို Download ရယူလိုက်ပါ။&lt;/li&gt;
 &lt;li&gt;ရလာတဲ့ RAR ဖိုင်ကို Extract လုပ်လိုက်ပါ။ ပုံမှာမြင်တွေ့ရတဲ့အတိုင်း ဖိုင် ၅ဖိုင်ထွက်လာပါလိမ့်မယ်။
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-1.png&#34; alt=&#34;NX-OS-1&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-1.png&#34; alt=&#34;NX-OS-1&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;N7K-2.vmx ဖိုင်လေးကို Double-Click နှိပ်လိုက်ပါ။&lt;/li&gt;
 &lt;li&gt;VM ကို Upgrade လုပ်မလား မေးခဲ့လျှင် Upgrade ကိုနှိပ်ပါ။
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-2.png&#34; alt=&#34;NX-OS-2&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-2.png&#34; alt=&#34;NX-OS-2&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;Compatibility Warning တက်လာခဲ့လျှင် OK ကိုပဲနှိပ်လိုက်ပါ။
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-3.png&#34; alt=&#34;NX-OS-3&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-3.png&#34; alt=&#34;NX-OS-3&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;I Copied It ကိုနှိပ်ပါ။
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-4.png&#34; alt=&#34;NX-OS-4&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-4.png&#34; alt=&#34;NX-OS-4&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;ပုံထဲကအတိုင်း WARNING ပေါ်ပြီး ရပ်နေပါလိမ့်မယ်။
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-5.png&#34; alt=&#34;NX-OS-5&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-5.png&#34; alt=&#34;NX-OS-5&#34; /&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;VM ကို Shutdown ပြန်လုပ်လိုက်ပါ။
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-6.png&#34; alt=&#34;NX-OS-6&#34; /&gt;
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-7.png&#34; alt=&#34;NX-OS-7&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-6.png&#34; alt=&#34;NX-OS-6&#34; /&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-7.png&#34; alt=&#34;NX-OS-7&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;အခု VM ကို အနည်းငယ် Edit လုပ်ရပါမယ်။ ဘာကြောင့်လဲဆိုတော့ မူရင်း vmx ဖိုင်မှာ Serial Port အတွက် ရေးထားတဲ့ config က VMware Fusion မှာ အလုပ်မလုပ်လို့ပါ။&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;အဲဒီအတွက် VM ရဲ့ Setting ကိုဖွင့်လိုက်ပါ။
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-8.png&#34; alt=&#34;NX-OS-8&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-8.png&#34; alt=&#34;NX-OS-8&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Serial Port ကိုနှိပ်လိုက်ပါ။
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-9.png&#34; alt=&#34;NX-OS-9&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-9.png&#34; alt=&#34;NX-OS-9&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Remove Serial Port ကိုနှိပ်ပြီး Remove လုပ်လိုက်ပါ။
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-10.png&#34; alt=&#34;NX-OS-10&#34; /&gt;
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-11.png&#34; alt=&#34;NX-OS-11&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-10.png&#34; alt=&#34;NX-OS-10&#34; /&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-11.png&#34; alt=&#34;NX-OS-11&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Add Device ကိုနှိပ်ပါ။
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-12.png&#34; alt=&#34;NX-OS-12&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-12.png&#34; alt=&#34;NX-OS-12&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Serial Port ကိုရွေးလိုက်ပါ။
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-13.png&#34; alt=&#34;NX-OS-13&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-13.png&#34; alt=&#34;NX-OS-13&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Save As မှာ &lt;strong&gt;Serial_Port&lt;/strong&gt; လို့နာမည်ပေးပြီး Save လိုက်ပါ။
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-14.png&#34; alt=&#34;NX-OS-14&#34; /&gt;
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-15.png&#34; alt=&#34;NX-OS-15&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-14.png&#34; alt=&#34;NX-OS-14&#34; /&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-15.png&#34; alt=&#34;NX-OS-15&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;အခု အသစ်ပြုလုပ်ထားတဲ့ Serial_Port ရဲ့ config ကို အနည်းငယ်ပြင်ပါမယ်။ ပုံထဲကအတိုင်း N7K-2.vmx ဆိုတဲ့ ဖိုင်လေးကို Right-Click နှိပ်ပြီး Open With မှာ TextEdit.app ကိုရွေးလိုက်ပါ။&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-16.png&#34; alt=&#34;NX-OS-16&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-16.png&#34; alt=&#34;NX-OS-16&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;အောက်မှာပေးထားတဲ့ config နှစ်ကြောင်းကို Copy ကူးလိုက်ပါ။&lt;/li&gt;
@@ -294,8 +294,8 @@ serial0.fileName = &amp;quot;telnet://localhost:9001&amp;quot;
 serial0.fileName = &amp;quot;/[path_to_titanium_directory]/Serial_Port&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-17.png&#34; alt=&#34;NX-OS-17&#34; /&gt;
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-18.png&#34; alt=&#34;NX-OS-18&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-17.png&#34; alt=&#34;NX-OS-17&#34; /&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-18.png&#34; alt=&#34;NX-OS-18&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ပြင်ပြီးပြီဆိုလျှင်တော့ Save လုပ်ပြီး VM ကို ပြန် Run လိုက်ပါ။ အပေါ်မှာတွေ့မြင်ခဲ့ရတဲ့အတိုင်း Warning Message ပြပြီးရပ်နေပါလိမ့်မယ်။ ပြဿနာမရှိပါဘူး ဒီတိုင်းထားလိုက်ပါ။&lt;/li&gt;
@@ -305,11 +305,11 @@ serial0.fileName = &amp;quot;/[path_to_titanium_directory]/Serial_Port&amp;quot;
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ telnet localhost 9001
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-19.png&#34; alt=&#34;NX-OS-19&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-19.png&#34; alt=&#34;NX-OS-19&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Boot Loading ပြီးသွားပြီဆိုလျှင်တော့ Login Prompt ကိုတွေ့ရပါမယ်။ ပေးထားတဲ့အတိုင်း Username နဲ့ Password ရိုက်ထည့်ပေးလိုက်ပြီဆိုလျှင်တော့ Privileged Mode ကို Access ရပြီဖြစ်ပါတယ်။
-&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/NX-OS/NX-OS-20.png&#34; alt=&#34;NX-OS-20&#34; /&gt;&lt;/li&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-20.png&#34; alt=&#34;NX-OS-20&#34; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;အခုလောက်ဆိုလျှင်တော့ မိမိစမ်းသပ်လိုရာ Lab ကို တည်ဆောက်လို့ရနိုင်ပြီထင်ပါတယ်။&lt;/p&gt;
@@ -326,11 +326,11 @@ serial0.fileName = &amp;quot;/[path_to_titanium_directory]/Serial_Port&amp;quot;
 
 &lt;p&gt;Installation ကတော့ ခက်ခက်ခဲခဲကြီးမဟုတ်ပါဘူး။ ပေးထားတဲ့ zip ဖိုင်လေးကို download ဆွဲ double click နှိပ်ပြီး extract လုပ်။ ထွက်လာတဲ့ ဖိုင်ကို &lt;code&gt;/Library/Keyboard Layouts&lt;/code&gt; ဆိုတဲ့ folder ထဲသွားထည့်ပေးလိုက်ရုံပါပဲ။ ပြီးလျှင်တော့ ပုံမှန်အတိုင်း System Preferences &amp;gt; Keyboard &amp;gt; Input Sources ကနေ ရွေးပြီး သုံးနိုင်ပါပြီ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/osx/ScreenShots/Screenshot%202014-12-05%2013.47.45.png&#34; alt=&#34;Myanmar3 Layout&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/osx/ScreenShots/Screenshot%202014-12-05%2013.47.45.png&#34; alt=&#34;Myanmar3 Layout&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Keyboard Kayout ကိုတော့ Dropbox မှာတင်ပေးထားပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;Download: &lt;a href=&#34;https://dl.dropboxusercontent.com/u/26716001/osx/Myanmar3%20-%20QWERTY.bundle.zip&#34;&gt;Myanmar3 QWERTY Keyboard&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Download: &lt;a href=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/osx/Myanmar3%20-%20QWERTY.bundle.zip&#34;&gt;Myanmar3 QWERTY Keyboard&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
