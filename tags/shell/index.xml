@@ -39,7 +39,7 @@
 
 &lt;p&gt;Quality ချိန်ညှိနိုင်ဖို့အတွက်လည်း option တွေထည့်ပေးထားပါသေးတယ်။ အသေးစိပ်ကိုတော့ Usage မှာကြည့်နိုင်ပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/split_pdf/split_pdf01.png&#34; alt=&#34;split_pdf01&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/split_pdf/split_pdf01.png&#34; alt=&#34;split_pdf01&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ပြီးပြည့်စုံတဲ့ Script တစ်ခုမဟုတ်ပေမဲ့ အတိုင်းအတာတစ်ခုထိတော့ အသုံးဝင်နိုင်လိမ့်မယ်ထင်တဲ့အတွက် မျှဝေခြင်းဖြစ်ပါတယ်။&lt;/p&gt;
 
@@ -67,13 +67,13 @@ dlist=(`curl -s -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko
 
 for i in ${dlist[@]};
 do
-    if [ -f &amp;quot;${i##*$1/}&amp;quot; ]; then
-        echo &amp;quot;${i##*$1/} : Resuming Download...&amp;quot;
-        curl -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0&#39; -L -o &amp;quot;${i##*$1/}&amp;quot; -C - &amp;quot;$i&amp;quot;
-    else
-        echo &amp;quot;Downloading ${i##*$1/}&amp;quot;
-        curl -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0&#39; -o &amp;quot;${i##*$1/}&amp;quot; &amp;quot;$i&amp;quot;
-    fi
+	if [ -f &amp;quot;${i##*$1/}&amp;quot; ]; then
+		echo &amp;quot;${i##*$1/} : Resuming Download...&amp;quot;
+		curl -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0&#39; -L -o &amp;quot;${i##*$1/}&amp;quot; -C - &amp;quot;$i&amp;quot;
+	else
+		echo &amp;quot;Downloading ${i##*$1/}&amp;quot;
+		curl -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0&#39; -o &amp;quot;${i##*$1/}&amp;quot; &amp;quot;$i&amp;quot;
+	fi
 done
 &lt;/code&gt;&lt;/pre&gt;
 </description>

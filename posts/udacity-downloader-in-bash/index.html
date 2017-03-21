@@ -99,13 +99,13 @@ dlist=(`curl -s -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/201
 
 for i in ${dlist[@]};
 do
-    if [ -f &quot;${i##*$1/}&quot; ]; then
-        echo &quot;${i##*$1/} : Resuming Download...&quot;
-        curl -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0' -L -o &quot;${i##*$1/}&quot; -C - &quot;$i&quot;
-    else
-        echo &quot;Downloading ${i##*$1/}&quot;
-        curl -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0' -o &quot;${i##*$1/}&quot; &quot;$i&quot;
-    fi
+	if [ -f &quot;${i##*$1/}&quot; ]; then
+		echo &quot;${i##*$1/} : Resuming Download...&quot;
+		curl -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0' -L -o &quot;${i##*$1/}&quot; -C - &quot;$i&quot;
+	else
+		echo &quot;Downloading ${i##*$1/}&quot;
+		curl -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0' -o &quot;${i##*$1/}&quot; &quot;$i&quot;
+	fi
 done
 </code></pre>
 

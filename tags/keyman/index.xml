@@ -29,19 +29,19 @@ $ make install
 
 &lt;p&gt;ပြီးလျှင်တော့ ပုံမှာပြထားတဲ့အတိုင်း &lt;strong&gt;Text Entry Settings&amp;hellip;&lt;/strong&gt; ထဲဝင်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/mm-kb-kmfl1.png&#34; alt=&#34;Text Entry&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/mm-kb-kmfl/mm-kb-kmfl1.png&#34; alt=&#34;Text Entry&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&amp;rdquo;+&amp;rdquo;&lt;/strong&gt; button ကိုနှိပ်ပြီး Input Source list ထဲ &lt;strong&gt;&amp;ldquo;other&amp;rdquo;&lt;/strong&gt; လို့ရိုက်ပြီးရှာလိုက်ပါ။ ပေါ်လာတဲ့ Input Source တွေထဲကမှ ကြိုက်နှစ်သက်ရာကို တစ်ခုချင်းရွေးပြီး &lt;strong&gt;Add&lt;/strong&gt; လုပ်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/mm-kb-kmfl2.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/mm-kb-kmfl/mm-kb-kmfl2.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Input sources to use&lt;/strong&gt; ဆိုတဲ့ list ထဲမှာတိုးသွားပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/mm-kb-kmfl3.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/mm-kb-kmfl/mm-kb-kmfl3.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;အခုဆိုရင်ကြိုက်နှစ်သက်ရာ Keyboard ကို ရွေးချယ်ပြီးအသုံးပြုနိုင်ပါပြီ။ Panel မှာ ရှိတဲ့ Keyboard Layout Switcher နေရာမှာ သွားရွေးနိုင်သလို Shortcut Key ဖြစ်တဲ့ &lt;strong&gt;Super + Space&lt;/strong&gt; နဲ့လည်း ပြောင်းလဲရွေးချယ် အသုံးပြုနိုင်ပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/mm-kb-kmfl4.png&#34; alt=&#34;Input3&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/mm-kb-kmfl/mm-kb-kmfl4.png&#34; alt=&#34;Input3&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;လိုအပ်ချက်များရှိပါက &lt;a href=&#34;http://naingyeminn.com/posts/myanmar-unicode-keyboards-for-ubuntu/#contact&#34;&gt;ဆက်သွယ်&lt;/a&gt; အကြံပြုနိုင်ပါတယ်။&lt;/p&gt;
 
@@ -55,7 +55,7 @@ $ make install
 
 &lt;p&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/shan-unicode-layout.jpg&#34;&gt;Ours Unicode - Shan Layout&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/mm-kb-kmfl/shan-unicode-layout.jpg&#34;&gt;Ours Unicode - Shan Layout&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/suntungithub/Keymagic_Layouts&#34;&gt;keymagic_layouts&lt;/a&gt;&lt;/p&gt;
 
@@ -84,15 +84,15 @@ $ gsettings set org.freedesktop.ibus.panel show 0
 
 &lt;p&gt;ပြီးလျှင်တော့ ပုံမှာပြထားတဲ့အတိုင်း &lt;strong&gt;Text Entry Settings&amp;hellip;&lt;/strong&gt; ထဲဝင်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/ubuntu01.png&#34; alt=&#34;Text Entry&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/ubuntu01.png&#34; alt=&#34;Text Entry&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&amp;rdquo;+&amp;rdquo;&lt;/strong&gt; button ကိုနှိပ်ပြီး Input Source list ထဲ &lt;strong&gt;&amp;ldquo;my-win&amp;rdquo;&lt;/strong&gt; ကိုရှာပြီး &lt;strong&gt;Add&lt;/strong&gt; လုပ်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/ubuntu02.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/ubuntu02.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Input sources to use&lt;/strong&gt; ဆိုတဲ့ list ထဲမှာထပ်တိုးသွားပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/ubuntu03.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/ubuntu03.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;MyWin သုံးပြီး စာရိုက်ဖို့ Panel မှာ ရှိတဲ့ Keyboard Layout Switcher နေရာမှာ သွားရွေးနိုင်သလို Shortcut Key ဖြစ်တဲ့ &lt;strong&gt;Super + Space&lt;/strong&gt; နဲ့လည်း ပြောင်းလဲရွေးချယ် အသုံးပြုနိုင်ပါတယ်။&lt;/p&gt;
 
@@ -118,11 +118,11 @@ $ gsettings set org.freedesktop.ibus.panel show 0
 
 &lt;p&gt;Download ကိုတော့ Email ဖြည့်စွက်ပေးမှသာ ပြုလုပ်နိုင်ပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx01.png&#34; alt=&#34;Download&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx01.png&#34; alt=&#34;Download&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Keyman.dmg&lt;/strong&gt; နာမည်နှင့် ဖိုင်တစ်ဖိုင်ရရှိမှာဖြစ်ပါတယ်။ &lt;strong&gt;Double Click&lt;/strong&gt; နှိပ်ပြီးဖွင့်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx02.png&#34; alt=&#34;Install&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx02.png&#34; alt=&#34;Install&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ပုံထဲမှာ မြှားပြထားတဲ့အတိုင်း ဘယ်ဘက်ခြမ်းမှာရှိတဲ့ &lt;strong&gt;Keyman.app&lt;/strong&gt; ကို Drag ဆွဲပြီး ညာဘက်မှာရှိတဲ့ &lt;strong&gt;Input Methods&lt;/strong&gt; folder ထဲထည့်လိုက်ပါ။ ပြီးလျှင်တော့ &lt;strong&gt;Keyman.dmg&lt;/strong&gt; ကိုပြန်ပိတ်လိုက်လို့ရပါပြီ။&lt;/p&gt;
 
@@ -132,43 +132,43 @@ $ gsettings set org.freedesktop.ibus.panel show 0
 
 &lt;p&gt;&lt;strong&gt;System Preferences&lt;/strong&gt; ထဲမှ &lt;strong&gt;Keyboard&lt;/strong&gt; ကိုဖွင့်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx03.png&#34; alt=&#34;System Preferences&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx03.png&#34; alt=&#34;System Preferences&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Input Sources&lt;/strong&gt; Tab ကိုရွေးပြီး အပေါင်းလက္ခဏာ သင်္ကေတလေးကိုနှိပ်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx04.png&#34; alt=&#34;Input Sources&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx04.png&#34; alt=&#34;Input Sources&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Search Box ထဲ &lt;em&gt;key&lt;/em&gt; လို့ရိုက်ထည့်လိုက်တာနဲ့ &lt;strong&gt;Keyman&lt;/strong&gt; ကိုတွေ့ရပါလမ့်မယ်။ ရွေးပြီး &lt;strong&gt;Add&lt;/strong&gt; လုပ်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx05.png&#34; alt=&#34;Keyman&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx05.png&#34; alt=&#34;Keyman&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Top Panel တွင် &lt;strong&gt;US&lt;/strong&gt; အလံ logo လေးပေါ်လာပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx06.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx06.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Click နှိပ်ပြီး ပေါ်လာတဲ့ Menu ထဲက &lt;strong&gt;Keyman&lt;/strong&gt; ကိုရွေးလိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx07.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx07.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;US&lt;/strong&gt; logo နေရာမှာ &lt;strong&gt;Keyman&lt;/strong&gt; ရဲ့ logo အနေနဲ့ပြောင်းသွားပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx08.png&#34; alt=&#34;Input3&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx08.png&#34; alt=&#34;Input3&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Keyman&lt;/strong&gt; logo ကိုနောက်တစ်ကြိမ်ထပ်နှိပ်ပြီး ပေါ်လာတဲ့ Menu ထဲက &lt;strong&gt;Configuration&amp;hellip;&lt;/strong&gt; ကိုရွေးလိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx09.png&#34; alt=&#34;Input4&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx09.png&#34; alt=&#34;Input4&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ပေါ်လာတဲ့ &lt;strong&gt;Keyman Configuration&lt;/strong&gt; ရဲ့ &lt;strong&gt;Keyboard Layouts&lt;/strong&gt; Tab ကိုသွားပါ။ &lt;strong&gt;Installed Keyboard&lt;/strong&gt; ဆိုတဲ့အောက်မှာ ဘာမှရှိဦးမှာမဟုတ်ပါဘူး။ အဲဒီအကွက်ထဲ နောက်ဆုံး Download ဆွဲခဲ့တဲ့ &lt;strong&gt;MyWin2.2.kmp&lt;/strong&gt; ဖိုင်ကို Drag ဆွဲပြီးထည့်လိုက်ပါ။ ပုံမှာပြထားတဲ့အတိုင်း my-Win2.2.4 Unicode 5.1 ဆိုပြီးဝင်သွားပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx10.png&#34; alt=&#34;MyWin&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx10.png&#34; alt=&#34;MyWin&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;အပေါ်ပုံထဲမှာတွေ့ရတဲ့ &lt;strong&gt;Question Mark (?)&lt;/strong&gt; Button လေးကိုနှိပ်လိုက်လျှင်တော့ Keyboard Layout နဲ့ အသုံးပြုပုံ တွေကိုတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx11.png&#34; alt=&#34;Layout&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx11.png&#34; alt=&#34;Layout&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;နောက်ဆုံးအနေနဲ့လုပ်ပေးဖို့လိုတာကတော့ Keyboard ကို အလွယ်တကူ ပြောင်းလို့ရအောင် Shortcut Key ထည့်ပေးရတာပါ။ &lt;strong&gt;System Preferences&lt;/strong&gt; ရဲ့ &lt;strong&gt;Keyboard&lt;/strong&gt; ထဲမှာပါပဲ။ ပုံမှာပြထားတဲ့အတိုင်း &lt;strong&gt;Shortcuts&lt;/strong&gt; Tab ကိုသွားပြီး &lt;strong&gt;Input Sources&lt;/strong&gt; မှာ ကိုယ်နှစ်သက်ရာ Shortcut Key ကိုသတ်မှတ်ပေးလိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx12.png&#34; alt=&#34;Shortcut&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx12.png&#34; alt=&#34;Shortcut&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Unicode ကို ဇော်ဂျီလက်ကွက်နှင့် အနီးစပ်ဆုံးရိုက်နိုင်သလို သဝေထိုးနောက်မှရိုက်ရတဲ့ပြဿနာလည်းရှင်းသွားပါလိမ့်မယ်။&lt;/p&gt;
 

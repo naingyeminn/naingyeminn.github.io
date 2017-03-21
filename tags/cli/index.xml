@@ -25,13 +25,13 @@ dlist=(`curl -s -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko
 
 for i in ${dlist[@]};
 do
-    if [ -f &amp;quot;${i##*$1/}&amp;quot; ]; then
-        echo &amp;quot;${i##*$1/} : Resuming Download...&amp;quot;
-        curl -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0&#39; -L -o &amp;quot;${i##*$1/}&amp;quot; -C - &amp;quot;$i&amp;quot;
-    else
-        echo &amp;quot;Downloading ${i##*$1/}&amp;quot;
-        curl -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0&#39; -o &amp;quot;${i##*$1/}&amp;quot; &amp;quot;$i&amp;quot;
-    fi
+	if [ -f &amp;quot;${i##*$1/}&amp;quot; ]; then
+		echo &amp;quot;${i##*$1/} : Resuming Download...&amp;quot;
+		curl -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0&#39; -L -o &amp;quot;${i##*$1/}&amp;quot; -C - &amp;quot;$i&amp;quot;
+	else
+		echo &amp;quot;Downloading ${i##*$1/}&amp;quot;
+		curl -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0&#39; -o &amp;quot;${i##*$1/}&amp;quot; &amp;quot;$i&amp;quot;
+	fi
 done
 &lt;/code&gt;&lt;/pre&gt;
 </description>

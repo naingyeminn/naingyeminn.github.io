@@ -39,7 +39,7 @@
 
 &lt;p&gt;Quality ချိန်ညှိနိုင်ဖို့အတွက်လည်း option တွေထည့်ပေးထားပါသေးတယ်။ အသေးစိပ်ကိုတော့ Usage မှာကြည့်နိုင်ပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/split_pdf/split_pdf01.png&#34; alt=&#34;split_pdf01&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/split_pdf/split_pdf01.png&#34; alt=&#34;split_pdf01&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ပြီးပြည့်စုံတဲ့ Script တစ်ခုမဟုတ်ပေမဲ့ အတိုင်းအတာတစ်ခုထိတော့ အသုံးဝင်နိုင်လိမ့်မယ်ထင်တဲ့အတွက် မျှဝေခြင်းဖြစ်ပါတယ်။&lt;/p&gt;
 
@@ -57,25 +57,25 @@
       <guid>http://naingyeminn.com/posts/reduce-pdf-file-size-in-mac/</guid>
       <description>&lt;p&gt;PDF တွေကို Size လျှော့ချင်တဲ့အခါ Preview ကို အသုံးပြုလို့ရတာ Mac User များသိကြလိမ့်မယ့်ထင်ပါတယ်။ လျှော့ချင်တဲ့ PDF ကို Preview နဲ့ဖွင့်၊ File &amp;gt; Export&amp;hellip; ကိုသွားပြီး Format ကို PDF၊ Quartz Filter ကို Reduce File Size ရွေးပြီး Save လုပ်လိုက်ရုံပါပဲ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/pdf_resize/pdf_resize01.jpg&#34; alt=&#34;PDF_Resize01&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/pdf_resize/pdf_resize01.jpg&#34; alt=&#34;PDF_Resize01&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ဆိုးတာက Reduce File Size ကိုသုံးလိုက်ရင် PDF ထဲမှာပါတဲ့ ပုံတွေရဲ့ Quality ဟာ တော်တော်လေးကို ကျဆင်းသွားပြီး ဝါးကုန်တာပါပဲ။ ဒါကြောင့် နည်းလမ်းလေးတွေလိုက်ရှာဖတ်ကြည့်တော့ Post တစ်ခုသွားတွေ့ပါတယ်။ စမ်းကြည့်တော့လည်း တော်တော်လေးအဆင်ပြေတာတွေ့ရပါတယ်။ နည်းလမ်းက ရိုးရိုးလေးပါ။ Reduce File Size ဆိုတဲ့ Filter က XML configuration file သက်သက်ပါ။ အဲဒီ File ကို ကူးယူပြီး အထဲက Value လေးတွေ နည်းနည်းအပြောင်းအလဲလုပ်ရုံပါပဲ။ ပြီးတော့ &lt;strong&gt;/Library&lt;/strong&gt; ထဲမှာ &lt;strong&gt;Filters&lt;/strong&gt; ဆိုတဲ့ Folder ဆောက်ပြီးထည့်ပေးလိုက်တာနဲ့ အဆင်ပြေပြေသုံးနိုင်ပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;အဲဒီနည်းလမ်းကိုပဲ လွယ်ကူအောင် &lt;a href=&#34;https://dl.dropboxusercontent.com/u/26716001/osx/pdf_reduce_v1.dmg&#34;&gt;PDF Reduce&lt;/a&gt; ဆိုတဲ့ Package လေးထုတ်ပေးထားပါတယ်။&lt;/p&gt;
+&lt;p&gt;အဲဒီနည်းလမ်းကိုပဲ လွယ်ကူအောင် &lt;a href=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/osx/pdf_reduce_v1.dmg&#34;&gt;PDF Reduce&lt;/a&gt; ဆိုတဲ့ Package လေးထုတ်ပေးထားပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/pdf_resize/pdf_resize02.jpg&#34; alt=&#34;PDF_Resize02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/pdf_resize/pdf_resize02.jpg&#34; alt=&#34;PDF_Resize02&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ပုံထဲမှာတွေ့ရတဲ့အတိုင်း &lt;strong&gt;Filters&lt;/strong&gt; ဆိုတဲ့ Folder လေးကို &lt;strong&gt;Library&lt;/strong&gt; ထဲ ဆွဲထည့်လိုက်ရုံပါပဲ။ Authentication အတွက် Password တော့တောင်းပါလိမ့်မယ်။&lt;/p&gt;
 
 &lt;p&gt;ပြီးရင်တော့ &lt;strong&gt;Preview&lt;/strong&gt; ရဲ့ &lt;strong&gt;Quartz Filter&lt;/strong&gt; ထဲမှာ &lt;strong&gt;Reduce File Size (Good), Reduce File Size (Better), Reduce File Size (Best)&lt;/strong&gt; ဆိုပြီးတိုးလာတာတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/pdf_resize/pdf_resize03.jpg&#34; alt=&#34;PDF_Resize03&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/pdf_resize/pdf_resize03.jpg&#34; alt=&#34;PDF_Resize03&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Good, Better, Best က PDF ထဲပါဝင်တဲ့ ပုံတွေရဲ့ Quality ပေါ်မူတည်ပြီးခွဲထားတာဖြစ်တဲ့အတွက် Best ကိုရွေးရင် ပုံရည်အသွေး အနည်းငယ်သာလျော့သွားမှာဖြစ်ပြီး Good ကတော့ File Size အသေးဆုံးကိုရရှိမှာဖြစ်ပါတယ်။&lt;/p&gt;
 
 &lt;p&gt;စိတ်ကြိုက်ပြင်ဆင်ကြည့်ချင်တယ်ဆိုရင်တော့ &lt;a href=&#34;http://www.macworld.com/article/1168311/software/shrink-preview-files-without-ruining-image-quality.html&#34;&gt;မူရင်း Post&lt;/a&gt; မှာ လေ့လာနိုင်ပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Download: &lt;a href=&#34;https://dl.dropboxusercontent.com/u/26716001/osx/pdf_reduce_v1.dmg&#34;&gt;PDF Reduce&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Download: &lt;a href=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/osx/pdf_reduce_v1.dmg&#34;&gt;PDF Reduce&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -97,13 +97,13 @@ dlist=(`curl -s -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko
 
 for i in ${dlist[@]};
 do
-    if [ -f &amp;quot;${i##*$1/}&amp;quot; ]; then
-        echo &amp;quot;${i##*$1/} : Resuming Download...&amp;quot;
-        curl -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0&#39; -L -o &amp;quot;${i##*$1/}&amp;quot; -C - &amp;quot;$i&amp;quot;
-    else
-        echo &amp;quot;Downloading ${i##*$1/}&amp;quot;
-        curl -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0&#39; -o &amp;quot;${i##*$1/}&amp;quot; &amp;quot;$i&amp;quot;
-    fi
+	if [ -f &amp;quot;${i##*$1/}&amp;quot; ]; then
+		echo &amp;quot;${i##*$1/} : Resuming Download...&amp;quot;
+		curl -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0&#39; -L -o &amp;quot;${i##*$1/}&amp;quot; -C - &amp;quot;$i&amp;quot;
+	else
+		echo &amp;quot;Downloading ${i##*$1/}&amp;quot;
+		curl -A &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0&#39; -o &amp;quot;${i##*$1/}&amp;quot; &amp;quot;$i&amp;quot;
+	fi
 done
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -139,20 +139,20 @@ done
 
 &lt;p&gt;KeyMagic ကိုရွေးပြီး &lt;strong&gt;-&lt;/strong&gt; button လေးကိုနှိပ်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix01.png&#34; alt=&#34;kmfix01&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix01.png&#34; alt=&#34;kmfix01&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Trash ထဲထည့်မလားမေးရင် Keep File ကိုရွေးလိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix02.png&#34; alt=&#34;kmfix02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix02.png&#34; alt=&#34;kmfix02&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ပြီးရင်တော့ &lt;strong&gt;Keyboard Preferences&lt;/strong&gt; ကို ပြန်ပိတ်ထားလိုက်ပြီး &lt;strong&gt;Terminal&lt;/strong&gt; ကိုဖွင့်လိုက်ပါ။&lt;/p&gt;
 
 &lt;p&gt;ပေးထားတဲ့ command ကို Terminal ထဲကူးထည့်ပြီး Enter နှိပ်လိုက်ပါ။&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;sh -c &amp;quot;$(curl -fsSL https://dl.dropboxusercontent.com/u/26716001/osx/kmfix)&amp;quot;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;sh -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/osx/kmfix)&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix03.png&#34; alt=&#34;kmfix03&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix03.png&#34; alt=&#34;kmfix03&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ပုံထဲကအတိုင်း &lt;code&gt;Set Language as my_BU&lt;/code&gt; လို့ပေါ်လာရင်ရပါပြီ။&lt;/p&gt;
 
@@ -162,17 +162,17 @@ done
 
 &lt;p&gt;&lt;strong&gt;KeyMagic&lt;/strong&gt; ကိုရွေးပြီး &lt;strong&gt;Add&lt;/strong&gt; ကို နှိပ်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix04.png&#34; alt=&#34;kmfix04&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix04.png&#34; alt=&#34;kmfix04&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;List ထဲ KeyMagic ကို ပြန်တွေ့ရပြီဆိုရင်တော့ ပြန်သုံးလို့ရပါပြီ။ Password ရိုက်မရတဲ့ပြဿနာရှင်းသွားပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix05.png&#34; alt=&#34;kmfix05&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix05.png&#34; alt=&#34;kmfix05&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;မပြောင်းချင်ဘူး မူလအတိုင်းပဲပြန်ထားချင်တယ်ဆိုရင်လည်း အပေါ်ကအတိုင်း KeyMagic ကို Input List ထဲကနေခဏထုတ်ပြီး ပေးထားတဲ့ Command ကို Terminal မှာ ပြန် Run လိုက်ပါ။&lt;/p&gt;
 
 &lt;p&gt;Rollback လုပ်မလားမေးရင် &lt;code&gt;y&lt;/code&gt; key ကို နှိပ်လိုက်ရုံပါပဲ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix06.png&#34; alt=&#34;kmfix06&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix06.png&#34; alt=&#34;kmfix06&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ဒါကတော့ Script ရဲ့ Source ပါ။&lt;/p&gt;
 
@@ -271,19 +271,19 @@ $ make install
 
 &lt;p&gt;ပြီးလျှင်တော့ ပုံမှာပြထားတဲ့အတိုင်း &lt;strong&gt;Text Entry Settings&amp;hellip;&lt;/strong&gt; ထဲဝင်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/mm-kb-kmfl1.png&#34; alt=&#34;Text Entry&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/mm-kb-kmfl/mm-kb-kmfl1.png&#34; alt=&#34;Text Entry&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&amp;rdquo;+&amp;rdquo;&lt;/strong&gt; button ကိုနှိပ်ပြီး Input Source list ထဲ &lt;strong&gt;&amp;ldquo;other&amp;rdquo;&lt;/strong&gt; လို့ရိုက်ပြီးရှာလိုက်ပါ။ ပေါ်လာတဲ့ Input Source တွေထဲကမှ ကြိုက်နှစ်သက်ရာကို တစ်ခုချင်းရွေးပြီး &lt;strong&gt;Add&lt;/strong&gt; လုပ်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/mm-kb-kmfl2.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/mm-kb-kmfl/mm-kb-kmfl2.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Input sources to use&lt;/strong&gt; ဆိုတဲ့ list ထဲမှာတိုးသွားပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/mm-kb-kmfl3.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/mm-kb-kmfl/mm-kb-kmfl3.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;အခုဆိုရင်ကြိုက်နှစ်သက်ရာ Keyboard ကို ရွေးချယ်ပြီးအသုံးပြုနိုင်ပါပြီ။ Panel မှာ ရှိတဲ့ Keyboard Layout Switcher နေရာမှာ သွားရွေးနိုင်သလို Shortcut Key ဖြစ်တဲ့ &lt;strong&gt;Super + Space&lt;/strong&gt; နဲ့လည်း ပြောင်းလဲရွေးချယ် အသုံးပြုနိုင်ပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/mm-kb-kmfl4.png&#34; alt=&#34;Input3&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/mm-kb-kmfl/mm-kb-kmfl4.png&#34; alt=&#34;Input3&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;လိုအပ်ချက်များရှိပါက &lt;a href=&#34;http://naingyeminn.com/posts/myanmar-unicode-keyboards-for-ubuntu/#contact&#34;&gt;ဆက်သွယ်&lt;/a&gt; အကြံပြုနိုင်ပါတယ်။&lt;/p&gt;
 
@@ -297,7 +297,7 @@ $ make install
 
 &lt;p&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/shan-unicode-layout.jpg&#34;&gt;Ours Unicode - Shan Layout&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/mm-kb-kmfl/shan-unicode-layout.jpg&#34;&gt;Ours Unicode - Shan Layout&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/suntungithub/Keymagic_Layouts&#34;&gt;keymagic_layouts&lt;/a&gt;&lt;/p&gt;
 
@@ -326,15 +326,15 @@ $ gsettings set org.freedesktop.ibus.panel show 0
 
 &lt;p&gt;ပြီးလျှင်တော့ ပုံမှာပြထားတဲ့အတိုင်း &lt;strong&gt;Text Entry Settings&amp;hellip;&lt;/strong&gt; ထဲဝင်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/ubuntu01.png&#34; alt=&#34;Text Entry&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/ubuntu01.png&#34; alt=&#34;Text Entry&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&amp;rdquo;+&amp;rdquo;&lt;/strong&gt; button ကိုနှိပ်ပြီး Input Source list ထဲ &lt;strong&gt;&amp;ldquo;my-win&amp;rdquo;&lt;/strong&gt; ကိုရှာပြီး &lt;strong&gt;Add&lt;/strong&gt; လုပ်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/ubuntu02.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/ubuntu02.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Input sources to use&lt;/strong&gt; ဆိုတဲ့ list ထဲမှာထပ်တိုးသွားပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/ubuntu03.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/ubuntu03.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;MyWin သုံးပြီး စာရိုက်ဖို့ Panel မှာ ရှိတဲ့ Keyboard Layout Switcher နေရာမှာ သွားရွေးနိုင်သလို Shortcut Key ဖြစ်တဲ့ &lt;strong&gt;Super + Space&lt;/strong&gt; နဲ့လည်း ပြောင်းလဲရွေးချယ် အသုံးပြုနိုင်ပါတယ်။&lt;/p&gt;
 
@@ -360,11 +360,11 @@ $ gsettings set org.freedesktop.ibus.panel show 0
 
 &lt;p&gt;Download ကိုတော့ Email ဖြည့်စွက်ပေးမှသာ ပြုလုပ်နိုင်ပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx01.png&#34; alt=&#34;Download&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx01.png&#34; alt=&#34;Download&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Keyman.dmg&lt;/strong&gt; နာမည်နှင့် ဖိုင်တစ်ဖိုင်ရရှိမှာဖြစ်ပါတယ်။ &lt;strong&gt;Double Click&lt;/strong&gt; နှိပ်ပြီးဖွင့်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx02.png&#34; alt=&#34;Install&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx02.png&#34; alt=&#34;Install&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ပုံထဲမှာ မြှားပြထားတဲ့အတိုင်း ဘယ်ဘက်ခြမ်းမှာရှိတဲ့ &lt;strong&gt;Keyman.app&lt;/strong&gt; ကို Drag ဆွဲပြီး ညာဘက်မှာရှိတဲ့ &lt;strong&gt;Input Methods&lt;/strong&gt; folder ထဲထည့်လိုက်ပါ။ ပြီးလျှင်တော့ &lt;strong&gt;Keyman.dmg&lt;/strong&gt; ကိုပြန်ပိတ်လိုက်လို့ရပါပြီ။&lt;/p&gt;
 
@@ -374,43 +374,43 @@ $ gsettings set org.freedesktop.ibus.panel show 0
 
 &lt;p&gt;&lt;strong&gt;System Preferences&lt;/strong&gt; ထဲမှ &lt;strong&gt;Keyboard&lt;/strong&gt; ကိုဖွင့်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx03.png&#34; alt=&#34;System Preferences&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx03.png&#34; alt=&#34;System Preferences&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Input Sources&lt;/strong&gt; Tab ကိုရွေးပြီး အပေါင်းလက္ခဏာ သင်္ကေတလေးကိုနှိပ်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx04.png&#34; alt=&#34;Input Sources&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx04.png&#34; alt=&#34;Input Sources&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Search Box ထဲ &lt;em&gt;key&lt;/em&gt; လို့ရိုက်ထည့်လိုက်တာနဲ့ &lt;strong&gt;Keyman&lt;/strong&gt; ကိုတွေ့ရပါလမ့်မယ်။ ရွေးပြီး &lt;strong&gt;Add&lt;/strong&gt; လုပ်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx05.png&#34; alt=&#34;Keyman&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx05.png&#34; alt=&#34;Keyman&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Top Panel တွင် &lt;strong&gt;US&lt;/strong&gt; အလံ logo လေးပေါ်လာပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx06.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx06.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Click နှိပ်ပြီး ပေါ်လာတဲ့ Menu ထဲက &lt;strong&gt;Keyman&lt;/strong&gt; ကိုရွေးလိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx07.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx07.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;US&lt;/strong&gt; logo နေရာမှာ &lt;strong&gt;Keyman&lt;/strong&gt; ရဲ့ logo အနေနဲ့ပြောင်းသွားပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx08.png&#34; alt=&#34;Input3&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx08.png&#34; alt=&#34;Input3&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Keyman&lt;/strong&gt; logo ကိုနောက်တစ်ကြိမ်ထပ်နှိပ်ပြီး ပေါ်လာတဲ့ Menu ထဲက &lt;strong&gt;Configuration&amp;hellip;&lt;/strong&gt; ကိုရွေးလိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx09.png&#34; alt=&#34;Input4&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx09.png&#34; alt=&#34;Input4&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ပေါ်လာတဲ့ &lt;strong&gt;Keyman Configuration&lt;/strong&gt; ရဲ့ &lt;strong&gt;Keyboard Layouts&lt;/strong&gt; Tab ကိုသွားပါ။ &lt;strong&gt;Installed Keyboard&lt;/strong&gt; ဆိုတဲ့အောက်မှာ ဘာမှရှိဦးမှာမဟုတ်ပါဘူး။ အဲဒီအကွက်ထဲ နောက်ဆုံး Download ဆွဲခဲ့တဲ့ &lt;strong&gt;MyWin2.2.kmp&lt;/strong&gt; ဖိုင်ကို Drag ဆွဲပြီးထည့်လိုက်ပါ။ ပုံမှာပြထားတဲ့အတိုင်း my-Win2.2.4 Unicode 5.1 ဆိုပြီးဝင်သွားပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx10.png&#34; alt=&#34;MyWin&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx10.png&#34; alt=&#34;MyWin&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;အပေါ်ပုံထဲမှာတွေ့ရတဲ့ &lt;strong&gt;Question Mark (?)&lt;/strong&gt; Button လေးကိုနှိပ်လိုက်လျှင်တော့ Keyboard Layout နဲ့ အသုံးပြုပုံ တွေကိုတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx11.png&#34; alt=&#34;Layout&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx11.png&#34; alt=&#34;Layout&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;နောက်ဆုံးအနေနဲ့လုပ်ပေးဖို့လိုတာကတော့ Keyboard ကို အလွယ်တကူ ပြောင်းလို့ရအောင် Shortcut Key ထည့်ပေးရတာပါ။ &lt;strong&gt;System Preferences&lt;/strong&gt; ရဲ့ &lt;strong&gt;Keyboard&lt;/strong&gt; ထဲမှာပါပဲ။ ပုံမှာပြထားတဲ့အတိုင်း &lt;strong&gt;Shortcuts&lt;/strong&gt; Tab ကိုသွားပြီး &lt;strong&gt;Input Sources&lt;/strong&gt; မှာ ကိုယ်နှစ်သက်ရာ Shortcut Key ကိုသတ်မှတ်ပေးလိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/MyWin/osx12.png&#34; alt=&#34;Shortcut&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx12.png&#34; alt=&#34;Shortcut&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Unicode ကို ဇော်ဂျီလက်ကွက်နှင့် အနီးစပ်ဆုံးရိုက်နိုင်သလို သဝေထိုးနောက်မှရိုက်ရတဲ့ပြဿနာလည်းရှင်းသွားပါလိမ့်မယ်။&lt;/p&gt;
 

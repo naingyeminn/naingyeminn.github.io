@@ -37,20 +37,20 @@
 
 &lt;p&gt;KeyMagic ကိုရွေးပြီး &lt;strong&gt;-&lt;/strong&gt; button လေးကိုနှိပ်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix01.png&#34; alt=&#34;kmfix01&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix01.png&#34; alt=&#34;kmfix01&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Trash ထဲထည့်မလားမေးရင် Keep File ကိုရွေးလိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix02.png&#34; alt=&#34;kmfix02&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix02.png&#34; alt=&#34;kmfix02&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ပြီးရင်တော့ &lt;strong&gt;Keyboard Preferences&lt;/strong&gt; ကို ပြန်ပိတ်ထားလိုက်ပြီး &lt;strong&gt;Terminal&lt;/strong&gt; ကိုဖွင့်လိုက်ပါ။&lt;/p&gt;
 
 &lt;p&gt;ပေးထားတဲ့ command ကို Terminal ထဲကူးထည့်ပြီး Enter နှိပ်လိုက်ပါ။&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;sh -c &amp;quot;$(curl -fsSL https://dl.dropboxusercontent.com/u/26716001/osx/kmfix)&amp;quot;
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;sh -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/osx/kmfix)&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix03.png&#34; alt=&#34;kmfix03&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix03.png&#34; alt=&#34;kmfix03&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ပုံထဲကအတိုင်း &lt;code&gt;Set Language as my_BU&lt;/code&gt; လို့ပေါ်လာရင်ရပါပြီ။&lt;/p&gt;
 
@@ -60,17 +60,17 @@
 
 &lt;p&gt;&lt;strong&gt;KeyMagic&lt;/strong&gt; ကိုရွေးပြီး &lt;strong&gt;Add&lt;/strong&gt; ကို နှိပ်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix04.png&#34; alt=&#34;kmfix04&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix04.png&#34; alt=&#34;kmfix04&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;List ထဲ KeyMagic ကို ပြန်တွေ့ရပြီဆိုရင်တော့ ပြန်သုံးလို့ရပါပြီ။ Password ရိုက်မရတဲ့ပြဿနာရှင်းသွားပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix05.png&#34; alt=&#34;kmfix05&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix05.png&#34; alt=&#34;kmfix05&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;မပြောင်းချင်ဘူး မူလအတိုင်းပဲပြန်ထားချင်တယ်ဆိုရင်လည်း အပေါ်ကအတိုင်း KeyMagic ကို Input List ထဲကနေခဏထုတ်ပြီး ပေးထားတဲ့ Command ကို Terminal မှာ ပြန် Run လိုက်ပါ။&lt;/p&gt;
 
 &lt;p&gt;Rollback လုပ်မလားမေးရင် &lt;code&gt;y&lt;/code&gt; key ကို နှိပ်လိုက်ရုံပါပဲ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Photos/kmfix/kmfix06.png&#34; alt=&#34;kmfix06&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix06.png&#34; alt=&#34;kmfix06&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ဒါကတော့ Script ရဲ့ Source ပါ။&lt;/p&gt;
 

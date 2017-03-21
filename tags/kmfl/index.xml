@@ -29,19 +29,19 @@ $ make install
 
 &lt;p&gt;ပြီးလျှင်တော့ ပုံမှာပြထားတဲ့အတိုင်း &lt;strong&gt;Text Entry Settings&amp;hellip;&lt;/strong&gt; ထဲဝင်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/mm-kb-kmfl1.png&#34; alt=&#34;Text Entry&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/mm-kb-kmfl/mm-kb-kmfl1.png&#34; alt=&#34;Text Entry&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&amp;rdquo;+&amp;rdquo;&lt;/strong&gt; button ကိုနှိပ်ပြီး Input Source list ထဲ &lt;strong&gt;&amp;ldquo;other&amp;rdquo;&lt;/strong&gt; လို့ရိုက်ပြီးရှာလိုက်ပါ။ ပေါ်လာတဲ့ Input Source တွေထဲကမှ ကြိုက်နှစ်သက်ရာကို တစ်ခုချင်းရွေးပြီး &lt;strong&gt;Add&lt;/strong&gt; လုပ်လိုက်ပါ။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/mm-kb-kmfl2.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/mm-kb-kmfl/mm-kb-kmfl2.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Input sources to use&lt;/strong&gt; ဆိုတဲ့ list ထဲမှာတိုးသွားပါလိမ့်မယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/mm-kb-kmfl3.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/mm-kb-kmfl/mm-kb-kmfl3.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;အခုဆိုရင်ကြိုက်နှစ်သက်ရာ Keyboard ကို ရွေးချယ်ပြီးအသုံးပြုနိုင်ပါပြီ။ Panel မှာ ရှိတဲ့ Keyboard Layout Switcher နေရာမှာ သွားရွေးနိုင်သလို Shortcut Key ဖြစ်တဲ့ &lt;strong&gt;Super + Space&lt;/strong&gt; နဲ့လည်း ပြောင်းလဲရွေးချယ် အသုံးပြုနိုင်ပါတယ်။&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/mm-kb-kmfl4.png&#34; alt=&#34;Input3&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/mm-kb-kmfl/mm-kb-kmfl4.png&#34; alt=&#34;Input3&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;လိုအပ်ချက်များရှိပါက &lt;a href=&#34;http://naingyeminn.com/posts/myanmar-unicode-keyboards-for-ubuntu/#contact&#34;&gt;ဆက်သွယ်&lt;/a&gt; အကြံပြုနိုင်ပါတယ်။&lt;/p&gt;
 
@@ -55,7 +55,7 @@ $ make install
 
 &lt;p&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://dl.dropboxusercontent.com/u/26716001/Ubuntu/mm-kb-kmfl/shan-unicode-layout.jpg&#34;&gt;Ours Unicode - Shan Layout&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/mm-kb-kmfl/shan-unicode-layout.jpg&#34;&gt;Ours Unicode - Shan Layout&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/suntungithub/Keymagic_Layouts&#34;&gt;keymagic_layouts&lt;/a&gt;&lt;/p&gt;
 
