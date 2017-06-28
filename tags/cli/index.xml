@@ -5,7 +5,123 @@
     <link>http://naingyeminn.com/tags/cli/</link>
     <language>en-us</language>
     <author>Naing Ye` Minn</author>
-    <updated>2016-10-05 00:00:00 &#43;0000 UTC</updated>
+    <updated>2017-06-28 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>Executing Commands Remotely via SSH</title>
+      <link>http://naingyeminn.com/posts/executing-commands-remotely-via-ssh/</link>
+      <pubDate>Wed, 28 Jun 2017 00:00:00 UTC</pubDate>
+      <author>Naing Ye` Minn</author>
+      <guid>http://naingyeminn.com/posts/executing-commands-remotely-via-ssh/</guid>
+      <description>&lt;p&gt;SSH ကို Remote Login အတွက် SysAdmin တိုင်းသုံးကြပါတယ်။ ဒါပေမဲ့ Remote Execution အတွက်တော့ သိပ်သုံးလေ့မရှိကြပါဘူး။ စာသင်တဲ့အခါ သင်တန်းသားတွေကိုမေးကြည့်တော့လည်း တချို့တွေက Remote Login လောက်ပဲသုံးဖူးကြတာတွေ့ရတဲ့အတွက်ဒီ Post လေးရေးဖြစ်သွားတာပါ။ Server ထဲကို SSH သုံးပြီး Login ဝင်၊ ပြီးမှ ကိုယ် run ချင်တဲ့ command run တာ၊ ပြင်ချင်တဲ့ config ပြင်တာတွေကို လုပ်ကြတာများပါတယ်။ အမှန်က သုံးချင်တဲ့ command ကို SSH ကနေတဆင့် တန်း run လို့ရပါတယ်။ ဥပမာ -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ ssh user1@server1.example.com ls -l /
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;server1.example.com ဆိုတဲ့ server ထဲကို user1 ဆိုတဲ့ user account နဲ့ Login ဝင်ပြီး &lt;code&gt;ls -l /&lt;/code&gt; ဆိုတဲ့ command ကို run တာမျိုးပါ။&lt;/p&gt;
+
+&lt;p&gt;Command သုံးလေးခုကို တန်း run ချင်ရင်တော့ &lt;code&gt;;&lt;/code&gt; လေးနဲ့ခြားပြီး တန်းစီရေးသွားလို့ရပါတယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ ssh user1@server1.example.com ls -l /; pwd; ip addr
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;user1 အနေနဲ့သုံးခွင့်ရှိတဲ့ command တွေကိုတော့ အဆင်ပြေပြေသုံးလို့ရပေမဲ့ root privilege လိုအပ်တဲ့ command မျိုးသုံးဖို့လိုလာခဲ့ရင်တော့ &lt;strong&gt;root&lt;/strong&gt; account ဒါမှမဟုတ် &lt;strong&gt;sudo&lt;/strong&gt; command ကိုသုံးရပါလိမ့်မယ်။ အဲဒီအခါကျ root account သုံးပြီး run ရင် ပြဿနာမရှိပေမဲ့ root account သုံးခွင့်ပိတ်ထားလို့ sudo နဲ့ run မှရမယ်ဆိုလျှင်တော့ &lt;code&gt;-t&lt;/code&gt; option လေးသုံးပေးဖို့လိုပါတယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ ssh -t user1@server1.example.com sudo ls -l /root
+[sudo] password for user1:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;user1 ကတော့ sudo command သုံးခွင့်ရှိတဲ့ user ဖြစ်ဖို့တော့လိုပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;အထက်မှာပြောခဲ့သမျှအားလုံးက command တစ်ကြောင်းတည်းအနေနဲ့ run တာတွေပါ။ အမြင်ရှင်းအောင် command တစ်ခုစီကို တစ်ကြောင်းချင်းတန်းစီခွဲရေးပြီး run ချင်ရင်တော့ single quote လေးသုံးပေးဖို့လိုပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ var1=&amp;quot;This is var1&amp;quot;
+$ ssh user1@server1.example.com &#39;
+ls -l /
+pwd
+ip addr
+echo &amp;quot;$var1&amp;quot;
+&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ပထမဆုံးအကြောင်းမှာ မြင်တွေ့ရတဲ့အတိုင်း &lt;code&gt;var1&lt;/code&gt; ဆိုတဲ့ variable တစ်ခုထဲကို &lt;code&gt;&amp;quot;This is var1&amp;quot;&lt;/code&gt; ဆိုတဲ့စာသားထည့်လိုက်ပါတယ်။ ပြီးမှ ssh command ရဲ့နောက်မှာ single quote နဲ့အစဖွင့်ပြီး command တစ်ကြောင်းချင်း ခွဲရေးလိုက်တာပါ။ နောက်ဆုံမှာ single quote နဲ့ပြန်ပိတ်ပြီး Enter ခေါက်လိုက်တာနဲ့ command တွေကိုတစ်ခုချင်း run ပေးသွားမှာပါ။ ဒီနေရာမှာပြောစရာရှိတာက var1 ပါ။ &lt;code&gt;echo $var1&lt;/code&gt; ဆိုပြီး &lt;code&gt;var1&lt;/code&gt; ထဲရှိတဲ့စာသားကိုရိုက်ထုတ်ထားပေမဲ့ ပေါ်လာမှာမဟုတ်ပါဘူး။ ဘာလို့လဲဆိုတော့ &lt;code&gt;var1&lt;/code&gt; ဆိုတဲ့ variable ကို client ဘက်မှာတည်ဆောက်ထားတာဖြစ်ပြီး remote server မှာကျ &lt;code&gt;var1&lt;/code&gt; မရှိတဲ့အတွက်ကြောင့်ဖြစ်ပါတယ်။ ဒီအတွက် remote server မှာ &lt;code&gt;var&lt;/code&gt; ထဲကစာသားပေါ်စေချင်လျှင်တော့ &lt;code&gt;bash -c&lt;/code&gt; command နဲ့အသုံးပြုမှရပါလိမ့်မယ်။ &lt;code&gt;-c&lt;/code&gt; option ကိုသုံးတဲ့အတွက် single quote နဲ့ရေးထားတဲ့ command list ကိုတော့ double quote နဲ့ထပ်အုပ်ပေးရပါတယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ var1=&amp;quot;This is var1&amp;quot;
+$ ssh user1@server1.example.com bash -c &amp;quot;&#39;
+ls -l /
+pwd
+ip addr
+echo &amp;quot;$var1&amp;quot;
+&#39;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Single quote သုံးတဲ့နည်းလမ်းအပြင် နောက်ထပ်နည်းလမ်းကတော့ Heredoc (Here Document) ဆိုတဲ့နည်းလမ်းပါ။ Heredoc သုံးမယ်ဆိုရင်တော့ -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ var1=&amp;quot;This is var1&amp;quot;
+$ ssh -T user1@server1.example.com &amp;lt;&amp;lt; EOF
+ls -l /
+pwd
+ip addr
+echo &amp;quot;$var1&amp;quot;
+EOF
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;အလွယ်ပြောရရင် &lt;code&gt;&amp;lt;&amp;lt; EOF&lt;/code&gt; ဆိုတဲ့သဘောက &lt;code&gt;ssh&lt;/code&gt; command ရဲ့နောက်ပိုင်းကနေ &lt;code&gt;EOF&lt;/code&gt; ဆိုတဲ့စာလုံးမရောက်ခင်အထိ ကြားထဲရေးထားသမျှကို remote server ဆီပို့ပေးပါလို့ပြောလိုက်တဲ့သဘောပါ။ ဒီနေရာမှာလည်း variable &lt;code&gt;var1&lt;/code&gt; ထဲကစာသားတွေ remote server မှာအသုံးပြုနိုင်ဖို့အတွက် EOF ကို single quote လေးထဲမှာထည့်ပေးဖို့လိုပါတယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ var1=&amp;quot;This is var1&amp;quot;
+$ ssh -T user1@server1.example.com &amp;lt;&amp;lt; &#39;EOF&#39;
+ls -l /
+pwd
+ip addr
+echo &amp;quot;$var1&amp;quot;
+EOF
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;-T&lt;/code&gt; option ကို သုံးပေးရတဲ့အကြောင်းအရင်းကတော့ -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;Pseudo-terminal will not be allocated because stdin is not a terminal.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ဆိုတဲ့ warning စာသားကို မမြင်ချင်လို့ပါ။&lt;/p&gt;
+
+&lt;p&gt;ဒီနည်းလမ်းတွေအကုန်လုံးက command လေးငါးဆယ်ကြောင်းလောက်အတွက်တော့ အဆင်ပြေပေမဲ့ ဒီထက်ပိုတဲ့ command တွေကို Loop တွေ Conditional Statement တွေအသုံးပြုပြီးရေးမယ်ဆိုရင်တော့ သုံးရတာခက်ခဲလာပါလိမ့်မယ်။ ဘာကြောင့်လည်းဆိုတော့ Text Editor တစ်ခုခုထဲမှာရေးသလိုမဟုတ်တဲ့အတွက်ပါ။ ဒီလိုအခြေအနေမှာအကောင်းဆုံးကတော့ Script တစ်ခုအနေနဲ့ရေးပြီး အဲဒီ script ကို stdin &lt;code&gt;&amp;lt;&lt;/code&gt; သုံးပြီး remote server မှာ run ခိုင်းတာကပိုအဆင်ပြေပါတယ်။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cat script.sh
+var1=&amp;quot;This is var1&amp;quot;
+ls -l /
+pwd
+ip addr
+
+if [ -z &amp;quot;$var1&amp;quot; ]; then
+	echo &amp;quot;var1 not found&amp;quot;
+else
+	echo &amp;quot;$var1&amp;quot;
+fi
+
+ls -l /root
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ ssh -T user1@server1.example.com &amp;lt; script.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;မြင်တွေ့ရတဲ့အတိုင်းပါပဲ နမူနာ script ထဲမှာ ရေးထားတဲ့ နောက်ဆုံးစာကြောင်း &lt;code&gt;ls -l /root&lt;/code&gt; ကတော့ root privilege လိုတဲ့အတွက် &lt;code&gt;Permission denied&lt;/code&gt; ဖြစ်နေပါလိမ့်မယ်။ ဒီလိုအခြေအနေမျိုးမှာ user1 အစား root အနေနဲ့ run ခိုင်းရင်တော့အဆင်ပြေပါလိမ့်မယ်။ အကယ်၍များ root account သုံးခွင့်မရှိပဲ &lt;code&gt;sudo&lt;/code&gt; ကိုသာသုံးခွင့်ပေးထားတဲ့ environment မျိုးမှာတော့ script ကို &lt;code&gt;base64&lt;/code&gt; နဲ့ encode လုပ်ပြီး remote server ဆီကိုပို့ပေးတာက အဆင်အပြေဆုံးနည်းလမ်းပါပဲ။&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;MYSCRIPT=$(base64 -w0 script.sh)
+ssh -t user1@server1.example.com &amp;quot;echo $MYSCRIPT | base64 -d | sudo bash&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(OR)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ ssh -t user1@server1.example.com &amp;quot;echo `base64 -w0 script.sh` | base64 -d | sudo bash&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;လုပ်ငန်းခွင်မှာ လိုအပ်သလိုထည့်သွင်းအသုံးချနိုင်ကြပါစေ&amp;hellip;။ 😉&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Post အရမ်းရှည်သွားမှာစိုးတဲ့အတွက် Shell environment နဲ့ SSH တို့ရဲ့ အချို့အကြောင်းအရာတွေကိုအသေးစိပ်မပြောထားပါဘူး။ Unix/Linux အခြေခံရှိပြီးသားသူများအတွက်သာရည်ရွယ်ပြီးရေးသားထားခြင်းဖြစ်ပါတယ်။&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Udacity Downloader in Bash</title>

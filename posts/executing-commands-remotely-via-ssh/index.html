@@ -1,0 +1,260 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - Executing Commands Remotely via SSH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://use.fontawesome.com/52ab3615c7.js"></script>
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/executing-commands-remotely-via-ssh/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="contact" class="overlay">
+  <div class="popup">
+    <a class="close" href="#/">&times;</a>
+    <div class="content">
+    	<ul>
+    		<li><a href="mailto:me@naingyeminn.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+
+    		<li><a href="https://github.com/naingyeminn" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    		<li><a href="https://plus.google.com/107143022418508884720" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.facebook.com/nyeminn" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.linkedin.com/in/naingyeminn" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+    	</ul> 
+    </div>
+  </div>
+</div>
+
+
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/executing-commands-remotely-via-ssh/">Executing Commands Remotely via SSH</a></h1>
+	        <div class="post-time">June 28 2017</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com//tags/linux">linux</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/terminal">terminal</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/cli">cli</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/tipstricks">tips&amp;tricks</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        <p>SSH ကို Remote Login အတွက် SysAdmin တိုင်းသုံးကြပါတယ်။ ဒါပေမဲ့ Remote Execution အတွက်တော့ သိပ်သုံးလေ့မရှိကြပါဘူး။ စာသင်တဲ့အခါ သင်တန်းသားတွေကိုမေးကြည့်တော့လည်း တချို့တွေက Remote Login လောက်ပဲသုံးဖူးကြတာတွေ့ရတဲ့အတွက်ဒီ Post လေးရေးဖြစ်သွားတာပါ။ Server ထဲကို SSH သုံးပြီး Login ဝင်၊ ပြီးမှ ကိုယ် run ချင်တဲ့ command run တာ၊ ပြင်ချင်တဲ့ config ပြင်တာတွေကို လုပ်ကြတာများပါတယ်။ အမှန်က သုံးချင်တဲ့ command ကို SSH ကနေတဆင့် တန်း run လို့ရပါတယ်။ ဥပမာ -</p>
+
+<pre><code class="language-sh">$ ssh user1@server1.example.com ls -l /
+</code></pre>
+
+<p>server1.example.com ဆိုတဲ့ server ထဲကို user1 ဆိုတဲ့ user account နဲ့ Login ဝင်ပြီး <code>ls -l /</code> ဆိုတဲ့ command ကို run တာမျိုးပါ။</p>
+
+<p>Command သုံးလေးခုကို တန်း run ချင်ရင်တော့ <code>;</code> လေးနဲ့ခြားပြီး တန်းစီရေးသွားလို့ရပါတယ်။</p>
+
+<pre><code class="language-sh">$ ssh user1@server1.example.com ls -l /; pwd; ip addr
+</code></pre>
+
+<p>user1 အနေနဲ့သုံးခွင့်ရှိတဲ့ command တွေကိုတော့ အဆင်ပြေပြေသုံးလို့ရပေမဲ့ root privilege လိုအပ်တဲ့ command မျိုးသုံးဖို့လိုလာခဲ့ရင်တော့ <strong>root</strong> account ဒါမှမဟုတ် <strong>sudo</strong> command ကိုသုံးရပါလိမ့်မယ်။ အဲဒီအခါကျ root account သုံးပြီး run ရင် ပြဿနာမရှိပေမဲ့ root account သုံးခွင့်ပိတ်ထားလို့ sudo နဲ့ run မှရမယ်ဆိုလျှင်တော့ <code>-t</code> option လေးသုံးပေးဖို့လိုပါတယ်။</p>
+
+<pre><code class="language-sh">$ ssh -t user1@server1.example.com sudo ls -l /root
+[sudo] password for user1:
+</code></pre>
+
+<p>user1 ကတော့ sudo command သုံးခွင့်ရှိတဲ့ user ဖြစ်ဖို့တော့လိုပါတယ်။</p>
+
+<p>အထက်မှာပြောခဲ့သမျှအားလုံးက command တစ်ကြောင်းတည်းအနေနဲ့ run တာတွေပါ။ အမြင်ရှင်းအောင် command တစ်ခုစီကို တစ်ကြောင်းချင်းတန်းစီခွဲရေးပြီး run ချင်ရင်တော့ single quote လေးသုံးပေးဖို့လိုပါလိမ့်မယ်။</p>
+
+<pre><code class="language-sh">$ var1=&quot;This is var1&quot;
+$ ssh user1@server1.example.com '
+ls -l /
+pwd
+ip addr
+echo &quot;$var1&quot;
+'
+</code></pre>
+
+<p>ပထမဆုံးအကြောင်းမှာ မြင်တွေ့ရတဲ့အတိုင်း <code>var1</code> ဆိုတဲ့ variable တစ်ခုထဲကို <code>&quot;This is var1&quot;</code> ဆိုတဲ့စာသားထည့်လိုက်ပါတယ်။ ပြီးမှ ssh command ရဲ့နောက်မှာ single quote နဲ့အစဖွင့်ပြီး command တစ်ကြောင်းချင်း ခွဲရေးလိုက်တာပါ။ နောက်ဆုံမှာ single quote နဲ့ပြန်ပိတ်ပြီး Enter ခေါက်လိုက်တာနဲ့ command တွေကိုတစ်ခုချင်း run ပေးသွားမှာပါ။ ဒီနေရာမှာပြောစရာရှိတာက var1 ပါ။ <code>echo $var1</code> ဆိုပြီး <code>var1</code> ထဲရှိတဲ့စာသားကိုရိုက်ထုတ်ထားပေမဲ့ ပေါ်လာမှာမဟုတ်ပါဘူး။ ဘာလို့လဲဆိုတော့ <code>var1</code> ဆိုတဲ့ variable ကို client ဘက်မှာတည်ဆောက်ထားတာဖြစ်ပြီး remote server မှာကျ <code>var1</code> မရှိတဲ့အတွက်ကြောင့်ဖြစ်ပါတယ်။ ဒီအတွက် remote server မှာ <code>var</code> ထဲကစာသားပေါ်စေချင်လျှင်တော့ <code>bash -c</code> command နဲ့အသုံးပြုမှရပါလိမ့်မယ်။ <code>-c</code> option ကိုသုံးတဲ့အတွက် single quote နဲ့ရေးထားတဲ့ command list ကိုတော့ double quote နဲ့ထပ်အုပ်ပေးရပါတယ်။</p>
+
+<pre><code class="language-sh">$ var1=&quot;This is var1&quot;
+$ ssh user1@server1.example.com bash -c &quot;'
+ls -l /
+pwd
+ip addr
+echo &quot;$var1&quot;
+'&quot;
+</code></pre>
+
+<p>Single quote သုံးတဲ့နည်းလမ်းအပြင် နောက်ထပ်နည်းလမ်းကတော့ Heredoc (Here Document) ဆိုတဲ့နည်းလမ်းပါ။ Heredoc သုံးမယ်ဆိုရင်တော့ -</p>
+
+<pre><code class="language-sh">$ var1=&quot;This is var1&quot;
+$ ssh -T user1@server1.example.com &lt;&lt; EOF
+ls -l /
+pwd
+ip addr
+echo &quot;$var1&quot;
+EOF
+</code></pre>
+
+<p>အလွယ်ပြောရရင် <code>&lt;&lt; EOF</code> ဆိုတဲ့သဘောက <code>ssh</code> command ရဲ့နောက်ပိုင်းကနေ <code>EOF</code> ဆိုတဲ့စာလုံးမရောက်ခင်အထိ ကြားထဲရေးထားသမျှကို remote server ဆီပို့ပေးပါလို့ပြောလိုက်တဲ့သဘောပါ။ ဒီနေရာမှာလည်း variable <code>var1</code> ထဲကစာသားတွေ remote server မှာအသုံးပြုနိုင်ဖို့အတွက် EOF ကို single quote လေးထဲမှာထည့်ပေးဖို့လိုပါတယ်။</p>
+
+<pre><code class="language-sh">$ var1=&quot;This is var1&quot;
+$ ssh -T user1@server1.example.com &lt;&lt; 'EOF'
+ls -l /
+pwd
+ip addr
+echo &quot;$var1&quot;
+EOF
+</code></pre>
+
+<p><code>-T</code> option ကို သုံးပေးရတဲ့အကြောင်းအရင်းကတော့ -</p>
+
+<pre><code class="language-sh">Pseudo-terminal will not be allocated because stdin is not a terminal.
+</code></pre>
+
+<p>ဆိုတဲ့ warning စာသားကို မမြင်ချင်လို့ပါ။</p>
+
+<p>ဒီနည်းလမ်းတွေအကုန်လုံးက command လေးငါးဆယ်ကြောင်းလောက်အတွက်တော့ အဆင်ပြေပေမဲ့ ဒီထက်ပိုတဲ့ command တွေကို Loop တွေ Conditional Statement တွေအသုံးပြုပြီးရေးမယ်ဆိုရင်တော့ သုံးရတာခက်ခဲလာပါလိမ့်မယ်။ ဘာကြောင့်လည်းဆိုတော့ Text Editor တစ်ခုခုထဲမှာရေးသလိုမဟုတ်တဲ့အတွက်ပါ။ ဒီလိုအခြေအနေမှာအကောင်းဆုံးကတော့ Script တစ်ခုအနေနဲ့ရေးပြီး အဲဒီ script ကို stdin <code>&lt;</code> သုံးပြီး remote server မှာ run ခိုင်းတာကပိုအဆင်ပြေပါတယ်။</p>
+
+<pre><code class="language-sh">$ cat script.sh
+var1=&quot;This is var1&quot;
+ls -l /
+pwd
+ip addr
+
+if [ -z &quot;$var1&quot; ]; then
+	echo &quot;var1 not found&quot;
+else
+	echo &quot;$var1&quot;
+fi
+
+ls -l /root
+</code></pre>
+
+<pre><code class="language-sh">$ ssh -T user1@server1.example.com &lt; script.sh
+</code></pre>
+
+<p>မြင်တွေ့ရတဲ့အတိုင်းပါပဲ နမူနာ script ထဲမှာ ရေးထားတဲ့ နောက်ဆုံးစာကြောင်း <code>ls -l /root</code> ကတော့ root privilege လိုတဲ့အတွက် <code>Permission denied</code> ဖြစ်နေပါလိမ့်မယ်။ ဒီလိုအခြေအနေမျိုးမှာ user1 အစား root အနေနဲ့ run ခိုင်းရင်တော့အဆင်ပြေပါလိမ့်မယ်။ အကယ်၍များ root account သုံးခွင့်မရှိပဲ <code>sudo</code> ကိုသာသုံးခွင့်ပေးထားတဲ့ environment မျိုးမှာတော့ script ကို <code>base64</code> နဲ့ encode လုပ်ပြီး remote server ဆီကိုပို့ပေးတာက အဆင်အပြေဆုံးနည်းလမ်းပါပဲ။</p>
+
+<pre><code class="language-sh">MYSCRIPT=$(base64 -w0 script.sh)
+ssh -t user1@server1.example.com &quot;echo $MYSCRIPT | base64 -d | sudo bash&quot;
+</code></pre>
+
+<p>(OR)</p>
+
+<pre><code class="language-sh">$ ssh -t user1@server1.example.com &quot;echo `base64 -w0 script.sh` | base64 -d | sudo bash&quot;
+</code></pre>
+
+<p>လုပ်ငန်းခွင်မှာ လိုအပ်သလိုထည့်သွင်းအသုံးချနိုင်ကြပါစေ&hellip;။ 😉</p>
+
+<blockquote>
+<p>Post အရမ်းရှည်သွားမှာစိုးတဲ့အတွက် Shell environment နဲ့ SSH တို့ရဲ့ အချို့အကြောင်းအရာတွေကိုအသေးစိပ်မပြောထားပါဘူး။ Unix/Linux အခြေခံရှိပြီးသားသူများအတွက်သာရည်ရွယ်ပြီးရေးသားထားခြင်းဖြစ်ပါတယ်။</p>
+</blockquote>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/executing-commands-remotely-via-ssh/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/split-dual-pages-of-pdf/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p class="contact">Copyright © 2014 <a class="button" href="#contact">Naing Ye` Minn</a></p>
+		        </footer>
+		    </div>
+		  </div>    
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
