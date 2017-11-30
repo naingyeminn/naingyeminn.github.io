@@ -87,7 +87,7 @@
 
 <p>အခုနောက်ပိုင်း Linux မှာက GUI သုံးပြီးအလွယ်တကူ Search လုပ်လို့ရနေတော့ <code>find</code> ဆိုတဲ့ command ကို သိပ်မသုံးဖြစ်ကြပါဘူး။ သို့ပေမယ့် ပိုမိုတိကျတဲ့ result ရရှိဖို့အတွက်ကျတော့ <code>find</code> ကအရမ်းအသုံးဝင်ပါတယ်။ Linux Admin တွေအနေနဲ့ သိထားသင့်တဲ့ command လေးဖြစ်တဲ့အတွက် အသုံးပြုပုံတချို့ကို ဖော်ပြပေးလိုက်ပါတယ်။</p>
 
-<h2 id="file-name-ဖ-င-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238">File Name ဖြင့်ရှာဖွေခြင်း</h2>
+<h2 id="file-name-ဖ-င-ရ-ဖ-ခ-င">File Name ဖြင့်ရှာဖွေခြင်း</h2>
 
 <ul>
 <li><code>/etc</code> အောက်မှာရှိတဲ့ <code>.conf</code> နဲ့ဆုံးတဲ့ ဖိုင်တွေကိုပဲရှာချင်တယ်ဆိုလျှင်တော့</li>
@@ -115,7 +115,7 @@ $ find . -iname &quot;hel*&quot;
 ./HelloThere
 </code></pre>
 
-<h2 id="folder-န-င-file-ခ-ခ-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238">Folder နှင့် File ခွဲခြားရှာဖွေခြင်း</h2>
+<h2 id="folder-န-င-file-ခ-ခ-ရ-ဖ-ခ-င">Folder နှင့် File ခွဲခြားရှာဖွေခြင်း</h2>
 
 <ul>
 <li>Folder သီးသန့်ရှာချင်တယ်ဆိုလျှင်တော့ <code>-type d</code> option ကိုအသုံးပြုရပြီး File ဆိုလျှင်တော့ <code>-type f</code> ကိုသုံးရပါတယ်။ နမူနာမှာတော့ testing folder အောက်မှာ HelloDir ဆိုတဲ့ folder ထပ်ဆောက်ပြီး ကွာခြားချက်ကို မြင်နိုင်အောင်ယှဉ်ပြပေးထားပါတယ်။</li>
@@ -130,7 +130,7 @@ $ find . -type f -iname &quot;hel*&quot;
 ./HelloThere
 </code></pre>
 
-<h2 id="အခ-န-ဖ-င-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238">အချိန်ဖြင့်ရှာဖွေခြင်း</h2>
+<h2 id="အခ-န-ဖ-င-ရ-ဖ-ခ-င">အချိန်ဖြင့်ရှာဖွေခြင်း</h2>
 
 <ul>
 <li>လွန်ခဲ့တဲ့ ၅ရက်လောက်အတောအတွင်းမှာ edit (သို့) modify လုပ်ထားတဲ့ File တွေ Folder တွေကိုရှာချင်လျှင်တော့ <code>-mtime</code> ဆိုတဲ့ option ကိုသုံးနိုင်ပါတယ်။ Default Parameter ကတော့ Day နဲ့ သတ်မှတ်ပါတယ်။ လက်ရှိနေ့မှ ၅ရက်အတွင်း ရှာဖွေမှာဖြစ်တဲ့အတွက် <code>-5</code> လို့သတ်မှတ်ပေးရပါမယ်။ <code>5</code> လို့ပဲသတ်မှတ်လိုက်မယ်ဆိုလျှင်တော့ ၅ရက်အတွင်းမဟုတ်တော့ဘဲ ၅ရက်မြောက်နေ့မှာ modify လုပ်ထားတဲ့ ဖိုင်တွေကိုပဲထုတ်ပြပေးမှာဖြစ်ပါတယ်။</li>
@@ -159,7 +159,7 @@ $ find /home -atime +15
 <p>Time မှာ Default က day ဆိုပေမယ့် s (second), m (minute), h (hour), d (day), w (week) ဆိုတဲ့ unit တွေနဲ့လည်း ထည့်သုံးနိုင်ပါတယ်။</p>
 </blockquote>
 
-<h2 id="size-ဖ-င-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238">Size ဖြင့်ရှာဖွေခြင်း</h2>
+<h2 id="size-ဖ-င-ရ-ဖ-ခ-င">Size ဖြင့်ရှာဖွေခြင်း</h2>
 
 <ul>
 <li>File နှင့် Folder တို့ရဲ့ Size အကြီးအသေးပေါ်မူတည်ပြီး ရှာဖွေ မယ်ဆိုလျှင်တော့ <code>-size</code> option ရှိပါတယ်။ 5MB ပမာဏရှိတဲ့ File တွေ Folder တွေကိုရှာချင်တယ်ဆိုလျှင် -</li>
@@ -179,7 +179,7 @@ $ find /home -atime +15
 <p>ဒီနေရာမှာတော့ <code>+</code> ကို Greater Than အနေနဲ့သတ်မှတ်အသုံးပြုပြီး <code>-</code> ကိုတော့ Less Than အနေနဲ့အသုံးပြုပါတယ်။</p>
 </blockquote>
 
-<h2 id="user-သ-group-ဖ-င-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238">User (သို့) Group ဖြင့်ရှာဖွေခြင်း</h2>
+<h2 id="user-သ-group-ဖ-င-ရ-ဖ-ခ-င">User (သို့) Group ဖြင့်ရှာဖွေခြင်း</h2>
 
 <ul>
 <li>User တစ်ယောက်ယောက်ပိုင်တဲ့ ဖိုင်တွေကိုရှာချင်တယ်ဆိုလျှင်တော့ <code>-user</code> ဆိုတဲ့ option ကိုသုံးနိုင်ပြီး Group ဆိုလျှင်တော့ <code>-group</code> ကိုသုံးနိုင်ပါတယ်။</li>
@@ -193,7 +193,7 @@ $ find / -group group1
 <p>user1 နဲ့ group1 နေရာမှာ ကိုယ်ရှာဖွေလိုတဲ့ user နဲ့ group ရဲ့ နာမည်ကို အစားထိုးအသုံးပြုရပါမယ်။</p>
 </blockquote>
 
-<h2 id="permission-ဖ-င-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238">Permission ဖြင့်ရှာဖွေခြင်း</h2>
+<h2 id="permission-ဖ-င-ရ-ဖ-ခ-င">Permission ဖြင့်ရှာဖွေခြင်း</h2>
 
 <ul>
 <li>File Permission နဲ့ရှာဖွေတဲ့နေရာမှာ Octal Numbering ဖြင့် ရှာဖွေနိုင်ပါတယ်။ Option ကတော့ <code>-perm</code> ဖြစ်ပါတယ်။ File Permission အကြောင်းကိုတော့ ဒီနေရာမှာမပြောတော့ပါဘူး။</li>
@@ -203,7 +203,7 @@ $ find / -group group1
 $ find /etc -perm 0777
 </code></pre>
 
-<h2 id="find-result-အ-process-ပ-လ-ပ-ခ-င:87b95223085ff87f2f73bea41cffa238">Find Result အား Process ပြုလုပ်ခြင်း</h2>
+<h2 id="find-result-အ-process-ပ-လ-ပ-ခ-င">Find Result အား Process ပြုလုပ်ခြင်း</h2>
 
 <ul>
 <li><p>အထက်မှာဖော်ပြခဲ့တဲ့ <code>find</code> command တွေရဲ့ result မှာပါဝင်တဲ့ File တွေ Directory တွေကို အခြား command တွေနဲ့တွဲပြီး Process ပြုလုပ်နိုင်ပါသေးတယ်။ အဲဒီအတွက် <code>-exec</code> ဆိုတဲ့ option နဲ့ တွဲဖက်အသုံးပြုရပါတယ်။</p></li>

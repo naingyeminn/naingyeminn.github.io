@@ -22,7 +22,7 @@
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo yum install wget -y
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;installation:357e74f7a1fdd46a0367d8387ebd31a9&#34;&gt;Installation&lt;/h2&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;RHEL/CentOS 5.x&lt;/strong&gt; အတွက်&lt;/li&gt;
@@ -57,7 +57,7 @@ $ sudo rpm -ivh epel-release-latest-7.noarch.rpm
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;screenshots:357e74f7a1fdd46a0367d8387ebd31a9&#34;&gt;Screenshots&lt;/h2&gt;
+&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;CentOS 7 တွင် EPEL package အား &lt;code&gt;wget&lt;/code&gt; ဖြင့် Download ပြုလုပ်ခြင်း&lt;/li&gt;

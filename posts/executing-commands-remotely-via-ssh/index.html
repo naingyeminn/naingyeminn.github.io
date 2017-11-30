@@ -174,7 +174,7 @@ ls -l /root
 <pre><code class="language-sh">$ ssh -T user1@server1.example.com &lt; script.sh
 </code></pre>
 
-<p>မြင်တွေ့ရတဲ့အတိုင်းပါပဲ နမူနာ script ထဲမှာ ရေးထားတဲ့ နောက်ဆုံးစာကြောင်း <code>ls -l /root</code> ကတော့ root privilege လိုတဲ့အတွက် <code>Permission denied</code> ဖြစ်နေပါလိမ့်မယ်။ ဒီလိုအခြေအနေမျိုးမှာ user1 အစား root အနေနဲ့ run ခိုင်းရင်တော့အဆင်ပြေပါလိမ့်မယ်။ အကယ်၍များ root account သုံးခွင့်မရှိပဲ <code>sudo</code> ကိုသာသုံးခွင့်ပေးထားတဲ့ environment မျိုးမှာတော့ script ကို <code>base64</code> နဲ့ encode လုပ်ပြီး remote server ဆီကိုပို့ပေးတာက အဆင်အပြေဆုံးနည်းလမ်းပါပဲ။</p>
+<p>မြင်တွေ့ရတဲ့အတိုင်းပါပဲ နမူနာ script ထဲမှာ ရေးထားတဲ့ နောက်ဆုံးစာကြောင်း <code>ls -l /root</code> ကတော့ root privilege လိုတဲ့အတွက် <code>Permission denied</code> ဖြစ်နေပါလိမ့်မယ်။ ဒီလိုအခြေအနေမျိုးမှာ user1 အစား root အနေနဲ့ run ခိုင်းရင်တော့အဆင်ပြေပါလိမ့်မယ်။ အကယ်၍များ root account သုံးခွင့်မရှိပဲ <code>sudo</code> ကိုသာပေးသုံးခွင့်ပေးထားတဲ့ environment မျိုးမှာတော့ script ကို <code>base64</code> နဲ့ encode လုပ်ပြီး remote server ဆီကိုပို့ပေးတာက အဆင်အပြေဆုံးနည်းလမ်းပါပဲ။</p>
 
 <pre><code class="language-sh">MYSCRIPT=$(base64 -w0 script.sh)
 ssh -t user1@server1.example.com &quot;echo $MYSCRIPT | base64 -d | sudo bash&quot;

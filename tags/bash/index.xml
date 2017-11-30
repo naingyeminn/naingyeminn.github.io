@@ -43,7 +43,12 @@
 
 &lt;p&gt;ပြီးပြည့်စုံတဲ့ Script တစ်ခုမဟုတ်ပေမဲ့ အတိုင်းအတာတစ်ခုထိတော့ အသုံးဝင်နိုင်လိမ့်မယ်ထင်တဲ့အတွက် မျှဝေခြင်းဖြစ်ပါတယ်။&lt;/p&gt;
 
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/TO0cLZ7AJss&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class=&#34;responsive-embed flex-video&#34;&gt;
+        &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;360&#34;
+                src=&#34;http://www.youtube.com/embed/TO0cLZ7AJss&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;
+        &lt;/iframe&gt;
+&lt;/div&gt;
+
 
 &lt;p&gt;&lt;strong&gt;Source Code: &lt;a href=&#34;https://github.com/naingyeminn/splitpgs&#34;&gt;splitpgs&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </description>
@@ -81,10 +86,10 @@ done
     
     <item>
       <title>NTFSX - Script to enable NTFS Write on Mac OS X</title>
-      <link>http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-Mac-OSX/</link>
+      <link>http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-mac-osx/</link>
       <pubDate>Fri, 06 Mar 2015 00:00:00 UTC</pubDate>
       <author>Naing Ye` Minn</author>
-      <guid>http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-Mac-OSX/</guid>
+      <guid>http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-mac-osx/</guid>
       <description>&lt;p&gt;Mac OS X User တွေအနေနဲ့ External HDD တွေသုံးတဲ့နေရာမှာ ကြုံရလေ့ရှိတဲ့ အခက်အခဲလေးတစ်ခုပါ။ အဓိကအကြောင်းအရင်းကတော့ Windows ရဲ့ NTFS file system ကို Mac OS X က အပြည့်အဝ အထောက်အပံ့မပေးထားလို့ပါပဲ။ အဲဒါကြောင့် NTFS format သုံးထားတဲ့ External HDD တွေ USB Flash Drive တွေဆိုရင် Read Only သက်သက်သာ အသုံးပြုနိုင်ပါလိမ့်မယ်။ Data တွေကူးထည့်လို့မရနိုင်ပါဘူး။ ဒါပေမယ့် လုံးဝ Write Access မရတာတော့မဟုတ်ပါဘူး။ Mac OS X မှာက Native NTFS support ရှိပါတယ်။ ပြဿနာရှိတာက Apple အနေနဲ့ Microsoft ရဲ့ NTFS ကို Mac OS X မှာ အပြည့်အဝ အသုံးပြုနိုင်အောင် လုပ်ပေးမယ်ဆိုရင် Microsoft ဆီကနေ နည်းပညာ အသုံးပြုခွင့် ဝယ်ယူရပါလိမ့်မယ်။ Microsoft အနေနဲ့လည်း ထိုနည်းလည်ကောင်းပါပဲ။ Apple ရဲ့ HFS ကို Windows မှာအသုံးပြုလို့ရစေနိုင်ဖို့ အသုံးပြုခွင့် လိုအပ်ပါတယ်။ ဒါအမြင်သာဆုံးဖြစ်အောင်သာ နှိုင်းယှဉ်ပြတာပါ။ ဒီလို Patent ပြဿနာက တကယ့်တကယ် ဒီထက် ပိုရှုပ်ထွေးပါတယ်။ အဲဒီလို ညှိနှိုင်းရခက်ခဲတဲ့ ပြဿနာတွေကြောင့် Microsoft ကလည်း HFS ကို Support မလုပ်သလို Apple ကလည်း NTFS ကို လစ်လျှူရှုထားတာပါ။&lt;/p&gt;
 
 &lt;p&gt;တကယ့်တကယ်တော့ Apple အနေနဲ့ Mac OS X မှာ NTFS ကို အသုံးပြုလို့ရနိုင်လောက်အောင် လုပ်ပေးထားပါတယ်။ တရားဝင်သာ Feature တစ်ခုအနေနဲ့ ထည့်သွင်းဖော်ပြမထားတာပါ။ နောက်ပြီး Official Native Support မဟုတ်တဲ့အတွက် Stable ဖြစ်တဲ့အထိ ဂရုတစိုက်လုပ်ပေးမထားပါဘူး။ Mac User တွေအနေနဲ့ NTFS ကို အတတ်နိုင်ဆုံးရှောင်သုံးတာကတော့ အကောင်းဆုံးပါ။ Drive တွေကို ExFAT နဲ့ format ပြန်ချပြီးသုံးတာမျိုးပါ။ NTFS ပဲသုံးချင်တယ်ဆိုရင်တော့ Free ရတဲ့ Third Party Driver &lt;a href=&#34;http://www.macbreaker.com/2014/06/how-to-enable-writing-to-ntfs-hard.html&#34;&gt;NTFS-3G&lt;/a&gt; ရှိပါတယ်။ ဒါလည်းအဆင်ပြေလွန်းလှတယ်ရယ်တော့မဟုတ်ပါဘူး။ Senior ကျတဲ့ Mac User တွေကတော့ Third Party Driver တင်သုံးမယ်ဆိုရင် Free ထက် Commercial Driver တွေဖြစ်တဲ့ &lt;a href=&#34;http://www.paragon-software.com/home/ntfs-mac/download.html&#34;&gt;Paragon&lt;/a&gt; တို့ &lt;a href=&#34;http://www.tuxera.com/&#34;&gt;Tuxera&lt;/a&gt; တို့ဝယ်သုံးတာကိုပဲ Recommend လုပ်ကြပါတယ်။ ပိုပြီး Stable ဖြစ်သလို Data အကူးအပြောင်းလည်း ပိုမြန်တယ်လို့ဆိုကြပါတယ်။ တချို့ကတော့ မဝယ်ပဲ Crack လုပ်ပြီး သုံးကြပါတယ်။&lt;/p&gt;
@@ -179,7 +184,7 @@ $ sudo ntfsx removeall
 
 &lt;p&gt;Source On Github : &lt;a href=&#34;https://github.com/naingyeminn/forex&#34;&gt;https://github.com/naingyeminn/forex&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;update:9dd3a9deaa8b32313eb8058183255051&#34;&gt;UPDATE&lt;/h3&gt;
+&lt;h3 id=&#34;update&#34;&gt;UPDATE&lt;/h3&gt;
 
 &lt;p&gt;Ubuntu တွင်သာမက တခြား Linux Distro များနှင့် OSX မှာပါ အဆင်ပြေပြေသုံးနိုင်စေရန် &lt;code&gt;Wget&lt;/code&gt; option ထပ်မံထည့်သွင်း၍ ပြင်ဆင်ထားပါသည်။ Curl သို့မဟုတ် Wget ပါရှိသော OS တိုင်းတွင် အသုံးပြုနိုင်ပါသည်။ /usr/local/bin ထဲသို့ file အား ကိုယ်တိုင် ကူးယူထည့်သွင်းရန် မလိုတော့ပါ။ &lt;code&gt;Makefile&lt;/code&gt; အသုံးပြု၍လည်း လွယ်ကူစွာ Install ပြုလုပ်နိုင်ပါပြီ။&lt;/p&gt;
 </description>

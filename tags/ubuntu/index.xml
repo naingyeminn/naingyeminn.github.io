@@ -116,7 +116,7 @@ $ gsettings set org.freedesktop.ibus.panel show 0
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;command-editing-shortcuts:bdf103b9bf5b1811d2b7a08df7d6182b&#34;&gt;Command Editing Shortcuts&lt;/h2&gt;
+&lt;h2 id=&#34;command-editing-shortcuts&#34;&gt;Command Editing Shortcuts&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + a&lt;/strong&gt; : Command အစသို့&lt;/p&gt;&lt;/li&gt;
@@ -160,7 +160,7 @@ $ gsettings set org.freedesktop.ibus.panel show 0
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;command-recall-control-shortcuts:bdf103b9bf5b1811d2b7a08df7d6182b&#34;&gt;Command Recall &amp;amp; Control Shortcuts&lt;/h2&gt;
+&lt;h2 id=&#34;command-recall-control-shortcuts&#34;&gt;Command Recall &amp;amp; Control Shortcuts&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + p&lt;/strong&gt; : Command များ နောက်ပြန်ရှာ&lt;/p&gt;&lt;/li&gt;
@@ -198,7 +198,7 @@ $ gsettings set org.freedesktop.ibus.panel show 0
 
 &lt;p&gt;Source On Github : &lt;a href=&#34;https://github.com/naingyeminn/forex&#34;&gt;https://github.com/naingyeminn/forex&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;update:9dd3a9deaa8b32313eb8058183255051&#34;&gt;UPDATE&lt;/h3&gt;
+&lt;h3 id=&#34;update&#34;&gt;UPDATE&lt;/h3&gt;
 
 &lt;p&gt;Ubuntu တွင်သာမက တခြား Linux Distro များနှင့် OSX မှာပါ အဆင်ပြေပြေသုံးနိုင်စေရန် &lt;code&gt;Wget&lt;/code&gt; option ထပ်မံထည့်သွင်း၍ ပြင်ဆင်ထားပါသည်။ Curl သို့မဟုတ် Wget ပါရှိသော OS တိုင်းတွင် အသုံးပြုနိုင်ပါသည်။ /usr/local/bin ထဲသို့ file အား ကိုယ်တိုင် ကူးယူထည့်သွင်းရန် မလိုတော့ပါ။ &lt;code&gt;Makefile&lt;/code&gt; အသုံးပြု၍လည်း လွယ်ကူစွာ Install ပြုလုပ်နိုင်ပါပြီ။&lt;/p&gt;
 </description>
@@ -283,7 +283,7 @@ $ gsettings set org.freedesktop.ibus.panel show 0
 
 &lt;p&gt;Linux User တွေအနေနဲ့ သိထားသင့်တဲ့ Terminal အသုံးပြုပုံလေးတွေပါ။ အပြည့်အစုံကြီး မဟုတ်ပေမယ့် အသုံးဝင်တဲ့ နည်းလမ်းလေးတချို့ကိုပဲ အသုံးများတဲ့ Ubuntu ပေါ်အခြေခံပြီး အဓိကထားမျှဝေလိုက်ပါတယ်။&lt;/p&gt;
 
-&lt;h1 id=&#34;shortcuts:81c1d37ccccb3419e3b52c2eaffcaa16&#34;&gt;Shortcuts&lt;/h1&gt;
+&lt;h1 id=&#34;shortcuts&#34;&gt;Shortcuts&lt;/h1&gt;
 
 &lt;hr /&gt;
 
@@ -324,9 +324,9 @@ $ gsettings set org.freedesktop.ibus.panel show 0
 
 &lt;p&gt;&lt;/table&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;pre:81c1d37ccccb3419e3b52c2eaffcaa16&#34;&gt;&lt;/pre&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;pre&#34;&gt;&lt;/pre&gt;&lt;/h2&gt;
 
-&lt;h3 id=&#34;command-completion:81c1d37ccccb3419e3b52c2eaffcaa16&#34;&gt;Command Completion&lt;/h3&gt;
+&lt;h3 id=&#34;command-completion&#34;&gt;Command Completion&lt;/h3&gt;
 
 &lt;p&gt;Ubuntu ရဲ့ Terminal မှာ ကိုယ်ရိုက်လိုက်တဲ့ command ရဲ့ စာလုံး အပြည့်အစုံကို &lt;code&gt;Tab&lt;/code&gt; key ၂ချက်နှိပ်ပြီး ဖြည့်နိုင်ပါတယ်။ ဥပမာအနေနဲ့ &lt;code&gt;apt&lt;/code&gt; လို့ရိုက်ပြီး &lt;code&gt;Tab&lt;/code&gt;key ၂ချက်နှိပ်လိုက်မယ်ဆိုရင် ပုံမှာပြထားတဲ့အတိုင်း apt နဲ့စတဲ့ command တွေပြပေးပါလိမ့်မယ်။ &lt;code&gt;i&lt;/code&gt; တစ်လုံးထပ်တိုးပြီး (&lt;code&gt;apti&lt;/code&gt;) &lt;code&gt;Tab&lt;/code&gt; ထပ်နှိပ်ပါက &lt;code&gt;aptitude&lt;/code&gt; ဆိုပြီး ဖြည့်ပေးသွားမှာပါ။ Command အစစာလုံး တစ်လုံး နှစ်လုံးရိုက်ပြီး &lt;code&gt;Tab&lt;/code&gt; နှိပ်တာနဲ့ အဲဒီ စာလုံးနဲ့စတဲ့ Command ကိုပြပေးသွားတာဖြစ်ပါတယ်။&lt;/p&gt;
 
@@ -350,7 +350,7 @@ $ cd Dow[tab][tab]
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;history:81c1d37ccccb3419e3b52c2eaffcaa16&#34;&gt;History&lt;/h3&gt;
+&lt;h3 id=&#34;history&#34;&gt;History&lt;/h3&gt;
 
 &lt;p&gt;Terminal ထဲ ရိုက်ထားတဲ့ command တွေကိုတော့ keyboard က &lt;code&gt;Up Arrow&lt;/code&gt; key နှိပ်ပြီး ပြန်ခေါ်သုံးနိုင်ပါတယ်။ အကယ်၍များ ရိုက်ဖူးတဲ့ command တစ်ခုကို အပြည့်အစုံမမှတ်မိခဲ့ရင် &lt;code&gt;history&lt;/code&gt; command သုံးပြီး ပြန်ရှာနိုင်ပါတယ်။ ပုံမှာပါတဲ့အတိုင်း &lt;code&gt;history | grep&lt;/code&gt; နဲ့တွဲပြီး ကိုယ်ရှာချင်တဲ့ command မှာပါတဲ့ စာသာတချို့ ရိုက်ထည့်ပေးရမှာပါ။&lt;/p&gt;
 
@@ -361,7 +361,7 @@ $ cd Dow[tab][tab]
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;bang:81c1d37ccccb3419e3b52c2eaffcaa16&#34;&gt;! - Bang&lt;/h3&gt;
+&lt;h3 id=&#34;bang&#34;&gt;! - Bang&lt;/h3&gt;
 
 &lt;p&gt;နောက်ဆုံးရိုက်ခဲ့တဲ့ command ကိုပြန်ခေါ်ချင်တယ်ဆိုရင်တော့ &lt;strong&gt;!!&lt;/strong&gt; ကိုသုံးနိုင်ပါတယ်။&lt;/p&gt;
 
@@ -471,7 +471,7 @@ $ !!:s/date/grade
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;calculator:81c1d37ccccb3419e3b52c2eaffcaa16&#34;&gt;Calculator&lt;/h3&gt;
+&lt;h3 id=&#34;calculator&#34;&gt;Calculator&lt;/h3&gt;
 
 &lt;p&gt;Terminal မှာ ပေါင်း၊ နှုတ်၊ မြောက်၊ စား လုပ်ချင်တယ်ဆိုရင်တော့&lt;/p&gt;
 
@@ -495,7 +495,7 @@ $ 50
       <guid>http://naingyeminn.com/posts/tips-for-ubuntu-mm/</guid>
       <description>
 
-&lt;h3 id=&#34;toc_0:28ee59b74199f8d86023969bba04a785&#34;&gt;&lt;strong&gt;$&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_0&#34;&gt;&lt;strong&gt;$&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;Terminal မှ User ၏ Command Prompt ကိုဆိုလိုခြင်းဖြစ်သည်။ Online မှ Blog များ Tutorial များတွင် Command များကိုဖော်ပြရာ၌ ထည့်သွင်းဖော်ပြလေ့ရှိသည်။ သို့သော် ထို Command အား ကူးယူ အသုံးပြုရာတွင် ထည့်သွင်းအသုံးပြုစရာမလိုပါ။ &lt;code&gt;$ sudo apt-get update&lt;/code&gt; ဟုဖော်ပြထားပါက &lt;code&gt;sudo apt-get update&lt;/code&gt; ဆိုသော command  သာကူယူအသုံးပြုရန်လိုအပ်သည်။&lt;/p&gt;
 
@@ -510,7 +510,7 @@ Hello
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;toc_1:28ee59b74199f8d86023969bba04a785&#34;&gt;&lt;strong&gt;#&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_1&#34;&gt;&lt;strong&gt;#&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;$&lt;/code&gt; ကဲသို့ပင် Command များ၏ရှေ့တွင်　ဖော်ပြလေ့ရှိသည်။ &lt;code&gt;root user&lt;/code&gt; &lt;code&gt;super user&lt;/code&gt; အနေဖြင့် အသုံးပြုထားသော Terminal ၏ Command Prompt ကိုဆိုလိုခြင်းဖြစ်သည်။ သာမန် User Prompt &lt;code&gt;$&lt;/code&gt; မှ Root User Prompt &lt;code&gt;#&lt;/code&gt; သို့ ပြောင်းလိုပါက - &lt;code&gt;sudo -s&lt;/code&gt; command ဖြင့်ပြောင်းနိုင်သည်။&lt;/p&gt;
 
@@ -521,7 +521,7 @@ Hello
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;toc_2:28ee59b74199f8d86023969bba04a785&#34;&gt;&lt;strong&gt;~/&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_2&#34;&gt;&lt;strong&gt;~/&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;သင်၏ &lt;code&gt;Home Directory&lt;/code&gt; ကိုဆိုလိုခြင်းဖြစ်သည်။ တနည်းအားဖြင့် &lt;code&gt;/home/yourname&lt;/code&gt; နှင့်တူညီသည်။&lt;/p&gt;
 
@@ -531,7 +531,7 @@ $ cd /home/yourname
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;toc_3:28ee59b74199f8d86023969bba04a785&#34;&gt;&lt;strong&gt;./&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_3&#34;&gt;&lt;strong&gt;./&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;Terminal တွင် သင်ရောက်ရှိနေသော လက်ရှိ Directory ကို ဆိုလိုသည်။ Executable file များကို terminal မှတဆင့် run သောအခါတွင်အသုံးပြုလေ့ရှိသည်။ ဥပမာတွင်ပြထားသည်မှာ လက်ရှိ ရောက်ရှိနေသော Directory ထဲမှ script ဆိုသော Executable File ကို run လိုက်ခြင်းဖြစ်သည်။&lt;/p&gt;
 
@@ -540,19 +540,19 @@ $ cd /home/yourname
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;toc_4:28ee59b74199f8d86023969bba04a785&#34;&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_4&#34;&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;File သို့မဟုတ် Folder တို့၏ အမည်ရှေ့တွင် &lt;code&gt;.&lt;/code&gt; ထည့်ပါက ထို File/Folder သည် File Manager ထဲတွင်သာမန်အားဖြင့် မြင်ရမည်မဟုတ်ပါ။ ထို File/Folder များအား File Manager တွင် မြင်နိုင်စေရန် &lt;code&gt;Control + H&lt;/code&gt; Key အား နှိပ်၍ ဖော်နိုင်သည်။ အများအားဖြင့် System Configuration file များ folder များတွင်အသုံးပြုလေ့ရှိသည်။ User ၏ Home Directory &lt;code&gt;~/&lt;/code&gt; ထဲတွင် &lt;code&gt;.local&lt;/code&gt;, &lt;code&gt;.config&lt;/code&gt; စသဖြင့်တွေ့နိုင်သည်။&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;sudo:28ee59b74199f8d86023969bba04a785&#34;&gt;&lt;strong&gt;sudo&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;sudo&#34;&gt;&lt;strong&gt;sudo&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;root&lt;/code&gt; တနည်းအားဖြင့် &lt;code&gt;super&lt;/code&gt; user အနေဖြင့် command များ executable file များအား run သောအခါတွင် သုံးသည်။ Windows တွင် Administrator အနေဖြင့် အသုံးပြုသည်နှင့် တူညီသည်။&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;command-option-and-parameter:28ee59b74199f8d86023969bba04a785&#34;&gt;Command, Option and Parameter&lt;/h3&gt;
+&lt;h3 id=&#34;command-option-and-parameter&#34;&gt;Command, Option and Parameter&lt;/h3&gt;
 
 &lt;p&gt;Terminal တွင်း အသုံးပြုသော command များသည် အများအားဖြင့် လက်ရှိရောက်ရှိနေသော Directory နှင့် အတွင်းရှိ File/Folder များတွင်သာ သက်ရောက်သည်။ အထူးထပ်မံဖြည့်စွက်လိုက်သော Options များ Parameter များပေါ်မူတည်၍သာ အပြောင်းအလဲများရှိသည်။ ဥပမာပြရလျှင် &lt;code&gt;ls&lt;/code&gt; command သည် လက်ရှိရောက်ရှိနေသော Directory ထဲမှ File/Folder စာရင်းကို ပြပေးသည်။ &lt;code&gt;ls /usr/share&lt;/code&gt; ဟူ၍ parameter အနေဖြင့် Directory Path &lt;code&gt;/usr/share&lt;/code&gt; ကိုထည့်ပါက ထို Directory ထဲမှ File/Folder များကိုပြပေးမည်ဖြစ်သည်။&lt;/p&gt;
 
@@ -725,7 +725,12 @@ make install
 &lt;p&gt;&amp;ldquo;&lt;code&gt;sudo apt-get install xclip&lt;/code&gt;&amp;rdquo; ဆိုတဲ့ command သုံးပြီး install လုပ်ပေးနိုင်ပါတယ်။&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/qHF2HvnsDu4&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class=&#34;responsive-embed flex-video&#34;&gt;
+        &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;360&#34;
+                src=&#34;http://www.youtube.com/embed/qHF2HvnsDu4&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;
+        &lt;/iframe&gt;
+&lt;/div&gt;
+
 
 &lt;blockquote&gt;
 &lt;p&gt;မှတ်ချက် ။ ။ အခုနည်းလမ်းတွေက Ubuntu 12.04 LTS မှာစမ်းထားတဲ့ နည်းလမ်းတွေပါ။ လက်ရှိသုံးနေတဲ့ 12.04 ကို Based လုပ်ထားတဲ့ ElementaryOS Luna မှာလဲအဆင်ပြေပါတယ်။ အသစ်ထွက်နေပြီဖြစ်တဲ့ Ubuntu 14.04 LTS မှာတော့ မစမ်းကြည့်ရသေးပါဘူး။&lt;/p&gt;

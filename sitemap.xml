@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>http://naingyeminn.com/</loc>
-    <lastmod>2017-06-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>http://naingyeminn.com/posts/executing-commands-remotely-via-ssh/</loc>
@@ -98,7 +93,7 @@
   </url>
   
   <url>
-    <loc>http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-Mac-OSX/</loc>
+    <loc>http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-mac-osx/</loc>
     <lastmod>2015-03-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -160,6 +155,323 @@
   <url>
     <loc>http://naingyeminn.com/posts/myanmar-keyboard-for-ubuntu/</loc>
     <lastmod>2013-07-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/14.04/</loc>
+    <lastmod>2014-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/administration/</loc>
+    <lastmod>2015-10-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/apple/</loc>
+    <lastmod>2016-12-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/bash/</loc>
+    <lastmod>2017-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/ccze/</loc>
+    <lastmod>2015-10-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/centos/</loc>
+    <lastmod>2015-10-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/cisco/</loc>
+    <lastmod>2015-10-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/cli/</loc>
+    <lastmod>2017-06-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/elementaryos/</loc>
+    <lastmod>2014-04-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/epel/</loc>
+    <lastmod>2015-10-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/font/</loc>
+    <lastmod>2014-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/foss/</loc>
+    <lastmod>2015-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/i-bus/</loc>
+    <lastmod>2013-07-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/ibus/</loc>
+    <lastmod>2014-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/input/</loc>
+    <lastmod>2016-08-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/keyboard/</loc>
+    <lastmod>2016-08-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/keymagic/</loc>
+    <lastmod>2016-08-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/keyman/</loc>
+    <lastmod>2016-08-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/kmfl/</loc>
+    <lastmod>2016-08-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/linux/</loc>
+    <lastmod>2017-06-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/log/</loc>
+    <lastmod>2015-10-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/mac/</loc>
+    <lastmod>2014-12-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/macos/</loc>
+    <lastmod>2016-12-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/myanmar/</loc>
+    <lastmod>2014-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/myanmar3/</loc>
+    <lastmod>2014-12-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/mywin/</loc>
+    <lastmod>2016-07-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/</loc>
+    <lastmod>2017-06-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/networking/</loc>
+    <lastmod>2015-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/nx-os/</loc>
+    <lastmod>2015-10-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/openxenmanager/</loc>
+    <lastmod>2014-05-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/osx/</loc>
+    <lastmod>2016-08-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/pelican/</loc>
+    <lastmod>2014-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/posts/</loc>
+    <lastmod>2017-06-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/python/</loc>
+    <lastmod>2014-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/regex/</loc>
+    <lastmod>2014-12-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/review/</loc>
+    <lastmod>2015-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/rhel/</loc>
+    <lastmod>2015-10-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/script/</loc>
+    <lastmod>2017-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/server/</loc>
+    <lastmod>2015-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/shell/</loc>
+    <lastmod>2017-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/</loc>
+    <lastmod>2014-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/terminal/</loc>
+    <lastmod>2017-06-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/tipstricks/</loc>
+    <lastmod>2017-06-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/titanium/</loc>
+    <lastmod>2015-10-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/ubuntu/</loc>
+    <lastmod>2016-08-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/unicode/</loc>
+    <lastmod>2016-08-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/virus/</loc>
+    <lastmod>2014-06-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/vmware-fusion/</loc>
+    <lastmod>2015-10-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/windows/</loc>
+    <lastmod>2014-06-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/xenserver/</loc>
+    <lastmod>2014-05-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/yosemite/</loc>
+    <lastmod>2014-12-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/zawgyi/</loc>
+    <lastmod>2014-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

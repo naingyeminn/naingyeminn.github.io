@@ -104,7 +104,7 @@ ls -l /root
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ ssh -T user1@server1.example.com &amp;lt; script.sh
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;မြင်တွေ့ရတဲ့အတိုင်းပါပဲ နမူနာ script ထဲမှာ ရေးထားတဲ့ နောက်ဆုံးစာကြောင်း &lt;code&gt;ls -l /root&lt;/code&gt; ကတော့ root privilege လိုတဲ့အတွက် &lt;code&gt;Permission denied&lt;/code&gt; ဖြစ်နေပါလိမ့်မယ်။ ဒီလိုအခြေအနေမျိုးမှာ user1 အစား root အနေနဲ့ run ခိုင်းရင်တော့အဆင်ပြေပါလိမ့်မယ်။ အကယ်၍များ root account သုံးခွင့်မရှိပဲ &lt;code&gt;sudo&lt;/code&gt; ကိုသာသုံးခွင့်ပေးထားတဲ့ environment မျိုးမှာတော့ script ကို &lt;code&gt;base64&lt;/code&gt; နဲ့ encode လုပ်ပြီး remote server ဆီကိုပို့ပေးတာက အဆင်အပြေဆုံးနည်းလမ်းပါပဲ။&lt;/p&gt;
+&lt;p&gt;မြင်တွေ့ရတဲ့အတိုင်းပါပဲ နမူနာ script ထဲမှာ ရေးထားတဲ့ နောက်ဆုံးစာကြောင်း &lt;code&gt;ls -l /root&lt;/code&gt; ကတော့ root privilege လိုတဲ့အတွက် &lt;code&gt;Permission denied&lt;/code&gt; ဖြစ်နေပါလိမ့်မယ်။ ဒီလိုအခြေအနေမျိုးမှာ user1 အစား root အနေနဲ့ run ခိုင်းရင်တော့အဆင်ပြေပါလိမ့်မယ်။ အကယ်၍များ root account သုံးခွင့်မရှိပဲ &lt;code&gt;sudo&lt;/code&gt; ကိုသာပေးသုံးခွင့်ပေးထားတဲ့ environment မျိုးမှာတော့ script ကို &lt;code&gt;base64&lt;/code&gt; နဲ့ encode လုပ်ပြီး remote server ဆီကိုပို့ပေးတာက အဆင်အပြေဆုံးနည်းလမ်းပါပဲ။&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;MYSCRIPT=$(base64 -w0 script.sh)
 ssh -t user1@server1.example.com &amp;quot;echo $MYSCRIPT | base64 -d | sudo bash&amp;quot;
@@ -159,7 +159,12 @@ ssh -t user1@server1.example.com &amp;quot;echo $MYSCRIPT | base64 -d | sudo bas
 
 &lt;p&gt;ပြီးပြည့်စုံတဲ့ Script တစ်ခုမဟုတ်ပေမဲ့ အတိုင်းအတာတစ်ခုထိတော့ အသုံးဝင်နိုင်လိမ့်မယ်ထင်တဲ့အတွက် မျှဝေခြင်းဖြစ်ပါတယ်။&lt;/p&gt;
 
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/TO0cLZ7AJss&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class=&#34;responsive-embed flex-video&#34;&gt;
+        &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;360&#34;
+                src=&#34;http://www.youtube.com/embed/TO0cLZ7AJss&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;
+        &lt;/iframe&gt;
+&lt;/div&gt;
+
 
 &lt;p&gt;&lt;strong&gt;Source Code: &lt;a href=&#34;https://github.com/naingyeminn/splitpgs&#34;&gt;splitpgs&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </description>
@@ -975,7 +980,7 @@ $ cp grep_demo.txt demo
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;ဖ-င-ထ-မ-စ-သ-အ-ရ-ဖ-ခ-င:af7149e4a827f06f74ee5e42b1df9f0f&#34;&gt;ဖိုင်ထဲမှစာသားအားရှာဖွေခြင်း&lt;/h3&gt;
+&lt;h3 id=&#34;ဖ-င-ထ-မ-စ-သ-အ-ရ-ဖ-ခ-င&#34;&gt;ဖိုင်ထဲမှစာသားအားရှာဖွေခြင်း&lt;/h3&gt;
 
 &lt;p&gt;ပေးထားတဲ့အတိုင်း ဖွင့်ထားတဲ့ Terminal မှာရိုက်ကြည့်လိုက်ပါ။&lt;/p&gt;
 
@@ -1227,7 +1232,7 @@ grep_demo1.txt:a quick brown fox jumps over the lazy dog.
 
 &lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/grep/GREP-10.png&#34; alt=&#34;GREP-10&#34; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;command-output-အ-ရ-ဖ-ခ-င:af7149e4a827f06f74ee5e42b1df9f0f&#34;&gt;Command Output အားရှာဖွေခြင်း&lt;/h3&gt;
+&lt;h3 id=&#34;command-output-အ-ရ-ဖ-ခ-င&#34;&gt;Command Output အားရှာဖွေခြင်း&lt;/h3&gt;
 
 &lt;p&gt;Command တစ်ခုက ထွက်လာတဲ့ output ထဲကမှ သတ်မှတ်စာသားပါဝင်တဲ့ စာကြောင်းတွေကိုပဲ ရွေးထုတ်ချင်လျှင်တော့ &lt;code&gt;|&lt;/code&gt; (pipe) ကို သုံးရပါတယ်။&lt;/p&gt;
 
@@ -1410,7 +1415,7 @@ $ sudo tail -3 /var/log/messages | ccze -A
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo yum install wget -y
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;installation:357e74f7a1fdd46a0367d8387ebd31a9&#34;&gt;Installation&lt;/h2&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;RHEL/CentOS 5.x&lt;/strong&gt; အတွက်&lt;/li&gt;
@@ -1445,7 +1450,7 @@ $ sudo rpm -ivh epel-release-latest-7.noarch.rpm
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;screenshots:357e74f7a1fdd46a0367d8387ebd31a9&#34;&gt;Screenshots&lt;/h2&gt;
+&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;CentOS 7 တွင် EPEL package အား &lt;code&gt;wget&lt;/code&gt; ဖြင့် Download ပြုလုပ်ခြင်း&lt;/li&gt;
@@ -1494,7 +1499,7 @@ $ sudo rpm -ivh epel-release-latest-7.noarch.rpm
 
 &lt;p&gt;တို့ပဲဖြစ်ပါတယ်။ ဒီ Section Number တွေရဲ့ Defination အလိုက် Man Page တွေကို ခွဲခြားရေးသားထားတာဖြစ်တဲ့အတွက် မိမိသိလိုတဲ့ အပိုင်းကို အလွယ်တကူ ထုတ်နှုတ် ဖတ်ရှုနိုင်မှာဖြစ်ပါတယ်။&lt;/p&gt;
 
-&lt;h2 id=&#34;using-man-command:af6d49792ce625b11a4bb07186b4d049&#34;&gt;Using Man Command&lt;/h2&gt;
+&lt;h2 id=&#34;using-man-command&#34;&gt;Using Man Command&lt;/h2&gt;
 
 &lt;p&gt;Command တစ်ခုခုရဲ့ Manual ကို ဖတ်မယ်ဆိုလျှင် မိမိသိလိုတဲ့ command ရဲ့ရှေ့မှာ &lt;code&gt;man&lt;/code&gt; ဆိုတဲ့ command ထည့်ပြီးရိုက်လိုက်ရုံပါပဲ။ ဥပမာအနေနဲ့ &lt;code&gt;passwd&lt;/code&gt; ဆိုတဲ့ command ရဲ့ manual ကိုဖတ်ချင်တယ်ဆိုလျှင် -&lt;/p&gt;
 
@@ -1529,7 +1534,7 @@ $ sudo rpm -ivh epel-release-latest-7.noarch.rpm
 
 &lt;p&gt;Man Page ကနေ ပြန်ထွက်ချင်တယ်ဆိုလျှင်တော့ &lt;strong&gt;Q&lt;/strong&gt; Key နှိပ်ပြီး ထွက်ရပါတယ်။&lt;/p&gt;
 
-&lt;h2 id=&#34;searching-man-pages:af6d49792ce625b11a4bb07186b4d049&#34;&gt;Searching Man Pages&lt;/h2&gt;
+&lt;h2 id=&#34;searching-man-pages&#34;&gt;Searching Man Pages&lt;/h2&gt;
 
 &lt;p&gt;အထက်မှာပြောခဲ့တဲ့အတိုင်း Man Page တွေကို အကြောင်းအရာအလိုက် Section တွေခွဲထားတာဖြစ်တဲ့အတွက် Command တစ်ခုကို Section တစ်ခုထက်ပိုပြီးရှိနေနိုင်ပါတယ်။ Section ဘယ်နှစ်ခုရှိလည်းသိချင်လျှင်တော့ &lt;code&gt;-aw&lt;/code&gt; option သုံးပြီး ရှာနိုင်ပါတယ်။&lt;/p&gt;
 
@@ -1569,7 +1574,7 @@ $ sudo rpm -ivh epel-release-latest-7.noarch.rpm
 
 &lt;p&gt;အခုနောက်ပိုင်း Linux မှာက GUI သုံးပြီးအလွယ်တကူ Search လုပ်လို့ရနေတော့ &lt;code&gt;find&lt;/code&gt; ဆိုတဲ့ command ကို သိပ်မသုံးဖြစ်ကြပါဘူး။ သို့ပေမယ့် ပိုမိုတိကျတဲ့ result ရရှိဖို့အတွက်ကျတော့ &lt;code&gt;find&lt;/code&gt; ကအရမ်းအသုံးဝင်ပါတယ်။ Linux Admin တွေအနေနဲ့ သိထားသင့်တဲ့ command လေးဖြစ်တဲ့အတွက် အသုံးပြုပုံတချို့ကို ဖော်ပြပေးလိုက်ပါတယ်။&lt;/p&gt;
 
-&lt;h2 id=&#34;file-name-ဖ-င-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238&#34;&gt;File Name ဖြင့်ရှာဖွေခြင်း&lt;/h2&gt;
+&lt;h2 id=&#34;file-name-ဖ-င-ရ-ဖ-ခ-င&#34;&gt;File Name ဖြင့်ရှာဖွေခြင်း&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;/etc&lt;/code&gt; အောက်မှာရှိတဲ့ &lt;code&gt;.conf&lt;/code&gt; နဲ့ဆုံးတဲ့ ဖိုင်တွေကိုပဲရှာချင်တယ်ဆိုလျှင်တော့&lt;/li&gt;
@@ -1597,7 +1602,7 @@ $ find . -iname &amp;quot;hel*&amp;quot;
 ./HelloThere
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;folder-န-င-file-ခ-ခ-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238&#34;&gt;Folder နှင့် File ခွဲခြားရှာဖွေခြင်း&lt;/h2&gt;
+&lt;h2 id=&#34;folder-န-င-file-ခ-ခ-ရ-ဖ-ခ-င&#34;&gt;Folder နှင့် File ခွဲခြားရှာဖွေခြင်း&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Folder သီးသန့်ရှာချင်တယ်ဆိုလျှင်တော့ &lt;code&gt;-type d&lt;/code&gt; option ကိုအသုံးပြုရပြီး File ဆိုလျှင်တော့ &lt;code&gt;-type f&lt;/code&gt; ကိုသုံးရပါတယ်။ နမူနာမှာတော့ testing folder အောက်မှာ HelloDir ဆိုတဲ့ folder ထပ်ဆောက်ပြီး ကွာခြားချက်ကို မြင်နိုင်အောင်ယှဉ်ပြပေးထားပါတယ်။&lt;/li&gt;
@@ -1612,7 +1617,7 @@ $ find . -type f -iname &amp;quot;hel*&amp;quot;
 ./HelloThere
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;အခ-န-ဖ-င-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238&#34;&gt;အချိန်ဖြင့်ရှာဖွေခြင်း&lt;/h2&gt;
+&lt;h2 id=&#34;အခ-န-ဖ-င-ရ-ဖ-ခ-င&#34;&gt;အချိန်ဖြင့်ရှာဖွေခြင်း&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;လွန်ခဲ့တဲ့ ၅ရက်လောက်အတောအတွင်းမှာ edit (သို့) modify လုပ်ထားတဲ့ File တွေ Folder တွေကိုရှာချင်လျှင်တော့ &lt;code&gt;-mtime&lt;/code&gt; ဆိုတဲ့ option ကိုသုံးနိုင်ပါတယ်။ Default Parameter ကတော့ Day နဲ့ သတ်မှတ်ပါတယ်။ လက်ရှိနေ့မှ ၅ရက်အတွင်း ရှာဖွေမှာဖြစ်တဲ့အတွက် &lt;code&gt;-5&lt;/code&gt; လို့သတ်မှတ်ပေးရပါမယ်။ &lt;code&gt;5&lt;/code&gt; လို့ပဲသတ်မှတ်လိုက်မယ်ဆိုလျှင်တော့ ၅ရက်အတွင်းမဟုတ်တော့ဘဲ ၅ရက်မြောက်နေ့မှာ modify လုပ်ထားတဲ့ ဖိုင်တွေကိုပဲထုတ်ပြပေးမှာဖြစ်ပါတယ်။&lt;/li&gt;
@@ -1641,7 +1646,7 @@ $ find /home -atime +15
 &lt;p&gt;Time မှာ Default က day ဆိုပေမယ့် s (second), m (minute), h (hour), d (day), w (week) ဆိုတဲ့ unit တွေနဲ့လည်း ထည့်သုံးနိုင်ပါတယ်။&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;size-ဖ-င-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238&#34;&gt;Size ဖြင့်ရှာဖွေခြင်း&lt;/h2&gt;
+&lt;h2 id=&#34;size-ဖ-င-ရ-ဖ-ခ-င&#34;&gt;Size ဖြင့်ရှာဖွေခြင်း&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;File နှင့် Folder တို့ရဲ့ Size အကြီးအသေးပေါ်မူတည်ပြီး ရှာဖွေ မယ်ဆိုလျှင်တော့ &lt;code&gt;-size&lt;/code&gt; option ရှိပါတယ်။ 5MB ပမာဏရှိတဲ့ File တွေ Folder တွေကိုရှာချင်တယ်ဆိုလျှင် -&lt;/li&gt;
@@ -1661,7 +1666,7 @@ $ find /home -atime +15
 &lt;p&gt;ဒီနေရာမှာတော့ &lt;code&gt;+&lt;/code&gt; ကို Greater Than အနေနဲ့သတ်မှတ်အသုံးပြုပြီး &lt;code&gt;-&lt;/code&gt; ကိုတော့ Less Than အနေနဲ့အသုံးပြုပါတယ်။&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;user-သ-group-ဖ-င-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238&#34;&gt;User (သို့) Group ဖြင့်ရှာဖွေခြင်း&lt;/h2&gt;
+&lt;h2 id=&#34;user-သ-group-ဖ-င-ရ-ဖ-ခ-င&#34;&gt;User (သို့) Group ဖြင့်ရှာဖွေခြင်း&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;User တစ်ယောက်ယောက်ပိုင်တဲ့ ဖိုင်တွေကိုရှာချင်တယ်ဆိုလျှင်တော့ &lt;code&gt;-user&lt;/code&gt; ဆိုတဲ့ option ကိုသုံးနိုင်ပြီး Group ဆိုလျှင်တော့ &lt;code&gt;-group&lt;/code&gt; ကိုသုံးနိုင်ပါတယ်။&lt;/li&gt;
@@ -1675,7 +1680,7 @@ $ find / -group group1
 &lt;p&gt;user1 နဲ့ group1 နေရာမှာ ကိုယ်ရှာဖွေလိုတဲ့ user နဲ့ group ရဲ့ နာမည်ကို အစားထိုးအသုံးပြုရပါမယ်။&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;permission-ဖ-င-ရ-ဖ-ခ-င:87b95223085ff87f2f73bea41cffa238&#34;&gt;Permission ဖြင့်ရှာဖွေခြင်း&lt;/h2&gt;
+&lt;h2 id=&#34;permission-ဖ-င-ရ-ဖ-ခ-င&#34;&gt;Permission ဖြင့်ရှာဖွေခြင်း&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;File Permission နဲ့ရှာဖွေတဲ့နေရာမှာ Octal Numbering ဖြင့် ရှာဖွေနိုင်ပါတယ်။ Option ကတော့ &lt;code&gt;-perm&lt;/code&gt; ဖြစ်ပါတယ်။ File Permission အကြောင်းကိုတော့ ဒီနေရာမှာမပြောတော့ပါဘူး။&lt;/li&gt;
@@ -1685,7 +1690,7 @@ $ find / -group group1
 $ find /etc -perm 0777
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;find-result-အ-process-ပ-လ-ပ-ခ-င:87b95223085ff87f2f73bea41cffa238&#34;&gt;Find Result အား Process ပြုလုပ်ခြင်း&lt;/h2&gt;
+&lt;h2 id=&#34;find-result-အ-process-ပ-လ-ပ-ခ-င&#34;&gt;Find Result အား Process ပြုလုပ်ခြင်း&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;အထက်မှာဖော်ပြခဲ့တဲ့ &lt;code&gt;find&lt;/code&gt; command တွေရဲ့ result မှာပါဝင်တဲ့ File တွေ Directory တွေကို အခြား command တွေနဲ့တွဲပြီး Process ပြုလုပ်နိုင်ပါသေးတယ်။ အဲဒီအတွက် &lt;code&gt;-exec&lt;/code&gt; ဆိုတဲ့ option နဲ့ တွဲဖက်အသုံးပြုရပါတယ်။&lt;/p&gt;&lt;/li&gt;
@@ -1731,7 +1736,7 @@ $ find /etc -type f -iname &amp;quot;*.conf&amp;quot; -exec cp {} ~/Config \;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;command-editing-shortcuts:bdf103b9bf5b1811d2b7a08df7d6182b&#34;&gt;Command Editing Shortcuts&lt;/h2&gt;
+&lt;h2 id=&#34;command-editing-shortcuts&#34;&gt;Command Editing Shortcuts&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + a&lt;/strong&gt; : Command အစသို့&lt;/p&gt;&lt;/li&gt;
@@ -1775,7 +1780,7 @@ $ find /etc -type f -iname &amp;quot;*.conf&amp;quot; -exec cp {} ~/Config \;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;command-recall-control-shortcuts:bdf103b9bf5b1811d2b7a08df7d6182b&#34;&gt;Command Recall &amp;amp; Control Shortcuts&lt;/h2&gt;
+&lt;h2 id=&#34;command-recall-control-shortcuts&#34;&gt;Command Recall &amp;amp; Control Shortcuts&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Control + p&lt;/strong&gt; : Command များ နောက်ပြန်ရှာ&lt;/p&gt;&lt;/li&gt;
@@ -1797,10 +1802,10 @@ $ find /etc -type f -iname &amp;quot;*.conf&amp;quot; -exec cp {} ~/Config \;
     
     <item>
       <title>NTFSX - Script to enable NTFS Write on Mac OS X</title>
-      <link>http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-Mac-OSX/</link>
+      <link>http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-mac-osx/</link>
       <pubDate>Fri, 06 Mar 2015 00:00:00 UTC</pubDate>
       <author>Naing Ye` Minn</author>
-      <guid>http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-Mac-OSX/</guid>
+      <guid>http://naingyeminn.com/posts/script-to-enable-ntfs-write-on-mac-osx/</guid>
       <description>&lt;p&gt;Mac OS X User တွေအနေနဲ့ External HDD တွေသုံးတဲ့နေရာမှာ ကြုံရလေ့ရှိတဲ့ အခက်အခဲလေးတစ်ခုပါ။ အဓိကအကြောင်းအရင်းကတော့ Windows ရဲ့ NTFS file system ကို Mac OS X က အပြည့်အဝ အထောက်အပံ့မပေးထားလို့ပါပဲ။ အဲဒါကြောင့် NTFS format သုံးထားတဲ့ External HDD တွေ USB Flash Drive တွေဆိုရင် Read Only သက်သက်သာ အသုံးပြုနိုင်ပါလိမ့်မယ်။ Data တွေကူးထည့်လို့မရနိုင်ပါဘူး။ ဒါပေမယ့် လုံးဝ Write Access မရတာတော့မဟုတ်ပါဘူး။ Mac OS X မှာက Native NTFS support ရှိပါတယ်။ ပြဿနာရှိတာက Apple အနေနဲ့ Microsoft ရဲ့ NTFS ကို Mac OS X မှာ အပြည့်အဝ အသုံးပြုနိုင်အောင် လုပ်ပေးမယ်ဆိုရင် Microsoft ဆီကနေ နည်းပညာ အသုံးပြုခွင့် ဝယ်ယူရပါလိမ့်မယ်။ Microsoft အနေနဲ့လည်း ထိုနည်းလည်ကောင်းပါပဲ။ Apple ရဲ့ HFS ကို Windows မှာအသုံးပြုလို့ရစေနိုင်ဖို့ အသုံးပြုခွင့် လိုအပ်ပါတယ်။ ဒါအမြင်သာဆုံးဖြစ်အောင်သာ နှိုင်းယှဉ်ပြတာပါ။ ဒီလို Patent ပြဿနာက တကယ့်တကယ် ဒီထက် ပိုရှုပ်ထွေးပါတယ်။ အဲဒီလို ညှိနှိုင်းရခက်ခဲတဲ့ ပြဿနာတွေကြောင့် Microsoft ကလည်း HFS ကို Support မလုပ်သလို Apple ကလည်း NTFS ကို လစ်လျှူရှုထားတာပါ။&lt;/p&gt;
 
 &lt;p&gt;တကယ့်တကယ်တော့ Apple အနေနဲ့ Mac OS X မှာ NTFS ကို အသုံးပြုလို့ရနိုင်လောက်အောင် လုပ်ပေးထားပါတယ်။ တရားဝင်သာ Feature တစ်ခုအနေနဲ့ ထည့်သွင်းဖော်ပြမထားတာပါ။ နောက်ပြီး Official Native Support မဟုတ်တဲ့အတွက် Stable ဖြစ်တဲ့အထိ ဂရုတစိုက်လုပ်ပေးမထားပါဘူး။ Mac User တွေအနေနဲ့ NTFS ကို အတတ်နိုင်ဆုံးရှောင်သုံးတာကတော့ အကောင်းဆုံးပါ။ Drive တွေကို ExFAT နဲ့ format ပြန်ချပြီးသုံးတာမျိုးပါ။ NTFS ပဲသုံးချင်တယ်ဆိုရင်တော့ Free ရတဲ့ Third Party Driver &lt;a href=&#34;http://www.macbreaker.com/2014/06/how-to-enable-writing-to-ntfs-hard.html&#34;&gt;NTFS-3G&lt;/a&gt; ရှိပါတယ်။ ဒါလည်းအဆင်ပြေလွန်းလှတယ်ရယ်တော့မဟုတ်ပါဘူး။ Senior ကျတဲ့ Mac User တွေကတော့ Third Party Driver တင်သုံးမယ်ဆိုရင် Free ထက် Commercial Driver တွေဖြစ်တဲ့ &lt;a href=&#34;http://www.paragon-software.com/home/ntfs-mac/download.html&#34;&gt;Paragon&lt;/a&gt; တို့ &lt;a href=&#34;http://www.tuxera.com/&#34;&gt;Tuxera&lt;/a&gt; တို့ဝယ်သုံးတာကိုပဲ Recommend လုပ်ကြပါတယ်။ ပိုပြီး Stable ဖြစ်သလို Data အကူးအပြောင်းလည်း ပိုမြန်တယ်လို့ဆိုကြပါတယ်။ တချို့ကတော့ မဝယ်ပဲ Crack လုပ်ပြီး သုံးကြပါတယ်။&lt;/p&gt;
@@ -1887,7 +1892,7 @@ $ sudo ntfsx removeall
 
 &lt;p&gt;Linux User တွေအနေနဲ့ သိထားသင့်တဲ့ Terminal အသုံးပြုပုံလေးတွေပါ။ အပြည့်အစုံကြီး မဟုတ်ပေမယ့် အသုံးဝင်တဲ့ နည်းလမ်းလေးတချို့ကိုပဲ အသုံးများတဲ့ Ubuntu ပေါ်အခြေခံပြီး အဓိကထားမျှဝေလိုက်ပါတယ်။&lt;/p&gt;
 
-&lt;h1 id=&#34;shortcuts:81c1d37ccccb3419e3b52c2eaffcaa16&#34;&gt;Shortcuts&lt;/h1&gt;
+&lt;h1 id=&#34;shortcuts&#34;&gt;Shortcuts&lt;/h1&gt;
 
 &lt;hr /&gt;
 
@@ -1928,9 +1933,9 @@ $ sudo ntfsx removeall
 
 &lt;p&gt;&lt;/table&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;pre:81c1d37ccccb3419e3b52c2eaffcaa16&#34;&gt;&lt;/pre&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;pre&#34;&gt;&lt;/pre&gt;&lt;/h2&gt;
 
-&lt;h3 id=&#34;command-completion:81c1d37ccccb3419e3b52c2eaffcaa16&#34;&gt;Command Completion&lt;/h3&gt;
+&lt;h3 id=&#34;command-completion&#34;&gt;Command Completion&lt;/h3&gt;
 
 &lt;p&gt;Ubuntu ရဲ့ Terminal မှာ ကိုယ်ရိုက်လိုက်တဲ့ command ရဲ့ စာလုံး အပြည့်အစုံကို &lt;code&gt;Tab&lt;/code&gt; key ၂ချက်နှိပ်ပြီး ဖြည့်နိုင်ပါတယ်။ ဥပမာအနေနဲ့ &lt;code&gt;apt&lt;/code&gt; လို့ရိုက်ပြီး &lt;code&gt;Tab&lt;/code&gt;key ၂ချက်နှိပ်လိုက်မယ်ဆိုရင် ပုံမှာပြထားတဲ့အတိုင်း apt နဲ့စတဲ့ command တွေပြပေးပါလိမ့်မယ်။ &lt;code&gt;i&lt;/code&gt; တစ်လုံးထပ်တိုးပြီး (&lt;code&gt;apti&lt;/code&gt;) &lt;code&gt;Tab&lt;/code&gt; ထပ်နှိပ်ပါက &lt;code&gt;aptitude&lt;/code&gt; ဆိုပြီး ဖြည့်ပေးသွားမှာပါ။ Command အစစာလုံး တစ်လုံး နှစ်လုံးရိုက်ပြီး &lt;code&gt;Tab&lt;/code&gt; နှိပ်တာနဲ့ အဲဒီ စာလုံးနဲ့စတဲ့ Command ကိုပြပေးသွားတာဖြစ်ပါတယ်။&lt;/p&gt;
 
@@ -1954,7 +1959,7 @@ $ cd Dow[tab][tab]
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;history:81c1d37ccccb3419e3b52c2eaffcaa16&#34;&gt;History&lt;/h3&gt;
+&lt;h3 id=&#34;history&#34;&gt;History&lt;/h3&gt;
 
 &lt;p&gt;Terminal ထဲ ရိုက်ထားတဲ့ command တွေကိုတော့ keyboard က &lt;code&gt;Up Arrow&lt;/code&gt; key နှိပ်ပြီး ပြန်ခေါ်သုံးနိုင်ပါတယ်။ အကယ်၍များ ရိုက်ဖူးတဲ့ command တစ်ခုကို အပြည့်အစုံမမှတ်မိခဲ့ရင် &lt;code&gt;history&lt;/code&gt; command သုံးပြီး ပြန်ရှာနိုင်ပါတယ်။ ပုံမှာပါတဲ့အတိုင်း &lt;code&gt;history | grep&lt;/code&gt; နဲ့တွဲပြီး ကိုယ်ရှာချင်တဲ့ command မှာပါတဲ့ စာသာတချို့ ရိုက်ထည့်ပေးရမှာပါ။&lt;/p&gt;
 
@@ -1965,7 +1970,7 @@ $ cd Dow[tab][tab]
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;bang:81c1d37ccccb3419e3b52c2eaffcaa16&#34;&gt;! - Bang&lt;/h3&gt;
+&lt;h3 id=&#34;bang&#34;&gt;! - Bang&lt;/h3&gt;
 
 &lt;p&gt;နောက်ဆုံးရိုက်ခဲ့တဲ့ command ကိုပြန်ခေါ်ချင်တယ်ဆိုရင်တော့ &lt;strong&gt;!!&lt;/strong&gt; ကိုသုံးနိုင်ပါတယ်။&lt;/p&gt;
 
@@ -2075,7 +2080,7 @@ $ !!:s/date/grade
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;calculator:81c1d37ccccb3419e3b52c2eaffcaa16&#34;&gt;Calculator&lt;/h3&gt;
+&lt;h3 id=&#34;calculator&#34;&gt;Calculator&lt;/h3&gt;
 
 &lt;p&gt;Terminal မှာ ပေါင်း၊ နှုတ်၊ မြောက်၊ စား လုပ်ချင်တယ်ဆိုရင်တော့&lt;/p&gt;
 
@@ -2099,7 +2104,7 @@ $ 50
       <guid>http://naingyeminn.com/posts/tips-for-ubuntu-mm/</guid>
       <description>
 
-&lt;h3 id=&#34;toc_0:28ee59b74199f8d86023969bba04a785&#34;&gt;&lt;strong&gt;$&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_0&#34;&gt;&lt;strong&gt;$&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;Terminal မှ User ၏ Command Prompt ကိုဆိုလိုခြင်းဖြစ်သည်။ Online မှ Blog များ Tutorial များတွင် Command များကိုဖော်ပြရာ၌ ထည့်သွင်းဖော်ပြလေ့ရှိသည်။ သို့သော် ထို Command အား ကူးယူ အသုံးပြုရာတွင် ထည့်သွင်းအသုံးပြုစရာမလိုပါ။ &lt;code&gt;$ sudo apt-get update&lt;/code&gt; ဟုဖော်ပြထားပါက &lt;code&gt;sudo apt-get update&lt;/code&gt; ဆိုသော command  သာကူယူအသုံးပြုရန်လိုအပ်သည်။&lt;/p&gt;
 
@@ -2114,7 +2119,7 @@ Hello
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;toc_1:28ee59b74199f8d86023969bba04a785&#34;&gt;&lt;strong&gt;#&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_1&#34;&gt;&lt;strong&gt;#&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;$&lt;/code&gt; ကဲသို့ပင် Command များ၏ရှေ့တွင်　ဖော်ပြလေ့ရှိသည်။ &lt;code&gt;root user&lt;/code&gt; &lt;code&gt;super user&lt;/code&gt; အနေဖြင့် အသုံးပြုထားသော Terminal ၏ Command Prompt ကိုဆိုလိုခြင်းဖြစ်သည်။ သာမန် User Prompt &lt;code&gt;$&lt;/code&gt; မှ Root User Prompt &lt;code&gt;#&lt;/code&gt; သို့ ပြောင်းလိုပါက - &lt;code&gt;sudo -s&lt;/code&gt; command ဖြင့်ပြောင်းနိုင်သည်။&lt;/p&gt;
 
@@ -2125,7 +2130,7 @@ Hello
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;toc_2:28ee59b74199f8d86023969bba04a785&#34;&gt;&lt;strong&gt;~/&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_2&#34;&gt;&lt;strong&gt;~/&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;သင်၏ &lt;code&gt;Home Directory&lt;/code&gt; ကိုဆိုလိုခြင်းဖြစ်သည်။ တနည်းအားဖြင့် &lt;code&gt;/home/yourname&lt;/code&gt; နှင့်တူညီသည်။&lt;/p&gt;
 
@@ -2135,7 +2140,7 @@ $ cd /home/yourname
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;toc_3:28ee59b74199f8d86023969bba04a785&#34;&gt;&lt;strong&gt;./&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_3&#34;&gt;&lt;strong&gt;./&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;Terminal တွင် သင်ရောက်ရှိနေသော လက်ရှိ Directory ကို ဆိုလိုသည်။ Executable file များကို terminal မှတဆင့် run သောအခါတွင်အသုံးပြုလေ့ရှိသည်။ ဥပမာတွင်ပြထားသည်မှာ လက်ရှိ ရောက်ရှိနေသော Directory ထဲမှ script ဆိုသော Executable File ကို run လိုက်ခြင်းဖြစ်သည်။&lt;/p&gt;
 
@@ -2144,19 +2149,19 @@ $ cd /home/yourname
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;toc_4:28ee59b74199f8d86023969bba04a785&#34;&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_4&#34;&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;File သို့မဟုတ် Folder တို့၏ အမည်ရှေ့တွင် &lt;code&gt;.&lt;/code&gt; ထည့်ပါက ထို File/Folder သည် File Manager ထဲတွင်သာမန်အားဖြင့် မြင်ရမည်မဟုတ်ပါ။ ထို File/Folder များအား File Manager တွင် မြင်နိုင်စေရန် &lt;code&gt;Control + H&lt;/code&gt; Key အား နှိပ်၍ ဖော်နိုင်သည်။ အများအားဖြင့် System Configuration file များ folder များတွင်အသုံးပြုလေ့ရှိသည်။ User ၏ Home Directory &lt;code&gt;~/&lt;/code&gt; ထဲတွင် &lt;code&gt;.local&lt;/code&gt;, &lt;code&gt;.config&lt;/code&gt; စသဖြင့်တွေ့နိုင်သည်။&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;sudo:28ee59b74199f8d86023969bba04a785&#34;&gt;&lt;strong&gt;sudo&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;sudo&#34;&gt;&lt;strong&gt;sudo&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;root&lt;/code&gt; တနည်းအားဖြင့် &lt;code&gt;super&lt;/code&gt; user အနေဖြင့် command များ executable file များအား run သောအခါတွင် သုံးသည်။ Windows တွင် Administrator အနေဖြင့် အသုံးပြုသည်နှင့် တူညီသည်။&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;command-option-and-parameter:28ee59b74199f8d86023969bba04a785&#34;&gt;Command, Option and Parameter&lt;/h3&gt;
+&lt;h3 id=&#34;command-option-and-parameter&#34;&gt;Command, Option and Parameter&lt;/h3&gt;
 
 &lt;p&gt;Terminal တွင်း အသုံးပြုသော command များသည် အများအားဖြင့် လက်ရှိရောက်ရှိနေသော Directory နှင့် အတွင်းရှိ File/Folder များတွင်သာ သက်ရောက်သည်။ အထူးထပ်မံဖြည့်စွက်လိုက်သော Options များ Parameter များပေါ်မူတည်၍သာ အပြောင်းအလဲများရှိသည်။ ဥပမာပြရလျှင် &lt;code&gt;ls&lt;/code&gt; command သည် လက်ရှိရောက်ရှိနေသော Directory ထဲမှ File/Folder စာရင်းကို ပြပေးသည်။ &lt;code&gt;ls /usr/share&lt;/code&gt; ဟူ၍ parameter အနေဖြင့် Directory Path &lt;code&gt;/usr/share&lt;/code&gt; ကိုထည့်ပါက ထို Directory ထဲမှ File/Folder များကိုပြပေးမည်ဖြစ်သည်။&lt;/p&gt;
 

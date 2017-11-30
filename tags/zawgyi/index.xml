@@ -123,7 +123,12 @@ make install
 &lt;p&gt;&amp;ldquo;&lt;code&gt;sudo apt-get install xclip&lt;/code&gt;&amp;rdquo; ဆိုတဲ့ command သုံးပြီး install လုပ်ပေးနိုင်ပါတယ်။&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/qHF2HvnsDu4&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class=&#34;responsive-embed flex-video&#34;&gt;
+        &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;360&#34;
+                src=&#34;http://www.youtube.com/embed/qHF2HvnsDu4&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;
+        &lt;/iframe&gt;
+&lt;/div&gt;
+
 
 &lt;blockquote&gt;
 &lt;p&gt;မှတ်ချက် ။ ။ အခုနည်းလမ်းတွေက Ubuntu 12.04 LTS မှာစမ်းထားတဲ့ နည်းလမ်းတွေပါ။ လက်ရှိသုံးနေတဲ့ 12.04 ကို Based လုပ်ထားတဲ့ ElementaryOS Luna မှာလဲအဆင်ပြေပါတယ်။ အသစ်ထွက်နေပြီဖြစ်တဲ့ Ubuntu 14.04 LTS မှာတော့ မစမ်းကြည့်ရသေးပါဘူး။&lt;/p&gt;
