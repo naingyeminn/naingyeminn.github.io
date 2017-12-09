@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://naingyeminn.com/posts/scripting-on-windows/</loc>
+    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://naingyeminn.com/posts/scheduling-linux-tasks/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
   </url>
@@ -325,7 +330,7 @@
   
   <url>
     <loc>http://naingyeminn.com/</loc>
-    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -361,7 +366,7 @@
   
   <url>
     <loc>http://naingyeminn.com/posts/</loc>
-    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -396,6 +401,12 @@
   </url>
   
   <url>
+    <loc>http://naingyeminn.com/tags/scripting/</loc>
+    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://naingyeminn.com/tags/server/</loc>
     <lastmod>2015-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -421,7 +432,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/tipstricks/</loc>
-    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -469,7 +480,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/windows/</loc>
-    <lastmod>2014-06-23T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
