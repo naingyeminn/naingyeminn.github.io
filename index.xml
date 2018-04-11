@@ -5,7 +5,24 @@
     <link>http://naingyeminn.com/</link>
     <language>en-us</language>
     <author>Naing Ye` Minn</author>
-    <updated>2017-12-09 00:00:00 &#43;0000 UTC</updated>
+    <updated>2018-04-11 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>iSCSI with Multipath in CentOS7</title>
+      <link>http://naingyeminn.com/posts/iscsi-with-multipath-in-centos7/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 UTC</pubDate>
+      <author>Naing Ye` Minn</author>
+      <guid>http://naingyeminn.com/posts/iscsi-with-multipath-in-centos7/</guid>
+      <description>&lt;p&gt;iSCSI (Internet Small Computer Systems Interface) ဆိုတာ SAN (Storage Area Network) Protocol တစ်ခုပါ။ အလွယ်ပြောရရင် Computer တစ်လုံးမှာရှိတဲ့ Storage Device/Space ကို အခြား Computer တစ်လုံးရဲ့ Block Device/Hard Disk အနေနဲ့ Network ကနေတဆင့် ဆွဲယူချိပ်ဆက်အသုံးပြုတဲ့အခါမှာသုံးပါတယ်။ iSCSI ရဲ့အားသာချက်ကတော့ သာမန် IP Network ပေါ်မှာအလုပ်လုပ်တာဖြစ်ပြီး Fiber Channel လို SAN Switch မလိုအပ်ပါဘူး။ Network ပေါ်ကနေတဆင့် ချိပ်ဆက်အသုံးပြုတာဖြစ်တဲ့အတွက် အကယ်၍များ Network Link ပြတ်တောက်သွားခဲ့ရင် ပြဿနာတက်နိုင်ပါတယ်။ ဒါကြောင့် Network Link ကို တစ်ခုထဲအသုံးပြုတာထက် ၂ခုအနည်းဆုံးထားပြီး ချိပ်ဆက်မှသာ High Availability ဖြစ်မှာပါ။ ဒီလိုချိပ်ဆက်ခြင်းမျိုးကို Multipath လို့ခေါ်ခြင်းဖြစ်ပါတယ်။ အခု ဒီ Video လေးမှာတော့ CentOS 7 ပေါ်မှာ iSCSI Drive ကို Multipath သုံးပြီး ဘယ်လိုချိပ်ဆက်မလဲဆိုတာကို ပြသပေးထားပါတယ်။&lt;/p&gt;
+
+&lt;div class=&#34;responsive-embed flex-video&#34;&gt;
+        &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;360&#34;
+                src=&#34;http://www.youtube.com/embed/J9eaWAcj1o4&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;
+        &lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Scripting on Windows</title>

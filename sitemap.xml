@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://naingyeminn.com/posts/iscsi-with-multipath-in-centos7/</loc>
+    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://naingyeminn.com/posts/scripting-on-windows/</loc>
     <lastmod>2017-12-09T00:00:00+00:00</lastmod>
   </url>
@@ -175,7 +180,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/administration/</loc>
-    <lastmod>2015-10-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -205,6 +210,12 @@
   <url>
     <loc>http://naingyeminn.com/tags/centos/</loc>
     <lastmod>2015-10-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://naingyeminn.com/tags/centos7/</loc>
+    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -288,7 +299,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/linux/</loc>
-    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -330,7 +341,7 @@
   
   <url>
     <loc>http://naingyeminn.com/</loc>
-    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -366,7 +377,7 @@
   
   <url>
     <loc>http://naingyeminn.com/posts/</loc>
-    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -444,7 +455,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/tutorial/</loc>
-    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -462,7 +473,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/video/</loc>
-    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
