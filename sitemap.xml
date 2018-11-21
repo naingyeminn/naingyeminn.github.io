@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://naingyeminn.com/posts/managing-rhel5-with-ansible/</loc>
+    <lastmod>2018-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://naingyeminn.com/posts/iscsi-with-multipath-in-centos7/</loc>
     <lastmod>2018-04-11T00:00:00+00:00</lastmod>
   </url>
@@ -185,6 +190,12 @@
   </url>
   
   <url>
+    <loc>http://naingyeminn.com/tags/ansible/</loc>
+    <lastmod>2018-11-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://naingyeminn.com/tags/apple/</loc>
     <lastmod>2016-12-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -299,7 +310,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/linux/</loc>
-    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -341,7 +352,7 @@
   
   <url>
     <loc>http://naingyeminn.com/</loc>
-    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -377,7 +388,7 @@
   
   <url>
     <loc>http://naingyeminn.com/posts/</loc>
-    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -413,7 +424,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/scripting/</loc>
-    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -443,7 +454,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/tipstricks/</loc>
-    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
