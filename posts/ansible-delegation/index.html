@@ -1,0 +1,309 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - Optimizing Ansible Playbooks: Delegation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://use.fontawesome.com/52ab3615c7.js"></script>
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/ansible-delegation/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="contact" class="overlay">
+  <div class="popup">
+    <a class="close" href="#/">&times;</a>
+    <div class="content">
+    	<ul>
+    		<li><a href="mailto:me@naingyeminn.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+
+    		<li><a href="https://github.com/naingyeminn" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    		<li><a href="https://plus.google.com/107143022418508884720" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.facebook.com/nyeminn" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.linkedin.com/in/naingyeminn" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+    	</ul> 
+    </div>
+  </div>
+</div>
+
+
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/ansible-delegation/">Optimizing Ansible Playbooks: Delegation</a></h1>
+	        <div class="post-time">December 3 2018</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com//tags/ansible">ansible</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/linux">linux</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/scripting">scripting</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/tipstricks">tips&amp;tricks</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        <p>ဒီတစ်ခါတော့ Ansible ကိုလေ့လာနေကြတဲ့သူတွေအတွက် ကောင်းမွန်တဲ့ <a href="https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html">Ansible Playbook</a> တစ်ခုရဖို့ Optimize လုပ်တဲ့အခါ သိထားသင့်တဲ့ နည်းလမ်းလေးတွေကိုမျှဝေချင်ပါတယ်။ ပထမဦးဆုံးအနေနဲ့ သိစေချင်တဲ့အချက်ကတော့ Delegation ပဲဖြစ်ပါတယ်။ မြန်မာလိုဆီလျော်အောင်ပြောမယ်ဆိုရင်တော့ တာဝန်ပေးတယ်လို့ဆိုရပါလိမ့်မယ်။ Ansible Playbook ဆိုတာ တကယ်တော့ ဆောင်ရွက်စေချင်တဲ့ လုပ်ငန်းဆောင်တာ (Task) တွေကို အစီအစဉ်တကျ ရေးသားထားတဲ့ စာသားဖိုင် (Text File) လေးတွေပါ။ ဒီ Task တွေကို ဘယ် server၊ ဘယ် device မှာလုပ်ဆောင်ခိုင်းမယ်ဆိုတာကို <code>hosts</code> ဆိုတဲ့ keyword နဲ့ကြေငြာပေးရပါတယ်။ Playbook ရေးကြည့်ဖူးတဲ့သူတွေဆိုရင်သိပါလိမ့်မယ်။ ဥပမာအနေနဲ့ ဒီ Playbook ကိုကြည့်ကြည့်ပါ။</p>
+
+<pre><code>---
+- name: play - one
+  hosts: vm01.example.com
+  vars:
+    - myvar: variable one
+  tasks:
+    - name: task - one
+      debug:
+        msg: Facts variable is from {{ ansible_nodename }} and myvar is {{ myvar }}
+</code></pre>
+
+<p><code>play - one</code> ဆိုတဲ့ Play တစ်ခုကနေ <code>vm01.example.com</code> ဆိုတဲ့ Host ပေါ်မှာ task တစ်ခု run ခိုင်းထားတာပါ။ အဓိကသတိထားမိစေချင်တာက <code>myvar</code> နဲ့ <code>ansible_nodename</code> ဆိုတဲ့ Variable တွေပဲဖြစ်ပါတယ်။ <code>myvar</code> ကတော့ <code>play - one</code> ဆိုတဲ့ play ရဲ့ variable ဖြစ်ပြီး <code>ansible_nodename</code> ကတော့ vm01.example.com ရဲ့ <a href="https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#variables-discovered-from-systems-facts">Facts</a> ထဲက variable ကိုဖော်ပြခိုင်းထားတာပါ။ ထွက်လာတဲ့ output ကိုကြည့်ကြည့်ပါ။</p>
+
+<pre><code>PLAY [play - one] ****************************************************************************
+
+TASK [Gathering Facts] ***********************************************************************
+ok: [vm01.example.com]
+
+TASK [task - one] ****************************************************************************
+ok: [vm01.example.com] =&gt; {
+    &quot;msg&quot;: &quot;Facts variable is from vm01.example.com and myvar is variable one&quot;
+}
+
+PLAY RECAP ***********************************************************************************
+vm01.example.com        : ok=2    changed=0    unreachable=0    failed=0
+</code></pre>
+
+<p>အရင်ဦးဆုံး vm01.example.com ရဲ့ Facts တွေကို ရယူပါတယ်။ ပြီးမှ <code>task - one</code> ဆိုတဲ့ task ကို run ပါတယ်။ task ရဲ့ result ထဲမှာတွေ့ရတဲ့ <code>ok: [vm01.example.com]</code> ဆိုတဲ့ message က vm01.example.com ပေါ်မှာ task တွေ လုပ်ဆောင်သွားတယ်ဆိုတာကို ဖော်ပြနေတာဖြစ်ပြီး <code>myvar</code> နဲ့ <code>ansible_nodename</code> ဆိုတဲ့ variable တွေရဲ့ value တွေအနေနဲ့ကတော့ <code>variable one</code> နဲ့ <code>vm01.example.com</code> ဆိုပြီးတွေ့ရပါလိမ့်မယ်။</p>
+
+<p>ဒီတစ်ခါ လက်ရှိ Playbook ထဲမှာပဲ နောက်ထပ် Play တစ်ခု ထပ်ထည့်ကြည့်ပါမယ်။</p>
+
+<pre><code>---
+- name: play - one
+  hosts: vm01.example.com
+  vars:
+    - myvar: variable one
+  tasks:
+    - name: task - one
+      debug:
+        msg: Facts variable is from {{ ansible_nodename }} and myvar is {{ myvar }}
+
+- name: play - two
+  hosts: vm02.example.com
+  vars:
+    - myvar: variable two
+  tasks:
+    - name: task - one
+      debug:
+        msg: Facts variable is from {{ ansible_nodename }} and myvar is {{ myvar }}
+</code></pre>
+
+<p>vm02.example.com ဆိုတဲ့ host ကို delegate လုပ်ပြီး ထပ်ဖြည့်လိုက်တဲ့ <code>play - two</code> ဆိုတဲ့ Play မှာတော့ <code>myvar</code> ရဲ့ value က <code>variable two</code> ဖြစ်ပြီး <code>ansible_nodename</code> ကတော့ <code>vm02.example.com</code> ဖြစ်နေတာတွေ့ရပါလိမ့်မယ်။</p>
+
+<pre><code>PLAY [play - one] ****************************************************************************
+
+TASK [Gathering Facts] ***********************************************************************
+ok: [vm01.example.com]
+
+TASK [task - one] ****************************************************************************
+ok: [vm01.example.com] =&gt; {
+    &quot;msg&quot;: &quot;Facts variable is from vm01.example.com and myvar is variable one&quot;
+}
+
+PLAY [play - two] ****************************************************************************
+
+TASK [Gathering Facts] ***********************************************************************
+ok: [vm02.example.com]
+
+TASK [task - one] ****************************************************************************
+ok: [vm02.example.com] =&gt; {
+    &quot;msg&quot;: &quot;Facts variable is from vm02.example.com and myvar is variable two&quot;
+}
+
+PLAY RECAP ***********************************************************************************
+vm01.example.com        : ok=2    changed=0    unreachable=0    failed=0
+vm02.example.com        : ok=2    changed=0    unreachable=0    failed=0
+</code></pre>
+
+<p>ဒီလို Play နှစ်ခုခွဲရေးခြင်းအားဖြင့် မတူညီတဲ့ <a href="https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html#hosts-and-groups">Host တွေ Host Group</a> တွေမှာ မတူညီတဲ့ task တွေကို Playbook တစ်ခုတည်းကနေလုပ်ဆောင်နိုင်စေမှာဖြစ်ပါတယ်။ Play တစ်ခုတည်းနဲ့သာဆိုရင် အဲဒီ Play အတွက် delegate လုပ်လိုက်တဲ့ Host ဒါမှမဟုတ် Host Group တစ်ခုအတွက် တူညီတဲ့ task တွေကိုပဲ ဆောင်ရွက်ပေးနိုင်မှာဖြစ်ပါတယ်။ ဒါပေမဲ့ တချို့အခြေအနေတွေမှာတော့ Playbook တစ်ခုထဲ Play တွေခွဲရေးရုံနဲ့အဆင်မပြေနိုင်တဲ့အခြေအနေတွေရှိပါတယ်။ အဓိကက delegate လုပ်နေတဲ့ Host၊ တနည်းအားဖြင့် <code>hosts</code> keyword နဲ့ကြေငြာထားတဲ့ Host ရဲ့ Facts ကို အခြား host တစ်ခုမှာ run မယ့် Task ထဲထည့်သွင်းအသုံးပြုချင်တယ်ဆိုရင် တော့ Play ခွဲရေးတဲ့နည်းကအဆင်မပြေတော့ပါဘူး။ Play တစ်ခုရဲ့ Facts တွေကို အဲ့ဒီ Play အတွင်းမှာရှိတဲ့ Task တွေကပဲအသုံးပြုနိုင်တာကြောင့်ပါ။ အပေါ်ကနမူနာမှာတွေ့ရတဲ့အတိုင်း <code>ansible_nodename</code> ဆိုတဲ့ variable အနေနဲ့ name တူသည့်တိုင်အောင် Play မတူတဲ့ အတွက် သက်ဆိုင်ရာ Host ရဲ့ Facts ပေါ်မူတည်ပြီး value တွေမတူတော့တာကိုမြင်တွေ့ရတာပဲဖြစ်ပါတယ်။ ဒါကြောင့် ပထမ Play ရဲ့ host မှာရှိတဲ့ <code>ansible_nodename</code> ဆိုတဲ့ Fact variable ကို ဒုတိယ Play ရဲ့ host မှာဆက်သုံးနိုင်စေဖို့ရာ အလွယ်ကူဆုံးကတော့ အဲဒီ Play ၂ခုကို တစ်ခုတည်းအနေနဲ့ ပေါင်းလိုက်ပြီး <code>delegate_to</code> ဆိုတဲ့ keyword ကိုသုံးလိုက်တဲ့နည်းပဲဖြစ်ပါတယ်။</p>
+
+<pre><code>---
+- name: play - one
+  hosts: vm01.example.com
+  vars:
+    - myvar: variable one
+  tasks:
+    - name: task - one
+      debug:
+        msg: Facts variable is from {{ ansible_nodename }} and myvar is {{ myvar }}
+
+    - name: task - two
+      debug:
+        msg: Facts variable is from {{ ansible_nodename }} and myvar is {{ myvar }}
+      delegate_to: vm02.example.com
+</code></pre>
+
+<p>ဒီ Playbook မှာတော့ <code>play - one</code> ဆိုတဲ့ Play တစ်ခုတည်းပါပြီး သူ့ထဲမှာမှ <code>task - one</code> နဲ့ <code>task - two</code> ဆိုပြီး task နှစ်ခုခွဲထားပါတယ်။</p>
+
+<pre><code>PLAY [play - one] **********************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************
+ok: [vm01.example.com]
+
+TASK [task - one] **********************************************************************************
+ok: [vm01.example.com] =&gt; {
+    &quot;msg&quot;: &quot;Facts variable is from vm01.example.com and myvar is variable one&quot;
+}
+
+TASK [task - two] **********************************************************************************
+ok: [vm01.example.com -&gt; vm02.example.com] =&gt; {
+    &quot;msg&quot;: &quot;Facts variable is from vm01.example.com and myvar is variable one&quot;
+}
+
+PLAY RECAP *****************************************************************************************
+vm01.example.com        : ok=3    changed=0    unreachable=0    failed=0
+</code></pre>
+
+<p>ဒီ result ကို Play နှစ်ခုခွဲရေးထားတဲ့ Playbook ရဲ့ result နဲ့ ယှဉ်ကြည့်ပါ။ Gathering Facts အနေနဲ့ vm01.example.com အတွက်သာတွေ့ရမှာဖြစ်ပြီး task နှစ်ခုလုံးမှာပေးထားတဲ့ <code>ansible_nodename</code> ဆိုတဲ့ Fact variable ရဲ့ value က vm01.example.com ပဲဖြစ်နေပါလိမ့်မယ်။ ဒါပေမဲ့ <code>task - two</code> အနေနဲ့ တကယ်တမ်း run သွားတာက vm02.example.com ပေါ်မှာဖြစ်တယ် ဆိုတာကို <code>ok: [vm01.example.com -&gt; vm02.example.com]</code> ဆိုတဲ့ output နဲ့ဖေါ်ပြပေးနေတာကိုတွေ့ရမှာပဲဖြစ်ပါတယ်။ ပိုပြီး မြင်သာချင်တယ်ဆိုရင်တော့ အောက်မှာဖော်ပြထားတဲ့ Playbook နဲ့ထပ်မံစမ်းကြည့်နိုင်ပါတယ်။</p>
+
+<pre><code>---
+- name: play - one
+  hosts: vm01.example.com
+  tasks:
+    - name: write content
+      copy:
+        content: &quot;{{ ansible_nodename }}&quot;
+        dest: /tmp/managed_host.txt
+
+    - name: get content
+      command: cat /tmp/managed_host.txt
+      register: results
+
+    - debug:
+        msg: &quot;content of managed_host.txt on {{ ansible_host }} is {{ results.stdout }}&quot;
+
+    - name: write content with delegate_to
+      copy:
+        content: &quot;{{ ansible_nodename }}&quot;
+        dest: /tmp/managed_host.txt
+      delegate_to: vm02.example.com
+
+    - name: get content with delegate_to
+      command: cat /tmp/managed_host.txt
+      register: results
+      delegate_to: vm02.example.com
+
+    - debug:
+        msg: &quot;content of managed_host.txt on {{ ansible_host }} is {{ results.stdout }}&quot;
+      delegate_to: vm02.example.com
+</code></pre>
+
+<p>အဓိကကတော့ လက်ရှိ run နေတဲ့ Play ထဲမှာအကြုံးမဝင်တဲ့ အခြား Host/Host Group မှာ task တချို့ကို လှမ်းပြီး run စေချင်တယ်ဆိုရင်တော့ Play တစ်ခုထပ်ခွဲစရာမလိုပဲ <code>delegate_to</code> နဲ့ run ခိုင်းလို့ရတယ်ဆိုတာရယ်၊ Play နဲ့သတ်ဆိုင်တဲ့ Facts တွေကို ဆက်လက်အသုံးပြုနိုင်မှာဖြစ်တယ်ဆိုတာရယ်ကို သိထားခြင်းအားဖြင့် လိုအပ်သလို ထည့်သွင်းအသုံးပြုနိုင်စေဖို့ပဲဖြစ်ပါတယ်။ <code>delegate_to</code> keyword မသုံးလဲ အလုပ်ဖြစ်တဲ့နည်းလမ်းတွေရှိပေမဲ့ သုံးလိုက်ခြင်းအားဖြင့် ကိုယ့်ရဲ့ Playbook မှာမလိုအပ်တဲ့ ရှုပ်ထွေးသွားစေနိုင်တဲ့ task တွေကိုလျှော့ချနိုင်သွားမှာဖြစ်ပါတယ်။</p>
+
+<p>Reference: <a href="https://docs.ansible.com/ansible/latest/user_guide/playbooks_delegation.html">Playbooks_Delegation</a></p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/ansible-delegation/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/managing-rhel5-with-ansible/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p class="contact">Copyright © 2014 <a class="button" href="#contact">Naing Ye` Minn</a></p>
+		        </footer>
+		    </div>
+		  </div>    
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
