@@ -1,84 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Centos on Naing Ye` Minn </title>
+    <title>Centos on Naing Ye` Minn</title>
     <link>http://naingyeminn.com/tags/centos/</link>
+    <description>Recent content in Centos on Naing Ye` Minn</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Naing Ye` Minn</author>
-    <updated>2015-10-13 00:00:00 &#43;0000 UTC</updated>
+    <lastBuildDate>Tue, 13 Oct 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://naingyeminn.com/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>EPEL for CentOS</title>
       <link>http://naingyeminn.com/posts/epel-for-centos/</link>
-      <pubDate>Tue, 13 Oct 2015 00:00:00 UTC</pubDate>
-      <author>Naing Ye` Minn</author>
+      <pubDate>Tue, 13 Oct 2015 00:00:00 +0000</pubDate>
+      
       <guid>http://naingyeminn.com/posts/epel-for-centos/</guid>
-      <description>
-
-&lt;p&gt;EPEL ဆိုတာ Extra Packages for Enterprise Linux ရဲ့ အတိုကောက်ပါ။ Extra Packages ဆိုတဲ့အတိုင်း CentOS ရဲ့ Main Repository ထဲမပါဝင်ပေမယ့် အသုံးဝင်တဲ့ Package တွေကို စုစည်းပေးထားတဲ့ Repository တစ်ခုပါ။ Fedora Project ရဲ့ပံ့ပိုးမှုနဲ့ ဖြစ်ပေါ်လာတဲ့ Project တစ်ခုဖြစ်ပြီး Fedora Linux အတွက်တင်မဟုတ်ဘဲ Fedora-based ဖြစ်တဲ့ Red Hat Enterprise Linux နဲ့ တခြား မျိုးနွယ်တူ CentOS, Scientific Linux စတာတွေအတွက်ပါ Support ပေးထားတဲ့ Repo ပဲဖြစ်ပါတယ်။ အသေးစိပ်ကိုတော့ &lt;a href=&#34;https://fedoraproject.org/wiki/EPEL/FAQ&#34;&gt;EPEL/FAQ&lt;/a&gt; မှာလေ့လာနိုင်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;EPEL ထဲက package တွေကို Install ပြုလုပ်ချင်တယ်ဆိုလျှင်တော့ EPEL Repo ကို YUM Package Manager ရဲ့ Repo List ထဲမှာ ထပ်ထည့်ပြီး Enable ပြုလုပ်ပေးရပါမယ်။ အဲဒီအတွက် EPEL Package ကို Install လုပ်ရပါမယ်။ EPEL Package ကိုတော့ Distro Version ပေါ်မူတည်ပြီး Download ယူဖို့လိုပါတယ်။ Download အတွက် &lt;code&gt;wget&lt;/code&gt; command ကိုအသုံးပြုမှာဖြစ်တဲ့အတွက် ကြိုတင် Install လုပ်ထားဖို့လိုပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo yum install wget -y
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;RHEL/CentOS 5.x&lt;/strong&gt; အတွက်&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-5.noarch.rpm
-$ sudo rpm -ivh epel-release-latest-5.noarch.rpm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;RHEL/CentOS 6.x&lt;/strong&gt; အတွက်&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
-$ sudo rpm -ivh epel-release-latest-6.noarch.rpm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;RHEL/CentOS 7.x&lt;/strong&gt; အတွက်&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-$ sudo rpm -ivh epel-release-latest-7.noarch.rpm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;EPEL Repo&lt;/strong&gt; ရ၊ မရ ပြန်လည်စစ်ဆေးရန်အတွက်&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ yum repolist
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;CentOS 7 တွင် EPEL package အား &lt;code&gt;wget&lt;/code&gt; ဖြင့် Download ပြုလုပ်ခြင်း&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/epel-wget.png&#34; alt=&#34;epel-wget&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Package အား Install ပြုလုပ်ခြင်း&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/epel-install.png&#34; alt=&#34;epel-install&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;EPEL Repo အား စစ်ဆေးခြင်း&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/epel-check.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;အပေါ်ပုံအတိုင်း EPEL ကို Repo List ထဲတွေ့ရပြီဆိုလျှင်တော့ EPEL Repo မှ Package များအား Install ပြုလုပ်နိုင်ပြီဖြစ်ပါတယ်။&lt;/p&gt;
-</description>
+      <description>EPEL ဆိုတာ Extra Packages for Enterprise Linux ရဲ့ အတိုကောက်ပါ။ Extra Packages ဆိုတဲ့အတိုင်း CentOS ရဲ့ Main Repository ထဲမပါဝင်ပေမယ့် အသုံးဝင်တဲ့ Package တွေကို စုစည်းပေးထားတဲ့ Repository တစ်ခုပါ။ Fedora Project ရဲ့ပံ့ပိုးမှုနဲ့ ဖြစ်ပေါ်လာတဲ့ Project တစ်ခုဖြစ်ပြီး Fedora Linux အတွက်တင်မဟုတ်ဘဲ Fedora-based ဖြစ်တဲ့ Red Hat Enterprise Linux နဲ့ တခြား မျိုးနွယ်တူ CentOS, Scientific Linux စတာတွေအတွက်ပါ Support ပေးထားတဲ့ Repo ပဲဖြစ်ပါတယ်။ အသေးစိပ်ကိုတော့ EPEL/FAQ မှာလေ့လာနိုင်ပါတယ်။
+EPEL ထဲက package တွေကို Install ပြုလုပ်ချင်တယ်ဆိုလျှင်တော့ EPEL Repo ကို YUM Package Manager ရဲ့ Repo List ထဲမှာ ထပ်ထည့်ပြီး Enable ပြုလုပ်ပေးရပါမယ်။ အဲဒီအတွက် EPEL Package ကို Install လုပ်ရပါမယ်။ EPEL Package ကိုတော့ Distro Version ပေါ်မူတည်ပြီး Download ယူဖို့လိုပါတယ်။ Download အတွက် wget command ကိုအသုံးပြုမှာဖြစ်တဲ့အတွက် ကြိုတင် Install လုပ်ထားဖို့လိုပါလိမ့်မယ်။</description>
     </item>
     
   </channel>

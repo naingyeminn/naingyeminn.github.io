@@ -1,146 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Review on Naing Ye` Minn </title>
+    <title>Review on Naing Ye` Minn</title>
     <link>http://naingyeminn.com/tags/review/</link>
+    <description>Recent content in Review on Naing Ye` Minn</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Naing Ye` Minn</author>
-    <updated>2015-11-19 00:00:00 &#43;0000 UTC</updated>
+    <lastBuildDate>Thu, 19 Nov 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://naingyeminn.com/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Local Tunnel</title>
       <link>http://naingyeminn.com/posts/localtunnel/</link>
-      <pubDate>Thu, 19 Nov 2015 00:00:00 UTC</pubDate>
-      <author>Naing Ye` Minn</author>
+      <pubDate>Thu, 19 Nov 2015 00:00:00 +0000</pubDate>
+      
       <guid>http://naingyeminn.com/posts/localtunnel/</guid>
-      <description>
-
-&lt;p&gt;Web Application Development မှာ လေ့လာမိသလောက် Developer တွေအနေနဲ့ အများအားဖြင့် ကိုယ့်ရဲ့ Site/App ကို နမူနာပြချင်တယ်ဆိုလျှင် Meeting တစ်ခုလုပ် ဖို့ appointment ယူ၊ Client နဲ့တွေ့တဲ့အခါကျမှ ကိုယ့် Laptop မှာ Setup လုပ်ထားတဲ့ Web Server နဲ့ Run ပြကြတာများပါတယ်။ တချို့ကျတော့ Hosting/VPS Server ဝယ်ထားပြီး ကိုယ့်ရဲ့ Code ကို အဲဒီ Server ထဲ Upload လုပ်ပြီးတော့ Online တန်းပြတတ်ကြပါတယ်။ ဒီနည်းလမ်း ၂နည်းမှာ ပထမနည်းလမ်းအရ ပြင်ဆင်မှုတစ်ချို့အတွက် Client ရဲ့သဘောတူညီချက်ရဖို့အရေး Meeting လုပ်ဖို့ ချိန်းဆိုရ သွားရလာရနဲ့ အချိန်ပေးရပါတယ်။ ဒုတိယနည်းကျပြန်တော့ လည်း လုပ်ငန်းတွင်ပေမယ့် Server ကိုရင်းနှီးထားရပါတယ်။ ဒီအခက်အခဲတွေကို ဖြေရှင်းနိုင်ဖို့ကတော့ &lt;a href=&#34;http://localtunnel.me/&#34;&gt;localtunnel&lt;/a&gt; ကိုအသုံးပြုတဲ့နည်းလမ်းပါပဲ။&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;localtunnel&lt;/code&gt; ဆိုတာ NodeJS အသုံးပြုပြီးရေးသားထားတဲ့ Tunneling Service ပါ။ ပုံမှန်အတိုင်း Web Server တစ်ခုကို Access လုပ်ဖို့ဆိုလျှင် Public IP ရှိမှ Internet ကိုဖြတ်ပြီး Access လုပ်လို့ရပါတယ်။ အခု ဒီ &lt;code&gt;localtunnel&lt;/code&gt; ကတော့ Public IP မရှိဘဲ ကိုယ့် Laptop/Desktop မှာ setup လုပ်ထားတဲ့ Web Server ရဲ့ Site/App ကို Internet ကနေတဆင့် လှမ်းခေါ်ကြည့်ရှုနိုင်အောင်ဆောင်ရွက်ပေးတဲ့ Service လေးပါ။ &lt;code&gt;localtunnel&lt;/code&gt; ကိုသုံးဖို့ &lt;a href=&#34;https://nodejs.org/en/download/&#34;&gt;NodeJS&lt;/a&gt; ကို install လုပ်ထားရပါမယ်။ ပြီးလျှင်တော့ &lt;code&gt;npm&lt;/code&gt; (Node Package Manager) သုံးပြီး &lt;code&gt;localtunnel&lt;/code&gt; ရဲ့ Client Program ကို install ပြုလုပ်လိုက်ရုံပါပဲ။&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ npm install -g localtunnel
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;usage&#34;&gt;Usage&lt;/h3&gt;
-
-&lt;p&gt;အသုံးပြုပုံကတော့ ကိုယ့် Web Site/App ရဲ့ port number သုံးပြီး Service ကို Run ပေးရမှာပါ။ ဥပမာ ကိုယ့် Laptop/Desktop မှာ Develop လုပ်နေတဲ့ Site/App ကို &lt;code&gt;http://localhost&lt;/code&gt; လို့ခေါ်လိုက်တာနဲ့ တန်းမြင်ရတယ်ဆိုလျှင် -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ lt --port 80
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ဆိုတဲ့ HTTP ရဲ့ Default Port (80) နဲ့ command ကို Run ပေးရမှာပါ။ အကယ်၍ &lt;code&gt;http://localhost:8080&lt;/code&gt; နဲ့ သုံးထားတယ်ဆိုလျှင်တော့ -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ lt --port 8080
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Port Number : 8080 သုံးပြီး run ပေးရုံပါပဲ။&lt;/p&gt;
-
-&lt;p&gt;Service စတင်လိုက်ပြီဆိုတာနဲ့ client program က &lt;code&gt;localtunnel.me&lt;/code&gt; ကိုလှမ်း Access လုပ်ပြီး ကိုယ့် Site/App အတွက် &lt;code&gt;https://zyxwvut.localtunnel.me&lt;/code&gt; ဆိုတာမျိုး Web URL တစ်ခုထုတ်ပေးပါလိမ့်မယ်။ အဲဒီ URL ကိုသုံးပြီး ကိုယ့်ရဲ့ Site/App ကို Internet ကနေတဆင့် Access လုပ်နိုင်မှာဖြစ်ပါတယ်။&lt;/p&gt;
-
-&lt;h3 id=&#34;how-it-works&#34;&gt;How It Works&lt;/h3&gt;
-
-&lt;p&gt;အလုပ်လုပ်ပုံကတော့ ပုံမှာပြထားတဲ့အတိုင်း Developer ကသူ့ Site/App ကို Run ထားပြီးပြီဆိုတာနဲ့ &lt;code&gt;localtunnel&lt;/code&gt; Client Program ကို run ပါတယ်။ Client Program က သူ့ရဲ့ Server ဖြစ်တဲ့ &lt;code&gt;localtunnel.me&lt;/code&gt; ကိုလှမ်း Access လုပ်ပြီး URL ကို Generate လုပ်ပေးပါတယ်။ ရလာတဲ့ URL ကို တဘက်မှာရှိတဲ့ Client(Customer) က သူ့ရဲ့ Web Browser ကနေ ခေါ်လိုက်ပြီဆိုတာနဲ့ &lt;code&gt;localtunnel.me&lt;/code&gt; Server ဆီကိုရောက်ပါတယ်။ &lt;code&gt;localtunnel.me&lt;/code&gt; ကိုရောက်လာတဲ့ Client Browser ရဲ့ HTTP Request ကို Developer ရဲ့ Laptop/Desktop မှာရှိတဲ့ &lt;code&gt;localtunnel&lt;/code&gt; Client Program က Respond ပြန်ပေးတာပါ။ အဲဒီ Request တွေ Respond တွေကို ကြားမှာရှိတဲ့ &lt;code&gt;localtunnel.me&lt;/code&gt; Server က Relay အနေနဲ့ အပြန်အလှန်ပို့ပေးတဲ့သဘောပါပဲ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/localtunnel/localtunnel.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;ဒီ Service ကိုသုံးပြီး ရှေ့မှာပြောခဲ့သလို Developer တွေအနေနဲ့ ကိုယ့် Web Site/App ကို ကိုယ့်စက်မှာပဲ Host လုပ်ပြီး အဝေးတနေရာက Client ဆီ နမူနာအနေနဲ့ ပေးပို့ပြသချင်တဲ့အခါမျိုးမှာသုံးနိုင်တဲ့အပြင် SysAdmin တွေအနေနဲ့လည်း ရုံးချိန်ပြင်ပ ဒါမှမဟုတ် အဝေးတနေရာရောက်နေချိန် ကိုယ့် Local Server မှာ အရေးတကြီး ပြင်ဆင်စရာရှိလို့ Web-based Control Pannel ကိုဝင်ချင်တဲ့အခါ Junior တစ်ယောက်ယောက်ကို Client Program လေး Run ခိုင်းလိုက်ရုံနဲ့ ရောက်ရာနေရာကနေလှမ်း Access လုပ်လို့ရနိုင်မှာဖြစ်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;tunnel&lt;/strong&gt; တိုင်းကို &lt;strong&gt;https&lt;/strong&gt; နဲ့သွားတာဖြစ်တဲ့အတွက် &lt;strong&gt;Secure&lt;/strong&gt; ဖြစ်တယ်ဆိုပေမယ့် တကယ့်ကို အရေးတကြီး လိုအပ်တဲ့အချိန်မှသုံးတာပိုစိတ်ချရပါတယ်။ နောက်ပြီး ဒီ Service က Free ဖြစ်တဲ့အတွက် အာမခံချက်မရှိပါဘူး။ Feature စုံစုံလင်လင်နဲ့ Performance ပိုကောင်းပြီး အာမခံချက်ရှိတဲ့ Service လိုချင်တယ်ဆိုလျှင်တော့ &lt;a href=&#34;https://ngrok.com&#34;&gt;Ngrok&lt;/a&gt; ရှိပါတယ်။ Commercial ဖြစ်ပြီး Plan အလိုက် Local Tunnel ပြုလုပ်တာထက်ပိုတဲ့ အခြား Feature တွေအသုံးပြုနိုင်မှာဖြစ်တဲ့အပြင် Free Service လည်းပေးထားပါသေးတယ်။ &lt;code&gt;Ngrok&lt;/code&gt; ရဲ့ အားသာချက်ကတော့ NodeJS မလိုပဲ Client Program ဖိုင်လေးတစ်ခုတည်းနဲ့တင် Run လို့ရတာပါ။ အသုံးပြုပုံကလည်း &lt;code&gt;localtunnel&lt;/code&gt; နဲ့သိပ်မကွာပါဘူး။ Functionality ပိုင်း ထပ်ဖြည့်ထားတာဖြစ်တဲ့အတွက် Option တွေပိုပါသွားတာလောက်ပါပဲ။&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;localtunnel&lt;/code&gt; ရဲ့ &lt;a href=&#34;https://github.com/localtunnel/localtunnel&#34;&gt;Client Source Code&lt;/a&gt; ရော &lt;a href=&#34;https://github.com/localtunnel/server&#34;&gt;Server Source Code&lt;/a&gt; ကိုပါ &lt;strong&gt;MIT License&lt;/strong&gt; နဲ့ပဲ မျှဝေပေးထားတာပါ။ ကိုယ်ပိုင် Server တည်ဆောက်ချင်သူတွေအနေနဲ့ လွတ်လပ်စွာ ရယူတည်ဆောက်နိုင်ပါတယ်။ အခြား Programming Language တွေနဲ့ ရေးသားထားတဲ့ အလားတူ Source Code တွေလည်း &lt;strong&gt;Github&lt;/strong&gt; မှာရှိပါသေးတယ်။ လူသိနည်းပေမယ့် အသုံးတည့်တဲ့ နည်ပညာလေးတစ်ခုဖြစ်တဲ့အတွက် မျှဝေလိုက်ရပါတယ်။&lt;/p&gt;
-</description>
+      <description>Web Application Development မှာ လေ့လာမိသလောက် Developer တွေအနေနဲ့ အများအားဖြင့် ကိုယ့်ရဲ့ Site/App ကို နမူနာပြချင်တယ်ဆိုလျှင် Meeting တစ်ခုလုပ် ဖို့ appointment ယူ၊ Client နဲ့တွေ့တဲ့အခါကျမှ ကိုယ့် Laptop မှာ Setup လုပ်ထားတဲ့ Web Server နဲ့ Run ပြကြတာများပါတယ်။ တချို့ကျတော့ Hosting/VPS Server ဝယ်ထားပြီး ကိုယ့်ရဲ့ Code ကို အဲဒီ Server ထဲ Upload လုပ်ပြီးတော့ Online တန်းပြတတ်ကြပါတယ်။ ဒီနည်းလမ်း ၂နည်းမှာ ပထမနည်းလမ်းအရ ပြင်ဆင်မှုတစ်ချို့အတွက် Client ရဲ့သဘောတူညီချက်ရဖို့အရေး Meeting လုပ်ဖို့ ချိန်းဆိုရ သွားရလာရနဲ့ အချိန်ပေးရပါတယ်။ ဒုတိယနည်းကျပြန်တော့ လည်း လုပ်ငန်းတွင်ပေမယ့် Server ကိုရင်းနှီးထားရပါတယ်။ ဒီအခက်အခဲတွေကို ဖြေရှင်းနိုင်ဖို့ကတော့ localtunnel ကိုအသုံးပြုတဲ့နည်းလမ်းပါပဲ။
+localtunnel ဆိုတာ NodeJS အသုံးပြုပြီးရေးသားထားတဲ့ Tunneling Service ပါ။ ပုံမှန်အတိုင်း Web Server တစ်ခုကို Access လုပ်ဖို့ဆိုလျှင် Public IP ရှိမှ Internet ကိုဖြတ်ပြီး Access လုပ်လို့ရပါတယ်။ အခု ဒီ localtunnel ကတော့ Public IP မရှိဘဲ ကိုယ့် Laptop/Desktop မှာ setup လုပ်ထားတဲ့ Web Server ရဲ့ Site/App ကို Internet ကနေတဆင့် လှမ်းခေါ်ကြည့်ရှုနိုင်အောင်ဆောင်ရွက်ပေးတဲ့ Service လေးပါ။ localtunnel ကိုသုံးဖို့ NodeJS ကို install လုပ်ထားရပါမယ်။ ပြီးလျှင်တော့ npm (Node Package Manager) သုံးပြီး localtunnel ရဲ့ Client Program ကို install ပြုလုပ်လိုက်ရုံပါပဲ။</description>
     </item>
     
     <item>
       <title>XenServer Installation Problems and Review</title>
       <link>http://naingyeminn.com/posts/xenserver-installation-problems-and-review/</link>
-      <pubDate>Fri, 30 May 2014 00:00:00 UTC</pubDate>
-      <author>Naing Ye` Minn</author>
+      <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
+      
       <guid>http://naingyeminn.com/posts/xenserver-installation-problems-and-review/</guid>
-      <description>&lt;p&gt;မနေ့က အလုပ်မှာ Desktop တစ်လုံးအပိုထွက်လာတာနဲ့ XenServer စမ်းကြည့်ဖြစ်တယ်။ စက်က အမြင့်ကြီးမဟုတ်ပေမယ့် processor က VT support လုပ်တာရယ် Memory 4GB လောက်ရှိတာရယ်ကြောင့် စမ်းဖို့အဆင်ပြေသွာတယ်။ &lt;a href=&#34;http://xenserver.org/overview-xenserver-open-source-virtualization/download.html&#34;&gt;XenServer 6.2&lt;/a&gt; iso လဲဆွဲထားပြီးသားရှိပေမယ့် CD အလွတ်မရှိတာနဲ့ Flash Drive နဲ့ပဲ install လုပ်မယ်ပေါ့။ အဲ့ဒီအတွက် flash drive ကို FAT32 နဲ့ format ချ၊ &lt;a href=&#34;http://sourceforge.net/projects/unetbootin/&#34;&gt;Unetbootin&lt;/a&gt; နဲ့ ပုံမှန်အတိုင်းပဲ XenServer ISO ကို extract လုပ်လိုက်တာ ဖြစ်ချင်တော့ boot တက်တဲ့အချိန်မှာ kernel ရှာမရပါဘူးဆိုပြီး error ပြလာတယ်။ google မှာရှာကြည့်လိုက်တော့ USB drive ရဲ့ /boot/isolinux/ directory ထဲက isolinux.cfg ကို syslinux.cfg ဆိုပြီး တော့ရယ်၊ /boot/ ထဲက isolinux ကို syslinux ဆိုပြီး ပြောင်းပေးရတယ်။ နောက် /syslinux.cfg ကိုဖျက်ပေးရတယ်။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ mv /media/flashdrive/boot/isolinux/isolinux.cfg /media/flashdrive/boot/isolinux/syslinux.cfg
-$ mv /media/flashdrive/boot/isolinux /media/flashdrive/boot/syslinux
-$ rm /media/flashdrive/syslinux.cfg
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;အဲဒါလေးလုပ်ပေးလိုက်တော့ boot တက်ပြီး &lt;a href=&#34;http://docs.vmd.citrix.com/XenServer/6.2.0/1.0/en_gb/installation.html&#34; title=&#34;XenServer Installation&#34;&gt;Install&lt;/a&gt; လုပ်လို့ရသွားတယ်။ အောက်ကပုံကတော့ VMware Player ပေါ်မှာ install လုပ်ပြထားတာပါ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/xenserver_on_vmplayer.png&#34; alt=&#34;XenServer on VMware Player&#34; title=&#34;XenServer on VMware Player&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;နောက်တစ်ခုအနေနဲ့ XenServer ကို manage လုပ်ဖို့အတွက် XenCenter လိုပါတယ်။ XenCenter က &lt;a href=&#34;http://downloadns.citrix.com.edgesuite.net/akdlm/8160/XenServer-6.2.0-XenCenter.msi&#34; title=&#34;XenServer-6.2.0-XenCenter.msi&#34;&gt;Windows installer&lt;/a&gt; ပဲရှိပြီး Linux မှာတော့ အစားထိုးသုံးစရာအနေနဲ့ &lt;a href=&#34;http://sourceforge.net/projects/openxenmanager/&#34;&gt;OpenXenManager&lt;/a&gt; ဆိုတာရှိပါတယ်။ Ubuntu user တွေအတွက်ကတော့ Software Center ကနေ install လုပ်နိုင်ပါတယ်။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo apt-get install openxenmanager
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;OpenXenManager က install လုပ်ပြီးရင် application list ထဲမဝင်ပါဘူး။ Terminal ကနေ ဒါမှမဟုတ် Ubuntu ရဲ့ Command Box (Alt+F2) ကနေ &amp;ldquo;openxenmanager&amp;rdquo; ဆိုပြီး run ရပါတယ်။ အဲ့လိုမှမဟုတ်ရင်လဲ&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo wget https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Ubuntu/openxenmanager.desktop -P /usr/share/applications/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ဆိုတဲ့ command နဲ့ Application Shortcut ကို Terminal ကနေလှမ်းယူနိုင်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;XenCenter ကိုမစမ်းဖူးသေးလို့ ဘယ်လို error တွေရှိနိုင်ဆိုတာမသိပေမယ့် OpenXenManager(OXM) မှာတော့ VM create လုပ်လိုက်တဲ့အချိန် တစ်ခါတစ်ခါကျ list ထဲပေါ်မလာတာဖြစ်တတ်တယ်။ အဲဒီအတွက် OXM မှာ XenServer ကို Disconnect လုပ်ပြီး Connect ပြန်လုပ်လိုက်ရင်တော့ ပေါ်လာပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/oxm.png&#34; alt=&#34;OpenXenManager&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;နောက်တစ်ခုကြုံရတာက VM မှာ install လုပ်ဖို့ OS တွေကို iso ဖိုင်အနေနဲ့ ssh နဲ့ဝင်ပြီး XenServer ထဲကူးထည့်လိုက်မိတယ်။ XenServer install လုပ်ချိန်တုန်းက Default အတိုင်းပဲ Partition ပိုင်းခိုင်းလိုက်တော့ Host ရဲ့ root partition size က တော်တော်သေးနေတော့ ထည့်လိုက်တဲ့ iso တွေနဲ့ပြည့်သွားတော့ Reboot လုပ်လိုက်တဲ့အချိန်ကျ XenServer XAPI Service ကို Start လုပ်မရပါဘူးဆိုတဲ့ Error ပြလာတယ်။ Network လဲမရတော့ဘူး။ ရှာဖတ်ကြည့်တော့မှ Space မလောက်ရင်ဖြစ်တတ်တယ်ဆိုတာတွေ့တာနဲ့ Server ရဲ့ Shell ကနေပဲထည့်ထားတဲ့ iso တွေပြန်ဖျက်ပြီး Reboot ထပ်လုပ်လိုက်မှ ပြန်အဆင်ပြေသွားတယ်။&lt;/p&gt;
-
-&lt;p&gt;VM create လုပ်ပြီး Windows Server 2008 ကို Install လုပ်ကြည့်တာတော့ အဆင်ပြေပြေချောချောမွေ့မွေ့ပါပဲ။ တစ်ခုရှိတာက Install လုပ်ပြီးပြီးချင်း XenServer ကနေ Performance ကိုကြည့်ရင် CPU Usage ပဲမြင်ရပြီး Memory Usage ကိုတော့ xs-tools &lt;a href=&#34;http://knowledgelayer.softlayer.com/learning/how-install-xenserver-tools-linux&#34;&gt;(XenServer Tools)&lt;/a&gt; ကိုတင်ပေးပြီးမှ မြင်ရတယ်။ xs-tools က XenServer ရဲ့ LocalStorage ထဲမှာ iso အနေနဲ့ ပါပြီးသားပါ။ VM ရဲ့ Optical Drive ထဲ အဲဒီ iso mount လုပ်ပြီး VM ထဲက CD-ROM ကနေပဲ install လုပ်ပေးလိုက်ရုံပါပဲ။ Windows VM မှာ တင်ရင်တော့ DotNet Framework 4.0 လိုပါလိမ့်မယ်။ အဲဒါလဲ xs-tools iso ထဲမှာပဲရှိပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;XenServer က အလျှင်ကတော့ Free အပြင် Enterprise, Platinum ဆိုပြီး Commercial Version တွေခွဲထုတ်ခဲ့ပေမယ့် XenServer 6.2 ကိုတော့ &lt;a href=&#34;http://blogs.citrix.com/2013/06/25/xenserver-6-2-is-now-fully-open-source/&#34; title=&#34;XenServer 6.2 is now Fully Open-Source&#34;&gt;Open Source&lt;/a&gt; အနေနဲ့ပြောင်းလိုက်ပြီး Supporting Service ကိုပဲ Commercial အနေနဲ့ လုပ်လိုက်ပါပြီ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/xenserver62FeatureMatrix.png&#34; alt=&#34;Feature Matrix&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Virtualization ကိုလေ့လာချင်သူတွေအတွက် VMware ရဲ့ ESXi အပြင် တခြားရွေးချယ်စရာတစ်ခုအနေနဲ့  XenServer ကို သုံးလို့တော့ရပါတယ်။ ဒါပေမယ့် ပုံမှန် Desktop တစ်လုံးနဲ့စမ်းတာကတော့ Virtualization ဆိုတာ ဘယ်လိုရှိတယ် VM တွေ ဘယ်လိုလုပ်လို့ရတယ်ဆိုတာလောက်ပဲသိနိုင်မှာပါ။ လုပ်ငန်းခွင်မှာ အသုံးချနေရတာမဟုတ်ဘူးဆိုရင်တော့ ကိုယ်ပိုင် Lab တစ်ခု ကောင်းကောင်းတည်ဆောက်နိုင်မှသာ အသေးစိပ်လေ့လာနိုင်လိမ့်မယ်လို့သာ ယူဆမိပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Related References:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.linuxbrigade.com/install-xenserver-via-usb-flash-drive/&#34;&gt;Install XenServer via USB Flash Drive&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.citrix.com/content/dam/citrix/en_us/documents/products-solutions/citrix-xenserver-core-feature-matrix.pdf&#34;&gt;Citrix XenServer Core Feature Matrix&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.xenserver.org/overview-xenserver-open-source-virtualization/open-source-virtualization-features.html&#34;&gt;XenServer Open Source Virtualization Features&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://docs.vmd.citrix.com/XenServer/6.2.0/1.0/en_gb/&#34;&gt;XenServer Documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>မနေ့က အလုပ်မှာ Desktop တစ်လုံးအပိုထွက်လာတာနဲ့ XenServer စမ်းကြည့်ဖြစ်တယ်။ စက်က အမြင့်ကြီးမဟုတ်ပေမယ့် processor က VT support လုပ်တာရယ် Memory 4GB လောက်ရှိတာရယ်ကြောင့် စမ်းဖို့အဆင်ပြေသွာတယ်။ XenServer 6.2 iso လဲဆွဲထားပြီးသားရှိပေမယ့် CD အလွတ်မရှိတာနဲ့ Flash Drive နဲ့ပဲ install လုပ်မယ်ပေါ့။ အဲ့ဒီအတွက် flash drive ကို FAT32 နဲ့ format ချ၊ Unetbootin နဲ့ ပုံမှန်အတိုင်းပဲ XenServer ISO ကို extract လုပ်လိုက်တာ ဖြစ်ချင်တော့ boot တက်တဲ့အချိန်မှာ kernel ရှာမရပါဘူးဆိုပြီး error ပြလာတယ်။ google မှာရှာကြည့်လိုက်တော့ USB drive ရဲ့ /boot/isolinux/ directory ထဲက isolinux.cfg ကို syslinux.cfg ဆိုပြီး တော့ရယ်၊ /boot/ ထဲက isolinux ကို syslinux ဆိုပြီး ပြောင်းပေးရတယ်။ နောက် /syslinux.</description>
     </item>
     
     <item>
       <title>Pelican နှင့် ကျွန်တော်</title>
       <link>http://naingyeminn.com/posts/pelican-and-me/</link>
-      <pubDate>Sat, 12 Apr 2014 00:00:00 UTC</pubDate>
-      <author>Naing Ye` Minn</author>
+      <pubDate>Sat, 12 Apr 2014 00:00:00 +0000</pubDate>
+      
       <guid>http://naingyeminn.com/posts/pelican-and-me/</guid>
-      <description>&lt;p&gt;အရင်းက blog လေးတစ်ခုလုပ်ပြီး ubuntu အကြောင်းလေးတွေတော်တော်များများ ရေးခဲ့ဖူးပေမယ့် အဲဒီ blog လေးပျက်သွားပြီးကတည်းက ဆက်မရေးဖြစ်တော့တာ တော်တော်ကြာပါပြီ။ ကြားထဲမှာတော့ အသစ်ရထားတဲ့ blog လေးမှာ တစ် post နှစ် post လောက်တော့တင်ဖြစ်တယ်။ အဲ့နောက်ပိုင်းဆက် မရေးဖြစ်တော့ပြန်ဘူး။ အကြောင်းက ရထားတဲ့ blog က wordpress နဲ့ ဆိုပေမယ့် ပြင်ချင်တိုင်းပြင်ဖို့ admin right မရှိတဲ့အတွက် စိတ်ကြိုက် theme ပြောင်းမရတာရယ် နောက်ပြီး unicode နဲ့ရေးတော့ font မရှိလဲ လူတိုင်းဖတ်နိုင်အောင် font embed လုပ်ဖို့ CSS ဝင်ပြင်လို့မရတာတွေရယ်ကတော့ အဓိကပေါ့။ နောက်တစ်ခုက ကိုယ်က ရေးချင်တာကို text editor မှာရေးပြီး online ပြန်တင်ဖို့ကျ format ပြန်ချိန်ရတာကလဲရှိသေးတယ်။ backup ရှိနေဖို့ကိုလဲ တကူးတကာ့ ပြန်သိမ်းနေရတာနဲ့ဆိုတော့ အလုပ်ကရှုပ်တယ်။ ဒီလိုပဲ အကြောင်းအမျိုးမျိုးပြပြီး မရေးဖြစ်တာကြာပါပြီ။ မနေ့ကမှ အကြံတစ်ခုပေါ်လာတာနဲ့ blog အသစ်တစ်ခုလုပ်ဖို့ ဆုံးဖြတ်လိုက်တယ်။ Internet ဟိုဒီရှာရင်း တွေ့လိုက်တဲ့ &lt;a href=&#34;https://ghost.org/&#34; title=&#34;ghost.org&#34;&gt;Ghost&lt;/a&gt; ဆိုတဲ့ blogging platform ကိုစမ်းရာကနေ &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34; title=&#34;Markdown Cheatsheet&#34;&gt;Markdown&lt;/a&gt; format နဲ့ ရေးတဲ့ idea ကို အရမ်းသဘောကျသွားတယ်။ ဒါနဲ့ပဲ markdown နဲ့ရေးလို့ရနိုင်တာလေးတွေရှာကြည့်မိတယ်။ &lt;a href=&#34;http://octopress.org/&#34; title=&#34;octopress.org&#34;&gt;Octopress&lt;/a&gt; ကိုသူငယ်ချင်းတစ်ယောက် သုံးထားတာတွေ့လို့ စမ်းဖို့ကြည့်တော့ Ruby နဲ့ရေးထားတဲ့ Static Page Generator ဆိုတာကိုတွေ့လိုက်ရတယ်။ ကိုယ်ရေးထားတဲ့ markdown file တွေကို ကိုယ်စိတ်ကြိုက်ပြင်ထားတဲ့ HTML/CSS/JavaScript file တွေနဲ့ Static Page (.html) file လေးတွေထုတ်ပေးတာပါ။ အဲဒါစမ်းဖို့အတွက်ကို Package တွေထပ်သွင်းရမှာဆိုတော့ Ruby အစား ကိုယ်နည်းနည်းပါးပါးသိတဲ့ Python နဲ့များရှိလေမလားဆိုပြီးရှာကြည့်ရင်း Pelican ကိုသွားတွေ့တယ်။ Ubuntu သုံးနေတာဖြစ်တဲ့အတွက် Python ကပါပြီးသားဆိုတော့ လိုအပ်တာလေးနည်းနည်းထပ်ဖြည့်လိုက်တာနဲ့ &lt;a href=&#34;http://blog.getpelican.com/&#34; title=&#34;blog.getpelican.com&#34;&gt;Pelican&lt;/a&gt; ကိုစမ်းလို့ရပြီလေ။ လိုချင်တဲ့ Theme ကို ပြင်ဆင်ပြီးပြီဆိုတာနဲ့ သတ်မှတ်ထားတဲ့ location ထဲမှာ Markdown file လေးတွေရေးထည့်ပြီး command လေးရိုက်လိုက်တာနဲ့ ကိုယ်ပြင်ထားတဲ့အတိုင်း .html ဖိုင်လေးတွေထွက်လာရော။ တော်တော်သဘောကျသွားတယ်။ နောက်ပြီ တစ်ခုသိထားတာက Dropbox မှာ HTML/CSS/JavaScript file တွေထည့်ပြီး dropbox public link နဲ့ပြန်ခေါ်ရင် ရတယ်ဆိုတာပါ။ အဲဒီတော့ အခုအတိုင်း Static Page လေးတွေ အလွယ်တကူရေးလို့ရတဲ့အပြင် Dropbox ကိုလဲ hosting တစ်ခုလိုသာသုံးလို့ရမယ်ဆိုရင် အဆင်ပြေလောက်မယ်ထင်တာနဲ့ Dropbox အသုံးချပုံတွေကိုရှာကြည့်ဖြစ်တယ်။ &lt;a href=&#34;http://kissr.com/&#34; title=&#34;kissr.com&#34;&gt;KISSr&lt;/a&gt; လို dropbox နဲ့ ချိတ်ဆက်ပြီး အသုံးပြုလို့ရတဲ့ service သုံးလေးငါးခုလောက်ရှာတွေ့တယ်။ kissr ကတော့ အရိုးရှင်းဆုံးနဲ့ သုံးရအလွယ်ဆုံးဖြစ်မယ်ထင်တာပဲ။ နောက်ပြီး subdomain ယူပြီးသုံးနိုင်တဲ့အပြင် domain name ကလဲ မှတ်ရလွယ်တော့ သုံးမယ်ဆို သုံးလို့အဆင်ပြေပါတယ်။ နောက်တစ်ခုကတော့ github ကိုသုံးပြီး host လုပ်တဲ့နည်းပါ။ Dropbox ကိုသုံးတာက ပိုပြီး လွယ်ကူရှင်းလင်းပေမယ့် github ကိုသုံးလေ့ရှိသူတွေအတွက်ကတော့ ကိုယ့် github မှာပဲ repo ဆောက်ပြီး host လုပ်တာက ပိုကောင်းပါတယ်။ ဘာကြောင့်လဲဆိုတော့ github က ကိုယ်ပိုင် domain နဲ့ ချိတ်ဆက်အသုံးပြုလို့ရအောင် DNS point လုပ်ဖို့ ip နဲ့ လုပ်ပုံလုပ်နည်းတွေကို အသေစိပ်ရေးပေးထားလို့ပါပဲ။ ဒါပေမယ့် Github ကတော့ host လုပ်ဖို့ repository ကို 1GB အထိပဲအမျာဆုံးသုံးနိုင်ပါတယ်။ ပုံမှန် static page လေးတွေ Host လုပ်ဖို့အတွက်လောက်ကတော့ 1GB ဆိုတဲ့ ပမာဏက မနည်းလှပါဘူး။ ဓာတ်ပုံ၊ video၊ audio တွေကို ကိုယ့် post မှာထည့်ချင်တယ်ဆိုရင်တော့ တခြား Dropbox လို youtube လို service တွေမှာ တင်ပြီး link ပြန်လုပ်သုံးမယ်ဆိုရင် Github ကပေးတဲ့ 1GB ဆိုတဲ့ပမာဏက လုံလောက်မှာပါ။ အခုတော့ github ကိုပဲ သုံးဖို့ ရွေးလိုက်ပါတယ်။&lt;/p&gt;
-</description>
+      <description>အရင်းက blog လေးတစ်ခုလုပ်ပြီး ubuntu အကြောင်းလေးတွေတော်တော်များများ ရေးခဲ့ဖူးပေမယ့် အဲဒီ blog လေးပျက်သွားပြီးကတည်းက ဆက်မရေးဖြစ်တော့တာ တော်တော်ကြာပါပြီ။ ကြားထဲမှာတော့ အသစ်ရထားတဲ့ blog လေးမှာ တစ် post နှစ် post လောက်တော့တင်ဖြစ်တယ်။ အဲ့နောက်ပိုင်းဆက် မရေးဖြစ်တော့ပြန်ဘူး။ အကြောင်းက ရထားတဲ့ blog က wordpress နဲ့ ဆိုပေမယ့် ပြင်ချင်တိုင်းပြင်ဖို့ admin right မရှိတဲ့အတွက် စိတ်ကြိုက် theme ပြောင်းမရတာရယ် နောက်ပြီး unicode နဲ့ရေးတော့ font မရှိလဲ လူတိုင်းဖတ်နိုင်အောင် font embed လုပ်ဖို့ CSS ဝင်ပြင်လို့မရတာတွေရယ်ကတော့ အဓိကပေါ့။ နောက်တစ်ခုက ကိုယ်က ရေးချင်တာကို text editor မှာရေးပြီး online ပြန်တင်ဖို့ကျ format ပြန်ချိန်ရတာကလဲရှိသေးတယ်။ backup ရှိနေဖို့ကိုလဲ တကူးတကာ့ ပြန်သိမ်းနေရတာနဲ့ဆိုတော့ အလုပ်ကရှုပ်တယ်။ ဒီလိုပဲ အကြောင်းအမျိုးမျိုးပြပြီး မရေးဖြစ်တာကြာပါပြီ။ မနေ့ကမှ အကြံတစ်ခုပေါ်လာတာနဲ့ blog အသစ်တစ်ခုလုပ်ဖို့ ဆုံးဖြတ်လိုက်တယ်။ Internet ဟိုဒီရှာရင်း တွေ့လိုက်တဲ့ Ghost ဆိုတဲ့ blogging platform ကိုစမ်းရာကနေ Markdown format နဲ့ ရေးတဲ့ idea ကို အရမ်းသဘောကျသွားတယ်။ ဒါနဲ့ပဲ markdown နဲ့ရေးလို့ရနိုင်တာလေးတွေရှာကြည့်မိတယ်။ Octopress ကိုသူငယ်ချင်းတစ်ယောက် သုံးထားတာတွေ့လို့ စမ်းဖို့ကြည့်တော့ Ruby နဲ့ရေးထားတဲ့ Static Page Generator ဆိုတာကိုတွေ့လိုက်ရတယ်။ ကိုယ်ရေးထားတဲ့ markdown file တွေကို ကိုယ်စိတ်ကြိုက်ပြင်ထားတဲ့ HTML/CSS/JavaScript file တွေနဲ့ Static Page (.</description>
     </item>
     
     <item>
       <title>Elementary OS - Review (1)</title>
       <link>http://naingyeminn.com/posts/elementary-os-review-1/</link>
-      <pubDate>Fri, 11 Apr 2014 00:00:00 UTC</pubDate>
-      <author>Naing Ye` Minn</author>
+      <pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate>
+      
       <guid>http://naingyeminn.com/posts/elementary-os-review-1/</guid>
-      <description>&lt;p&gt;လက်ရှိ Laptop မှာ Ubuntu 12.04 LTS ပဲသုံးနေခဲ့တာ တော်တော်ကြာနေပါပြီ။ ကြားထဲမှာ 12.10, 13.04 နဲ့ 13.10 version သုံးခုတောင်ထွက်ခဲ့သည့်တိုင်အောင်မပြောင်းသေးပဲ Stable ဖြစ်တဲ့ LTS ကိုပဲဆက်သုံးဖြစ်နေတာပါ။ အခု လာမယ့် April ဆိုရင် နောက်ထပ် LTS version အသစ်တစ်ခုဖြစ်တဲ့ 14.04 ထပ်ထွက်တော့မှာဖြစ်တဲ့အတွက် version အသစ်ကိုမပြောင်းခင် တခြား distro လေးတွေပြောင်းစမ်းဖို့စိတ်ကူးမိတာနဲ့ပဲ နောက်ဆုံး ဒီ Elementary OS လေး စမ်းကြည့်ဖို့ ရွေးလိုက်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;Elementary OS က ubuntu-based distro တစ်ခုပါပဲ။ Ubuntu ကိုအခြေခံပြီး မွမ်းမံထားတဲ့ OS တစ်ခုပါ။ သူ့ကို eOS လို့ အတိုကောက်ခေါ်ကြလေ့ရှိပါတယ်။ အခုစမ်းကြည့်ရသလောက်တော့ တော်တော်လေးကို ရိုးရှင်းပြီး အသုံးပြုရလွယ်ကူတာတွေ့ရပါတယ်။ သုံးကြည့်ရသလောက်တော့ အပြည့်အဝပြည့်စုံကောင်းမွန်တဲ့ OS တစ်ခုလို့မဆိုနိုငေ်ပမယ့် အတိုင်းအတာတစ်ခုထိ စိတ်ကြေနပ်စရာကောင်းတဲ့ OS လေးတစ်ခုဖြစ်တယ်လို့တော့ဆိုချင်ပါတယ်။ ထူးခြားချက်လေးတွေ၊ အားသာချက်လေးတွေရှိသလို အားနည်းချက်လေးတွေလဲရှိပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;User Interface အနေနဲ့ တော်တော်လေးကိုရိုးရှင်းပြီး သပ်ရပ်ပါတယ်။ Pantheon ဆိုတဲ့ Desktop Environment ကိုသုံးထားတာပါ။ Window, Menu, dialog box ပုံစံတွေ ကတော့ Gnome3 နဲ့ဆင်တူပါတယ်။ File Manager အနေနဲ့ကတော့ Ubuntu မှာလို Nautilus မဟုတ်တော့ပဲ Pantheon-Files ဖြစ်သွားပါတယ်။ Nautilus ကိုယှဉ်နိုင်လောက်အောင် feature မစုံသေးပေမယ့် အသုံးပြုရတာတော့ရိုးရှင်းလွယ်ကူပါတယ်။ ဒါပေမယ့် Nautilus မှာလို Folder Share ဖို့ Sharing Options မပါပါဘူး။ ဒါကြောင့် Network ကနေ File တွေ Share လုပ်ချင်တဲ့အခါ Samba သွင်းပြီး manually configure လုပ်ပေးရပါတယ်။ အဲလိုမှမဟုတ်ရင်တော့ Nautilus ထပ်တင်ပြီးသုံးလို့ရပါတယ်။ Installation ပြီးပြီးချင်းမှာ ပြဿနာရှိတာက Power Consumption ပါ။ Desktop တစ်လုံးမှာ တင်ပြီးသုံးမယ်ဆိုရင်ပြဿနာမရှိပေမယ့် Laptop အနေနဲ့ကတော့ အားနည်းချက်တစ်ခုလို့ဆိုရမှာပါ။ Ubuntu မှာ ၅နာရီဝန်းကျင်လောက် Battery နဲ့သုံးလို့ရပေမယ့် သူမှာတော့ ၂နာရီခွဲ သုံးနာရီလောက်ပဲသုံးလို့ရပါတယ်။ ဒါပေမယ့် application တချို့သုံးပြီး tweak လုပ်လိုက်မယ်ဆိုရင်တော့ ၎နာရီ ၎နာရီခွဲလောက်သုံးလို့ရသွားမှာပါ။&lt;/p&gt;
-
-&lt;p&gt;နောက်တစ်ချက်က Application ပိုင်းပါ။ သူ့မှာ Ubuntu လို Office Suite ပါမလာပါဘူး။ LibreOffice ပြန်တင်ပေးရပါတယ်။ Email Client အနေနဲ့ကတော့ Geary Mail ဆိုတဲ့ application လေးပါပါတယ်။ ဒါပေမယ့် သူ့မှာက IMAP နဲ့ SMTP ပဲ support လုပ်တာပါ။ POP3 သုံးလို့မရပါဘူး။ POP3 သုံးချင်ရင်တော့ Thunderbird၊ ဒါမှမဟုတ် Evolution တစ်ခုခုထပ်တင်ပြီးသုံးရပါလိမ့်မယ်။ Default Web Browser ကတော့ Midori ပါ။ သုံးရအဆင်ပြေတယ်ဆိုပေမယ့် Firefox တို့ Chrome တို့မှာလို Plug-ins စုံစုံလင်လင်မရှိတဲ့အတွက် သုံးနေကျ Browser တစ်ခုခု ထပ်တင်တာပိုကောင်းပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;p&gt;Ubuntu နဲ့ ကွာခြားတာက သူ့မှာ Ubuntu လို Application စုံစုံလင်လင်မပါတာပါပဲ။ Disk Utility, System Monitor, Remote Desktop Client, Transmission BitTorrent Client တို့လို ရှိသင့်တဲ့ Application တွေမပါပါဘူး။ ထပ်တင်ဖို့လိုပါတယ်။ အဲဒီအတွက် အသေးစိပ် ဆက်လကေ်ဖာ်ပြပေးပါဦးမယ်။&lt;/p&gt;
-</description>
+      <description>လက်ရှိ Laptop မှာ Ubuntu 12.04 LTS ပဲသုံးနေခဲ့တာ တော်တော်ကြာနေပါပြီ။ ကြားထဲမှာ 12.10, 13.04 နဲ့ 13.10 version သုံးခုတောင်ထွက်ခဲ့သည့်တိုင်အောင်မပြောင်းသေးပဲ Stable ဖြစ်တဲ့ LTS ကိုပဲဆက်သုံးဖြစ်နေတာပါ။ အခု လာမယ့် April ဆိုရင် နောက်ထပ် LTS version အသစ်တစ်ခုဖြစ်တဲ့ 14.04 ထပ်ထွက်တော့မှာဖြစ်တဲ့အတွက် version အသစ်ကိုမပြောင်းခင် တခြား distro လေးတွေပြောင်းစမ်းဖို့စိတ်ကူးမိတာနဲ့ပဲ နောက်ဆုံး ဒီ Elementary OS လေး စမ်းကြည့်ဖို့ ရွေးလိုက်ပါတယ်။
+Elementary OS က ubuntu-based distro တစ်ခုပါပဲ။ Ubuntu ကိုအခြေခံပြီး မွမ်းမံထားတဲ့ OS တစ်ခုပါ။ သူ့ကို eOS လို့ အတိုကောက်ခေါ်ကြလေ့ရှိပါတယ်။ အခုစမ်းကြည့်ရသလောက်တော့ တော်တော်လေးကို ရိုးရှင်းပြီး အသုံးပြုရလွယ်ကူတာတွေ့ရပါတယ်။ သုံးကြည့်ရသလောက်တော့ အပြည့်အဝပြည့်စုံကောင်းမွန်တဲ့ OS တစ်ခုလို့မဆိုနိုငေ်ပမယ့် အတိုင်းအတာတစ်ခုထိ စိတ်ကြေနပ်စရာကောင်းတဲ့ OS လေးတစ်ခုဖြစ်တယ်လို့တော့ဆိုချင်ပါတယ်။ ထူးခြားချက်လေးတွေ၊ အားသာချက်လေးတွေရှိသလို အားနည်းချက်လေးတွေလဲရှိပါတယ်။</description>
     </item>
     
   </channel>

@@ -1,339 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Osx on Naing Ye` Minn </title>
+    <title>Osx on Naing Ye` Minn</title>
     <link>http://naingyeminn.com/tags/osx/</link>
+    <description>Recent content in Osx on Naing Ye` Minn</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Naing Ye` Minn</author>
-    <updated>2016-08-06 00:00:00 &#43;0000 UTC</updated>
+    <lastBuildDate>Sat, 06 Aug 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://naingyeminn.com/tags/osx/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>KeyMagic Lock Screen Issue in OS X</title>
       <link>http://naingyeminn.com/posts/keymagic-osx-temp-fix/</link>
-      <pubDate>Sat, 06 Aug 2016 00:00:00 UTC</pubDate>
-      <author>Naing Ye` Minn</author>
+      <pubDate>Sat, 06 Aug 2016 00:00:00 +0000</pubDate>
+      
       <guid>http://naingyeminn.com/posts/keymagic-osx-temp-fix/</guid>
-      <description>&lt;p&gt;Mac OS X စသုံးစဉ်က Unicode Keyboard အနေနဲ့အသုံးများတဲ့ KeyMagic ကိုပဲသုံးဖို့ကြိုးစားခဲ့ပါတယ်။ သို့ပေမယ့်ပြဿနာရှိတာက KeyMagic ကိုသုံးပြီးစာရိုက်နေရာကနေ ခဏနားလိုက်လို့ Screen Lock ဖြစ်သွားတာနဲ့ Password ပြန်ရိုက်ပြီး ပြန်ဝင်လို့မရတာပါ။ OS X အတွက် တစ်ခုတည်းသော Smart Keyboard ဖြစ်ပေမယ့် အဲဒီ ပြဿနာလေးတစ်ခုနဲ့တင် ဆက်မသုံးဖြစ်တော့တာပါ။ ကိုယ်တိုင်ပဲ &lt;a href=&#34;http://naingyeminn.com/posts/myanmar-unicode-keyboard-for-yosemite/&#34;&gt;Myanmar3 Layout&lt;/a&gt; အတိုင်း ရိုးရိုး Keyboard တစ်ခု Ukelele နဲ့လုပ်ပြီး သုံးဖြစ်ခဲ့တယ်။ အခုနောက်ပိုင်း အခြား တိုင်းရင်းသား ယူနီကုဒ် Keyboard Layout လေးတွေ လုပ်ပေးရင်းနဲ့မှ Keyboard တွေနဲ့ပတ်သက်ပြီးနည်းနည်းလေ့လာဖြစ်လာတယ်။ Smart Keyboard ဖြစ်တဲ့ Keyman ကလည်း OS X အတွက်ထွက်လာတော့ ရှိပြီးသား Keyboard Layout လေးတွေပြန်စုစည်းပြီး မရှိသေးတဲ့ ရှမ်း Keyboard Layout လေးပါထက်လုပ်ဖြစ်တယ်။ အခြား တိုင်းရင်းသားဘာသာစကားတွေအတွက်လည်း ထပ်လုပ်ဖို့ စိတ်ကူးရှိပေမယ့် Keyman ကလောလောဆယ်သာ Free ပေးထားပြီး နောက်ပိုင်း Commercial ပြောင်းသွားနိုင်တာမို့ သိပ်တော့အားမရဘူး။ ဒါပေမယ့် မနေ့ကတော့ OS X ရဲ့ KeyMagic မှာတက်နေတဲ့ ပြဿနာအတွက် tweak လုပ်လို့ရမယ့်နည်းလေးရှာတွေ့သွားတယ်။ နည်းလမ်းတကျ ဖြေရှင်းတာမဟုတ်ပေမယ့် အလုပ်ဖြစ်တဲ့အတွက် Share လိုက်ပါတယ်။ ဘာပဲဖြစ်ဖြစ် KeyMagic ကတော့ Open Source ဖြစ်တာရော၊ Keyboard Layout လည်းစုံစုံလင်လင်ရှိနှင့်ပြီးသားဆိုတော့ OS X User တွေအတွက် ပိုအဆင်ပြေလိမ့်မယ်ထင်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;အခု ဖြေရှင်းတဲ့နည်းလမ်းကတော့ KeyMagic ကို Burmese Input Sources category ထဲပြောင်းပေးတာပါ။ နားလည်သလောက်ပြောရရင် OS X အနေနဲ့ သူ Support လုပ်ထားတဲ့ Language တွေအတွက် Input လက်ခံရယူမယ့်ပုံစံပေါ်မူတည်ပြီး Layout ကို English အနေနဲ့ အလိုအလျောက်ပြောင်းအောင်လုပ်ပေးထားပါတယ်။ OS X က Burmese Input Sources category ကို အဲဒီ Function ထောက်ပံ့ပေးထားတာဖြစ်တဲ့အတွက် Burmese category အောက်မှာရှိတဲ့ Keyboard တိုင်းဟာ Password ရိုက်ခိုင်းတဲ့နေရာမျိုး တိုင်းလိုလိုမှာ English ကိုအလိုအလျောက် ပြောင်းသွားမှာဖြစ်ပါတယ်။ KeyMagic ကိုအဲ့လိုဖြစ်အောင်လုပ်ဖို့လိုတာပါ။ သူ့ကိုသုံးပြီးမြန်မာလိုစာရိုက်နေရာကနေ Screen Lock ကျသွားတာကြောင့်ပဲဖြစ်ြဖစ်၊ Sleep ဖြစ်သွားတာကြောင့်ပဲဖြစ်ဖြစ် Login ပြန်ဝင်ဖို့လုပ်တဲ့အခါ Password ရိုက်မရတာ English ပြန်ပြောင်းမပေးတာကြောင့်ပါပဲ။&lt;/p&gt;
-
-&lt;p&gt;KeyMagic က Default အနေနဲ့ English category အောက်မှာရှိနေတာပါ။ Burmese အောက်ကိုပြောင်းဖို့အတွက်ကတော့ &lt;code&gt;KeyMagic.app&lt;/code&gt; ရဲ့ Content ထဲက &lt;code&gt;Info.plist&lt;/code&gt; ဆိုတဲ့ဖိုင်မှာဝင်ပြင်ပေးရတာပါ။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;key&amp;gt;TISIntendedLanguage&amp;lt;/key&amp;gt;
-&amp;lt;string&amp;gt;my_BU&amp;lt;/string&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ဆိုတဲ့ Key နဲ့ String Value ကိုထပ်ဖြည့်ပေးရမှာဖြစ်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;ဒီကိစ္စကို KeyMagic Developer ဖြစ်တဲ့ သန့်သက်နဲ့ ပြောကြည့်ပေမယ့် သူ့အနေနဲ့ KeyMagic ကို Burmese အောက်ထားတာမသင့်တော်တဲ့အတွက် အခြားနည်းလမ်းရှာကြည့်ဦးမယ်လို့တော့ဆိုပါတယ်။ ဘာကြောင့်လည်းဆိုတော့ KeyMagic ကို အခြားနိုင်ငံတွေမှာလည်းသုံးနေတာဖြစ်တဲ့အတွက် Burmese အောက်မထားတာပါ။&lt;/p&gt;
-
-&lt;p&gt;မြန်မာနိုင်ငံကလူတွေအတွက်တော့ Burmese အောက်ရောက်တာပြဿနာမရှိတာကြောင့် ယာယီအနေနဲ့ ပြောင်းရလွယ်အောင် Script လေးလုပ်ပေးလိုက်ပါတယ်။ အဓိကက KeyMagic အသုံးပြုသူတွေ Proper Fix မထွက်ခင် အဆင်ပြေပြေသုံးနိုင်ဖို့အတွက်ရည်ရွယ်ပြီး ရေးပေးထားတာပါ။&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;အင်တာနက် ချိပ်ဆက်ထားဖို့တော့လိုအပ်ပါတယ်။&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Fix မလုပ်ခင် ပထမဦးဆုံး KeyMagic ကို Input List ထဲမှ ခဏထုတ်ထားလိုက်ပါ။&lt;/p&gt;
-
-&lt;p&gt;KeyMagic ကိုရွေးပြီး &lt;strong&gt;-&lt;/strong&gt; button လေးကိုနှိပ်လိုက်ပါ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix01.png&#34; alt=&#34;kmfix01&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Trash ထဲထည့်မလားမေးရင် Keep File ကိုရွေးလိုက်ပါ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix02.png&#34; alt=&#34;kmfix02&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ပြီးရင်တော့ &lt;strong&gt;Keyboard Preferences&lt;/strong&gt; ကို ပြန်ပိတ်ထားလိုက်ပြီး &lt;strong&gt;Terminal&lt;/strong&gt; ကိုဖွင့်လိုက်ပါ။&lt;/p&gt;
-
-&lt;p&gt;ပေးထားတဲ့ command ကို Terminal ထဲကူးထည့်ပြီး Enter နှိပ်လိုက်ပါ။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;sh -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/osx/kmfix)&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix03.png&#34; alt=&#34;kmfix03&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ပုံထဲကအတိုင်း &lt;code&gt;Set Language as my_BU&lt;/code&gt; လို့ပေါ်လာရင်ရပါပြီ။&lt;/p&gt;
-
-&lt;p&gt;Input List ထဲ KeyMagic ကို ပြန်ထည့်ရုံပါပဲ။&lt;/p&gt;
-
-&lt;p&gt;ဒီတစ်ခါ &lt;strong&gt;Keyboard Preferences&lt;/strong&gt; ထဲပြန်ဝင်လိုက်ရင် KeyMagic ကို Burmese အောက်ရောက်နေတာတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;KeyMagic&lt;/strong&gt; ကိုရွေးပြီး &lt;strong&gt;Add&lt;/strong&gt; ကို နှိပ်လိုက်ပါ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix04.png&#34; alt=&#34;kmfix04&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;List ထဲ KeyMagic ကို ပြန်တွေ့ရပြီဆိုရင်တော့ ပြန်သုံးလို့ရပါပြီ။ Password ရိုက်မရတဲ့ပြဿနာရှင်းသွားပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix05.png&#34; alt=&#34;kmfix05&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;မပြောင်းချင်ဘူး မူလအတိုင်းပဲပြန်ထားချင်တယ်ဆိုရင်လည်း အပေါ်ကအတိုင်း KeyMagic ကို Input List ထဲကနေခဏထုတ်ပြီး ပေးထားတဲ့ Command ကို Terminal မှာ ပြန် Run လိုက်ပါ။&lt;/p&gt;
-
-&lt;p&gt;Rollback လုပ်မလားမေးရင် &lt;code&gt;y&lt;/code&gt; key ကို နှိပ်လိုက်ရုံပါပဲ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/kmfix/kmfix06.png&#34; alt=&#34;kmfix06&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ဒါကတော့ Script ရဲ့ Source ပါ။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;#!/bin/bash
-#This script is just a temporary fix for KeyMagic issue in Mac OS X login.
-#Written by NAING YE MINN &amp;lt;me@naingyeminn.com&amp;gt;
-
-FILE=&amp;quot;/Library/Input Methods/KeyMagic.app/Contents/Info.plist&amp;quot;
-isLang=$(cat &amp;quot;$FILE&amp;quot; | grep &amp;quot;my_BU&amp;quot; | wc -l)
-vcheck=$(cat &amp;quot;$FILE&amp;quot; | grep &amp;quot;1.5.1&amp;quot; | wc -l)
-
-km151() {
-	sudo sed -i.bak &#39;s/mul/my_BU/&#39; &amp;quot;$FILE&amp;quot;
-}
-
-km150() {
-	awk &#39;/KeyMagic_black.icns/ {print; print &amp;quot;\t&amp;lt;key&amp;gt;TISIntendedLanguage&amp;lt;/key&amp;gt;\n\t&amp;lt;string&amp;gt;my_BU&amp;lt;/string&amp;gt;&amp;quot;; next }1&#39; &amp;quot;$FILE.bak&amp;quot; &amp;gt; &amp;quot;$FILE&amp;quot;
-}
-
-setLang() {
-	if [ $vcheck == 1 ]
-	then
-		km151
-		echo &amp;quot;Set Language as my_BU&amp;quot;
-	else
-		if [ -f &amp;quot;$FILE.bak&amp;quot; ]
-		then
-			km150
-			echo &amp;quot;Set Language as my_BU&amp;quot;
-		else
-			cp &amp;quot;$FILE&amp;quot; &amp;quot;$FILE.bak&amp;quot;
-			km150
-			echo &amp;quot;Set Language as my_BU&amp;quot;
-		fi
-	fi
-}
-
-rollback() {
-	read -p &amp;quot;Want to rollback? [y/N]&amp;quot; -n 1 -r
-	if [[ $REPLY =~ ^[Yy]$ ]]
-	then
-		if [ $vcheck == 1 ]
-		then
-			sudo cp &amp;quot;$FILE.bak&amp;quot; &amp;quot;$FILE&amp;quot;
-		else
-			cp &amp;quot;$FILE.bak&amp;quot; &amp;quot;$FILE&amp;quot;
-		fi
-		echo &amp;quot;&amp;quot;
-		echo &amp;quot;Successfully rollback&amp;quot;
-	else
-		echo &amp;quot;&amp;quot;
-		echo &amp;quot;Did not rollback&amp;quot;
-	fi
-}
-
-if [ -f &amp;quot;$FILE&amp;quot; ]; then
-	if [ $isLang == 1 ]
-	then
-		echo &amp;quot;Language has already been set&amp;quot;
-		rollback
-	else
-		setLang
-	fi
-fi
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;အားလုံးပဲ အဆင်ပြေကြပါစေ။ :)&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Update: September 1 2016&lt;/p&gt;
-
-&lt;p&gt;အသစ်ထွက်လာတဲ့ KeyMagic 1.5.1 အတွက်ပါ ထပ်မံဖြည့်စွက်ပေးထားပါတယ်။ :)&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>Mac OS X စသုံးစဉ်က Unicode Keyboard အနေနဲ့အသုံးများတဲ့ KeyMagic ကိုပဲသုံးဖို့ကြိုးစားခဲ့ပါတယ်။ သို့ပေမယ့်ပြဿနာရှိတာက KeyMagic ကိုသုံးပြီးစာရိုက်နေရာကနေ ခဏနားလိုက်လို့ Screen Lock ဖြစ်သွားတာနဲ့ Password ပြန်ရိုက်ပြီး ပြန်ဝင်လို့မရတာပါ။ OS X အတွက် တစ်ခုတည်းသော Smart Keyboard ဖြစ်ပေမယ့် အဲဒီ ပြဿနာလေးတစ်ခုနဲ့တင် ဆက်မသုံးဖြစ်တော့တာပါ။ ကိုယ်တိုင်ပဲ Myanmar3 Layout အတိုင်း ရိုးရိုး Keyboard တစ်ခု Ukelele နဲ့လုပ်ပြီး သုံးဖြစ်ခဲ့တယ်။ အခုနောက်ပိုင်း အခြား တိုင်းရင်းသား ယူနီကုဒ် Keyboard Layout လေးတွေ လုပ်ပေးရင်းနဲ့မှ Keyboard တွေနဲ့ပတ်သက်ပြီးနည်းနည်းလေ့လာဖြစ်လာတယ်။ Smart Keyboard ဖြစ်တဲ့ Keyman ကလည်း OS X အတွက်ထွက်လာတော့ ရှိပြီးသား Keyboard Layout လေးတွေပြန်စုစည်းပြီး မရှိသေးတဲ့ ရှမ်း Keyboard Layout လေးပါထက်လုပ်ဖြစ်တယ်။ အခြား တိုင်းရင်းသားဘာသာစကားတွေအတွက်လည်း ထပ်လုပ်ဖို့ စိတ်ကူးရှိပေမယ့် Keyman ကလောလောဆယ်သာ Free ပေးထားပြီး နောက်ပိုင်း Commercial ပြောင်းသွားနိုင်တာမို့ သိပ်တော့အားမရဘူး။ ဒါပေမယ့် မနေ့ကတော့ OS X ရဲ့ KeyMagic မှာတက်နေတဲ့ ပြဿနာအတွက် tweak လုပ်လို့ရမယ့်နည်းလေးရှာတွေ့သွားတယ်။ နည်းလမ်းတကျ ဖြေရှင်းတာမဟုတ်ပေမယ့် အလုပ်ဖြစ်တဲ့အတွက် Share လိုက်ပါတယ်။ ဘာပဲဖြစ်ဖြစ် KeyMagic ကတော့ Open Source ဖြစ်တာရော၊ Keyboard Layout လည်းစုံစုံလင်လင်ရှိနှင့်ပြီးသားဆိုတော့ OS X User တွေအတွက် ပိုအဆင်ပြေလိမ့်မယ်ထင်ပါတယ်။</description>
     </item>
     
     <item>
       <title>MyWin for OSX</title>
       <link>http://naingyeminn.com/posts/mywin-for-osx/</link>
-      <pubDate>Sat, 30 Jul 2016 00:00:00 UTC</pubDate>
-      <author>Naing Ye` Minn</author>
+      <pubDate>Sat, 30 Jul 2016 00:00:00 +0000</pubDate>
+      
       <guid>http://naingyeminn.com/posts/mywin-for-osx/</guid>
-      <description>&lt;p&gt;လက်ရှိ ဇော်ဂျီအသုံးပြုနေသူတွေအနေနဲ့ Unicode ပြောင်းသုံးသင့်ကြောင်းတိုက်တွန်းတဲ့အခါတိုင်း ပြန်ထောက်လေ့ရှိတဲ့အချက်တွေထဲမှာ Unicode က ဇော်ဂျီလက်ကွက်နဲ့မတူတဲ့အတွက် အသစ်ဖြစ်နေတာရယ် နောက်ပြီး အဓိကပြစ်ချက်ကြီးလိုဖြစ်နေတဲ့ သဝေထိုးကိုနောက်မှရိုက်ရတာရယ်ကို အမြဲတွေ့ရပါတယ်။ ဒါကလည်း စရိုက်တဲ့အချိန်မှာသာအနည်းငယ်အခက်တွေ့နိုင်ပေမယ့် ရက်ပိုင်းအတွင်း အကျင့်ဖြစ်သွားနိုင်ပါတယ်။ သို့ပေမယ့် ဒီပြဿနာကို အစောကြီးကတည်းက ဖြေရှင်းပေးခဲ့ပြီးသာပါ။ မြန်မာနိုင်ငံသားတစ်ယောက်မဟုတ်သော်လည်း ကွန်ပျူတာသုံးမြန်မာစာစနစ်ကို အင်တိုက်အားတိုက်ကြိုးပမ်းဆောင်ရွက်ပေးခဲ့သော ကြွေလွင့်ပြီးဖြစ်တဲ့ &lt;a href=&#34;https://github.com/thanlwinsoft&#34;&gt;Keith&lt;/a&gt; ကိုအထူးပဲ လေးစား၊ ကျေးဇူးတင်မိပါတယ်။ အခု ဖော်ပြပေးမယ့် &lt;strong&gt;MyWin&lt;/strong&gt; ဆိုတာ သူ့လုပ်ဆောင်ချက်တွေထဲကတစ်ခုပါပဲ။ သူမရှိတဲ့နောက်ပိုင်း &lt;a href=&#34;http://thanlwinsoft.github.io/www.thanlwinsoft.org/index.html&#34;&gt;ThanLwinSoft&lt;/a&gt; ဆိုတဲ့ အဖွဲ့အစည်းဟာရပ်တန့်သွားခဲ့ပေမယ့် သူဆောင်ရွက်ခဲ့သမျှတွေက အခုချိန်ထိ အထောက်အကူပြုနေဆဲပါပဲ။&lt;/p&gt;
-
-&lt;p&gt;MyWin ကိုသုံးဖို့ Keyman ဆိုတဲ့ Freeware လိုအပ်ပါတယ်။ အလျှင်တုန်းကတော့ Keyman ကို Windows မှာပဲအသုံးပြုနိုင်တာပါ။ Mac OSX အတွက်တော့ အခု Beta Version ထုတ်ပေးထားပြီဖြစ်တဲ့အတွက် သုံးလိုကသုံးနိုင်ပြီဖြစ်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;အလျှင်ဦးဆုံး &lt;a href=&#34;http://keyman.com/macosx/&#34;&gt;Keyman for Mac OS X Beta&lt;/a&gt; ကို &lt;a href=&#34;http://keyman.com/macosx/download.php&#34;&gt;Download&lt;/a&gt; လုပ်လိုက်ပါ။&lt;/p&gt;
-
-&lt;p&gt;Download ကိုတော့ Email ဖြည့်စွက်ပေးမှသာ ပြုလုပ်နိုင်ပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx01.png&#34; alt=&#34;Download&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Keyman.dmg&lt;/strong&gt; နာမည်နှင့် ဖိုင်တစ်ဖိုင်ရရှိမှာဖြစ်ပါတယ်။ &lt;strong&gt;Double Click&lt;/strong&gt; နှိပ်ပြီးဖွင့်လိုက်ပါ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx02.png&#34; alt=&#34;Install&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ပုံထဲမှာ မြှားပြထားတဲ့အတိုင်း ဘယ်ဘက်ခြမ်းမှာရှိတဲ့ &lt;strong&gt;Keyman.app&lt;/strong&gt; ကို Drag ဆွဲပြီး ညာဘက်မှာရှိတဲ့ &lt;strong&gt;Input Methods&lt;/strong&gt; folder ထဲထည့်လိုက်ပါ။ ပြီးလျှင်တော့ &lt;strong&gt;Keyman.dmg&lt;/strong&gt; ကိုပြန်ပိတ်လိုက်လို့ရပါပြီ။&lt;/p&gt;
-
-&lt;p&gt;နောက်တစ်ဆင့်မသွားခင် &lt;strong&gt;MyWin Keyboard&lt;/strong&gt; ဖိုင်လေး &lt;a href=&#34;https://github.com/thanlwinsoft/thanlwinsoft.github.com/blob/master/www.thanlwinsoft.org/ThanLwinSoft/Downloads/Keyboards/myWin2.2.kmp&#34;&gt;Download&lt;/a&gt; လုပ်ထားရပါမယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;MyWin2.2.kmp&lt;/strong&gt; ဆိုတဲ့ဖိုင်လေးရပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;System Preferences&lt;/strong&gt; ထဲမှ &lt;strong&gt;Keyboard&lt;/strong&gt; ကိုဖွင့်ပါ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx03.png&#34; alt=&#34;System Preferences&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Input Sources&lt;/strong&gt; Tab ကိုရွေးပြီး အပေါင်းလက္ခဏာ သင်္ကေတလေးကိုနှိပ်ပါ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx04.png&#34; alt=&#34;Input Sources&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Search Box ထဲ &lt;em&gt;key&lt;/em&gt; လို့ရိုက်ထည့်လိုက်တာနဲ့ &lt;strong&gt;Keyman&lt;/strong&gt; ကိုတွေ့ရပါလမ့်မယ်။ ရွေးပြီး &lt;strong&gt;Add&lt;/strong&gt; လုပ်လိုက်ပါ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx05.png&#34; alt=&#34;Keyman&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Top Panel တွင် &lt;strong&gt;US&lt;/strong&gt; အလံ logo လေးပေါ်လာပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx06.png&#34; alt=&#34;Input1&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Click နှိပ်ပြီး ပေါ်လာတဲ့ Menu ထဲက &lt;strong&gt;Keyman&lt;/strong&gt; ကိုရွေးလိုက်ပါ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx07.png&#34; alt=&#34;Input2&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;US&lt;/strong&gt; logo နေရာမှာ &lt;strong&gt;Keyman&lt;/strong&gt; ရဲ့ logo အနေနဲ့ပြောင်းသွားပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx08.png&#34; alt=&#34;Input3&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Keyman&lt;/strong&gt; logo ကိုနောက်တစ်ကြိမ်ထပ်နှိပ်ပြီး ပေါ်လာတဲ့ Menu ထဲက &lt;strong&gt;Configuration&amp;hellip;&lt;/strong&gt; ကိုရွေးလိုက်ပါ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx09.png&#34; alt=&#34;Input4&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ပေါ်လာတဲ့ &lt;strong&gt;Keyman Configuration&lt;/strong&gt; ရဲ့ &lt;strong&gt;Keyboard Layouts&lt;/strong&gt; Tab ကိုသွားပါ။ &lt;strong&gt;Installed Keyboard&lt;/strong&gt; ဆိုတဲ့အောက်မှာ ဘာမှရှိဦးမှာမဟုတ်ပါဘူး။ အဲဒီအကွက်ထဲ နောက်ဆုံး Download ဆွဲခဲ့တဲ့ &lt;strong&gt;MyWin2.2.kmp&lt;/strong&gt; ဖိုင်ကို Drag ဆွဲပြီးထည့်လိုက်ပါ။ ပုံမှာပြထားတဲ့အတိုင်း my-Win2.2.4 Unicode 5.1 ဆိုပြီးဝင်သွားပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx10.png&#34; alt=&#34;MyWin&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;အပေါ်ပုံထဲမှာတွေ့ရတဲ့ &lt;strong&gt;Question Mark (?)&lt;/strong&gt; Button လေးကိုနှိပ်လိုက်လျှင်တော့ Keyboard Layout နဲ့ အသုံးပြုပုံ တွေကိုတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx11.png&#34; alt=&#34;Layout&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;နောက်ဆုံးအနေနဲ့လုပ်ပေးဖို့လိုတာကတော့ Keyboard ကို အလွယ်တကူ ပြောင်းလို့ရအောင် Shortcut Key ထည့်ပေးရတာပါ။ &lt;strong&gt;System Preferences&lt;/strong&gt; ရဲ့ &lt;strong&gt;Keyboard&lt;/strong&gt; ထဲမှာပါပဲ။ ပုံမှာပြထားတဲ့အတိုင်း &lt;strong&gt;Shortcuts&lt;/strong&gt; Tab ကိုသွားပြီး &lt;strong&gt;Input Sources&lt;/strong&gt; မှာ ကိုယ်နှစ်သက်ရာ Shortcut Key ကိုသတ်မှတ်ပေးလိုက်ပါ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/MyWin/osx12.png&#34; alt=&#34;Shortcut&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Unicode ကို ဇော်ဂျီလက်ကွက်နှင့် အနီးစပ်ဆုံးရိုက်နိုင်သလို သဝေထိုးနောက်မှရိုက်ရတဲ့ပြဿနာလည်းရှင်းသွားပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;p&gt;စမ်းကြည့်ရသလောက် Error ထူးထူးခြားခြားမတွေ့ရသေးပါဘူး။ အားလုံးပဲအဆင်ပြေကြပါစေ။&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Downloads:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://keyman.com/macosx/download.php&#34;&gt;Keyman for Mac OS X Beta&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/thanlwinsoft/thanlwinsoft.github.com/blob/master/www.thanlwinsoft.org/ThanLwinSoft/Downloads/Keyboards/myWin2.2.kmp&#34;&gt;MyWin2.2.kmp&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>လက်ရှိ ဇော်ဂျီအသုံးပြုနေသူတွေအနေနဲ့ Unicode ပြောင်းသုံးသင့်ကြောင်းတိုက်တွန်းတဲ့အခါတိုင်း ပြန်ထောက်လေ့ရှိတဲ့အချက်တွေထဲမှာ Unicode က ဇော်ဂျီလက်ကွက်နဲ့မတူတဲ့အတွက် အသစ်ဖြစ်နေတာရယ် နောက်ပြီး အဓိကပြစ်ချက်ကြီးလိုဖြစ်နေတဲ့ သဝေထိုးကိုနောက်မှရိုက်ရတာရယ်ကို အမြဲတွေ့ရပါတယ်။ ဒါကလည်း စရိုက်တဲ့အချိန်မှာသာအနည်းငယ်အခက်တွေ့နိုင်ပေမယ့် ရက်ပိုင်းအတွင်း အကျင့်ဖြစ်သွားနိုင်ပါတယ်။ သို့ပေမယ့် ဒီပြဿနာကို အစောကြီးကတည်းက ဖြေရှင်းပေးခဲ့ပြီးသာပါ။ မြန်မာနိုင်ငံသားတစ်ယောက်မဟုတ်သော်လည်း ကွန်ပျူတာသုံးမြန်မာစာစနစ်ကို အင်တိုက်အားတိုက်ကြိုးပမ်းဆောင်ရွက်ပေးခဲ့သော ကြွေလွင့်ပြီးဖြစ်တဲ့ Keith ကိုအထူးပဲ လေးစား၊ ကျေးဇူးတင်မိပါတယ်။ အခု ဖော်ပြပေးမယ့် MyWin ဆိုတာ သူ့လုပ်ဆောင်ချက်တွေထဲကတစ်ခုပါပဲ။ သူမရှိတဲ့နောက်ပိုင်း ThanLwinSoft ဆိုတဲ့ အဖွဲ့အစည်းဟာရပ်တန့်သွားခဲ့ပေမယ့် သူဆောင်ရွက်ခဲ့သမျှတွေက အခုချိန်ထိ အထောက်အကူပြုနေဆဲပါပဲ။
+MyWin ကိုသုံးဖို့ Keyman ဆိုတဲ့ Freeware လိုအပ်ပါတယ်။ အလျှင်တုန်းကတော့ Keyman ကို Windows မှာပဲအသုံးပြုနိုင်တာပါ။ Mac OSX အတွက်တော့ အခု Beta Version ထုတ်ပေးထားပြီဖြစ်တဲ့အတွက် သုံးလိုကသုံးနိုင်ပြီဖြစ်ပါတယ်။
+အလျှင်ဦးဆုံး Keyman for Mac OS X Beta ကို Download လုပ်လိုက်ပါ။</description>
     </item>
     
     <item>
       <title>NX-OS Titanium Emulator on VMware Fusion</title>
       <link>http://naingyeminn.com/posts/nx-os-titanium-on-vmware-fusion/</link>
-      <pubDate>Sat, 17 Oct 2015 00:00:00 UTC</pubDate>
-      <author>Naing Ye` Minn</author>
+      <pubDate>Sat, 17 Oct 2015 00:00:00 +0000</pubDate>
+      
       <guid>http://naingyeminn.com/posts/nx-os-titanium-on-vmware-fusion/</guid>
-      <description>&lt;p&gt;ဒီ Post လေးကတော့ Mac သုံးတဲ့ Network Admin/Engineer တွေအတွက်ပါ။ Cisco ရဲ့ Nexus Switch တွေကိုလေ့လာဖို့ &lt;a href=&#34;http://depositfiles.com/files/wxeo6gwo9&#34;&gt;NX-OS Titanium Emulator&lt;/a&gt; ကို OS X ပေါ်မှာ Setup လုပ်တဲ့နည်းလမ်းလေးပဲဖြစ်ပါတယ်။ VMware ရဲ့ VMX format နဲ့ Export ထုတ်ပေးထားတဲ့ ဒီ Emulator လေးကို များသောအားဖြင့် Windows ပေါ်မှာပဲ VMPlayer, VMware Workstation တို့နဲ့သုံးလေ့၊ စမ်းလေ့ရှိကြပါတယ်။ Internet မှာရှိတဲ့ Blog တွေမှာလည်း ရှာတွေ့ရသလောက်က Windows ပေါ် ဘယ်လို Setup လုပ်ရတယ်ဆိုတာကိုပဲ ရေးထားကြတာပါ။ Mac OS X မှာရှိတဲ့ VMware Fusion နဲ့ ဘယ်လိုသုံးရတယ်ဆိုတာကိုတော့ လုံးဝကိုရှာမရပါဘူး။ VMware Product ချင်းအတူတူဖြစ်တဲ့အတွက် ပြသနာမရှိလောက်ဘူးလို့ ထင်ရပေမယ့် တကယ်တမ်း Setup လုပ်တဲ့အခါကျ အခက်အခဲလေးတွေရှိပါတယ်။ အဲဒီအတွက်ကြောင့် အားလုံးအဆင်ပြေပြေ Setup လုပ်နိုင်စေဖို့ ဒီ post လေးရေးလိုက်ခြင်းဖြစ်ပါတယ်။ Setup လုပ်တဲ့ နည်းလမ်းကတော့ -&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ပထမဆုံးအနေနဲ့ NX-OS Titanium Emulator ကို Download ရယူလိုက်ပါ။&lt;/li&gt;
-&lt;li&gt;ရလာတဲ့ RAR ဖိုင်ကို Extract လုပ်လိုက်ပါ။ ပုံမှာမြင်တွေ့ရတဲ့အတိုင်း ဖိုင် ၅ဖိုင်ထွက်လာပါလိမ့်မယ်။
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-1.png&#34; alt=&#34;NX-OS-1&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;N7K-2.vmx ဖိုင်လေးကို Double-Click နှိပ်လိုက်ပါ။&lt;/li&gt;
-&lt;li&gt;VM ကို Upgrade လုပ်မလား မေးခဲ့လျှင် Upgrade ကိုနှိပ်ပါ။
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-2.png&#34; alt=&#34;NX-OS-2&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;Compatibility Warning တက်လာခဲ့လျှင် OK ကိုပဲနှိပ်လိုက်ပါ။
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-3.png&#34; alt=&#34;NX-OS-3&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;I Copied It ကိုနှိပ်ပါ။
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-4.png&#34; alt=&#34;NX-OS-4&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;ပုံထဲကအတိုင်း WARNING ပေါ်ပြီး ရပ်နေပါလိမ့်မယ်။
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-5.png&#34; alt=&#34;NX-OS-5&#34; /&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;VM ကို Shutdown ပြန်လုပ်လိုက်ပါ။
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-6.png&#34; alt=&#34;NX-OS-6&#34; /&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-7.png&#34; alt=&#34;NX-OS-7&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;အခု VM ကို အနည်းငယ် Edit လုပ်ရပါမယ်။ ဘာကြောင့်လဲဆိုတော့ မူရင်း vmx ဖိုင်မှာ Serial Port အတွက် ရေးထားတဲ့ config က VMware Fusion မှာ အလုပ်မလုပ်လို့ပါ။&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;အဲဒီအတွက် VM ရဲ့ Setting ကိုဖွင့်လိုက်ပါ။
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-8.png&#34; alt=&#34;NX-OS-8&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Serial Port ကိုနှိပ်လိုက်ပါ။
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-9.png&#34; alt=&#34;NX-OS-9&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Remove Serial Port ကိုနှိပ်ပြီး Remove လုပ်လိုက်ပါ။
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-10.png&#34; alt=&#34;NX-OS-10&#34; /&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-11.png&#34; alt=&#34;NX-OS-11&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Add Device ကိုနှိပ်ပါ။
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-12.png&#34; alt=&#34;NX-OS-12&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Serial Port ကိုရွေးလိုက်ပါ။
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-13.png&#34; alt=&#34;NX-OS-13&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Save As မှာ &lt;strong&gt;Serial_Port&lt;/strong&gt; လို့နာမည်ပေးပြီး Save လိုက်ပါ။
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-14.png&#34; alt=&#34;NX-OS-14&#34; /&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-15.png&#34; alt=&#34;NX-OS-15&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;အခု အသစ်ပြုလုပ်ထားတဲ့ Serial_Port ရဲ့ config ကို အနည်းငယ်ပြင်ပါမယ်။ ပုံထဲကအတိုင်း N7K-2.vmx ဆိုတဲ့ ဖိုင်လေးကို Right-Click နှိပ်ပြီး Open With မှာ TextEdit.app ကိုရွေးလိုက်ပါ။&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-16.png&#34; alt=&#34;NX-OS-16&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;အောက်မှာပေးထားတဲ့ config နှစ်ကြောင်းကို Copy ကူးလိုက်ပါ။&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;serial0.fileType = &amp;quot;network&amp;quot;
-serial0.fileName = &amp;quot;telnet://localhost:9001&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;vmx config ဖိုင်ထဲက Serial0 နဲ့ဆိုင်တဲ့ နှစ်ကြောင်းကို Select လုပ်ပြီး ကူထားတဲ့ Config နှစ်ကြောင်းနဲ့ Replace လုပ်ပါ။ ပြီးလျှင် Save လိုက်ပါ။ ပြန်ပြင်မရိုက်ပါနဲ့။ ကိုယ်တိုင်ပြန်ပြင်ရိုက်လိုက်လျှင် Double Quote &lt;code&gt;&amp;quot;&lt;/code&gt; ရဲ့ပုံစံ ပြောင်းသွားမှာဖြစ်တဲ့အတွက် VM Run တဲ့အချိန်မှာ Serial Port ကို Connect လုပ်မရတဲ့ပြဿနာ ကြုံရတာကြောင့်ပါ။&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;serial0.fileType = &amp;quot;file&amp;quot;
-serial0.fileName = &amp;quot;/[path_to_titanium_directory]/Serial_Port&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-17.png&#34; alt=&#34;NX-OS-17&#34; /&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-18.png&#34; alt=&#34;NX-OS-18&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ပြင်ပြီးပြီဆိုလျှင်တော့ Save လုပ်ပြီး VM ကို ပြန် Run လိုက်ပါ။ အပေါ်မှာတွေ့မြင်ခဲ့ရတဲ့အတိုင်း Warning Message ပြပြီးရပ်နေပါလိမ့်မယ်။ ပြဿနာမရှိပါဘူး ဒီတိုင်းထားလိုက်ပါ။&lt;/li&gt;
-&lt;li&gt;Terminal တစ်ခုဖွင့်ပြီး telnet နဲ့ login ဝင်ပါမယ်။&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ telnet localhost 9001
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-19.png&#34; alt=&#34;NX-OS-19&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Boot Loading ပြီးသွားပြီဆိုလျှင်တော့ Login Prompt ကိုတွေ့ရပါမယ်။ ပေးထားတဲ့အတိုင်း Username နဲ့ Password ရိုက်ထည့်ပေးလိုက်ပြီဆိုလျှင်တော့ Privileged Mode ကို Access ရပြီဖြစ်ပါတယ်။
-&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/NX-OS/NX-OS-20.png&#34; alt=&#34;NX-OS-20&#34; /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;အခုလောက်ဆိုလျှင်တော့ မိမိစမ်းသပ်လိုရာ Lab ကို တည်ဆောက်လို့ရနိုင်ပြီထင်ပါတယ်။&lt;/p&gt;
-</description>
+      <description>ဒီ Post လေးကတော့ Mac သုံးတဲ့ Network Admin/Engineer တွေအတွက်ပါ။ Cisco ရဲ့ Nexus Switch တွေကိုလေ့လာဖို့ NX-OS Titanium Emulator ကို OS X ပေါ်မှာ Setup လုပ်တဲ့နည်းလမ်းလေးပဲဖြစ်ပါတယ်။ VMware ရဲ့ VMX format နဲ့ Export ထုတ်ပေးထားတဲ့ ဒီ Emulator လေးကို များသောအားဖြင့် Windows ပေါ်မှာပဲ VMPlayer, VMware Workstation တို့နဲ့သုံးလေ့၊ စမ်းလေ့ရှိကြပါတယ်။ Internet မှာရှိတဲ့ Blog တွေမှာလည်း ရှာတွေ့ရသလောက်က Windows ပေါ် ဘယ်လို Setup လုပ်ရတယ်ဆိုတာကိုပဲ ရေးထားကြတာပါ။ Mac OS X မှာရှိတဲ့ VMware Fusion နဲ့ ဘယ်လိုသုံးရတယ်ဆိုတာကိုတော့ လုံးဝကိုရှာမရပါဘူး။ VMware Product ချင်းအတူတူဖြစ်တဲ့အတွက် ပြသနာမရှိလောက်ဘူးလို့ ထင်ရပေမယ့် တကယ်တမ်း Setup လုပ်တဲ့အခါကျ အခက်အခဲလေးတွေရှိပါတယ်။ အဲဒီအတွက်ကြောင့် အားလုံးအဆင်ပြေပြေ Setup လုပ်နိုင်စေဖို့ ဒီ post လေးရေးလိုက်ခြင်းဖြစ်ပါတယ်။ Setup လုပ်တဲ့ နည်းလမ်းကတော့ -</description>
     </item>
     
     <item>
       <title>Myanmar Unicode Keyboard for Mac OS X (Yosemite)</title>
       <link>http://naingyeminn.com/posts/myanmar-unicode-keyboard-for-yosemite/</link>
-      <pubDate>Fri, 05 Dec 2014 00:00:00 UTC</pubDate>
-      <author>Naing Ye` Minn</author>
+      <pubDate>Fri, 05 Dec 2014 00:00:00 +0000</pubDate>
+      
       <guid>http://naingyeminn.com/posts/myanmar-unicode-keyboard-for-yosemite/</guid>
-      <description>&lt;p&gt;Mac OS X Yosemite စသုံးတော့ Unicode အတွက် keyboard ရှာဖြစ်တယ်။ ပါလာတဲ့ Default မြန်မာစာ လက်ကွက်က ပုံမှန်ရိုက်နေကျ မြန်မာ unicode keyboard layout အတိုင်မဟုတ်တော့ ရိုက်ရတာအဆင်မပြေဘူး။ ဒါနဲ့ KeyMagic ပဲသုံးမယ်လေဆိုပြီး install လုပ်လိုက်တယ်။ စာရိုက်ရတာတော့အဆင်ပြေပါတယ်။ ဒါပေမယ့် မြန်မာလိုရိုက်နေရာကနေ ခဏနားလိုက်လို့ Screen Lock ကျသွားရင် ပြန်ဝင်ဖို့ password ရိုက်မရတော့ဘူး။ Guest Account ထဲဝင်ပြီးပြန်ထွက်မှ password ပြန်ရိုက်လို့ရတယ်။ KeyMagic ရေးတဲ့ သန့်သက် ကိုမေးကြည့်တော့ အဲဒါက Yosemite ရဲ့ Bug ဆိုတော့ ဘာမှလုပ်ပေးလို့မရပါဘူးတဲ့။ အမြဲလိုလိုအဲ့လိုကြီးဝင်နေရတာ သိပ်မဟန်တာကြောင့် Keyboard Input Source ဘယ်လိုလုပ်ရမလဲဆိုပြီး ရှာကြည့်ဖြစ်တော့ လွယ်လွယ်ကူကူပါပဲ အဖြေတန်းတွေ့တယ်။ &lt;a href=&#34;http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;amp;id=ukelele&#34;&gt;Ukelele&lt;/a&gt; ဆိုတဲ့ software လေးပါ။ အဲဒါလေးနဲ့ ရှိနေတဲ့ Keyboard Layout တွေကို စိတ်ကြိုက် ပြင်လို့ရတယ်ဆိုတော့ Default Myanmar Keyboard ကို Myanmar3 Layout အတိုင်းဖြစ်အောင် ပြန်ပြီးပြင်လိုက်တယ်။ ရိုက်နေကျအတိုင်းဖြစ်သွားတော့ တော်တော်လေးအဆင်ပြေသွားတယ်။ KeyMagic မှာလို password ရိုက်မရတာမျိုးလဲမရှိတော့ဘူး။ အဲဒါကြောင့် Facebook က Myanmar Unicode Area မှာ တင်ပြီး share ပေးထားလိုက်တယ်။ ဒါပေမယ့် Facebook က ပြန်ရှာရခက်တာကြောင့် ဒီမှာထပ်ရေးပြီး Share ပေးပါ့မယ်။&lt;/p&gt;
-
-&lt;p&gt;Installation ကတော့ ခက်ခက်ခဲခဲကြီးမဟုတ်ပါဘူး။ ပေးထားတဲ့ zip ဖိုင်လေးကို download ဆွဲ double click နှိပ်ပြီး extract လုပ်။ ထွက်လာတဲ့ ဖိုင်ကို &lt;code&gt;/Library/Keyboard Layouts&lt;/code&gt; ဆိုတဲ့ folder ထဲသွားထည့်ပေးလိုက်ရုံပါပဲ။ ပြီးလျှင်တော့ ပုံမှန်အတိုင်း System Preferences &amp;gt; Keyboard &amp;gt; Input Sources ကနေ ရွေးပြီး သုံးနိုင်ပါပြီ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/osx/ScreenShots/Screenshot%202014-12-05%2013.47.45.png&#34; alt=&#34;Myanmar3 Layout&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Keyboard Kayout ကိုတော့ Dropbox မှာတင်ပေးထားပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;Download: &lt;a href=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/osx/Myanmar3%20-%20QWERTY.bundle.zip&#34;&gt;Myanmar3 QWERTY Keyboard&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;DMG Download: &lt;a href=&#34;https://github.com/naingyeminn/nym_blog_data/blob/master/osx/Myanmar%20Uni-KB%20v1.0.dmg&#34;&gt;Myanmar Uni-KB v1.0.dmg&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Mac OS X Yosemite စသုံးတော့ Unicode အတွက် keyboard ရှာဖြစ်တယ်။ ပါလာတဲ့ Default မြန်မာစာ လက်ကွက်က ပုံမှန်ရိုက်နေကျ မြန်မာ unicode keyboard layout အတိုင်မဟုတ်တော့ ရိုက်ရတာအဆင်မပြေဘူး။ ဒါနဲ့ KeyMagic ပဲသုံးမယ်လေဆိုပြီး install လုပ်လိုက်တယ်။ စာရိုက်ရတာတော့အဆင်ပြေပါတယ်။ ဒါပေမယ့် မြန်မာလိုရိုက်နေရာကနေ ခဏနားလိုက်လို့ Screen Lock ကျသွားရင် ပြန်ဝင်ဖို့ password ရိုက်မရတော့ဘူး။ Guest Account ထဲဝင်ပြီးပြန်ထွက်မှ password ပြန်ရိုက်လို့ရတယ်။ KeyMagic ရေးတဲ့ သန့်သက် ကိုမေးကြည့်တော့ အဲဒါက Yosemite ရဲ့ Bug ဆိုတော့ ဘာမှလုပ်ပေးလို့မရပါဘူးတဲ့။ အမြဲလိုလိုအဲ့လိုကြီးဝင်နေရတာ သိပ်မဟန်တာကြောင့် Keyboard Input Source ဘယ်လိုလုပ်ရမလဲဆိုပြီး ရှာကြည့်ဖြစ်တော့ လွယ်လွယ်ကူကူပါပဲ အဖြေတန်းတွေ့တယ်။ Ukelele ဆိုတဲ့ software လေးပါ။ အဲဒါလေးနဲ့ ရှိနေတဲ့ Keyboard Layout တွေကို စိတ်ကြိုက် ပြင်လို့ရတယ်ဆိုတော့ Default Myanmar Keyboard ကို Myanmar3 Layout အတိုင်းဖြစ်အောင် ပြန်ပြီးပြင်လိုက်တယ်။ ရိုက်နေကျအတိုင်းဖြစ်သွားတော့ တော်တော်လေးအဆင်ပြေသွားတယ်။ KeyMagic မှာလို password ရိုက်မရတာမျိုးလဲမရှိတော့ဘူး။ အဲဒါကြောင့် Facebook က Myanmar Unicode Area မှာ တင်ပြီး share ပေးထားလိုက်တယ်။ ဒါပေမယ့် Facebook က ပြန်ရှာရခက်တာကြောင့် ဒီမှာထပ်ရေးပြီး Share ပေးပါ့မယ်။</description>
     </item>
     
   </channel>

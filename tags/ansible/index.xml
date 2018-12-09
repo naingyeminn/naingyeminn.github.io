@@ -1,191 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Ansible on Naing Ye` Minn </title>
+    <title>Ansible on Naing Ye` Minn</title>
     <link>http://naingyeminn.com/tags/ansible/</link>
+    <description>Recent content in Ansible on Naing Ye` Minn</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Naing Ye` Minn</author>
-    <updated>2018-12-03 00:00:00 &#43;0000 UTC</updated>
+    <lastBuildDate>Mon, 03 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://naingyeminn.com/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Optimizing Ansible Playbooks: Delegation</title>
       <link>http://naingyeminn.com/posts/ansible-delegation/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 UTC</pubDate>
-      <author>Naing Ye` Minn</author>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
       <guid>http://naingyeminn.com/posts/ansible-delegation/</guid>
-      <description>&lt;p&gt;ဒီတစ်ခါတော့ Ansible ကိုလေ့လာနေကြတဲ့သူတွေအတွက် ကောင်းမွန်တဲ့ &lt;a href=&#34;https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html&#34;&gt;Ansible Playbook&lt;/a&gt; တစ်ခုရဖို့ Optimize လုပ်တဲ့အခါ သိထားသင့်တဲ့ နည်းလမ်းလေးတွေကိုမျှဝေချင်ပါတယ်။ ပထမဦးဆုံးအနေနဲ့ သိစေချင်တဲ့အချက်ကတော့ Delegation ပဲဖြစ်ပါတယ်။ မြန်မာလိုဆီလျော်အောင်ပြောမယ်ဆိုရင်တော့ တာဝန်ပေးတယ်လို့ဆိုရပါလိမ့်မယ်။ Ansible Playbook ဆိုတာ တကယ်တော့ ဆောင်ရွက်စေချင်တဲ့ လုပ်ငန်းဆောင်တာ (Task) တွေကို အစီအစဉ်တကျ ရေးသားထားတဲ့ စာသားဖိုင် (Text File) လေးတွေပါ။ ဒီ Task တွေကို ဘယ် server၊ ဘယ် device မှာလုပ်ဆောင်ခိုင်းမယ်ဆိုတာကို &lt;code&gt;hosts&lt;/code&gt; ဆိုတဲ့ keyword နဲ့ကြေငြာပေးရပါတယ်။ Playbook ရေးကြည့်ဖူးတဲ့သူတွေဆိုရင်သိပါလိမ့်မယ်။ ဥပမာအနေနဲ့ ဒီ Playbook ကိုကြည့်ကြည့်ပါ။&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/naingyeminn/65e5c39d109bd910d13c0a69aa184e58.js?file=delegation1.yml&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;code&gt;play - one&lt;/code&gt; ဆိုတဲ့ Play တစ်ခုကနေ &lt;code&gt;vm01.example.com&lt;/code&gt; ဆိုတဲ့ Host ပေါ်မှာ task တစ်ခု run ခိုင်းထားတာပါ။ အဓိကသတိထားမိစေချင်တာက &lt;code&gt;myvar&lt;/code&gt; နဲ့ &lt;code&gt;ansible_nodename&lt;/code&gt; ဆိုတဲ့ Variable တွေပဲဖြစ်ပါတယ်။ &lt;code&gt;myvar&lt;/code&gt; ကတော့ &lt;code&gt;play - one&lt;/code&gt; ဆိုတဲ့ play ရဲ့ variable ဖြစ်ပြီး &lt;code&gt;ansible_nodename&lt;/code&gt; ကတော့ vm01.example.com ရဲ့ &lt;a href=&#34;https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#variables-discovered-from-systems-facts&#34;&gt;Facts&lt;/a&gt; ထဲက variable ကိုဖော်ပြခိုင်းထားတာပါ။ ထွက်လာတဲ့ output ကိုကြည့်ကြည့်ပါ။&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/naingyeminn/65e5c39d109bd910d13c0a69aa184e58.js?file=delegation1.output&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;အရင်ဦးဆုံး vm01.example.com ရဲ့ Facts တွေကို ရယူပါတယ်။ ပြီးမှ &lt;code&gt;task - one&lt;/code&gt; ဆိုတဲ့ task ကို run ပါတယ်။ task ရဲ့ result ထဲမှာတွေ့ရတဲ့ &lt;code&gt;ok: [vm01.example.com]&lt;/code&gt; ဆိုတဲ့ message က vm01.example.com ပေါ်မှာ task တွေ လုပ်ဆောင်သွားတယ်ဆိုတာကို ဖော်ပြနေတာဖြစ်ပြီး &lt;code&gt;myvar&lt;/code&gt; နဲ့ &lt;code&gt;ansible_nodename&lt;/code&gt; ဆိုတဲ့ variable တွေရဲ့ value တွေအနေနဲ့ကတော့ &lt;code&gt;variable one&lt;/code&gt; နဲ့ &lt;code&gt;vm01.example.com&lt;/code&gt; ဆိုပြီးတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;p&gt;ဒီတစ်ခါ လက်ရှိ Playbook ထဲမှာပဲ နောက်ထပ် Play တစ်ခု ထပ်ထည့်ကြည့်ပါမယ်။&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/naingyeminn/65e5c39d109bd910d13c0a69aa184e58.js?file=delegation2.yml&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;vm02.example.com ဆိုတဲ့ host ကို delegate လုပ်ပြီး ထပ်ဖြည့်လိုက်တဲ့ &lt;code&gt;play - two&lt;/code&gt; ဆိုတဲ့ Play မှာတော့ &lt;code&gt;myvar&lt;/code&gt; ရဲ့ value က &lt;code&gt;variable two&lt;/code&gt; ဖြစ်ပြီး &lt;code&gt;ansible_nodename&lt;/code&gt; ကတော့ &lt;code&gt;vm02.example.com&lt;/code&gt; ဖြစ်နေတာတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/naingyeminn/65e5c39d109bd910d13c0a69aa184e58.js?file=delegation2.output&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;ဒီလို Play နှစ်ခုခွဲရေးခြင်းအားဖြင့် မတူညီတဲ့ &lt;a href=&#34;https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html#hosts-and-groups&#34;&gt;Host တွေ Host Group&lt;/a&gt; တွေမှာ မတူညီတဲ့ task တွေကို Playbook တစ်ခုတည်းကနေလုပ်ဆောင်နိုင်စေမှာဖြစ်ပါတယ်။ Play တစ်ခုတည်းနဲ့သာဆိုရင် အဲဒီ Play အတွက် delegate လုပ်လိုက်တဲ့ Host ဒါမှမဟုတ် Host Group တစ်ခုအတွက် တူညီတဲ့ task တွေကိုပဲ ဆောင်ရွက်ပေးနိုင်မှာဖြစ်ပါတယ်။ ဒါပေမဲ့ တချို့အခြေအနေတွေမှာတော့ Playbook တစ်ခုထဲ Play တွေခွဲရေးရုံနဲ့အဆင်မပြေနိုင်တဲ့အခြေအနေတွေရှိပါတယ်။ အဓိကက delegate လုပ်နေတဲ့ Host၊ တနည်းအားဖြင့် &lt;code&gt;hosts&lt;/code&gt; keyword နဲ့ကြေငြာထားတဲ့ Host ရဲ့ Facts ကို အခြား host တစ်ခုမှာ run မယ့် Task ထဲထည့်သွင်းအသုံးပြုချင်တယ်ဆိုရင် တော့ Play ခွဲရေးတဲ့နည်းကအဆင်မပြေတော့ပါဘူး။ Play တစ်ခုရဲ့ Facts တွေကို အဲ့ဒီ Play အတွင်းမှာရှိတဲ့ Task တွေကပဲအသုံးပြုနိုင်တာကြောင့်ပါ။ အပေါ်ကနမူနာမှာတွေ့ရတဲ့အတိုင်း &lt;code&gt;ansible_nodename&lt;/code&gt; ဆိုတဲ့ variable အနေနဲ့ name တူသည့်တိုင်အောင် Play မတူတဲ့ အတွက် သက်ဆိုင်ရာ Host ရဲ့ Facts ပေါ်မူတည်ပြီး value တွေမတူတော့တာကိုမြင်တွေ့ရတာပဲဖြစ်ပါတယ်။ ဒါကြောင့် ပထမ Play ရဲ့ host မှာရှိတဲ့ &lt;code&gt;ansible_nodename&lt;/code&gt; ဆိုတဲ့ Fact variable ကို ဒုတိယ Play ရဲ့ host မှာဆက်သုံးနိုင်စေဖို့ရာ အလွယ်ကူဆုံးကတော့ အဲဒီ Play ၂ခုကို တစ်ခုတည်းအနေနဲ့ ပေါင်းလိုက်ပြီး &lt;code&gt;delegate_to&lt;/code&gt; ဆိုတဲ့ keyword ကိုသုံးလိုက်တဲ့နည်းပဲဖြစ်ပါတယ်။&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/naingyeminn/65e5c39d109bd910d13c0a69aa184e58.js?file=delegation3.yml&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;ဒီ Playbook မှာတော့ &lt;code&gt;play - one&lt;/code&gt; ဆိုတဲ့ Play တစ်ခုတည်းပါပြီး သူ့ထဲမှာမှ &lt;code&gt;task - one&lt;/code&gt; နဲ့ &lt;code&gt;task - two&lt;/code&gt; ဆိုပြီး task နှစ်ခုခွဲထားပါတယ်။&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/naingyeminn/65e5c39d109bd910d13c0a69aa184e58.js?file=delegation3.output&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;ဒီ result ကို Play နှစ်ခုခွဲရေးထားတဲ့ Playbook ရဲ့ result နဲ့ ယှဉ်ကြည့်ပါ။ Gathering Facts အနေနဲ့ vm01.example.com အတွက်သာတွေ့ရမှာဖြစ်ပြီး task နှစ်ခုလုံးမှာပေးထားတဲ့ &lt;code&gt;ansible_nodename&lt;/code&gt; ဆိုတဲ့ Fact variable ရဲ့ value က vm01.example.com ပဲဖြစ်နေပါလိမ့်မယ်။ ဒါပေမဲ့ &lt;code&gt;task - two&lt;/code&gt; အနေနဲ့ တကယ်တမ်း run သွားတာက vm02.example.com ပေါ်မှာဖြစ်တယ် ဆိုတာကို &lt;code&gt;ok: [vm01.example.com -&amp;gt; vm02.example.com]&lt;/code&gt; ဆိုတဲ့ output နဲ့ဖေါ်ပြပေးနေတာကိုတွေ့ရမှာပဲဖြစ်ပါတယ်။ ပိုပြီး မြင်သာချင်တယ်ဆိုရင်တော့ အောက်မှာဖော်ပြထားတဲ့ Playbook နဲ့ထပ်မံစမ်းကြည့်နိုင်ပါတယ်။&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/naingyeminn/65e5c39d109bd910d13c0a69aa184e58.js?file=delegation-test.yml&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;အဓိကကတော့ လက်ရှိ run နေတဲ့ Play ထဲမှာအကြုံးမဝင်တဲ့ အခြား Host/Host Group မှာ task တချို့ကို လှမ်းပြီး run စေချင်တယ်ဆိုရင်တော့ Play တစ်ခုထပ်ခွဲစရာမလိုပဲ &lt;code&gt;delegate_to&lt;/code&gt; နဲ့ run ခိုင်းလို့ရတယ်ဆိုတာရယ်၊ Play နဲ့သတ်ဆိုင်တဲ့ Facts တွေကို ဆက်လက်အသုံးပြုနိုင်မှာဖြစ်တယ်ဆိုတာရယ်ကို သိထားခြင်းအားဖြင့် လိုအပ်သလို ထည့်သွင်းအသုံးပြုနိုင်စေဖို့ပဲဖြစ်ပါတယ်။ &lt;code&gt;delegate_to&lt;/code&gt; keyword မသုံးလဲ အလုပ်ဖြစ်တဲ့နည်းလမ်းတွေရှိပေမဲ့ သုံးလိုက်ခြင်းအားဖြင့် ကိုယ့်ရဲ့ Playbook မှာမလိုအပ်တဲ့ ရှုပ်ထွေးသွားစေနိုင်တဲ့ task တွေကိုလျှော့ချနိုင်သွားမှာဖြစ်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;Reference: &lt;a href=&#34;https://docs.ansible.com/ansible/latest/user_guide/playbooks_delegation.html&#34;&gt;Playbooks_Delegation&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>ဒီတစ်ခါတော့ Ansible ကိုလေ့လာနေကြတဲ့သူတွေအတွက် ကောင်းမွန်တဲ့ Ansible Playbook တစ်ခုရဖို့ Optimize လုပ်တဲ့အခါ သိထားသင့်တဲ့ နည်းလမ်းလေးတွေကိုမျှဝေချင်ပါတယ်။ ပထမဦးဆုံးအနေနဲ့ သိစေချင်တဲ့အချက်ကတော့ Delegation ပဲဖြစ်ပါတယ်။ မြန်မာလိုဆီလျော်အောင်ပြောမယ်ဆိုရင်တော့ တာဝန်ပေးတယ်လို့ဆိုရပါလိမ့်မယ်။ Ansible Playbook ဆိုတာ တကယ်တော့ ဆောင်ရွက်စေချင်တဲ့ လုပ်ငန်းဆောင်တာ (Task) တွေကို အစီအစဉ်တကျ ရေးသားထားတဲ့ စာသားဖိုင် (Text File) လေးတွေပါ။ ဒီ Task တွေကို ဘယ် server၊ ဘယ် device မှာလုပ်ဆောင်ခိုင်းမယ်ဆိုတာကို hosts ဆိုတဲ့ keyword နဲ့ကြေငြာပေးရပါတယ်။ Playbook ရေးကြည့်ဖူးတဲ့သူတွေဆိုရင်သိပါလိမ့်မယ်။ ဥပမာအနေနဲ့ ဒီ Playbook ကိုကြည့်ကြည့်ပါ။
+ play - one ဆိုတဲ့ Play တစ်ခုကနေ vm01.example.com ဆိုတဲ့ Host ပေါ်မှာ task တစ်ခု run ခိုင်းထားတာပါ။ အဓိကသတိထားမိစေချင်တာက myvar နဲ့ ansible_nodename ဆိုတဲ့ Variable တွေပဲဖြစ်ပါတယ်။ myvar ကတော့ play - one ဆိုတဲ့ play ရဲ့ variable ဖြစ်ပြီး ansible_nodename ကတော့ vm01.</description>
     </item>
     
     <item>
       <title>Managing RHEL5 with Ansible</title>
       <link>http://naingyeminn.com/posts/managing-rhel5-with-ansible/</link>
-      <pubDate>Wed, 21 Nov 2018 00:00:00 UTC</pubDate>
-      <author>Naing Ye` Minn</author>
+      <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate>
+      
       <guid>http://naingyeminn.com/posts/managing-rhel5-with-ansible/</guid>
-      <description>&lt;p&gt;လွန်ခဲ့တဲ့ တစ်ပတ်လောက်က မိတ်ဆွေအကိုတွေနဲ့အလုပ်ကိစ္စစကားထိုင်ပြောနေရင်း Ansible အကြောင်းရောက်သွားတယ်။ သူတို့ရုံးရဲ့ Server တွေကို Ansible နဲ့ စမ်းပြီး Manage လုပ်ကြည့်နေတာမှာ ကြုံရတဲ့ ပြဿနာတစ်ခုကိုပြောပြတယ်။ သုံးထားတဲ့ Server OS တွေက RHEL 5, 6, 7 အစုံဖြစ်နေတာကြောင့် Playbook တစ်ခုတည်းနဲ့ ပေါင်းပြီး run လိုက်တဲ့အခါကျ version အနိမ့်ဖြစ်တဲ့ RHEL 5 မှာအဆင်မပြေပဲ error တွေတက်တာပါ။ အဲ့ဒီတုန်းကတော့ connection type (Paramiko ကိုသုံးဖို့လိုတာ) ကြောင့်လို့ပဲထင်လိုက်မိတာ တကယ်တမ်းသေချာအောင် လိုက်ရှာဖတ်ကြည့်တော့မှ Ansible Version နဲ့ Managed Node ရဲ့ Python Version နဲ့မကိုက်တာကြောင့်မှန်းသိရတယ်။ အဲ့တော့ ဒီပြဿနာကိုဖြေရှင်းဖို့က နည်းလမ်း သုံးခုတော့ရှိပါတယ်။ (၁) Ansible Version အနိမ့်နဲ့ Manage လုပ်ရင်လုပ်၊ (၂) Managed Node ရဲ့ Python ကို Version မြှင့်ရင်မြှင့်၊ (၃) Ansible ရဲ့ Python မလိုတဲ့ RAW Module နဲ့ Script Module ကိုသုံးရင်သုံး၊ ဒီနည်းလမ်းတွေနဲ့ဖြေရှင်းလို့ရပါတယ်။&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;(၁)&lt;/strong&gt; Ansible Version အနိမ့်နဲ့ Manage လုပ်ဖို့ဆိုတာမှာ RHEL5 လို Python 2.4 ပဲပါတဲ့ Distribution တွေအတွက် Ansible 2.3 အထိ နှိမ့်ပြီးသုံးရမှာပါ။ ပြဿနာက Ansible Engine တင်ထားမယ့် Control Node မှာ ပုံမှန်အတိုင်းဆိုရင် Repository ထဲရှိတဲ့ Version က Ansible 2.4 အနိမ့်ဆုံးပါ။ အဲဒီတော့ Ansible 2.3 ရှိတဲ့ Repository ကိုထည့်ပြီးထပ်တင်မယ်ဆိုရင်လည်း Dependency ပြဿနာကရှိနေပြန်ပါလိမ့်မယ်။ Version တစ်ခုတည်းကိုပဲ Install လုပ်ခွင့်ရမှာဖြစ်ပါတယ်။ ဒါကြောင့် Version နှစ်မျိုးလုံးသုံးလို့ရအောင် Python ရဲ့ VirtualEnv နဲ့ environment ခွဲပြီး pip (Python Package Manager) ကနေ Install လုပ်တဲ့နည်းကအရှင်းဆုံးဖြစ်မှာပါ။ နမူနာအနေနဲ့တော့ RHEL/CentOS 7 ကိုပဲအခြေခံပြီး setup လုပ်ပြပေးပါမယ်။ တခြား distribution တွေမှာတော့ အနည်းငယ်ကွဲလွဲနိုင်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;pip အသုံးပြနိုင်ဖို့အတွက် လိုအပ်တဲ့ Package တွေအရင် install လုပ်ပါမယ်။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo yum install -y python-setuptools python-devel gcc
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;python-setuptools ထဲမှာပါဝင်တဲ့ easy_install ကိုအသုံးပြုပြီး pip ကို install လုပ်ပါမယ်။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo easy_install pip
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Control Node တစ်ခုတည်းမှာ Ansible version တစ်ခုထက်ပိုပြီး ထည့်သွင်းအသုံးပြုနိုင်ဖို့အတွက် version တစ်ခုစီရဲ့ Library တွေကိုခွဲခြားထိန်းသိမ်းပေးနိုင်တဲ့ virtual environment (virtualenv) လိုအပ်ပါတယ်။ virtualenv ကိုတော့ pip ကနေတဆင့် ရယူပါမယ်။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo pip install virtualenv
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ရလာတဲ့ virtualenv ကိုအသုံးပြုပြီး environment တည်ဆောက်ပါမယ်။ environment နာမည်ကိုတော့ ansible23 လို့ပေးလိုက်ပါမယ်။ ansible23 အစား အခြားနှစ်သက်ရာနာမည်ပေးနိုင်ပါတယ်။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;virtualenv ~/ansible23
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;တည်ဆောက်လိုက်တဲ့ environment ကို ပြောင်းလဲအသုံးပြုနိုင်ဖို့ activate ဆိုတဲ့ script ဖိုင်ကို run ပေးရပါမယ်။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;source ~/ansible23/bin/activate
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ပြီးရင်တော့ လိုအပ်တဲ့ Ansible version ကို စတင် install လုပ်နိုင်ပါပြီ။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;pip install ansible==2.3
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;လိုအပ်တဲ့ Ansible version ဟုတ်မဟုတ်ကို &amp;ndash;version option နဲ့ စစ်ဆေးနိုင်ပါတယ်။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ansible --version
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;environment ထဲကနေ ပြန်ထွက်ဖို့ကိုတော့ deactivate ဆိုတဲ့ command လေး run လိုက်ရုံပါပဲ။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;deactivate
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ဒီနည်းအတိုင်း Ansible 2.4 အတွက် နောက်ထပ် environment တစ်ခုတည်ဆောက်ပါမယ်။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;virtualenv ~/ansible24
-source ~/ansible24/bin/activate
-pip install ansible==2.4
-ansible --version
-deactivate
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;လိုအပ်တဲ့ version တွေကို environment ခွဲပြီး install လုပ်ပြီးပြီဆိုရင်တော့ အသုံးပြုနိုင်ပါပြီ။
-သုံးချင်တဲ့ Ansible version ရဲ့ environment ကို activate script လေး run ပြီးပြောင်းလိုက်ရုံပါပဲ။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;source ~/ansible23/bin/activate
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;တစ်ခုသတိထားရမှာက Managed Node တွေမှာ python-simplejson ဆိုတဲ့ package ရှိမနေရင် Ansible 2.3 ပြောင်းလဲအဆင်ပြေမှာမဟုတ်ပါဘူး။ &lt;code&gt;&amp;quot;Error: ansible requires the stdlib json or simplejson module, neither was found!&amp;quot;&lt;/code&gt; ဆိုတဲ့ Error Message တွေ့ရပါလိမ့်မယ်။ ဒါကြောင့် python-simplejson ကို install လိုက်လုပ်ပေးထားဖို့တော့လိုပါတယ်။&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;(၂)&lt;/strong&gt; RHEL 5 - Managed Node တွေမှာရှိတဲ့ Python ကို Version မြှင့်ဖို့အတွက်ကတော့ Extra Packages for Enterprise Linux (EPEL) Repository သုံးပြီး မြှင့်တဲ့နည်းက အလွယ်ကူဆုံးဖြစ်မှာပါ။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;wget https://archives.fedoraproject.org/pub/archive/epel/epel-release-latest-5.noarch.rpm --no-check-certificate
-wget https://archives.fedoraproject.org/pub/archive/epel/RPM-GPG-KEY-EPEL-5 --no-check-certificate
-rpm --import RPM-GPG-KEY-EPEL-5
-yum install -y epel-release-latest-5.noarch.rpm
-yum install -y python26
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Python 2.6 ကို install လုပ်လိုက်တယ်ဆိုပေမယ့် Python 2.4 ကတော့ Default Interpreter အနေနဲ့ ပုံမှန်အတိုင်းဆက်ရှိနေမှာပါ။ တချို့ System Tools တွေက Python 2.4 နဲ့မှရမှာဖြစ်တဲ့အတွက် 2.6 ကို Upgrade လုပ်သွားတာမျိုးမဟုတ်ပဲ version ၂မျိုးလုံးတွဲပြီးရှိနေမှာဖြစ်ပါတယ်။ Ansible 2.4 နဲ့ Manage လုပ်တဲ့အခါ default ဖြစ်တဲ့ Python 2.4 ကို မသုံးပဲ 2.6 နဲ့ပြောင်းလဲအလုပ်လုပ်စေဖို့ကိုတော့ &lt;code&gt;ansible_python_interpreter&lt;/code&gt; ဆိုတဲ့ variable နဲ့ထည့်သွင်း ကြေငြာပေးဖို့လိုပါတယ်။ ဥပမာအနေနဲ့ inventory ဖိုင်ထဲမှာဆိုရင်တော့ -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[rhel5]
-srv01.example.com	ansible_python_interpreter=/usr/bin/python26
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;[rhel5]
-srv01.example.com
-srv02.example.com
-
-[rhel5:vars]
-ansible_python_interpreter=/usr/bin/python26
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;စသဖြင့် ကြေငြာပေးလို့ရပါတယ်။&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;(၃)&lt;/strong&gt; နောက်ဆုံးနည်းလမ်းကတော့ Managed Node မှာရှိတဲ့ Python ကိုလုံးဝမသုံးပဲ သာမန် SSH နဲ့လှမ်းဝင်ပြီး Shell Command တွေ၊ Script တွေ Run သလိုမျိုး လုပ်ဆောင်ပေးတဲ့ Raw နဲ့ Script Module ကိုသုံးတဲ့နည်းပါပဲ။ ဒီနည်းလမ်းကိုသုံးပြီး Python version နိမ့်နေတဲ့ Managed Node တွေကို Python 2.6 install လုပ်ခိုင်းနိုင်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;py26install.sh&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#!/bin/bash
-
-wget https://archives.fedoraproject.org/pub/archive/epel/epel-release-latest-5.noarch.rpm --no-check-certificate
-wget https://archives.fedoraproject.org/pub/archive/epel/RPM-GPG-KEY-EPEL-5 --no-check-certificate
-rpm --import RPM-GPG-KEY-EPEL-5
-yum install -y epel-release-latest-5.noarch.rpm
-yum install -y python26
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;py26install.yml&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-- name: install python 2.6 in remote legacy system
-  hosts: rhel5
-  gather_facts: no
-
-  tasks:
-  - name: execute py26install.sh script on target system
-    script:
-      py26install.sh
-  - name: execute raw command to check version
-    raw:
-      python26 -V 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Python ကိုအခြေခံထားတဲ့ module တွေသုံးမရသည့်တိုင်အောင် shell command/script တွေကိုတိုက်ရိုက် run ပြီး Manage လုပ်နိုင်ပါတယ်။ Python version မကိုက်ညီတဲ့ပြဿနာရှိနေတာကြောင့် gather_facts ကိုတော့သုံးလို့ရမှာမဟုတ်ပါဘူး။ ဒါကြောင့် &lt;code&gt;gather_facts: no&lt;/code&gt; နဲ့ပိတ်ထားဖို့လိုပါတယ်။&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;အချုပ်အနေနဲ့ပြောရမယ်ဆိုရင်တော့ RHEL 5 လိုမျိုး Legacy System တွေကို မဖြစ်မနေ Ansible နဲ့ Automate လုပ်ရမယ်ဆိုရင် ဖော်ပြထားတဲ့နည်းလမ်းတွေထဲက အဆင်အပြေဆုံးနည်းလမ်းကိုသုံးလို့ရပါတယ်။ ဆယ်စုနှစ်တစ်ခုလောက် ပြဿနာမရှိပဲ run လာတဲ့ System မျိုးကို မထိရက်မကိုင်ရက်တာ နားလည်ပါတယ်။ သို့ပေမဲ့ November 30, 2020 မှာ Support ရပ်နားတော့မယ့် RHEL 5 ကို ဆက်လက်အသုံးပြုနိုင်အောင် ကြိုးစားနေတာထက် ဖြစ်နိုင်မယ်ဆိုရင် version အသစ်ကို ပြောင်းလဲအသုံးပြုဖို့ (Migration) စတင်ပြင်ဆင်တာကတော့ အကောင်းဆုံးဖြစ်မယ်လို ထင်မြင်မိပါတယ်။&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;Reference: &lt;a href=&#34;https://www.ansible.com/blog/using-ansible-to-manage-rhel-5-yesterday-today-and-tomorrow&#34;&gt;Using Ansible to Manage RHEL 5 Yesterday, Today and Tomorrow&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
+      <description>လွန်ခဲ့တဲ့ တစ်ပတ်လောက်က မိတ်ဆွေအကိုတွေနဲ့အလုပ်ကိစ္စစကားထိုင်ပြောနေရင်း Ansible အကြောင်းရောက်သွားတယ်။ သူတို့ရုံးရဲ့ Server တွေကို Ansible နဲ့ စမ်းပြီး Manage လုပ်ကြည့်နေတာမှာ ကြုံရတဲ့ ပြဿနာတစ်ခုကိုပြောပြတယ်။ သုံးထားတဲ့ Server OS တွေက RHEL 5, 6, 7 အစုံဖြစ်နေတာကြောင့် Playbook တစ်ခုတည်းနဲ့ ပေါင်းပြီး run လိုက်တဲ့အခါကျ version အနိမ့်ဖြစ်တဲ့ RHEL 5 မှာအဆင်မပြေပဲ error တွေတက်တာပါ။ အဲ့ဒီတုန်းကတော့ connection type (Paramiko ကိုသုံးဖို့လိုတာ) ကြောင့်လို့ပဲထင်လိုက်မိတာ တကယ်တမ်းသေချာအောင် လိုက်ရှာဖတ်ကြည့်တော့မှ Ansible Version နဲ့ Managed Node ရဲ့ Python Version နဲ့မကိုက်တာကြောင့်မှန်းသိရတယ်။ အဲ့တော့ ဒီပြဿနာကိုဖြေရှင်းဖို့က နည်းလမ်း သုံးခုတော့ရှိပါတယ်။ (၁) Ansible Version အနိမ့်နဲ့ Manage လုပ်ရင်လုပ်၊ (၂) Managed Node ရဲ့ Python ကို Version မြှင့်ရင်မြှင့်၊ (၃) Ansible ရဲ့ Python မလိုတဲ့ RAW Module နဲ့ Script Module ကိုသုံးရင်သုံး၊ ဒီနည်းလမ်းတွေနဲ့ဖြေရှင်းလို့ရပါတယ်။</description>
     </item>
     
   </channel>

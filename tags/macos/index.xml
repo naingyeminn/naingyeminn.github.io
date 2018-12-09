@@ -1,40 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Macos on Naing Ye` Minn </title>
+    <title>Macos on Naing Ye` Minn</title>
     <link>http://naingyeminn.com/tags/macos/</link>
+    <description>Recent content in Macos on Naing Ye` Minn</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Naing Ye` Minn</author>
-    <updated>2016-12-15 00:00:00 &#43;0000 UTC</updated>
+    <lastBuildDate>Thu, 15 Dec 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://naingyeminn.com/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Reduce PDF File Size in Mac</title>
       <link>http://naingyeminn.com/posts/reduce-pdf-file-size-in-mac/</link>
-      <pubDate>Thu, 15 Dec 2016 00:00:00 UTC</pubDate>
-      <author>Naing Ye` Minn</author>
+      <pubDate>Thu, 15 Dec 2016 00:00:00 +0000</pubDate>
+      
       <guid>http://naingyeminn.com/posts/reduce-pdf-file-size-in-mac/</guid>
-      <description>&lt;p&gt;PDF တွေကို Size လျှော့ချင်တဲ့အခါ Preview ကို အသုံးပြုလို့ရတာ Mac User များသိကြလိမ့်မယ့်ထင်ပါတယ်။ လျှော့ချင်တဲ့ PDF ကို Preview နဲ့ဖွင့်၊ File &amp;gt; Export&amp;hellip; ကိုသွားပြီး Format ကို PDF၊ Quartz Filter ကို Reduce File Size ရွေးပြီး Save လုပ်လိုက်ရုံပါပဲ။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/pdf_resize/pdf_resize01.jpg&#34; alt=&#34;PDF_Resize01&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ဆိုးတာက Reduce File Size ကိုသုံးလိုက်ရင် PDF ထဲမှာပါတဲ့ ပုံတွေရဲ့ Quality ဟာ တော်တော်လေးကို ကျဆင်းသွားပြီး ဝါးကုန်တာပါပဲ။ ဒါကြောင့် နည်းလမ်းလေးတွေလိုက်ရှာဖတ်ကြည့်တော့ Post တစ်ခုသွားတွေ့ပါတယ်။ စမ်းကြည့်တော့လည်း တော်တော်လေးအဆင်ပြေတာတွေ့ရပါတယ်။ နည်းလမ်းက ရိုးရိုးလေးပါ။ Reduce File Size ဆိုတဲ့ Filter က XML configuration file သက်သက်ပါ။ အဲဒီ File ကို ကူးယူပြီး အထဲက Value လေးတွေ နည်းနည်းအပြောင်းအလဲလုပ်ရုံပါပဲ။ ပြီးတော့ &lt;strong&gt;/Library&lt;/strong&gt; ထဲမှာ &lt;strong&gt;Filters&lt;/strong&gt; ဆိုတဲ့ Folder ဆောက်ပြီးထည့်ပေးလိုက်တာနဲ့ အဆင်ပြေပြေသုံးနိုင်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;အဲဒီနည်းလမ်းကိုပဲ လွယ်ကူအောင် &lt;a href=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/osx/pdf_reduce_v1.dmg&#34;&gt;PDF Reduce&lt;/a&gt; ဆိုတဲ့ Package လေးထုတ်ပေးထားပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/pdf_resize/pdf_resize02.jpg&#34; alt=&#34;PDF_Resize02&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ပုံထဲမှာတွေ့ရတဲ့အတိုင်း &lt;strong&gt;Filters&lt;/strong&gt; ဆိုတဲ့ Folder လေးကို &lt;strong&gt;Library&lt;/strong&gt; ထဲ ဆွဲထည့်လိုက်ရုံပါပဲ။ Authentication အတွက် Password တော့တောင်းပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;p&gt;ပြီးရင်တော့ &lt;strong&gt;Preview&lt;/strong&gt; ရဲ့ &lt;strong&gt;Quartz Filter&lt;/strong&gt; ထဲမှာ &lt;strong&gt;Reduce File Size (Good), Reduce File Size (Better), Reduce File Size (Best)&lt;/strong&gt; ဆိုပြီးတိုးလာတာတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/pdf_resize/pdf_resize03.jpg&#34; alt=&#34;PDF_Resize03&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Good, Better, Best က PDF ထဲပါဝင်တဲ့ ပုံတွေရဲ့ Quality ပေါ်မူတည်ပြီးခွဲထားတာဖြစ်တဲ့အတွက် Best ကိုရွေးရင် ပုံရည်အသွေး အနည်းငယ်သာလျော့သွားမှာဖြစ်ပြီး Good ကတော့ File Size အသေးဆုံးကိုရရှိမှာဖြစ်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;စိတ်ကြိုက်ပြင်ဆင်ကြည့်ချင်တယ်ဆိုရင်တော့ &lt;a href=&#34;http://www.macworld.com/article/1168311/software/shrink-preview-files-without-ruining-image-quality.html&#34;&gt;မူရင်း Post&lt;/a&gt; မှာ လေ့လာနိုင်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Download: &lt;a href=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/osx/pdf_reduce_v1.dmg&#34;&gt;PDF Reduce&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
+      <description>PDF တွေကို Size လျှော့ချင်တဲ့အခါ Preview ကို အသုံးပြုလို့ရတာ Mac User များသိကြလိမ့်မယ့်ထင်ပါတယ်။ လျှော့ချင်တဲ့ PDF ကို Preview နဲ့ဖွင့်၊ File &amp;gt; Export&amp;hellip; ကိုသွားပြီး Format ကို PDF၊ Quartz Filter ကို Reduce File Size ရွေးပြီး Save လုပ်လိုက်ရုံပါပဲ။
+ဆိုးတာက Reduce File Size ကိုသုံးလိုက်ရင် PDF ထဲမှာပါတဲ့ ပုံတွေရဲ့ Quality ဟာ တော်တော်လေးကို ကျဆင်းသွားပြီး ဝါးကုန်တာပါပဲ။ ဒါကြောင့် နည်းလမ်းလေးတွေလိုက်ရှာဖတ်ကြည့်တော့ Post တစ်ခုသွားတွေ့ပါတယ်။ စမ်းကြည့်တော့လည်း တော်တော်လေးအဆင်ပြေတာတွေ့ရပါတယ်။ နည်းလမ်းက ရိုးရိုးလေးပါ။ Reduce File Size ဆိုတဲ့ Filter က XML configuration file သက်သက်ပါ။ အဲဒီ File ကို ကူးယူပြီး အထဲက Value လေးတွေ နည်းနည်းအပြောင်းအလဲလုပ်ရုံပါပဲ။ ပြီးတော့ /Library ထဲမှာ Filters ဆိုတဲ့ Folder ဆောက်ပြီးထည့်ပေးလိုက်တာနဲ့ အဆင်ပြေပြေသုံးနိုင်ပါတယ်။</description>
     </item>
     
   </channel>

@@ -1,150 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Administration on Naing Ye` Minn </title>
+    <title>Administration on Naing Ye` Minn</title>
     <link>http://naingyeminn.com/tags/administration/</link>
+    <description>Recent content in Administration on Naing Ye` Minn</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Naing Ye` Minn</author>
-    <updated>2018-04-11 00:00:00 &#43;0000 UTC</updated>
+    <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://naingyeminn.com/tags/administration/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>iSCSI with Multipath in CentOS7</title>
       <link>http://naingyeminn.com/posts/iscsi-with-multipath-in-centos7/</link>
-      <pubDate>Wed, 11 Apr 2018 00:00:00 UTC</pubDate>
-      <author>Naing Ye` Minn</author>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
       <guid>http://naingyeminn.com/posts/iscsi-with-multipath-in-centos7/</guid>
-      <description>&lt;p&gt;iSCSI (Internet Small Computer Systems Interface) ဆိုတာ SAN (Storage Area Network) Protocol တစ်ခုပါ။ အလွယ်ပြောရရင် Computer တစ်လုံးမှာရှိတဲ့ Storage Device/Space ကို အခြား Computer တစ်လုံးရဲ့ Block Device/Hard Disk အနေနဲ့ Network ကနေတဆင့် ဆွဲယူချိပ်ဆက်အသုံးပြုတဲ့အခါမှာသုံးပါတယ်။ iSCSI ရဲ့အားသာချက်ကတော့ သာမန် IP Network ပေါ်မှာအလုပ်လုပ်တာဖြစ်ပြီး Fiber Channel လို SAN Switch မလိုအပ်ပါဘူး။ Network ပေါ်ကနေတဆင့် ချိပ်ဆက်အသုံးပြုတာဖြစ်တဲ့အတွက် အကယ်၍များ Network Link ပြတ်တောက်သွားခဲ့ရင် ပြဿနာတက်နိုင်ပါတယ်။ ဒါကြောင့် Network Link ကို တစ်ခုထဲအသုံးပြုတာထက် ၂ခုအနည်းဆုံးထားပြီး ချိပ်ဆက်မှသာ High Availability ဖြစ်မှာပါ။ ဒီလိုချိပ်ဆက်ခြင်းမျိုးကို Multipath လို့ခေါ်ခြင်းဖြစ်ပါတယ်။ အခု ဒီ Video လေးမှာတော့ CentOS 7 ပေါ်မှာ iSCSI Drive ကို Multipath သုံးပြီး ဘယ်လိုချိပ်ဆက်မလဲဆိုတာကို ပြသပေးထားပါတယ်။&lt;/p&gt;
-
-&lt;div class=&#34;responsive-embed flex-video&#34;&gt;
-        &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;360&#34;
-                src=&#34;http://www.youtube.com/embed/J9eaWAcj1o4&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;
-        &lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
+      <description>iSCSI (Internet Small Computer Systems Interface) ဆိုတာ SAN (Storage Area Network) Protocol တစ်ခုပါ။ အလွယ်ပြောရရင် Computer တစ်လုံးမှာရှိတဲ့ Storage Device/Space ကို အခြား Computer တစ်လုံးရဲ့ Block Device/Hard Disk အနေနဲ့ Network ကနေတဆင့် ဆွဲယူချိပ်ဆက်အသုံးပြုတဲ့အခါမှာသုံးပါတယ်။ iSCSI ရဲ့အားသာချက်ကတော့ သာမန် IP Network ပေါ်မှာအလုပ်လုပ်တာဖြစ်ပြီး Fiber Channel လို SAN Switch မလိုအပ်ပါဘူး။ Network ပေါ်ကနေတဆင့် ချိပ်ဆက်အသုံးပြုတာဖြစ်တဲ့အတွက် အကယ်၍များ Network Link ပြတ်တောက်သွားခဲ့ရင် ပြဿနာတက်နိုင်ပါတယ်။ ဒါကြောင့် Network Link ကို တစ်ခုထဲအသုံးပြုတာထက် ၂ခုအနည်းဆုံးထားပြီး ချိပ်ဆက်မှသာ High Availability ဖြစ်မှာပါ။ ဒီလိုချိပ်ဆက်ခြင်းမျိုးကို Multipath လို့ခေါ်ခြင်းဖြစ်ပါတယ်။ အခု ဒီ Video လေးမှာတော့ CentOS 7 ပေါ်မှာ iSCSI Drive ကို Multipath သုံးပြီး ဘယ်လိုချိပ်ဆက်မလဲဆိုတာကို ပြသပေးထားပါတယ်။</description>
     </item>
     
     <item>
       <title>Coloring Log Files</title>
       <link>http://naingyeminn.com/posts/coloring-log-files/</link>
-      <pubDate>Wed, 14 Oct 2015 00:00:00 UTC</pubDate>
-      <author>Naing Ye` Minn</author>
+      <pubDate>Wed, 14 Oct 2015 00:00:00 +0000</pubDate>
+      
       <guid>http://naingyeminn.com/posts/coloring-log-files/</guid>
-      <description>&lt;p&gt;Linux Administrator တွေအနေနဲ့ Log Analyzer တွေမျိုးစုံရှိနေပေမယ့် တစ်ခါတစ်ရံ လိုအပ်လို့ Log File တွေကိုမွှေနှောက်ရမယ်ဆိုလျှင် အာရုံနောက်ကြမယ်ထင်ပါတယ်။ Log File တွေရဲ့ထုံးစံအတိုင်း Text တွေကို ပြွပ်သိပ်နေအောင်ရိုက်ထုတ်ထားတာဖြစ်တဲ့အတွက် ဖတ်ရတဲ့သူအတွက် ဘယ်အပိုင်းက ဘာဆိုတာကို မနည်း အာရုံစိုက်ခွဲခြားနေရပါလိမ့်မယ်။ အဲဒီပြဿနာကိုတော့ &lt;strong&gt;CCZE&lt;/strong&gt; ကကူညီဖြေရှင်းပေးနိုင်ပါတယ်။ &lt;strong&gt;CCZE&lt;/strong&gt; ဆိုတာကတော့ command-line tool လေးတစ်ခုပဲဖြစ်ပါတယ်။ Linux Admin တွေအနေနဲ့ server ကို ssh နဲ့ access လုပ်နေတဲ့အချိန် Log File တွေကိုဖတ်ရှုဖို့လိုလာခဲ့မယ်ဆိုလျှင်တော့ ဒီ Tool လေးက အရမ်းအသုံးတည့်ပါတယ်။ Log ကိုသက်ဆိုင်ရာ အပိုင်းအခြားအလိုက် အရောင်ခွဲခြားပြီး ပြသပေးတာဖြစ်တဲ့အတွက် ဖတ်ရှုသူအနေနဲ့ မြန်ဆန်လွယ်ကူစွာ နားလည်သဘောပေါက်နိုင်မှာပါ။&lt;/p&gt;
-
-&lt;p&gt;Debian/Ubuntu မှာတော့ -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo apt-get install -y ccze
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ဆိုပြီး Install တန်းလုပ်လို့ရပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;RHEL/CentOS/Fedora စတဲ့ Distro တွေမှာတော့ &lt;a href=&#34;http://naingyeminn.com/posts/epel-for-centos/&#34;&gt;EPEL&lt;/a&gt; ကနေ Install ပြုလုပ်နိုင်ပါတယ်။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo yum install -y ccze
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Install ပြုလုပ်ပြီးပြီဆိုလျှင်တော့ စသုံးလို့ရပါပြီ။ Command-line Tool ဆိုတဲ့အတိုင်း command တစ်ခုခုကနေထွက်လာတဲ့ output ကို &lt;strong&gt;pipe&lt;/strong&gt; &lt;code&gt;|&lt;/code&gt; သုံးပြီး &lt;code&gt;ccze&lt;/code&gt; ဆီကို ပို့ပေးလိုက်ရုံပါပဲ။ နမူနာအနေနဲ့ CentOS 7 ပေါ်မှာ အသုံးပြုပြပါမယ်။ အောက်ပါ Command နှစ်ကြောင်းကို Terminal မှာရိုက်ကြည့်လိုက်ပါ။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo tail -3 /var/log/messages
-$ sudo tail -3 /var/log/messages | ccze -A
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ပုံမှာမြင်တွေ့ရတဲ့အတိုင်း Color ပါတာနဲ့ မပါတာကို ယှဉ်ပြီးတွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/ccze-A.png&#34; alt=&#34;ccze-A&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;နောက်ပြီး Log Output ကို HTML ဖိုင်အနေနဲ့လည်း ထုတ်ယူလို့ရပါသေးတယ်။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo tail -30 /var/log/messages | ccze -h &amp;gt; ~/Documents/msg.html
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Output ကိုတော့ User ရဲ့ Documents folder အောက်ထဲမှာ msg.html ဆိုပြီး HTML file အနေနဲ့တွေ့ရပါလိမ့်မယ်။ Double click နှိပ်ပြီး ဖွင့်ကြည့်လိုက်မယ်ဆိုလျှင်တော့ ပုံမှပြထားတဲ့အတိုင်း Browser မှာမြင်တွေ့ရပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/ccze-h.png&#34; alt=&#34;ccze-h&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ပုံထဲမှာတော့ Default Color Scheme အတိုင်းဖြစ်နေတာရယ်၊ VM ပေါ်မှာဖြစ်တဲ့အတွက် Graphic Resolution နည်းနေတာရယ်တို့ကြောင့် ကြည့်ရတာတော့သိပ်အဆင်မပြေပါဘူး။ Default Color ကိုပြင်ချင်တယ်ဆိုလျှင်တော့ Config File &lt;code&gt;/etc/cczerc&lt;/code&gt; ထဲမှာ ဝင်ပြင်လို့ရပါတယ်။ HTML output ရဲ့ Background Color ကိုပြောင်းမယ်ဆိုလျှင်တော့ &lt;code&gt;/etc/cczerc&lt;/code&gt; ရဲ့ အောက်ဆုံး line number &lt;strong&gt;93&lt;/strong&gt; မှာရှိတဲ့ &lt;code&gt;cssbody #404040&lt;/code&gt; ကိုပြင်ရုံပါပဲ။ အခြား Color တွေကိုလည်း စိတ်ကြိုက်ပြင်ဆင်နိုင်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/ccze-h-safari.png&#34; alt=&#34;ccze-h&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;အပေါ်ပုံကတော့ &lt;code&gt;cssbody #000000&lt;/code&gt; ပြောင်းပြီး output ထုတ်ထားတဲ့ HTML ဖိုင်ကို Safari Browser ပေါ်မှာမြင်တွေ့ရတာပဲဖြစ်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;CCZE&lt;/strong&gt; မှာ နောက်ထပ် Option တွေအများကြီးရှိပါသေးတယ်။ အသေးစိပ်ကိုတော့ &lt;a href=&#34;http://naingyeminn.com/posts/reading-man-page/&#34;&gt;man page&lt;/a&gt; သုံးပြီးလေ့လာနိုင်ပါတယ်။&lt;/p&gt;
-</description>
+      <description>Linux Administrator တွေအနေနဲ့ Log Analyzer တွေမျိုးစုံရှိနေပေမယ့် တစ်ခါတစ်ရံ လိုအပ်လို့ Log File တွေကိုမွှေနှောက်ရမယ်ဆိုလျှင် အာရုံနောက်ကြမယ်ထင်ပါတယ်။ Log File တွေရဲ့ထုံးစံအတိုင်း Text တွေကို ပြွပ်သိပ်နေအောင်ရိုက်ထုတ်ထားတာဖြစ်တဲ့အတွက် ဖတ်ရတဲ့သူအတွက် ဘယ်အပိုင်းက ဘာဆိုတာကို မနည်း အာရုံစိုက်ခွဲခြားနေရပါလိမ့်မယ်။ အဲဒီပြဿနာကိုတော့ CCZE ကကူညီဖြေရှင်းပေးနိုင်ပါတယ်။ CCZE ဆိုတာကတော့ command-line tool လေးတစ်ခုပဲဖြစ်ပါတယ်။ Linux Admin တွေအနေနဲ့ server ကို ssh နဲ့ access လုပ်နေတဲ့အချိန် Log File တွေကိုဖတ်ရှုဖို့လိုလာခဲ့မယ်ဆိုလျှင်တော့ ဒီ Tool လေးက အရမ်းအသုံးတည့်ပါတယ်။ Log ကိုသက်ဆိုင်ရာ အပိုင်းအခြားအလိုက် အရောင်ခွဲခြားပြီး ပြသပေးတာဖြစ်တဲ့အတွက် ဖတ်ရှုသူအနေနဲ့ မြန်ဆန်လွယ်ကူစွာ နားလည်သဘောပေါက်နိုင်မှာပါ။
+Debian/Ubuntu မှာတော့ -
+$ sudo apt-get install -y ccze  ဆိုပြီး Install တန်းလုပ်လို့ရပါတယ်။
+RHEL/CentOS/Fedora စတဲ့ Distro တွေမှာတော့ EPEL ကနေ Install ပြုလုပ်နိုင်ပါတယ်။</description>
     </item>
     
     <item>
       <title>EPEL for CentOS</title>
       <link>http://naingyeminn.com/posts/epel-for-centos/</link>
-      <pubDate>Tue, 13 Oct 2015 00:00:00 UTC</pubDate>
-      <author>Naing Ye` Minn</author>
+      <pubDate>Tue, 13 Oct 2015 00:00:00 +0000</pubDate>
+      
       <guid>http://naingyeminn.com/posts/epel-for-centos/</guid>
-      <description>
-
-&lt;p&gt;EPEL ဆိုတာ Extra Packages for Enterprise Linux ရဲ့ အတိုကောက်ပါ။ Extra Packages ဆိုတဲ့အတိုင်း CentOS ရဲ့ Main Repository ထဲမပါဝင်ပေမယ့် အသုံးဝင်တဲ့ Package တွေကို စုစည်းပေးထားတဲ့ Repository တစ်ခုပါ။ Fedora Project ရဲ့ပံ့ပိုးမှုနဲ့ ဖြစ်ပေါ်လာတဲ့ Project တစ်ခုဖြစ်ပြီး Fedora Linux အတွက်တင်မဟုတ်ဘဲ Fedora-based ဖြစ်တဲ့ Red Hat Enterprise Linux နဲ့ တခြား မျိုးနွယ်တူ CentOS, Scientific Linux စတာတွေအတွက်ပါ Support ပေးထားတဲ့ Repo ပဲဖြစ်ပါတယ်။ အသေးစိပ်ကိုတော့ &lt;a href=&#34;https://fedoraproject.org/wiki/EPEL/FAQ&#34;&gt;EPEL/FAQ&lt;/a&gt; မှာလေ့လာနိုင်ပါတယ်။&lt;/p&gt;
-
-&lt;p&gt;EPEL ထဲက package တွေကို Install ပြုလုပ်ချင်တယ်ဆိုလျှင်တော့ EPEL Repo ကို YUM Package Manager ရဲ့ Repo List ထဲမှာ ထပ်ထည့်ပြီး Enable ပြုလုပ်ပေးရပါမယ်။ အဲဒီအတွက် EPEL Package ကို Install လုပ်ရပါမယ်။ EPEL Package ကိုတော့ Distro Version ပေါ်မူတည်ပြီး Download ယူဖို့လိုပါတယ်။ Download အတွက် &lt;code&gt;wget&lt;/code&gt; command ကိုအသုံးပြုမှာဖြစ်တဲ့အတွက် ကြိုတင် Install လုပ်ထားဖို့လိုပါလိမ့်မယ်။&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ sudo yum install wget -y
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;RHEL/CentOS 5.x&lt;/strong&gt; အတွက်&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-5.noarch.rpm
-$ sudo rpm -ivh epel-release-latest-5.noarch.rpm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;RHEL/CentOS 6.x&lt;/strong&gt; အတွက်&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
-$ sudo rpm -ivh epel-release-latest-6.noarch.rpm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;RHEL/CentOS 7.x&lt;/strong&gt; အတွက်&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-$ sudo rpm -ivh epel-release-latest-7.noarch.rpm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;EPEL Repo&lt;/strong&gt; ရ၊ မရ ပြန်လည်စစ်ဆေးရန်အတွက်&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ yum repolist
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;CentOS 7 တွင် EPEL package အား &lt;code&gt;wget&lt;/code&gt; ဖြင့် Download ပြုလုပ်ခြင်း&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/epel-wget.png&#34; alt=&#34;epel-wget&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Package အား Install ပြုလုပ်ခြင်း&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/epel-install.png&#34; alt=&#34;epel-install&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;EPEL Repo အား စစ်ဆေးခြင်း&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/epel-check.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;အပေါ်ပုံအတိုင်း EPEL ကို Repo List ထဲတွေ့ရပြီဆိုလျှင်တော့ EPEL Repo မှ Package များအား Install ပြုလုပ်နိုင်ပြီဖြစ်ပါတယ်။&lt;/p&gt;
-</description>
+      <description>EPEL ဆိုတာ Extra Packages for Enterprise Linux ရဲ့ အတိုကောက်ပါ။ Extra Packages ဆိုတဲ့အတိုင်း CentOS ရဲ့ Main Repository ထဲမပါဝင်ပေမယ့် အသုံးဝင်တဲ့ Package တွေကို စုစည်းပေးထားတဲ့ Repository တစ်ခုပါ။ Fedora Project ရဲ့ပံ့ပိုးမှုနဲ့ ဖြစ်ပေါ်လာတဲ့ Project တစ်ခုဖြစ်ပြီး Fedora Linux အတွက်တင်မဟုတ်ဘဲ Fedora-based ဖြစ်တဲ့ Red Hat Enterprise Linux နဲ့ တခြား မျိုးနွယ်တူ CentOS, Scientific Linux စတာတွေအတွက်ပါ Support ပေးထားတဲ့ Repo ပဲဖြစ်ပါတယ်။ အသေးစိပ်ကိုတော့ EPEL/FAQ မှာလေ့လာနိုင်ပါတယ်။
+EPEL ထဲက package တွေကို Install ပြုလုပ်ချင်တယ်ဆိုလျှင်တော့ EPEL Repo ကို YUM Package Manager ရဲ့ Repo List ထဲမှာ ထပ်ထည့်ပြီး Enable ပြုလုပ်ပေးရပါမယ်။ အဲဒီအတွက် EPEL Package ကို Install လုပ်ရပါမယ်။ EPEL Package ကိုတော့ Distro Version ပေါ်မူတည်ပြီး Download ယူဖို့လိုပါတယ်။ Download အတွက် wget command ကိုအသုံးပြုမှာဖြစ်တဲ့အတွက် ကြိုတင် Install လုပ်ထားဖို့လိုပါလိမ့်မယ်။</description>
     </item>
     
   </channel>
