@@ -140,6 +140,12 @@ footer {
   color: #777777;
 }
 
+.gist span {
+  float: none;
+  text-transform: none;
+  font-size: 100%;
+}
+
 .post {
   margin: auto;
   padding-bottom: 20px;
