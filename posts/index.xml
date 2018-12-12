@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Naing Ye` Minn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://naingyeminn.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Optimizing Ansible Playbooks: Parallelism</title>
+      <link>http://naingyeminn.com/posts/ansible-parallelism/</link>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://naingyeminn.com/posts/ansible-parallelism/</guid>
+      <description>Ansible ကိုလေ့လာနေသူတွေအနေနဲ့ Playbook တွေ၊ Ad-hoc command တွေနဲ့ Task တွေကို Host အများကြီးမှာ တစ်ပြိုင်တည်း (Parallel) လုပ်ဆောင် (run) ခိုင်းလို့ရတယ်ဆိုတာတော့ သိကြပြီးဖြစ်မှာပါ။ ဒါပေမဲ့ တစ်ပြိုင်းတည်းဆိုတိုင်း delegate လုပ်လိုက်တဲ့ Host အကုန်လုံးမှာ တန်းပြီး run တာတော့ မဟုတ်ပါဘူး။ ကနဦးသတ်မှတ်ထားတဲ့ (Default) အရေအတွက်က Host ၅လုံးကိုပဲ တပြိုင်တည်းလုပ်ဆောင်ပေးတာပါ။ Host ၁၀လုံးမှာ Task တွေ run ခိုင်းတယ်ဆိုရင် ၅လုံးတစ်ဖြတ်ဖြတ်ပြီးပဲ run မှာပါ။ ပိုရှင်းအောင်ပြောရမယ်ဆိုရင် ဥပမာ - Linux Server ၁၀ လုံးမှာ ၅လုံးကို အရင် SSH နဲ့လှမ်းချိပ်မယ်၊ ပြီးရင် Playbook ထဲရေးထားတဲ့ Task တွေကို အဲ့ဒီ ၅လုံးမှာအရင် run မယ်၊ Task အားလုံးပြီးသွားတော့မှ နောက်ကျန်တဲ့ ၅လုံးကို ထပ်ချိပ်ပြီး ထပ် run တာဖြစ်ပါတယ်။ ဒီလို run ပေးခြင်းက Host တွေရဲ့ လုပ်ဆောင်နိုင်စွမ်း (Performance) ကို မထိခိုင်အောင်ကာကွယ်ပေးနိုင်လို့ပါပဲ။ အလွယ် ဥပမာပေးရမယ်ဆိုရင် Server အလုံး ၅၀ လောက်ကို Update လုပ်မယ်ဆိုပါစို့။ ၅လုံးတစ်ဖြတ်စီသာခွဲမ run ပေးရင် အလုံး ၅၀ လုံးက တစ်ပြိုင်တည်း Update တွေလှမ်းဆွဲပြီး Network traffic မှာ အလုပ် အရမ်း များသွားပါလိမ့်မယ်။ Server တွေမှာလည်း Update ပမာဏ (Size) များရင်များသလို မြန်မြန်ဆန်ဆန် ရသင့်သလောက်မရတော့ပဲ ပိုကြာသွားတာမျိုးဖြစ်သွားပါလိမ့်မယ်။ နောက်တစ်ခုက VM Environment အနေနဲ့ Hypervisor Host တစ်လုံးတည်းပေါ်မှာရှိနေတဲ့ VM တွေအကုန်လုံးမှာ CPU အသုံးပြုမှုများနိုင်တဲ့ Task တစ်ခုခုကို run တဲ့အခါ ၅လုံးစီခွဲ run ခြင်းက Hypervisor Host ရဲ့ Performance ထိခိုက်မှုကို ကာကွယ် လျှော့ချပြီးသားဖြစ်သွားပါလိမ့်မယ်။ မဟုတ်ရင် VM တွေအကုန်လုံးက တပြိုင်တည်း အလုပ်တွေလုပ်ပြီး Hypervisor Host ရဲ့ CPU မှာ Load အရမ်းများသွားပါလိမ့်မယ်။ ဒါပေမဲ့ မေးခွန်းထုတ်စရာရှိတာက Resource အရမ်းမလိုတဲ့ Task မျိုးတွေကို run တဲ့အခါကျ ၅လုံးစီမဟုတ်ပဲ အလုံး ၅၀၊ ၁၀၀ တစ်ပြိုင်တည်း run ပေးလိုက်ရင်ပိုမမြန်နိုင်ဘူးလားဆိုတာပါပဲ။ Control Node အနေနဲ့ အဲဒီလောက်များတဲ့ session တွေကို ထိန်းသိမ်းပေးနိုင်တဲ့ Resource Capacity (CPU, Memory) လုံလုံလောက်လောက် ရှိတယ်ဆိုရင်ရပါတယ်။ ဥပမာ Ansible Tower အသုံးပြုတယ်ဆိုရင် သူ့ရဲ့ Memory Requirement က Host အလုံး ၁၀၀ ကို manage လုပ်နိုင်ဖို့အတွက် အနည်းဆုံး 4GB ရှိသင့်ပါတယ်။ Ansible Engine မှာလည်း ဒီအတိုင်းပါပဲ။ Capacity တွက်ချက်မှုအတွက် ထည့်သွင်းစဉ်းစားရမယ့် အချက် (Factor) တွေရှိပါတယ်။ ဒီအပိုင်းကိုတော့ နောက်မှသီးသန့်ထပ်ရေးပေးပါမယ်။</description>
+    </item>
     
     <item>
       <title>Optimizing Ansible Playbooks: Delegation</title>

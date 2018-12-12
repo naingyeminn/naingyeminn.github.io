@@ -1,0 +1,219 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - Optimizing Ansible Playbooks: Parallelism</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://use.fontawesome.com/52ab3615c7.js"></script>
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/ansible-parallelism/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="contact" class="overlay">
+  <div class="popup">
+    <a class="close" href="#/">&times;</a>
+    <div class="content">
+    	<ul>
+    		<li><a href="mailto:me@naingyeminn.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+
+    		<li><a href="https://github.com/naingyeminn" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    		<li><a href="https://plus.google.com/107143022418508884720" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.facebook.com/nyeminn" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.linkedin.com/in/naingyeminn" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+    	</ul> 
+    </div>
+  </div>
+</div>
+
+
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/ansible-parallelism/">Optimizing Ansible Playbooks: Parallelism</a></h1>
+	        <div class="post-time">December 12 2018</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com//tags/ansible">ansible</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/linux">linux</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/scripting">scripting</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/tipstricks">tips&amp;tricks</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        <p>Ansible ကိုလေ့လာနေသူတွေအနေနဲ့ Playbook တွေ၊ Ad-hoc command တွေနဲ့ Task တွေကို Host အများကြီးမှာ တစ်ပြိုင်တည်း (Parallel) လုပ်ဆောင် (run) ခိုင်းလို့ရတယ်ဆိုတာတော့ သိကြပြီးဖြစ်မှာပါ။ ဒါပေမဲ့ တစ်ပြိုင်းတည်းဆိုတိုင်း <a href="http://naingyeminn.com/posts/ansible-delegation/">delegate</a> လုပ်လိုက်တဲ့ Host အကုန်လုံးမှာ တန်းပြီး run တာတော့ မဟုတ်ပါဘူး။ ကနဦးသတ်မှတ်ထားတဲ့ (Default) အရေအတွက်က Host ၅လုံးကိုပဲ တပြိုင်တည်းလုပ်ဆောင်ပေးတာပါ။ Host ၁၀လုံးမှာ Task တွေ run ခိုင်းတယ်ဆိုရင် ၅လုံးတစ်ဖြတ်ဖြတ်ပြီးပဲ run မှာပါ။ ပိုရှင်းအောင်ပြောရမယ်ဆိုရင် ဥပမာ - Linux Server ၁၀ လုံးမှာ ၅လုံးကို အရင် SSH နဲ့လှမ်းချိပ်မယ်၊ ပြီးရင် Playbook ထဲရေးထားတဲ့ Task တွေကို အဲ့ဒီ ၅လုံးမှာအရင် run မယ်၊ Task အားလုံးပြီးသွားတော့မှ နောက်ကျန်တဲ့ ၅လုံးကို ထပ်ချိပ်ပြီး ထပ် run တာဖြစ်ပါတယ်။ ဒီလို run ပေးခြင်းက Host တွေရဲ့ လုပ်ဆောင်နိုင်စွမ်း (Performance) ကို မထိခိုင်အောင်ကာကွယ်ပေးနိုင်လို့ပါပဲ။ အလွယ် ဥပမာပေးရမယ်ဆိုရင် Server အလုံး ၅၀ လောက်ကို Update လုပ်မယ်ဆိုပါစို့။ ၅လုံးတစ်ဖြတ်စီသာခွဲမ run ပေးရင် အလုံး ၅၀ လုံးက တစ်ပြိုင်တည်း Update တွေလှမ်းဆွဲပြီး Network traffic မှာ အလုပ် အရမ်း များသွားပါလိမ့်မယ်။ Server တွေမှာလည်း Update ပမာဏ (Size) များရင်များသလို မြန်မြန်ဆန်ဆန် ရသင့်သလောက်မရတော့ပဲ ပိုကြာသွားတာမျိုးဖြစ်သွားပါလိမ့်မယ်။ နောက်တစ်ခုက VM Environment အနေနဲ့ Hypervisor Host တစ်လုံးတည်းပေါ်မှာရှိနေတဲ့ VM တွေအကုန်လုံးမှာ CPU အသုံးပြုမှုများနိုင်တဲ့ Task တစ်ခုခုကို run တဲ့အခါ ၅လုံးစီခွဲ run ခြင်းက Hypervisor Host ရဲ့ Performance ထိခိုက်မှုကို ကာကွယ် လျှော့ချပြီးသားဖြစ်သွားပါလိမ့်မယ်။ မဟုတ်ရင် VM တွေအကုန်လုံးက တပြိုင်တည်း အလုပ်တွေလုပ်ပြီး Hypervisor Host ရဲ့ CPU မှာ Load အရမ်းများသွားပါလိမ့်မယ်။ ဒါပေမဲ့ မေးခွန်းထုတ်စရာရှိတာက Resource အရမ်းမလိုတဲ့ Task မျိုးတွေကို run တဲ့အခါကျ ၅လုံးစီမဟုတ်ပဲ အလုံး ၅၀၊ ၁၀၀ တစ်ပြိုင်တည်း run ပေးလိုက်ရင်ပိုမမြန်နိုင်ဘူးလားဆိုတာပါပဲ။ Control Node အနေနဲ့ အဲဒီလောက်များတဲ့ session တွေကို ထိန်းသိမ်းပေးနိုင်တဲ့ Resource Capacity (CPU, Memory) လုံလုံလောက်လောက် ရှိတယ်ဆိုရင်ရပါတယ်။ ဥပမာ Ansible Tower အသုံးပြုတယ်ဆိုရင် သူ့ရဲ့ Memory Requirement က Host အလုံး ၁၀၀ ကို manage လုပ်နိုင်ဖို့အတွက် အနည်းဆုံး 4GB ရှိသင့်ပါတယ်။ Ansible Engine မှာလည်း ဒီအတိုင်းပါပဲ။ Capacity တွက်ချက်မှုအတွက် ထည့်သွင်းစဉ်းစားရမယ့် အချက် (Factor) တွေရှိပါတယ်။ ဒီအပိုင်းကိုတော့ နောက်မှသီးသန့်ထပ်ရေးပေးပါမယ်။</p>
+
+<p>အထက်မှာပြောခဲ့သလို Ansible Control Node အနေနဲ့ Host ဘယ်နှလုံးမှာ တပြိုင်တည်း Task တွေ run ခိုင်းမယ်ဆိုတာကို သတ်မှတ်ပေးဖို့ <code>ansible.cfg</code> ဖိုင်ရဲ့ <code>[Defaults]</code> Section အောက်မှာ <code>forks</code> keyword နဲ့ကြေငြာပေးရပါတယ်။ မပေးထားရင် Default အနေနဲ့ <code>forks=5</code> လို့ Ansible ကသတ်မှတ်ပါတယ်။ <code>/etc/ansible/ansible.cfg</code> ထဲမှာ <code>forks=10</code> လို့ထည့်ပေးလိုက်ရင် Host 10လုံးတစ်ပြိုင်တည်း run ပေးပါလိမ့်မယ်။ <code>ansible.cfg</code> ဖိုင်ရဲ့ အဆင့် (Precedence) ကိုတော့ သတိထားဖို့လိုပါတယ်။ <code>/etc/ansible/ansible.cfg</code> ထဲ <code>forks=10</code> ပေးထားပေမဲ့ Home Directory အောက်က <code>.ansible.cfg</code> ဒါမှမဟုတ် Playbook Directory ထဲက <code>ansible.cfg</code> မှာကျ <code>forks=5</code> လို့ပြန်ပေးထားမိရင်တော့ Host ၅လုံးစီပဲခွဲ run ပေးပါလိမ့်မယ်။ <code>forks</code> value ကိုတော့ အလွန်ဆုံး <code>25</code> ကနေ <code>100</code> ကြားလောက်ပဲထားတာ ပိုသင့်တော်ပါတယ်။ <code>forks=25</code> ပေးထားတိုင်း connection ၂၅ခုဖွင့်ပြီး run ဖို့ကြိုးစားတာတော့ မဟုတ်ပါဘူး။ Playbook မှာသတ်မှတ်ပေးလိုက်တဲ့ Host အရေအတွက်ပေါ်မူတည်ပြီးပဲ run ပေးမှာဖြစ်ပါတယ်။ Host အရေအတွက် ၅လုံးပဲရှိရင် ၅လုံး တပြိုင်တည်း run ပြီး အလုံး ၃၀ ရှိရင်တော့ ၂၅လုံးတစ်ခါ၊ ကျန်တဲ့ ၅လုံးကိုတစ်ခါ၊ ခွဲ run ပေးပါလိမ့်မယ်။</p>
+
+<p>ဒီနည်းလမ်းနဲ့ တပြိုင်တည်း run စေချင်တဲ့ Host အရေအတွက်ကို သတ်မှတ်တာက အမြဲတမ်းအဆင်မပြေပါဘူး။ ဥပမာ Play နှစ်ခုပါဝင်တဲ့ Playbook အနေနဲ့ ပထမ Play မှာ Host ၂လုံးစီပဲခွဲ run ချင်ပြီး ဒုတိယ Play မှာတော့ Host ၅လုံးစီခွဲ run ချင်တယ်ဆိုရင် <code>ansible.cfg</code> ရဲ့ <code>forks</code> နဲ့မရတော့ပါဘူး။ <code>ansible.cfg</code> က Playbook ထဲက Play တိုင်းနဲ့သတ်ဆိုင်တဲ့ configuration ပါ။ ဒါကြောင့် သူ့ထဲမှာပါတဲ <code>forks</code> value ပေါ်ပဲ အခြေခံပြီး Play တွေက run ပါလိမ့်မယ်။ <code>forks=2</code> လို့ပြောထားရင် Play နှစ်ခုလုံးမှာ Host ၂လုံးစီခွဲ run မှာဖြစ်တဲ့အတွက် ပထမ Play အတွက်ပဲအဆင်ပြေမှာဖြစ်ပါတယ်။ ဒီပြဿနာကို ဖြေရှင်းဖို့အတွက်ကတော့ Play တွေမှာ <code>serial</code> ဆိုတဲ့ Keyword ရှိပါတယ်။</p>
+
+<script type="application/javascript" src="//gist.github.com/naingyeminn/65e5c39d109bd910d13c0a69aa184e58.js?file=parallel-test.yml"></script>
+
+<p>ပထမ Play ဖြစ်တဲ့ <code>play one</code> မှာ <code>serial: 2</code> လို့ပြောထားတဲ့အတွက် <code>srvgroup01</code> ဆိုတဲ့ Host Group ထဲမှာရှိတဲ့ Host တွေကို ၂လုံးစီခွဲပြီး update လုပ်ပေးသွားမှာဖြစ်ပြီး ဒုတိယ Play <code>play two</code> ကတော့ <code>srvgroup02</code> ထဲက Host တွေကို ၅လုံးစီခွဲပြီး update လုပ်ပေးမှာဖြစ်ပါတယ်။</p>
+
+<p>Serial ကို value တစ်ခုတည်းတင်မဟုတ်ပဲ list အနေနဲ့ပေးပြီး Host အရေအတွက်ကို တဆင့်ခြင်းအတိုးအလျော့လုပ်လို့ရသလို၊ ရာခိုင်နှုန်း(<code>%</code>) နဲ့လည်း ပေးလို့ရပါသေးတယ်။ <code>%</code> ကတော့ စုစုပေါင်း Host အရေအတွက်ပေါ်မူတည်ပြီး တွက်ယူသွားမှာဖြစ်ပါတယ်။ ပိုနားလည်လွယ်အောင် Host ၁၀လုံးပါတဲ့ <code>webservers</code> Host Group နဲ့ နှိုင်းယှဉ်ကြည့်ပါမယ်။</p>
+
+<pre><code># Using Percentage
+- name: test play
+  hosts: webservers
+  serial: &quot;30%&quot;
+</code></pre>
+
+<p><code>30%</code> လို့ပြောထားတဲ့အတွက် Host ၁၀လုံးကို ၃လုံးစီခွဲပြီး လေးကြိမ် run ပါတယ်။ နောက်ဆုံးအကြိမ်မှာတော့ ကျန်နေတဲ့ Host ၁လုံးထဲကိုပဲ run သွားတာတွေ့ရပါလိမ့်မယ်။</p>
+
+<p><img src="https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/ansible/serial01.png" alt="" /></p>
+
+<pre><code># Using List
+- name: test play
+  hosts: webservers
+  serial:
+  - 1
+  - 5
+  - 10
+</code></pre>
+
+<p>ဒီ list မှာတော့ Host ၁လုံး၊ ၅လုံးနဲ့ ၁၀လုံးဆိုပြီး သုံးကြိမ်ခွဲ run ပါတယ်။ နောက်ဆုံးအကြိမ်မှာ ၁၀လုံး run ခိုင်းထားပေမဲ့ task မ run ရသေးတာ ၄လုံးပဲကျန်တော့တာကြောင့် ၃ကြိမ်နဲ့ပဲအဆုံးသတ်သွားတာဖြစ်ပါတယ်။</p>
+
+<p><img src="https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/ansible/serial02.png" alt="" /></p>
+
+<pre><code># Mixed
+- name: test play
+  hosts: webservers
+  serial:
+  - 1
+  - 2
+  - 40%
+  - 20%
+</code></pre>
+
+<p>list နဲ့ Percentage နှစ်မျိုးရောတဲ့အခြေအနေမှာလည်း အတူတူပါပဲ။ ဒီနမူနာမှာတော့ ၅ကြိမ်ခွဲ run တာတွေ့ရပါလိမ့်မယ်။ ၁လုံး၊ ၂လုံး နဲ့ Host ၁၀လုံးရဲ့ <code>40%</code> ဖြစ်တဲ့ ၄လုံး ရယ်ကို run အပြီးမှာ Host ၃လုံး ကျန်ပါတယ်။ နောက်ဆုံးမှာ <code>20%</code> လို့ပေထားတဲ့အတွက် ကျန်သမျှကို Host တွေကို ၂လုံးစီခွဲ run ပေးမှာဖြစ်ပါတယ်။ ဒါကြောင့် ၄ကြိမ်မြောက်မှာတော့ Host ၂လုံး run သွားပြီး နောက်ဆုံးအကြိမ်မှာတော့ Host ၁လုံးတည်းနဲ့အဆုံးသတ်သွားတာကို မြင်တွေ့ရမှာပဲဖြစ်ပါတယ်။</p>
+
+<p><img src="https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/ansible/serial03.png" alt="" /></p>
+
+<p>ကိုယ်တိုင် စမ်းသပ်ကြည့်နိုင်ဖို့ Demo Video လေးပါ ဖော်ပြပေးလိုက်ပါတယ်။</p>
+
+<script type="application/javascript" src="//gist.github.com/naingyeminn/65e5c39d109bd910d13c0a69aa184e58.js?file=serial-sleep.yml"></script>
+
+<div class="responsive-embed flex-video">
+        <iframe class="youtube-player" type="text/html" width="640" height="360"
+                src="http://www.youtube.com/embed/mqKPOfgAA2I" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
+        </iframe>
+</div>
+
+
+<p>ဒီ Video လေးမှာတော့ Host ၂လုံးနဲ့ စမ်းသပ်ပြထားတာဖြစ်ပါတယ်။ ပထမဆုံး <code>ansible.cfg</code> ထဲ <code>forks = 10</code> ပေးထားတဲ့အနေအထားနဲ့ run ပါတယ်။ <code>sleep 10</code> ဆိုတဲ့ command ကို run ပြီး Task ကို ၁၀ စက္ကန့်စာ ခဏရပ်ထားပေးတာပါ။ <code>forks = 10</code> ပေးထားတာဖြစ်တဲ့အတွက် Host ၂လုံးစလုံးမှာ တပြိုင်တည်း run သွားတာကိုတွေ့ရပါလိမ့်မယ်။ ဒါကြောင့် ဒီ Task ကို Host ၂လုံးစလုံးမှာ run ပြီးဖို့ ၁၀စက္ကန့်ပဲကြာပါတယ်။ နောက်တစ်ကြိမ် run တဲ့အခါမှာတော့ Playbook ထဲ <code>serial: 1</code> လေးထည့်ပေးလိုက်တဲ့အတွက် Host ၁လုံးကို တစ်ကြိမ်စီခွဲ run ပြီး စက္ကန့် ၂၀လောက်ကြာသွားတာကို တွေ့ရမှာပဲဖြစ်ပါတယ်။</p>
+
+<p>ဒီလောက်ဆို Forks နဲ့ Serial ကိုသုံးပြီး Playbook တွေရဲ့ Performance ကို ချိန်ညှိနိုင်ဖို့ရာ အထောက်အကူပြုလိမ့်မယ် ထင်ပါတယ်။ Performance impact က Managed Host တွေတင်မဟုတ်ပဲ Control Node မှာပါ ရှိနိုင်တယ်ဆိုတာကိုတော့ သတိထားစေချင်ပါတယ်။</p>
+
+<p>Reference: <a href="https://docs.ansible.com/ansible/latest/user_guide/playbooks_delegation.html#rolling-update-batch-size">Rolling Update Batch Size</a></p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/ansible-parallelism/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/ansible-delegation/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p class="contact">Copyright © 2014 <a class="button" href="#contact">Naing Ye` Minn</a></p>
+		        </footer>
+		    </div>
+		  </div>    
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
+

@@ -101,7 +101,7 @@
 
 <script type="application/javascript" src="//gist.github.com/naingyeminn/65e5c39d109bd910d13c0a69aa184e58.js?file=delegation2.output"></script>
 
-<p>ဒီလို Play နှစ်ခုခွဲရေးခြင်းအားဖြင့် မတူညီတဲ့ <a href="https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html#hosts-and-groups">Host တွေ Host Group</a> တွေမှာ မတူညီတဲ့ task တွေကို Playbook တစ်ခုတည်းကနေလုပ်ဆောင်နိုင်စေမှာဖြစ်ပါတယ်။ Play တစ်ခုတည်းနဲ့သာဆိုရင် အဲဒီ Play အတွက် delegate လုပ်လိုက်တဲ့ Host ဒါမှမဟုတ် Host Group တစ်ခုအတွက် တူညီတဲ့ task တွေကိုပဲ ဆောင်ရွက်ပေးနိုင်မှာဖြစ်ပါတယ်။ ဒါပေမဲ့ တချို့အခြေအနေတွေမှာတော့ Playbook တစ်ခုထဲ Play တွေခွဲရေးရုံနဲ့အဆင်မပြေနိုင်တဲ့အခြေအနေတွေရှိပါတယ်။ အဓိကက delegate လုပ်နေတဲ့ Host၊ တနည်းအားဖြင့် <code>hosts</code> keyword နဲ့ကြေငြာထားတဲ့ Host ရဲ့ Facts ကို အခြား host တစ်ခုမှာ run မယ့် Task ထဲထည့်သွင်းအသုံးပြုချင်တယ်ဆိုရင် တော့ Play ခွဲရေးတဲ့နည်းကအဆင်မပြေတော့ပါဘူး။ Play တစ်ခုရဲ့ Facts တွေကို အဲ့ဒီ Play အတွင်းမှာရှိတဲ့ Task တွေကပဲအသုံးပြုနိုင်တာကြောင့်ပါ။ အပေါ်ကနမူနာမှာတွေ့ရတဲ့အတိုင်း <code>ansible_nodename</code> ဆိုတဲ့ variable အနေနဲ့ name တူသည့်တိုင်အောင် Play မတူတဲ့ အတွက် သက်ဆိုင်ရာ Host ရဲ့ Facts ပေါ်မူတည်ပြီး value တွေမတူတော့တာကိုမြင်တွေ့ရတာပဲဖြစ်ပါတယ်။ ဒါကြောင့် ပထမ Play ရဲ့ host မှာရှိတဲ့ <code>ansible_nodename</code> ဆိုတဲ့ Fact variable ကို ဒုတိယ Play ရဲ့ host မှာဆက်သုံးနိုင်စေဖို့ရာ အလွယ်ကူဆုံးကတော့ အဲဒီ Play ၂ခုကို တစ်ခုတည်းအနေနဲ့ ပေါင်းလိုက်ပြီး <code>delegate_to</code> ဆိုတဲ့ keyword ကိုသုံးလိုက်တဲ့နည်းပဲဖြစ်ပါတယ်။</p>
+<p>ဒီလို Play နှစ်ခုခွဲရေးခြင်းအားဖြင့် မတူညီတဲ့ <a href="https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html#hosts-and-groups">Host တွေ Host Group</a> တွေမှာ မတူညီတဲ့ task တွေကို Playbook တစ်ခုတည်းကနေလုပ်ဆောင်နိုင်စေမှာဖြစ်ပါတယ်။ Play တစ်ခုတည်းနဲ့သာဆိုရင် အဲဒီ Play အတွက် delegate လုပ်လိုက်တဲ့ Host ဒါမှမဟုတ် Host Group တစ်ခုအတွက် တူညီတဲ့ task တွေကိုပဲ ဆောင်ရွက်ပေးနိုင်မှာဖြစ်ပါတယ်။ ဒါပေမဲ့ တချို့အခြေအနေတွေမှာတော့ Playbook တစ်ခုထဲ Play တွေခွဲရေးရုံနဲ့ အဆင်မပြေနိုင်တဲ့ အခြေအနေတွေရှိပါတယ်။ အဓိကက delegate လုပ်နေတဲ့ Host၊ တနည်းအားဖြင့် <code>hosts</code> keyword နဲ့ကြေငြာထားတဲ့ Host ရဲ့ Facts ကို အခြား host တစ်ခုမှာ run မယ့် Task ထဲထည့်သွင်းအသုံးပြုချင်တယ်ဆိုရင် တော့ Play ခွဲရေးတဲ့နည်းကအဆင်မပြေတော့ပါဘူး။ Play တစ်ခုရဲ့ Facts တွေကို အဲ့ဒီ Play အတွင်းမှာရှိတဲ့ Task တွေကပဲအသုံးပြုနိုင်တာကြောင့်ပါ။ အပေါ်ကနမူနာမှာတွေ့ရတဲ့အတိုင်း <code>ansible_nodename</code> ဆိုတဲ့ variable အနေနဲ့ name တူသည့်တိုင်အောင် Play မတူတဲ့ အတွက် သက်ဆိုင်ရာ Host ရဲ့ Facts ပေါ်မူတည်ပြီး value တွေမတူတော့တာကိုမြင်တွေ့ရတာပဲဖြစ်ပါတယ်။ ဒါကြောင့် ပထမ Play ရဲ့ host မှာရှိတဲ့ <code>ansible_nodename</code> ဆိုတဲ့ Fact variable ကို ဒုတိယ Play ရဲ့ host မှာဆက်သုံးနိုင်စေဖို့ရာ အလွယ်ကူဆုံးကတော့ အဲဒီ Play ၂ခုကို တစ်ခုတည်းအနေနဲ့ ပေါင်းလိုက်ပြီး <code>delegate_to</code> ဆိုတဲ့ keyword ကိုသုံးလိုက်တဲ့နည်းပဲဖြစ်ပါတယ်။</p>
 
 <script type="application/javascript" src="//gist.github.com/naingyeminn/65e5c39d109bd910d13c0a69aa184e58.js?file=delegation3.yml"></script>
 
@@ -113,7 +113,7 @@
 
 <script type="application/javascript" src="//gist.github.com/naingyeminn/65e5c39d109bd910d13c0a69aa184e58.js?file=delegation-test.yml"></script>
 
-<p>အဓိကကတော့ လက်ရှိ run နေတဲ့ Play ထဲမှာအကြုံးမဝင်တဲ့ အခြား Host/Host Group မှာ task တချို့ကို လှမ်းပြီး run စေချင်တယ်ဆိုရင်တော့ Play တစ်ခုထပ်ခွဲစရာမလိုပဲ <code>delegate_to</code> နဲ့ run ခိုင်းလို့ရတယ်ဆိုတာရယ်၊ Play နဲ့သတ်ဆိုင်တဲ့ Facts တွေကို ဆက်လက်အသုံးပြုနိုင်မှာဖြစ်တယ်ဆိုတာရယ်ကို သိထားခြင်းအားဖြင့် လိုအပ်သလို ထည့်သွင်းအသုံးပြုနိုင်စေဖို့ပဲဖြစ်ပါတယ်။ <code>delegate_to</code> keyword မသုံးလဲ အလုပ်ဖြစ်တဲ့နည်းလမ်းတွေရှိပေမဲ့ သုံးလိုက်ခြင်းအားဖြင့် ကိုယ့်ရဲ့ Playbook မှာမလိုအပ်တဲ့ ရှုပ်ထွေးသွားစေနိုင်တဲ့ task တွေကိုလျှော့ချနိုင်သွားမှာဖြစ်ပါတယ်။</p>
+<p>အဓိကကတော့ လက်ရှိ run နေတဲ့ Play ထဲမှာအကြုံးမဝင်တဲ့ အခြား Host/Host Group မှာ task တချို့ကို လှမ်းပြီး run စေချင်တယ်ဆိုရင်တော့ Play တစ်ခုထပ်ခွဲစရာမလိုပဲ <code>delegate_to</code> နဲ့ run ခိုင်းလို့ ရတယ်ဆိုတာရယ်၊ Play နဲ့သတ်ဆိုင်တဲ့ Facts တွေကို ဆက်လက် အသုံးပြုနိုင်မှာ ဖြစ်တယ်ဆိုတာရယ်ကို သိထားခြင်းအားဖြင့် လိုအပ်သလို ထည့်သွင်း အသုံးပြုနိုင်စေဖို့ပဲ ဖြစ်ပါတယ်။ <code>delegate_to</code> keyword မသုံးလဲ အလုပ်ဖြစ်တဲ့ နည်းလမ်းတွေရှိပေမဲ့ သုံးလိုက်ခြင်းအားဖြင့် ကိုယ့်ရဲ့ Playbook မှာမလိုအပ်တဲ့ ရှုပ်ထွေးသွားစေနိုင်တဲ့ task တွေကိုလျှော့ချနိုင်သွားမှာဖြစ်ပါတယ်။</p>
 
 <p>Reference: <a href="https://docs.ansible.com/ansible/latest/user_guide/playbooks_delegation.html">Playbooks_Delegation</a></p>
 
@@ -128,7 +128,7 @@
     </p>
 </div>
 		<nav id="pagination">
-			
+			<a class="prev" href="http://naingyeminn.com/posts/ansible-parallelism/">Prev</a>
 			<a class="next" href="http://naingyeminn.com/posts/managing-rhel5-with-ansible/">Next</a>
 		</nav>
 	<p>

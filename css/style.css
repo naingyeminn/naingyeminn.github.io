@@ -5,6 +5,13 @@
   font-style: normal
 }
 
+@font-face{
+  font-family: 'Codes';
+  src:url('../fonts/SauceCodePowerlineRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-size: 16px;
 }
@@ -353,12 +360,12 @@ pre code {
 }
 
 .code {
-  font-family: 'Liberation Mono', Monaco, Consolas;
+  font-family: 'Codes', 'Liberation Mono', Monaco, Consolas;
   display: block;
 }
 
 code, pre {
-    font-family: "MyanmarUnicode", 'Liberation Mono', Monaco, Consolas;
+    font-family: 'Codes', "MyanmarUnicode", 'Liberation Mono', Monaco, Consolas;
     font-size: 16px;
     color: #fa5305;
 }
