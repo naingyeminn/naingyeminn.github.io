@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://naingyeminn.com/posts/ansible-tower-db-replication/</loc>
+    <lastmod>2019-02-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://naingyeminn.com/posts/ansible-parallelism/</loc>
     <lastmod>2018-12-12T00:00:00+00:00</lastmod>
   </url>
@@ -201,7 +206,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/ansible/</loc>
-    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -320,7 +325,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/linux/</loc>
-    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -362,7 +367,7 @@
   
   <url>
     <loc>http://naingyeminn.com/</loc>
-    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -398,7 +403,7 @@
   
   <url>
     <loc>http://naingyeminn.com/posts/</loc>
-    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -434,7 +439,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/scripting/</loc>
-    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -464,7 +469,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/tipstricks/</loc>
-    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

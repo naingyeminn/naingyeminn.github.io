@@ -5,7 +5,201 @@
     <link>http://naingyeminn.com/</link>
     <language>en-us</language>
     <author>Naing Ye` Minn</author>
-    <updated>2018-12-12 00:00:00 &#43;0000 UTC</updated>
+    <updated>2019-02-03 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>Ansible Tower: DB Replication</title>
+      <link>http://naingyeminn.com/posts/ansible-tower-db-replication/</link>
+      <pubDate>Sun, 03 Feb 2019 00:00:00 UTC</pubDate>
+      <author>Naing Ye` Minn</author>
+      <guid>http://naingyeminn.com/posts/ansible-tower-db-replication/</guid>
+      <description>
+
+&lt;p&gt;Ansible Tower ကိုစမ်းဖူးရင် ဒီအခြေအနေလေးကိုကြုံဖူးကြမှာပါ။ Documentation ထဲမှာတော့ Installation လုပ်တဲ့အခါ Single Machine ရယ် HA Multi-Machine Cluster ရယ်ဆိုပြီးတွေ့ရပေမဲ့ နောက်ကွယ်က Database ကိုတော့ Cloud ဒါမှမဟုတ် Single Machine အနေနဲ့ပဲသုံးပြထားပါတယ်။ Cloud အနေနဲ့ကတော့ သိပ်ပြဿနာမရှိပေမဲ့ Local မှာပဲ ထားချင်တဲ့အခါကျ Single Machine ကအဆင်မပြေပါဘူး။ Tower instance တွေကို ဘယ်လိုပဲ Cluster လုပ်လုပ် အဓိက DB တစ်ခုခုဖြစ်သွားရင် ပြဿနာတက်မှာပါပဲ။ Online မှာ လိုက်ရှာဖတ်ကြည့်ရသလောက်ကလည်း remote database တစ်ခုတည်းကို Multi-Machine Cluster ကနေချိပ်သုံးတဲ့နည်းတွေပဲတွေ့ရပါတယ်။ ဒါပေမဲ့ ရှားရှားပါးပါး Linkedin က &lt;a href=&#34;https://www.linkedin.com/pulse/building-ansible-tower-clusters-louay-shaat&#34;&gt;post&lt;/a&gt; တစ်ခုကိုရှာတွေ့လိုက်ပါတယ်။ အဲ့ဒီ post မှာတော့ Tower ကို remote database နဲ့ ပုံမှန်အတိုင်း install လုပ်ပါတယ်။ ပြီးမှ Database ကို နောက် server တစ်လုံးနဲ့ replicate ထပ်လုပ်တာပါ။ ဒါနဲ့ပဲ အကြံရသွားပြီး Github ပေါ်မှာ Automate လုပ်ပေးတဲ့ဟာများ share ထားလေမလားဆိုပြီး လျှောက်ရှာကြည့်မိတယ်။ &lt;a href=&#34;https://github.com/YanChii/ansible-role-postgres-ha&#34;&gt;ansible-role-postgres-ha&lt;/a&gt; နဲ့ &lt;a href=&#34;https://github.com/samdoran/ansible-role-pgsql-replication&#34;&gt;ansible-role-pgsql-replication&lt;/a&gt; ဆိုတဲ့ နှစ်ခုရှာတွေ့ပေမဲ့ နှစ်ခုလုံးက တော်တော်လေးပြည့်စုံအောင်လုပ်ပေးထားတဲ့အတွက် အနည်းငယ်ရှုပ်ထွေးပါတယ်။ ပထမတစ်ခုက ပိုဆိုးပါတယ် သူ့မှာက Replication အပြင် Auto Failover အတွက် pacemaker နဲ့ cluster လုပ်ပေးတဲ့အပိုင်းတွေပါ ပါတာကြောင့် ကိုယ့် environment နဲ့ကိုက်ညီအောင် တော်တော်လေးပြင်ဆင်ပြီးမှ run လို့ရမယ့်အနေအထားမျိုးဖြစ်နေပါတယ်။ ဒါကြောင့် ပထမရှာတွေ့ထားတဲ့ Linkedin post ထဲကအတိုင်းပဲ manually လုပ်ကြည့်ဖြစ်သွားပါတယ်။ အဆင်ပြေတဲ့အပြင် ကောင်းတဲ့တစ်ချက်က လုပ်ရမယ့် step အကုန်လုံးကို Ansible Ad-hoc command တွေနဲ့လုပ်ပြထားတာပါပဲ။ အားလုံးအဆင်ပြေပေမဲ့ သူ့ထဲမှာက replica တစ်လုံးပဲလုပ်ပြထားတဲ့အပြင်၊ Auto Failover မဟုတ်တဲ့အတွက် Master DB down သွားရင် Replica နဲ့ဘယ်လိုအစားထိုးမလဲဆိုတာလည်းမပါပါဘူး။ ဒါကြောင့် Multiple Replicas ရဖို့ကို Automate လုပ်ကြည့်ရင်ကောင်းမှာပဲဆိုပြီး Playbook တစ်ခုရေးကြည့်ဖြစ်တယ်။ အဆင်ပြေတဲ့အနေအထားတစ်ခုရမှ ပိုပြီး ရှင်းရှင်းလင်းလင်းလေးဖြစ်အောင် Role တွေနဲ့ခွဲရေးလိုက်တယ်။ ဒါပေမဲ့ RHEL 7 တစ်ခုတည်းအတွက်ပဲစမ်းထားတာဖြစ်ပြီး Failover အတွက်လည်းမပါသေးပါဘူး။ စိတ်ဝင်စားရင်တော့ ဝိုင်းကူရေးပေးဖို့ဖိတ်ခေါ်ချင်ပါတယ်။ ဒီ Post လေးမှာတော့ အသုံးပြုပုံနဲ့ Replica ကို Master အနေနဲ့ဘယ်လို promote လုပ်မလဲဆိုတာလေးပါဖော်ပြပေးလိုက်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/ansible/Ansible_Tower.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;လ-အပ-ခ-က-မ&#34;&gt;လိုအပ်ချက်များ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ansible Tower အတွက် VM တစ်လုံးနဲ့ Database အတွက် VM ၂လုံး အနည်းဆုံးလိုအပ်ပါမယ်။&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;VM အားလုံး Internet ရနေဖို့လိုအပ်ပြီး Network အနေနဲ့ တစ်လုံးနဲ့တစ်လုံး Reachable ဖြစ်နေရပါမယ်။&lt;/li&gt;
+&lt;li&gt;VM အားလုံး RHEL 7 install လုပ်ထားပြီး Repository အနေနဲ့ကတော့ &lt;code&gt;rhel-7-server-rpms&lt;/code&gt; နဲ့ &lt;code&gt;rhel-7-server-extras-rpms&lt;/code&gt; ကို Enable လုပ်ထားဖို့လိုပါတယ်။&lt;/li&gt;
+&lt;li&gt;VM အကုန်လုံးရဲ့ /etc/hosts ထဲမှာ IP နဲ့ Hostname လေးတွေထည့်ပေးထားပါ။ ဥပမာ -&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# cat /etc/hosts
+172.25.0.10		tower.example.com tower
+172.25.0.21		master.example.com master
+172.25.0.21		db01.example.com db01
+172.25.0.22		db02.example.com db02
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;ansible-tower-installation&#34;&gt;Ansible Tower Installation&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ansible Tower install လုပ်မယ့် VM ပေါ်မှာ SSH Key ထုတ်ပြီး Database VM ၂လုံးထဲကိုကူးထည့်ထားပါ။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# ssh-keygen
+# ssh-copy-id db01
+# ssh-copy-id db02
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Database VM တွေထဲကို Tower VM ကနေတဆင့် SSH နဲ့ ဝင်ကြည့်ပါ။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# ssh root@master
+# ssh root@db01
+# ssh root@db02
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;လိုအပ်တဲ့ Tower Installer package ကို Download ဆွဲပြီး extract လုပ်ပါ။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# curl -O https://releases.ansible.com/ansible-tower/setup-bundle/ansible-tower-setup-bundle-3.3.1-1.el7.tar.gz
+# tar -xf ansible-tower-setup-bundle-3.3.1-1.el7.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;extract လုပ်ထားသော directory ထဲသို့ဝင်ရောက်ပြီး &lt;code&gt;inventory&lt;/code&gt; file ကို နမူနာပြထားတဲ့အတိုင်းပြင်ပါ။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# cd ansible-tower-setup-bundle-3.3.1-1.el7
+# cat inventory
+[tower]
+localhost ansible_connection=local
+
+[database]
+master
+
+[all:vars]
+admin_password=&#39;RHT0w3r&#39;
+
+pg_host=&#39;master.example.com&#39;
+pg_port=&#39;5432&#39;
+
+pg_database=&#39;awx&#39;
+pg_username=&#39;awx&#39;
+pg_password=&#39;RHT0w3r&#39;
+
+rabbitmq_username=tower
+rabbitmq_password=&#39;RHT0w3r&#39;
+rabbitmq_cookie=cookiemonster
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ပြီးရင်တော့ &lt;code&gt;setup.sh&lt;/code&gt; ဆိုတဲ့ script လေးကို run လိုက်ပါ။ Installation စတင်ပါလိမ့်မယ်။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# ./setup.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Complete ဖြစ်သွားပြီဆိုရင်တော့ Browser ကနေ Tower ရဲ့ IP Address ကိုသုံးပြီးခေါ်ကြည့်ပါ။&lt;/li&gt;
+&lt;li&gt;Login Page ကျလာပြီဆိုရင်တော့ Username: admin နဲ့ inventory ဖိုင်ထဲသတ်မှတ်ခဲ့တဲ့ admin_password ကိုသုံးပြီး Login ဝင်လိုက်ပါ။ License ဖိုင် ထည့်ရမယ့် page ကိုမြင်ရပါလိမ့်မယ်။&lt;/li&gt;
+&lt;li&gt;License ဖိုင်ကိုတော့ &lt;a href=&#34;https://www.ansible.com/license&#34;&gt;https://www.ansible.com/license&lt;/a&gt; မှာရယူနိုင်ပါတယ်။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;postgresql-db-streaming-replication&#34;&gt;PostgreSQL DB Streaming Replication&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ansible Tower VM ထဲမှာပဲ &lt;code&gt;tower-db-replica&lt;/code&gt; git repo ကို clone လုပ်ပါ။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# git clone https://github.com/naingyeminn/tower-db-replica.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ရလာတဲ့ &lt;code&gt;tower-db-replica&lt;/code&gt; directory ထဲဝင်ပြီး &lt;code&gt;inventory&lt;/code&gt; ဖိုင်ကိုပြင်ပါမယ်။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# cd tower-db-replica
+# cat inventory
+[pg_master]
+master
+
+[pg_replicas]
+db02
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ပြီးရင်တော့ &lt;code&gt;playbook.yml&lt;/code&gt; ကို run လိုက်ရုံပါပဲ။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# ansible-playbook -i inventory playbook.yml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ဘာ error မှမတက်ပဲ complete ဖြစ်သွားရင်တော့ replication အဆင်ပြေမပြေကို Master node ထဲဝင်ပြီးစစ်ကြည့်ပါ။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# ssh master
+# su - postgres
+-bash-4.2$ psql -c &#39;select application_name, state, sync_priority, sync_state from pg_stat_replication;&#39;
+ application_name |   state   | sync_priority | sync_state
+------------------+-----------+---------------+------------
+ db02             | streaming |             1 | sync
+(1 row)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;အပေါ်ကအတိုင်း မြင်ရပြီဆိုရင်တော့ Replication အဆင်ပြေသွားပါပြီ။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;promote-replica-to-master&#34;&gt;Promote Replica to Master&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Master node down သွားပြီဆိုရင်တော့ Tower VM ရဲ့ &lt;code&gt;/etc/hosts&lt;/code&gt; ထဲမှာရှိတဲ့ &lt;code&gt;master.example.com&lt;/code&gt; ကို IP ပြောင်းပေးရပါမယ်။ ဥပမာ &lt;code&gt;db01.example.com&lt;/code&gt; ရဲ့ IP &lt;code&gt;172.25.0.21&lt;/code&gt; ကို &lt;code&gt;master.example.com&lt;/code&gt; နဲ့ထပ်တွဲပေးထားတာကနေ &lt;code&gt;db02.example.com&lt;/code&gt; ရဲ့ IP &lt;code&gt;172.25.0.22&lt;/code&gt; နဲ့ ပြောင်းပေးလိုက်တာမျိုးပါ။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# cat /etc/hosts
+172.25.0.10		tower.example.com tower
+172.25.0.22		master.example.com master
+172.25.0.21		db01.example.com db01
+172.25.0.22		db02.example.com db02
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ပြီးရင်တော့ Replica node ဖြစ်တဲ့ &lt;code&gt;db01&lt;/code&gt; ထဲကိုဝင်ပြီး အောက်မှာ ဖော်ပြထားတဲ့ command လေးတွေရိုက်လိုက်ပါ။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# mv /var/lib/pgsql/9.6/data/recovery.{conf,done}
+# systemctl restart postgresql-9.6.service
+# firewall-cmd --add-service=postgresql --permanent
+# firewall-cmd --reload
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tower VM ပုံမှန်အတိုင်းအလုပ်ပြန်လုပ်သွားပါလိမ့်မယ်။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;adding-new-replica&#34;&gt;Adding New Replica&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ဒီအတွက်ကတော့ အပေါ်ကနည်းအတိုင်း Tower VM ရဲ့ &lt;code&gt;tower-db-replica&lt;/code&gt; ထဲ &lt;code&gt;inventory&lt;/code&gt; ဖိုင်ကိုပြင်ပြီး Playbook ထပ် run ပေးလိုက်ပါ။&lt;/li&gt;
+&lt;li&gt;Replica ကို ၁လုံးထက်ပိုပြီးတော့လည်းချိပ်ထားနိုင်ပါတယ်။ &lt;code&gt;[pg_replicas]&lt;/code&gt; အောက်မှာထပ်ဖြည့်ရုံပါပဲ။&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ဒီလောက်ဆို လုံလောက်မယ်ထင်ပါတယ်။ ကိုယ့် environment နဲ့ကိုက်ညီအောင်တော့ tune လုပ်ဖို့လိုကောင်းလိုပါလိမ့်မယ်။ အဓိကကတော့ Ansible ကိုလေ့လာရင်း use case လေးတစ်ခုနဲ့တည်ပြီး စမ်းကြည့်တဲ့သဘောပါ။ Auto Failover အတွက်လည်း အချိန်ရရင်ထပ်မံကြိုးစားဖြည့်စွက်ပါဦးမယ်။ လိုအပ်ချက်လေးတွေရှိသေးတဲ့အတွက် Github ပေါ်က &lt;a href=&#34;https://github.com/naingyeminn/tower-db-replica&#34;&gt;Project&lt;/a&gt; လေးမှာ ဝင်ရောက်ပါဝင်အကြံပြုပေး၊ ဝိုင်းဝန်း ရေးသားပြင်ဆင်ပေးဖို့ ထပ်မံဖိတ်ခေါ်ချင်ပါတယ်။&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Reference: &lt;a href=&#34;https://www.linkedin.com/pulse/building-ansible-tower-clusters-louay-shaat&#34;&gt;Building Ansible Tower Clusters by Louay Shaat&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Optimizing Ansible Playbooks: Parallelism</title>

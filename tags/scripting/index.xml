@@ -6,10 +6,19 @@
     <description>Recent content in Scripting on Naing Ye` Minn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://naingyeminn.com/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ansible Tower: DB Replication</title>
+      <link>http://naingyeminn.com/posts/ansible-tower-db-replication/</link>
+      <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://naingyeminn.com/posts/ansible-tower-db-replication/</guid>
+      <description>Ansible Tower ကိုစမ်းဖူးရင် ဒီအခြေအနေလေးကိုကြုံဖူးကြမှာပါ။ Documentation ထဲမှာတော့ Installation လုပ်တဲ့အခါ Single Machine ရယ် HA Multi-Machine Cluster ရယ်ဆိုပြီးတွေ့ရပေမဲ့ နောက်ကွယ်က Database ကိုတော့ Cloud ဒါမှမဟုတ် Single Machine အနေနဲ့ပဲသုံးပြထားပါတယ်။ Cloud အနေနဲ့ကတော့ သိပ်ပြဿနာမရှိပေမဲ့ Local မှာပဲ ထားချင်တဲ့အခါကျ Single Machine ကအဆင်မပြေပါဘူး။ Tower instance တွေကို ဘယ်လိုပဲ Cluster လုပ်လုပ် အဓိက DB တစ်ခုခုဖြစ်သွားရင် ပြဿနာတက်မှာပါပဲ။ Online မှာ လိုက်ရှာဖတ်ကြည့်ရသလောက်ကလည်း remote database တစ်ခုတည်းကို Multi-Machine Cluster ကနေချိပ်သုံးတဲ့နည်းတွေပဲတွေ့ရပါတယ်။ ဒါပေမဲ့ ရှားရှားပါးပါး Linkedin က post တစ်ခုကိုရှာတွေ့လိုက်ပါတယ်။ အဲ့ဒီ post မှာတော့ Tower ကို remote database နဲ့ ပုံမှန်အတိုင်း install လုပ်ပါတယ်။ ပြီးမှ Database ကို နောက် server တစ်လုံးနဲ့ replicate ထပ်လုပ်တာပါ။ ဒါနဲ့ပဲ အကြံရသွားပြီး Github ပေါ်မှာ Automate လုပ်ပေးတဲ့ဟာများ share ထားလေမလားဆိုပြီး လျှောက်ရှာကြည့်မိတယ်။ ansible-role-postgres-ha နဲ့ ansible-role-pgsql-replication ဆိုတဲ့ နှစ်ခုရှာတွေ့ပေမဲ့ နှစ်ခုလုံးက တော်တော်လေးပြည့်စုံအောင်လုပ်ပေးထားတဲ့အတွက် အနည်းငယ်ရှုပ်ထွေးပါတယ်။ ပထမတစ်ခုက ပိုဆိုးပါတယ် သူ့မှာက Replication အပြင် Auto Failover အတွက် pacemaker နဲ့ cluster လုပ်ပေးတဲ့အပိုင်းတွေပါ ပါတာကြောင့် ကိုယ့် environment နဲ့ကိုက်ညီအောင် တော်တော်လေးပြင်ဆင်ပြီးမှ run လို့ရမယ့်အနေအထားမျိုးဖြစ်နေပါတယ်။ ဒါကြောင့် ပထမရှာတွေ့ထားတဲ့ Linkedin post ထဲကအတိုင်းပဲ manually လုပ်ကြည့်ဖြစ်သွားပါတယ်။ အဆင်ပြေတဲ့အပြင် ကောင်းတဲ့တစ်ချက်က လုပ်ရမယ့် step အကုန်လုံးကို Ansible Ad-hoc command တွေနဲ့လုပ်ပြထားတာပါပဲ။ အားလုံးအဆင်ပြေပေမဲ့ သူ့ထဲမှာက replica တစ်လုံးပဲလုပ်ပြထားတဲ့အပြင်၊ Auto Failover မဟုတ်တဲ့အတွက် Master DB down သွားရင် Replica နဲ့ဘယ်လိုအစားထိုးမလဲဆိုတာလည်းမပါပါဘူး။ ဒါကြောင့် Multiple Replicas ရဖို့ကို Automate လုပ်ကြည့်ရင်ကောင်းမှာပဲဆိုပြီး Playbook တစ်ခုရေးကြည့်ဖြစ်တယ်။ အဆင်ပြေတဲ့အနေအထားတစ်ခုရမှ ပိုပြီး ရှင်းရှင်းလင်းလင်းလေးဖြစ်အောင် Role တွေနဲ့ခွဲရေးလိုက်တယ်။ ဒါပေမဲ့ RHEL 7 တစ်ခုတည်းအတွက်ပဲစမ်းထားတာဖြစ်ပြီး Failover အတွက်လည်းမပါသေးပါဘူး။ စိတ်ဝင်စားရင်တော့ ဝိုင်းကူရေးပေးဖို့ဖိတ်ခေါ်ချင်ပါတယ်။ ဒီ Post လေးမှာတော့ အသုံးပြုပုံနဲ့ Replica ကို Master အနေနဲ့ဘယ်လို promote လုပ်မလဲဆိုတာလေးပါဖော်ပြပေးလိုက်ပါတယ်။</description>
+    </item>
     
     <item>
       <title>Optimizing Ansible Playbooks: Parallelism</title>

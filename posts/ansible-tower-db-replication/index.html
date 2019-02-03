@@ -1,0 +1,339 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - Ansible Tower: DB Replication</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://use.fontawesome.com/52ab3615c7.js"></script>
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/ansible-tower-db-replication/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="contact" class="overlay">
+  <div class="popup">
+    <a class="close" href="#/">&times;</a>
+    <div class="content">
+    	<ul>
+    		<li><a href="mailto:me@naingyeminn.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+
+    		<li><a href="https://github.com/naingyeminn" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    		<li><a href="https://plus.google.com/107143022418508884720" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.facebook.com/nyeminn" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.linkedin.com/in/naingyeminn" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+    	</ul> 
+    </div>
+  </div>
+</div>
+
+
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/ansible-tower-db-replication/">Ansible Tower: DB Replication</a></h1>
+	        <div class="post-time">February 3 2019</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com//tags/ansible">ansible</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/linux">linux</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/scripting">scripting</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/tipstricks">tips&amp;tricks</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        
+
+<p>Ansible Tower ကိုစမ်းဖူးရင် ဒီအခြေအနေလေးကိုကြုံဖူးကြမှာပါ။ Documentation ထဲမှာတော့ Installation လုပ်တဲ့အခါ Single Machine ရယ် HA Multi-Machine Cluster ရယ်ဆိုပြီးတွေ့ရပေမဲ့ နောက်ကွယ်က Database ကိုတော့ Cloud ဒါမှမဟုတ် Single Machine အနေနဲ့ပဲသုံးပြထားပါတယ်။ Cloud အနေနဲ့ကတော့ သိပ်ပြဿနာမရှိပေမဲ့ Local မှာပဲ ထားချင်တဲ့အခါကျ Single Machine ကအဆင်မပြေပါဘူး။ Tower instance တွေကို ဘယ်လိုပဲ Cluster လုပ်လုပ် အဓိက DB တစ်ခုခုဖြစ်သွားရင် ပြဿနာတက်မှာပါပဲ။ Online မှာ လိုက်ရှာဖတ်ကြည့်ရသလောက်ကလည်း remote database တစ်ခုတည်းကို Multi-Machine Cluster ကနေချိပ်သုံးတဲ့နည်းတွေပဲတွေ့ရပါတယ်။ ဒါပေမဲ့ ရှားရှားပါးပါး Linkedin က <a href="https://www.linkedin.com/pulse/building-ansible-tower-clusters-louay-shaat">post</a> တစ်ခုကိုရှာတွေ့လိုက်ပါတယ်။ အဲ့ဒီ post မှာတော့ Tower ကို remote database နဲ့ ပုံမှန်အတိုင်း install လုပ်ပါတယ်။ ပြီးမှ Database ကို နောက် server တစ်လုံးနဲ့ replicate ထပ်လုပ်တာပါ။ ဒါနဲ့ပဲ အကြံရသွားပြီး Github ပေါ်မှာ Automate လုပ်ပေးတဲ့ဟာများ share ထားလေမလားဆိုပြီး လျှောက်ရှာကြည့်မိတယ်။ <a href="https://github.com/YanChii/ansible-role-postgres-ha">ansible-role-postgres-ha</a> နဲ့ <a href="https://github.com/samdoran/ansible-role-pgsql-replication">ansible-role-pgsql-replication</a> ဆိုတဲ့ နှစ်ခုရှာတွေ့ပေမဲ့ နှစ်ခုလုံးက တော်တော်လေးပြည့်စုံအောင်လုပ်ပေးထားတဲ့အတွက် အနည်းငယ်ရှုပ်ထွေးပါတယ်။ ပထမတစ်ခုက ပိုဆိုးပါတယ် သူ့မှာက Replication အပြင် Auto Failover အတွက် pacemaker နဲ့ cluster လုပ်ပေးတဲ့အပိုင်းတွေပါ ပါတာကြောင့် ကိုယ့် environment နဲ့ကိုက်ညီအောင် တော်တော်လေးပြင်ဆင်ပြီးမှ run လို့ရမယ့်အနေအထားမျိုးဖြစ်နေပါတယ်။ ဒါကြောင့် ပထမရှာတွေ့ထားတဲ့ Linkedin post ထဲကအတိုင်းပဲ manually လုပ်ကြည့်ဖြစ်သွားပါတယ်။ အဆင်ပြေတဲ့အပြင် ကောင်းတဲ့တစ်ချက်က လုပ်ရမယ့် step အကုန်လုံးကို Ansible Ad-hoc command တွေနဲ့လုပ်ပြထားတာပါပဲ။ အားလုံးအဆင်ပြေပေမဲ့ သူ့ထဲမှာက replica တစ်လုံးပဲလုပ်ပြထားတဲ့အပြင်၊ Auto Failover မဟုတ်တဲ့အတွက် Master DB down သွားရင် Replica နဲ့ဘယ်လိုအစားထိုးမလဲဆိုတာလည်းမပါပါဘူး။ ဒါကြောင့် Multiple Replicas ရဖို့ကို Automate လုပ်ကြည့်ရင်ကောင်းမှာပဲဆိုပြီး Playbook တစ်ခုရေးကြည့်ဖြစ်တယ်။ အဆင်ပြေတဲ့အနေအထားတစ်ခုရမှ ပိုပြီး ရှင်းရှင်းလင်းလင်းလေးဖြစ်အောင် Role တွေနဲ့ခွဲရေးလိုက်တယ်။ ဒါပေမဲ့ RHEL 7 တစ်ခုတည်းအတွက်ပဲစမ်းထားတာဖြစ်ပြီး Failover အတွက်လည်းမပါသေးပါဘူး။ စိတ်ဝင်စားရင်တော့ ဝိုင်းကူရေးပေးဖို့ဖိတ်ခေါ်ချင်ပါတယ်။ ဒီ Post လေးမှာတော့ အသုံးပြုပုံနဲ့ Replica ကို Master အနေနဲ့ဘယ်လို promote လုပ်မလဲဆိုတာလေးပါဖော်ပြပေးလိုက်ပါတယ်။</p>
+
+<p><img src="https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/ansible/Ansible_Tower.png" alt="" /></p>
+
+<hr />
+
+<h2 id="လ-အပ-ခ-က-မ">လိုအပ်ချက်များ</h2>
+
+<ul>
+<li>Ansible Tower အတွက် VM တစ်လုံးနဲ့ Database အတွက် VM ၂လုံး အနည်းဆုံးလိုအပ်ပါမယ်။<br /></li>
+<li>VM အားလုံး Internet ရနေဖို့လိုအပ်ပြီး Network အနေနဲ့ တစ်လုံးနဲ့တစ်လုံး Reachable ဖြစ်နေရပါမယ်။</li>
+<li>VM အားလုံး RHEL 7 install လုပ်ထားပြီး Repository အနေနဲ့ကတော့ <code>rhel-7-server-rpms</code> နဲ့ <code>rhel-7-server-extras-rpms</code> ကို Enable လုပ်ထားဖို့လိုပါတယ်။</li>
+<li>VM အကုန်လုံးရဲ့ /etc/hosts ထဲမှာ IP နဲ့ Hostname လေးတွေထည့်ပေးထားပါ။ ဥပမာ -</li>
+</ul>
+
+<pre><code># cat /etc/hosts
+172.25.0.10		tower.example.com tower
+172.25.0.21		master.example.com master
+172.25.0.21		db01.example.com db01
+172.25.0.22		db02.example.com db02
+</code></pre>
+
+<hr />
+
+<h2 id="ansible-tower-installation">Ansible Tower Installation</h2>
+
+<ul>
+<li>Ansible Tower install လုပ်မယ့် VM ပေါ်မှာ SSH Key ထုတ်ပြီး Database VM ၂လုံးထဲကိုကူးထည့်ထားပါ။</li>
+</ul>
+
+<pre><code># ssh-keygen
+# ssh-copy-id db01
+# ssh-copy-id db02
+</code></pre>
+
+<ul>
+<li>Database VM တွေထဲကို Tower VM ကနေတဆင့် SSH နဲ့ ဝင်ကြည့်ပါ။</li>
+</ul>
+
+<pre><code># ssh root@master
+# ssh root@db01
+# ssh root@db02
+</code></pre>
+
+<ul>
+<li>လိုအပ်တဲ့ Tower Installer package ကို Download ဆွဲပြီး extract လုပ်ပါ။</li>
+</ul>
+
+<pre><code># curl -O https://releases.ansible.com/ansible-tower/setup-bundle/ansible-tower-setup-bundle-3.3.1-1.el7.tar.gz
+# tar -xf ansible-tower-setup-bundle-3.3.1-1.el7.tar.gz
+</code></pre>
+
+<ul>
+<li>extract လုပ်ထားသော directory ထဲသို့ဝင်ရောက်ပြီး <code>inventory</code> file ကို နမူနာပြထားတဲ့အတိုင်းပြင်ပါ။</li>
+</ul>
+
+<pre><code># cd ansible-tower-setup-bundle-3.3.1-1.el7
+# cat inventory
+[tower]
+localhost ansible_connection=local
+
+[database]
+master
+
+[all:vars]
+admin_password='RHT0w3r'
+
+pg_host='master.example.com'
+pg_port='5432'
+
+pg_database='awx'
+pg_username='awx'
+pg_password='RHT0w3r'
+
+rabbitmq_username=tower
+rabbitmq_password='RHT0w3r'
+rabbitmq_cookie=cookiemonster
+</code></pre>
+
+<ul>
+<li>ပြီးရင်တော့ <code>setup.sh</code> ဆိုတဲ့ script လေးကို run လိုက်ပါ။ Installation စတင်ပါလိမ့်မယ်။</li>
+</ul>
+
+<pre><code># ./setup.sh
+</code></pre>
+
+<ul>
+<li>Complete ဖြစ်သွားပြီဆိုရင်တော့ Browser ကနေ Tower ရဲ့ IP Address ကိုသုံးပြီးခေါ်ကြည့်ပါ။</li>
+<li>Login Page ကျလာပြီဆိုရင်တော့ Username: admin နဲ့ inventory ဖိုင်ထဲသတ်မှတ်ခဲ့တဲ့ admin_password ကိုသုံးပြီး Login ဝင်လိုက်ပါ။ License ဖိုင် ထည့်ရမယ့် page ကိုမြင်ရပါလိမ့်မယ်။</li>
+<li>License ဖိုင်ကိုတော့ <a href="https://www.ansible.com/license">https://www.ansible.com/license</a> မှာရယူနိုင်ပါတယ်။</li>
+</ul>
+
+<hr />
+
+<h2 id="postgresql-db-streaming-replication">PostgreSQL DB Streaming Replication</h2>
+
+<ul>
+<li>Ansible Tower VM ထဲမှာပဲ <code>tower-db-replica</code> git repo ကို clone လုပ်ပါ။</li>
+</ul>
+
+<pre><code># git clone https://github.com/naingyeminn/tower-db-replica.git
+</code></pre>
+
+<ul>
+<li>ရလာတဲ့ <code>tower-db-replica</code> directory ထဲဝင်ပြီး <code>inventory</code> ဖိုင်ကိုပြင်ပါမယ်။</li>
+</ul>
+
+<pre><code># cd tower-db-replica
+# cat inventory
+[pg_master]
+master
+
+[pg_replicas]
+db02
+</code></pre>
+
+<ul>
+<li>ပြီးရင်တော့ <code>playbook.yml</code> ကို run လိုက်ရုံပါပဲ။</li>
+</ul>
+
+<pre><code># ansible-playbook -i inventory playbook.yml
+</code></pre>
+
+<ul>
+<li>ဘာ error မှမတက်ပဲ complete ဖြစ်သွားရင်တော့ replication အဆင်ပြေမပြေကို Master node ထဲဝင်ပြီးစစ်ကြည့်ပါ။</li>
+</ul>
+
+<pre><code># ssh master
+# su - postgres
+-bash-4.2$ psql -c 'select application_name, state, sync_priority, sync_state from pg_stat_replication;'
+ application_name |   state   | sync_priority | sync_state
+------------------+-----------+---------------+------------
+ db02             | streaming |             1 | sync
+(1 row)
+</code></pre>
+
+<ul>
+<li>အပေါ်ကအတိုင်း မြင်ရပြီဆိုရင်တော့ Replication အဆင်ပြေသွားပါပြီ။</li>
+</ul>
+
+<hr />
+
+<h2 id="promote-replica-to-master">Promote Replica to Master</h2>
+
+<ul>
+<li>Master node down သွားပြီဆိုရင်တော့ Tower VM ရဲ့ <code>/etc/hosts</code> ထဲမှာရှိတဲ့ <code>master.example.com</code> ကို IP ပြောင်းပေးရပါမယ်။ ဥပမာ <code>db01.example.com</code> ရဲ့ IP <code>172.25.0.21</code> ကို <code>master.example.com</code> နဲ့ထပ်တွဲပေးထားတာကနေ <code>db02.example.com</code> ရဲ့ IP <code>172.25.0.22</code> နဲ့ ပြောင်းပေးလိုက်တာမျိုးပါ။</li>
+</ul>
+
+<pre><code># cat /etc/hosts
+172.25.0.10		tower.example.com tower
+172.25.0.22		master.example.com master
+172.25.0.21		db01.example.com db01
+172.25.0.22		db02.example.com db02
+</code></pre>
+
+<ul>
+<li>ပြီးရင်တော့ Replica node ဖြစ်တဲ့ <code>db01</code> ထဲကိုဝင်ပြီး အောက်မှာ ဖော်ပြထားတဲ့ command လေးတွေရိုက်လိုက်ပါ။</li>
+</ul>
+
+<pre><code># mv /var/lib/pgsql/9.6/data/recovery.{conf,done}
+# systemctl restart postgresql-9.6.service
+# firewall-cmd --add-service=postgresql --permanent
+# firewall-cmd --reload
+</code></pre>
+
+<ul>
+<li>Tower VM ပုံမှန်အတိုင်းအလုပ်ပြန်လုပ်သွားပါလိမ့်မယ်။</li>
+</ul>
+
+<hr />
+
+<h2 id="adding-new-replica">Adding New Replica</h2>
+
+<ul>
+<li>ဒီအတွက်ကတော့ အပေါ်ကနည်းအတိုင်း Tower VM ရဲ့ <code>tower-db-replica</code> ထဲ <code>inventory</code> ဖိုင်ကိုပြင်ပြီး Playbook ထပ် run ပေးလိုက်ပါ။</li>
+<li>Replica ကို ၁လုံးထက်ပိုပြီးတော့လည်းချိပ်ထားနိုင်ပါတယ်။ <code>[pg_replicas]</code> အောက်မှာထပ်ဖြည့်ရုံပါပဲ။</li>
+</ul>
+
+<p>ဒီလောက်ဆို လုံလောက်မယ်ထင်ပါတယ်။ ကိုယ့် environment နဲ့ကိုက်ညီအောင်တော့ tune လုပ်ဖို့လိုကောင်းလိုပါလိမ့်မယ်။ အဓိကကတော့ Ansible ကိုလေ့လာရင်း use case လေးတစ်ခုနဲ့တည်ပြီး စမ်းကြည့်တဲ့သဘောပါ။ Auto Failover အတွက်လည်း အချိန်ရရင်ထပ်မံကြိုးစားဖြည့်စွက်ပါဦးမယ်။ လိုအပ်ချက်လေးတွေရှိသေးတဲ့အတွက် Github ပေါ်က <a href="https://github.com/naingyeminn/tower-db-replica">Project</a> လေးမှာ ဝင်ရောက်ပါဝင်အကြံပြုပေး၊ ဝိုင်းဝန်း ရေးသားပြင်ဆင်ပေးဖို့ ထပ်မံဖိတ်ခေါ်ချင်ပါတယ်။</p>
+
+<hr />
+
+<p><strong>Reference: <a href="https://www.linkedin.com/pulse/building-ansible-tower-clusters-louay-shaat">Building Ansible Tower Clusters by Louay Shaat</a></strong></p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/ansible-tower-db-replication/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/ansible-parallelism/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p class="contact">Copyright © 2014 <a class="button" href="#contact">Naing Ye` Minn</a></p>
+		        </footer>
+		    </div>
+		  </div>    
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
+
