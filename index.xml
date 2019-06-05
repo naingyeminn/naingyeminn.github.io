@@ -32,6 +32,8 @@
 &lt;p&gt;ဒုတိယ task မှာကတော့ ပထမ task ကနေ listen လုပ်ခိုင်းထားတဲ့ &lt;code&gt;serverb&lt;/code&gt; ရဲ့ Port &lt;code&gt;8888&lt;/code&gt; ကို &lt;code&gt;wait_for&lt;/code&gt; Module သုံးပြီး &lt;code&gt;servera&lt;/code&gt; ကနေ လှမ်းပြီး connect လုပ်ကြည့်ခိုင်းလိုက်တာပါ။ &lt;code&gt;serverb&lt;/code&gt; ပေါ်မှာ &lt;code&gt;8888&lt;/code&gt; နဲ့ listen လုပ်နေပြီးသားဖြစ်တဲ့အတွက် အကယ်၍များ ဒီ task သာ Fail ဖြစ်ခဲ့ရင် Firewall ဒါမှမဟုတ် Network ပြဿနာတစ်ခုခုကြောင့် ချိပ်မရတာဆိုတာမျိုး အကြမ်းပျဉ်း သုံးသပ်လို့ရသွားမှာပါ။&lt;/p&gt;
 
 &lt;p&gt;Module လေးတစ်ခုစမ်းရေးကြည့်ချင်တာကြောင့် ဒီနည်းလမ်းကိုသုံးလိုက်တာဖြစ်တဲ့အတွက် ဒီထက်ပိုကောင်းတဲ့နည်းလမ်းလဲ ရှိနိုင်ပါသေးတယ်။ လေ့လာကြည့်ပြီး ဆွေးနွေး အကြံပေးနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Download Sample Playbook: &lt;a href=&#34;https://github.com/naingyeminn/nym_blog_data/raw/master/Data/connection_check.tgz&#34;&gt;connection_check.tgz&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </description>
     </item>
     
