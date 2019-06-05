@@ -5,7 +5,35 @@
     <link>http://naingyeminn.com/</link>
     <language>en-us</language>
     <author>Naing Ye` Minn</author>
-    <updated>2019-02-03 00:00:00 &#43;0000 UTC</updated>
+    <updated>2019-06-05 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>Ansible Connection Check</title>
+      <link>http://naingyeminn.com/posts/ansible-connection-check/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 UTC</pubDate>
+      <author>Naing Ye` Minn</author>
+      <guid>http://naingyeminn.com/posts/ansible-connection-check/</guid>
+      <description>&lt;p&gt;အသိတစ်ယောက်က သူတို့ လုပ်နေကြတဲ့ project တစ်ခုမှာ Ansible သုံးပြီး Server တွေ Deploy လုပ်ရင်းကြုံရတာလေးတစ်ခုပြောပြတယ်။ Server လေး၊ ငါးလုံးက တစ်ခုနဲ့တစ်ခု အပြန်အလှန်တွေ ချိပ်ဆက်အလုပ်လုပ်ရတာဖြစ်ပြီး connection တိုင်းက Firewall ကိုဖြတ်သွားရတဲ့အတွက် ဘယ် Server ကနေ ဘယ် Server ရဲ့ ဘယ် Port ကိုပဲ Access လုပ်လို့ရမယ်ဆိုတဲ့ Rules တွေနဲ့ကန့်သတ်ထားတွေရှိနေတာပါ။ အဲ့ဒီအတွက် Scale out အနေနဲ့ Node အသစ်တိုးတဲ့အခါတိုင်း တိုးမယ့် Server ကို သက်ဆိုင်ရာ အခြား Server တွေကနေ Access လုပ်လို့ရမရဆိုတာမျိုးကို ကြိုစစ်ပြီးမှ service deploy လုပ်ဖို့လိုတဲ့အခြေအနေမျိုးပါ။ လေ့လာရသလောက် Ansible မှာက service run ထားပြီးအခြေအနေမှာမှ Reachable ဖြစ်မဖြစ်ကို &lt;code&gt;wait_for&lt;/code&gt; module သုံးပြီးစစ်ကြတာများပါတယ်။ နောက်ထပ်နည်းလမ်းကတော့ &lt;code&gt;shell&lt;/code&gt; module သုံးပြီး &lt;code&gt;netcat&lt;/code&gt; command နဲ့ socket တစ်ခုဖွင့်ပြီး &lt;code&gt;wait_for&lt;/code&gt; နဲ့ စစ်ကြည့်တာမျိုးတွေလည်း တွေ့ရပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;ပထမနည်းလမ်းကတော့ သူတို့ရဲ့ Deployment ပုံစံနဲ့မကိုက်ညီပါဘူး။ Firewall က လိုအပ်တဲ့ IP နဲ့ Port ကိုဖွင့်ပေးထားပြီးတာသေချာမှ Deployment ကိုလုပ်မှာဖြစ်တဲ့အတွက်ကြောင့်ပါ။ Deployment မပြီးသေးတဲ့အတွက် Service က run နေမှာမဟုတ်သလို Service ရဲ့ Port ကိုလည်း &lt;code&gt;wait_for&lt;/code&gt; နဲ့လှမ်းစစ်ကြည့်လို့မရပါဘူး။&lt;/p&gt;
+
+&lt;p&gt;ဒုတိယနည်းလမ်းကတော့ Service ရဲ့ Port နံပါတ်အတိုင်း &lt;code&gt;netcat&lt;/code&gt; နဲ့ socket တစ်ခုလုပ်ပြီး Listen လုပ်ခိုင်းတာဖြစ်တဲ့အတွက် တကယ့် Service မ run သေးပဲ &lt;code&gt;wait_for&lt;/code&gt; နဲ့ စစ်လို့ရပါတယ်။ သို့ပေမဲ့ အဲ့ဒီ Server ထဲမှာ &lt;code&gt;netcat&lt;/code&gt; install လုပ်ထားဖို့လိုပါတယ်။ ဒါမှသာ Ansible က shell command အနေနဲ့ &lt;code&gt;netcat&lt;/code&gt; ကိုလှမ်း run လို့ရမှာပါ။ ဒီလို Connection စစ်တာလေး တစ်ခုအတွက်လောက်နဲ့ package တွေထပ် install လုပ်နေရတာကလည်း သဘာဝသိပ်မကျပြန်ပါဘူး။ ဒါကြောင့် Ansible နဲ့တင်အဆင်ပြေအောင် Module လေးတစ်ခု စမ်းရေးကြည့်ဖို့ စိတ်ကူးရသွားတယ်။&lt;/p&gt;
+
+&lt;p&gt;အဓိကက တကယ့် Service မ run ခင် Server ပေါ်မှာ ဘာ package မှထပ်မတင်ပဲ run မယ့် Service ရဲ့ Port ကိုသုံးပြီး connection ချိပ်လို့ရမရကို စမ်းဖို့ပါ။ အဲ့ဒီအတွက် Python နဲ့ Socket တစ်ခုလုပ်ပေးနိုင်မယ့် Module တစ်ခုရေးကြည့်လိုက်တယ်။ &lt;code&gt;listen&lt;/code&gt; လို့နာမည်ပေးထားပြီး Port နံပါတ်တစ်ခုကိုပဲ Argument အနေနဲ့ထည့်သွင်းပေးခိုင်းထားပါတယ်။&lt;/p&gt;
+
+&lt;script type=&#34;application/javascript&#34; src=&#34;//gist.github.com/naingyeminn/230a140df1d8debd39e37b6849f08aa2.js?file=listen.py&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;ဒါပေမဲ့ Ansible ရဲ့ ထုံးစံက ပုံမှန်အတိုင်းဆိုရင် run ခိုင်းလိုက်တဲ့ task ရဲ့ Module က success ဖြစ်လား fail ဖြစ်လားဆိုတဲ့ status ကို အဲဒီ Module ရဲ့ လုပ်ဆောင်ချက် ပြီးသွားတဲ့အချိန်မှာမှ သိရပြီး နောက် task ကိုဆက်သွား၊ မသွား ဆုံးဖြတ်တာပါ။ အခုရေးထားတဲ့ &lt;code&gt;listen.py&lt;/code&gt; Module ကလည်း သတ်မှတ်ပေးလိုက်တဲ့ Port နဲ့ Listen လုပ်နေမှာဖြစ်တဲ့အတွက် အခြား Host ကနေ client connection တစ်ခုအနေနဲ့ လာချိပ်လို့အဆင်ပြေတယ်ဆိုမှ အဲ့ဒီ Module ရဲ့ လုပ်ဆောင်ချက် ရပ်သွားပြီး နောက် task တစ်ခုကိုဆက်သွားမှာပါ။ ဒါကြောင့် &lt;code&gt;listen&lt;/code&gt; Module ကိုသုံးတဲ့အခါ &lt;code&gt;async&lt;/code&gt; နဲ့တွဲသုံးမှဆင်ပြပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;script type=&#34;application/javascript&#34; src=&#34;//gist.github.com/naingyeminn/230a140df1d8debd39e37b6849f08aa2.js?file=con_check.yml&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;နမူနာ playbook မှာမြင်ရတဲ့အတိုင်း &lt;code&gt;servera&lt;/code&gt; ပေါ်မှာ task ၂ခု run ထားပါတယ်။ &lt;code&gt;servera&lt;/code&gt; အနေနဲ့ &lt;code&gt;serverb&lt;/code&gt; မှာ run နေမယ့် service ရဲ့ Port - &lt;code&gt;8888&lt;/code&gt; ကိုချိပ်လို့ရမရစစ်ချင်တာပါ။ ဒါကြောင့် ပထမ task အနေနဲ့ &lt;code&gt;serverb&lt;/code&gt; ပေါ်မှာ တကယ့် service မ run ရသေးတဲ့အတွက် &lt;code&gt;listen&lt;/code&gt; Module ကိုသုံးပြီး &lt;code&gt;8888&lt;/code&gt; နဲ့ listen လုပ်ခိုင်းလိုက်ပါတယ်။ ဒါပေမဲ့ &lt;code&gt;async&lt;/code&gt; နဲ့ &lt;code&gt;poll&lt;/code&gt; သာမသုံးဘူးဆိုရင် အဲဒီ task မှာတင်ရပ်နေပြီး နောက် task ကိုဆက်သွားမှာမဟုတ်ပါဘူး။ နောက်ကွယ်မှာ run ခိုင်းထားပြီး နောက် task တစ်ခုကိုဆက်သွားစေချင်တဲ့အတွက် &lt;code&gt;async&lt;/code&gt; နဲ့ &lt;code&gt;poll&lt;/code&gt; ကိုထည့်သုံးလိုက်တာပါ။&lt;/p&gt;
+
+&lt;p&gt;ဒုတိယ task မှာကတော့ ပထမ task ကနေ listen လုပ်ခိုင်းထားတဲ့ &lt;code&gt;serverb&lt;/code&gt; ရဲ့ Port &lt;code&gt;8888&lt;/code&gt; ကို &lt;code&gt;wait_for&lt;/code&gt; Module သုံးပြီး &lt;code&gt;servera&lt;/code&gt; ကနေ လှမ်းပြီး connect လုပ်ကြည့်ခိုင်းလိုက်တာပါ။ &lt;code&gt;serverb&lt;/code&gt; ပေါ်မှာ &lt;code&gt;8888&lt;/code&gt; နဲ့ listen လုပ်နေပြီးသားဖြစ်တဲ့အတွက် အကယ်၍များ ဒီ task သာ Fail ဖြစ်ခဲ့ရင် Firewall ဒါမှမဟုတ် Network ပြဿနာတစ်ခုခုကြောင့် ချိပ်မရတာဆိုတာမျိုး အကြမ်းပျဉ်း သုံးသပ်လို့ရသွားမှာပါ။&lt;/p&gt;
+
+&lt;p&gt;Module လေးတစ်ခုစမ်းရေးကြည့်ချင်တာကြောင့် ဒီနည်းလမ်းကိုသုံးလိုက်တာဖြစ်တဲ့အတွက် ဒီထက်ပိုကောင်းတဲ့နည်းလမ်းလဲ ရှိနိုင်ပါသေးတယ်။ လေ့လာကြည့်ပြီး ဆွေးနွေး အကြံပေးနိုင်ပါတယ်။&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Ansible Tower: DB Replication</title>

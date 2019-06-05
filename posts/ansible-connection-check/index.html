@@ -1,0 +1,173 @@
+	
+	<!doctype html>
+<html lang="en">
+  <head>    
+    <title>Naing Ye Minn - Ansible Connection Check</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://use.fontawesome.com/52ab3615c7.js"></script>
+    <link rel="shortcut icon" href="/images/me-icon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://naingyeminn.com/posts/ansible-connection-check/">
+
+    
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="Naing Ye` Minn">    
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="contact" class="overlay">
+  <div class="popup">
+    <a class="close" href="#/">&times;</a>
+    <div class="content">
+    	<ul>
+    		<li><a href="mailto:me@naingyeminn.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+
+    		<li><a href="https://github.com/naingyeminn" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    		<li><a href="https://plus.google.com/107143022418508884720" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.facebook.com/nyeminn" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+    		<li><a href="https://www.linkedin.com/in/naingyeminn" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+    	</ul> 
+    </div>
+  </div>
+</div>
+
+
+<div class="navbar navbar-fixed-top">        
+  <div id="navbar-inner">
+          <div id="logo">
+            <a href="/"><img src="/images/me-circle.png" width="100px"></img></a>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="posts">
+      
+
+	    
+	  <div class="post">
+	    <header class="post-header">
+	        <h1><a href="/posts/ansible-connection-check/">Ansible Connection Check</a></h1>
+	        <div class="post-time">June 5 2019</div>
+	    </header>
+	    <div class="post-after">
+	        <div class="tags">
+	            
+	                <a href="http://naingyeminn.com//tags/ansible">ansible</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/linux">linux</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/scripting">scripting</a>              
+	            
+	                <a href="http://naingyeminn.com//tags/tipstricks">tips&amp;tricks</a>              
+	            
+	        </div>
+	    </div>
+	    <hr>
+	    <div class="post content">
+	        <p>အသိတစ်ယောက်က သူတို့ လုပ်နေကြတဲ့ project တစ်ခုမှာ Ansible သုံးပြီး Server တွေ Deploy လုပ်ရင်းကြုံရတာလေးတစ်ခုပြောပြတယ်။ Server လေး၊ ငါးလုံးက တစ်ခုနဲ့တစ်ခု အပြန်အလှန်တွေ ချိပ်ဆက်အလုပ်လုပ်ရတာဖြစ်ပြီး connection တိုင်းက Firewall ကိုဖြတ်သွားရတဲ့အတွက် ဘယ် Server ကနေ ဘယ် Server ရဲ့ ဘယ် Port ကိုပဲ Access လုပ်လို့ရမယ်ဆိုတဲ့ Rules တွေနဲ့ကန့်သတ်ထားတွေရှိနေတာပါ။ အဲ့ဒီအတွက် Scale out အနေနဲ့ Node အသစ်တိုးတဲ့အခါတိုင်း တိုးမယ့် Server ကို သက်ဆိုင်ရာ အခြား Server တွေကနေ Access လုပ်လို့ရမရဆိုတာမျိုးကို ကြိုစစ်ပြီးမှ service deploy လုပ်ဖို့လိုတဲ့အခြေအနေမျိုးပါ။ လေ့လာရသလောက် Ansible မှာက service run ထားပြီးအခြေအနေမှာမှ Reachable ဖြစ်မဖြစ်ကို <code>wait_for</code> module သုံးပြီးစစ်ကြတာများပါတယ်။ နောက်ထပ်နည်းလမ်းကတော့ <code>shell</code> module သုံးပြီး <code>netcat</code> command နဲ့ socket တစ်ခုဖွင့်ပြီး <code>wait_for</code> နဲ့ စစ်ကြည့်တာမျိုးတွေလည်း တွေ့ရပါတယ်။</p>
+
+<p>ပထမနည်းလမ်းကတော့ သူတို့ရဲ့ Deployment ပုံစံနဲ့မကိုက်ညီပါဘူး။ Firewall က လိုအပ်တဲ့ IP နဲ့ Port ကိုဖွင့်ပေးထားပြီးတာသေချာမှ Deployment ကိုလုပ်မှာဖြစ်တဲ့အတွက်ကြောင့်ပါ။ Deployment မပြီးသေးတဲ့အတွက် Service က run နေမှာမဟုတ်သလို Service ရဲ့ Port ကိုလည်း <code>wait_for</code> နဲ့လှမ်းစစ်ကြည့်လို့မရပါဘူး။</p>
+
+<p>ဒုတိယနည်းလမ်းကတော့ Service ရဲ့ Port နံပါတ်အတိုင်း <code>netcat</code> နဲ့ socket တစ်ခုလုပ်ပြီး Listen လုပ်ခိုင်းတာဖြစ်တဲ့အတွက် တကယ့် Service မ run သေးပဲ <code>wait_for</code> နဲ့ စစ်လို့ရပါတယ်။ သို့ပေမဲ့ အဲ့ဒီ Server ထဲမှာ <code>netcat</code> install လုပ်ထားဖို့လိုပါတယ်။ ဒါမှသာ Ansible က shell command အနေနဲ့ <code>netcat</code> ကိုလှမ်း run လို့ရမှာပါ။ ဒီလို Connection စစ်တာလေး တစ်ခုအတွက်လောက်နဲ့ package တွေထပ် install လုပ်နေရတာကလည်း သဘာဝသိပ်မကျပြန်ပါဘူး။ ဒါကြောင့် Ansible နဲ့တင်အဆင်ပြေအောင် Module လေးတစ်ခု စမ်းရေးကြည့်ဖို့ စိတ်ကူးရသွားတယ်။</p>
+
+<p>အဓိကက တကယ့် Service မ run ခင် Server ပေါ်မှာ ဘာ package မှထပ်မတင်ပဲ run မယ့် Service ရဲ့ Port ကိုသုံးပြီး connection ချိပ်လို့ရမရကို စမ်းဖို့ပါ။ အဲ့ဒီအတွက် Python နဲ့ Socket တစ်ခုလုပ်ပေးနိုင်မယ့် Module တစ်ခုရေးကြည့်လိုက်တယ်။ <code>listen</code> လို့နာမည်ပေးထားပြီး Port နံပါတ်တစ်ခုကိုပဲ Argument အနေနဲ့ထည့်သွင်းပေးခိုင်းထားပါတယ်။</p>
+
+<script type="application/javascript" src="//gist.github.com/naingyeminn/230a140df1d8debd39e37b6849f08aa2.js?file=listen.py"></script>
+
+<p>ဒါပေမဲ့ Ansible ရဲ့ ထုံးစံက ပုံမှန်အတိုင်းဆိုရင် run ခိုင်းလိုက်တဲ့ task ရဲ့ Module က success ဖြစ်လား fail ဖြစ်လားဆိုတဲ့ status ကို အဲဒီ Module ရဲ့ လုပ်ဆောင်ချက် ပြီးသွားတဲ့အချိန်မှာမှ သိရပြီး နောက် task ကိုဆက်သွား၊ မသွား ဆုံးဖြတ်တာပါ။ အခုရေးထားတဲ့ <code>listen.py</code> Module ကလည်း သတ်မှတ်ပေးလိုက်တဲ့ Port နဲ့ Listen လုပ်နေမှာဖြစ်တဲ့အတွက် အခြား Host ကနေ client connection တစ်ခုအနေနဲ့ လာချိပ်လို့အဆင်ပြေတယ်ဆိုမှ အဲ့ဒီ Module ရဲ့ လုပ်ဆောင်ချက် ရပ်သွားပြီး နောက် task တစ်ခုကိုဆက်သွားမှာပါ။ ဒါကြောင့် <code>listen</code> Module ကိုသုံးတဲ့အခါ <code>async</code> နဲ့တွဲသုံးမှဆင်ပြပါလိမ့်မယ်။</p>
+
+<script type="application/javascript" src="//gist.github.com/naingyeminn/230a140df1d8debd39e37b6849f08aa2.js?file=con_check.yml"></script>
+
+<p>နမူနာ playbook မှာမြင်ရတဲ့အတိုင်း <code>servera</code> ပေါ်မှာ task ၂ခု run ထားပါတယ်။ <code>servera</code> အနေနဲ့ <code>serverb</code> မှာ run နေမယ့် service ရဲ့ Port - <code>8888</code> ကိုချိပ်လို့ရမရစစ်ချင်တာပါ။ ဒါကြောင့် ပထမ task အနေနဲ့ <code>serverb</code> ပေါ်မှာ တကယ့် service မ run ရသေးတဲ့အတွက် <code>listen</code> Module ကိုသုံးပြီး <code>8888</code> နဲ့ listen လုပ်ခိုင်းလိုက်ပါတယ်။ ဒါပေမဲ့ <code>async</code> နဲ့ <code>poll</code> သာမသုံးဘူးဆိုရင် အဲဒီ task မှာတင်ရပ်နေပြီး နောက် task ကိုဆက်သွားမှာမဟုတ်ပါဘူး။ နောက်ကွယ်မှာ run ခိုင်းထားပြီး နောက် task တစ်ခုကိုဆက်သွားစေချင်တဲ့အတွက် <code>async</code> နဲ့ <code>poll</code> ကိုထည့်သုံးလိုက်တာပါ။</p>
+
+<p>ဒုတိယ task မှာကတော့ ပထမ task ကနေ listen လုပ်ခိုင်းထားတဲ့ <code>serverb</code> ရဲ့ Port <code>8888</code> ကို <code>wait_for</code> Module သုံးပြီး <code>servera</code> ကနေ လှမ်းပြီး connect လုပ်ကြည့်ခိုင်းလိုက်တာပါ။ <code>serverb</code> ပေါ်မှာ <code>8888</code> နဲ့ listen လုပ်နေပြီးသားဖြစ်တဲ့အတွက် အကယ်၍များ ဒီ task သာ Fail ဖြစ်ခဲ့ရင် Firewall ဒါမှမဟုတ် Network ပြဿနာတစ်ခုခုကြောင့် ချိပ်မရတာဆိုတာမျိုး အကြမ်းပျဉ်း သုံးသပ်လို့ရသွားမှာပါ။</p>
+
+<p>Module လေးတစ်ခုစမ်းရေးကြည့်ချင်တာကြောင့် ဒီနည်းလမ်းကိုသုံးလိုက်တာဖြစ်တဲ့အတွက် ဒီထက်ပိုကောင်းတဲ့နည်းလမ်းလဲ ရှိနိုင်ပါသေးတယ်။ လေ့လာကြည့်ပြီး ဆွေးနွေး အကြံပေးနိုင်ပါတယ်။</p>
+
+	    </div>
+	    
+	    <div class="fblike">
+	    		<div class="fb-like" data-href="/posts/ansible-connection-check/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	    </div><br>
+	<div class="about">
+	<p> 
+     
+    </p>
+</div>
+		<nav id="pagination">
+			
+			<a class="next" href="http://naingyeminn.com/posts/ansible-tower-db-replication/">Next</a>
+		</nav>
+	<p>
+		<div class="row">
+      <div class="small-offset-1 small-10 columns">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = 'naingyeminn';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    
+	<p>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+		        <footer>
+		        	Build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+		        	<p class="contact">Copyright © 2014 <a class="button" href="#contact">Naing Ye` Minn</a></p>
+		        </footer>
+		    </div>
+		  </div>    
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49993355-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
+

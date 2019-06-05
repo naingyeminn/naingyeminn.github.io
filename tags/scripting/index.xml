@@ -6,10 +6,19 @@
     <description>Recent content in Scripting on Naing Ye` Minn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://naingyeminn.com/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ansible Connection Check</title>
+      <link>http://naingyeminn.com/posts/ansible-connection-check/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://naingyeminn.com/posts/ansible-connection-check/</guid>
+      <description>အသိတစ်ယောက်က သူတို့ လုပ်နေကြတဲ့ project တစ်ခုမှာ Ansible သုံးပြီး Server တွေ Deploy လုပ်ရင်းကြုံရတာလေးတစ်ခုပြောပြတယ်။ Server လေး၊ ငါးလုံးက တစ်ခုနဲ့တစ်ခု အပြန်အလှန်တွေ ချိပ်ဆက်အလုပ်လုပ်ရတာဖြစ်ပြီး connection တိုင်းက Firewall ကိုဖြတ်သွားရတဲ့အတွက် ဘယ် Server ကနေ ဘယ် Server ရဲ့ ဘယ် Port ကိုပဲ Access လုပ်လို့ရမယ်ဆိုတဲ့ Rules တွေနဲ့ကန့်သတ်ထားတွေရှိနေတာပါ။ အဲ့ဒီအတွက် Scale out အနေနဲ့ Node အသစ်တိုးတဲ့အခါတိုင်း တိုးမယ့် Server ကို သက်ဆိုင်ရာ အခြား Server တွေကနေ Access လုပ်လို့ရမရဆိုတာမျိုးကို ကြိုစစ်ပြီးမှ service deploy လုပ်ဖို့လိုတဲ့အခြေအနေမျိုးပါ။ လေ့လာရသလောက် Ansible မှာက service run ထားပြီးအခြေအနေမှာမှ Reachable ဖြစ်မဖြစ်ကို wait_for module သုံးပြီးစစ်ကြတာများပါတယ်။ နောက်ထပ်နည်းလမ်းကတော့ shell module သုံးပြီး netcat command နဲ့ socket တစ်ခုဖွင့်ပြီး wait_for နဲ့ စစ်ကြည့်တာမျိုးတွေလည်း တွေ့ရပါတယ်။</description>
+    </item>
     
     <item>
       <title>Ansible Tower: DB Replication</title>
