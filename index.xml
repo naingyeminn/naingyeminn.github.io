@@ -5,7 +5,47 @@
     <link>http://naingyeminn.com/</link>
     <language>en-us</language>
     <author>Naing Ye` Minn</author>
-    <updated>2019-06-05 00:00:00 &#43;0000 UTC</updated>
+    <updated>2019-08-02 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>Red Hat Certifications - FAQ</title>
+      <link>http://naingyeminn.com/posts/redhat-certifications-faq/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 UTC</pubDate>
+      <author>Naing Ye` Minn</author>
+      <guid>http://naingyeminn.com/posts/redhat-certifications-faq/</guid>
+      <description>
+
+&lt;p&gt;Red Hat ရဲ့ RHEL version အကူးအပြောင်းမှာ Certification တွေ၊ Course တွေလည်း ပုံစံတွေပြောင်းကုန်တာကြောင့် သင်တန်းသားတွေကို ခဏခဏရှင်းပြနေရတဲ့အတွက် မေးလေ့ရှိတာလေးတွေကိုစုပြီး ပြန်ဖြေပေးထားတာပါ။ လိုအပ်ရင်လိုအပ်သလို ထပ်မံဖြည့်စွက်ပေးသွားပါမယ်။&lt;/p&gt;
+
+&lt;h3 id=&#34;rhcsa-rhce-က-rhel8-န-သင-ပ-လ&#34;&gt;RHCSA / RHCE ကို RHEL8 နဲ့သင်ပြီလား?&lt;/h3&gt;
+
+&lt;p&gt;Linux Lab မှာ အတန်းသစ်တွေကို RHEL8 နဲ့စသင်နေပါပြီ။ သင်လက်စအတန်းတွေကိုတော့ RHEL7 နဲ့ဆက်သင်နေပါတယ်။&lt;/p&gt;
+
+&lt;h3 id=&#34;rhcsa-rhel8-မ-ဘ-တ-ပ-င-သ-မ-လ&#34;&gt;RHCSA - RHEL8 မှာဘာတွေပြောင်းသွားမှာလဲ?&lt;/h3&gt;
+
+&lt;p&gt;RHEL7 တုန်းကနဲ့ အကြောင်းအရာ အကုန်လုံးနီးပါးတူပါတယ်။ အဓိကအနေနဲ့ Storage အပိုင်း Feature အသစ်ဖြစ်တဲ့ Stratis နဲ့ VDO အတွက် topic နှစ်ခုလောက်ပဲပိုပါလာမှာပါ။&lt;/p&gt;
+
+&lt;h3 id=&#34;rhcsa-rhel7-န-အ-င-ထ-သ-တ-rhel8-န-ပ-န-ဖ-ဖ-လ-လ&#34;&gt;RHCSA - RHEL7 နဲ့အောင်ထားသူတွေ RHEL8 နဲ့ ပြန်ဖြေဖို့လိုလား?&lt;/h3&gt;
+
+&lt;p&gt;RHCSA Certificate သက်တမ်း (၃)နှစ်အတွင်း နောက်တစ်ဆင့်ဖြစ်တဲ့ RHCE ကို RHEL8 ကိုဖြေဆိုပြီး သက်တမ်းတိုးနိုင်ပါတယ်။ သက်တမ်းကျော်လွန်သွားရင်တော့ RHCSA ကို RHEL8 နဲ့ပြန်ဖြေဖို့လိုအပ်ပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;h3 id=&#34;rhce-က-rhel8-န-ဖ-သင-ပ-လ&#34;&gt;RHCE ကို RHEL8 နဲ့ဖြေသင့်ပြီလား?&lt;/h3&gt;
+
+&lt;p&gt;RHCE - RHEL 7 နဲ့ 8 course ၂ခု ရဲ့ Objective က တော်တော်လေးကို ကွဲလွဲသွားမှာပါ။
+RHEL7 နဲ့က Server Service တွေကို အဓိကထားလေ့လာရတာဖြစ်ပေမဲ့ RHEL8 မှာတော့ Automation ကိုအဓိကထားလေ့လာရမှာဖြစ်ပါတယ်။
+လက်ရှိ RHCE Course မှာက Web Server, Email, DNS, NFS, Samba, iSCSI, MariaDB, Network Teaming အစရှိတဲ့ အခြေခံ Server Service တွေ နဲ့ Shell Scripting တို့ကိုလေ့လာရတာဖြစ်ပြီး၊ အသစ်မှာတော့ Automation ဆိုတဲ့အတိုင်း Ansible ကို အဓိကထားလေ့လာရမှာဖြစ်ပါတယ်။ Ansible က အရမ်းမတွင်ကျယ်သေးပေမဲ့ ပြည်တွင်းမှာတော့ စတင်စမ်းသပ်အသုံးချနေကြပြီဖြစ်ပါတယ်။ အဟောင်းမှာပါတဲ့ Concept တွေက မတိမ်ကောသွားသလို အသစ်မှာပါလာမယ့် နည်းပညာဟာလည်း လိုအပ်ချက်တစ်ခုဖြစ်လာမှာပါ။ ဒါကြောင့် ကိုယ်လေ့လာလိုတဲ့အကြောင်းအရာပေါ်မူတည်ပြီးပဲ ရွေးချယ်သင့်ပါတယ်။&lt;/p&gt;
+
+&lt;h3 id=&#34;rhce-certification-အဟ-င-ကဘယ-အခ-န-ထ-အသ-အမ-တ-ပ-မ-လ&#34;&gt;RHCE Certification အဟောင်းကဘယ်အချိန်ထိအသိအမှတ်ပြုမှာလဲ?&lt;/h3&gt;
+
+&lt;p&gt;RHCE - RHEL7 (EX300) exam ကို ၂၀၂၀ ဇွန်လကုန်မှာရပ်နားမယ်ဆိုပေမဲ့ အဲ့ဒီအချိန်မတိုင်ခင်ဖြေဆိုအောင်မြင်ထားသူတွေအနေနဲ့ အောင်မြင်တဲ့နေ့ကစပြီး ၃နှစ်အထိတော့ အသိအမှတ်ပြုပေးထားမှာဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;h3 id=&#34;certification-သက-တမ-က-န-က-န-rhce-rhel7-တ-အန-န-ဘ-ဆက-လ-ပ-သင-လ&#34;&gt;Certification သက်တမ်းကုန်ကာနီး RHCE - RHEL7 တွေအနေနဲ့ ဘာဆက်လုပ်သင့်လဲ?&lt;/h3&gt;
+
+&lt;p&gt;Architect Level ကိုဆက်သွားမယ်ဆိုရင်တော့ Red Hat Certified Specialist (RHCS) ဆိုတဲ့ Certification တွေထဲကတစ်ခုခုထပ်ဖြေလိုက်တာနဲ့ RHCE သက်တမ်းတိုးသွားမှာပါ။ RHCE - RHEL8 ကိုထပ်မံဖြေဆိုတာမျိုးလဲလုပ်လို့ရပါတယ်။ RHEL8 ရဲ့ RHCE က Ansible ကိုလေ့လာရတာဖြစ်ပေမဲ့ RHCA certification အတွက်ဆက်လေ့လာမှာဆိုရင်တော့ EX407 ဆိုတဲ့ RHCS in Ansible Automation ကိုလေ့လာဖြေဆိုသင့်ပါတယ်။ Course အနေနဲ့ DO407 ဖြစ်ပြီး RHCE အသစ် RH294 နဲ့ Course Outline တူပါတယ်။ DO407 က Ansible 2.7 ကိုအခြေခံပြီး၊ RH294 က Ansible 2.8 ကိုအခြေခံတာပဲကွာတာပါ။ EX407 ကို ၂၀၂၀ ဇွန်လမကုန်ခင်ထိပဲ ဖြေဆိုခွင့်ရမှာဖြစ်ပြီး RHCA ဖြစ်ဖို့လိုအပ်တဲ့ Certification (၅) ခုထဲ ထည့်တွက်ပေးမှာဖြစ်ပါတယ်။ ဒါကြောင့် Ansible အကြောင်းလေ့လာရတာခြင်းအတူတူ RHCE ကိုထပ်ယူတာထက် RHCS အနေနဲ့ EX407 အချိန်မီဖြေဆိုပြီး RHCA ကိုဆက်သွာတာကလည်း ကောင်းမွန်တဲ့ရွေးချယ်မှုတစ်ခုဖြစ်ပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/learning-path-to-rhce.png&#34; alt=&#34;RHCE - Learning Path&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Ansible Connection Check</title>

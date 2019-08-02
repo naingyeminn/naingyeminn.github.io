@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Naing Ye` Minn</title>
+    <link>http://naingyeminn.com/tags/notes/</link>
+    <description>Recent content in Notes on Naing Ye` Minn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://naingyeminn.com/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Red Hat Certifications - FAQ</title>
+      <link>http://naingyeminn.com/posts/redhat-certifications-faq/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://naingyeminn.com/posts/redhat-certifications-faq/</guid>
+      <description>Red Hat ရဲ့ RHEL version အကူးအပြောင်းမှာ Certification တွေ၊ Course တွေလည်း ပုံစံတွေပြောင်းကုန်တာကြောင့် သင်တန်းသားတွေကို ခဏခဏရှင်းပြနေရတဲ့အတွက် မေးလေ့ရှိတာလေးတွေကိုစုပြီး ပြန်ဖြေပေးထားတာပါ။ လိုအပ်ရင်လိုအပ်သလို ထပ်မံဖြည့်စွက်ပေးသွားပါမယ်။
+RHCSA / RHCE ကို RHEL8 နဲ့သင်ပြီလား? Linux Lab မှာ အတန်းသစ်တွေကို RHEL8 နဲ့စသင်နေပါပြီ။ သင်လက်စအတန်းတွေကိုတော့ RHEL7 နဲ့ဆက်သင်နေပါတယ်။
+RHCSA - RHEL8 မှာဘာတွေပြောင်းသွားမှာလဲ? RHEL7 တုန်းကနဲ့ အကြောင်းအရာ အကုန်လုံးနီးပါးတူပါတယ်။ အဓိကအနေနဲ့ Storage အပိုင်း Feature အသစ်ဖြစ်တဲ့ Stratis နဲ့ VDO အတွက် topic နှစ်ခုလောက်ပဲပိုပါလာမှာပါ။
+RHCSA - RHEL7 နဲ့အောင်ထားသူတွေ RHEL8 နဲ့ ပြန်ဖြေဖို့လိုလား? RHCSA Certificate သက်တမ်း (၃)နှစ်အတွင်း နောက်တစ်ဆင့်ဖြစ်တဲ့ RHCE ကို RHEL8 ကိုဖြေဆိုပြီး သက်တမ်းတိုးနိုင်ပါတယ်။ သက်တမ်းကျော်လွန်သွားရင်တော့ RHCSA ကို RHEL8 နဲ့ပြန်ဖြေဖို့လိုအပ်ပါလိမ့်မယ်။</description>
+    </item>
+    
+  </channel>
+</rss>
