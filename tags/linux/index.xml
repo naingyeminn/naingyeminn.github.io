@@ -6,10 +6,19 @@
     <description>Recent content in Linux on Naing Ye` Minn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://naingyeminn.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Road to RHCA</title>
+      <link>http://naingyeminn.com/posts/road-to-rhca/</link>
+      <pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://naingyeminn.com/posts/road-to-rhca/</guid>
+      <description>RHCA ဖြစ်ဖို့ဘာတွေလိုအပ်လဲ? Red Hat Certified Architect ဖြစ်ဖို့ စာမေးပွဲ ၇ခုအနည်းဆုံးဖြေရပါတယ်။ RHCSA၊ RHCE နဲ့ အခြား Red Hat Certified Specialist (RHCS) exam ၅ခုဖြေရပါမယ်။ အကုန်လုံး Lab-based Exam တွေပါ။ တစ်ခုအောင်မြင်ပြီးတိုင်း အောင်မြင်တဲ့နေ့ကနေစပြီး ၃နှစ် valid ဖြစ်သလို RHCE အတွက်လဲ အဲ့ဒီသုံးနှစ်ကို Extend လုပ်ပေးသွားပါလိမ့်မယ်။ သို့ပေမဲ့ Specialist exam ၅ခုလုံးကတော့ အောင်မြင်တဲ့နေ့ကနေ ၃နှစ်ဆီပဲရပါလိမ့်မယ်။ ဆိုလိုချင်တာက ဒုတိယအောင်မြင်တဲ့ exam ရဲ့ သက်တမ်းကို ပထမ exam မှာ Extend သွားမလုပ်ပါဘူး။ ဒါကြောင့် ၅ဘာသာမှာ ပထမဦးဆုံးအောင်မြင်တဲ့ exam ရဲ့သက်တမ်း ၃နှစ် မပြည့်ခင် နောက် exam ၄ခုကို ဖြေဆိုအောင်မြင်မှ RHCA ဖြစ်မှာပါ။ ဖြေဆိုအောင်မြင်တဲ့ exam တွေပေါ်မူတည်ပြီး Infrastructure Architect နဲ့ Enterprise Applications Architect ဆိုပြီး concentration ၂မျိုးခွဲထားပါတယ်။ ဘယ်ဘာသာဖြေရင် ဘာဖြစ်မယ်ဆိုတာကတော့ website မှာသွားကြည့်ပါ။ RHCSA, RHCE နဲ့ RHCS ၅ခုဖြေပြီးရင် RHCA level 1 ဖြစ်ပြီ၊ ၁ဘာသာကို Level တစ်ခုတိုးပါတယ်။ အလွယ်ပြောရရင် Level ဆိုတာ Valid ဖြစ်တဲ့ RHCS exam အရေအတွက်ပါပဲ။ အရင်တုန်းကတော့ RHCSA, RHCE လောက်ပဲရန်ကုန်မှာဖြေလို့ရပြီး RHCS တွေဆိုရင် နိုင်ငံခြားထွက်ဖြေမှရပါတယ်။ အခုတော့ KOALA လို့ခေါ်တဲ့ Individual Exam Station တွေရှိပြီဖြစ်တဲ့အတွက် ရန်ကုန်မှာတင်ဖြေလို့ရနေပါပြီ။</description>
+    </item>
     
     <item>
       <title>Red Hat Certifications - FAQ</title>

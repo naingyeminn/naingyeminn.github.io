@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://naingyeminn.com/posts/road-to-rhca/</loc>
+    <lastmod>2019-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://naingyeminn.com/posts/redhat-certifications-faq/</loc>
     <lastmod>2019-08-02T00:00:00+00:00</lastmod>
   </url>
@@ -281,7 +286,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/faq/</loc>
-    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+    <lastmod>2019-11-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -341,7 +346,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/linux/</loc>
-    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+    <lastmod>2019-11-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -383,7 +388,7 @@
   
   <url>
     <loc>http://naingyeminn.com/</loc>
-    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+    <lastmod>2019-11-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -395,7 +400,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/notes/</loc>
-    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+    <lastmod>2019-11-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -425,7 +430,7 @@
   
   <url>
     <loc>http://naingyeminn.com/posts/</loc>
-    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+    <lastmod>2019-11-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -437,7 +442,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/redhat/</loc>
-    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+    <lastmod>2019-11-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
