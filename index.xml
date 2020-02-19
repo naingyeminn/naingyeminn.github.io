@@ -5,7 +5,68 @@
     <link>http://naingyeminn.com/</link>
     <language>en-us</language>
     <author>Naing Ye` Minn</author>
-    <updated>2019-11-10 00:00:00 &#43;0000 UTC</updated>
+    <updated>2020-01-19 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>NTFS-3G for macOS</title>
+      <link>http://naingyeminn.com/posts/ntfs-3g-for-macos/</link>
+      <pubDate>Sun, 19 Jan 2020 00:00:00 UTC</pubDate>
+      <author>Naing Ye` Minn</author>
+      <guid>http://naingyeminn.com/posts/ntfs-3g-for-macos/</guid>
+      <description>&lt;p&gt;macOS ပေါ်မှာ External Hard Drive တွေ Thumb Drive တွေထဲ Data ကူးဖို့ကြိုးစားတဲ့အခါ ကူးထည့်လို့မရတဲ့ပြဿနာကြုံဖူးကြမယ်ထင်ပါတယ်။ အဓိကပြဿနာက Drive ကို Format ချတဲ့အခါ သုံးထားတဲ့ File System က Windows ရဲ့ NTFS File System ဖြစ်နေတဲ့အတွက် Read ပဲလုပ်လို့ရပြီး Write မရတာပါ။ NTFS မသုံးပဲ FAT32 တို့ ExFAT တို့ဆိုရင်တော့ အဆင်ပြေပါတယ်။ FAT32 ရဲ့ ကန့်သတ်ချက်က 4GB နဲ့အထက်ရှိတဲ့ File တွေဆိုရင်ကူးထည့်လို့မရတာပါ။ အဲဒီအတွက် macOS ပေါ်မှာ ExFAT နဲ့ Format ချပြီးသုံးနိုင်ပါတယ်။ ExFAT ကို Windows ကလည်း Read-Write လုပ်လို့ရသလို၊ Linux ပေါ်မှာဆိုရင်လည်း ဒီ File System format အတွက်လိုအပ်တဲ့ Package လေးသွင်းပြီးသုံးနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;အဓိကပြဿနာက Windows User တွေက သူတို့ရဲ့ Drive တွေကို Format ချတဲ့နေရာမှာ ExFAT ကိုတကူးတကမရွေးပဲ Default ဖြစ်တဲ့ NTFS ကိုပဲသုံးလိုက်ကြတာများပါတယ်။ NTFS သုံးထားပြီးသား Drive တစ်ခုကို macOS ပေါ်မှာသုံးမယ်ဆိုရင် Read Only ပဲရပါလိမ့်မယ်။ Data မရှိသေးတဲ့ Drive ဆိုရင်တော့ ပြဿနာမရှိပါဘူး။ ExFAT နဲ့ Format ပြန်ချပြီး Data ကူးထည့်ပေးလိုက်လို့ရပါတယ်။ အကယ်၍ Data တွေရှိပြီးသား External HDD တွေထဲကို ကူထည့်ပေးဖို့ကျတော့ Format ပြန်ပြောင်းဖို့ဆိုတာအဆင်မပြေတော့ပါဘူး။ ဒါကြောင့် macOS ပေါ်မှာ NTFS ကို Write Access မရတာက တကယ်အရေးတကြီး File ကူးပေးဖို့လိုတဲ့အခါမျိုးမှာ မလိုအပ်ပဲကျန့်ကြာစေပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;ဒီပြဿနာကိုရှင်းဖို့အတွက် အရင်တုန်းကတော့ Script လေးတစ်ခုရေးထားဖူးပေမဲ့ အမြဲတမ်းအဆင်မပြေပါဘူး။ နောက်ပြီး အဲဒီ Script နဲ့ပတ်သက်တဲ့ Post ကို ဒီ Site ရဲ့ Hosting ဖြစ်တဲ့ GitHub က ပိတ်ထားတယ်ထင်ပါတယ်။ ဘာရယ်ကြောင့်မှန်းတော့မသိပါဘူး။ အခု ဒီ Post လဲဘယ်လောက်ခံမယ်တော့မသိပါဘူး။ အခြားနည်းလမ်းအနေနဲ့ကတော့ &lt;a href=&#34;https://www.tuxera.com/&#34;&gt;Tuxera&lt;/a&gt; တို့ &lt;a href=&#34;https://www.paragon-software.com/home/ntfs-mac/&#34;&gt;Paragon&lt;/a&gt; တို့လို Commercial Software တွေကို ဝယ်သုံးတာက အရိုးရှင်းဆုံးနဲ့အလွယ်ကူဆုံးပါပဲ။&lt;/p&gt;
+
+&lt;p&gt;အခုနည်းလမ်းကတော့ NTFS-3G ဆိုတဲ့ Open Source Software ကိုသုံးပြီး NTFS ကို Read-Write Access ရအောင် လုပ်တဲ့နည်းလေးပါ။ နည်းပညာသမားတစ်ယောက်အတွက်တော့ ဒီနည်းကလွယ်ပေမဲ့ သာမန် User တစ်ယောက်အတွက် အနည်းငယ်ရှုပ်ထွေးနိုင်ပါတယ်။ ဒါကြောင့် အရိုးရှင်းဆုံးဖြစ်အောင် ကြိုးစားပြီးရေးပေးပါမယ်။&lt;/p&gt;
+
+&lt;p&gt;ပထမဦးဆုံးအနေနဲ့ ဒီနည်းလမ်းအတွက်လိုအပ်ချက်တွေကိုပြောပါမယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;လိုအပ်ချက်များ&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Internet Access&lt;/li&gt;
+&lt;li&gt;macOS High Sierra (10.13) နှင့်အထက်&lt;/li&gt;
+&lt;li&gt;Command Line Tools (CLT) for Xcode&lt;/li&gt;
+&lt;li&gt;Homebrew software package manager&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;osxfuse&lt;/code&gt; နှင့် &lt;code&gt;ntfs-3g&lt;/code&gt; software&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;List ထိပ်ဆုံးမှာပြောထားတဲ့ Internet Access ရယ်၊ macOS High Sierra နဲ့အထက်ရှိရင် ကျန်တာစလုပ်လို့ရပါပြီ။ အားလုံးကို Terminal သုံးပြီး Command Line ကနေပဲလုပ်ရမှာပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Installing CLT&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;xcode-select --install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Installing Homebrew&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir homebrew &amp;amp;&amp;amp; curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Installing osxfuse and ntfs-3g&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;brew cask install osxfuse
+brew install ntfs-3g
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;အားလုံးအဆင်ပြေပြေနဲ့ install လုပ်လို့ပြီးသွားပြီဆိုရင်တော့ NTFS သုံးထားတဲ့ Drive တွေကို Write Access ရယူဖို့ အဆင်သင့် ဖြစ်ပါပြီ။ ကျန်တာကိုတော့ Video ထဲမှာပြထားတဲ့အတိုင်းဆက်လုပ်ရုံပါပဲ။&lt;/p&gt;
+
+&lt;div class=&#34;responsive-embed flex-video&#34;&gt;
+        &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;360&#34;
+                src=&#34;http://www.youtube.com/embed/FwouGhWsnzU&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;
+        &lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;ဒီနည်းလေးကတော့ ပိုလွယ်မယ်ထင်တဲ့အတွက် မျှဝေပေးတာပါ။ NTFS Drive တစ်ခုတပ်လိုက်တိုင်း &lt;code&gt;ntfsmount&lt;/code&gt; ဆိုတဲ့ command လေးကို အမြဲရိုက်ပေးဖို့လိုပါတယ်။ ပုံမှန်အတိုင်း Drive တပ်လိုက်တာနဲ့ တန်းပြီး Write Access ရဖို့အတွက်ဆိုရင် macOS ရဲ့ Recovery Mode ထဲဝင်ပြီး System Integrity Protection (SIP) ကိုပိတ်ပြီး ဟိုပြင်ဒီပြင်တွေလုပ်ရတာကြောင့် သာမန်အသုံးပြုသူတွေအတွက် ခက်ခဲပါလိမ့်မယ်။ စမ်းကြည့်ချင်ရင်တော့ အောက်မှာပေးထားတဲ့ Reference Link ထဲမှာဝင်ကြည့်နိုင်ပါတယ်။ နောက်ပြီး Commercial Software တွေလောက်တော့ Read-Write speed ကမြန်မှာမဟုတ်ပါဘူး။ ဒါပေမဲ့ လုံးဝသုံးမရတာထက်စာရင်တော့ ဒါလေးရှိနေတာက အထောက်အကူပြုမယ်ထင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Reference:&lt;/strong&gt; &lt;a href=&#34;https://github.com/osxfuse/osxfuse/wiki/NTFS-3G&#34;&gt;https://github.com/osxfuse/osxfuse/wiki/NTFS-3G&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GitHubGist:&lt;/strong&gt; &lt;a href=&#34;https://gist.github.com/naingyeminn/6951b92faae540260026cb865f84231c&#34;&gt;ntfsmount&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Road to RHCA</title>

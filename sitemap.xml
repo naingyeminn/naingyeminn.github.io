@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://naingyeminn.com/posts/ntfs-3g-for-macos/</loc>
+    <lastmod>2020-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://naingyeminn.com/posts/road-to-rhca/</loc>
     <lastmod>2019-11-10T00:00:00+00:00</lastmod>
   </url>
@@ -233,7 +238,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/bash/</loc>
-    <lastmod>2017-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -268,7 +273,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/cli/</loc>
-    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -388,7 +393,7 @@
   
   <url>
     <loc>http://naingyeminn.com/</loc>
-    <lastmod>2019-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -430,7 +435,7 @@
   
   <url>
     <loc>http://naingyeminn.com/posts/</loc>
-    <lastmod>2019-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -466,7 +471,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/script/</loc>
-    <lastmod>2017-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -484,7 +489,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/shell/</loc>
-    <lastmod>2017-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -496,13 +501,13 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/terminal/</loc>
-    <lastmod>2017-06-28T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://naingyeminn.com/tags/tipstricks/</loc>
-    <lastmod>2019-06-05T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

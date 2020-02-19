@@ -6,10 +6,20 @@
     <description>Recent content in Cli on Naing Ye` Minn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://naingyeminn.com/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>NTFS-3G for macOS</title>
+      <link>http://naingyeminn.com/posts/ntfs-3g-for-macos/</link>
+      <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://naingyeminn.com/posts/ntfs-3g-for-macos/</guid>
+      <description>macOS ပေါ်မှာ External Hard Drive တွေ Thumb Drive တွေထဲ Data ကူးဖို့ကြိုးစားတဲ့အခါ ကူးထည့်လို့မရတဲ့ပြဿနာကြုံဖူးကြမယ်ထင်ပါတယ်။ အဓိကပြဿနာက Drive ကို Format ချတဲ့အခါ သုံးထားတဲ့ File System က Windows ရဲ့ NTFS File System ဖြစ်နေတဲ့အတွက် Read ပဲလုပ်လို့ရပြီး Write မရတာပါ။ NTFS မသုံးပဲ FAT32 တို့ ExFAT တို့ဆိုရင်တော့ အဆင်ပြေပါတယ်။ FAT32 ရဲ့ ကန့်သတ်ချက်က 4GB နဲ့အထက်ရှိတဲ့ File တွေဆိုရင်ကူးထည့်လို့မရတာပါ။ အဲဒီအတွက် macOS ပေါ်မှာ ExFAT နဲ့ Format ချပြီးသုံးနိုင်ပါတယ်။ ExFAT ကို Windows ကလည်း Read-Write လုပ်လို့ရသလို၊ Linux ပေါ်မှာဆိုရင်လည်း ဒီ File System format အတွက်လိုအပ်တဲ့ Package လေးသွင်းပြီးသုံးနိုင်ပါတယ်။
+အဓိကပြဿနာက Windows User တွေက သူတို့ရဲ့ Drive တွေကို Format ချတဲ့နေရာမှာ ExFAT ကိုတကူးတကမရွေးပဲ Default ဖြစ်တဲ့ NTFS ကိုပဲသုံးလိုက်ကြတာများပါတယ်။ NTFS သုံးထားပြီးသား Drive တစ်ခုကို macOS ပေါ်မှာသုံးမယ်ဆိုရင် Read Only ပဲရပါလိမ့်မယ်။ Data မရှိသေးတဲ့ Drive ဆိုရင်တော့ ပြဿနာမရှိပါဘူး။ ExFAT နဲ့ Format ပြန်ချပြီး Data ကူးထည့်ပေးလိုက်လို့ရပါတယ်။ အကယ်၍ Data တွေရှိပြီးသား External HDD တွေထဲကို ကူထည့်ပေးဖို့ကျတော့ Format ပြန်ပြောင်းဖို့ဆိုတာအဆင်မပြေတော့ပါဘူး။ ဒါကြောင့် macOS ပေါ်မှာ NTFS ကို Write Access မရတာက တကယ်အရေးတကြီး File ကူးပေးဖို့လိုတဲ့အခါမျိုးမှာ မလိုအပ်ပဲကျန့်ကြာစေပါတယ်။</description>
+    </item>
     
     <item>
       <title>Scheduling Linux Tasks</title>
