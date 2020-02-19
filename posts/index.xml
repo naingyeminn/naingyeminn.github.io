@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Naing Ye` Minn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://naingyeminn.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>NTFS-3G for macOS</title>
       <link>http://naingyeminn.com/posts/ntfs-3g-for-macos/</link>
-      <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>http://naingyeminn.com/posts/ntfs-3g-for-macos/</guid>
       <description>macOS ပေါ်မှာ External Hard Drive တွေ Thumb Drive တွေထဲ Data ကူးဖို့ကြိုးစားတဲ့အခါ ကူးထည့်လို့မရတဲ့ပြဿနာကြုံဖူးကြမယ်ထင်ပါတယ်။ အဓိကပြဿနာက Drive ကို Format ချတဲ့အခါ သုံးထားတဲ့ File System က Windows ရဲ့ NTFS File System ဖြစ်နေတဲ့အတွက် Read ပဲလုပ်လို့ရပြီး Write မရတာပါ။ NTFS မသုံးပဲ FAT32 တို့ ExFAT တို့ဆိုရင်တော့ အဆင်ပြေပါတယ်။ FAT32 ရဲ့ ကန့်သတ်ချက်က 4GB နဲ့အထက်ရှိတဲ့ File တွေဆိုရင်ကူးထည့်လို့မရတာပါ။ အဲဒီအတွက် macOS ပေါ်မှာ ExFAT နဲ့ Format ချပြီးသုံးနိုင်ပါတယ်။ ExFAT ကို Windows ကလည်း Read-Write လုပ်လို့ရသလို၊ Linux ပေါ်မှာဆိုရင်လည်း ဒီ File System format အတွက်လိုအပ်တဲ့ Package လေးသွင်းပြီးသုံးနိုင်ပါတယ်။
