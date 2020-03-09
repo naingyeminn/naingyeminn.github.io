@@ -5,7 +5,49 @@
     <link>http://naingyeminn.com/</link>
     <language>en-us</language>
     <author>Naing Ye` Minn</author>
-    <updated>2020-02-19 00:00:00 &#43;0000 UTC</updated>
+    <updated>2020-03-09 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>Unicode Smart Keyboards for Linux</title>
+      <link>http://naingyeminn.com/posts/unicode-keyboard-for-linux/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 UTC</pubDate>
+      <author>Naing Ye` Minn</author>
+      <guid>http://naingyeminn.com/posts/unicode-keyboard-for-linux/</guid>
+      <description>&lt;p&gt;mm-kb ကို များသောအားဖြင့် Ubuntu User တွေသုံးကြလိမ့်မယ်ထင်ပါတယ်။ အရင်ကတော့ Myanmar 3 နဲ့ Zawgyi-One Layout နှစ်မျိုးပဲပါပါတယ်။ သူငယ်ချင်း တစ်ယောက်ရဲ့ iBus input method ကိုအခြေခံထားတဲ့ Keyboard Layout (iBus Table) တွေကို install လုပ်ရလွယ်အောင် ထိန်းသိမ်းပေးထားတာပါ။ အခု ယူနီကုဒ်ကို ပြောင်းသုံးလာကြတဲ့အခါမှာ များသောအားဖြင့် User တွေက mm-kb ထဲက Myanmar 3 Layout ကို သိပ်မသုံးတတ်ကြပါဘူး။ အဓိကကတော့ Unicode အနေနဲ့ ဘာသာဗေဒ (Linguistics) ကိုအခြေခံပြီးအက္ခရာတွေကိုပုံဖော်တဲ့အတွက်ကြောင့်ပါ။ အသေးစိပ်ကိုတော့ ကိုမောင်ဆန်းရေးထားတဲ့ ဒီ &lt;a href=&#34;http://unicodetoday.org/2016/09/27/unicode-encoding/&#34;&gt;Blog&lt;/a&gt; မှာလေ့လာနိုင်ပါတယ်။ အထူးသဖြင့် ဇော်ဂျီနဲ့အသားကျပြီး အရင်လာတဲ့စာလုံးအရင်ရိုက်နေရရာကနေ သဝေထိုး (ေ) ကိုနောက်မှရိုက်ရတာကမျက်စိလည်သွားစေပါတယ်။ နောက်ပြီး လက်ကွက်ပုံစံပြောင်းသွားတဲ့အတွက် Key နေရာတွေ ပြန်မှတ်ရပါတယ်။ ဒီပြဿနာအတွက် KeyMagic က Unicode ကိုပဲ Layout မျိုးစုံနဲ့ထုတ်ပေးထားပြီးသားပါ။ အခုကတော့ နောက်ထပ်ရွေးချယ်စရာတစ်ခုအနေနဲ့ mm-kb မှာ Layout အသစ် ၂ခုထပ်ဖြည့်ပေးလိုက်တာပါ။&lt;/p&gt;
+
+&lt;p&gt;ထပ်ဖြည့်ထားတဲ့ Layout တွေကတော့ mm-smart နဲ့ mm-zawnicode ဆိုတဲ့နှစ်မျိုးပဲဖြစ်ပါတယ်။ mm-smart ကတော့ Myanmar 3 layout ကိုပဲ သင်ပုန်းကြီးမှာရွတ်ဆိုရေးသားလေ့ရှိတဲ့အတိုင်း ရေးသားနိုင်အောင်လုပ်ပေးထားတာပါ။ mm-zawnicode ကတော့ ဇော်ဂျီအသုံးပြုသူတွေအနေနဲ့ ရိုက်နေကျလက်ကွက်အတိုင်း အရင်လာအရင်ရိုက်စနစ်နဲ့ ဆက်ရိုက်လို့ရမှာပဲဖြစ်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;mm-kb က ibus ရဲ့ keymap table ကိုအခြေခံထားတာဖြစ်တဲ့အတွက် Keyboard မှာနှိပ်လိုက်တဲ့ Key ပေါ်မူတည်ပြီး table database ထဲမှာရှိတဲ့အတိုင် ပြန်စီပေးတာပဲဖြစ်ပါတယ်။ Table ထဲမှာမပါတဲ့ Key တွဲစပ်မှုပုံစံကိုတော့ စီပေးမှာမဟုတ်ပါဘူး။ ဥပမာအနေနဲ့ &lt;code&gt;&amp;quot;နေ&amp;quot;&lt;/code&gt; ဆိုတဲ့စကားလုံးကိုရိုက်တဲ့အခါ ပုံမှန်အတိုင်းဆိုရင် န (ဗျည်း) နဲ့ အေ (သရ) ပေါင်းထားတာဖြစ်တဲ့အတွက် e &lt;code&gt;(န)&lt;/code&gt; + a &lt;code&gt;(ေ)&lt;/code&gt; ဆိုပြီးရိုက်ရပါတယ်။ ဒါကို သင်ပုန်းကြီးမှာ သင်ခဲ့တဲ့အတိုင်း &amp;ldquo;သဝေထိုး နငယ်ရေ&amp;hellip; နေ&amp;rdquo; ဆိုပြီး a &lt;code&gt;(ေ)&lt;/code&gt; + e &lt;code&gt;(န)&lt;/code&gt; လို့ရိုက်လိုက်တာနဲ့ ibus က keymap table ထဲမှာရှိတဲ့ Key တွဲနဲ့တိုက်စစ်ပြီး &lt;code&gt;&amp;quot;ae&amp;quot;&lt;/code&gt; ဆိုရင် &lt;code&gt;&amp;quot;နေ&amp;quot;&lt;/code&gt; ဆိုတဲ့စာလုံးကိုထုတ်ပေးပါလို့ပြောထားတဲ့အတွက်အမှန်အတိုင်းမြင်ရမှာပဲဖြစ်ပါတယ်။ မရှိတဲ့ Key တွဲဆိုရင်တော့ ရိုက်လိုက်တဲ့ Key တစ်ခုခြင်းစီကိုကိုယ်စားပြုတဲ့ စာလုံးတွေကိုပဲပြပေးမှာဖြစ်ပါတယ်။ KeyMagic ကတော့ Script တစ်ခုလိုမျိုး Pattern တွေ Rule တွေကိုအခြေခံပြီး စာရိုက်နေတုန်းမှာပဲပြန်စီပေးတာဖြစ်တဲ့အတွက် တချို့က ပြန်စီတဲ့ process က နှေးတယ်လို့ထင်ကြပါတယ်။ ဒါပေမဲ့ အရမ်းကြီး သိသာတယ်ရယ်တော့မဟုတ်ပါဘူး။ အဓိက သိသာတဲ့အချက်ကတော့ မြန်မာလိုနဲ့ အင်္ဂလိပ်လို တွဲရေးရတာများတဲ့အခါကျ Super (Windows) + Space လိုမျိုး Key နှစ်ခုတွဲနှိပ်ပြီး Input Source ကိုအမြဲ ပြောင်းရပါတယ်။ iBus ရဲ့မူလအတိုင်း Table ပုံစံနဲ့သွားထားတဲ့ Keyboard Layout တွေမှာတော့ Left Shift key ကို တစ်ချက်နှိပ်ရုံနဲ့ အင်္ဂလိပ်နဲ့ မြန်မာကို အလွယ်တကူပြောင်းပေးပါတယ်။ ကိုယ်တိုင်လဲ အဲဒီတစ်ချက်တည်းနဲ့ KeyMagic တို့ KeyMan တို့ကိုမသုံးဖြစ်ပဲ iBus Table ကိုပဲ သုံးဖြစ်တာပါ။&lt;/p&gt;
+
+&lt;p&gt;အရင်ကတော့ Unicode သုံးတဲ့သူသိပ်မရှိတာကြောင့်ရော၊ ကိုယ်တိုင်ကလည်း စသုံးကတည်းက သဝေထိုးကို နောက်မှရိုက်ရာကနေ အကျင့်ဖြစ်သွားတာရယ်ကြောင့် table ကို update မလုပ်ဖြစ်ခဲ့တာပါ။ အခုကတော့ Unicode ကိုပြောင်းသုံးချင်ပေမဲ့ သဝေထိုးနောက်မှရိုက်ရတာ၊ ဇော်ဂျီလက်ကွက်အတိုင်းမဟုတ်တာတွေကြောင့် မသုံးဖြစ်တဲ့သူတွေအတွက် ထပ်လုပ်ပေးလိုက်တာပါ။ Install လုပ်ပုံလုပ်နည်းနဲ့ အသုံးပြုပုံကိုတော့ ပိုမြင်သာအောင် Video နဲ့ပြပေးလိုက်ပါတယ်။&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;responsive-embed flex-video&#34;&gt;
+        &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;360&#34;
+                src=&#34;http://www.youtube.com/embed/-Nh9MkXTAks&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;
+        &lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;mm-kb အား Ubuntu 18.04 LTS ပေါ်တွင် install ပြုလုပ်ပုံ&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&#34;responsive-embed flex-video&#34;&gt;
+        &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;360&#34;
+                src=&#34;http://www.youtube.com/embed/rlePJt50FcY&#34; frameborder=&#34;0&#34; gesture=&#34;media&#34; allow=&#34;encrypted-media&#34; allowfullscreen&gt;
+        &lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;mm-smart နှင့် mm-zawnicode တို့အားအသုံးပြု၍စာရေးသားပုံ&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Install လုပ်ပုံနဲ့ Installation Script တို့က Debian-based တွေအတွက်ပဲရေးပေးထားတာဆိုပေမဲ့ တခြား Linux Distro တွေမှာလည်း package သွင်းတဲ့နေရာကလွဲလို့ ကျန်တဲ့အဆင့်တွေက အတူတူပဲဖြစ်ပါလိမ့်မယ်။ လိုအပ်ချက်လေးတွေတော့ရှိနေပါသေးတယ်။ သင်ပုန်းကြီးမှာအော်ဆိုခဲ့သလို ပစောက် သေးသေးတင် တစ်ချောင်းငင် &amp;ldquo;ပုံ&amp;rdquo; လို့ဆိုရေးရမယ့်အစား တစ်ချောင်းငင်ပြီးမှ သေးသေးတင်ကိုရိုက်ရတာမျိုးတွေကိုတော့ table ထဲမထည့်ထားသေးပါဘူး။ ဒီ Key လေးနှစ်ခုလောက်ကတော့ပြောင်းရိုက်လိုက်လို့လွယ်တဲ့အတွက်မထည့်ထားတာပါ။ ထပ်ဖြည့်ပြီးသုံးချင်တယ်ဆိုရင်တော့ mm-kb ရဲ့ &lt;code&gt;src&lt;/code&gt; ထဲမှာ Scripts ဆိုတဲ့ Directory ရှိပါတယ်။ အဲဒီထဲမှာ လက်ရှိ table တွေ Generate လုပ်တုန်းကသုံးထားတဲ့ shell script တွေထည်ပေးထားပါတယ်။ လေ့လာကြည့်ပြီး ကိုယ့်စိတ်ကြိုက် Key တွဲတွေထပ်ထုတ်နိုင်ပါတယ်။ ထပ်ဖြည့်ဖို့လိုတာတွေ၊ ရိုက်လို့မရတဲ့ စကားလုံးတွေရှိခဲ့ရင်လည်း ဝိုင်းဝန်းဖြည့်စွက်အကြံပြုစေချင်ပါတယ်။&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>NTFS-3G for macOS</title>

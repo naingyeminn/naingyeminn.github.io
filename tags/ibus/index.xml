@@ -6,10 +6,19 @@
     <description>Recent content in Ibus on Naing Ye` Minn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Dec 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://naingyeminn.com/tags/ibus/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Unicode Smart Keyboards for Linux</title>
+      <link>http://naingyeminn.com/posts/unicode-keyboard-for-linux/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://naingyeminn.com/posts/unicode-keyboard-for-linux/</guid>
+      <description>mm-kb ကို များသောအားဖြင့် Ubuntu User တွေသုံးကြလိမ့်မယ်ထင်ပါတယ်။ အရင်ကတော့ Myanmar 3 နဲ့ Zawgyi-One Layout နှစ်မျိုးပဲပါပါတယ်။ သူငယ်ချင်း တစ်ယောက်ရဲ့ iBus input method ကိုအခြေခံထားတဲ့ Keyboard Layout (iBus Table) တွေကို install လုပ်ရလွယ်အောင် ထိန်းသိမ်းပေးထားတာပါ။ အခု ယူနီကုဒ်ကို ပြောင်းသုံးလာကြတဲ့အခါမှာ များသောအားဖြင့် User တွေက mm-kb ထဲက Myanmar 3 Layout ကို သိပ်မသုံးတတ်ကြပါဘူး။ အဓိကကတော့ Unicode အနေနဲ့ ဘာသာဗေဒ (Linguistics) ကိုအခြေခံပြီးအက္ခရာတွေကိုပုံဖော်တဲ့အတွက်ကြောင့်ပါ။ အသေးစိပ်ကိုတော့ ကိုမောင်ဆန်းရေးထားတဲ့ ဒီ Blog မှာလေ့လာနိုင်ပါတယ်။ အထူးသဖြင့် ဇော်ဂျီနဲ့အသားကျပြီး အရင်လာတဲ့စာလုံးအရင်ရိုက်နေရရာကနေ သဝေထိုး (ေ) ကိုနောက်မှရိုက်ရတာကမျက်စိလည်သွားစေပါတယ်။ နောက်ပြီး လက်ကွက်ပုံစံပြောင်းသွားတဲ့အတွက် Key နေရာတွေ ပြန်မှတ်ရပါတယ်။ ဒီပြဿနာအတွက် KeyMagic က Unicode ကိုပဲ Layout မျိုးစုံနဲ့ထုတ်ပေးထားပြီးသားပါ။ အခုကတော့ နောက်ထပ်ရွေးချယ်စရာတစ်ခုအနေနဲ့ mm-kb မှာ Layout အသစ် ၂ခုထပ်ဖြည့်ပေးလိုက်တာပါ။</description>
+    </item>
     
     <item>
       <title>Burmese Font and Keyboard Installation for Ubuntu 14.04 LTS</title>

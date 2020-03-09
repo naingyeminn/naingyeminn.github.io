@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://naingyeminn.com/posts/unicode-keyboard-for-linux/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://naingyeminn.com/posts/ntfs-3g-for-macos/</loc>
     <lastmod>2020-02-19T00:00:00+00:00</lastmod>
   </url>
@@ -297,7 +302,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/font/</loc>
-    <lastmod>2014-12-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -315,7 +320,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/ibus/</loc>
-    <lastmod>2014-12-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -327,7 +332,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/keyboard/</loc>
-    <lastmod>2016-08-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -375,7 +380,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/myanmar/</loc>
-    <lastmod>2014-12-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -393,7 +398,7 @@
   
   <url>
     <loc>http://naingyeminn.com/</loc>
-    <lastmod>2020-02-19T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -435,7 +440,7 @@
   
   <url>
     <loc>http://naingyeminn.com/posts/</loc>
-    <lastmod>2020-02-19T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -525,13 +530,13 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/ubuntu/</loc>
-    <lastmod>2016-08-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://naingyeminn.com/tags/unicode/</loc>
-    <lastmod>2016-08-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -573,7 +578,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/zawgyi/</loc>
-    <lastmod>2014-12-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
