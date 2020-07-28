@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://naingyeminn.com/posts/rhel-subscriptions/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://naingyeminn.com/posts/unicode-keyboard-for-linux/</loc>
     <lastmod>2020-03-09T00:00:00+00:00</lastmod>
   </url>
@@ -296,7 +301,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/faq/</loc>
-    <lastmod>2019-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -356,7 +361,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/linux/</loc>
-    <lastmod>2019-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -398,7 +403,7 @@
   
   <url>
     <loc>http://naingyeminn.com/</loc>
-    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -410,7 +415,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/notes/</loc>
-    <lastmod>2019-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -440,7 +445,7 @@
   
   <url>
     <loc>http://naingyeminn.com/posts/</loc>
-    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -452,7 +457,7 @@
   
   <url>
     <loc>http://naingyeminn.com/tags/redhat/</loc>
-    <lastmod>2019-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

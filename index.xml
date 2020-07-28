@@ -5,7 +5,58 @@
     <link>http://naingyeminn.com/</link>
     <language>en-us</language>
     <author>Naing Ye` Minn</author>
-    <updated>2020-03-09 00:00:00 &#43;0000 UTC</updated>
+    <updated>2020-07-28 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>Red Hat Enterprise Linux Subscriptions</title>
+      <link>http://naingyeminn.com/posts/rhel-subscriptions/</link>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 UTC</pubDate>
+      <author>Naing Ye` Minn</author>
+      <guid>http://naingyeminn.com/posts/rhel-subscriptions/</guid>
+      <description>
+
+&lt;p&gt;ဒီတစ်ခါတော့ Red Hat Enterprise Linux (RHEL) နဲ့ပတ်သက်ပြီး မေးလေ့ရှိတဲ့မေးခွန်းလေးတွေကိုစုပြီးဖြေပေးလိုက်ပါတယ်။&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;rhel-သ-ဖ-license-လ-လ&#34;&gt;RHEL သုံးဖို့ License လိုလား?&lt;/h3&gt;
+
+&lt;p&gt;မလိုပါဘူး။ Red Hat က Open Source Technologies တွေကိုသာ အခြေခံပြီး Enterprise Ready ဖြစ်တဲ့အထိ Security ပိုကောင်းအောင်၊ Bug တွေနည်းအောင်ပြင်ဆင်ပေးတာဖြစ်တဲ့အတွက် သူ့ရဲ့ Product တွေအတွက် အသုံးပြုခ License ကြေးပေးစရာမလိုပါဘူး။ သို့ပေမဲ့ ကိုယ့်ရဲ့ RHEL System တွေမှာ အခက်အခဲတစ်စုံတစ်ရာရှိလာခဲ့ရင် ကူညီဖြေရှင်းပေးဖို့ Red Hat ရဲ့တိုက်ရိုက် Support ကို Subscriptions model နှစ်စဉ်ကြေးပေးပြီး ရယူနိုင်ပါတယ်။ ဒါကြောင့် RHEL ကို အခြား Linux Distribution တွေလိုပဲ အခမဲ့ရယူသုံးစွဲနိုင်သလို၊ ကိုယ့် Organization ရဲ့ Production Environment တွေအတွက် Service Availability ကိုအာရုံစိုက်ရတဲ့အခါမျိုးတွေမှာ Subscription ဝယ်ပြီး ပြဿနာတွေကို လျှင်လျှင်မြန်မြန်ဖြေရှင်းနိုင်ဖို့ အကူအညီလည်း ရယူနိုင်ပါတယ်။&lt;/p&gt;
+
+&lt;h3 id=&#34;subscription-ဘယ-လ-ဝယ-ရမလ&#34;&gt;Subscription ဘယ်လိုဝယ်ရမလဲ?&lt;/h3&gt;
+
+&lt;p&gt;အကြမ်းဖျဉ်းပြောရရင် Standard နဲ့ Premium ဆိုပြီး Subscription (၂) မျိုးရှိပါတယ်။ Self-support ဆိုတာရှိပေမဲ့ Asia Pacific (APAC) မှာမရတဲ့အတွက်ထည့်မပြောတော့ပါဘူး။ Standard နဲ့ Premium ဘာကွာလဲမေးရင်တော့ SLA ပါပဲ။ Standard က ရုံးချိန်အတွင်းမှာပဲ Case တွေကို ဖြေရှင်းပေးမှာဖြစ်ပြီး၊ Premium ဆိုရင်တော့ &lt;sup&gt;24&lt;/sup&gt;&amp;frasl;&lt;sub&gt;7&lt;/sub&gt; အကူအညီရယူနိုင်ပါတယ်။ Web Portal ကနေ၊ ဒါမှမဟုတ် Phone နဲ့ဆက်သွယ် ရတဲ့ Online Support ပါ။ Premium က သိပ်ထွေထွေထူးထူးပြောစရာမရှိပေမဲ့ Standard မှာကတော့ ရုံးချိန်အတွင်းဆိုတဲ့အတိုင်း အချိန်သတ်မှတ်ချက်ရှိပါတယ်။ North America အတွင်းကနိုင်ငံတွေအတွက် 9:00 AM ~ 6:00 PM ဖြစ်ပြီး၊ အခြားပြင်ပနိုင်ငံတွေအတွက်ကတော့ 9:00 AM ~ 5:00 PM ဖြစ်ပါတယ်။ ရုံးချိန်ပြင်ပ စနေ၊ တနင်္ဂနွေနဲ့ အားလပ်ရက်တွေမပါပါဘူး။ နိုင်ငံရဲ့ Time Zone ကို အခြေခံပြီး Support ပေးတာပါ။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/rhel_sub/rh_sla.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ပုံထဲကအတိုင်း Severity Level ပေါ်မူတည်ပြီး ဖြေရှင်းပေးပါလိမ့်မယ်။ အရေးကြီးတဲ့ case မျိုးဆိုရင် Severity 1 နဲ့ထားပြီးတင်မှသာ ၁နာရီအတွင်း ပြန်လည်ဆက်သွယ်ဖြေရှင်းပေးမှာဖြစ်ပါတယ်။ ဒါနဲ့ပတ်သက်ပြီး သတိထားဖို့လိုတာက Standard အနေနဲ့ဆိုရင် 9 to 5 ဖြစ်တဲ့အတွက် အကယ်၍များ သောကြာနေ့ ညနေ 4:45 လောက်မှာမှ Severity 1 နဲ့ Case ဖွင့်ခဲ့ရင် အချိန်မီဖြေရှင်းနိုင်ဖို့မသေချာတော့ပါဘူး။ နောက်ပြီး စနေ၊ တနင်္ဂနွေခံသွားမှာဖြစ်တဲ့အတွက် တနင်္လာနေ့မနက်မှပဲ ပြန်လည်ဆက်သွယ်ဖြေရှင်းပေးပါလိမ့်မယ်။ ဒါကြောင့် mission-critical application တွေ run မယ့် Production Server တွေအတွက်ဆိုရင် Premium Subscription ကိုသာရွေးသင့်ပါတယ်။ Standard ကိုတော့ Downtime ယူလို့ရတဲ့ Server မျိုးတွေနဲ့ UAT Server တွေအတွက်သာသုံးသင့်ပါတယ်။&lt;/p&gt;
+
+&lt;h3 id=&#34;subscription-မ-ကန-သတ-ခ-က-တ-ရ-လ&#34;&gt;Subscription မှာ ကန့်သတ်ချက်တွေရှိလား?&lt;/h3&gt;
+
+&lt;p&gt;Standard ပဲဖြစ်ဖြစ် Premium ပဲဖြစ်ဖြစ်၊ &lt;a href=&#34;https://www.redhat.com/en/store/red-hat-enterprise-linux-server&#34;&gt;RHEL Subscription&lt;/a&gt; တစ်ခုကို CPU Socket (၂) ခုပါတဲ့ Physical Server (၁) လုံး၊ ဒါမှမဟုတ် Virtual Machine (VM) အနေနဲ့  (၂) လုံး သုံးလို့ရပါတယ်။ CPU Core အရေအတွက်ကတော့ အကန့်အသတ်မရှိပါဘူး။ VM များများသုံးမယ်ဆိုရင်တော့ &lt;a href=&#34;https://www.redhat.com/en/store/red-hat-enterprise-linux-virtual-datacenters&#34;&gt;Virtual Datacenters&lt;/a&gt; ဆိုတာရှိပါတယ်။ သူကတော့ Hypervisor Host အရေအတွက်နဲ့တွက်ပြီးဝယ်ရတာပါ။ Openshift Virtualization၊ Red Hat Virtualization၊ VMware၊ Microsoft HyperV စတာတွေမှာသုံးလို့ရပါတယ်။ ဥပမာ Hypervisor Host (၃) လုံးပါတဲ့ Cluster တစ်ခုမှာ VM  အလုံး ၂၀ လောက်သုံးမယ်ဆိုရင် RHEL Subscription (၁၀) ခုဝယ်ရပါလိမ့်မယ်။ Red Hat Store ကဈေးနဲ့တွက်မယ်ဆိုရင် RHEL - Standard Subscription တစ်ခုကို $800 နဲ့၊ $8,000 လောက်ကုန်ပါလိမ့်မယ်။ အဲဒီအစား RHEL for Virtual Datacenters - Standard Subscription ကို Hypervisor Host (၃) လုံးအတွက်၊ တစ်လုံးကို $2,500 နဲ့ဝယ်လိုက်ရင် $7,500 ပဲကျမှာဖြစ်တဲ့အပြင် Cluster ရဲ့ Capacity ရှိရင်ရှိသလောက် VM အကန့်အသတ်မရှိ တည်ဆောက်အသုံးပြုနိုင်မှာဖြစ်တဲ့အတွက် ပိုတွက်ခြေကိုက်ပါလိမ့်မယ်။&lt;/p&gt;
+
+&lt;h3 id=&#34;personal-သ-ဖ-အတ-က-ဆ-ရင-ရ-subscription-ဝယ-ဖ-လ-လ&#34;&gt;Personal သုံးဖို့အတွက်ဆိုရင်ရော Subscription ဝယ်ဖို့လိုလား?&lt;/h3&gt;
+
+&lt;p&gt;အထက်မှာပြောခဲ့တဲ့အတိုင်း RHEL Installation DVD ရဲ့ ISO ကို အခမဲ့ရယူပြီး Install ပြုလုပ်နိုင်ပါတယ်။ Email တစ်ခုနဲ့ Red Hat Portal မှာ Register လုပ်ပြီး Account ဖွင့်ဖို့ပဲလိုပါတယ်။  Software Update တွေပုံမှန်ရယူနိုင်ဖို့အတွက်ကတော့ Subscription ရှိမှသာရနိုင်မှာဖြစ်ပါတယ်။ အဲဒီအတွက် no-cost subscription ဆိုတာရှိပါတယ်။ Developer Subscription လို့လဲခေါ်ပါတယ်။ Developer Subscription ဆိုတဲ့အတိုင်း Developer တွေအနေနဲ့ RHEL ကိုသုံးပြီး Development Environment တည်ဆောက်နိုင်ဖို့အတွက်ပေးတာပါ။ ဒီ့အတွက် &lt;a href=&#34;https://developers.redhat.com/&#34;&gt;developers.redhat.com&lt;/a&gt; မှာ Email တစ်ခုနဲ့ Register လုပ်ပြီး Red Hat Account တစ်ခုဖွင့်ရုံပါပဲ။ Red Hat Account ရှိပြီးသားဆိုရင်လည်း အဲ့ဒီ Account ကိုသုံးပြီး &lt;a href=&#34;https://developers.redhat.com/&#34;&gt;developers.redhat.com&lt;/a&gt; မှာ login ဝင်လိုက်ပါ။ Virtual (သို့) Physical Machine (၁၆) လုံးစာ Subscription ကို (၁) နှစ်စာ ရရှိပါလိမ့်မယ်။ အကယ်၍ သက်တမ်းကုန်သွားခဲ့ရင်လည်း ရှိပြီးသား Red Hat account နဲ့ပဲ &lt;a href=&#34;https://developers.redhat.com/&#34;&gt;developers.redhat.com&lt;/a&gt; မှာ Login ပြန်ဝင်လိုက်ရုံပါပဲ။ (၁) နှစ်စာထပ်ရမှာပဲဖြစ်ပါတယ်။ Case ဖွင့်ပြီး အကူအညီယူတာမျိုးလုပ်လို့မရပေမဲ့ Knowledgebase ထဲမှာ Issue တော်တော်များများအတွက်အဖြေက ရှိပြီးဖြစ်တဲ့အတွက် ကိုယ်တိုင်အချိန်ယူလေ့လာပြီး ဖြေရှင်းလို့ရနိုင်ပါတယ်။ ရှာမတွေ့ခဲ့ရင်လဲ Discussion Board မှာ မေးမြန်းအဖြေရှာလို့ရနိုင်ပါသေးတယ်။ ရထားတဲ့ Subscription နဲ့သက်ဆိုင်တဲ့ အချက်အလက်တွေကိုတော့ &lt;a href=&#34;https://access.redhat.com&#34;&gt;Red Hat Customer Portal&lt;/a&gt; ရဲ့ &lt;a href=&#34;https://access.redhat.com/management&#34;&gt;Subscription&lt;/a&gt; tab မှာသွားစစ်နိုင်ပါတယ်။ RHEL ကို ကိုယ့်ရဲ့ Laptop/Desktop မှာ စမ်းသပ်လေ့လာသုံးစွဲကြည့်ချင်သူတွေ၊ RHCSA/RHCE စတဲ့ certification အတွက်ပြင်ဆင်နေသူတွေအနေနဲ့ no-cost subscription နဲ့သုံးကြည့်ကြပါလို့ အကြံပေးချင်ပါတယ်။&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/rhel_sub/subs_02.png&#34; alt=&#34;subs_02.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/naingyeminn/nym_blog_data/master/Photos/rhel_sub/subs_03.png&#34; alt=&#34;subs_03.png&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Read more:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://access.redhat.com/support/offerings/production/sla&#34;&gt;Red Hat - Production Support Terms of Service&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://access.redhat.com/articles/2623321&#34;&gt;How does Red Hat define standard business hours?&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://developers.redhat.com/articles/getting-red-hat-developer-subscription-what-rhel-users-need-know&#34;&gt;Getting Red Hat Developer Subscription: What RHEL users need to know&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://developers.redhat.com/articles/faqs-no-cost-red-hat-enterprise-linux&#34;&gt;FAQs for no-cost Red Hat Enterprise Linux
+&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Unicode Smart Keyboards for Linux</title>

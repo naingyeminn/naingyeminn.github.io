@@ -6,10 +6,20 @@
     <description>Recent content in Faq on Naing Ye` Minn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://naingyeminn.com/tags/faq/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Red Hat Enterprise Linux Subscriptions</title>
+      <link>http://naingyeminn.com/posts/rhel-subscriptions/</link>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://naingyeminn.com/posts/rhel-subscriptions/</guid>
+      <description>ဒီတစ်ခါတော့ Red Hat Enterprise Linux (RHEL) နဲ့ပတ်သက်ပြီး မေးလေ့ရှိတဲ့မေးခွန်းလေးတွေကိုစုပြီးဖြေပေးလိုက်ပါတယ်။
+RHEL သုံးဖို့ License လိုလား? မလိုပါဘူး။ Red Hat က Open Source Technologies တွေကိုသာ အခြေခံပြီး Enterprise Ready ဖြစ်တဲ့အထိ Security ပိုကောင်းအောင်၊ Bug တွေနည်းအောင်ပြင်ဆင်ပေးတာဖြစ်တဲ့အတွက် သူ့ရဲ့ Product တွေအတွက် အသုံးပြုခ License ကြေးပေးစရာမလိုပါဘူး။ သို့ပေမဲ့ ကိုယ့်ရဲ့ RHEL System တွေမှာ အခက်အခဲတစ်စုံတစ်ရာရှိလာခဲ့ရင် ကူညီဖြေရှင်းပေးဖို့ Red Hat ရဲ့တိုက်ရိုက် Support ကို Subscriptions model နှစ်စဉ်ကြေးပေးပြီး ရယူနိုင်ပါတယ်။ ဒါကြောင့် RHEL ကို အခြား Linux Distribution တွေလိုပဲ အခမဲ့ရယူသုံးစွဲနိုင်သလို၊ ကိုယ့် Organization ရဲ့ Production Environment တွေအတွက် Service Availability ကိုအာရုံစိုက်ရတဲ့အခါမျိုးတွေမှာ Subscription ဝယ်ပြီး ပြဿနာတွေကို လျှင်လျှင်မြန်မြန်ဖြေရှင်းနိုင်ဖို့ အကူအညီလည်း ရယူနိုင်ပါတယ်။</description>
+    </item>
     
     <item>
       <title>Road to RHCA</title>
